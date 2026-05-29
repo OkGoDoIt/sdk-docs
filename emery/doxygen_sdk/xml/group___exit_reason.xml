@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___exit_reason" kind="group">
+    <compoundname>ExitReason</compoundname>
+    <title>Exit Reason</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___exit_reason_1gabf68cab8a7f42562d022c3d783653f0e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AppExitReason</name>
+        <enumvalue id="group___exit_reason_1ggabf68cab8a7f42562d022c3d783653f0ea5cfd751a9b8600fdcfb184777b7d45b0" prot="public">
+          <name>APP_EXIT_NOT_SPECIFIED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Exit reason not specified. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___exit_reason_1ggabf68cab8a7f42562d022c3d783653f0ea5ec5010f0579b3fe52cd33144d91d2e5" prot="public">
+          <name>APP_EXIT_ACTION_PERFORMED_SUCCESSFULLY</name>
+          <briefdescription>
+<para>Application performed an action when it exited. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___exit_reason_1ggabf68cab8a7f42562d022c3d783653f0ea89bb5579ab12592caea192dee6f864bd" prot="public">
+          <name>NUM_EXIT_REASONS</name>
+          <briefdescription>
+<para>Number of <ref refid="group___exit_reason_1gabf68cab8a7f42562d022c3d783653f0e" kindref="member">AppExitReason</ref> options. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="group___exit_reason_1gabf68cab8a7f42562d022c3d783653f0e" kindref="member">AppExitReason</ref> is used to notify the system of the reason of an application exiting, which may affect the part of the system UI that is presented after the application terminates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3550" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3550" bodyend="3555"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___exit_reason_1ga28ba81bc61160f46cda17c4e7ea9bb65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exit_reason_set</definition>
+        <argsstring>(AppExitReason exit_reason)</argsstring>
+        <name>exit_reason_set</name>
+        <param>
+          <type><ref refid="group___exit_reason_1gabf68cab8a7f42562d022c3d783653f0e" kindref="member">AppExitReason</ref></type>
+          <declname>exit_reason</declname>
+        </param>
+        <briefdescription>
+<para>Set the app exit reason to a new reason. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new app exit reason </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3559" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3559" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>API for the application to notify the system of the reason it will exit. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>If the application has not specified an exit reason before it exits, then the exit reason will default to APP_EXIT_NOT_SPECIFIED.</para>
+<para>Only an application can set its exit reason. The system will not modify it. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

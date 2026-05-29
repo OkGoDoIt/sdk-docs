@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___worker" kind="group">
+    <compoundname>Worker</compoundname>
+    <title>Worker</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___worker_1gaba624492af6173015c4923120fa47e35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void worker_event_loop</definition>
+        <argsstring>(void)</argsstring>
+        <name>worker_event_loop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>The event loop for workers, to be used in worker&apos;s main(). Will block until the worker is ready to exit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___app" kindref="compound">App</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/doxygen/pebble_worker.h" line="23" column="6" declfile="build/sdk/emery/include/doxygen/pebble_worker.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___worker_1ga4ac41d61177b9b631a1a09f04eaf4b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void worker_launch_app</definition>
+        <argsstring>(void)</argsstring>
+        <name>worker_launch_app</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Launch the foreground app for this worker. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/doxygen/pebble_worker.h" line="26" column="6" declfile="build/sdk/emery/include/doxygen/pebble_worker.h" declline="26" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

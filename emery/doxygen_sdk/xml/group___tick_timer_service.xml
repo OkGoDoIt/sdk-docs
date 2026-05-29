@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___tick_timer_service" kind="group">
+    <compoundname>TickTimerService</compoundname>
+    <title>TickTimerService</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___tick_timer_service_1ga0423d00e0eb199de523a92031b5a1107" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TimeUnits</name>
+        <enumvalue id="group___tick_timer_service_1gga0423d00e0eb199de523a92031b5a1107afd448b8fbcd39321d18aa41b62b308b9" prot="public">
+          <name>SECOND_UNIT</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Flag to represent the &quot;seconds&quot; time unit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___tick_timer_service_1gga0423d00e0eb199de523a92031b5a1107af135dc6b67dce70c7b4b961605aa6970" prot="public">
+          <name>MINUTE_UNIT</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Flag to represent the &quot;minutes&quot; time unit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___tick_timer_service_1gga0423d00e0eb199de523a92031b5a1107a7628af862ee9aa0b56cdfc1cea7e0f79" prot="public">
+          <name>HOUR_UNIT</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Flag to represent the &quot;hours&quot; time unit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___tick_timer_service_1gga0423d00e0eb199de523a92031b5a1107af990f18a7186e6b386f36f2afa3c8038" prot="public">
+          <name>DAY_UNIT</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>Flag to represent the &quot;days&quot; time unit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___tick_timer_service_1gga0423d00e0eb199de523a92031b5a1107ac5c028cac926fb83169e7b43fa089b16" prot="public">
+          <name>MONTH_UNIT</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>Flag to represent the &quot;months&quot; time unit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___tick_timer_service_1gga0423d00e0eb199de523a92031b5a1107a652f00ea2c629930a32a684f9d8c876d" prot="public">
+          <name>YEAR_UNIT</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+<para>Flag to represent the &quot;years&quot; time unit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Time unit flags that can be used to create a bitmask for use in <ref refid="group___tick_timer_service_1ga8b1ebbe9ca26a97b23af5610842bc892" kindref="member">tick_timer_service_subscribe()</ref>. This will also be passed to <ref refid="group___tick_timer_service_1ga48f155b9d0508f80aea7370fca1855ba" kindref="member">TickHandler</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="885" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="885" bodyend="898"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___tick_timer_service_1ga48f155b9d0508f80aea7370fca1855ba" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* TickHandler) (struct tm *tick_time, TimeUnits units_changed)</definition>
+        <argsstring>)(struct tm *tick_time, TimeUnits units_changed)</argsstring>
+        <name>TickHandler</name>
+        <briefdescription>
+<para>Callback type for tick timer events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tick_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time at which the tick event was triggered </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>units_changed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which unit change triggered this tick event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="903" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="903" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___tick_timer_service_1ga8b1ebbe9ca26a97b23af5610842bc892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tick_timer_service_subscribe</definition>
+        <argsstring>(TimeUnits tick_units, TickHandler handler)</argsstring>
+        <name>tick_timer_service_subscribe</name>
+        <param>
+          <type><ref refid="group___tick_timer_service_1ga0423d00e0eb199de523a92031b5a1107" kindref="member">TimeUnits</ref></type>
+          <declname>tick_units</declname>
+        </param>
+        <param>
+          <type><ref refid="group___tick_timer_service_1ga48f155b9d0508f80aea7370fca1855ba" kindref="member">TickHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to the tick timer event service. Once subscribed, the handler gets called on every requested unit change. Calling this function multiple times will override the units and handler (i.e., only  the last tick_units and handler passed will be used). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback to be executed on tick events </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tick_units</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a bitmask of all the units that have changed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="911" column="6" declfile="build/sdk/emery/include/pebble.h" declline="911" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___tick_timer_service_1gaae157828fd8c8d1e8de6372d0a3aa25e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tick_timer_service_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>tick_timer_service_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from the tick timer event service. Once unsubscribed, the previously registered handler will no longer be called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="915" column="6" declfile="build/sdk/emery/include/pebble.h" declline="915" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handling time components </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The TickTimerService allows your app to be called every time one Time component has changed. This is extremely important for watchfaces. Your app can choose on which time component change a tick should occur. Time components are defined by a <ref refid="group___tick_timer_service_1ga0423d00e0eb199de523a92031b5a1107" kindref="member">TimeUnits</ref> enum bitmask. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

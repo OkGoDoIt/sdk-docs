@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_scroll_layer_callbacks" kind="struct" language="C++" prot="public">
     <compoundname>ScrollLayerCallbacks</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6621" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6621" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6899" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6899" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_scroll_layer_callbacks_1ad2cb7771ef3ff8930996d188565dcf1e" prot="public" static="no" mutable="no">
         <type><ref refid="group___scroll_layer_1ga1d78b150f7c6907988d00b7b75891560" kindref="member">ScrollLayerCallback</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6625" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6625" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6903" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6903" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -43,7 +43,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="6615" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6615" bodyend="6627"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="6893" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6893" bodyend="6905"/>
     <listofallmembers>
       <member refid="struct_scroll_layer_callbacks_1a8e8c71425fed8bab16d447d74cf167e2" prot="public" virt="non-virtual"><scope>ScrollLayerCallbacks</scope><name>click_config_provider</name></member>
       <member refid="struct_scroll_layer_callbacks_1ad2cb7771ef3ff8930996d188565dcf1e" prot="public" virt="non-virtual"><scope>ScrollLayerCallbacks</scope><name>content_offset_changed_handler</name></member>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_menu_cell_span" kind="struct" language="C++" prot="public">
+    <compoundname>MenuCellSpan</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_menu_cell_span_1ac881aadb2dff9059fe7b4a0c0e031d6e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t MenuCellSpan::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>MenuCellSpan::h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7322" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_cell_span_1a251934f51b14ef537c76c3f3e7e03741" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_menu_index" kindref="compound">MenuIndex</ref></type>
+        <definition>MenuIndex MenuCellSpan::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>MenuCellSpan::index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7324" column="13" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_cell_span_1aaea74d9a2eac3058e333f5c0752c0d14" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t MenuCellSpan::sep</definition>
+        <argsstring></argsstring>
+        <name>sep</name>
+        <qualifiedname>MenuCellSpan::sep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7323" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_cell_span_1ab363eac498f57e0cd015929b98b3083b" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t MenuCellSpan::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>MenuCellSpan::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7321" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7321" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MenuCellSpan</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>index</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MenuIndex</label>
+        <link refid="struct_menu_index"/>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="7320" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7320" bodyend="7325"/>
+    <listofallmembers>
+      <member refid="struct_menu_cell_span_1ac881aadb2dff9059fe7b4a0c0e031d6e" prot="public" virt="non-virtual"><scope>MenuCellSpan</scope><name>h</name></member>
+      <member refid="struct_menu_cell_span_1a251934f51b14ef537c76c3f3e7e03741" prot="public" virt="non-virtual"><scope>MenuCellSpan</scope><name>index</name></member>
+      <member refid="struct_menu_cell_span_1aaea74d9a2eac3058e333f5c0752c0d14" prot="public" virt="non-virtual"><scope>MenuCellSpan</scope><name>sep</name></member>
+      <member refid="struct_menu_cell_span_1ab363eac498f57e0cd015929b98b3083b" prot="public" virt="non-virtual"><scope>MenuCellSpan</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

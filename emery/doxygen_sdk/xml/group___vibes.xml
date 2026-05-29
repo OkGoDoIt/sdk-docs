@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___vibes" kind="group">
+    <compoundname>Vibes</compoundname>
+    <title>Vibes</title>
+    <innerclass refid="struct_vibe_pattern" prot="public">VibePattern</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___vibes_1gad190fd7825ec34d96d0ef05508275169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vibes_cancel</definition>
+        <argsstring>(void)</argsstring>
+        <name>vibes_cancel</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Cancel any in-flight vibe patterns; this is a no-op if there is no on-going vibe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8638" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8638" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___vibes_1gab248dc8961ee1356a106599e3aeef00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vibes_double_pulse</definition>
+        <argsstring>(void)</argsstring>
+        <name>vibes_double_pulse</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the watch emit two brief vibrations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8648" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8648" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___vibes_1ga3412ed26dd91a20f77ba1a4c54b668e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vibes_enqueue_custom_pattern</definition>
+        <argsstring>(VibePattern pattern)</argsstring>
+        <name>vibes_enqueue_custom_pattern</name>
+        <param>
+          <type><ref refid="struct_vibe_pattern" kindref="compound">VibePattern</ref></type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+<para>Makes the watch emit a &apos;custom&apos; vibration pattern. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An arbitrary vibration pattern </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_vibe_pattern" kindref="compound">VibePattern</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8653" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8653" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___vibes_1ga93e5ca695c1ff3ed096b7f1b5cb29d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vibes_long_pulse</definition>
+        <argsstring>(void)</argsstring>
+        <name>vibes_long_pulse</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the watch emit one long vibration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8644" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8644" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___vibes_1gaa5acf97e140e066834c1963da7f1d5db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vibes_short_pulse</definition>
+        <argsstring>(void)</argsstring>
+        <name>vibes_short_pulse</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Makes the watch emit one short vibration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8641" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8641" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Controlling the vibration motor </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The Vibes API provides calls that let you control Pebble’s vibration motor.</para>
+<para>The vibration motor can be used as a visceral mechanism for giving immediate feedback to the user. You can use it to highlight important moments in games, or to draw the attention of the user. However, you should use the vibration feature sparingly, because sustained use will rapidly deplete Pebble’s battery, and vibrating Pebble too much and too often can become annoying for users. <simplesect kind="note"><para>When using these calls, if there is an ongoing vibration, calling any of the functions to emit (another) vibration will have no effect. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

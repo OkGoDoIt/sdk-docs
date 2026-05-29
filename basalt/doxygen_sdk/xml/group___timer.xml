@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___timer" kind="group">
     <compoundname>Timer</compoundname>
     <title>Timer</title>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2891" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2891" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2980" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2980" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___timer_1ga465ac36f13df1644650dc90bb968c9d8" prot="public" static="no">
         <type>void(*</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2895" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2895" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2984" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2984" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -43,13 +43,13 @@
           <declname>timer_handle</declname>
         </param>
         <briefdescription>
-<para>Cancels an already registered timer. Once cancelled the handle may no longer be used for any purpose. </para>
+<para>Cancels an already registered timer. Once cancelled the handle may no longer be used for any purpose. Elapsed timers do not need to be cancelled. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2912" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2912" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3003" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3003" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___timer_1gaac4aa5acb23bf4ed47aa33355a6e378b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>AppTimer *</type>
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2902" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="2902" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2991" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="2991" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___timer_1ga34584069c4304e375425549f13cad1e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -119,7 +119,7 @@
           <declname>new_timeout_ms</declname>
         </param>
         <briefdescription>
-<para>Reschedules an already running timer for some point in the future. </para>
+<para>Reschedules an already running timer for some point in the future. Elapsed timers cannot be rescheduled. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2908" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2908" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2998" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2998" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___timer_1ga00f41133e14542220d184131f9dcb863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2888" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2888" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2977" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2977" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

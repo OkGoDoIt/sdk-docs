@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_app_glance_slice" kind="struct" language="C++" prot="public">
+    <compoundname>AppGlanceSlice</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_app_glance_slice_1a4ca1aadad9d6e64c08ba98162a89a368" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+        <definition>time_t AppGlanceSlice::expiration_time</definition>
+        <argsstring></argsstring>
+        <name>expiration_time</name>
+        <qualifiedname>AppGlanceSlice::expiration_time</qualifiedname>
+        <briefdescription>
+<para>The UTC time after which this slice should no longer be shown in the app&apos;s glance. Use <ref refid="group___app_glance_1ga5ffc28353367e3fce95b42cf0cfd1476" kindref="member">APP_GLANCE_SLICE_NO_EXPIRATION</ref> if the slice should never expire. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3636" column="10" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_glance_slice_1a735c75bb97cf8079ddc4e7b1d1afb5da" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_app_glance_slice_layout" kindref="compound">AppGlanceSliceLayout</ref></type>
+        <definition>AppGlanceSliceLayout AppGlanceSlice::layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <qualifiedname>AppGlanceSlice::layout</qualifiedname>
+        <briefdescription>
+<para>Describes how the slice should be visualized in the app&apos;s glance in the launcher. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3633" column="24" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3633" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An app&apos;s glance can change over time as defined by zero or more app glance slices that each describe the state of the app glance at a particular point in time. Slices are displayed in the order they are added, and they are removed at the specified expiration time. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AppGlanceSlice</label>
+        <link refid="struct_app_glance_slice"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>layout</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AppGlanceSliceLayout</label>
+        <link refid="struct_app_glance_slice_layout"/>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="3631" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3631" bodyend="3637"/>
+    <listofallmembers>
+      <member refid="struct_app_glance_slice_1a4ca1aadad9d6e64c08ba98162a89a368" prot="public" virt="non-virtual"><scope>AppGlanceSlice</scope><name>expiration_time</name></member>
+      <member refid="struct_app_glance_slice_1a735c75bb97cf8079ddc4e7b1d1afb5da" prot="public" virt="non-virtual"><scope>AppGlanceSlice</scope><name>layout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

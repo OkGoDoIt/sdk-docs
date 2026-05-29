@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___audio" kind="group">
+    <compoundname>Audio</compoundname>
+    <title>Context</title>
+    <innerclass refid="struct_audio_context_status" prot="public">AudioContextStatus</innerclass>
+    <innerclass refid="struct_audio_context_transcript" prot="public">AudioContextTranscript</innerclass>
+    <innerclass refid="struct_audio_context_trigger_info" prot="public">AudioContextTriggerInfo</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___audio_1ga8089069793b83dbee70b61b885099409" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AudioContextAvailability</name>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409af0f0a4afed3759ff279f0d56ce0fc7d8" prot="public">
+          <name>AudioContextAvailabilityAvailable</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Audio Context is available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a678ac850fa9c83828e993f8034c5fa82" prot="public">
+          <name>AudioContextAvailabilityUnsupportedWatch</name>
+          <briefdescription>
+<para>The connected watch or firmware does not support Audio Context. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a73adc4f50e981e808b0e1519fb761b3f" prot="public">
+          <name>AudioContextAvailabilityUnsupportedPhone</name>
+          <briefdescription>
+<para>The connected phone app does not support Audio Context. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a8a550042e12e22e345dc024fffa5ea19" prot="public">
+          <name>AudioContextAvailabilityDisabledByUser</name>
+          <briefdescription>
+<para>The user has disabled system background audio. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a2dc599b51d4359607a0aaef0f9c187ae" prot="public">
+          <name>AudioContextAvailabilityPermissionDenied</name>
+          <briefdescription>
+<para>The user has not granted this app the requested audio access. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a2e6e39ec6c4cbbea543b65261a1e1686" prot="public">
+          <name>AudioContextAvailabilityCapabilityNotDeclared</name>
+          <briefdescription>
+<para>The app did not declare the required capability in <computeroutput>package.json</computeroutput>. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409aeb64894681ef0cb083b54f735ef67bf7" prot="public">
+          <name>AudioContextAvailabilityTranscriptionUnavailable</name>
+          <briefdescription>
+<para>Transcription is not available for the requested audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409aa1358121f8fc147943856644df2e1b75" prot="public">
+          <name>AudioContextAvailabilityNoData</name>
+          <briefdescription>
+<para>No transcript data is available for the requested time window. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409ad61802582bde2d7fc9866923a4797cab" prot="public">
+          <name>AudioContextAvailabilityError</name>
+          <briefdescription>
+<para>An unexpected error occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Availability or failure reason for Audio Context requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3301" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3301" bodyend="3320"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___audio_1ga102d954bf3a9aac9c11e99d504a7014b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AudioContextPermission</name>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014ba4836517e9d0424b8413b2ab3acc3d5a4" prot="public">
+          <name>AudioContextPermissionStatus</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Check Audio Context availability and background audio status. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014baf77f5d0cec3c0298d22cdc455e157dc9" prot="public">
+          <name>AudioContextPermissionRecentTranscript</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Read recent transcript context. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014baa8f7d11bcb505d81276e0bb1159f9891" prot="public">
+          <name>AudioContextPermissionTranscriptHistory</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Read bounded transcript history. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014bac333223ea652900ed980d08b54c7b880" prot="public">
+          <name>AudioContextPermissionLiveTranscript</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>Subscribe to live transcript updates while the app is active. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014ba13c814372dc32f0cd81726b56838d55a" prot="public">
+          <name>AudioContextPermissionRawAudio</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>Receive raw phone-side audio. Not exposed to watch C apps in v1. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Permission scopes an app can request for Audio Context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3323" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3323" bodyend="3334"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___audio_1ga1059c166058e46717fe913bc9576c0a5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AudioContextTriggerSource</name>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5ad4ce8841d4cd63a894278afd9d2d2bc9" prot="public">
+          <name>AudioContextTriggerSourceUnknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The launch source is unknown. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5a3081587eb52afcfc63746259c2444ab3" prot="public">
+          <name>AudioContextTriggerSourceWatch</name>
+          <briefdescription>
+<para>The launch was triggered from the watch. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5a8f16a2bbe18085bab013e84d1f6f9e63" prot="public">
+          <name>AudioContextTriggerSourcePhone</name>
+          <briefdescription>
+<para>The launch was triggered from the phone. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5a0975b874dbdf009465872147d4390985" prot="public">
+          <name>AudioContextTriggerSourceRing</name>
+          <briefdescription>
+<para>The launch was triggered from a paired ring or similar accessory. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5a1997cd4d8e2348b0e4e4305199aea9ba" prot="public">
+          <name>AudioContextTriggerSourceShortcut</name>
+          <briefdescription>
+<para>The launch was triggered from a shortcut. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5ae57e3efd353c60634458d1d943c21773" prot="public">
+          <name>AudioContextTriggerSourceSystem</name>
+          <briefdescription>
+<para>The launch was triggered by the system. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Source category that caused an Audio Context-aware launch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3365" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3365" bodyend="3378"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___audio_1ga14d3fefa12726df652e7839df402a2bf" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AudioContextStatusCallback) (AudioContextAvailability result, const AudioContextStatus *status, void *context)</definition>
+        <argsstring>)(AudioContextAvailability result, const AudioContextStatus *status, void *context)</argsstring>
+        <name>AudioContextStatusCallback</name>
+        <briefdescription>
+<para>Callback for asynchronous Audio Context status requests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <computeroutput>result</computeroutput> is not <computeroutput><ref refid="group___audio_1gga8089069793b83dbee70b61b885099409af0f0a4afed3759ff279f0d56ce0fc7d8" kindref="member">AudioContextAvailabilityAvailable</ref></computeroutput>, <computeroutput>status</computeroutput> may be NULL. The callback runs on the app event loop. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3400" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___audio_1ga6c5afbc469e64cf4ad6596a1c52528d5" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AudioContextTranscriptCallback) (AudioContextAvailability result, const AudioContextTranscript *transcript, void *context)</definition>
+        <argsstring>)(AudioContextAvailability result, const AudioContextTranscript *transcript, void *context)</argsstring>
+        <name>AudioContextTranscriptCallback</name>
+        <briefdescription>
+<para>Callback for transcript query and subscription results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <computeroutput>result</computeroutput> is not <computeroutput><ref refid="group___audio_1gga8089069793b83dbee70b61b885099409af0f0a4afed3759ff279f0d56ce0fc7d8" kindref="member">AudioContextAvailabilityAvailable</ref></computeroutput>, <computeroutput>transcript</computeroutput> may be NULL. The <computeroutput>transcript</computeroutput> pointer and <computeroutput>transcript-&gt;text</computeroutput> are valid only for the duration of the callback. Copy the text before returning if it is needed later. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3410" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3410" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___audio_1ga1134eb738ebd88c41b52d166ee999bf0" prot="public" static="no">
+        <name>audio_context_get_cached_status</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3414" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___audio_1ga70ab3e69a0b9c56ff281cc13e67f110d" prot="public" static="no">
+        <name>audio_context_get_trigger_info</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3426" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___audio_1gadbc0763099c5beac649f31a82fc71d6b" prot="public" static="no">
+        <name>audio_context_request_enable</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3418" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___audio_1gac803d3ac17e66c25e1e9a1b1ae076895" prot="public" static="no">
+        <name>audio_context_request_permission</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3420" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___audio_1ga5fc551f49043f7f0bc0623f6cda779ff" prot="public" static="no">
+        <name>audio_context_request_recent_transcript</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3422" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___audio_1gab8c6df4662cea53f7b6d967a8bbe753b" prot="public" static="no">
+        <name>audio_context_request_status</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3416" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___audio_1ga3d516214b1e14e251fe0e1a4ff96381f" prot="public" static="no">
+        <name>audio_context_request_transcript_history</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3424" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___audio_1ga7a152f34049a931e8e8990f8f8b40cbf" prot="public" static="no">
+        <name>audio_context_subscribe_transcript</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3428" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___audio_1gac7b140e26cb87a55a850829f3891b7e1" prot="public" static="no">
+        <name>audio_context_unsubscribe</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3430" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3430" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

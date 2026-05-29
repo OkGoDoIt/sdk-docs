@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___watch_info" kind="group">
     <compoundname>WatchInfo</compoundname>
     <title>WatchInfo</title>
@@ -296,29 +296,92 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ac042421a0b183eb293375ee43950b129" prot="public">
-          <name>WATCH_INFO_COLOR_COREDEVICES_C2D_BLACK</name>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178af7e7e6143e094ad6de7e25222370bb2d" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_P2D_BLACK</name>
           <initializer>= 34</initializer>
           <briefdescription>
-<para>CoreDevices C2D, Black. </para>
+<para>CoreDevices P2D, Black. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ab82589073c1639443f9b6fd9063e312b" prot="public">
-          <name>WATCH_INFO_COLOR_COREDEVICES_C2D_WHITE</name>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a4d5f6fd64c2ebb0e7be147ba5b26de88" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_P2D_WHITE</name>
           <initializer>= 35</initializer>
           <briefdescription>
-<para>CoreDevices C2D, White. </para>
+<para>CoreDevices P2D, White. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a9410484072947315171cf06c9c9c9714" prot="public">
-          <name>WATCH_INFO_COLOR_COREDEVICES_CT2_BLACK</name>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a037096900d348539734539993c782114" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PT2_BLACK_GREY</name>
           <initializer>= 36</initializer>
           <briefdescription>
-<para>CoreDevices CT2, Black. </para>
+<para>CoreDevices PT2, Black/Grey. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a26c184bf705f91c809f390239e4b6cf5" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PT2_BLACK_RED</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+<para>CoreDevices PT2, Black/Red. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178aecd68964bd7be497807f4015f7ae5c70" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PT2_SILVER_BLUE</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+<para>CoreDevices PT2, Silver/Blue. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ad4e0e042537a070caa9017ee08985d8b" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PT2_SILVER_GREY</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+<para>CoreDevices PT2, Silver/Grey. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a7127240eda8cbd79e0fa1520e5c283bf" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PR2_BLACK_20</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+<para>CoreDevices PR2, Black (20mm). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a98f234bd142ae95c5cd9264622075588" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PR2_SILVER_20</name>
+          <initializer>= 41</initializer>
+          <briefdescription>
+<para>CoreDevices PR2, Silver (20mm). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ae1d159368d8bcc352dbffe17c3532790" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PR2_GOLD_14</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+<para>CoreDevices PR2, Gold (14mm). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a60ecd83292048e14576e97dd7c17d5fc" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PR2_SILVER_14</name>
+          <initializer>= 43</initializer>
+          <briefdescription>
+<para>CoreDevices PR2, Silver (14mm). </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -337,7 +400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="222" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="222" bodyend="269"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="223" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="223" bodyend="279"/>
       </memberdef>
       <memberdef kind="enum" id="group___watch_info_1ga3a59b572466639de09bb54e5169d8e6f" prot="public" static="no" strong="no">
         <type></type>
@@ -422,18 +485,26 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa6961106db4ba8819766e0938b2b3a9fc" prot="public">
-          <name>WATCH_INFO_MODEL_COREDEVICES_C2D</name>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fabe48f5a3e73dbe6757e1f4608f33a6e2" prot="public">
+          <name>WATCH_INFO_MODEL_COREDEVICES_P2D</name>
           <briefdescription>
-<para>CoreDevices C2D (Core 2 Duo) </para>
+<para>CoreDevices P2D (Pebble 2 Duo). </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6faa2a3fed991d7a953ef02c2f2163f9e8c" prot="public">
-          <name>WATCH_INFO_MODEL_COREDEVICES_CT2</name>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa6697915e67fdba051d4944e3d000265c" prot="public">
+          <name>WATCH_INFO_MODEL_COREDEVICES_PT2</name>
           <briefdescription>
-<para>CoreDevices CT2 (Core Time 2) </para>
+<para>CoreDevices PT2 (Pebble Time 2). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa9ebd62acdd59e2526e0d20f92b890a72" prot="public">
+          <name>WATCH_INFO_MODEL_COREDEVICES_PR2</name>
+          <briefdescription>
+<para>CoreDevices PR2 (Pebble Round 2). </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -452,7 +523,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="204" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="204" bodyend="219"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="204" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="204" bodyend="220"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -470,7 +541,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="288" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="288" declcolumn="16"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="298" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="298" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group___watch_info_1gaf99195f1204c3c6b646b6f1ccbd561bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_watch_info_version" kindref="compound">WatchInfoVersion</ref></type>
@@ -490,7 +561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="286" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="286" declcolumn="18"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="296" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="296" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___watch_info_1gaae6bd337ed913660097b24fcf4ff8265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___watch_info_1ga3a59b572466639de09bb54e5169d8e6f" kindref="member">WatchInfoModel</ref></type>
@@ -510,7 +581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="282" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="282" declcolumn="16"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="292" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="292" declcolumn="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

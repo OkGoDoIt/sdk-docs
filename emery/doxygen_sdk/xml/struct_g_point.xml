@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_g_point" kind="struct" language="C++" prot="public">
+    <compoundname>GPoint</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_point_1a1f1a9ce775dde3448a265dc36b2024f4" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GPoint::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>GPoint::x</qualifiedname>
+        <briefdescription>
+<para>The x-coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3743" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_point_1a94afc39fa39df567b9e78702d1f07b3e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GPoint::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>GPoint::y</qualifiedname>
+        <briefdescription>
+<para>The y-coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3745" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3745" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a point in a 2-dimensional coordinate system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Conventionally, the origin of Pebble&apos;s 2D coordinate system is in the upper, lefthand corner its x-axis extends to the right and its y-axis extends to the bottom of the screen. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="3741" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3741" bodyend="3746"/>
+    <listofallmembers>
+      <member refid="struct_g_point_1a1f1a9ce775dde3448a265dc36b2024f4" prot="public" virt="non-virtual"><scope>GPoint</scope><name>x</name></member>
+      <member refid="struct_g_point_1a94afc39fa39df567b9e78702d1f07b3e" prot="public" virt="non-virtual"><scope>GPoint</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

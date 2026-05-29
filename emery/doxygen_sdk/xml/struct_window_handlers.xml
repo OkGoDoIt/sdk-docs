@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_window_handlers" kind="struct" language="C++" prot="public">
+    <compoundname>WindowHandlers</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_window_handlers_1a708b2d8950fc8836f82ee2971f8bde29" prot="public" static="no" mutable="no">
+        <type><ref refid="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" kindref="member">WindowHandler</ref></type>
+        <definition>WindowHandler WindowHandlers::appear</definition>
+        <argsstring></argsstring>
+        <name>appear</name>
+        <qualifiedname>WindowHandlers::appear</qualifiedname>
+        <briefdescription>
+<para>Called when the window comes on the screen (again). E.g. when second-top-most window gets revealed (again) after popping the top-most window, but also when the window is pushed for the first time. This is a good moment to start timers related to the window, or reset the UI, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5728" column="17" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_window_handlers_1ab541e2792fb0aeec26cc90f1adcb4ed4" prot="public" static="no" mutable="no">
+        <type><ref refid="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" kindref="member">WindowHandler</ref></type>
+        <definition>WindowHandler WindowHandlers::disappear</definition>
+        <argsstring></argsstring>
+        <name>disappear</name>
+        <qualifiedname>WindowHandlers::disappear</qualifiedname>
+        <briefdescription>
+<para>Called when the window leaves the screen, e.g. when another window is pushed, or this window is popped. Good moment to stop timers related to the window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5733" column="17" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_window_handlers_1a10c44028ff8c146386626d764cf05112" prot="public" static="no" mutable="no">
+        <type><ref refid="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" kindref="member">WindowHandler</ref></type>
+        <definition>WindowHandler WindowHandlers::load</definition>
+        <argsstring></argsstring>
+        <name>load</name>
+        <qualifiedname>WindowHandlers::load</qualifiedname>
+        <briefdescription>
+<para>Called when the window is pushed to the screen when it&apos;s not loaded. This is a good moment to do the layout of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5722" column="17" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_window_handlers_1afeab97dcb674e7182b287d1565ec88b4" prot="public" static="no" mutable="no">
+        <type><ref refid="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" kindref="member">WindowHandler</ref></type>
+        <definition>WindowHandler WindowHandlers::unload</definition>
+        <argsstring></argsstring>
+        <name>unload</name>
+        <qualifiedname>WindowHandlers::unload</qualifiedname>
+        <briefdescription>
+<para>Called when the window is deinited, but could be used in the future to free resources bound to windows that are not on screen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5737" column="17" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5737" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_window_handlers" kindref="compound">WindowHandlers</ref> These handlers are called by the <ref refid="group___window_stack" kindref="compound">Window Stack</ref> as windows get pushed on / popped. All these handlers use <ref refid="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" kindref="member">WindowHandler</ref> as their function signature. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___window_1gac59cf99a62ff53b5b4a25c6432438360" kindref="member">window_set_window_handlers()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___window_stack" kindref="compound">Window Stack</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="5719" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5719" bodyend="5738"/>
+    <listofallmembers>
+      <member refid="struct_window_handlers_1a708b2d8950fc8836f82ee2971f8bde29" prot="public" virt="non-virtual"><scope>WindowHandlers</scope><name>appear</name></member>
+      <member refid="struct_window_handlers_1ab541e2792fb0aeec26cc90f1adcb4ed4" prot="public" virt="non-virtual"><scope>WindowHandlers</scope><name>disappear</name></member>
+      <member refid="struct_window_handlers_1a10c44028ff8c146386626d764cf05112" prot="public" virt="non-virtual"><scope>WindowHandlers</scope><name>load</name></member>
+      <member refid="struct_window_handlers_1afeab97dcb674e7182b287d1565ec88b4" prot="public" virt="non-virtual"><scope>WindowHandlers</scope><name>unload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

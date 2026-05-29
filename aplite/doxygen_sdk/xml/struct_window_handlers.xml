@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_window_handlers" kind="struct" language="C++" prot="public">
     <compoundname>WindowHandlers</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5346" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5346" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5482" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5482" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_window_handlers_1ab541e2792fb0aeec26cc90f1adcb4ed4" prot="public" static="no" mutable="no">
         <type><ref refid="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" kindref="member">WindowHandler</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5351" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5351" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5487" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5487" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_window_handlers_1a10c44028ff8c146386626d764cf05112" prot="public" static="no" mutable="no">
         <type><ref refid="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" kindref="member">WindowHandler</ref></type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5340" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5340" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5476" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5476" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_window_handlers_1afeab97dcb674e7182b287d1565ec88b4" prot="public" static="no" mutable="no">
         <type><ref refid="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" kindref="member">WindowHandler</ref></type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5355" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5355" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5491" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5491" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -75,7 +75,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="5337" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5337" bodyend="5356"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="5473" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5473" bodyend="5492"/>
     <listofallmembers>
       <member refid="struct_window_handlers_1a708b2d8950fc8836f82ee2971f8bde29" prot="public" virt="non-virtual"><scope>WindowHandlers</scope><name>appear</name></member>
       <member refid="struct_window_handlers_1ab541e2792fb0aeec26cc90f1adcb4ed4" prot="public" virt="non-virtual"><scope>WindowHandlers</scope><name>disappear</name></member>

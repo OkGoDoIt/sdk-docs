@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___speaker" kind="group">
+    <compoundname>Speaker</compoundname>
+    <title>Speaker</title>
+    <innerclass refid="struct_speaker_note" prot="public">SpeakerNote</innerclass>
+    <innerclass refid="struct_speaker_sample" prot="public">SpeakerSample</innerclass>
+    <innerclass refid="struct_speaker_track" prot="public">SpeakerTrack</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___speaker_1ga78ed2e1da9755cc3a55c770d079ab84d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpeakerFinishReason</name>
+        <enumvalue id="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dae9d089591716032eb958ac7190e35c9a" prot="public">
+          <name>SpeakerFinishReasonDone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Playback completed naturally. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84da7d66638f7870dc333b8d6c5a11a471a9" prot="public">
+          <name>SpeakerFinishReasonStopped</name>
+          <briefdescription>
+<para>Playback was stopped by the app. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dad97fb5517430a15be8638995773e6ad4" prot="public">
+          <name>SpeakerFinishReasonPreempted</name>
+          <briefdescription>
+<para>Preempted by higher priority source. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dadc6de5727cb44ad1733ba694303488a5" prot="public">
+          <name>SpeakerFinishReasonError</name>
+          <briefdescription>
+<para>An error occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Reason reported when speaker playback ends. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8601" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8601" bodyend="8606"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___speaker_1gaf647901e7f8ebfaa0f41f433cec0b1cf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpeakerPcmFormat</name>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa722061d71f152a7c015bcecd7c8ef515" prot="public">
+          <name>SpeakerPcmFormat_8kHz_8bit</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>8kHz 8-bit signed (1 byte/sample) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfab9b116ba8c142eb89365f47fd5ea0f2f" prot="public">
+          <name>SpeakerPcmFormat_16kHz_8bit</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>16kHz 8-bit signed (1 byte/sample) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa13e49d4bb80e2470c0c6bb4a09236e4b" prot="public">
+          <name>SpeakerPcmFormat_8kHz_16bit</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>8kHz 16-bit signed little-endian (2 bytes/sample) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfaf815a281cbff1329b5207f64d8757ff6" prot="public">
+          <name>SpeakerPcmFormat_16kHz_16bit</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>16kHz 16-bit signed little-endian (2 bytes/sample) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa7b5d8d71d49ec5d2f386e9d9a79dda8c" prot="public">
+          <name>SpeakerPcmFormatCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>PCM audio format for speaker streaming. Bit layout: bit0 = sample rate (0=8kHz, 1=16kHz), bit1 = bit depth (0=8-bit, 1=16-bit). All formats are mono signed PCM (8-bit samples are signed [-128,127], not unsigned). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8585" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8585" bodyend="8591"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___speaker_1ga2221221a7c5108e31588b3dfe54475f6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpeakerStatus</name>
+        <enumvalue id="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6a6ad97282e2f90e73fd22cff0e89f3bc8" prot="public">
+          <name>SpeakerStatusIdle</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6ad2cb9207cbd46ab7fd92fc1688ed65de" prot="public">
+          <name>SpeakerStatusPlaying</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6a6a342d24566c1b3444ef3797461ad2b6" prot="public">
+          <name>SpeakerStatusDraining</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Speaker status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8594" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8594" bodyend="8598"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___speaker_1ga2014113689236c9c6faa6edd3717063b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpeakerWaveform</name>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063baa29192771443600c640c17f1bac71d8a" prot="public">
+          <name>SpeakerWaveformSine</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063bab85a8d25840269528a963138a8ca95f4" prot="public">
+          <name>SpeakerWaveformSquare</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063ba27960bafe539dd39f6e0e2a40486bf80" prot="public">
+          <name>SpeakerWaveformTriangle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063baff0bafac9cf416c6a686a7cc6d8e1cf7" prot="public">
+          <name>SpeakerWaveformSawtooth</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063bafd0d5feed18dec91914b0f8a97e27a06" prot="public">
+          <name>SpeakerWaveformCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8561" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8561" bodyend="8567"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___speaker_1ga281d71da9d5fc1d38b91b82ddb3cae01" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SpeakerFinishedCallback) (SpeakerFinishReason reason, void *ctx)</definition>
+        <argsstring>)(SpeakerFinishReason reason, void *ctx)</argsstring>
+        <name>SpeakerFinishedCallback</name>
+        <briefdescription>
+<para>Callback invoked when playback finishes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Why playback ended </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8611" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8611" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___speaker_1gabc16810c21db29106db3c5182407a562" prot="public" static="no">
+        <name>speaker_get_status</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8657" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1gabf2c486ab7fa7baff921a8514a14b5d0" prot="public" static="no">
+        <name>speaker_is_muted</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8661" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1ga0335eaeb2608360f2a8069925f20f53b" prot="public" static="no">
+        <name>speaker_play_notes</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8641" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1ga45dad2f4d4c5bcd9fa28f339432b1673" prot="public" static="no">
+        <name>speaker_play_tone</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8645" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1gad07160958e4924320f45b005a8d82445" prot="public" static="no">
+        <name>speaker_play_tracks</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8643" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1ga4806734ad9f00a28a5934be5e8ab7e47" prot="public" static="no">
+        <name>speaker_set_finish_callback</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8659" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1ga05fa19a52c83b499a607330948b8a2f7" prot="public" static="no">
+        <name>speaker_set_volume</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8655" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1ga190be47d7fbbbfed3f5e763697022171" prot="public" static="no">
+        <name>speaker_stop</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8653" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1ga2f7cdcb5666f64bb63c5d2afc729a09a" prot="public" static="no">
+        <name>speaker_stream_close</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8651" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1ga9356f00dcacb0256219a603a2fd6024e" prot="public" static="no">
+        <name>speaker_stream_open</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8647" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___speaker_1ga9e6916ccf8c5c43280c8f51821ad5e7c" prot="public" static="no">
+        <name>speaker_stream_write</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8649" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8649" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Controlling the speaker </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The Speaker API provides calls that let you play sounds through the watch&apos;s speaker. You can play simple note sequences (melodies), single tones, or stream raw PCM audio.</para>
+<para>Note sequences are compact representations of melodies using MIDI-like note definitions, supporting 4 basic waveforms: sine, square, triangle, and sawtooth.</para>
+<para>Raw PCM streaming allows apps to generate arbitrary audio in configurable formats. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

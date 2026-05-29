@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_content_indicator_config_8colors" kind="struct" language="C++" prot="public">
     <compoundname>ContentIndicatorConfig.colors</compoundname>
     <sectiondef kind="public-attrib">
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6804" column="12"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6930" column="12"/>
       </memberdef>
       <memberdef kind="variable" id="struct_content_indicator_config_8colors_1a0fa009a743944a032eb54727acec48d6" prot="public" static="no" mutable="no">
         <type>GColor</type>
@@ -31,14 +31,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6803" column="12"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6929" column="12"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="6802" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6802" bodyend="6805"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="6928" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6928" bodyend="6931"/>
     <listofallmembers>
       <member refid="struct_content_indicator_config_8colors_1ad229bbf31eaeebc7c88897732d8b932d" prot="public" virt="non-virtual"><scope>ContentIndicatorConfig.colors</scope><name>background</name></member>
       <member refid="struct_content_indicator_config_8colors_1a0fa009a743944a032eb54727acec48d6" prot="public" virt="non-virtual"><scope>ContentIndicatorConfig.colors</scope><name>foreground</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___accelerometer_service" kind="group">
     <compoundname>AccelerometerService</compoundname>
     <title>AccelerometerService</title>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="660" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="660" bodyend="670"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="692" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="692" bodyend="702"/>
       </memberdef>
       <memberdef kind="enum" id="group___accelerometer_service_1ga8aab5de9ee899fea12c4c957c2178fae" prot="public" static="no" strong="no">
         <type></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="689" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="689" bodyend="698"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="721" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="721" bodyend="730"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="675" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="675" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="707" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="707" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___accelerometer_service_1ga3b40cd58b09e56b0971ee081a05bc483" prot="public" static="no">
         <type>void(*</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="681" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="681" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="713" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="713" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___accelerometer_service_1gac8705d67fcf509c56a4aea5c8500e39d" prot="public" static="no">
         <type>void(*</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="686" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="686" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="718" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="718" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="720" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="720" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="752" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="752" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___accelerometer_service_1ga1a501e991a1ad6a21d379c4fef4b1304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -258,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="724" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="724" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="756" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="756" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___accelerometer_service_1ga1c540bcac7ed01ae54e81b9f4a95a00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -300,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="740" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="740" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="772" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="772" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___accelerometer_service_1ga37034e29e7a951e647de1e3c5deb34b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -334,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="705" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="705" declcolumn="5"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="737" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="737" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___accelerometer_service_1ga741c3716bd24f2b4b033bfee324bd9d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -362,7 +362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="713" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="713" declcolumn="5"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="745" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="745" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___accelerometer_service_1gace3f4489893a103a08f81a7c3b8be765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -390,7 +390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="709" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="709" declcolumn="5"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="741" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="741" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___accelerometer_service_1ga2e90659ec79d5c57a3a28b0127595f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -418,7 +418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="729" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="729" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="761" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="761" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___accelerometer_service_1ga6e5529eb344958546eaec00dbcbd5cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -435,13 +435,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="733" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="733" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="765" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="765" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Using the Pebble accelerometer </para>
     </briefdescription>
     <detaileddescription>
-<para>Using the Pebble accelerometer</para>
 <para>The AccelerometerService enables the Pebble accelerometer to detect taps, perform measures at a given frequency, and transmit samples in batches to save CPU time and processing.</para>
 <para>For available code samples, see the <ulink url="https://github.com/pebble-examples/feature-accel-discs/">feature-accel-discs</ulink> example app. </para>
     </detaileddescription>

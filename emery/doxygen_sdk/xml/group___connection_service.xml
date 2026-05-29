@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___connection_service" kind="group">
+    <compoundname>ConnectionService</compoundname>
+    <title>ConnectionService</title>
+    <innerclass refid="struct_connection_handlers" prot="public">ConnectionHandlers</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___connection_service_1gab05ff58b641cc7f9d589cde8fe0baadb" prot="public" static="no">
+        <type>ConnectionHandler</type>
+        <definition>typedef ConnectionHandler BluetoothConnectionHandler</definition>
+        <argsstring></argsstring>
+        <name>BluetoothConnectionHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Backwards compatibility typedef for ConnectionHandler. New code should use ConnectionHandler directly. This will be removed in a future version of the Pebble SDK. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="495" column="27" bodyfile="build/sdk/emery/include/pebble.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___connection_service_1ga98a9415a52be48fd68b0b423ea911d9b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* ConnectionHandler) (bool connected)</definition>
+        <argsstring>)(bool connected)</argsstring>
+        <name>ConnectionHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="461" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___connection_service_1ga31ae0c22e1cbf2af34b39b49e98c777a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bluetooth_connection_service_peek</definition>
+        <argsstring>(void)</argsstring>
+        <name>bluetooth_connection_service_peek</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Backward compatibility function for connection_service_peek_pebble_app_connection. New code should use connection_service_peek_pebble_app_connection directly. This will be removed in a future version of the Pebble SDK </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="501" column="6" declfile="build/sdk/emery/include/pebble.h" declline="501" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___connection_service_1ga8aeb8a0512a53c1eec9b7a1547cd8ae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bluetooth_connection_service_subscribe</definition>
+        <argsstring>(ConnectionHandler handler)</argsstring>
+        <name>bluetooth_connection_service_subscribe</name>
+        <param>
+          <type>ConnectionHandler</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000003"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Backward compatibility function for connection_service_subscribe. New code should use connection_service_subscribe directly. This will be removed in a future version of the Pebble SDK </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="507" column="6" declfile="build/sdk/emery/include/pebble.h" declline="507" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___connection_service_1gae3a446e0d93d0d71f4265d5ff9352c0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bluetooth_connection_service_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>bluetooth_connection_service_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Backward compatibility function for connection_service_unsubscribe. New code should use connection_service_unsubscribe directly. This will be removed in a future version of the Pebble SDK </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="513" column="6" declfile="build/sdk/emery/include/pebble.h" declline="513" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___connection_service_1ga422fcecd18a0f2c76b84d50259f2c4ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool connection_service_peek_pebble_app_connection</definition>
+        <argsstring>(void)</argsstring>
+        <name>connection_service_peek_pebble_app_connection</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Query the bluetooth connection service for the current Pebble app connection status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the Pebble app is connected, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="474" column="6" declfile="build/sdk/emery/include/pebble.h" declline="474" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___connection_service_1gaa490f72b81220c84fc05aefa687949d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool connection_service_peek_pebblekit_connection</definition>
+        <argsstring>(void)</argsstring>
+        <name>connection_service_peek_pebblekit_connection</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Query the bluetooth connection service for the current PebbleKit connection status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if a PebbleKit companion app is connected, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="478" column="6" declfile="build/sdk/emery/include/pebble.h" declline="478" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___connection_service_1ga3efcf59e77df0a3e476224d66201dd37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void connection_service_subscribe</definition>
+        <argsstring>(ConnectionHandlers conn_handlers)</argsstring>
+        <name>connection_service_subscribe</name>
+        <param>
+          <type>ConnectionHandlers</type>
+          <declname>conn_handlers</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to the connection event service. Once subscribed, the appropriate handler gets called based on the type of connection event and user provided handlers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ConnectionHandlers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A struct populated with the handlers to be called when the specified connection event occurs. If a given handler is NULL, no function will be called. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="486" column="6" declfile="build/sdk/emery/include/pebble.h" declline="486" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___connection_service_1ga652adc6f10699d9654bd12f34d91ad89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void connection_service_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>connection_service_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from the bluetooth event service. Once unsubscribed, the previously registered handler will no longer be called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="490" column="6" declfile="build/sdk/emery/include/pebble.h" declline="490" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Determine what the Pebble watch is connected to </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The ConnectionService allows your app to learn about the apps the Pebble watch is connected to. You can ask the system for this information at a given time or you can register to receive events every time connection or disconnection events occur.</para>
+<para>It allows you to determine whether the watch is connected to the Pebble mobile app by subscribing to the pebble_app_connection_handler or by calling the connection_service_peek_pebble_app_connection function. Note that when the Pebble app is connected, you can assume PebbleKit JS apps will also be running correctly.</para>
+<para>The service also allows you to determine if the Pebble watch can establish a connection to a PebbleKit companion app by subscribing to the pebblekit_connection_handler or by calling the connection_service_peek_pebblekit_connection function. Today, due to architectural differences between iOS and Android, this will return true for Android anytime a connection with the Pebble mobile app is established (since PebbleKit messages are routed through the Android app). For iOS, this will return true when any PebbleKit companion app has established a connection with the Pebble watch (since companion app messages are routed directly to the watch) </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

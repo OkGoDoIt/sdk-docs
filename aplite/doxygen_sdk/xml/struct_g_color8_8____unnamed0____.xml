@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_g_color8_8____unnamed0____" kind="struct" language="C++" prot="public">
     <compoundname>GColor8.__unnamed0__</compoundname>
     <sectiondef kind="public-attrib">
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3318" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="3458" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_color8_8____unnamed0_____1a92eb5ffee6ae2fec3ad71c777531578f" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3315" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="3455" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_color8_8____unnamed0_____1ab2f5ff47436671b6e533d8dc3614845d" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3316" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="3456" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_color8_8____unnamed0_____1a4b43b0aee35624cd95b910189b3dc231" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -65,14 +65,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3317" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="3457" column="13"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="3314" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3314" bodyend="3319"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="3454" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3454" bodyend="3459"/>
     <listofallmembers>
       <member refid="struct_g_color8_8____unnamed0_____1a0cc175b9c0f1b6a831c399e269772661" prot="public" virt="non-virtual"><scope>GColor8.__unnamed0__</scope><name>a</name></member>
       <member refid="struct_g_color8_8____unnamed0_____1a92eb5ffee6ae2fec3ad71c777531578f" prot="public" virt="non-virtual"><scope>GColor8.__unnamed0__</scope><name>b</name></member>

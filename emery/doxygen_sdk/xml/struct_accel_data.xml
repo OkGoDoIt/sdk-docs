@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_accel_data" kind="struct" language="C++" prot="public">
+    <compoundname>AccelData</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_accel_data_1a8e60f95e0d893d078f9906b51cbf9cc7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AccelData::did_vibrate</definition>
+        <argsstring></argsstring>
+        <name>did_vibrate</name>
+        <qualifiedname>AccelData::did_vibrate</qualifiedname>
+        <briefdescription>
+<para>true if the watch vibrated when this sample was collected </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="684" column="8" bodyfile="build/sdk/emery/include/pebble.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_data_1acb871e01f60e4aec0a29eafc108102d9" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t AccelData::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>AccelData::timestamp</qualifiedname>
+        <briefdescription>
+<para>timestamp, in milliseconds </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="687" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_data_1abe5df85a74073f78086968cbbe82b32f" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AccelData::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>AccelData::x</qualifiedname>
+        <briefdescription>
+<para>acceleration along the x axis </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="677" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_data_1a58008ae111afcb60b47419541c48aa91" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AccelData::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>AccelData::y</qualifiedname>
+        <briefdescription>
+<para>acceleration along the y axis </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="679" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_data_1a4c5562ab5758dc0374b8231f7b54d607" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AccelData::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>AccelData::z</qualifiedname>
+        <briefdescription>
+<para>acceleration along the z axis </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="681" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A single accelerometer sample for all three axes including timestamp and vibration rumble status. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="675" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="675" bodyend="688"/>
+    <listofallmembers>
+      <member refid="struct_accel_data_1a8e60f95e0d893d078f9906b51cbf9cc7" prot="public" virt="non-virtual"><scope>AccelData</scope><name>did_vibrate</name></member>
+      <member refid="struct_accel_data_1acb871e01f60e4aec0a29eafc108102d9" prot="public" virt="non-virtual"><scope>AccelData</scope><name>timestamp</name></member>
+      <member refid="struct_accel_data_1abe5df85a74073f78086968cbbe82b32f" prot="public" virt="non-virtual"><scope>AccelData</scope><name>x</name></member>
+      <member refid="struct_accel_data_1a58008ae111afcb60b47419541c48aa91" prot="public" virt="non-virtual"><scope>AccelData</scope><name>y</name></member>
+      <member refid="struct_accel_data_1a4c5562ab5758dc0374b8231f7b54d607" prot="public" virt="non-virtual"><scope>AccelData</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

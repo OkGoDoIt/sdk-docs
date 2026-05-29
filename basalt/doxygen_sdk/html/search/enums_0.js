@@ -10,5 +10,8 @@ var searchData=
   ['applaunchreason_7',['AppLaunchReason',['../group___launch_reason.html#ga3846fa158615c2ee77c5c708cb4f340a',1,'pebble.h']]],
   ['apploglevel_8',['AppLogLevel',['../group___logging.html#gab6022249fcd453283cdf062c39b2009a',1,'pebble.h']]],
   ['appmessageresult_9',['AppMessageResult',['../group___app_message.html#ga695a78c926b20edbb14d7faf5a78c29e',1,'pebble.h']]],
-  ['appworkerresult_10',['AppWorkerResult',['../group___app_worker.html#ga9732697a0e5e5718dfb265e061ec6a5d',1,'pebble.h']]]
+  ['appworkerresult_10',['AppWorkerResult',['../group___app_worker.html#ga9732697a0e5e5718dfb265e061ec6a5d',1,'pebble.h']]],
+  ['audiocontextavailability_11',['AudioContextAvailability',['../group___audio.html#ga8089069793b83dbee70b61b885099409',1,'pebble.h']]],
+  ['audiocontextpermission_12',['AudioContextPermission',['../group___audio.html#ga102d954bf3a9aac9c11e99d504a7014b',1,'pebble.h']]],
+  ['audiocontexttriggersource_13',['AudioContextTriggerSource',['../group___audio.html#ga1059c166058e46717fe913bc9576c0a5',1,'pebble.h']]]
 ];

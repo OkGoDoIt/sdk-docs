@@ -120,8 +120,8 @@ Declare only the narrowest capability your app needs:
 | `audio_history` | Read bounded transcript history. |
 | `audio_raw` | Receive raw phone-side audio chunks in PebbleKit JS. |
 
-Most apps should request transcript access first. Add the `audio_raw`
-capability only when your phone-side code truly needs audio samples.
+Most apps should request transcript access first. Add the `audio_raw` capability
+only when your phone-side code truly needs audio samples.
 
 See {% guide_link events-and-services/audio-context "Audio Context" %} for the
 full model and runtime-specific guides.

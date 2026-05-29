@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___path_drawing" kind="group">
+    <compoundname>PathDrawing</compoundname>
+    <title>Drawing Paths</title>
+    <innerclass refid="struct_g_path" prot="public">GPath</innerclass>
+    <innerclass refid="struct_g_path_info" prot="public">GPathInfo</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___path_drawing_1gadaa959605c61bbe9384b63c8526379a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_path" kindref="compound">GPath</ref> *</type>
+        <definition>GPath * gpath_create</definition>
+        <argsstring>(const GPathInfo *init)</argsstring>
+        <name>gpath_create</name>
+        <param>
+          <type>const <ref refid="struct_g_path_info" kindref="compound">GPathInfo</ref> *</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="struct_g_path" kindref="compound">GPath</ref> on the heap based on a series of points described by a <ref refid="struct_g_path_info" kindref="compound">GPathInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Values after initialization:<itemizedlist>
+<listitem><para><computeroutput>num_points</computeroutput> and <computeroutput>points</computeroutput> pointer: copied from the <ref refid="struct_g_path_info" kindref="compound">GPathInfo</ref>.</para>
+</listitem><listitem><para><computeroutput>rotation</computeroutput>: 0</para>
+</listitem><listitem><para><computeroutput>offset</computeroutput>: (0, 0) <simplesect kind="return"><para>A pointer to the <ref refid="struct_g_path" kindref="compound">GPath</ref>. <computeroutput>NULL</computeroutput> if the <ref refid="struct_g_path" kindref="compound">GPath</ref> could not be created </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4978" column="7" declfile="build/sdk/emery/include/pebble.h" declline="4978" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___path_drawing_1gafee45d9c181217758e27bdaa577d98e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpath_destroy</definition>
+        <argsstring>(GPath *gpath)</argsstring>
+        <name>gpath_destroy</name>
+        <param>
+          <type><ref refid="struct_g_path" kindref="compound">GPath</ref> *</type>
+          <declname>gpath</declname>
+        </param>
+        <briefdescription>
+<para>Free a dynamically allocated gpath created with <ref refid="group___path_drawing_1gadaa959605c61bbe9384b63c8526379a0" kindref="member">gpath_create()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4981" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4981" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___path_drawing_1ga4aa5b80f8f98d2cb7e6701b39bb18e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpath_draw_filled</definition>
+        <argsstring>(GContext *ctx, GPath *path)</argsstring>
+        <name>gpath_draw_filled</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_path" kindref="compound">GPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Draws the fill of a path into a graphics context, using the current fill color, relative to the drawing area as set up by the layering system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context to draw into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to fill </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics_context_1ga891b4629c483386546a9fe20d36bbfa9" kindref="member">graphics_context_set_fill_color()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4988" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4988" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___path_drawing_1ga33e423daf4e125ae273111871159eead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpath_draw_outline</definition>
+        <argsstring>(GContext *ctx, GPath *path)</argsstring>
+        <name>gpath_draw_outline</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_path" kindref="compound">GPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Draws the outline of a path into a graphics context, using the current stroke color and width, relative to the drawing area as set up by the layering system. The first and last points in the path do have a line between them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context to draw into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to draw </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics_context_1ga22a22f399842bcaef72842d64e0195fd" kindref="member">graphics_context_set_stroke_color()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___path_drawing_1gaa09ae35d22e854a2b8408d2f1ee96e93" kindref="member">gpath_draw_outline_open()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4997" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4997" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___path_drawing_1gaa09ae35d22e854a2b8408d2f1ee96e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpath_draw_outline_open</definition>
+        <argsstring>(GContext *ctx, GPath *path)</argsstring>
+        <name>gpath_draw_outline_open</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_path" kindref="compound">GPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Draws an open outline of a path into a graphics context, using the current stroke color and width, relative to the drawing area as set up by the layering system. The first and last points in the path do not have a line between them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context to draw into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to draw </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics_context_1ga22a22f399842bcaef72842d64e0195fd" kindref="member">graphics_context_set_stroke_color()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___path_drawing_1ga33e423daf4e125ae273111871159eead" kindref="member">gpath_draw_outline()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5025" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5025" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___path_drawing_1ga1ba79344b9a34432a44af09bed8b00fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpath_move_to</definition>
+        <argsstring>(GPath *path, GPoint point)</argsstring>
+        <name>gpath_move_to</name>
+        <param>
+          <type><ref refid="struct_g_path" kindref="compound">GPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Sets the absolute offset of the path. The current translation will be replaced by the specified offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path onto which to set the translation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point which is used as the vector for the translation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Setting a translation does not affect the points in the path directly. The translation is applied on-the-fly during drawing, either using <ref refid="group___path_drawing_1ga4aa5b80f8f98d2cb7e6701b39bb18e32" kindref="member">gpath_draw_filled()</ref> or <ref refid="group___path_drawing_1ga33e423daf4e125ae273111871159eead" kindref="member">gpath_draw_outline()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5016" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5016" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___path_drawing_1ga152abe6dd44cf1d69709603bc41eb0e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpath_rotate_to</definition>
+        <argsstring>(GPath *path, int32_t angle)</argsstring>
+        <name>gpath_rotate_to</name>
+        <param>
+          <type><ref refid="struct_g_path" kindref="compound">GPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Sets the absolute rotation of the path. The current rotation will be replaced by the specified angle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path onto which to set the rotation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute angle of the rotation. The angle is represented in the same way that is used with <ref refid="group___math_1gad373193b20c68af1004a9dc2c35c2e48" kindref="member">sin_lookup()</ref>. See <ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref> for more information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Setting a rotation does not affect the points in the path directly. The rotation is applied on-the-fly during drawing, either using <ref refid="group___path_drawing_1ga4aa5b80f8f98d2cb7e6701b39bb18e32" kindref="member">gpath_draw_filled()</ref> or <ref refid="group___path_drawing_1ga33e423daf4e125ae273111871159eead" kindref="member">gpath_draw_outline()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5007" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5007" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Functions to draw polygons into a graphics context </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Code example: <programlisting filename=".c"><codeline><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_g_path" kindref="compound">GPath</ref><sp/>*s_my_path_ptr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_g_path_info" kindref="compound">GPathInfo</ref><sp/>BOLT_PATH_INFO<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.num_points<sp/>=<sp/>6,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.points<sp/>=<sp/>(<ref refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" kindref="member">GPoint</ref><sp/>[])<sp/>{{21,<sp/>0},<sp/>{14,<sp/>26},<sp/>{28,<sp/>26},<sp/>{7,<sp/>60},<sp/>{14,<sp/>34},<sp/>{0,<sp/>34}}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>.update_proc<sp/>of<sp/>my_layer:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>my_layer_update_proc(Layer<sp/>*my_layer,<sp/>GContext*<sp/>ctx)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Fill<sp/>the<sp/>path:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___graphics_context_1ga891b4629c483386546a9fe20d36bbfa9" kindref="member">graphics_context_set_fill_color</ref>(ctx,<sp/><ref refid="group___color_definitions_1ga90fe70aef6e9a908811d1f4f72b44608" kindref="member">GColorWhite</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___path_drawing_1ga4aa5b80f8f98d2cb7e6701b39bb18e32" kindref="member">gpath_draw_filled</ref>(ctx,<sp/>s_my_path_ptr);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Stroke<sp/>the<sp/>path:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___graphics_context_1ga22a22f399842bcaef72842d64e0195fd" kindref="member">graphics_context_set_stroke_color</ref>(ctx,<sp/><ref refid="group___color_definitions_1ga03d3c53a6a31fe2d80def95b8c035e26" kindref="member">GColorBlack</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___path_drawing_1ga33e423daf4e125ae273111871159eead" kindref="member">gpath_draw_outline</ref>(ctx,<sp/>s_my_path_ptr);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setup_my_path(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>s_my_path_ptr<sp/>=<sp/><ref refid="group___path_drawing_1gadaa959605c61bbe9384b63c8526379a0" kindref="member">gpath_create</ref>(&amp;BOLT_PATH_INFO);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Rotate<sp/>15<sp/>degrees:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___path_drawing_1ga152abe6dd44cf1d69709603bc41eb0e3" kindref="member">gpath_rotate_to</ref>(s_my_path_ptr,<sp/><ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref><sp/>/<sp/>360<sp/>*<sp/>15);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Translate<sp/>by<sp/>(5,<sp/>5):</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___path_drawing_1ga1ba79344b9a34432a44af09bed8b00fd" kindref="member">gpath_move_to</ref>(s_my_path_ptr,<sp/><ref refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" kindref="member">GPoint</ref>(5,<sp/>5));</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>brevity,<sp/>the<sp/>setup<sp/>of<sp/>my_layer<sp/>is<sp/>not<sp/>written<sp/>out...</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

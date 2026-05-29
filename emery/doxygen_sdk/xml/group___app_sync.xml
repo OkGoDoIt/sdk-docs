@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___app_sync" kind="group">
+    <compoundname>AppSync</compoundname>
+    <title>AppSync</title>
+    <innerclass refid="struct_app_sync" prot="public">AppSync</innerclass>
+    <innerclass refid="union_app_sync_8____unnamed0____" prot="public">AppSync.__unnamed0__</innerclass>
+    <innerclass refid="struct_app_sync_8callback" prot="public">AppSync.callback</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___app_sync_1ga43e176e0a49cbf63f462cd3be60311cc" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppSyncErrorCallback) (DictionaryResult dict_error, AppMessageResult app_message_error, void *context)</definition>
+        <argsstring>)(DictionaryResult dict_error, AppMessageResult app_message_error, void *context)</argsstring>
+        <name>AppSyncErrorCallback</name>
+        <briefdescription>
+<para>Called whenever there was an error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dict_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary result error code, if the error was dictionary related. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>app_message_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The app_message result error code, if the error was app_message related. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application specific data, as set using <ref refid="group___app_sync_1ga329a8fa4a27bb8b15cee9ffcc4a026df" kindref="member">app_sync_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___app_sync_1ga329a8fa4a27bb8b15cee9ffcc4a026df" kindref="member">app_sync_init()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2598" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___app_sync_1gaea666eaaf02f4714acc592c280591782" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppSyncTupleChangedCallback) (const uint32_t key, const Tuple *new_tuple, const Tuple *old_tuple, void *context)</definition>
+        <argsstring>)(const uint32_t key, const Tuple *new_tuple, const Tuple *old_tuple, void *context)</argsstring>
+        <name>AppSyncTupleChangedCallback</name>
+        <briefdescription>
+<para>Called whenever a <ref refid="struct_tuple" kindref="compound">Tuple</ref> changes. This does not necessarily mean the value in the <ref refid="struct_tuple" kindref="compound">Tuple</ref> has changed. When the internal &quot;current&quot; dictionary gets updated, existing Tuples might get shuffled around in the backing buffer, even though the values stay the same. In this callback, the client code gets the chance to remove the old reference and start using the new one. In this callback, your application MUST clean up any references to the <computeroutput>old_tuple</computeroutput> of a PREVIOUS call to this callback (and replace it with the <computeroutput>new_tuple</computeroutput> that is passed in with the current call). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key for which the <ref refid="struct_tuple" kindref="compound">Tuple</ref> was changed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new tuple. The tuple points to the actual, updated &quot;current&quot; dictionary, as backed by the buffer internal to the AppSync struct. Therefore the <ref refid="struct_tuple" kindref="compound">Tuple</ref> can be used after the callback returns, until the AppSync is deinited. In case there was an error (e.g. storage shortage), this <computeroutput>new_tuple</computeroutput> can be <computeroutput>NULL_TUPLE</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>old_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The values that will be replaced with <computeroutput>new_tuple</computeroutput>. The key, value and type will be equal to the previous tuple in the old destination dictionary; however, the <computeroutput>old_tuple</computeroutput> points to a stack-allocated copy of the old data. This value will be <computeroutput>NULL_TUPLE</computeroutput> when the initial values are being set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application specific data, as set using <ref refid="group___app_sync_1ga329a8fa4a27bb8b15cee9ffcc4a026df" kindref="member">app_sync_init()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___app_sync_1ga329a8fa4a27bb8b15cee9ffcc4a026df" kindref="member">app_sync_init()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2587" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2587" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___app_sync_1ga87669e4513866da4328edd460a9417e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_sync_deinit</definition>
+        <argsstring>(struct AppSync *s)</argsstring>
+        <name>app_sync_deinit</name>
+        <param>
+          <type>struct AppSync *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Cleans up an AppSync system. It frees the buffer allocated by an <ref refid="group___app_sync_1ga329a8fa4a27bb8b15cee9ffcc4a026df" kindref="member">app_sync_init()</ref> call and deregisters itself from the <ref refid="group___app_message" kindref="compound">AppMessage</ref> subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AppSync context to deinit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2644" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2644" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_sync_1ga566bed1787fc8cfb9eed13ae3f127392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
+        <definition>const Tuple * app_sync_get</definition>
+        <argsstring>(const struct AppSync *s, const uint32_t key)</argsstring>
+        <name>app_sync_get</name>
+        <param>
+          <type>const struct AppSync *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds and gets a tuple in the &quot;current&quot; dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AppSync context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key for which to find a <ref refid="struct_tuple" kindref="compound">Tuple</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a found <ref refid="struct_tuple" kindref="compound">Tuple</ref>, or NULL if there was no <ref refid="struct_tuple" kindref="compound">Tuple</ref> with the specified key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2667" column="14" declfile="build/sdk/emery/include/pebble.h" declline="2667" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_sync_1ga329a8fa4a27bb8b15cee9ffcc4a026df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_sync_init</definition>
+        <argsstring>(struct AppSync *s, uint8_t *buffer, const uint16_t buffer_size, const Tuplet *const keys_and_initial_values, const uint8_t count, AppSyncTupleChangedCallback tuple_changed_callback, AppSyncErrorCallback error_callback, void *context)</argsstring>
+        <name>app_sync_init</name>
+        <param>
+          <type>struct AppSync *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> *const</type>
+          <declname>keys_and_initial_values</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type><ref refid="group___app_sync_1gaea666eaaf02f4714acc592c280591782" kindref="member">AppSyncTupleChangedCallback</ref></type>
+          <declname>tuple_changed_callback</declname>
+        </param>
+        <param>
+          <type><ref refid="group___app_sync_1ga43e176e0a49cbf63f462cd3be60311cc" kindref="member">AppSyncErrorCallback</ref></type>
+          <declname>error_callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Initialized an AppSync system with specific buffer size and initial keys and values. The <computeroutput>callback.value_changed</computeroutput> callback will be called <bold>asynchronously</bold> with the initial keys and values, as to avoid duplicating code to update your app&apos;s UI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AppSync context to initialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer that AppSync should use </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the backing storage of the &quot;current&quot; dictionary. Use <ref refid="group___dictionary_1gad31424a83643adbfd9e84c4bd37e4627" kindref="member">dict_calc_buffer_size_from_tuplets()</ref> to estimate the size you need. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys_and_initial_values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of Tuplets with the initial keys and values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of Tuplets in the <computeroutput>keys_and_initial_values</computeroutput> array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tuple_changed_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will handle changed key/value pairs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will handle errors </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to app specific data that will get passed into calls to the callbacks </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Only updates for the keys specified in this initial array will be accepted by AppSync, updates for other keys that might come in will just be ignored. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2635" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2635" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_sync_1gaa5f51f1d7914b3617fdee104d1488108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref></type>
+        <definition>AppMessageResult app_sync_set</definition>
+        <argsstring>(struct AppSync *s, const Tuplet *const keys_and_values_to_update, const uint8_t count)</argsstring>
+        <name>app_sync_set</name>
+        <param>
+          <type>struct AppSync *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> *const</type>
+          <declname>keys_and_values_to_update</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Updates key/value pairs using an array of Tuplets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The call will attempt to send the updated keys and values to the application on the other end. Only after the other end has acknowledged the update, the <computeroutput>.value_changed</computeroutput> callback will be called to confirm the update has completed and your application code can update its user interface. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AppSync context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keys_and_values_to_update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of Tuplets with the keys and values to update. The data in the Tuplets are copied during the call, so the array can be stack-allocated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of Tuplets in the <computeroutput>keys_and_values_to_update</computeroutput> array. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result code from the <ref refid="group___app_message" kindref="compound">AppMessage</ref> subsystem. Can be <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea12a6ea49b151222e76cf4b99b7c0c4cc" kindref="member">APP_MSG_OK</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaad6af2baa488efedd56b17f0ed1e8339" kindref="member">APP_MSG_BUSY</ref> or <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eadfb91bdd9c369cc2eb00e019b4cf3846" kindref="member">APP_MSG_INVALID_ARGS</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2659" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2659" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>UI synchronization layer for AppMessage </para>
+    </briefdescription>
+    <detaileddescription>
+<para>AppSync is a convenience layer that resides on top of <ref refid="group___app_message" kindref="compound">AppMessage</ref>, and serves as a UI synchronization layer for AppMessage. In so doing, AppSync makes it easier to drive the information displayed in the watchapp UI with messages sent by a phone app.</para>
+<para>AppSync maintains and updates a Dictionary, and provides your app with a callback (<ref refid="group___app_sync_1gaea666eaaf02f4714acc592c280591782" kindref="member">AppSyncTupleChangedCallback</ref>) routine that is called whenever the Dictionary changes and the app&apos;s UI is updated. Note that the app UI is not updated automatically. To update the UI, you need to implement the callback.</para>
+<para>Pebble OS provides support for data serialization utilities, like Dictionary, <ref refid="struct_tuple" kindref="compound">Tuple</ref> and <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> data structures and their accompanying functions. You use Tuplets to create a Dictionary with <ref refid="struct_tuple" kindref="compound">Tuple</ref> structures.</para>
+<para>AppSync manages the storage and bookkeeping chores of the current <ref refid="struct_tuple" kindref="compound">Tuple</ref> values. AppSync copies incoming AppMessage Tuples into this &quot;current&quot; Dictionary, so that the key/values remain available for the UI to use. For example, it is safe to use a C-string value provided by AppSync and use it directly in a <ref refid="group___text_layer_1ga19406f772604d595c5c1af7222992449" kindref="member">text_layer_set_text()</ref> call.</para>
+<para>Your app needs to supply the buffer that AppSync uses for the &quot;current&quot; Dictionary when initializing AppSync.</para>
+<para>Refer to the <ulink url="https://developer.getpebble.com/guides/pebble-apps/communications/appsync/">Synchronizing App UI</ulink> guide for a conceptual overview and code usage. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

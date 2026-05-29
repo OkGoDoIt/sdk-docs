@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___standard_time" kind="group">
     <compoundname>StandardTime</compoundname>
     <title>Time</title>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8420" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8420" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8828" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8828" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___standard_time_1ga4bc4ff58d4ac838a36ba939747e5833e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct <ref refid="structtm" kindref="compound">tm</ref> *</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8394" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="8394" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8802" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="8802" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___standard_time_1ga2d4076dc90ad030f7d4dad295a01357a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct <ref refid="structtm" kindref="compound">tm</ref> *</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8388" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="8388" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8796" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="8796" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___standard_time_1ga308ef252844d2144895207aa52e6a89f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
@@ -138,11 +138,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8400" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8400" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8808" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8808" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="group___standard_time_1ga03c7f6e1209ced1ebc8accd5fd9eaa3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int strftime</definition>
+      <memberdef kind="function" id="group___standard_time_1gac68767378c2e2128373675a6a36d12d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+        <definition>size_t strftime</definition>
         <argsstring>(char *s, size_t maxsize, const char *format, const struct tm *tm_p)</argsstring>
         <name>strftime</name>
         <param>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8381" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="8381" declcolumn="5"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8789" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8789" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___standard_time_1ga99ef1cb2c789827dd5db3886dccf9067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8407" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8407" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8815" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8815" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___standard_time_1gaa650308d93a4da6ead47ae68372f2be8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8431" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="8431" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8839" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="8839" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___standard_time_1gaad04b872745a08a1e531f6590194bd9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8435" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8435" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8843" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8843" declcolumn="8"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8351" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8351" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8759" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8759" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___standard_time_1gae0f73032b15f3188a50b86f793afb7ab" prot="public" static="no">
         <name>MINUTES_PER_DAY</name>
@@ -320,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8353" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8353" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8761" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8761" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___standard_time_1ga0927f1071797d21fde096dea6842e606" prot="public" static="no">
         <name>MINUTES_PER_HOUR</name>
@@ -331,7 +331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8347" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8347" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8755" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8755" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___standard_time_1ga427ffe4394306d962b8972b3bc952e1c" prot="public" static="no">
         <name>SECONDS_PER_DAY</name>
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8355" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8355" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8763" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8763" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___standard_time_1gaa868c51ff000e5ecd19bcb90bd757490" prot="public" static="no">
         <name>SECONDS_PER_HOUR</name>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8349" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8349" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8757" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8757" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___standard_time_1gae5e089b553f791f79d02046ff63f3cdb" prot="public" static="no">
         <name>SECONDS_PER_MINUTE</name>
@@ -364,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8345" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8345" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8753" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8753" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___standard_time_1gab9914ccf745444f58de8109df039231c" prot="public" static="no">
         <name>TZ_LEN</name>
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8343" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8343" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8751" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8751" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">

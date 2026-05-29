@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_vibe_pattern" kind="struct" language="C++" prot="public">
     <compoundname>VibePattern</compoundname>
     <includes local="no">pebble.h</includes>
@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8237" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8237" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8521" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8521" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_vibe_pattern_1a0ea4a7f770c28f400daf3bd255e730e7" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8241" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8241" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8525" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8525" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -42,7 +42,7 @@
     <detaileddescription>
 <para>A pattern consists of at least 1 vibe-on duration, optionally followed by alternating vibe-off + vibe-on durations. Each segment may have a different duration.</para>
 <para>Example code: <programlisting filename=".c"><codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Vibe<sp/>pattern:<sp/>ON<sp/>for<sp/>200ms,<sp/>OFF<sp/>for<sp/>100ms,<sp/>ON<sp/>for<sp/>400ms:</highlight><highlight class="normal"></highlight></codeline>
-<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>segments[]<sp/>=<sp/>{<sp/>200,<sp/>100,<sp/>400<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>segments[]<sp/>=<sp/>{<sp/>200,<sp/>100,<sp/>400<sp/>};</highlight></codeline>
 <codeline><highlight class="normal">VibePattern<sp/>pat<sp/>=<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>.durations<sp/>=<sp/>segments,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/>.num_segments<sp/>=<sp/>ARRAY_LENGTH(segments),</highlight></codeline>
@@ -52,7 +52,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="8232" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8232" bodyend="8242"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="8516" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8516" bodyend="8526"/>
     <listofallmembers>
       <member refid="struct_vibe_pattern_1aba389d1d1c6f6e3cc49687a1a443c302" prot="public" virt="non-virtual"><scope>VibePattern</scope><name>durations</name></member>
       <member refid="struct_vibe_pattern_1a0ea4a7f770c28f400daf3bd255e730e7" prot="public" virt="non-virtual"><scope>VibePattern</scope><name>num_segments</name></member>

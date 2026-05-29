@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright 2025 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -280,8 +280,9 @@ Pebble.appGlanceReload = function(appGlanceSlices, onSuccess, onFailure) { };
 Pebble.openURL = function(url) { };
 
 /**
- * @namespace audioContext
+ * @member audioContext
  * @memberof Pebble
+ * @type {Object}
  *
  * @desc Provides permissioned access to system background audio context.
  *     Audio Context is a view of audio data already captured by the system
@@ -300,6 +301,8 @@ Pebble.audioContext = new Object;
  *     status cannot be returned.
  *
  * @returns {Promise<AudioContextStatus>} A Promise for the current status.
+ * @function audioContext.getStatus
+ * @memberof Pebble
  */
 Pebble.audioContext.getStatus = function() { };
 
@@ -311,6 +314,8 @@ Pebble.audioContext.getStatus = function() { };
  *     shown.
  *
  * @returns {Promise<AudioContextPromptResult>} A Promise for the prompt result.
+ * @function audioContext.requestEnable
+ * @memberof Pebble
  */
 Pebble.audioContext.requestEnable = function() { };
 
@@ -321,6 +326,8 @@ Pebble.audioContext.requestEnable = function() { };
  *     that query transcript context around the launch time.
  *
  * @returns {Promise<AudioContextTriggerInfo>} A Promise for trigger metadata.
+ * @function audioContext.getTriggerInfo
+ * @memberof Pebble
  */
 Pebble.audioContext.getTriggerInfo = function() { };
 
@@ -333,6 +340,8 @@ Pebble.audioContext.getTriggerInfo = function() { };
  * @param {[String]} permissions - Capability strings such as
  *     `audio_status`, `audio_transcript`, `audio_history`, or `audio_raw`.
  * @returns {Promise<AudioContextPromptResult>} A Promise for the prompt result.
+ * @function audioContext.requestPermission
+ * @memberof Pebble
  */
 Pebble.audioContext.requestPermission = function(permissions) { };
 
@@ -345,6 +354,8 @@ Pebble.audioContext.requestPermission = function(permissions) { };
  * @param {AudioContextQueryOptions} options - Time window options.
  * @returns {Promise<AudioContextTranscriptResult>} A Promise for transcript
  *     segments.
+ * @function audioContext.recentTranscript
+ * @memberof Pebble
  */
 Pebble.audioContext.recentTranscript = function(options) { };
 
@@ -357,6 +368,8 @@ Pebble.audioContext.recentTranscript = function(options) { };
  * @param {AudioContextQueryOptions} options - Time window options.
  * @returns {Promise<AudioContextTranscriptResult>} A Promise for transcript
  *     segments.
+ * @function audioContext.transcriptHistory
+ * @memberof Pebble
  */
 Pebble.audioContext.transcriptHistory = function(options) { };
 
@@ -371,6 +384,8 @@ Pebble.audioContext.transcriptHistory = function(options) { };
  * @param {AudioContextTranscriptCallback} handler - Called for each segment.
  * @returns {Promise<AudioContextUnsubscribe>} A Promise for an unsubscribe
  *     function.
+ * @function audioContext.onTranscript
+ * @memberof Pebble
  */
 Pebble.audioContext.onTranscript = function(options, handler) { };
 
@@ -384,6 +399,8 @@ Pebble.audioContext.onTranscript = function(options, handler) { };
  * @param {AudioContextStatusCallback} handler - Called for each status update.
  * @returns {Promise<AudioContextUnsubscribe>} A Promise for an unsubscribe
  *     function.
+ * @function audioContext.onStatus
+ * @memberof Pebble
  */
 Pebble.audioContext.onStatus = function(handler) { };
 
@@ -399,6 +416,8 @@ Pebble.audioContext.onStatus = function(handler) { };
  * @param {AudioContextRawAudioCallback} handler - Called for each raw chunk.
  * @returns {Promise<AudioContextUnsubscribe>} A Promise for an unsubscribe
  *     function.
+ * @function audioContext.onRawAudio
+ * @memberof Pebble
  */
 Pebble.audioContext.onRawAudio = function(options, handler) { };
 
@@ -441,14 +460,14 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Function} AudioContextUnsubscribe
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Stops an Audio Context subscription.
  */
 
 /**
  * @typedef {Function} AudioContextStatusCallback
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Called when Audio Context status changes.
  * @param {AudioContextStatus} status - The current status.
@@ -456,7 +475,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Function} AudioContextTranscriptCallback
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Called when a transcript segment is available.
  * @param {AudioContextTranscriptSegment} segment - A transcript segment.
@@ -464,7 +483,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Function} AudioContextRawAudioCallback
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Called when a raw audio chunk is available.
  * @param {AudioContextRawAudioChunk} chunk - A raw audio chunk.
@@ -472,7 +491,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextStatus
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Current status of system background audio for this app.
  * @property {String} availability - Availability or failure reason.
@@ -488,7 +507,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextPromptResult
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Result of a system Audio Context prompt.
  * @property {String} result - One of `Granted`, `Denied`, `Dismissed`, or
@@ -497,7 +516,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextTriggerInfo
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Source-neutral metadata about why this app was launched.
  * @property {String} launchReason - Standard launch reason when available.
@@ -510,7 +529,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextQueryOptions
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Time window options for transcript queries.
  * @property {Number} beforeSeconds - Seconds before the anchor time.
@@ -522,7 +541,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextTranscriptResult
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Result of a transcript query.
  * @property {[AudioContextTranscriptSegment]} segments - Transcript segments.
@@ -530,7 +549,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextTranscriptSegment
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Transcript text plus timing metadata.
  * @property {String} id - Stable segment identifier.
@@ -546,7 +565,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextSubscriptionOptions
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Options for live transcript subscriptions.
  * @property {Boolean} includePartial - Whether partial transcripts may be sent.
@@ -556,7 +575,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextRawAudioOptions
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Options for raw audio subscriptions.
  * @property {Number} maxChunkBytes - Preferred maximum bytes per chunk.
@@ -566,7 +585,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextRawAudioChunk
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Phone-side raw audio chunk.
  * @property {Number} streamId - Background audio stream identifier.
@@ -583,7 +602,7 @@ Pebble.audioContext.onRawAudio = function(options, handler) { };
 
 /**
  * @typedef {Object} AudioContextError
- * @memberof Pebble.audioContext
+ * @memberof Pebble
  *
  * @desc Rejection payload for Audio Context Promise failures.
  * @property {String} availability - Availability or failure reason.

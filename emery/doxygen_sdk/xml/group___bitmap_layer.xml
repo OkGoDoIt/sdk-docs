@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___bitmap_layer" kind="group">
+    <compoundname>BitmapLayer</compoundname>
+    <title>BitmapLayer</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___bitmap_layer_1ga56fdbb7c13007b1ccf6303d9957f8d3a" prot="public" static="no">
+        <type>struct BitmapLayer</type>
+        <definition>typedef struct BitmapLayer BitmapLayer</definition>
+        <argsstring></argsstring>
+        <name>BitmapLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8185" column="26" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8185" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___bitmap_layer_1gadd992eb1a89f66007a6311d9021ba32b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BitmapLayer *</type>
+        <definition>BitmapLayer * bitmap_layer_create</definition>
+        <argsstring>(GRect frame)</argsstring>
+        <name>bitmap_layer_create</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new bitmap layer on the heap and initalizes it the default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Bitmap: <computeroutput>NULL</computeroutput> (none)</para>
+</listitem><listitem><para>Background color: GColorClear</para>
+</listitem><listitem><para>Compositing mode: <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3d668fac5e660241746c082d7155e059" kindref="member">GCompOpAssign</ref></para>
+</listitem><listitem><para>Clips: <computeroutput>true</computeroutput> <simplesect kind="return"><para>A pointer to the BitmapLayer. <computeroutput>NULL</computeroutput> if the BitmapLayer could not be created </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8195" column="13" declfile="build/sdk/emery/include/pebble.h" declline="8195" declcolumn="13"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___bitmap_layer_1ga4ef30a7562a029d81e2956ab8068f0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bitmap_layer_destroy</definition>
+        <argsstring>(BitmapLayer *bitmap_layer)</argsstring>
+        <name>bitmap_layer_destroy</name>
+        <param>
+          <type>BitmapLayer *</type>
+          <declname>bitmap_layer</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a window previously created by bitmap_layer_create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8198" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8198" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___bitmap_layer_1ga40cfc5af67b6df6c62c8745768a7cecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const GBitmap *</type>
+        <definition>const GBitmap * bitmap_layer_get_bitmap</definition>
+        <argsstring>(BitmapLayer *bitmap_layer)</argsstring>
+        <name>bitmap_layer_get_bitmap</name>
+        <param>
+          <type>BitmapLayer *</type>
+          <declname>bitmap_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the pointer to the bitmap image that the BitmapLayer is using. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The BitmapLayer for which to get the bitmap image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the bitmap image that the BitmapLayer is using </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8210" column="15" declfile="build/sdk/emery/include/pebble.h" declline="8210" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group___bitmap_layer_1gaf850045cef510d5e206ff4f4b542fd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * bitmap_layer_get_layer</definition>
+        <argsstring>(const BitmapLayer *bitmap_layer)</argsstring>
+        <name>bitmap_layer_get_layer</name>
+        <param>
+          <type>const BitmapLayer *</type>
+          <declname>bitmap_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the &quot;root&quot; Layer of the bitmap layer, which is the parent for the sub- layers used for its implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the BitmapLayer for which to get the &quot;root&quot; Layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The &quot;root&quot; Layer of the bitmap layer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8204" column="7" declfile="build/sdk/emery/include/pebble.h" declline="8204" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___bitmap_layer_1ga4c1765f9330890641c4c09ba7e894894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bitmap_layer_set_alignment</definition>
+        <argsstring>(BitmapLayer *bitmap_layer, GAlign alignment)</argsstring>
+        <name>bitmap_layer_set_alignment</name>
+        <param>
+          <type>BitmapLayer *</type>
+          <declname>bitmap_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___graphics_types_1gac8aa0eb3d3065fde8d2d6f282fa47f6a" kindref="member">GAlign</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Sets the alignment of the image to draw with in frame of the BitmapLayer. The aligment parameter specifies which edges of the bitmap should overlap with the frame of the BitmapLayer. If the bitmap is smaller than the frame of the BitmapLayer, the background is filled with the background color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitmap layer is automatically marked dirty after this operation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The BitmapLayer for which to set the aligment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new alignment for the image inside the BitmapLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8230" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8230" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___bitmap_layer_1ga67522a1e62431f0f68d161d83fb6d83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bitmap_layer_set_background_color</definition>
+        <argsstring>(BitmapLayer *bitmap_layer, GColor color)</argsstring>
+        <name>bitmap_layer_set_background_color</name>
+        <param>
+          <type>BitmapLayer *</type>
+          <declname>bitmap_layer</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the background color of bounding box that will be drawn behind the image of the BitmapLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitmap layer is automatically marked dirty after this operation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The BitmapLayer for which to set the background color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new GColor to set the background to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___bitmap_layer_1ga7bc761ca8227881c5853cbc0e279385e" kindref="member">bitmap_layer_set_compositing_mode</ref> for enabling transparency </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8239" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8239" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___bitmap_layer_1ga919b52c2feb69c13966f4a52815377f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bitmap_layer_set_bitmap</definition>
+        <argsstring>(BitmapLayer *bitmap_layer, const GBitmap *bitmap)</argsstring>
+        <name>bitmap_layer_set_bitmap</name>
+        <param>
+          <type>BitmapLayer *</type>
+          <declname>bitmap_layer</declname>
+        </param>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bitmap onto the BitmapLayer. The bitmap is set by reference (no deep copy), thus the caller of this function has to make sure the bitmap is kept in memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitmap layer is automatically marked dirty after this operation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The BitmapLayer for which to set the bitmap image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new GBitmap to set onto the BitmapLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8219" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8219" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___bitmap_layer_1ga7bc761ca8227881c5853cbc0e279385e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bitmap_layer_set_compositing_mode</definition>
+        <argsstring>(BitmapLayer *bitmap_layer, GCompOp mode)</argsstring>
+        <name>bitmap_layer_set_compositing_mode</name>
+        <param>
+          <type>BitmapLayer *</type>
+          <declname>bitmap_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___graphics_types_1ga0d021422bd90a2a49e6c8d848e6d556f" kindref="member">GCompOp</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Sets the compositing mode of how the bitmap image is composited onto the BitmapLayer&apos;s background plane, or how it is composited onto what has been drawn beneath the BitmapLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The compositing mode only affects the drawing of the bitmap and not the drawing of the background color.</para>
+<para>For black&amp;white platforms, there is no notion of &quot;transparency&quot; in the graphics system. However, the effect of transparency can be created by masking and using compositing modes.</para>
+<para>For color platforms, when drawing GBitmap images, <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3ca84b5c70798643a3bd07b263c47fe6" kindref="member">GCompOpSet</ref> is required to apply any transparency.</para>
+<para>The bitmap layer is automatically marked dirty after this operation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The BitmapLayer for which to set the compositing mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The compositing mode to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>See <ref refid="group___graphics_types_1ga0d021422bd90a2a49e6c8d848e6d556f" kindref="member">GCompOp</ref> for visual examples of the different compositing modes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8258" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8258" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Layer that displays a bitmap image. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="bitmap_layer.png" inline="yes"></image>
+ <image type="latex" name="bitmap_layer.png" inline="yes"></image>
+ <image type="rtf" name="bitmap_layer.png" inline="yes"></image>
+ <image type="docbook" name="bitmap_layer.png" inline="yes"></image>
+ <image type="xml" name="bitmap_layer.png" inline="yes"></image>
+</para>
+<para>BitmapLayer is a Layer subtype that draws a GBitmap within its frame. It uses an alignment property to specify how to position the bitmap image within its frame. Optionally, when the background color is not GColorClear, it draws a solid background color behind the bitmap image, filling areas of the frame that are not covered by the bitmap image. Lastly, using the compositing mode property of the BitmapLayer, determines the way the bitmap image is drawn on top of what is underneath it (either the background color, or the layers beneath it).</para>
+<para><heading level="3">Inside the Implementation</heading>
+</para>
+<para>The implementation of BitmapLayer is fairly straightforward and relies heavily on the functionality as exposed by the core drawing functions (see <ref refid="group___drawing" kindref="compound">Drawing Primitives</ref>). <ref refid="group___bitmap_layer" kindref="compound">BitmapLayer</ref>&apos;s drawing callback uses <ref refid="group___drawing_1ga2df0bc47f542ea60500d3070670725f9" kindref="member">graphics_draw_bitmap_in_rect()</ref> to perform the actual drawing of the GBitmap. It uses <ref refid="group___graphics_types_1gad714d5d1dd0509196d8aadbdba2ac510" kindref="member">grect_align()</ref> to perform the layout of the image and it uses <ref refid="group___drawing_1ga8c9b95e1c9fc0ce82107b95b8b804822" kindref="member">graphics_fill_rect()</ref> to draw the background plane. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

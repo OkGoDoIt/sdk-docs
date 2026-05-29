@@ -22,5 +22,7 @@ var searchData=
   ['appsyncerrorcallback_19',['AppSyncErrorCallback',['../group___app_sync.html#ga43e176e0a49cbf63f462cd3be60311cc',1,'pebble.h']]],
   ['appsynctuplechangedcallback_20',['AppSyncTupleChangedCallback',['../group___app_sync.html#gaea666eaaf02f4714acc592c280591782',1,'pebble.h']]],
   ['apptimercallback_21',['AppTimerCallback',['../group___timer.html#ga465ac36f13df1644650dc90bb968c9d8',1,'pebble.h']]],
-  ['appworkermessagehandler_22',['AppWorkerMessageHandler',['../group___app_worker.html#gaf70afc0dd4ceb096ef5170a2ba751bb0',1,'pebble.h']]]
+  ['appworkermessagehandler_22',['AppWorkerMessageHandler',['../group___app_worker.html#gaf70afc0dd4ceb096ef5170a2ba751bb0',1,'pebble.h']]],
+  ['audiocontextstatuscallback_23',['AudioContextStatusCallback',['../group___audio.html#ga14d3fefa12726df652e7839df402a2bf',1,'pebble.h']]],
+  ['audiocontexttranscriptcallback_24',['AudioContextTranscriptCallback',['../group___audio.html#ga6c5afbc469e64cf4ad6596a1c52528d5',1,'pebble.h']]]
 ];

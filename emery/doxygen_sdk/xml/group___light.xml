@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___light" kind="group">
+    <compoundname>Light</compoundname>
+    <title>Light</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___light_1ga0131a703964d49744f2da1fac234b9b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void light_enable</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>light_enable</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Turn the watch&apos;s backlight on or put it back into automatic control. Developers should take care when calling this function, keeping Pebble&apos;s backlight on for long periods of time will rapidly deplete the battery. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Turn the backlight on if <computeroutput>true</computeroutput>, otherwise <computeroutput>false</computeroutput> to put it back into automatic control. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8838" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8838" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___light_1ga7074135af850ea753dc5a98378bca122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void light_enable_interaction</definition>
+        <argsstring>(void)</argsstring>
+        <name>light_enable_interaction</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Trigger the backlight and schedule a timer to automatically disable the backlight after a short delay. This is the preferred method of interacting with the backlight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8832" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8832" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___light_1gad3a2a9282440927391d925060904a264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool light_is_on</definition>
+        <argsstring>(void)</argsstring>
+        <name>light_is_on</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the backlight is currently on in any form (on, timed, or fading out). Returns false only when the backlight is fully off. Useful for apps that want to behave differently depending on whether the screen is currently lit — e.g. skipping an animation or queuing a visual cue for when the screen wakes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8828" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8828" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___light_1gaca18902b8733585650b9e45f11d44f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void light_set_color</definition>
+        <argsstring>(GColor color)</argsstring>
+        <name>light_set_color</name>
+        <param>
+          <type>GColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Tint the backlight LED to the given color. The color persists while the app is foregrounded and is automatically reset to the user&apos;s default (white) when the app exits or is preempted by a system notification. On platforms without a color backlight this is a no-op. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>GColor carries only 2 bits per channel (64 distinct tints). Use <ref refid="group___light_1gaa024362b5898ab394115346abf297396" kindref="member">light_set_color_rgb888()</ref> if you need the full 8-bit-per-channel range that the LED hardware supports. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color to tint the backlight to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8848" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8848" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___light_1gaa024362b5898ab394115346abf297396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void light_set_color_rgb888</definition>
+        <argsstring>(uint32_t rgb)</argsstring>
+        <name>light_set_color_rgb888</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>rgb</declname>
+        </param>
+        <briefdescription>
+<para>Tint the backlight LED to a packed 24-bit RGB value (0x00RRGGBB). Same persistence semantics as <ref refid="group___light_1gaca18902b8733585650b9e45f11d44f44" kindref="member">light_set_color()</ref>: the override lasts while the app is foregrounded and is reset on app exit or system preempt. No-op on platforms without a color backlight. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rgb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packed 0x00RRGGBB value; 8 bits per channel. High byte ignored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8855" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8855" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___light_1ga76a3163c7b27f644a5e0c2ba873dbce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void light_set_system_color</definition>
+        <argsstring>(void)</argsstring>
+        <name>light_set_system_color</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Restore the backlight to the user&apos;s default color. Rarely needed — the system resets automatically on app exit. No-op on platforms without a color backlight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8860" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8860" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Controlling Pebble&apos;s backlight </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The Light API provides you with functions to turn on Pebble’s backlight or put it back into automatic control. You can trigger the backlight and schedule a timer to automatically disable the backlight after a short delay, which is the preferred method of interacting with the backlight. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

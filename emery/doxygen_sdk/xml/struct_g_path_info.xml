@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_g_path_info" kind="struct" language="C++" prot="public">
+    <compoundname>GPathInfo</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_path_info_1a58f935742a1b1cfde88cfcadd172a09b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t GPathInfo::num_points</definition>
+        <argsstring></argsstring>
+        <name>num_points</name>
+        <qualifiedname>GPathInfo::num_points</qualifiedname>
+        <briefdescription>
+<para>The number of points in the <computeroutput><ref refid="struct_g_path_info_1a9060d72e677cfa33dc4c26e0829299c6" kindref="member">points</ref></computeroutput> array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4950" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4950" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_path_info_1a9060d72e677cfa33dc4c26e0829299c6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_g_point" kindref="compound">GPoint</ref> *</type>
+        <definition>GPoint* GPathInfo::points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <qualifiedname>GPathInfo::points</qualifiedname>
+        <briefdescription>
+<para>Pointer to an array of points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4952" column="10" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4952" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure describing a naked path. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Note that this data structure only refers to an array of points; the points are not stored inside this data structure itself. In most cases, one cannot use a stack-allocated array of GPoints. Instead one often needs to provide longer-lived (static or &quot;global&quot;) storage for the points. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GPathInfo</label>
+        <link refid="struct_g_path_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>points</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GPoint</label>
+        <link refid="struct_g_point"/>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="4948" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4948" bodyend="4953"/>
+    <listofallmembers>
+      <member refid="struct_g_path_info_1a58f935742a1b1cfde88cfcadd172a09b" prot="public" virt="non-virtual"><scope>GPathInfo</scope><name>num_points</name></member>
+      <member refid="struct_g_path_info_1a9060d72e677cfa33dc4c26e0829299c6" prot="public" virt="non-virtual"><scope>GPathInfo</scope><name>points</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

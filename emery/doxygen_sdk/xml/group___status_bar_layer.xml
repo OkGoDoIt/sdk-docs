@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___status_bar_layer" kind="group">
+    <compoundname>StatusBarLayer</compoundname>
+    <title>StatusBarLayer</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___status_bar_layer_1gaf7316a23f8fa3b482551ea4cbbb414fa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>StatusBarLayerSeparatorMode</name>
+        <enumvalue id="group___status_bar_layer_1ggaf7316a23f8fa3b482551ea4cbbb414faa5fd87a47081ee5add2afa2d67d3ab9c6" prot="public">
+          <name>StatusBarLayerSeparatorModeNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The default mode. No separator will be shown. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___status_bar_layer_1ggaf7316a23f8fa3b482551ea4cbbb414faa15cfb9da70e7753b3e8efeaedaa1b318" prot="public">
+          <name>StatusBarLayerSeparatorModeDotted</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>A dotted separator at the bottom of the status bar. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that are used to indicate the different status bar separator modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8089" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8089" bodyend="8094"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___status_bar_layer_1ga4de78ebc3ddd648920c72e12bf87a110" prot="public" static="no">
+        <type>struct StatusBarLayer</type>
+        <definition>typedef struct StatusBarLayer StatusBarLayer</definition>
+        <argsstring></argsstring>
+        <name>StatusBarLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8086" column="29" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8086" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___status_bar_layer_1ga82b28011d257d772adf5bc25b43f7cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>StatusBarLayer *</type>
+        <definition>StatusBarLayer * status_bar_layer_create</definition>
+        <argsstring>(void)</argsstring>
+        <name>status_bar_layer_create</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Creates a new StatusBarLayer on the heap and initializes it with the default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Text color: <ref refid="group___color_definitions_1ga03d3c53a6a31fe2d80def95b8c035e26" kindref="member">GColorBlack</ref></para>
+</listitem><listitem><para>Background color: <ref refid="group___color_definitions_1ga90fe70aef6e9a908811d1f4f72b44608" kindref="member">GColorWhite</ref></para>
+</listitem><listitem><para>Frame: <computeroutput><ref refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" kindref="member">GRect(0, 0, screen_width, STATUS_BAR_LAYER_HEIGHT)</ref></computeroutput> The status bar is automatically marked dirty after this operation. You can call <ref refid="group___layer_1ga5a984a17781b97ce00ae34c437171934" kindref="member">layer_set_frame()</ref> to create a StatusBarLayer of a different width.</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting filename=".c"><codeline><highlight class="comment">//<sp/>Change<sp/>the<sp/>status<sp/>bar<sp/>width<sp/>to<sp/>make<sp/>space<sp/>for<sp/>the<sp/>action<sp/>bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">int16_t<sp/>width<sp/>=<sp/><ref refid="group___layer_1ga3e99442ac9d3af36ec7c25118360710c" kindref="member">layer_get_bounds</ref>(root_layer).<ref refid="struct_g_rect_1acd904b1a13b264f257827a295d2d208e" kindref="member">size</ref>.<ref refid="struct_g_size_1ab4b00bc79cc43d5554d19fd273fe37e0" kindref="member">w</ref><sp/>-<sp/><ref refid="group___action_bar_layer_1gab5803f738d5e179c285d748003517435" kindref="member">ACTION_BAR_WIDTH</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" kindref="member">GRect</ref><sp/>frame<sp/>=<sp/><ref refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" kindref="member">GRect</ref>(0,<sp/>0,<sp/>width,<sp/><ref refid="group___status_bar_layer_1ga98226d0d569dae3c62512820d3c5eeea" kindref="member">STATUS_BAR_LAYER_HEIGHT</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___layer_1ga5a984a17781b97ce00ae34c437171934" kindref="member">layer_set_frame</ref>(<ref refid="group___status_bar_layer_1ga1a65700d523ed23ae9231c59af9327c8" kindref="member">status_bar_layer_get_layer</ref>(status_bar),<sp/>frame);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___layer_1ga282c3ba9878e23bfa19033a9487fdac1" kindref="member">layer_add_child</ref>(root_layer,<sp/><ref refid="group___status_bar_layer_1ga1a65700d523ed23ae9231c59af9327c8" kindref="member">status_bar_layer_get_layer</ref>(status_bar));</highlight></codeline>
+</programlisting> <simplesect kind="return"><para>A pointer to the StatusBarLayer, which will be allocated to the heap, <computeroutput>NULL</computeroutput> if the StatusBarLayer could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8126" column="16" declfile="build/sdk/emery/include/pebble.h" declline="8126" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___status_bar_layer_1ga8888bc8140ee6693e8221b805043d1fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void status_bar_layer_destroy</definition>
+        <argsstring>(StatusBarLayer *status_bar_layer)</argsstring>
+        <name>status_bar_layer_destroy</name>
+        <param>
+          <type>StatusBarLayer *</type>
+          <declname>status_bar_layer</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a StatusBarLayer previously created by status_bar_layer_create. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status_bar_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The StatusBarLayer to destroy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8130" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8130" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___status_bar_layer_1ga2a25ec0661cce481fdf30048f510142a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GColor</type>
+        <definition>GColor status_bar_layer_get_background_color</definition>
+        <argsstring>(const StatusBarLayer *status_bar_layer)</argsstring>
+        <name>status_bar_layer_get_background_color</name>
+        <param>
+          <type>const StatusBarLayer *</type>
+          <declname>status_bar_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets background color of StatusBarLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status_bar_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The StatusBarLayer of which to get the color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GColor of background color property </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8142" column="8" declfile="build/sdk/emery/include/pebble.h" declline="8142" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___status_bar_layer_1ga2fdfa31254d64f33c5d3c5b00ce160dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GColor</type>
+        <definition>GColor status_bar_layer_get_foreground_color</definition>
+        <argsstring>(const StatusBarLayer *status_bar_layer)</argsstring>
+        <name>status_bar_layer_get_foreground_color</name>
+        <param>
+          <type>const StatusBarLayer *</type>
+          <declname>status_bar_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets foreground color of StatusBarLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status_bar_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The StatusBarLayer of which to get the color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GColor of foreground color property </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8147" column="8" declfile="build/sdk/emery/include/pebble.h" declline="8147" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___status_bar_layer_1ga1a65700d523ed23ae9231c59af9327c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * status_bar_layer_get_layer</definition>
+        <argsstring>(StatusBarLayer *status_bar_layer)</argsstring>
+        <name>status_bar_layer_get_layer</name>
+        <param>
+          <type>StatusBarLayer *</type>
+          <declname>status_bar_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the &quot;root&quot; Layer of the status bar, which is the parent for the sub- layers used for its implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status_bar_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the StatusBarLayer for which to get the &quot;root&quot; Layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The &quot;root&quot; Layer of the status bar. </para>
+</simplesect>
+<simplesect kind="note"><para>The result is always equal to <computeroutput>(<ref refid="group___layer" kindref="compound">Layers</ref> *) status_bar_layer</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8137" column="7" declfile="build/sdk/emery/include/pebble.h" declline="8137" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___status_bar_layer_1ga818d409a6c42775771c3febf03e10e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void status_bar_layer_set_colors</definition>
+        <argsstring>(StatusBarLayer *status_bar_layer, GColor background, GColor foreground)</argsstring>
+        <name>status_bar_layer_set_colors</name>
+        <param>
+          <type>StatusBarLayer *</type>
+          <declname>status_bar_layer</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>background</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>foreground</declname>
+        </param>
+        <briefdescription>
+<para>Sets the background and foreground colors of StatusBarLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status_bar_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The StatusBarLayer of which to set the colors </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>background</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new GColor to set for background </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>foreground</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new GColor to set for text and other foreground elements </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8153" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8153" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___status_bar_layer_1ga8372ccc195ab25b123a3d3c9244bace4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void status_bar_layer_set_separator_mode</definition>
+        <argsstring>(StatusBarLayer *status_bar_layer, StatusBarLayerSeparatorMode mode)</argsstring>
+        <name>status_bar_layer_set_separator_mode</name>
+        <param>
+          <type>StatusBarLayer *</type>
+          <declname>status_bar_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___status_bar_layer_1gaf7316a23f8fa3b482551ea4cbbb414fa" kindref="member">StatusBarLayerSeparatorMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Sets the mode of the StatusBarLayer separator, to help divide it from content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status_bar_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The StatusBarLayer of which to set the separator mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines the separator mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8159" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8159" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___status_bar_layer_1ga1d71abbf343b208cca2bc87339b95361" prot="public" static="no">
+        <name>_STATUS_BAR_LAYER_HEIGHT</name>
+        <param><defname>plat</defname></param>
+        <initializer>PBL_PLATFORM_SWITCH(plat, \
+/*aplite*/ 16, \
+/*basalt*/ 16, \
+/*chalk*/ 24, \
+/*diorite*/ 16, \
+/*emery*/ 20, \
+/*flint*/ 16, \
+/*gabbro*/ 20)</initializer>
+        <briefdescription>
+<para>The fixed height of the status bar, including separator height, for all platforms. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8100" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8100" bodyend="8107"/>
+      </memberdef>
+      <memberdef kind="define" id="group___status_bar_layer_1ga98226d0d569dae3c62512820d3c5eeea" prot="public" static="no">
+        <name>STATUS_BAR_LAYER_HEIGHT</name>
+        <initializer><ref refid="group___status_bar_layer_1ga1d71abbf343b208cca2bc87339b95361" kindref="member">_STATUS_BAR_LAYER_HEIGHT</ref>(PBL_PLATFORM_TYPE_CURRENT)</initializer>
+        <briefdescription>
+<para>The fixed height of the status bar, including separator height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8097" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8097" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Layer that serves as a configurable status bar. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,721 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___smartstrap" kind="group">
+    <compoundname>Smartstrap</compoundname>
+    <title>Smartstrap</title>
+    <innerclass refid="struct_smartstrap_handlers" prot="public">SmartstrapHandlers</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SmartstrapResult</name>
+        <enumvalue id="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" prot="public">
+          <name>SmartstrapResultOk</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No error occured. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aa0152802341ba22126dd6fb03d9934270" prot="public">
+          <name>SmartstrapResultInvalidArgs</name>
+          <briefdescription>
+<para>Invalid function arguments were supplied. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aa84771fd8db30b2ea6fa1005687589191" prot="public">
+          <name>SmartstrapResultNotPresent</name>
+          <briefdescription>
+<para>The smartstrap port is not present on this watch. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aa0e3cc753c1e608db2f41a6c23556aeb8" prot="public">
+          <name>SmartstrapResultBusy</name>
+          <briefdescription>
+<para>A request is already pending on the specified attribute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aa0cf226372cc1c5cdf264f926497ee3a5" prot="public">
+          <name>SmartstrapResultServiceUnavailable</name>
+          <briefdescription>
+<para>Either a smartstrap is not connected or the connected smartstrap does not support the specified service. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aad0dde868cc4ea35d7d7b05155e5727cd" prot="public">
+          <name>SmartstrapResultAttributeUnsupported</name>
+          <briefdescription>
+<para>The smartstrap reported that it does not support the requested attribute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aa21cf4c71d56ba7c84805b9908c204e1d" prot="public">
+          <name>SmartstrapResultTimeOut</name>
+          <briefdescription>
+<para>A time-out occured during the request. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Error values which may be returned from the smartstrap APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5226" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5226" bodyend="5242"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" prot="public" static="no">
+        <type>struct <ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref></type>
+        <definition>typedef struct SmartstrapAttribute SmartstrapAttribute</definition>
+        <argsstring></argsstring>
+        <name>SmartstrapAttribute</name>
+        <briefdescription>
+<para>A type representing an attribute of a service provided by a smartstrap. This type is used when issuing requests to the smartstrap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5252" column="34" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___smartstrap_1gabbc436295eaf481c9358813990f85330" prot="public" static="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>typedef uint16_t SmartstrapAttributeId</definition>
+        <argsstring></argsstring>
+        <name>SmartstrapAttributeId</name>
+        <briefdescription>
+<para>A type representing a smartstrap AttributeId. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5248" column="18" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___smartstrap_1ga2786c9423e3e0bf81461deb5d28a3e82" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SmartstrapNotifyHandler) (SmartstrapAttribute *attribute)</definition>
+        <argsstring>)(SmartstrapAttribute *attribute)</argsstring>
+        <name>SmartstrapNotifyHandler</name>
+        <briefdescription>
+<para>The type of function which can be called when the smartstrap sends a notification to the watch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute which the notification came from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5277" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___smartstrap_1gae3447433eba742537cd13bd58e907c45" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SmartstrapReadHandler) (SmartstrapAttribute *attribute, SmartstrapResult result, const uint8_t *data, size_t length)</definition>
+        <argsstring>)(SmartstrapAttribute *attribute, SmartstrapResult result, const uint8_t *data, size_t length)</argsstring>
+        <name>SmartstrapReadHandler</name>
+        <briefdescription>
+<para>The type of function which can be called when a read request is completed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Any write request made to the same attribute within this function will fail with SmartstrapResultBusy. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute which was read. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The result of the read. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data read from the smartstrap or NULL if the read was not successful. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the data or 0 if the read was not successful. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5267" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___smartstrap_1gae77e1b9b9b9ebec76be6ee5ee6d658b3" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SmartstrapServiceAvailabilityHandler) (SmartstrapServiceId service_id, bool is_available)</definition>
+        <argsstring>)(SmartstrapServiceId service_id, bool is_available)</argsstring>
+        <name>SmartstrapServiceAvailabilityHandler</name>
+        <briefdescription>
+<para>The type of function which is called after the smartstrap connection status changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ServiceId for which the availability changed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_available</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether or not this service is now available. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5257" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" prot="public" static="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>typedef uint16_t SmartstrapServiceId</definition>
+        <argsstring></argsstring>
+        <name>SmartstrapServiceId</name>
+        <briefdescription>
+<para>A type representing a smartstrap ServiceId. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5245" column="18" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___smartstrap_1gabe74eee0435816d46af2a39d5f10f3c6" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SmartstrapWriteHandler) (SmartstrapAttribute *attribute, SmartstrapResult result)</definition>
+        <argsstring>)(SmartstrapAttribute *attribute, SmartstrapResult result)</argsstring>
+        <name>SmartstrapWriteHandler</name>
+        <briefdescription>
+<para>The type of function which can be called when a write request is completed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute which was written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The result of the write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5273" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5273" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___smartstrap_1ga213a819d247369ec0104c6cdf491e54f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" kindref="member">SmartstrapResult</ref></type>
+        <definition>SmartstrapResult smartstrap_attribute_begin_write</definition>
+        <argsstring>(SmartstrapAttribute *attribute, uint8_t **buffer, size_t *buffer_length)</argsstring>
+        <name>smartstrap_attribute_begin_write</name>
+        <param>
+          <type><ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref> *</type>
+          <declname>buffer_length</declname>
+        </param>
+        <briefdescription>
+<para>Begins a write request for the specified attribute and returns a buffer into which the app should write the data before calling smartstrap_attribute_end_write. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The buffer must not be used after smartstrap_attribute_end_write is called. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute to begin writing for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer to write the data into. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the buffer in bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" kindref="member">SmartstrapResultOk</ref></computeroutput> if a write operation was started and the <computeroutput>buffer</computeroutput> and <computeroutput>buffer_length</computeroutput> parameters were set, or an error otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5369" column="18" declfile="build/sdk/emery/include/pebble.h" declline="5369" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1ga107b850449693ecd2048077c4d28df2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> *</type>
+        <definition>SmartstrapAttribute * smartstrap_attribute_create</definition>
+        <argsstring>(SmartstrapServiceId service_id, SmartstrapAttributeId attribute_id, size_t buffer_length)</argsstring>
+        <name>smartstrap_attribute_create</name>
+        <param>
+          <type><ref refid="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" kindref="member">SmartstrapServiceId</ref></type>
+          <declname>service_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___smartstrap_1gabbc436295eaf481c9358813990f85330" kindref="member">SmartstrapAttributeId</ref></type>
+          <declname>attribute_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>buffer_length</declname>
+        </param>
+        <briefdescription>
+<para>Creates and returns a <ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> for the specified service and attribute. This API will allocate an internal buffer of the requested length on the app&apos;s heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Creating an attribute will result in power being applied to the smartstrap port (if it isn&apos;t already) and connection establishment to begin. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ServiceId to create the attribute for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attribute_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AttributeId to create the attribute for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the internal buffer which will be used to store the read and write requests for this attribute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created <ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> or NULL if an internal error occured or if the specified length is greater than SMARTSTRAP_ATTRIBUTE_LENGTH_MAXIMUM. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5326" column="21" declfile="build/sdk/emery/include/pebble.h" declline="5326" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1ga078a16b08dbc08080358cbea3dab6a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void smartstrap_attribute_destroy</definition>
+        <argsstring>(SmartstrapAttribute *attribute)</argsstring>
+        <name>smartstrap_attribute_destroy</name>
+        <param>
+          <type><ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a <ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref>. No further handlers will be called for this attribute and it may not be used for any future requests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> which should be destroyed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If power was being applied to the smartstrap port, no availability_did_change handler is subscribed, and the last attribute is being destroyed, this will cause the smartstrap power to be turned off. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5336" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5336" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1ga1eceb872794eb6523ec365dbaca30575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" kindref="member">SmartstrapResult</ref></type>
+        <definition>SmartstrapResult smartstrap_attribute_end_write</definition>
+        <argsstring>(SmartstrapAttribute *attribute, size_t write_length, bool request_read)</argsstring>
+        <name>smartstrap_attribute_end_write</name>
+        <param>
+          <type><ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>write_length</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>request_read</declname>
+        </param>
+        <briefdescription>
+<para>This should be called by the app when it is done writing to the buffer provided by smartstrap_begin_write and the data is ready to be sent to the smartstrap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute to begin writing for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>write_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the data to be written, in bytes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request_read</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether or not a read request on this attribute should be automatically triggered following a successful write request. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" kindref="member">SmartstrapResultOk</ref></computeroutput> if a write operation was queued to be sent to the smartstrap. The <computeroutput>did_write</computeroutput> handler will be called when the request is written to the smartstrap, and if <computeroutput>request_read</computeroutput> was set to true, the <computeroutput>did_read</computeroutput> handler will be called when the read is complete. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5381" column="18" declfile="build/sdk/emery/include/pebble.h" declline="5381" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1ga704e596ad8a914a8ea9eabc2ecf566ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___smartstrap_1gabbc436295eaf481c9358813990f85330" kindref="member">SmartstrapAttributeId</ref></type>
+        <definition>SmartstrapAttributeId smartstrap_attribute_get_attribute_id</definition>
+        <argsstring>(SmartstrapAttribute *attribute)</argsstring>
+        <name>smartstrap_attribute_get_attribute_id</name>
+        <param>
+          <type><ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+<para>Gets the AttributeId which the attribute was created for (see <ref refid="group___smartstrap_1ga107b850449693ecd2048077c4d28df2a" kindref="member">smartstrap_attribute_create</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> for which to obtain the attribute ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="group___smartstrap_1gabbc436295eaf481c9358813990f85330" kindref="member">SmartstrapAttributeId</ref> which the attribute was created with. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5352" column="23" declfile="build/sdk/emery/include/pebble.h" declline="5352" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1ga55a0a201de9fb28d397e89e3d9916a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" kindref="member">SmartstrapServiceId</ref></type>
+        <definition>SmartstrapServiceId smartstrap_attribute_get_service_id</definition>
+        <argsstring>(SmartstrapAttribute *attribute)</argsstring>
+        <name>smartstrap_attribute_get_service_id</name>
+        <param>
+          <type><ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+<para>Returns the ServiceId which the attribute was created for (see <ref refid="group___smartstrap_1ga107b850449693ecd2048077c4d28df2a" kindref="member">smartstrap_attribute_create</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> for which to obtain the service ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" kindref="member">SmartstrapServiceId</ref> which the attribute was created with. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5347" column="21" declfile="build/sdk/emery/include/pebble.h" declline="5347" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1gabb0da17b41d48b01aa545786671275b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" kindref="member">SmartstrapResult</ref></type>
+        <definition>SmartstrapResult smartstrap_attribute_read</definition>
+        <argsstring>(SmartstrapAttribute *attribute)</argsstring>
+        <name>smartstrap_attribute_read</name>
+        <param>
+          <type><ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+<para>Performs a read request for the specified attribute. The <computeroutput>did_read</computeroutput> callback will be called when the response is received from the smartstrap or when an error occurs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute to be perform the read request on. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" kindref="member">SmartstrapResultOk</ref></computeroutput> if the read operation was started. The <computeroutput>did_read</computeroutput> callback will be called once the read request has been completed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5359" column="18" declfile="build/sdk/emery/include/pebble.h" declline="5359" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1gad64edbf8e9cd6b7abc4e11fc74e63eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool smartstrap_service_is_available</definition>
+        <argsstring>(SmartstrapServiceId service_id)</argsstring>
+        <name>smartstrap_service_is_available</name>
+        <param>
+          <type><ref refid="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" kindref="member">SmartstrapServiceId</ref></type>
+          <declname>service_id</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether or not the specified service is currently supported by a connected smartstrap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" kindref="member">SmartstrapServiceId</ref> of the service to check for availability. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether or not the service is available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5341" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5341" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1ga48c5b65d9f8d0070854d9451a26ec30e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void smartstrap_set_timeout</definition>
+        <argsstring>(uint16_t timeout_ms)</argsstring>
+        <name>smartstrap_set_timeout</name>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>timeout_ms</declname>
+        </param>
+        <briefdescription>
+<para>Changes the value of the timeout which is used for smartstrap requests. This timeout is started after the request is completely sent to the smartstrap and will be canceled only if the entire response is received before it triggers. The new timeout value will take affect only for requests made after this API is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the timeout to set, in milliseconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The maximum allowed timeout is currently 1000ms. If a larger value is passed, it will be internally lowered to the maximum. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___smartstrap_1ga6c7eaabf882a7666ff5a541644bb74c5" kindref="member">SMARTSTRAP_TIMEOUT_DEFAULT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5314" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5314" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1ga5a78e451bd596692e0affbdcc01eae50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" kindref="member">SmartstrapResult</ref></type>
+        <definition>SmartstrapResult smartstrap_subscribe</definition>
+        <argsstring>(SmartstrapHandlers handlers)</argsstring>
+        <name>smartstrap_subscribe</name>
+        <param>
+          <type><ref refid="struct_smartstrap_handlers" kindref="compound">SmartstrapHandlers</ref></type>
+          <declname>handlers</declname>
+        </param>
+        <briefdescription>
+<para>Subscribes handlers to be called after certain smartstrap events occur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Registering an availability_did_change handler will cause power to be applied to the smartstrap port and connection establishment to begin. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___smartstrap_1ga7ebbfcea4142202197d8595f04aee9fc" kindref="member">smartstrap_unsubscribe</ref> </para>
+</simplesect>
+<simplesect kind="return"><para><computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aa84771fd8db30b2ea6fa1005687589191" kindref="member">SmartstrapResultNotPresent</ref></computeroutput> if the watch does not have a smartstrap port or <computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" kindref="member">SmartstrapResultOk</ref></computeroutput> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5297" column="18" declfile="build/sdk/emery/include/pebble.h" declline="5297" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___smartstrap_1ga7ebbfcea4142202197d8595f04aee9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void smartstrap_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>smartstrap_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribes the handlers. The handlers will no longer be called, but in-flight requests will otherwise be unaffected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If power was being applied to the smartstrap port and there are no attributes have been created (or they have all been destroyed), this will cause the smartstrap power to be turned off. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5304" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5304" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___smartstrap_1ga9d67a76d7540d7ad6ef7007a985f1721" prot="public" static="no">
+        <name>PBL_IF_SMARTSTRAP_ELSE</name>
+        <param><defname>if_true</defname></param>
+        <param><defname>if_false</defname></param>
+        <initializer>(if_true)</initializer>
+        <briefdescription>
+<para>Convenience macro to switch between two expressions depending on smartstrap support. On platforms with a smartstrap the first expression will be chosen, the second otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5223" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___smartstrap_1ga65820921e9784db17cfe8d5deef8f058" prot="public" static="no">
+        <name>SMARTSTRAP_RAW_DATA_ATTRIBUTE_ID</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>The attribute_id to specify in order to read/write raw data to the smartstrap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5219" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___smartstrap_1ga4474a7976feaad01871ea8bd3f8ee2f6" prot="public" static="no">
+        <name>SMARTSTRAP_RAW_DATA_SERVICE_ID</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>The service_id to specify in order to read/write raw data to the smartstrap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5216" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___smartstrap_1ga6c7eaabf882a7666ff5a541644bb74c5" prot="public" static="no">
+        <name>SMARTSTRAP_TIMEOUT_DEFAULT</name>
+        <initializer>250</initializer>
+        <briefdescription>
+<para>The default request timeout in milliseconds (see <ref refid="group___smartstrap_1ga48c5b65d9f8d0070854d9451a26ec30e" kindref="member">smartstrap_set_timeout</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5213" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5213" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Communicating with a Smartstrap. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Smartstrap APIs allow Pebble watches to communicate with electronics connected to the watch through the accessory port.</para>
+<para>Apps communicate with smartstraps by manipulating the attributes which the smartstrap supports or by reading and writing raw data using the raw data attribute (see <ref refid="group___smartstrap_1ga4474a7976feaad01871ea8bd3f8ee2f6" kindref="member">SMARTSTRAP_RAW_DATA_SERVICE_ID</ref> and <ref refid="group___smartstrap_1ga65820921e9784db17cfe8d5deef8f058" kindref="member">SMARTSTRAP_RAW_DATA_ATTRIBUTE_ID</ref>). A service is a collection of attributes which may be supported by a smartstrap. Once a smartstrap is connected, the availability handler will be called (if subscribed) for each service which is supported by the smartstrap. Then, the app may make read and write requests to attributes within that service on the smartstrap.</para>
+<para>Performing a read request on an attribute will cause the did_read handler to be called for the attribute when either a valid response is received from the smartstrap, or some error (i.e. a timeout) occurs.</para>
+<para>Performing a write request on an attribute will cause the did_write handler to be called for the attribute when the write is completed or an error occurs.</para>
+<para>When either the first attribute is created (see <ref refid="group___smartstrap_1ga107b850449693ecd2048077c4d28df2a" kindref="member">smartstrap_attribute_create</ref>), or an availability_did_change handler is subscribed (see <ref refid="group___smartstrap_1ga5a78e451bd596692e0affbdcc01eae50" kindref="member">smartstrap_subscribe</ref>), whichever comes first, power will be applied to the smartstrap, and connection establishment will begin. As part of the connection establishment, the smartstrap will report the services which it supports, at which point the smartstrap APIs will report them as being available and allow requests to be issued. If all created attributes are destroyed (see <ref refid="group___smartstrap_1ga078a16b08dbc08080358cbea3dab6a86" kindref="member">smartstrap_attribute_destroy</ref>) and the availability_did_change handler is unsubscribed (see <ref refid="group___smartstrap_1ga7ebbfcea4142202197d8595f04aee9fc" kindref="member">smartstrap_unsubscribe</ref>), power will no longer be applied to the smartstrap and the services which it supported will no longer be available.</para>
+<para>Multiple attributes may have a read or write request pending at any given time, but individual attributes may only have a single request (either read or write) pending at any given time.</para>
+<para>Calls made to <ref refid="group___smartstrap_1ga107b850449693ecd2048077c4d28df2a" kindref="member">smartstrap_attribute_create</ref> on a platform that does not support smartstraps will return NULL. Other calls will do nothing, and return SmartstrapResultNotPresent if possible.</para>
+<para>For code samples, a list of available attributes, and technical details of the Smartstrap protocol, see the <ulink url="//developer.getpebble.com/guides/hardware/">Building Smartstraps Guide</ulink>. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___u_u_i_d" kind="group">
+    <compoundname>UUID</compoundname>
+    <title>UUID</title>
+    <innerclass refid="struct_uuid" prot="public">Uuid</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_u_i_d_1gaf3672abb648800ef789f52078fe25a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool uuid_equal</definition>
+        <argsstring>(const Uuid *uu1, const Uuid *uu2)</argsstring>
+        <name>uuid_equal</name>
+        <param>
+          <type>const Uuid *</type>
+          <declname>uu1</declname>
+        </param>
+        <param>
+          <type>const Uuid *</type>
+          <declname>uu2</declname>
+        </param>
+        <briefdescription>
+<para>Compares two UUIDs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the two UUIDs are equal, false if they are not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1604" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1604" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_u_i_d_1gaedb2683d7b3bf3b65a19b487f4ac6147" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void uuid_to_string</definition>
+        <argsstring>(const Uuid *uuid, char *buffer)</argsstring>
+        <name>uuid_to_string</name>
+        <param>
+          <type>const Uuid *</type>
+          <declname>uuid</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Writes UUID in a string form into buffer that looks like the following... {12345678-1234-5678-1234-567812345678} or {NULL UUID} if NULL was passed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Uuid to write into the buffer as human-readable string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory to write the string to. Must be at least <ref refid="group___u_u_i_d_1ga8bcd1589d1f13e8b9590e1ac4fc105a6" kindref="member">UUID_STRING_BUFFER_LENGTH</ref> bytes long. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1610" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1610" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_u_i_d_1ga5db91c4b658dc322b42959cb5c851020" prot="public" static="no">
+        <name>UUID_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1582" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_u_i_d_1ga8bcd1589d1f13e8b9590e1ac4fc105a6" prot="public" static="no">
+        <name>UUID_STRING_BUFFER_LENGTH</name>
+        <initializer>(32 + 4 + 2 + 1)</initializer>
+        <briefdescription>
+<para>The minimum required length of a string used to hold a uuid (including null). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1613" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_u_i_d_1ga9128d7f2d76acf429e4f87120ae85264" prot="public" static="no">
+        <name>UuidMake</name>
+        <param><defname>p0</defname></param>
+        <param><defname>p1</defname></param>
+        <param><defname>p2</defname></param>
+        <param><defname>p3</defname></param>
+        <param><defname>p4</defname></param>
+        <param><defname>p5</defname></param>
+        <param><defname>p6</defname></param>
+        <param><defname>p7</defname></param>
+        <param><defname>p8</defname></param>
+        <param><defname>p9</defname></param>
+        <param><defname>p10</defname></param>
+        <param><defname>p11</defname></param>
+        <param><defname>p12</defname></param>
+        <param><defname>p13</defname></param>
+        <param><defname>p14</defname></param>
+        <param><defname>p15</defname></param>
+        <initializer>((Uuid) {p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15})</initializer>
+        <briefdescription>
+<para>Make a Uuid object from sixteen bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Uuid structure representing the bytes p0 to p15. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1586" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_u_i_d_1ga6f6051dfaa96cba4a771cbc172df174c" prot="public" static="no">
+        <name>UuidMakeFromBEBytes</name>
+        <param><defname>b</defname></param>
+        <initializer>((Uuid) { b[0], b[1], b[2], b[3], \
+b[4], b[5], b[6], b[7], \
+b[8], b[9], b[10], b[11], \
+b[12], b[13], b[14], b[15] })</initializer>
+        <briefdescription>
+<para>Creates a Uuid from an array of bytes with 16 bytes in Big Endian order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The created Uuid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1590" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1590" bodyend="1593"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_u_i_d_1ga2edca35e11dd848805ee37ee54751b22" prot="public" static="no">
+        <name>UuidMakeFromLEBytes</name>
+        <param><defname>b</defname></param>
+        <initializer>((Uuid) { b[15], b[14], b[13], b[12], \
+b[11], b[10], b[9], b[8], \
+b[7], b[6], b[5], b[4], \
+b[3], b[2], b[1], b[0] })</initializer>
+        <briefdescription>
+<para>Creates a Uuid from an array of bytes with 16 bytes in Little Endian order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The created Uuid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1597" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1597" bodyend="1600"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,22 +1,8 @@
 var searchData=
 [
-  ['text_5flayer_5fcreate_0',['text_layer_create',['../group___text_layer.html#gad86babd035e1a9a6f7ee4f8453f8cb25',1,'pebble.h']]],
-  ['text_5flayer_5fdestroy_1',['text_layer_destroy',['../group___text_layer.html#ga17a045487e54ec95c989434bd7289242',1,'pebble.h']]],
-  ['text_5flayer_5fenable_5fscreen_5ftext_5fflow_5fand_5fpaging_2',['text_layer_enable_screen_text_flow_and_paging',['../group___text_layer.html#ga473f54e257f089a9e7a5df0a0e56f625',1,'pebble.h']]],
-  ['text_5flayer_5fget_5fcontent_5fsize_3',['text_layer_get_content_size',['../group___text_layer.html#ga35fe649d979d4b002589fbaf86604f2a',1,'pebble.h']]],
-  ['text_5flayer_5fget_5flayer_4',['text_layer_get_layer',['../group___text_layer.html#gad2bb47b3765f450537b097ef920eaea4',1,'pebble.h']]],
-  ['text_5flayer_5fget_5ftext_5',['text_layer_get_text',['../group___text_layer.html#gaa52e267bf1587d3e56a88791e1d29618',1,'pebble.h']]],
-  ['text_5flayer_5frestore_5fdefault_5ftext_5fflow_5fand_5fpaging_6',['text_layer_restore_default_text_flow_and_paging',['../group___text_layer.html#ga5aa332145a2bf45e742957ac07e27b99',1,'pebble.h']]],
-  ['text_5flayer_5fset_5fbackground_5fcolor_7',['text_layer_set_background_color',['../group___text_layer.html#gabfeaa5a8a8062c5ed6c31c0dc853bc28',1,'pebble.h']]],
-  ['text_5flayer_5fset_5ffont_8',['text_layer_set_font',['../group___text_layer.html#gadb8ccc8f9a14ab4a2386f6ccac8de0f1',1,'pebble.h']]],
-  ['text_5flayer_5fset_5foverflow_5fmode_9',['text_layer_set_overflow_mode',['../group___text_layer.html#ga654f359a8f5736aa5ca82735d8b03b16',1,'pebble.h']]],
-  ['text_5flayer_5fset_5fsize_10',['text_layer_set_size',['../group___text_layer.html#ga3548811ef658bdc7755fe53f16d6e23b',1,'pebble.h']]],
-  ['text_5flayer_5fset_5ftext_11',['text_layer_set_text',['../group___text_layer.html#ga19406f772604d595c5c1af7222992449',1,'pebble.h']]],
-  ['text_5flayer_5fset_5ftext_5falignment_12',['text_layer_set_text_alignment',['../group___text_layer.html#gaf44cc52cecaa94867d927130da4d4aca',1,'pebble.h']]],
-  ['text_5flayer_5fset_5ftext_5fcolor_13',['text_layer_set_text_color',['../group___text_layer.html#ga4e94ca9f977475342b3cccaf7e503515',1,'pebble.h']]],
-  ['tick_5ftimer_5fservice_5fsubscribe_14',['tick_timer_service_subscribe',['../group___tick_timer_service.html#ga8b1ebbe9ca26a97b23af5610842bc892',1,'pebble.h']]],
-  ['tick_5ftimer_5fservice_5funsubscribe_15',['tick_timer_service_unsubscribe',['../group___tick_timer_service.html#gaae157828fd8c8d1e8de6372d0a3aa25e',1,'pebble.h']]],
-  ['time_16',['time',['../group___standard_time.html#ga99ef1cb2c789827dd5db3886dccf9067',1,'pebble.h']]],
-  ['time_5fms_17',['time_ms',['../group___standard_time.html#gaa650308d93a4da6ead47ae68372f2be8',1,'pebble.h']]],
-  ['time_5fstart_5fof_5ftoday_18',['time_start_of_today',['../group___standard_time.html#gaad04b872745a08a1e531f6590194bd9b',1,'pebble.h']]]
+  ['vibes_5fcancel_0',['vibes_cancel',['../group___vibes.html#gad190fd7825ec34d96d0ef05508275169',1,'pebble.h']]],
+  ['vibes_5fdouble_5fpulse_1',['vibes_double_pulse',['../group___vibes.html#gab248dc8961ee1356a106599e3aeef00a',1,'pebble.h']]],
+  ['vibes_5fenqueue_5fcustom_5fpattern_2',['vibes_enqueue_custom_pattern',['../group___vibes.html#ga3412ed26dd91a20f77ba1a4c54b668e1',1,'pebble.h']]],
+  ['vibes_5flong_5fpulse_3',['vibes_long_pulse',['../group___vibes.html#ga93e5ca695c1ff3ed096b7f1b5cb29d44',1,'pebble.h']]],
+  ['vibes_5fshort_5fpulse_4',['vibes_short_pulse',['../group___vibes.html#gaa5acf97e140e066834c1963da7f1d5db',1,'pebble.h']]]
 ];

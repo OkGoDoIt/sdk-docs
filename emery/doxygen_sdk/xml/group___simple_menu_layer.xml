@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___simple_menu_layer" kind="group">
+    <compoundname>SimpleMenuLayer</compoundname>
+    <title>SimpleMenuLayer</title>
+    <innerclass refid="struct_simple_menu_item" prot="public">SimpleMenuItem</innerclass>
+    <innerclass refid="struct_simple_menu_section" prot="public">SimpleMenuSection</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___simple_menu_layer_1ga78745d70ab641890eb680ded9a3063d8" prot="public" static="no">
+        <type>struct SimpleMenuLayer</type>
+        <definition>typedef struct SimpleMenuLayer SimpleMenuLayer</definition>
+        <argsstring></argsstring>
+        <name>SimpleMenuLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7778" column="30" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___simple_menu_layer_1ga738da5d7abed9feb0809d4a9115aba3a" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SimpleMenuLayerSelectCallback) (int index, void *context)</definition>
+        <argsstring>)(int index, void *context)</argsstring>
+        <name>SimpleMenuLayerSelectCallback</name>
+        <briefdescription>
+<para>Function signature for the callback to handle the event that a user hits the SELECT button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row index of the item </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7784" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7784" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___simple_menu_layer_1gad083734e2df1ef8cab501e423e952faf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SimpleMenuLayer *</type>
+        <definition>SimpleMenuLayer * simple_menu_layer_create</definition>
+        <argsstring>(GRect frame, Window *window, const SimpleMenuSection *sections, int32_t num_sections, void *callback_context)</argsstring>
+        <name>simple_menu_layer_create</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_simple_menu_section" kindref="compound">SimpleMenuSection</ref> *</type>
+          <declname>sections</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num_sections</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callback_context</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new SimpleMenuLayer on the heap and initializes it. It also sets the internal click configuration provider onto given window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame at which to initialize the menu </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window onto which to set the click configuration provider </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sections</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array with sections that need to be displayed in the menu </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_sections</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of sections in the <computeroutput>sections</computeroutput> array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application specific data, that is passed into the callbacks. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The <computeroutput>sections</computeroutput> array is not deep-copied and can therefore not be stack allocated, but needs to be backed by long-lived storage. </para>
+</simplesect>
+<simplesect kind="note"><para>This function does not add the menu&apos;s layer to the window. </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to the SimpleMenuLayer. <computeroutput>NULL</computeroutput> if the SimpleMenuLayer could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7822" column="17" declfile="build/sdk/emery/include/pebble.h" declline="7822" declcolumn="17"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___simple_menu_layer_1ga0608656e550deb3b0339cd1c807990e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simple_menu_layer_destroy</definition>
+        <argsstring>(SimpleMenuLayer *menu_layer)</argsstring>
+        <name>simple_menu_layer_destroy</name>
+        <param>
+          <type>SimpleMenuLayer *</type>
+          <declname>menu_layer</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a SimpleMenuLayer previously created by simple_menu_layer_create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7826" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7826" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___simple_menu_layer_1ga82f0c2365495f6946ac00402d3493158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * simple_menu_layer_get_layer</definition>
+        <argsstring>(const SimpleMenuLayer *simple_menu)</argsstring>
+        <name>simple_menu_layer_get_layer</name>
+        <param>
+          <type>const SimpleMenuLayer *</type>
+          <declname>simple_menu</declname>
+        </param>
+        <briefdescription>
+<para>Gets the &quot;root&quot; Layer of the simple menu layer, which is the parent for the sub-layers used for its implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>simple_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the SimpleMenuLayer for which to get the &quot;root&quot; Layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The &quot;root&quot; Layer of the menu layer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7833" column="7" declfile="build/sdk/emery/include/pebble.h" declline="7833" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___simple_menu_layer_1ga62bd875b1ddd7548cfa85db0ac16e153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuLayer *</type>
+        <definition>MenuLayer * simple_menu_layer_get_menu_layer</definition>
+        <argsstring>(SimpleMenuLayer *simple_menu)</argsstring>
+        <name>simple_menu_layer_get_menu_layer</name>
+        <param>
+          <type>SimpleMenuLayer *</type>
+          <declname>simple_menu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>simple_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___simple_menu_layer" kindref="compound">SimpleMenuLayer</ref> to get the <ref refid="group___menu_layer" kindref="compound">MenuLayer</ref> from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="group___menu_layer" kindref="compound">MenuLayer</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7849" column="11" declfile="build/sdk/emery/include/pebble.h" declline="7849" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="group___simple_menu_layer_1ga496b6f0e2b65a70715d01d3d2630d215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simple_menu_layer_get_selected_index</definition>
+        <argsstring>(const SimpleMenuLayer *simple_menu)</argsstring>
+        <name>simple_menu_layer_get_selected_index</name>
+        <param>
+          <type>const SimpleMenuLayer *</type>
+          <declname>simple_menu</declname>
+        </param>
+        <briefdescription>
+<para>Gets the row index of the currently selection menu item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>simple_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SimpleMenuLayer for which to get the current selected row index. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7838" column="5" declfile="build/sdk/emery/include/pebble.h" declline="7838" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group___simple_menu_layer_1gad1a4c28d39c0aa4bcad32920ec0f2e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simple_menu_layer_set_selected_index</definition>
+        <argsstring>(SimpleMenuLayer *simple_menu, int32_t index, bool animated)</argsstring>
+        <name>simple_menu_layer_set_selected_index</name>
+        <param>
+          <type>SimpleMenuLayer *</type>
+          <declname>simple_menu</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+<para>Selects the item in the first section at given row index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>simple_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SimpleMenuLayer for which to change the selection </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row index of the item to select </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Supply <computeroutput>true</computeroutput> to animate changing the selection, or <computeroutput>false</computeroutput> to change the selection instantly. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7845" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7845" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Wrapper around <ref refid="group___menu_layer" kindref="compound">MenuLayer</ref>, that uses static data to display a list menu. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="simple_menu_layer.png" inline="yes"></image>
+ <image type="latex" name="simple_menu_layer.png" inline="yes"></image>
+ <image type="rtf" name="simple_menu_layer.png" inline="yes"></image>
+ <image type="docbook" name="simple_menu_layer.png" inline="yes"></image>
+ <image type="xml" name="simple_menu_layer.png" inline="yes"></image>
+ </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

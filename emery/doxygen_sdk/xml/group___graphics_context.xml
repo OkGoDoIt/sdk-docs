@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___graphics_context" kind="group">
+    <compoundname>GraphicsContext</compoundname>
+    <title>Graphics Context</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___graphics_context_1gaf3197c217e22f0cf3c360ba1daf624fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_context_set_antialiased</definition>
+        <argsstring>(GContext *ctx, bool enable)</argsstring>
+        <name>graphics_context_set_antialiased</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether antialiasing is applied to stroke drawing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context onto which to set the antialiasing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True = antialiasing enabled, False = antialiasing disabled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Default value is true. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4346" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4346" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_context_1ga64bc6cc5f86dabcd4b3cfa9fcffa328c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_context_set_compositing_mode</definition>
+        <argsstring>(GContext *ctx, GCompOp mode)</argsstring>
+        <name>graphics_context_set_compositing_mode</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___graphics_types_1ga0d021422bd90a2a49e6c8d848e6d556f" kindref="member">GCompOp</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current bitmap compositing mode of the graphics context. The default mode is GCompOpAssign i.e. bitmap transparency disabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context onto which to set the compositing mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new compositing mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga0d021422bd90a2a49e6c8d848e6d556f" kindref="member">GCompOp</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___bitmap_layer_1ga7bc761ca8227881c5853cbc0e279385e" kindref="member">bitmap_layer_set_compositing_mode()</ref> </para>
+</simplesect>
+<simplesect kind="note"><para>At the moment, this only affects the bitmaps drawing operations <ndash/> <ref refid="group___drawing_1ga2df0bc47f542ea60500d3070670725f9" kindref="member">graphics_draw_bitmap_in_rect()</ref>, <ref refid="group___drawing_1ga34f27bdfadc25a04b7b49d5cd8011266" kindref="member">graphics_draw_rotated_bitmap</ref>, and anything that uses those APIs <ndash/>, but it currently does not affect the filling or stroking operations. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4340" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4340" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_context_1ga891b4629c483386546a9fe20d36bbfa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_context_set_fill_color</definition>
+        <argsstring>(GContext *ctx, GColor color)</argsstring>
+        <name>graphics_context_set_fill_color</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current fill color of the graphics context. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context onto which to set the fill color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new fill color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4323" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4323" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_context_1ga22a22f399842bcaef72842d64e0195fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_context_set_stroke_color</definition>
+        <argsstring>(GContext *ctx, GColor color)</argsstring>
+        <name>graphics_context_set_stroke_color</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current stroke color of the graphics context. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context onto which to set the stroke color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new stroke color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4318" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4318" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_context_1ga18a48052681339dd0d157078117f813b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_context_set_stroke_width</definition>
+        <argsstring>(GContext *ctx, uint8_t stroke_width)</argsstring>
+        <name>graphics_context_set_stroke_width</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>stroke_width</declname>
+        </param>
+        <briefdescription>
+<para>Sets the width of the stroke for drawing routines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context onto which to set the stroke width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stroke_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width in pixels of the stroke. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If stroke width of zero is passed, it will be ignored and will not change the value stored in GContext. Currently, only odd stroke_width values are supported. If an even value is passed in, the value will be stored as is, but the drawing routines will round down to the previous integral value when drawing. Default value is 1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4355" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4355" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_context_1gabf002f4de8793c7d2f4a804a4a438ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_context_set_text_color</definition>
+        <argsstring>(GContext *ctx, GColor color)</argsstring>
+        <name>graphics_context_set_text_color</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current text color of the graphics context. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context onto which to set the text color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new text color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4328" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4328" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The &quot;canvas&quot; into which an application draws </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The Pebble OS graphics engine, inspired by several notable graphics systems, including Apple’s Quartz 2D and its predecessor QuickDraw, provides your app with a canvas into which to draw, namely, the graphics context. A graphics context is the target into which graphics functions can paint, using Pebble drawing routines (see <ref refid="group___drawing" kindref="compound">Drawing Primitives</ref>, <ref refid="group___path_drawing" kindref="compound">Drawing Paths</ref> and <ref refid="group___text_drawing" kindref="compound">Drawing Text</ref>).</para>
+<para>A graphics context holds a reference to the bitmap into which to paint. It also holds the current drawing state, like the current fill color, stroke color, clipping box, drawing box, compositing mode, and so on. The GContext struct is the type representing the graphics context.</para>
+<para>For drawing in your Pebble watchface or watchapp, you won&apos;t need to create a GContext yourself. In most cases, it is provided by Pebble OS as an argument passed into a render callback (the .update_proc of a Layer).</para>
+<para>Your app can’t call drawing functions at any given point in time: Pebble OS will request your app to render. Typically, your app will be calling out to graphics functions in the .update_proc callback of a Layer. <simplesect kind="see"><para><ref refid="group___layer" kindref="compound">Layers</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___drawing" kindref="compound">Drawing Primitives</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___path_drawing" kindref="compound">Drawing Paths</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing" kindref="compound">Drawing Text</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

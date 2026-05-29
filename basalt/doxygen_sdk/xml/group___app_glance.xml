@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___app_glance" kind="group">
     <compoundname>AppGlance</compoundname>
     <title>App Glance</title>
     <innerclass refid="struct_app_glance_slice" prot="public">AppGlanceSlice</innerclass>
-    <innerclass refid="struct_app_glance_slice_8layout" prot="public">AppGlanceSlice.layout</innerclass>
+    <innerclass refid="struct_app_glance_slice_layout" prot="public">AppGlanceSliceLayout</innerclass>
     <sectiondef kind="enum">
       <memberdef kind="enum" id="group___app_glance_1ga2d8c182280b6b6f6ef7412f448a3f846" prot="public" static="no" strong="no">
         <type></type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3259" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3259" bodyend="3274"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3536" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3536" bodyend="3551"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3291" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3291" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3568" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3568" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___app_glance_1gaef71860d15d412da5d9c7fe4e8e67afe" prot="public" static="no">
         <type>struct AppGlanceReloadSession</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3277" column="37" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3277" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3554" column="37" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3554" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___app_glance_1ga6862953d9c7d936dee481fc8934bc8a6" prot="public" static="no">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3231" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3231" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3505" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3505" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3284" column="17" declfile="build/sdk/basalt/include/pebble.h" declline="3284" declcolumn="17"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3561" column="17" declfile="build/sdk/basalt/include/pebble.h" declline="3561" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3298" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3298" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3575" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3575" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -246,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3238" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3238" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3512" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3512" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___app_glance_1ga5ffc28353367e3fce95b42cf0cfd1476" prot="public" static="no">
         <name>APP_GLANCE_SLICE_NO_EXPIRATION</name>
@@ -258,13 +258,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3234" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3234" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3508" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3508" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>API for the application to modify its glance. </para>
+<para>API for the application to modify its &quot;glance&quot; i.e. app menu subtitle. </para>
     </briefdescription>
     <detaileddescription>
+<para>Apps have the ability to show a temporary icon and subtitle in the app selection menu; this is known as a &quot;glance&quot;. For example, the app might use it to display a preview of its current state such as the currently playing song or the number of pending notifications.</para>
+<para>The glance is loaded with a stack of <ref refid="struct_app_glance_slice" kindref="compound">AppGlanceSlice</ref> structs; only the latest slice is shown, and they are set to expire at a certain time to show the next slice in the stack.</para>
+<para>To update the glance with a stack of slices, you must define an <ref refid="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" kindref="member">AppGlanceReloadCallback</ref> and give it to <ref refid="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" kindref="member">app_glance_reload</ref>. The implementation of your <ref refid="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" kindref="member">AppGlanceReloadCallback</ref> should call <ref refid="group___app_glance_1ga3f4c77679d1bfeb7006cb54013d3ae8e" kindref="member">app_glance_add_slice</ref> to add slices to the glance.</para>
+<para>The main window&apos;s unload handler is usually a good place to call <ref refid="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" kindref="member">app_glance_reload</ref>.</para>
+<para><simplesect kind="warning"><para>PBL_PLATFORM_APLITE does not support App Glance.</para>
+</simplesect>
+Example code: <programlisting filename=".c"><codeline><highlight class="preprocessor">#if<sp/>!PBL_PLATFORM_APLITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>glance_reload_callback(AppGlanceReloadSession<sp/>*session,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>limit,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="struct_app_glance_slice" kindref="compound">AppGlanceSlice</ref><sp/>slice<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.expiration_time<sp/>=<sp/><ref refid="group___app_glance_1ga5ffc28353367e3fce95b42cf0cfd1476" kindref="member">APP_GLANCE_SLICE_NO_EXPIRATION</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.layout.icon<sp/>=<sp/><ref refid="group___app_glance_1gaddb5b953247ac6b492a2398a5630451c" kindref="member">APP_GLANCE_SLICE_DEFAULT_ICON</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.layout.subtitle_template_string<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;hello!&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___app_glance_1ga2d8c182280b6b6f6ef7412f448a3f846" kindref="member">AppGlanceResult</ref><sp/>result<sp/>=<sp/><ref refid="group___app_glance_1ga3f4c77679d1bfeb7006cb54013d3ae8e" kindref="member">app_glance_add_slice</ref>(session,<sp/>slice);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result<sp/>!=<sp/><ref refid="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846a4efbe9a2117b1d7533a562df2f6697be" kindref="member">APP_GLANCE_RESULT_SUCCESS</ref>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___logging_1ga06b605436a57d1bf57503bc6e4af0efa" kindref="member">APP_LOG</ref>(<ref refid="group___logging_1ggab6022249fcd453283cdf062c39b2009aae0c054555cf8a95d81c337e40d0fd7ac" kindref="member">APP_LOG_LEVEL_ERROR</ref>,<sp/></highlight><highlight class="stringliteral">&quot;app_glance_add_slice()<sp/>returned<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>result);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!PBL_PLATFORM_APLITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main_window_unload(Window<sp/>*window)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!PBL_PLATFORM_APLITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" kindref="member">app_glance_reload</ref>(glance_reload_callback,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!PBL_PLATFORM_APLITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
     </detaileddescription>
   </compounddef>
 </doxygen>

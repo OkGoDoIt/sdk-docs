@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___audio" kind="group">
+    <compoundname>Audio</compoundname>
+    <title>Context</title>
+    <innerclass refid="struct_audio_context_status" prot="public">AudioContextStatus</innerclass>
+    <innerclass refid="struct_audio_context_transcript" prot="public">AudioContextTranscript</innerclass>
+    <innerclass refid="struct_audio_context_trigger_info" prot="public">AudioContextTriggerInfo</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___audio_1ga8089069793b83dbee70b61b885099409" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AudioContextAvailability</name>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409af0f0a4afed3759ff279f0d56ce0fc7d8" prot="public">
+          <name>AudioContextAvailabilityAvailable</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Audio Context is available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a678ac850fa9c83828e993f8034c5fa82" prot="public">
+          <name>AudioContextAvailabilityUnsupportedWatch</name>
+          <briefdescription>
+<para>The connected watch or firmware does not support Audio Context. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a73adc4f50e981e808b0e1519fb761b3f" prot="public">
+          <name>AudioContextAvailabilityUnsupportedPhone</name>
+          <briefdescription>
+<para>The connected phone app does not support Audio Context. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a8a550042e12e22e345dc024fffa5ea19" prot="public">
+          <name>AudioContextAvailabilityDisabledByUser</name>
+          <briefdescription>
+<para>The user has disabled system background audio. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a2dc599b51d4359607a0aaef0f9c187ae" prot="public">
+          <name>AudioContextAvailabilityPermissionDenied</name>
+          <briefdescription>
+<para>The user has not granted this app the requested audio access. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409a2e6e39ec6c4cbbea543b65261a1e1686" prot="public">
+          <name>AudioContextAvailabilityCapabilityNotDeclared</name>
+          <briefdescription>
+<para>The app did not declare the required capability in <computeroutput>package.json</computeroutput>. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409aeb64894681ef0cb083b54f735ef67bf7" prot="public">
+          <name>AudioContextAvailabilityTranscriptionUnavailable</name>
+          <briefdescription>
+<para>Transcription is not available for the requested audio data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409aa1358121f8fc147943856644df2e1b75" prot="public">
+          <name>AudioContextAvailabilityNoData</name>
+          <briefdescription>
+<para>No transcript data is available for the requested time window. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga8089069793b83dbee70b61b885099409ad61802582bde2d7fc9866923a4797cab" prot="public">
+          <name>AudioContextAvailabilityError</name>
+          <briefdescription>
+<para>An unexpected error occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Availability or failure reason for Audio Context requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3325" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3325" bodyend="3344"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___audio_1ga102d954bf3a9aac9c11e99d504a7014b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AudioContextPermission</name>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014ba4836517e9d0424b8413b2ab3acc3d5a4" prot="public">
+          <name>AudioContextPermissionStatus</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Check Audio Context availability and background audio status. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014baf77f5d0cec3c0298d22cdc455e157dc9" prot="public">
+          <name>AudioContextPermissionRecentTranscript</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Read recent transcript context. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014baa8f7d11bcb505d81276e0bb1159f9891" prot="public">
+          <name>AudioContextPermissionTranscriptHistory</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Read bounded transcript history. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014bac333223ea652900ed980d08b54c7b880" prot="public">
+          <name>AudioContextPermissionLiveTranscript</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>Subscribe to live transcript updates while the app is active. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga102d954bf3a9aac9c11e99d504a7014ba13c814372dc32f0cd81726b56838d55a" prot="public">
+          <name>AudioContextPermissionRawAudio</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>Receive raw phone-side audio. Not exposed to watch C apps in v1. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Permission scopes an app can request for Audio Context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3347" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3347" bodyend="3358"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___audio_1ga1059c166058e46717fe913bc9576c0a5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AudioContextTriggerSource</name>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5ad4ce8841d4cd63a894278afd9d2d2bc9" prot="public">
+          <name>AudioContextTriggerSourceUnknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The launch source is unknown. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5a3081587eb52afcfc63746259c2444ab3" prot="public">
+          <name>AudioContextTriggerSourceWatch</name>
+          <briefdescription>
+<para>The launch was triggered from the watch. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5a8f16a2bbe18085bab013e84d1f6f9e63" prot="public">
+          <name>AudioContextTriggerSourcePhone</name>
+          <briefdescription>
+<para>The launch was triggered from the phone. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5a0975b874dbdf009465872147d4390985" prot="public">
+          <name>AudioContextTriggerSourceRing</name>
+          <briefdescription>
+<para>The launch was triggered from a paired ring or similar accessory. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5a1997cd4d8e2348b0e4e4305199aea9ba" prot="public">
+          <name>AudioContextTriggerSourceShortcut</name>
+          <briefdescription>
+<para>The launch was triggered from a shortcut. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___audio_1gga1059c166058e46717fe913bc9576c0a5ae57e3efd353c60634458d1d943c21773" prot="public">
+          <name>AudioContextTriggerSourceSystem</name>
+          <briefdescription>
+<para>The launch was triggered by the system. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Source category that caused an Audio Context-aware launch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3389" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3389" bodyend="3402"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___audio_1ga14d3fefa12726df652e7839df402a2bf" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AudioContextStatusCallback) (AudioContextAvailability result, const AudioContextStatus *status, void *context)</definition>
+        <argsstring>)(AudioContextAvailability result, const AudioContextStatus *status, void *context)</argsstring>
+        <name>AudioContextStatusCallback</name>
+        <briefdescription>
+<para>Callback for asynchronous Audio Context status requests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <computeroutput>result</computeroutput> is not <computeroutput><ref refid="group___audio_1gga8089069793b83dbee70b61b885099409af0f0a4afed3759ff279f0d56ce0fc7d8" kindref="member">AudioContextAvailabilityAvailable</ref></computeroutput>, <computeroutput>status</computeroutput> may be NULL. The callback runs on the app event loop. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3424" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___audio_1ga6c5afbc469e64cf4ad6596a1c52528d5" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AudioContextTranscriptCallback) (AudioContextAvailability result, const AudioContextTranscript *transcript, void *context)</definition>
+        <argsstring>)(AudioContextAvailability result, const AudioContextTranscript *transcript, void *context)</argsstring>
+        <name>AudioContextTranscriptCallback</name>
+        <briefdescription>
+<para>Callback for transcript query and subscription results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <computeroutput>result</computeroutput> is not <computeroutput><ref refid="group___audio_1gga8089069793b83dbee70b61b885099409af0f0a4afed3759ff279f0d56ce0fc7d8" kindref="member">AudioContextAvailabilityAvailable</ref></computeroutput>, <computeroutput>transcript</computeroutput> may be NULL. The <computeroutput>transcript</computeroutput> pointer and <computeroutput>transcript-&gt;text</computeroutput> are valid only for the duration of the callback. Copy the text before returning if it is needed later. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3434" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3434" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___audio_1ga20d447b3c8eaae56caf1d9cccd0b4430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___audio_1ga8089069793b83dbee70b61b885099409" kindref="member">AudioContextAvailability</ref></type>
+        <definition>AudioContextAvailability audio_context_get_cached_status</definition>
+        <argsstring>(AudioContextStatus *status_out)</argsstring>
+        <name>audio_context_get_cached_status</name>
+        <param>
+          <type><ref refid="struct_audio_context_status" kindref="compound">AudioContextStatus</ref> *</type>
+          <declname>status_out</declname>
+        </param>
+        <briefdescription>
+<para>Gets the most recent cached Audio Context status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function does not contact the phone. Before a status response has been received, the cached availability is <computeroutput><ref refid="group___audio_1gga8089069793b83dbee70b61b885099409a73adc4f50e981e808b0e1519fb761b3f" kindref="member">AudioContextAvailabilityUnsupportedPhone</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional destination for the cached status. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cached availability value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3446" column="26" declfile="build/sdk/emery/include/pebble.h" declline="3446" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="group___audio_1gaa3b0662a88fb3472c4b672cc27f172de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool audio_context_get_trigger_info</definition>
+        <argsstring>(AudioContextTriggerInfo *info_out)</argsstring>
+        <name>audio_context_get_trigger_info</name>
+        <param>
+          <type><ref refid="struct_audio_context_trigger_info" kindref="compound">AudioContextTriggerInfo</ref> *</type>
+          <declname>info_out</declname>
+        </param>
+        <briefdescription>
+<para>Gets source-neutral metadata about the current app launch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is useful for Quick Launch or accessory-triggered workflows. Apps can use the trigger time to decide which recent transcript window to request.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>info_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination for trigger metadata. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if trigger metadata was written, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3520" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3520" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___audio_1ga4c8c362aa96ea11fcbfc35e3fa7773dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool audio_context_request_enable</definition>
+        <argsstring>(void)</argsstring>
+        <name>audio_context_request_enable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Asks the system to show the background audio enable flow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Apps cannot enable background audio directly. This function only requests that the phone show the user an appropriate flow.</para>
+<para><simplesect kind="return"><para>True if the request was sent, false otherwise. This is not the result of the user prompt. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3466" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3466" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___audio_1ga26e3ac6a5ef11f7f57d2e6e222a89431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool audio_context_request_permission</definition>
+        <argsstring>(AudioContextPermission permissions)</argsstring>
+        <name>audio_context_request_permission</name>
+        <param>
+          <type><ref refid="group___audio_1ga102d954bf3a9aac9c11e99d504a7014b" kindref="member">AudioContextPermission</ref></type>
+          <declname>permissions</declname>
+        </param>
+        <briefdescription>
+<para>Asks the system to show the Audio Context permission flow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The app must declare the matching capabilities in <computeroutput>package.json</computeroutput>. This function does not grant permissions directly and does not report the final prompt result. Request status or transcript data afterwards to observe the current permission state.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>permissions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitmask of <computeroutput><ref refid="group___audio_1ga102d954bf3a9aac9c11e99d504a7014b" kindref="member">AudioContextPermission</ref></computeroutput> values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the request was sent, false otherwise. This is not the result of the user prompt. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3478" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3478" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___audio_1gaeea07ad0d8afc8bd56b78f0d0b0b23c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool audio_context_request_recent_transcript</definition>
+        <argsstring>(uint32_t before_seconds, uint32_t after_seconds, AudioContextTranscriptCallback callback, void *context)</argsstring>
+        <name>audio_context_request_recent_transcript</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>before_seconds</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>after_seconds</declname>
+        </param>
+        <param>
+          <type><ref refid="group___audio_1ga6c5afbc469e64cf4ad6596a1c52528d5" kindref="member">AudioContextTranscriptCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Requests recent transcript context around the current time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires the <computeroutput>audio_transcript</computeroutput> capability and user permission. The phone may return no data if transcription is delayed or no segment overlaps the requested window.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>before_seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seconds before the anchor time to include. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>after_seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seconds after the anchor time to include. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback invoked with the transcript or an availability value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional context pointer passed to <computeroutput>callback</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the request was queued for delivery, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3492" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3492" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___audio_1ga2601088e7726429554014ed8fe61aa02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool audio_context_request_status</definition>
+        <argsstring>(AudioContextStatusCallback callback, void *context)</argsstring>
+        <name>audio_context_request_status</name>
+        <param>
+          <type><ref refid="group___audio_1ga14d3fefa12726df652e7839df402a2bf" kindref="member">AudioContextStatusCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Requests fresh Audio Context status from the phone. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires the <computeroutput>audio_status</computeroutput> capability and user permission. The callback receives the status or an availability value describing why status could not be returned.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback invoked when the phone responds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional context pointer passed to <computeroutput>callback</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the request was queued for delivery, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3457" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3457" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___audio_1gaae5554e31cfa1ae8a4dc0a35d1fc223f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool audio_context_request_transcript_history</definition>
+        <argsstring>(time_t start_time, time_t end_time, AudioContextTranscriptCallback callback, void *context)</argsstring>
+        <name>audio_context_request_transcript_history</name>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>start_time</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>end_time</declname>
+        </param>
+        <param>
+          <type><ref refid="group___audio_1ga6c5afbc469e64cf4ad6596a1c52528d5" kindref="member">AudioContextTranscriptCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Requests bounded transcript history. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires the <computeroutput>audio_history</computeroutput> capability and user permission. Use small windows on watch apps; larger history and cloud processing are better suited to PebbleKit JS on the phone.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start of the history window in seconds since the Unix epoch. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End of the history window in seconds since the Unix epoch. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback invoked with the transcript or an availability value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional context pointer passed to <computeroutput>callback</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the request was queued for delivery, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3509" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3509" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___audio_1gae74fcc7c1effc529f69f85de8459e7d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool audio_context_subscribe_transcript</definition>
+        <argsstring>(AudioContextTranscriptCallback callback, void *context)</argsstring>
+        <name>audio_context_subscribe_transcript</name>
+        <param>
+          <type><ref refid="group___audio_1ga6c5afbc469e64cf4ad6596a1c52528d5" kindref="member">AudioContextTranscriptCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Subscribes to live transcript updates while the app is active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires the <computeroutput>audio_transcript</computeroutput> capability and user permission. Only one watch-side transcript subscription can be active through this API. Call <computeroutput><ref refid="group___audio_1ga6fd6e5a75cba46ab96ceda00b18dba7a" kindref="member">audio_context_unsubscribe()</ref></computeroutput> when updates are no longer needed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback invoked for each transcript update. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional context pointer passed to <computeroutput>callback</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the subscription request was queued, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3531" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3531" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___audio_1ga6fd6e5a75cba46ab96ceda00b18dba7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void audio_context_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>audio_context_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Cancels the active transcript subscription, if any. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3534" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3534" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

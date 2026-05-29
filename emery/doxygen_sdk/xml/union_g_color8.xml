@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="union_g_color8" kind="union" language="C++" prot="public">
+    <compoundname>GColor8</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_g_color8_1a574c182822b37d22383a869ac77a9f3f" prot="public" static="no" mutable="no">
+        <type>struct GColor8::@110337040111236303026170261364276215036263011144</type>
+        <definition>struct GColor8::@110337040111236303026170261364276215036263011144 GColor8::@252075304115374174054350240007137217057003317257</definition>
+        <argsstring></argsstring>
+        <name>@252075304115374174054350240007137217057003317257</name>
+        <qualifiedname>GColor8::@252075304115374174054350240007137217057003317257</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3700" column="3"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_g_color8_1a587b00d5ec8e9cb79ca55da375448447" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t GColor8::argb</definition>
+        <argsstring></argsstring>
+        <name>argb</name>
+        <qualifiedname>GColor8::argb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3694" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3694" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="3693" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3693" bodyend="3701"/>
+    <listofallmembers>
+      <member refid="union_g_color8_1a587b00d5ec8e9cb79ca55da375448447" prot="public" virt="non-virtual"><scope>GColor8</scope><name>argb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

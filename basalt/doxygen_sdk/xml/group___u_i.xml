@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___u_i" kind="group">
     <compoundname>UI</compoundname>
     <title>User Interface</title>
@@ -8,6 +8,7 @@
     <innergroup refid="group___layer">Layers</innergroup>
     <innergroup refid="group___light">Light</innergroup>
     <innergroup refid="group___preferences">Preferences</innergroup>
+    <innergroup refid="group___speaker">Speaker</innergroup>
     <innergroup refid="group___unobstructed_area">UnobstructedArea</innergroup>
     <innergroup refid="group___vibes">Vibes</innergroup>
     <innergroup refid="group___window">Window</innergroup>

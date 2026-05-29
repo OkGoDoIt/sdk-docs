@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___data_logging" kind="group">
+    <compoundname>DataLogging</compoundname>
+    <title>DataLogging</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___data_logging_1ga35a7aa37609a9aebb3ad316e77cb716d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DataLoggingItemType</name>
+        <enumvalue id="group___data_logging_1gga35a7aa37609a9aebb3ad316e77cb716dad2f7d26a001c89ff0571aa1504836dc2" prot="public">
+          <name>DATA_LOGGING_BYTE_ARRAY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Array of bytes. Remember that this is the type of a single item in the logging session, so using this type means you&apos;ll be logging multiple byte arrays (each a fixed length described by item_length) for the duration of the session. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___data_logging_1gga35a7aa37609a9aebb3ad316e77cb716da472622733c6b9932c72ed1f19ae66526" prot="public">
+          <name>DATA_LOGGING_UINT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Unsigned integer. This may be a 1, 2, or 4 byte integer depending on the item_length parameter. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___data_logging_1gga35a7aa37609a9aebb3ad316e77cb716da545b43678a162cc7e54a95de503fa184" prot="public">
+          <name>DATA_LOGGING_INT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Signed integer. This may be a 1, 2, or 4 byte integer depending on the item_length parameter. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The different types of session data that Pebble supports. This type describes the type of a singular item in the data session. Every item in a given session is the same type and size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1488" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1488" bodyend="1497"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___data_logging_1gaddc3b8874990b538c7fe17b019ace38f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DataLoggingResult</name>
+        <enumvalue id="group___data_logging_1ggaddc3b8874990b538c7fe17b019ace38fa3b84913c135ef19b14498d42b50daa88" prot="public">
+          <name>DATA_LOGGING_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Successful operation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___data_logging_1ggaddc3b8874990b538c7fe17b019ace38fa920b5048b86670c159a1be628113434c" prot="public">
+          <name>DATA_LOGGING_BUSY</name>
+          <briefdescription>
+<para>Someone else is writing to this logging session. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___data_logging_1ggaddc3b8874990b538c7fe17b019ace38fafeea64638c2370bbbaab20722aac9fa8" prot="public">
+          <name>DATA_LOGGING_FULL</name>
+          <briefdescription>
+<para>No more space to save data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___data_logging_1ggaddc3b8874990b538c7fe17b019ace38fa6b1d5cd4697ac475efab2d6e00b97a80" prot="public">
+          <name>DATA_LOGGING_NOT_FOUND</name>
+          <briefdescription>
+<para>The logging session does not exist. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___data_logging_1ggaddc3b8874990b538c7fe17b019ace38fa5e26c541e3ab96bfb92e8b8c2952af16" prot="public">
+          <name>DATA_LOGGING_CLOSED</name>
+          <briefdescription>
+<para>The logging session was made inactive. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___data_logging_1ggaddc3b8874990b538c7fe17b019ace38fae31f38df1cacf60bc9bf96ba7c1de442" prot="public">
+          <name>DATA_LOGGING_INVALID_PARAMS</name>
+          <briefdescription>
+<para>An invalid parameter was passed to one of the functions. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___data_logging_1ggaddc3b8874990b538c7fe17b019ace38fa18e6679be23622f5e0bae12f204ac42b" prot="public">
+          <name>DATA_LOGGING_INTERNAL_ERR</name>
+          <briefdescription>
+<para>An internal error occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerated values describing the possible outcomes of data logging operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1500" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1500" bodyend="1508"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___data_logging_1ga401e41c91b44c5454cd447a2105ed637" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* DataLoggingSessionRef</definition>
+        <argsstring></argsstring>
+        <name>DataLoggingSessionRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1484" column="14" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1484" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___data_logging_1ga5177edf0006d2df7c77573db1c62e9f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DataLoggingSessionRef</type>
+        <definition>DataLoggingSessionRef data_logging_create</definition>
+        <argsstring>(uint32_t tag, DataLoggingItemType item_type, uint16_t item_length, bool resume)</argsstring>
+        <name>data_logging_create</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type><ref refid="group___data_logging_1ga35a7aa37609a9aebb3ad316e77cb716d" kindref="member">DataLoggingItemType</ref></type>
+          <declname>item_type</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>item_length</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>resume</declname>
+        </param>
+        <briefdescription>
+<para>Create a new data logging session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A tag associated with the logging session. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>item_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of data stored in this logging session </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>item_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of a single data item in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if we want to look for a logging session of the same tag and resume logging to it. If this is false and a session with the specified tag exists, that session will be closed and a new session will be opened. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An opaque reference to the data logging session </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1519" column="23" declfile="build/sdk/emery/include/pebble.h" declline="1519" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group___data_logging_1ga649d07075da61f59d8a18ebb589573af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void data_logging_finish</definition>
+        <argsstring>(DataLoggingSessionRef logging_session)</argsstring>
+        <name>data_logging_finish</name>
+        <param>
+          <type>DataLoggingSessionRef</type>
+          <declname>logging_session</declname>
+        </param>
+        <briefdescription>
+<para>Finish up a data logging_session. Logging data is kept until it has successfully been transferred over to the phone, but no data may be added to the session after this function is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logging_session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a reference to the data logging session previously allocated using data_logging_create </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1528" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1528" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___data_logging_1ga6d287480242f84afaf7c01acc0ab2d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___data_logging_1gaddc3b8874990b538c7fe17b019ace38f" kindref="member">DataLoggingResult</ref></type>
+        <definition>DataLoggingResult data_logging_log</definition>
+        <argsstring>(DataLoggingSessionRef logging_session, const void *data, uint32_t num_items)</argsstring>
+        <name>data_logging_log</name>
+        <param>
+          <type>DataLoggingSessionRef</type>
+          <declname>logging_session</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>num_items</declname>
+        </param>
+        <briefdescription>
+<para>Add data to the data logging session. If a phone is available, the data is sent directly to the phone. Otherwise, it is saved to the watch storage until the watch is connected to a phone. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logging_session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a reference to the data logging session you want to add the data to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the data buffer that contains multiple items </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of items to log. This means data must be at least (num_items * item_length) long in bytes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>DATA_LOGGING_SUCCESS on success</para>
+</simplesect>
+<simplesect kind="return"><para>DATA_LOGGING_NOT_FOUND if the logging session is invalid</para>
+</simplesect>
+<simplesect kind="return"><para>DATA_LOGGING_CLOSED if the sesion is not active</para>
+</simplesect>
+<simplesect kind="return"><para>DATA_LOGGING_BUSY if the sesion is not available for writing</para>
+</simplesect>
+<simplesect kind="return"><para>DATA_LOGGING_INVALID_PARAMS if num_items is 0 or data is NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1552" column="19" declfile="build/sdk/emery/include/pebble.h" declline="1552" declcolumn="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Enables logging data asynchronously to a mobile app </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In Pebble OS, data logging is a data storage and transfer subsystem that allows watchapps to save data on non-volatile storage devices when the phone is not available to process it. The API provides your watchapp with a mechanism for short-term data buffering for asynchronous data transmission to a mobile app.</para>
+<para>Using this API, your Pebble watchapp can create an arbitrary number of logs, but you’re limited in the amount of storage space you can use. Note that approximately 640K is available for data logging, which is shared among all watchapps that use it. This value is subject to change in the future. When the data spool is full, an app will start overwriting its own data. An app cannot overwrite another apps&apos;s data. However, the other app might have 0 bytes for data logging.</para>
+<para>Your app can log data to a session. Every new block of data is appended to the session. The data is then sent to the associated phone application at the earliest convenience. If a phone is available, the data is sent directly to the phone. Otherwise, it is saved to the watch storage until the watch is connected to a phone.</para>
+<para>For example:</para>
+<para>To create a data logging session for 4-byte unsigned integers with a tag of 0x1234, you would do this: <programlisting filename=".c"><codeline><highlight class="normal">DataLoggingSessionRef<sp/>logging_session<sp/>=<sp/><ref refid="group___data_logging_1ga5177edf0006d2df7c77573db1c62e9f2" kindref="member">data_logging_create</ref>(0x1234,<sp/><ref refid="group___data_logging_1gga35a7aa37609a9aebb3ad316e77cb716da472622733c6b9932c72ed1f19ae66526" kindref="member">DATA_LOGGING_UINT</ref>,<sp/>4,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fake<sp/>creating<sp/>some<sp/>data<sp/>and<sp/>logging<sp/>it<sp/>to<sp/>the<sp/>session.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>data[]<sp/>=<sp/>{<sp/>1,<sp/>2,<sp/>3};</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___data_logging_1ga6d287480242f84afaf7c01acc0ab2d63" kindref="member">data_logging_log</ref>(logging_session,<sp/>&amp;data,<sp/>3);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fake<sp/>creating<sp/>more<sp/>data<sp/>and<sp/>logging<sp/>that<sp/>as<sp/>well.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>data2[]<sp/>=<sp/>{<sp/>1,<sp/>2<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___data_logging_1ga6d287480242f84afaf7c01acc0ab2d63" kindref="member">data_logging_log</ref>(logging_session,<sp/>&amp;data,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>When<sp/>we<sp/>don&apos;t<sp/>need<sp/>to<sp/>log<sp/>anything<sp/>else,<sp/>we<sp/>can<sp/>close<sp/>off<sp/>the<sp/>session.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___data_logging_1ga649d07075da61f59d8a18ebb589573af" kindref="member">data_logging_finish</ref>(logging_session);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

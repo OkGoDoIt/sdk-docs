@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___dictionary" kind="group">
     <compoundname>Dictionary</compoundname>
     <title>Dictionary</title>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1671" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1671" bodyend="1683"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1733" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1733" bodyend="1745"/>
       </memberdef>
       <memberdef kind="enum" id="group___dictionary_1gaf164f32d9bda6829f1738ef3fb2c6670" prot="public" static="no" strong="no">
         <type></type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1686" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1686" bodyend="1697"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1748" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1748" bodyend="1759"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1742" column="25" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1742" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1804" column="25" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1804" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___dictionary_1ga9dcb8cc0ffca04141354048a6e3bd379" prot="public" static="no">
         <type>void(*</type>
@@ -138,7 +138,7 @@
         <argsstring>)(const uint32_t key, const Tuple *new_tuple, const Tuple *old_tuple, void *context)</argsstring>
         <name>DictionaryKeyUpdatedCallback</name>
         <briefdescription>
-<para>Type of the callback used in <ref refid="group___dictionary_1ga8ab5934dba34043d2f3319e9ff9dcfc1" kindref="member">dict_merge()</ref> </para>
+<para>Type of the callback used in <ref refid="group___dictionary_1ga8ab5934dba34043d2f3319e9ff9dcfc1" kindref="member">dict_merge()</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1991" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1991" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2053" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2053" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___dictionary_1gac42a608a61e00467c9d2c98bbc512458" prot="public" static="no">
         <type>void(*</type>
@@ -214,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1930" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1930" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1992" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1992" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -259,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1770" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1770" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1832" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1832" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1gad31424a83643adbfd9e84c4bd37e4627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -305,7 +305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1976" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1976" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2038" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="2038" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga51f5783824fd0eb3a484bda1931f593f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
@@ -347,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2012" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="2012" declcolumn="7"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2074" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="2074" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga8ab5934dba34043d2f3319e9ff9dcfc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -437,7 +437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2003" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2003" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2065" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2065" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga0d5d65d21509a42a3113f8b09768d8c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
@@ -491,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1853" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="1853" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1915" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="1915" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1gac1443377d1e746e315fc943016885cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
@@ -521,7 +521,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1863" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="1863" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1925" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="1925" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga0494e17cb2cb325f10d7c3172ecd676b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
@@ -551,7 +551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1858" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="1858" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1920" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="1920" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga6de59736dc56fcda7e4df30ba10ba0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -619,7 +619,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1941" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1941" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2003" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2003" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1gaeaaca187fe71e6d2dd8a4eb4deec2069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -693,7 +693,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1951" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1951" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2013" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2013" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga93526111e666de9fdca7276f6ca73c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -779,7 +779,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1961" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1961" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2023" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2023" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1gaa7fbb0db218e7e6f59eccfa2650fd645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -809,7 +809,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1777" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1777" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1839" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1839" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga9ec44fce51a2ce464a954b2bdd240ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -867,7 +867,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1787" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1787" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1849" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1849" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga015dfe89d0ee2f8b4e16ddda21bcf556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -925,7 +925,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1806" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1806" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1868" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1868" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga30091feef740732d5d6bc3cf2312642a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -995,7 +995,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1797" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1797" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1859" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1859" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga3eb27175dd477e85ddd6add9bd1f8989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -1025,7 +1025,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1845" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1845" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1907" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1907" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga8c4675ccaca8f466f87efb43ae2b2da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -1105,7 +1105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1817" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1817" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1879" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1879" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga16ab88d25be7f5910ed679e59462df75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -1130,7 +1130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1837" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1837" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1899" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1899" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga00170057efcbe91274f059b4b1999990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -1155,7 +1155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1839" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1839" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1901" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1901" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga8bccc25123cb35e72ac9a13058669874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -1180,7 +1180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1835" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1835" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1897" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1897" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga5ed3421ff8e8deda77545aae7d63f191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -1222,7 +1222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1967" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1967" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2029" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2029" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga33e8aeb09931564c43ac7d0989bd270c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -1247,7 +1247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1831" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1831" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1893" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1893" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga55bc40ddb66d9a0aef4c26ff64c9709e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -1272,7 +1272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1833" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1833" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1895" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1895" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictionary_1ga8fab9c8ce0fdae44a891c6784f4d38a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
@@ -1330,7 +1330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1829" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1829" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1891" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="1891" declcolumn="18"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -1373,7 +1373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1910" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1910" bodyend="1911"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1972" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1972" bodyend="1973"/>
       </memberdef>
       <memberdef kind="define" id="group___dictionary_1ga6bc99ab1d451b29385733bb92f3c937a" prot="public" static="no">
         <name>TupletCString</name>
@@ -1405,7 +1405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1916" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1916" bodyend="1917"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1978" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1978" bodyend="1979"/>
       </memberdef>
       <memberdef kind="define" id="group___dictionary_1ga152caed0a3d5db76c063b69a01157e57" prot="public" static="no">
         <name>TupletInteger</name>
@@ -1437,7 +1437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1922" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1922" bodyend="1923"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1984" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1984" bodyend="1985"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

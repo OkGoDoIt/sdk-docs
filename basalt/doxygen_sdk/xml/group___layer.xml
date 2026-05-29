@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___layer" kind="group">
     <compoundname>Layer</compoundname>
     <title>Layers</title>
@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5098" column="20" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5098" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5376" column="20" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5376" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___layer_1ga998bcd33d985d252283ebe02400041ee" prot="public" static="no">
         <type>void(*</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5108" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5108" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5386" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5386" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5239" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5239" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5517" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5517" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1gab09fa69c5ba3a57bcfd59184003ece3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
@@ -145,8 +145,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5201" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="5201" declcolumn="8"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5479" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="5479" declcolumn="8"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3645">GPoint</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga30f05eabe6c17e81840a6daa50984135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
@@ -190,8 +190,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5208" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5208" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5486" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5486" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga9e88aa6fd9f3eb2e66834b5ba0bbaca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Layer *</type>
@@ -231,8 +231,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5121" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5121" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5399" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5399" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1gacafb2aae03252b548a2cac3c6634bbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Layer *</type>
@@ -286,8 +286,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5135" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5135" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5413" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5413" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1gab989ba5a74d4bce391bd1d343673e946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -305,7 +305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5138" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5138" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5416" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5416" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga3e99442ac9d3af36ec7c25118360710c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
@@ -337,8 +337,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5188" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5188" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5466" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5466" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga459ca188ae94ee1cd59e691e5fcefaec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -368,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5290" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5290" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5568" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5568" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga0c1be3a06bbcc514e019ad399fe2e79f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -398,7 +398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5295" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5295" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5573" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5573" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga76ed01d3619150b87604ebaa9dc282b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
@@ -430,8 +430,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5175" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5175" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5453" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5453" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga2b4eb514c69ad32fe5cc0f8b3ab9b9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -461,7 +461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5273" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5273" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5551" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5551" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga1bbac31d1070f43b6ecce0d07eabf2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
@@ -493,8 +493,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5194" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5194" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5472" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="5472" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga18f9609674a6cd0caa76e43b38286005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct Window *</type>
@@ -528,7 +528,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5216" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="5216" declcolumn="13"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5494" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="5494" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1gaad290a2abb7f0a37516bb7a45f4157db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -568,7 +568,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5260" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5260" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5538" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5538" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1gaf838c6113463f2924f50be98e15231e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -608,7 +608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5250" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5250" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5528" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5528" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga00bc895642aa02ae2d224659529382c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -641,7 +641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5149" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5149" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5427" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5427" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga20bc62c736890f73edd0a4381219950f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -669,7 +669,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5228" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5228" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5506" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5506" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga15574128ca92653c64d164f6f13e2361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -697,7 +697,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5222" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5222" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5500" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5500" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga0a99dca38b75b52264c0734b934c865c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -739,8 +739,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5182" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5182" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5460" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5460" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga0e7f5b5a70fceadc6245974306b11025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -780,7 +780,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5282" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5282" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5560" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5560" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga5a984a17781b97ce00ae34c437171934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -822,8 +822,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5167" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5167" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="5445" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5445" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___layer_1gac267ce4cc84b0f39297b56edf5ca4b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -863,7 +863,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5268" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5268" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5546" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5546" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___layer_1ga57eddbe4fe47beefadeaf775a3c8dcaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -903,7 +903,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5158" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5158" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5436" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5436" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -914,9 +914,25 @@
 <para>Layers are the basic building blocks for your application UI. Layers can be nested inside each other. Every window has a root layer which is always the topmost layer. You provide a function that is called to draw the content of the layer when needed; or you can use standard layers that are provided by the system, such as text layer, image layer, menu layer, action bar layer, and so on.</para>
 <para>The Pebble layer hierarchy is the list of things that need to be drawn to the screen. Multiple layers can be arranged into a hierarchy. This enables ordering (front to back), layout and hierarchy. Through relative positioning, visual objects that are grouped together by adding them into the same layer can be moved all at once. This means that the child layers will move accordingly. If a parent layer has clipping enabled, all the children will be clipped to the frame of the parent.</para>
 <para>Pebble OS provides convenience layers with built-in logic for displaying different graphic components, like text and bitmap layers.</para>
-<para>Refer to the <htmlonly>&lt;a href=&quot;https://developer.rebble.io/guides/user-interfaces/layers&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
 </htmlonly> (chapter &quot;Layers&quot;) for a conceptual overview of Layers and relevant code examples.</para>
-<para>The Modules listed here contain what can be thought of conceptually as subclasses of Layer. The listed types can be safely type-casted to <computeroutput>Layer</computeroutput> (or <computeroutput>Layer *</computeroutput> in case of a pointer). The <computeroutput>layer_...</computeroutput> functions can then be used with the data structures of these subclasses. <linebreak/>
+<para>The Modules listed here contain what can be thought of conceptually as subclasses of Layer. The listed types can be safely type-casted to <computeroutput><ref refid="group___layer" kindref="compound">Layers</ref></computeroutput> (or <computeroutput><ref refid="group___layer" kindref="compound">Layers</ref> *</computeroutput> in case of a pointer). The <computeroutput>layer_...</computeroutput> functions can then be used with the data structures of these subclasses. <linebreak/>
 For example, the following is legal: <programlisting filename=".c"><codeline><highlight class="normal">TextLayer<sp/>*text_layer;</highlight></codeline>
 <codeline><highlight class="normal">...</highlight></codeline>
 <codeline><highlight class="normal">layer_set_hidden((Layer<sp/>*)text_layer,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>

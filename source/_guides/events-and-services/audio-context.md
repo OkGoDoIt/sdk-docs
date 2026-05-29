@@ -155,8 +155,8 @@ screen no longer needs updates, or when a phone-side task is complete.
 
 ## Raw Audio
 
-Raw audio is available through PebbleKit JS on the phone. It requires the
-`audio_raw` capability and a separate user grant.
+Raw audio is available through PebbleKit JS on the phone.
+It requires the `audio_raw` capability and a separate user grant.
 
 {% alert important %}
 Raw audio may include sensitive sounds nearby. Request `audio_raw` only when

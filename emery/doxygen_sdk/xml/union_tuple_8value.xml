@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="union_tuple_8value" kind="union" language="C++" prot="public">
+    <compoundname>Tuple.value</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_tuple_8value_1a045a170bdc8241264dfe8fda3d1d77ff" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition></definition>
+        <argsstring>[0]</argsstring>
+        <name>cstring</name>
+        <qualifiedname>Tuple.value::cstring</qualifiedname>
+        <briefdescription>
+<para>The C-string value. Valid when <computeroutput>.type</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a73c9d3384801aec20d36c732d9218dab" kindref="member">TUPLE_CSTRING</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1798" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuple_8value_1a59a6c49cfff82ce638c44fec9cd91ddb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring>[0]</argsstring>
+        <name>data</name>
+        <qualifiedname>Tuple.value::data</qualifiedname>
+        <briefdescription>
+<para>The byte array value. Valid when <computeroutput>.type</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad852031b350c69166303a05dbe294ec7" kindref="member">TUPLE_BYTE_ARRAY</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1796" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuple_8value_1ace80d5ec65b1d2a2f1049eadc100db23" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>int16</name>
+        <qualifiedname>Tuple.value::int16</qualifiedname>
+        <briefdescription>
+<para>The 16-bit signed integer value. Valid when <computeroutput>.type</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad691daf1df77095c1e19fe30b6cea5b4" kindref="member">TUPLE_INT</ref> and <computeroutput>.length</computeroutput> is 2 byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1813" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuple_8value_1a0241adbbd83925f051b694d40f02747f" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>int32</name>
+        <qualifiedname>Tuple.value::int32</qualifiedname>
+        <briefdescription>
+<para>The 32-bit signed integer value. Valid when <computeroutput>.type</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad691daf1df77095c1e19fe30b6cea5b4" kindref="member">TUPLE_INT</ref> and <computeroutput>.length</computeroutput> is 4 byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1816" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuple_8value_1a27c006cc56b1ba88f960cf8b5144fcac" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>int8</name>
+        <qualifiedname>Tuple.value::int8</qualifiedname>
+        <briefdescription>
+<para>The 8-bit signed integer value. Valid when <computeroutput>.type</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad691daf1df77095c1e19fe30b6cea5b4" kindref="member">TUPLE_INT</ref> and <computeroutput>.length</computeroutput> is 1 byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1810" column="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuple_8value_1aa00ef2ef85ff67b7b39339886f19044f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>uint16</name>
+        <qualifiedname>Tuple.value::uint16</qualifiedname>
+        <briefdescription>
+<para>The 16-bit unsigned integer value. Valid when <computeroutput>.type</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a6802e5d267fdda619ffb13fc80d873fe" kindref="member">TUPLE_UINT</ref> and <computeroutput>.length</computeroutput> is 2 byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1804" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuple_8value_1a3de84ad0700f2a1571f633d399e1900e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>uint32</name>
+        <qualifiedname>Tuple.value::uint32</qualifiedname>
+        <briefdescription>
+<para>The 32-bit unsigned integer value. Valid when <computeroutput>.type</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a6802e5d267fdda619ffb13fc80d873fe" kindref="member">TUPLE_UINT</ref> and <computeroutput>.length</computeroutput> is 4 byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1807" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuple_8value_1a5f423e669d0a8f4ab7c4c3e6da27161a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>uint8</name>
+        <qualifiedname>Tuple.value::uint8</qualifiedname>
+        <briefdescription>
+<para>The 8-bit unsigned integer value. Valid when <computeroutput>.type</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a6802e5d267fdda619ffb13fc80d873fe" kindref="member">TUPLE_UINT</ref> and <computeroutput>.length</computeroutput> is 1 byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1801" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The value itself. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The different union fields are provided for convenience, avoiding the need for manual casts. <simplesect kind="note"><para>The array length is of incomplete length on purpose, to facilitate variable length data and because a data length of zero is valid. </para>
+</simplesect>
+<simplesect kind="note"><para><bold>Important: The integers are little endian!</bold> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="1794" column="3" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1794" bodyend="1817"/>
+    <listofallmembers>
+      <member refid="union_tuple_8value_1a045a170bdc8241264dfe8fda3d1d77ff" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>cstring</name></member>
+      <member refid="union_tuple_8value_1a59a6c49cfff82ce638c44fec9cd91ddb" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>data</name></member>
+      <member refid="union_tuple_8value_1ace80d5ec65b1d2a2f1049eadc100db23" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>int16</name></member>
+      <member refid="union_tuple_8value_1a0241adbbd83925f051b694d40f02747f" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>int32</name></member>
+      <member refid="union_tuple_8value_1a27c006cc56b1ba88f960cf8b5144fcac" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>int8</name></member>
+      <member refid="union_tuple_8value_1aa00ef2ef85ff67b7b39339886f19044f" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>uint16</name></member>
+      <member refid="union_tuple_8value_1a3de84ad0700f2a1571f633d399e1900e" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>uint32</name></member>
+      <member refid="union_tuple_8value_1a5f423e669d0a8f4ab7c4c3e6da27161a" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>uint8</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

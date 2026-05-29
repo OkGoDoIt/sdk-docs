@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___app_sync" kind="group">
     <compoundname>AppSync</compoundname>
     <title>AppSync</title>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2519" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2519" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2581" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2581" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___app_sync_1gaea666eaaf02f4714acc592c280591782" prot="public" static="no">
         <type>void(*</type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2508" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2508" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2570" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2570" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2565" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2565" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2627" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2627" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_sync_1ga566bed1787fc8cfb9eed13ae3f127392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2588" column="14" declfile="build/sdk/basalt/include/pebble.h" declline="2588" declcolumn="14"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2650" column="14" declfile="build/sdk/basalt/include/pebble.h" declline="2650" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="group___app_sync_1ga329a8fa4a27bb8b15cee9ffcc4a026df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -283,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2556" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2556" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2618" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2618" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_sync_1gaa5f51f1d7914b3617fdee104d1488108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref></type>
@@ -339,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2580" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2580" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2642" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2642" declcolumn="18"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

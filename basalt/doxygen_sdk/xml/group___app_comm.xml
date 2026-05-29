@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___app_comm" kind="group">
     <compoundname>AppComm</compoundname>
     <title>App Communication</title>
@@ -20,7 +20,7 @@
           <name>SNIFF_INTERVAL_REDUCED</name>
           <initializer>= 1</initializer>
           <briefdescription>
-<para>Reduce the sniff interval to increase the responsiveness of the radio at the expense of increasing Bluetooth energy consumption by a multiple of 2-5 (very significant) </para>
+<para>Reduce the sniff interval to increase the responsiveness of the radio at the expense of increasing Bluetooth energy consumption by a multiple of 2-5 (very significant). </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2861" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2861" bodyend="2868"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2950" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2950" bodyend="2957"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2878" column="15" declfile="build/sdk/basalt/include/pebble.h" declline="2878" declcolumn="15"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2967" column="15" declfile="build/sdk/basalt/include/pebble.h" declline="2967" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="group___app_comm_1gad7ebc2401ed636dddfcb8f5cb67f8c37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2874" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2874" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2963" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2963" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

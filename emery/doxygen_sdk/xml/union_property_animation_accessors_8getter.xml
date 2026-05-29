@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="union_property_animation_accessors_8getter" kind="union" language="C++" prot="public">
+    <compoundname>PropertyAnimationAccessors.getter</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_property_animation_accessors_8getter_1acc82322d31f73d57d2ae447832623232" prot="public" static="no" mutable="no">
+        <type><ref refid="group___property_animation_1gacc7310bfebe0e5a86da1e4634139a926" kindref="member">GColor8Getter</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>gcolor8</name>
+        <qualifiedname>PropertyAnimationAccessors.getter::gcolor8</qualifiedname>
+        <briefdescription>
+<para>Use if the property to animate is of GColor8 type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6635" column="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_property_animation_accessors_8getter_1a820d13b0b4b76e8659d0235331a7ed56" prot="public" static="no" mutable="no">
+        <type><ref refid="group___property_animation_1ga15081a96a1c078f2249312272bad7063" kindref="member">GPointGetter</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>gpoint</name>
+        <qualifiedname>PropertyAnimationAccessors.getter::gpoint</qualifiedname>
+        <briefdescription>
+<para>Use if the property to animate is of <ref refid="struct_g_point" kindref="compound">GPoint</ref> type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6631" column="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_property_animation_accessors_8getter_1a4b497bbd7d638860952c6c8b1faa6590" prot="public" static="no" mutable="no">
+        <type><ref refid="group___property_animation_1ga5c49d2de8b35ee91cec627187d59b70d" kindref="member">GRectGetter</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>grect</name>
+        <qualifiedname>PropertyAnimationAccessors.getter::grect</qualifiedname>
+        <briefdescription>
+<para>Use if the property to animate is of <ref refid="struct_g_rect" kindref="compound">GRect</ref> type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6633" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_property_animation_accessors_8getter_1ace80d5ec65b1d2a2f1049eadc100db23" prot="public" static="no" mutable="no">
+        <type><ref refid="group___property_animation_1ga13179c04776f22968437e35b256f3597" kindref="member">Int16Getter</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>int16</name>
+        <qualifiedname>PropertyAnimationAccessors.getter::int16</qualifiedname>
+        <briefdescription>
+<para>Use if the property to animate is of int16_t type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6629" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_property_animation_accessors_8getter_1a3de84ad0700f2a1571f633d399e1900e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___property_animation_1ga481c32f9df91cbb4e7d3839ff57ba789" kindref="member">UInt32Getter</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>uint32</name>
+        <qualifiedname>PropertyAnimationAccessors.getter::uint32</qualifiedname>
+        <briefdescription>
+<para>Use if the property to animate is of <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6637" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Function pointer to the implementation of the function that <bold>gets</bold> the current property value. This function will be called during <ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref>, to get the current property value, in case the <computeroutput>from_value</computeroutput> or <computeroutput>to_value</computeroutput> argument is <computeroutput>NULL</computeroutput>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="6627" column="3" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6627" bodyend="6638"/>
+    <listofallmembers>
+      <member refid="union_property_animation_accessors_8getter_1acc82322d31f73d57d2ae447832623232" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors.getter</scope><name>gcolor8</name></member>
+      <member refid="union_property_animation_accessors_8getter_1a820d13b0b4b76e8659d0235331a7ed56" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors.getter</scope><name>gpoint</name></member>
+      <member refid="union_property_animation_accessors_8getter_1a4b497bbd7d638860952c6c8b1faa6590" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors.getter</scope><name>grect</name></member>
+      <member refid="union_property_animation_accessors_8getter_1ace80d5ec65b1d2a2f1049eadc100db23" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors.getter</scope><name>int16</name></member>
+      <member refid="union_property_animation_accessors_8getter_1a3de84ad0700f2a1571f633d399e1900e" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors.getter</scope><name>uint32</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

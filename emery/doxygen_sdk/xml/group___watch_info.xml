@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___watch_info" kind="group">
+    <compoundname>WatchInfo</compoundname>
+    <title>WatchInfo</title>
+    <innerclass refid="struct_watch_info_version" prot="public">WatchInfoVersion</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___watch_info_1ga03f21126652108612ffa7130e0c2a178" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WatchInfoColor</name>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a232c74bcf05ccde928fcad4dc0b46e8f" prot="public">
+          <name>WATCH_INFO_COLOR_UNKNOWN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Unknown color. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a5b47ed525d6e1c3bfb2683cf7f4d2d36" prot="public">
+          <name>WATCH_INFO_COLOR_BLACK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Black. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178acf9e2758caf37314e3144af2ec0afaba" prot="public">
+          <name>WATCH_INFO_COLOR_WHITE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>White. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178acc2d4207cf2dc4e9ee10c81931720a37" prot="public">
+          <name>WATCH_INFO_COLOR_RED</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Red. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a1d10b1739c06d81915c38f2be7738a43" prot="public">
+          <name>WATCH_INFO_COLOR_ORANGE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Orange. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a113bf17d8bc3beaa0b9ff89e6b1727c9" prot="public">
+          <name>WATCH_INFO_COLOR_GRAY</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Gray. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a6b51707521692fad533599390e85fb87" prot="public">
+          <name>WATCH_INFO_COLOR_STAINLESS_STEEL</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Stainless Steel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a15b385d15e97e1af4ac2cf49bc1a6f87" prot="public">
+          <name>WATCH_INFO_COLOR_MATTE_BLACK</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Matte Black. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a91f7f100e599fcc9b044a1723bdc9910" prot="public">
+          <name>WATCH_INFO_COLOR_BLUE</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>Blue. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a449133b031621d64d2c7bdaaf79b99cd" prot="public">
+          <name>WATCH_INFO_COLOR_GREEN</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+<para>Green. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178abe8ed76c1eda4cdefb6d3675c9107b93" prot="public">
+          <name>WATCH_INFO_COLOR_PINK</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+<para>Pink. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a1989203fab6bd619b0f2bf64e77e4a76" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_WHITE</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+<para>Time White. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a387149277b386403dce392fa419fc4eb" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_BLACK</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+<para>Time Black. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a7806a59d8aa675743ce10109bc4fc717" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_RED</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+<para>Time Red. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178af15e34e60cfd39add32db82dd0524bd5" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_STEEL_SILVER</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+<para>Time Steel Silver. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a475897f619d4bdc2317a6bbef5a80438" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_STEEL_BLACK</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+<para>Time Steel Black. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178aea55d39d721b6de6221a510e6769cc72" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_STEEL_GOLD</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+<para>Time Steel Gold. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ae41705306ef6a4f715a6f1694b818f08" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_ROUND_SILVER_14</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+<para>Time Round 14mm lug size, Silver. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a3c24fc3c8a46a211180ef797f9452940" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_ROUND_BLACK_14</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+<para>Time Round 14mm lug size, Black. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a4d9ae07dd11bce6b176011f5f05c3181" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_ROUND_SILVER_20</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+<para>Time Round 20mm lug size, Silver. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178afde5d250d005c47376af3187c9f57e3c" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_ROUND_BLACK_20</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+<para>Time Round 20mm lug size, Black. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a25d3b72f939a3b110110534c127c056e" prot="public">
+          <name>WATCH_INFO_COLOR_TIME_ROUND_ROSE_GOLD_14</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+<para>Time Round 14mm lug size, Rose Gold. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178add84b00ace7f863f7bca6a1a6214b3a0" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_2_HR_BLACK</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+<para>Pebble 2 HR, Black / Charcoal. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178abac566f0b4bfc0a12bde49ce44c502c4" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_2_HR_LIME</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+<para>Pebble 2 HR, Charcoal / Sorbet Green. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a40d85afedadd1341e435a04813566c43" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_2_HR_FLAME</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+<para>Pebble 2 HR, Charcoal / Red. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a4823bb8cdfbee87a1383c781f3a95d03" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_2_HR_WHITE</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+<para>Pebble 2 HR, White / Gray. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a8db93c55f72a67285545bd29f61f42a9" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_2_HR_AQUA</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+<para>Pebble 2 HR, White / Turquoise. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a133278afdf0a76ac0c6cbc9f1e5b1f9b" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_2_SE_BLACK</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+<para>Pebble 2 SE, Black / Charcoal. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a33210801d6ec37111a4abe7056972511" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_2_SE_WHITE</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+<para>Pebble 2 SE, White / Gray. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a072b4c6231618b892821692a10e56185" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_TIME_2_BLACK</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+<para>Pebble Time 2, Black. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a3f1f3f5e1f8bd6ddf8c32989c3ff27df" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_TIME_2_SILVER</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+<para>Pebble Time 2, Silver. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a34cca99192c1d4d5b28fcca10170c57e" prot="public">
+          <name>WATCH_INFO_COLOR_PEBBLE_TIME_2_GOLD</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+<para>Pebble Time 2, Gold. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178af7e7e6143e094ad6de7e25222370bb2d" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_P2D_BLACK</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+<para>CoreDevices P2D, Black. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a4d5f6fd64c2ebb0e7be147ba5b26de88" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_P2D_WHITE</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+<para>CoreDevices P2D, White. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a037096900d348539734539993c782114" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PT2_BLACK_GREY</name>
+          <initializer>= 36</initializer>
+          <briefdescription>
+<para>CoreDevices PT2, Black/Grey. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a26c184bf705f91c809f390239e4b6cf5" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PT2_BLACK_RED</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+<para>CoreDevices PT2, Black/Red. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178aecd68964bd7be497807f4015f7ae5c70" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PT2_SILVER_BLUE</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+<para>CoreDevices PT2, Silver/Blue. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ad4e0e042537a070caa9017ee08985d8b" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PT2_SILVER_GREY</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+<para>CoreDevices PT2, Silver/Grey. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a7127240eda8cbd79e0fa1520e5c283bf" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PR2_BLACK_20</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+<para>CoreDevices PR2, Black (20mm). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a98f234bd142ae95c5cd9264622075588" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PR2_SILVER_20</name>
+          <initializer>= 41</initializer>
+          <briefdescription>
+<para>CoreDevices PR2, Silver (20mm). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ae1d159368d8bcc352dbffe17c3532790" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PR2_GOLD_14</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+<para>CoreDevices PR2, Gold (14mm). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a60ecd83292048e14576e97dd7c17d5fc" prot="public">
+          <name>WATCH_INFO_COLOR_COREDEVICES_PR2_SILVER_14</name>
+          <initializer>= 43</initializer>
+          <briefdescription>
+<para>CoreDevices PR2, Silver (14mm). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a45d4333a566657c2df723e3cb26129b5" prot="public">
+          <name>WATCH_INFO_COLOR__MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The different watch colors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="225" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="225" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___watch_info_1ga3a59b572466639de09bb54e5169d8e6f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WatchInfoModel</name>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa366b74dd4e61da7e6613cf963cc8f0c0" prot="public">
+          <name>WATCH_INFO_MODEL_UNKNOWN</name>
+          <briefdescription>
+<para>Unknown model. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa8f757269f947be597653c67f02f794f4" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_ORIGINAL</name>
+          <briefdescription>
+<para>Original Pebble. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa7993e9425a70af92a9be67b897834380" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_STEEL</name>
+          <briefdescription>
+<para>Pebble Steel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fabd10b1db91c6cd4c807fbf8bf6b81bad" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_TIME</name>
+          <briefdescription>
+<para>Pebble Time. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa51b8f3a6c46fcc53bf8ed1910689c459" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_TIME_STEEL</name>
+          <briefdescription>
+<para>Pebble Time Steel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fad3460f9819e7d4f111dec4859f81503b" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_TIME_ROUND_14</name>
+          <briefdescription>
+<para>Pebble Time Round, 14mm lug size. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa585de127b1ad9a6b1afbd94bcb155dea" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_TIME_ROUND_20</name>
+          <briefdescription>
+<para>Pebble Time Round, 20mm lug size. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fab8c5c1edc6f0aebc10d8bf2763944507" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_2_HR</name>
+          <briefdescription>
+<para>Pebble 2 HR. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fad86b2a3f8f2a6c17b7d1bc62fc681fe1" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_2_SE</name>
+          <briefdescription>
+<para>Pebble 2 SE. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa3223cf86c20e29e2773250276146b00e" prot="public">
+          <name>WATCH_INFO_MODEL_PEBBLE_TIME_2</name>
+          <briefdescription>
+<para>Pebble Time 2. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fabe48f5a3e73dbe6757e1f4608f33a6e2" prot="public">
+          <name>WATCH_INFO_MODEL_COREDEVICES_P2D</name>
+          <briefdescription>
+<para>CoreDevices P2D (Pebble 2 Duo). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa6697915e67fdba051d4944e3d000265c" prot="public">
+          <name>WATCH_INFO_MODEL_COREDEVICES_PT2</name>
+          <briefdescription>
+<para>CoreDevices PT2 (Pebble Time 2). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa9ebd62acdd59e2526e0d20f92b890a72" prot="public">
+          <name>WATCH_INFO_MODEL_COREDEVICES_PR2</name>
+          <briefdescription>
+<para>CoreDevices PR2 (Pebble Round 2). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fac3e2db4815e7e2cbcb77e2e0162ac7b7" prot="public">
+          <name>WATCH_INFO_MODEL__MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The different watch models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="206" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="206" bodyend="222"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___watch_info_1ga4bfe71818e0aa532ffdc42f8f22642b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___watch_info_1ga03f21126652108612ffa7130e0c2a178" kindref="member">WatchInfoColor</ref></type>
+        <definition>WatchInfoColor watch_info_get_color</definition>
+        <argsstring>(void)</argsstring>
+        <name>watch_info_get_color</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="300" column="16" declfile="build/sdk/emery/include/pebble.h" declline="300" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___watch_info_1gaf99195f1204c3c6b646b6f1ccbd561bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_watch_info_version" kindref="compound">WatchInfoVersion</ref></type>
+        <definition>WatchInfoVersion watch_info_get_firmware_version</definition>
+        <argsstring>(void)</argsstring>
+        <name>watch_info_get_firmware_version</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Provides the version of the firmware running on the watch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput><ref refid="struct_watch_info_version" kindref="compound">WatchInfoVersion</ref></computeroutput> representing the version of the firmware running on the watch. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="298" column="18" declfile="build/sdk/emery/include/pebble.h" declline="298" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___watch_info_1gaae6bd337ed913660097b24fcf4ff8265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___watch_info_1ga3a59b572466639de09bb54e5169d8e6f" kindref="member">WatchInfoModel</ref></type>
+        <definition>WatchInfoModel watch_info_get_model</definition>
+        <argsstring>(void)</argsstring>
+        <name>watch_info_get_model</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Provides the model of the watch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput><ref refid="group___watch_info_1ga3a59b572466639de09bb54e5169d8e6f" kindref="member">WatchInfoModel</ref></computeroutput> representing the model of the watch. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="294" column="16" declfile="build/sdk/emery/include/pebble.h" declline="294" declcolumn="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Provides information about the watch itself. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This API provides access to information such as the watch model, watch color and watch firmware version. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

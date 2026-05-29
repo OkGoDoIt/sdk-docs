@@ -1,0 +1,1116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___drawing" kind="group">
+    <compoundname>Drawing</compoundname>
+    <title>Drawing Primitives</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___drawing_1gae0e0ea29942e8ae8fe4a7201adbd1b72" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GCornerMask</name>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72a30ccebd81d739451a4c2e1ded1e5955e" prot="public">
+          <name>GCornerNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No corners. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72a2d0d781bafbe7bf5624483d7032356bb" prot="public">
+          <name>GCornerTopLeft</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Top-Left corner. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72a630cd874df371c4b32b7e9f102018da7" prot="public">
+          <name>GCornerTopRight</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Top-Right corner. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72abfba1a0e38d1f1e1d87274efb61442ef" prot="public">
+          <name>GCornerBottomLeft</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Bottom-Left corner. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72af511e89fecfa1efad8b9ad86e95ff961" prot="public">
+          <name>GCornerBottomRight</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>Bottom-Right corner. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72a10c32729cb11dfef115ea24de0feec0d" prot="public">
+          <name>GCornersAll</name>
+          <initializer>= GCornerTopLeft | GCornerTopRight | GCornerBottomLeft | GCornerBottomRight</initializer>
+          <briefdescription>
+<para>All corners. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72a766de55f907e71c9bac59fde38be8476" prot="public">
+          <name>GCornersTop</name>
+          <initializer>= GCornerTopLeft | GCornerTopRight</initializer>
+          <briefdescription>
+<para>Top corners. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72a78d979b360f297bfcbd9c2027a2c8bd4" prot="public">
+          <name>GCornersBottom</name>
+          <initializer>= GCornerBottomLeft | GCornerBottomRight</initializer>
+          <briefdescription>
+<para>Bottom corners. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72ab43e2029f5adce549c50b39302d05414" prot="public">
+          <name>GCornersLeft</name>
+          <initializer>= GCornerTopLeft | GCornerBottomLeft</initializer>
+          <briefdescription>
+<para>Left corners. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72ad36ef78a320c78d45471faac405895e1" prot="public">
+          <name>GCornersRight</name>
+          <initializer>= GCornerTopRight | GCornerBottomRight</initializer>
+          <briefdescription>
+<para>Right corners. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Bit mask values to specify the corners of a rectangle. The values can be combines using binary OR (<computeroutput>|</computeroutput>), For example: the mask to indicate top left and bottom right corners can: be created as follows: <computeroutput>(<ref refid="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72a2d0d781bafbe7bf5624483d7032356bb" kindref="member">GCornerTopLeft</ref> | <ref refid="group___drawing_1ggae0e0ea29942e8ae8fe4a7201adbd1b72af511e89fecfa1efad8b9ad86e95ff961" kindref="member">GCornerBottomRight</ref>)</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4381" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4381" bodyend="4402"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___drawing_1gacc12fc65fe15467fc8fd608e7df2713d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GOvalScaleMode</name>
+        <enumvalue id="group___drawing_1ggacc12fc65fe15467fc8fd608e7df2713da8aaf628f28c0c4a951cbdbe14dab8871" prot="public">
+          <name>GOvalScaleModeFitCircle</name>
+          <briefdescription>
+<para>Places a circle at the center of the rectangle, with a diameter that matches the rectangle&apos;s shortest side. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___drawing_1ggacc12fc65fe15467fc8fd608e7df2713dae1748e5d53d35e9a5eae16ee3c89bf25" prot="public">
+          <name>GOvalScaleModeFillCircle</name>
+          <briefdescription>
+<para>Places a circle at the center of the rectangle, with a diameter that matches the rectangle&apos;s longest side. The circle may overflow the bounds of the rectangle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values to specify how a given rectangle should be used to derive an oval shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>graphics_fill_radial_internal </para>
+</simplesect>
+<simplesect kind="see"><para>graphics_draw_arc_internal </para>
+</simplesect>
+<simplesect kind="see"><para>gpoint_from_polar_internal </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___drawing_1ga2aaac0fe709b8d1977b1c8efe68b1c24" kindref="member">grect_centered_from_polar</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4525" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4525" bodyend="4533"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___drawing_1gaadb2a677766c80dc05ab1bc92a35379b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+        <definition>GPoint gpoint_from_polar</definition>
+        <argsstring>(GRect rect, GOvalScaleMode scale_mode, int32_t angle)</argsstring>
+        <name>gpoint_from_polar</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="group___drawing_1gacc12fc65fe15467fc8fd608e7df2713d" kindref="member">GOvalScaleMode</ref></type>
+          <declname>scale_mode</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Calculates a <ref refid="struct_g_point" kindref="compound">GPoint</ref> located at the angle provided on the perimeter of a circle defined by the provided <ref refid="struct_g_rect" kindref="compound">GRect</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference rectangle to derive the center point and radius (see scale_mode). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines how rect will be used to derive the center point and radius. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle at which the point on the circle&apos;s perimeter should be calculated. Use <ref refid="group___math_1ga3645eb975058adf6013d4c6cbb518ed8" kindref="member">DEG_TO_TRIGANGLE</ref> to easily convert degrees to the appropriate value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The point on the circle&apos;s perimeter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4575" column="8" declfile="build/sdk/emery/include/pebble.h" declline="4575" declcolumn="8"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1gaac7314d647c03bc2984bfb854c174203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * graphics_capture_frame_buffer</definition>
+        <argsstring>(GContext *ctx)</argsstring>
+        <name>graphics_capture_frame_buffer</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>A shortcut to capture the framebuffer in the native format of the watch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___drawing_1ga2928c6e3487047c466ca050307e6fa5b" kindref="member">graphics_capture_frame_buffer_format</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4463" column="9" declfile="build/sdk/emery/include/pebble.h" declline="4463" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga2928c6e3487047c466ca050307e6fa5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * graphics_capture_frame_buffer_format</definition>
+        <argsstring>(GContext *ctx, GBitmapFormat format)</argsstring>
+        <name>graphics_capture_frame_buffer_format</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Captures the frame buffer for direct access, using the given format. Graphics functions will not affect the frame buffer while it is captured. The frame buffer is released when <computeroutput><ref refid="group___drawing_1gace6f55055dfa5fa46572730653e1a544" kindref="member">graphics_release_frame_buffer</ref></computeroutput> is called. The frame buffer must be released before the end of a layer&apos;s <computeroutput>.update_proc</computeroutput> for the layer to be drawn properly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>While the frame buffer is captured calling <computeroutput><ref refid="group___drawing_1gaac7314d647c03bc2984bfb854c174203" kindref="member">graphics_capture_frame_buffer</ref></computeroutput> will fail and return <computeroutput>NULL</computeroutput>. <simplesect kind="note"><para>When writing to the frame buffer, you should respect the visible boundaries of a window on the screen. Use layer_get_frame(window_get_root_layer(window)).origin to obtain its position relative to the frame buffer. For example, drawing to (5, 5) in the frame buffer while the window is transitioning to the left with its origin at (-20, 0) would effectively draw that point at (25, 5) relative to the window. For this reason you should consider the window&apos;s root layer frame when calculating drawing coordinates. </para>
+</simplesect>
+<simplesect kind="see"><para>GBitmap </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1ga76ed01d3619150b87604ebaa9dc282b7" kindref="member">layer_get_frame</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___window_1ga1c5f19fd53ea553a222f2adda37b4ab3" kindref="member">window_get_root_layer</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context providing the frame buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format in which the framebuffer should be captured. Supported formats are GBitmapFormat1Bit and GBitmapFormat8Bit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the frame buffer. <computeroutput>NULL</computeroutput> if failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4487" column="9" declfile="build/sdk/emery/include/pebble.h" declline="4487" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga0ece100bf105aa8ebdce24923773727f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_arc</definition>
+        <argsstring>(GContext *ctx, GRect rect, GOvalScaleMode scale_mode, int32_t angle_start, int32_t angle_end)</argsstring>
+        <name>graphics_draw_arc</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="group___drawing_1gacc12fc65fe15467fc8fd608e7df2713d" kindref="member">GOvalScaleMode</ref></type>
+          <declname>scale_mode</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle_start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle_end</declname>
+        </param>
+        <briefdescription>
+<para>Draws a line arc clockwise between <computeroutput>angle_start</computeroutput> and <computeroutput>angle_end</computeroutput>, where 0° is the top of the circle. If the difference between <computeroutput>angle_start</computeroutput> and <computeroutput>angle_end</computeroutput> is greater than 360°, a full circle will be drawn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw using the current stroke color and antialiasing setting. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference rectangle to derive the center point and radius (see scale_mode). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines how rect will be used to derive the center point and radius. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radial starting angle. Use <ref refid="group___math_1ga3645eb975058adf6013d4c6cbb518ed8" kindref="member">DEG_TO_TRIGANGLE</ref> to easily convert degrees to the appropriate value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radial finishing angle. If smaller than <computeroutput>angle_start</computeroutput>, nothing will be drawn. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4545" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4545" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga2df0bc47f542ea60500d3070670725f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_bitmap_in_rect</definition>
+        <argsstring>(GContext *ctx, const GBitmap *bitmap, GRect rect)</argsstring>
+        <name>graphics_draw_bitmap_in_rect</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Draws a bitmap into the graphics context, inside the specified rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw the bitmap </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle in which to draw the bitmap </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If the size of <computeroutput>rect</computeroutput> is smaller than the size of the bitmap, the bitmap will be clipped on right and bottom edges. If the size of <computeroutput>rect</computeroutput> is larger than the size of the bitmap, the bitmap will be tiled automatically in both horizontal and vertical directions, effectively drawing a repeating pattern. </para>
+</simplesect>
+<simplesect kind="see"><para>GBitmap </para>
+</simplesect>
+<simplesect kind="see"><para>GContext </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4459" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4459" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga6356bbba09f4ebf3b79d34af93ef5321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_circle</definition>
+        <argsstring>(GContext *ctx, GPoint p, uint16_t radius)</argsstring>
+        <name>graphics_draw_circle</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Draws the outline of a circle in the current stroke color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center point of the circle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius in pixels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4434" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4434" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1gaa5477f3debdc11b018b30cd53e3505c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_line</definition>
+        <argsstring>(GContext *ctx, GPoint p0, GPoint p1)</argsstring>
+        <name>graphics_draw_line</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+<para>Draws line in the current stroke color, current stroke width and AA flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The starting point of the line </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ending point of the line </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4413" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4413" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1gaaa3daaaddacc92d108129d52cda36e43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_pixel</definition>
+        <argsstring>(GContext *ctx, GPoint point)</argsstring>
+        <name>graphics_draw_pixel</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Draws a pixel at given point in the current stroke color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point at which to draw the pixel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4407" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4407" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1gaebdc0672005bb6d0b0b210053fda30f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_rect</definition>
+        <argsstring>(GContext *ctx, GRect rect)</argsstring>
+        <name>graphics_draw_rect</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Draws a 1-pixel wide rectangle outline in the current stroke color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle for which to draw the outline </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4418" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4418" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga34f27bdfadc25a04b7b49d5cd8011266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_rotated_bitmap</definition>
+        <argsstring>(GContext *ctx, GBitmap *src, GPoint src_ic, int rotation, GPoint dest_ic)</argsstring>
+        <name>graphics_draw_rotated_bitmap</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>GBitmap *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>src_ic</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>dest_ic</declname>
+        </param>
+        <briefdescription>
+<para>Draws a rotated bitmap with a memory-sensitive 2x anti-aliasing technique (using ray-finding instead of super-sampling), which is thresholded into a b/w bitmap for 1-bit and color blended for 8-bit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This API has performance limitations that can degrade user experience. Use sparingly. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source bitmap to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_ic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance center (single point unaffected by rotation) relative to source bitmap </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle of rotation. Rotation is an integer between 0 (no rotation) and TRIG_MAX_ANGLE (360 degree rotation). Use <ref refid="group___math_1ga3645eb975058adf6013d4c6cbb518ed8" kindref="member">DEG_TO_TRIGANGLE</ref> to easily convert degrees to the appropriate value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest_ic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to draw the instance center of the rotated bitmap in the context. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4517" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4517" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga67acca83492c185b640d8cccb44c7ab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_round_rect</definition>
+        <argsstring>(GContext *ctx, GRect rect, uint16_t radius)</argsstring>
+        <name>graphics_draw_round_rect</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Draws the outline of a rounded rectangle in the current stroke color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle defining the dimensions of the rounded rectangle to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The corner radius in pixels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4446" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4446" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1gac8ade795e8d0845cdb80709d2984b31f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_fill_circle</definition>
+        <argsstring>(GContext *ctx, GPoint p, uint16_t radius)</argsstring>
+        <name>graphics_fill_circle</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Fills a circle in the current fill color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center point of the circle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius in pixels </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4440" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4440" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga22179ba7e9e48f8b4cfada99d2051d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_fill_radial</definition>
+        <argsstring>(GContext *ctx, GRect rect, GOvalScaleMode scale_mode, uint16_t inset_thickness, int32_t angle_start, int32_t angle_end)</argsstring>
+        <name>graphics_fill_radial</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="group___drawing_1gacc12fc65fe15467fc8fd608e7df2713d" kindref="member">GOvalScaleMode</ref></type>
+          <declname>scale_mode</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>inset_thickness</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle_start</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle_end</declname>
+        </param>
+        <briefdescription>
+<para>Fills a circle clockwise between <computeroutput>angle_start</computeroutput> and <computeroutput>angle_end</computeroutput>, where 0° is the top of the circle. If the difference between <computeroutput>angle_start</computeroutput> and <computeroutput>angle_end</computeroutput> is greater than 360°, a full circle will be drawn and filled. If <computeroutput>angle_start</computeroutput> is greater than <computeroutput>angle_end</computeroutput> nothing will be drawn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>A simple example is drawing a &apos;Pacman&apos; shape, with a starting angle of -225°, and ending angle of 45°. By setting <computeroutput>inset_thickness</computeroutput> to a non-zero value (such as 30) this example will produce the letter C. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw using the current fill color and antialiasing setting. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference rectangle to derive the center point and radius (see scale). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines how rect will be used to derive the center point and radius. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inset_thickness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Describes how thick in pixels the radial will be drawn towards its center measured from the outside. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radial starting angle. Use <ref refid="group___math_1ga3645eb975058adf6013d4c6cbb518ed8" kindref="member">DEG_TO_TRIGANGLE</ref> to easily convert degrees to the appropriate value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Radial finishing angle. If smaller than <computeroutput>angle_start</computeroutput>, nothing will be drawn. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4564" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4564" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga8c9b95e1c9fc0ce82107b95b8b804822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_fill_rect</definition>
+        <argsstring>(GContext *ctx, GRect rect, uint16_t corner_radius, GCornerMask corner_mask)</argsstring>
+        <name>graphics_fill_rect</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>corner_radius</declname>
+        </param>
+        <param>
+          <type><ref refid="group___drawing_1gae0e0ea29942e8ae8fe4a7201adbd1b72" kindref="member">GCornerMask</ref></type>
+          <declname>corner_mask</declname>
+        </param>
+        <briefdescription>
+<para>Fills a rectangle with the current fill color, optionally rounding all or a selection of its corners. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to fill </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rounding radius of the corners in pixels (maximum is 8 pixels) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corner_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitmask of the corners that need to be rounded. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___drawing_1gae0e0ea29942e8ae8fe4a7201adbd1b72" kindref="member">GCornerMask</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4427" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4427" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1gaa568fc54d4dfbdab18e5b8b26744f5ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool graphics_frame_buffer_is_captured</definition>
+        <argsstring>(GContext *ctx)</argsstring>
+        <name>graphics_frame_buffer_is_captured</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>Whether or not the frame buffer has been captured by <computeroutput><ref refid="group___drawing_1gaac7314d647c03bc2984bfb854c174203" kindref="member">graphics_capture_frame_buffer</ref></computeroutput>. Graphics functions will not affect the frame buffer until it has been released by <computeroutput><ref refid="group___drawing_1gace6f55055dfa5fa46572730653e1a544" kindref="member">graphics_release_frame_buffer</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context providing the frame buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the frame buffer has been captured </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4504" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4504" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1gace6f55055dfa5fa46572730653e1a544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool graphics_release_frame_buffer</definition>
+        <argsstring>(GContext *ctx, GBitmap *buffer)</argsstring>
+        <name>graphics_release_frame_buffer</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>GBitmap *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Releases the frame buffer. Must be called before the end of a layer&apos;s <computeroutput>.update_proc</computeroutput> for the layer to be drawn properly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <computeroutput>buffer</computeroutput> does not point to the address previously returned by <computeroutput><ref refid="group___drawing_1gaac7314d647c03bc2984bfb854c174203" kindref="member">graphics_capture_frame_buffer</ref></computeroutput> the frame buffer will not be released. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The graphics context providing the frame buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to frame buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the frame buffer was released successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4497" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4497" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___drawing_1ga2aaac0fe709b8d1977b1c8efe68b1c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>GRect grect_centered_from_polar</definition>
+        <argsstring>(GRect rect, GOvalScaleMode scale_mode, int32_t angle, GSize size)</argsstring>
+        <name>grect_centered_from_polar</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="group___drawing_1gacc12fc65fe15467fc8fd608e7df2713d" kindref="member">GOvalScaleMode</ref></type>
+          <declname>scale_mode</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Calculates a rectangle centered on the perimeter of a circle at a given angle. Use this to construct rectangles that follow the perimeter of a circle as an input for graphics_fill_radial_internal or graphics_draw_arc_internal, e.g. to draw circles every 30 degrees on a watchface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference rectangle to derive the circle&apos;s center point and radius (see scale_mode). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines how rect will be used to derive the circle&apos;s center point and radius. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle at which the point on the circle&apos;s perimeter should be calculated. Use <ref refid="group___math_1ga3645eb975058adf6013d4c6cbb518ed8" kindref="member">DEG_TO_TRIGANGLE</ref> to easily convert degrees to the appropriate value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width and height of the desired rectangle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The rectangle centered on the circle&apos;s perimeter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4589" column="7" declfile="build/sdk/emery/include/pebble.h" declline="4589" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Functions to draw into a graphics context </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Use these drawing functions inside a Layer&apos;s <computeroutput>.update_proc</computeroutput> drawing callback. A <computeroutput>GContext</computeroutput> is passed into this callback as an argument. This <computeroutput>GContext</computeroutput> can then be used with all of the drawing functions which are documented below. See <ref refid="group___graphics_context" kindref="compound">Graphics Context</ref> for more information about the graphics context.</para>
+<para>Refer to <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+</htmlonly> (chapter &quot;Layers&quot;) for a conceptual overview of the drawing system, Layers and relevant code examples.</para>
+<para>Other drawing functions and related documentation:<itemizedlist>
+<listitem><para><ref refid="group___text_drawing" kindref="compound">Drawing Text</ref></para>
+</listitem><listitem><para><ref refid="group___path_drawing" kindref="compound">Drawing Paths</ref></para>
+</listitem><listitem><para><ref refid="group___graphics_types" kindref="compound">Graphics Types</ref> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

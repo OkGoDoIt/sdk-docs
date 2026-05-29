@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_audio_context_status" kind="struct" language="C++" prot="public">
+    <compoundname>AudioContextStatus</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_audio_context_status_1a40ec4af2ac65bc9e52fdfb8fc30130e8" prot="public" static="no" mutable="no">
+        <type><ref refid="group___audio_1ga8089069793b83dbee70b61b885099409" kindref="member">AudioContextAvailability</ref></type>
+        <definition>AudioContextAvailability AudioContextStatus::availability</definition>
+        <argsstring></argsstring>
+        <name>availability</name>
+        <qualifiedname>AudioContextStatus::availability</qualifiedname>
+        <briefdescription>
+<para>Availability of Audio Context for this app. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3339" column="28" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_status_1a2bca61adb51e1e209b515ceb3c1a8ccd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AudioContextStatus::background_audio_enabled</definition>
+        <argsstring></argsstring>
+        <name>background_audio_enabled</name>
+        <qualifiedname>AudioContextStatus::background_audio_enabled</qualifiedname>
+        <briefdescription>
+<para>True if background audio is enabled or has captured data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3341" column="8" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_status_1a9cd96da23138d68625d019e8cbc390ad" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t AudioContextStatus::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AudioContextStatus::flags</qualifiedname>
+        <briefdescription>
+<para>Reserved flags for future status details. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3347" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_status_1aeee6431b8b0419414fecbffa36e4bb56" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AudioContextStatus::recording</definition>
+        <argsstring></argsstring>
+        <name>recording</name>
+        <qualifiedname>AudioContextStatus::recording</qualifiedname>
+        <briefdescription>
+<para>True if the phone is currently receiving background audio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3343" column="8" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_status_1a4eb0f199a6b1248651f6fc667032d292" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AudioContextStatus::transcribing</definition>
+        <argsstring></argsstring>
+        <name>transcribing</name>
+        <qualifiedname>AudioContextStatus::transcribing</qualifiedname>
+        <briefdescription>
+<para>True if transcription is available and enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3345" column="8" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3345" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Current status of system background audio as seen by the phone. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/basalt/include/pebble.h" line="3337" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3337" bodyend="3348"/>
+    <listofallmembers>
+      <member refid="struct_audio_context_status_1a40ec4af2ac65bc9e52fdfb8fc30130e8" prot="public" virt="non-virtual"><scope>AudioContextStatus</scope><name>availability</name></member>
+      <member refid="struct_audio_context_status_1a2bca61adb51e1e209b515ceb3c1a8ccd" prot="public" virt="non-virtual"><scope>AudioContextStatus</scope><name>background_audio_enabled</name></member>
+      <member refid="struct_audio_context_status_1a9cd96da23138d68625d019e8cbc390ad" prot="public" virt="non-virtual"><scope>AudioContextStatus</scope><name>flags</name></member>
+      <member refid="struct_audio_context_status_1aeee6431b8b0419414fecbffa36e4bb56" prot="public" virt="non-virtual"><scope>AudioContextStatus</scope><name>recording</name></member>
+      <member refid="struct_audio_context_status_1a4eb0f199a6b1248651f6fc667032d292" prot="public" virt="non-virtual"><scope>AudioContextStatus</scope><name>transcribing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

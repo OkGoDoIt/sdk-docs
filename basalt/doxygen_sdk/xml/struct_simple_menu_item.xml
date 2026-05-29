@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_simple_menu_item" kind="struct" language="C++" prot="public">
     <compoundname>SimpleMenuItem</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7414" column="33" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7414" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7692" column="33" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7692" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_simple_menu_item_1abdcb2509876059ad6c0f2a887927f952" prot="public" static="no" mutable="no">
         <type>GBitmap *</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7411" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7411" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7689" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7689" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_simple_menu_item_1a26f49bf0073e1a9c32f32cc1c2ae608d" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7409" column="14" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7409" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7687" column="14" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7687" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_simple_menu_item_1a3f4b4f9cbfbc573c71480f0a8861eacf" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7407" column="14" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7407" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7685" column="14" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7685" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -70,7 +70,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="7405" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7405" bodyend="7415"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="7683" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7683" bodyend="7693"/>
     <listofallmembers>
       <member refid="struct_simple_menu_item_1a60ff7fe31f28c32726e167db58228c11" prot="public" virt="non-virtual"><scope>SimpleMenuItem</scope><name>callback</name></member>
       <member refid="struct_simple_menu_item_1abdcb2509876059ad6c0f2a887927f952" prot="public" virt="non-virtual"><scope>SimpleMenuItem</scope><name>icon</name></member>

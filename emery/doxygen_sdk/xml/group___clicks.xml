@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___clicks" kind="group">
+    <compoundname>Clicks</compoundname>
+    <title>Clicks</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ButtonId</name>
+        <enumvalue id="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266eacb728f0712020cbbbf0d7f4f68359e8e" prot="public">
+          <name>BUTTON_ID_BACK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Back button. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266eafb03cb7921a8bb7893cd8093a1a5e9cb" prot="public">
+          <name>BUTTON_ID_UP</name>
+          <briefdescription>
+<para>Up button. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea98093cd31c917223780131cfafe91dec" prot="public">
+          <name>BUTTON_ID_SELECT</name>
+          <briefdescription>
+<para>Select (middle) button. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea65a919b8a0f4539acfb865eb2a2dd9d0" prot="public">
+          <name>BUTTON_ID_DOWN</name>
+          <briefdescription>
+<para>Down button. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266eac81067fe4db9cdff7042b4d9efb5f4cb" prot="public">
+          <name>NUM_BUTTONS</name>
+          <briefdescription>
+<para>Total number of buttons. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Button ID values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___clicks_1ga373020cf179b975eb53636154a9c6ce5" kindref="member">click_recognizer_get_button_id()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="160" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="160" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* ClickConfigProvider) (void *context)</definition>
+        <argsstring>)(void *context)</argsstring>
+        <name>ClickConfigProvider</name>
+        <briefdescription>
+<para>This callback is called every time the window becomes visible (and when you call <ref refid="group___window_1gaeefbe33bc69ffee444337b056912440c" kindref="member">window_set_click_config_provider()</ref> if the window is already visible). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Subscribe to click events using <ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe()</ref> <ref refid="group___window_1ga1ff2467f009b80f8bc97ef197e34d332" kindref="member">window_single_repeating_click_subscribe()</ref> <ref refid="group___window_1ga041018e3b3db5bb7866283fffcd4b766" kindref="member">window_multi_click_subscribe()</ref> <ref refid="group___window_1ga3329027de707b949f02328492165cf05" kindref="member">window_long_click_subscribe()</ref> <ref refid="group___window_1ga6cecc4f27755aaf91f1f232c4c6f8b16" kindref="member">window_raw_click_subscribe()</ref> These subscriptions will get used by the click recognizers of each of the 4 buttons. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application specific data (see <ref refid="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" kindref="member">window_set_click_config_provider_with_context()</ref>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5418" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* ClickHandler) (ClickRecognizerRef recognizer, void *context)</definition>
+        <argsstring>)(ClickRecognizerRef recognizer, void *context)</argsstring>
+        <name>ClickHandler</name>
+        <briefdescription>
+<para>Function signature of the callback that handles a recognized click pattern. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recognizer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The click recognizer that detected a &quot;click&quot; pattern </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application specified data (see <ref refid="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" kindref="member">window_set_click_config_provider_with_context()</ref> and <ref refid="group___window_1gab3b456b676a771612e0d8f254bd7e05c" kindref="member">window_set_click_context()</ref>). This defaults to the window. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5405" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___clicks_1gab0f235645c2d1eb7b622542b59706085" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* ClickRecognizerRef</definition>
+        <argsstring></argsstring>
+        <name>ClickRecognizerRef</name>
+        <briefdescription>
+<para>Reference to opaque click recognizer When a <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> callback is called, the recognizer that fired the handler is passed in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___clicks_1ga915cc99892dba2548494a9cc2b104dd7" kindref="member">click_number_of_clicks_counted()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___clicks_1ga373020cf179b975eb53636154a9c6ce5" kindref="member">click_recognizer_get_button_id()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___clicks_1gae9b3816aa6c1a9ebbc77ad621284b5b6" kindref="member">click_recognizer_is_repeating()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5398" column="14" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5398" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___clicks_1ga915cc99892dba2548494a9cc2b104dd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t click_number_of_clicks_counted</definition>
+        <argsstring>(ClickRecognizerRef recognizer)</argsstring>
+        <name>click_number_of_clicks_counted</name>
+        <param>
+          <type><ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref></type>
+          <declname>recognizer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the click count. You can use this inside a click handler implementation to get the click count for multi_click and (repeated) click events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recognizer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The click recognizer for which to get the click count </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of consecutive clicks, and for auto-repeating the number of repetitions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5425" column="9" declfile="build/sdk/emery/include/pebble.h" declline="5425" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___clicks_1ga373020cf179b975eb53636154a9c6ce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+        <definition>ButtonId click_recognizer_get_button_id</definition>
+        <argsstring>(ClickRecognizerRef recognizer)</argsstring>
+        <name>click_recognizer_get_button_id</name>
+        <param>
+          <type><ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref></type>
+          <declname>recognizer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the button identifier. You can use this inside a click handler implementation to get the button id for the click event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recognizer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The click recognizer for which to get the button id that caused the click event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the <ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref> of the click recognizer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5431" column="10" declfile="build/sdk/emery/include/pebble.h" declline="5431" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___clicks_1gae9b3816aa6c1a9ebbc77ad621284b5b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool click_recognizer_is_repeating</definition>
+        <argsstring>(ClickRecognizerRef recognizer)</argsstring>
+        <name>click_recognizer_is_repeating</name>
+        <param>
+          <type><ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref></type>
+          <declname>recognizer</declname>
+        </param>
+        <briefdescription>
+<para>Is this a repeating click. You can use this inside a click handler implementation to find out whether this is a repeating click or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recognizer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The click recognizer for which to find out whether this is a repeating click. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this is a repeating click. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5437" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5437" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handling button click interactions </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Each Pebble window handles Pebble&apos;s buttons while it is displayed. Raw button down and button up events are transformed into click events that can be transferred to your app:</para>
+<para><itemizedlist>
+<listitem><para>Single-click. Detects a single click, that is, a button down event followed by a button up event. It also offers hold-to-repeat functionality (repeated click).</para>
+</listitem><listitem><para>Multi-click. Detects double-clicking, triple-clicking and other arbitrary click counts. It can fire its event handler on all of the matched clicks, or just the last.</para>
+</listitem><listitem><para>Long-click. Detects long clicks, that is, press-and-hold.</para>
+</listitem><listitem><para>Raw. Simply forwards the raw button events. It is provided as a way to use both the higher level &quot;clicks&quot; processing and the raw button events at the same time.</para>
+</listitem></itemizedlist>
+</para>
+<para>To receive click events when a window is displayed, you must register a <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> for this window with <ref refid="group___window_1gaeefbe33bc69ffee444337b056912440c" kindref="member">window_set_click_config_provider()</ref>. Your <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> will be called every time the window becomes visible with one context argument. By default this context is a pointer to the window but you can change this with <ref refid="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" kindref="member">window_set_click_config_provider_with_context()</ref>.</para>
+<para>In your <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> you call the <ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe()</ref>, <ref refid="group___window_1ga1ff2467f009b80f8bc97ef197e34d332" kindref="member">window_single_repeating_click_subscribe()</ref>, <ref refid="group___window_1ga041018e3b3db5bb7866283fffcd4b766" kindref="member">window_multi_click_subscribe()</ref>, <ref refid="group___window_1ga3329027de707b949f02328492165cf05" kindref="member">window_long_click_subscribe()</ref> and <ref refid="group___window_1ga6cecc4f27755aaf91f1f232c4c6f8b16" kindref="member">window_raw_click_subscribe()</ref> functions to register a handler for each event you wish to receive.</para>
+<para>For convenience, click handlers are provided with a <ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref> and a user-specified context.</para>
+<para>The <ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref> can be used in combination with <ref refid="group___clicks_1ga915cc99892dba2548494a9cc2b104dd7" kindref="member">click_number_of_clicks_counted()</ref>, <ref refid="group___clicks_1ga373020cf179b975eb53636154a9c6ce5" kindref="member">click_recognizer_get_button_id()</ref> and <ref refid="group___clicks_1gae9b3816aa6c1a9ebbc77ad621284b5b6" kindref="member">click_recognizer_is_repeating()</ref> to get more information about the click. This is useful if you want different buttons or event types to share the same handler.</para>
+<para>The user-specified context is the context of your <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> (see above). By default it points to the window. You can override it for all handlers with <ref refid="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" kindref="member">window_set_click_config_provider_with_context()</ref> or for a specific button with <ref refid="group___window_1gab3b456b676a771612e0d8f254bd7e05c" kindref="member">window_set_click_context()</ref>.</para>
+<para><heading level="3">User interaction in watchfaces</heading>
+</para>
+<para>Watchfaces cannot use the buttons to interact with the user. Instead, you can use the <ref refid="group___accelerometer_service" kindref="compound">AccelerometerService</ref>.</para>
+<para><heading level="3">About the Back button</heading>
+</para>
+<para>By default, the Back button will always pop to the previous window on the <ref refid="group___window_stack" kindref="compound">Window Stack</ref> (and leave the app if the current window is the only window). You can override the default back button behavior with <ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe()</ref> and <ref refid="group___window_1ga041018e3b3db5bb7866283fffcd4b766" kindref="member">window_multi_click_subscribe()</ref> but you cannot set a repeating, long or raw click handler on the back button because a long press will always terminate the app and return to the main menu.</para>
+<para><heading level="3">Usage example</heading>
+</para>
+<para>First associate a click config provider callback with your window: <programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>app_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___window_1gaeefbe33bc69ffee444337b056912440c" kindref="member">window_set_click_config_provider</ref>(&amp;window,<sp/>(<ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref>)<sp/>config_provider);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> Then in the callback, you set your desired configuration for each button: <programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>config_provider(Window<sp/>*window)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>single<sp/>click<sp/>/<sp/>repeat-on-hold<sp/>config:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe</ref>(<ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea65a919b8a0f4539acfb865eb2a2dd9d0" kindref="member">BUTTON_ID_DOWN</ref>,<sp/>down_single_click_handler);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___window_1ga1ff2467f009b80f8bc97ef197e34d332" kindref="member">window_single_repeating_click_subscribe</ref>(<ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea98093cd31c917223780131cfafe91dec" kindref="member">BUTTON_ID_SELECT</ref>,<sp/>1000,<sp/>select_single_click_handler);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>multi<sp/>click<sp/>config:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___window_1ga041018e3b3db5bb7866283fffcd4b766" kindref="member">window_multi_click_subscribe</ref>(<ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea98093cd31c917223780131cfafe91dec" kindref="member">BUTTON_ID_SELECT</ref>,<sp/>2,<sp/>10,<sp/>0,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>select_multi_click_handler);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>long<sp/>click<sp/>config:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___window_1ga3329027de707b949f02328492165cf05" kindref="member">window_long_click_subscribe</ref>(<ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea98093cd31c917223780131cfafe91dec" kindref="member">BUTTON_ID_SELECT</ref>,<sp/>700,<sp/>select_long_click_handler,<sp/>select_long_click_release_handler);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> Now you implement the handlers for each click you&apos;ve subscribed to and set up: <programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>down_single_click_handler(<ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref><sp/>recognizer,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...<sp/>called<sp/>on<sp/>single<sp/>click<sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Window<sp/>*window<sp/>=<sp/>(Window<sp/>*)context;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>select_single_click_handler(<ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref><sp/>recognizer,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...<sp/>called<sp/>on<sp/>single<sp/>click,<sp/>and<sp/>every<sp/>1000ms<sp/>of<sp/>being<sp/>held<sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Window<sp/>*window<sp/>=<sp/>(Window<sp/>*)context;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>select_multi_click_handler(<ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref><sp/>recognizer,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...<sp/>called<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>multi-clicks<sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Window<sp/>*window<sp/>=<sp/>(Window<sp/>*)context;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref><sp/>count<sp/>=<sp/><ref refid="group___clicks_1ga915cc99892dba2548494a9cc2b104dd7" kindref="member">click_number_of_clicks_counted</ref>(recognizer);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>select_long_click_handler(<ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref><sp/>recognizer,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...<sp/>called<sp/>on<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>click<sp/>start<sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Window<sp/>*window<sp/>=<sp/>(Window<sp/>*)context;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>select_long_click_release_handler(<ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref><sp/>recognizer,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...<sp/>called<sp/>when<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>click<sp/>is<sp/>released<sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Window<sp/>*window<sp/>=<sp/>(Window<sp/>*)context;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><heading level="3">See also</heading>
+</para>
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+</htmlonly> (chapter &quot;Clicks&quot;) for a conceptual overview of clicks and relevant code examples. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

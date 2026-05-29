@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___simple_menu_layer" kind="group">
     <compoundname>SimpleMenuLayer</compoundname>
     <title>SimpleMenuLayer</title>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7396" column="30" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7396" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7674" column="30" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7674" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___simple_menu_layer_1ga738da5d7abed9feb0809d4a9115aba3a" prot="public" static="no">
         <type>void(*</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7402" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7402" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7680" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7680" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -133,8 +133,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7440" column="17" declfile="build/sdk/basalt/include/pebble.h" declline="7440" declcolumn="17"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="7718" column="17" declfile="build/sdk/basalt/include/pebble.h" declline="7718" declcolumn="17"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___simple_menu_layer_1ga0608656e550deb3b0339cd1c807990e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7444" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7444" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7722" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7722" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___simple_menu_layer_1ga82f0c2365495f6946ac00402d3493158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Layer *</type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7451" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="7451" declcolumn="7"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7729" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="7729" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___simple_menu_layer_1ga62bd875b1ddd7548cfa85db0ac16e153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>MenuLayer *</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7467" column="11" declfile="build/sdk/basalt/include/pebble.h" declline="7467" declcolumn="11"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7745" column="11" declfile="build/sdk/basalt/include/pebble.h" declline="7745" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="group___simple_menu_layer_1ga496b6f0e2b65a70715d01d3d2630d215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7456" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="7456" declcolumn="5"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7734" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="7734" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___simple_menu_layer_1gad1a4c28d39c0aa4bcad32920ec0f2e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -291,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7463" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7463" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7741" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7741" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

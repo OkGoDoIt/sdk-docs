@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___backlight_service" kind="group">
+    <compoundname>BacklightService</compoundname>
+    <title>BacklightService</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___backlight_service_1gaff97a146bf53486db045f464b1d17207" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BacklightHandler) (bool on)</definition>
+        <argsstring>)(bool on)</argsstring>
+        <name>BacklightHandler</name>
+        <briefdescription>
+<para>Callback type for backlight on/off events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>on</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true when the backlight has just turned on, false when it has just turned fully off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="645" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="645" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___backlight_service_1ga205e34c794c288f291ab19d0b8b315ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backlight_service_subscribe</definition>
+        <argsstring>(BacklightHandler handler)</argsstring>
+        <name>backlight_service_subscribe</name>
+        <param>
+          <type><ref refid="group___backlight_service_1gaff97a146bf53486db045f464b1d17207" kindref="member">BacklightHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to the backlight event service. Once subscribed, the handler is called every time the backlight transitions between off and on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback to be executed on backlight on/off events. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="650" column="6" declfile="build/sdk/emery/include/pebble.h" declline="650" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___backlight_service_1ga42701b4ecfca195a783f3e7cf0e544bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void backlight_service_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>backlight_service_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from the backlight event service. Once unsubscribed, the previously registered handler will no longer be called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To read the current backlight state at any time, use <ref refid="group___light_1gad3a2a9282440927391d925060904a264" kindref="member">light_is_on()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="656" column="6" declfile="build/sdk/emery/include/pebble.h" declline="656" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Notifies your app when the backlight turns on or off. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The BacklightService lets your app react to the backlight turning on. The handler is invoked whenever the backlight transitions between off and on (any non-off state — fully on, on with timeout, or fading out is treated as &quot;on&quot;). This means you get a single edge per wake, not one event per fade step. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

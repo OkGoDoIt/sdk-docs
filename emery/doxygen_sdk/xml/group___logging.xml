@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___logging" kind="group">
+    <compoundname>Logging</compoundname>
+    <title>Logging</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___logging_1gab6022249fcd453283cdf062c39b2009a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AppLogLevel</name>
+        <enumvalue id="group___logging_1ggab6022249fcd453283cdf062c39b2009aae0c054555cf8a95d81c337e40d0fd7ac" prot="public">
+          <name>APP_LOG_LEVEL_ERROR</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Error level log message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___logging_1ggab6022249fcd453283cdf062c39b2009aaea0d9f7dcf53d104b7252fd5bc8abe94" prot="public">
+          <name>APP_LOG_LEVEL_WARNING</name>
+          <initializer>= 50</initializer>
+          <briefdescription>
+<para>Warning level log message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___logging_1ggab6022249fcd453283cdf062c39b2009aa5201a8cc84701693bc2e277a3eb77b04" prot="public">
+          <name>APP_LOG_LEVEL_INFO</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+<para>Info level log message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___logging_1ggab6022249fcd453283cdf062c39b2009aa9364621138cd4caf073e4e54621fe2ef" prot="public">
+          <name>APP_LOG_LEVEL_DEBUG</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+<para>Debug level log message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___logging_1ggab6022249fcd453283cdf062c39b2009aa2609117f2025905dab78eadd684424e2" prot="public">
+          <name>APP_LOG_LEVEL_DEBUG_VERBOSE</name>
+          <initializer>= 255</initializer>
+          <briefdescription>
+<para>Verbose Debug level log message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Suggested log level values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1642" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1642" bodyend="1653"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___logging_1ga5ed0aa5f3c9f9c0f6d73d1049602865f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_log</definition>
+        <argsstring>(uint8_t log_level, const char *src_filename, int src_line_number, const char *fmt,...)</argsstring>
+        <name>app_log</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>log_level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src_filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_line_number</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1631" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1631" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___logging_1ga06b605436a57d1bf57503bc6e4af0efa" prot="public" static="no">
+        <name>APP_LOG</name>
+        <param><defname>level</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>args...</defname></param>
+        <initializer>app_log(level, __FILE_NAME__, __LINE__, fmt, ## args)</initializer>
+        <briefdescription>
+<para>A helper macro that simplifies the use of the app_log function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log level to log output as </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A C formatting string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments for the formatting string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1638" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1638" bodyend="1639"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Functions related to logging from apps. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This module contains the functions necessary to log messages through Bluetooth. <simplesect kind="note"><para>It is no longer necessary to enable app logging output from the &quot;settings-&gt;about&quot; menu on the Pebble for them to be transmitted! Instead use the &quot;pebble logs&quot; command included with the SDK to activate logs. The logs will appear right in your console. Logging over Bluetooth is a fairly power hungry operation that non-developers will not need when your apps are distributed. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

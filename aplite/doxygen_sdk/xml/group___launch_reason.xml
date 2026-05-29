@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___launch_reason" kind="group">
     <compoundname>LaunchReason</compoundname>
     <title>Launch Reason</title>
@@ -43,7 +43,7 @@
         <enumvalue id="group___launch_reason_1gga3846fa158615c2ee77c5c708cb4f340aa8ab219a44c85f5977152cb8ffa5a2a12" prot="public">
           <name>APP_LAUNCH_WORKER</name>
           <briefdescription>
-<para>App launched by worker calling <ref refid="group___worker_1ga4ac41d61177b9b631a1a09f04eaf4b2c" kindref="member">worker_launch_app()</ref> </para>
+<para>App launched by worker calling <ref refid="group___worker_1ga4ac41d61177b9b631a1a09f04eaf4b2c" kindref="member">worker_launch_app()</ref>. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3177" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3177" bodyend="3186"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="3148" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3148" bodyend="3157"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3196" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="3196" declcolumn="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="3167" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="3167" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___launch_reason_1ga1674ca6a6f48cb98b8762da667eadfc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___launch_reason_1ga3846fa158615c2ee77c5c708cb4f340a" kindref="member">AppLaunchReason</ref></type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3190" column="17" declfile="build/sdk/aplite/include/pebble.h" declline="3190" declcolumn="17"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="3161" column="17" declfile="build/sdk/aplite/include/pebble.h" declline="3161" declcolumn="17"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___unobstructed_area" kind="group">
+    <compoundname>UnobstructedArea</compoundname>
+    <title>UnobstructedArea</title>
+    <innerclass refid="struct_unobstructed_area_handlers" prot="public">UnobstructedAreaHandlers</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___unobstructed_area_1ga4cb9b5fc0706ddb72fc1e1eece890fb4" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* UnobstructedAreaChangeHandler) (AnimationProgress progress, void *context)</definition>
+        <argsstring>)(AnimationProgress progress, void *context)</argsstring>
+        <name>UnobstructedAreaChangeHandler</name>
+        <briefdescription>
+<para>Handler that will be called every time the unobstructed area changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The progress of the animation changing the unobstructed area. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user-provided context. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6801" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___unobstructed_area_1gafeb86269bc8522d69f9e7550010f22a9" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* UnobstructedAreaDidChangeHandler) (void *context)</definition>
+        <argsstring>)(void *context)</argsstring>
+        <name>UnobstructedAreaDidChangeHandler</name>
+        <briefdescription>
+<para>Handler that will be called after the unobstructed area has finished changing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user-provided context. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6805" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___unobstructed_area_1gac5fd15359205d95238f97d9d2608249c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* UnobstructedAreaWillChangeHandler) (GRect final_unobstructed_screen_area, void *context)</definition>
+        <argsstring>)(GRect final_unobstructed_screen_area, void *context)</argsstring>
+        <name>UnobstructedAreaWillChangeHandler</name>
+        <briefdescription>
+<para>Handler that will be called just before the unobstructed area will begin changing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>final_unobstructed_screen_area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The final unobstructed screen area after the unobstructed area has finished changing. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user-provided context. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6795" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6795" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___unobstructed_area_1ga268258f9f265f8d08406e0c64ac453f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unobstructed_area_service_subscribe</definition>
+        <argsstring>(UnobstructedAreaHandlers handlers, void *context)</argsstring>
+        <name>unobstructed_area_service_subscribe</name>
+        <param>
+          <type>UnobstructedAreaHandlers</type>
+          <declname>handlers</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to be notified when the app&apos;s unobstructed area changes. When an unobstructed area begins changing, the <computeroutput>will_change</computeroutput> handler will be called, and every <computeroutput>will_change</computeroutput> call is always paired with a <computeroutput>did_change</computeroutput> call that occurs when it is done changing given that the <computeroutput>will_change</computeroutput> and <computeroutput>did_change</computeroutput> handlers are set. When subscribing while the unobstructed area is changing, the <computeroutput>will_change</computeroutput> handler will be called after subscription in the next event loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handlers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handlers that should be called when the unobstructed area changes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A user-provided context that will be passed to the callback handlers. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___layer_1ga1bbac31d1070f43b6ecce0d07eabf2a2" kindref="member">layer_get_unobstructed_bounds</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6825" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6825" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___unobstructed_area_1ga631676660d5b1b24cb82c4d7afc65f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unobstructed_area_service_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>unobstructed_area_service_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from notifications about changes to the app&apos;s unobstructed area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6828" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6828" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

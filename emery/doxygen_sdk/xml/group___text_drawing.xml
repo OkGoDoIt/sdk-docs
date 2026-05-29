@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___text_drawing" kind="group">
+    <compoundname>TextDrawing</compoundname>
+    <title>Drawing Text</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___text_drawing_1ga12cbd02b0d5668d7c9bd582077bf7f1d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GTextAlignment</name>
+        <enumvalue id="group___text_drawing_1gga12cbd02b0d5668d7c9bd582077bf7f1da1c91d07ea9ed1ecbb9d01c2a2d0a369a" prot="public">
+          <name>GTextAlignmentLeft</name>
+          <briefdescription>
+<para>Aligns the text to the left of the drawing box. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___text_drawing_1gga12cbd02b0d5668d7c9bd582077bf7f1da96946af7ae1aa2183ff953e0b053b79a" prot="public">
+          <name>GTextAlignmentCenter</name>
+          <briefdescription>
+<para>Aligns the text centered inside the drawing box. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___text_drawing_1gga12cbd02b0d5668d7c9bd582077bf7f1dadcbf1860911da6d573d76430e162f230" prot="public">
+          <name>GTextAlignmentRight</name>
+          <briefdescription>
+<para>Aligns the text to the right of the drawing box. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Text aligment controls the way the text is aligned inside the box the text is drawn into. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___text_drawing_1gad02d08f03f2e33a5abc660f0dd23c85b" kindref="member">graphics_draw_text</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1gaf44cc52cecaa94867d927130da4d4aca" kindref="member">text_layer_set_text_alignment</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5104" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5104" bodyend="5111"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___text_drawing_1gadad5abc1b1cfbddd48bd79f70c05b8fa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GTextOverflowMode</name>
+        <enumvalue id="group___text_drawing_1ggadad5abc1b1cfbddd48bd79f70c05b8faa6ae3728d53a3ff07b28f8b72f60226b9" prot="public">
+          <name>GTextOverflowModeWordWrap</name>
+          <briefdescription>
+<para>On overflow, wrap words to a new line below the current one. Once vertical space is consumed, the last line may be clipped. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___text_drawing_1ggadad5abc1b1cfbddd48bd79f70c05b8faa346a4ac943012d3e193452bfba04f6c5" prot="public">
+          <name>GTextOverflowModeTrailingEllipsis</name>
+          <briefdescription>
+<para>On overflow, wrap words to a new line below the current one. Once vertical space is consumed, truncate as needed to fit a trailing ellipsis (...). Clipping may occur if the vertical space cannot accomodate the first line of text. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___text_drawing_1ggadad5abc1b1cfbddd48bd79f70c05b8faad0ca30172597863ea2894dd5d4e16ebf" prot="public">
+          <name>GTextOverflowModeFill</name>
+          <briefdescription>
+<para>Acts like <ref refid="group___text_drawing_1ggadad5abc1b1cfbddd48bd79f70c05b8faa346a4ac943012d3e193452bfba04f6c5" kindref="member">GTextOverflowModeTrailingEllipsis</ref>, plus trims leading and trailing newlines, while treating all other newlines as spaces. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Text overflow mode controls the way text overflows when the string that is drawn does not fit inside the area constraint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___text_drawing_1gad02d08f03f2e33a5abc660f0dd23c85b" kindref="member">graphics_draw_text</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga654f359a8f5736aa5ca82735d8b03b16" kindref="member">text_layer_set_overflow_mode</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5088" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5088" bodyend="5099"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___text_drawing_1gaf49557aafec575afd74960c3e3993ab2" prot="public" static="no">
+        <type>struct GTextAttributes</type>
+        <definition>typedef struct GTextAttributes GTextAttributes</definition>
+        <argsstring></argsstring>
+        <name>GTextAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5114" column="30" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5114" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___text_drawing_1gad02d08f03f2e33a5abc660f0dd23c85b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_draw_text</definition>
+        <argsstring>(GContext *ctx, const char *text, GFont const font, const GRect box, const GTextOverflowMode overflow_mode, const GTextAlignment alignment, GTextAttributes *text_attributes)</argsstring>
+        <name>graphics_draw_text</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref> const</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>box</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___text_drawing_1gadad5abc1b1cfbddd48bd79f70c05b8fa" kindref="member">GTextOverflowMode</ref></type>
+          <declname>overflow_mode</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___text_drawing_1ga12cbd02b0d5668d7c9bd582077bf7f1d" kindref="member">GTextAlignment</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>GTextAttributes *</type>
+          <declname>text_attributes</declname>
+        </param>
+        <briefdescription>
+<para>Draw text into the current graphics context, using the context&apos;s current text color. The text will be drawn inside a box with the specified dimensions and configuration, with clipping occuring automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The zero terminated UTF-8 string to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font in which the text should be set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>box</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounding box in which to draw the text. The first line of text will be drawn against the top of the box. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>overflow_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The overflow behavior, in case the text is larger than what fits inside the box. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The horizontal alignment of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text_attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional text attributes to describe the characteristics of the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5172" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5172" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___text_drawing_1gabade3d7b15ab0927ab237047899948d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GTextAttributes *</type>
+        <definition>GTextAttributes * graphics_text_attributes_create</definition>
+        <argsstring>(void)</argsstring>
+        <name>graphics_text_attributes_create</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Creates an instance of GTextAttributes for advanced control when rendering text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>New instance of GTextAttributes </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1gad02d08f03f2e33a5abc660f0dd23c85b" kindref="member">graphics_draw_text</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5119" column="17" declfile="build/sdk/emery/include/pebble.h" declline="5119" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_drawing_1gaba4f390d8439da0532b2fbe762fb4a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_text_attributes_destroy</definition>
+        <argsstring>(GTextAttributes *text_attributes)</argsstring>
+        <name>graphics_text_attributes_destroy</name>
+        <param>
+          <type>GTextAttributes *</type>
+          <declname>text_attributes</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a previously created instance of GTextAttributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5122" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5122" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_drawing_1gaf447fb3ce85161d8d1ccb97ef78fed13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_text_attributes_enable_paging</definition>
+        <argsstring>(GTextAttributes *text_attributes, GPoint content_origin_on_screen, GRect paging_on_screen)</argsstring>
+        <name>graphics_text_attributes_enable_paging</name>
+        <param>
+          <type>GTextAttributes *</type>
+          <declname>text_attributes</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>content_origin_on_screen</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>paging_on_screen</declname>
+        </param>
+        <briefdescription>
+<para>Enables paging and locks the text flow calculation to a fixed point on the screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attributes for which to enable paging and locked content origin </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content_origin_on_screen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute coordinate on the screen where the text content starts before an animation or scrolling takes place. Usually the frame&apos;s origin of a layer in screen coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>paging_on_screen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rectangle in absolute coordinates on the screen that describes where text content pages. Usually the container&apos;s absolute frame in screen coordinates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1ga44f1cfbfa0b36d7fdc16174eed382adc" kindref="member">graphics_text_attributes_restore_default_paging</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1ga84e08b94b1509fd06f00735c1f67f2c3" kindref="member">graphics_text_attributes_enable_screen_text_flow</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga473f54e257f089a9e7a5df0a0e56f625" kindref="member">text_layer_enable_screen_text_flow_and_paging</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1gab09fa69c5ba3a57bcfd59184003ece3e" kindref="member">layer_convert_point_to_screen</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5156" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5156" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___text_drawing_1ga84e08b94b1509fd06f00735c1f67f2c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_text_attributes_enable_screen_text_flow</definition>
+        <argsstring>(GTextAttributes *text_attributes, uint8_t inset)</argsstring>
+        <name>graphics_text_attributes_enable_screen_text_flow</name>
+        <param>
+          <type>GTextAttributes *</type>
+          <declname>text_attributes</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>inset</declname>
+        </param>
+        <briefdescription>
+<para>Enables text flow that follows the boundaries of the screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attributes for which text flow should be enabled </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional amount of pixels to inset to the inside of the screen for text flow calculation. Can be zero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1ga0382b73150e1314d378b98d0547f925e" kindref="member">graphics_text_attributes_restore_default_text_flow</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga473f54e257f089a9e7a5df0a0e56f625" kindref="member">text_layer_enable_screen_text_flow_and_paging</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5136" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5136" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_drawing_1ga44f1cfbfa0b36d7fdc16174eed382adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_text_attributes_restore_default_paging</definition>
+        <argsstring>(GTextAttributes *text_attributes)</argsstring>
+        <name>graphics_text_attributes_restore_default_paging</name>
+        <param>
+          <type>GTextAttributes *</type>
+          <declname>text_attributes</declname>
+        </param>
+        <briefdescription>
+<para>Restores paging and locked content origin to the defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attributes for which to restore paging and locked content origin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1gaf447fb3ce85161d8d1ccb97ef78fed13" kindref="member">graphics_text_attributes_enable_paging</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga5aa332145a2bf45e742957ac07e27b99" kindref="member">text_layer_restore_default_text_flow_and_paging</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5143" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5143" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_drawing_1ga0382b73150e1314d378b98d0547f925e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void graphics_text_attributes_restore_default_text_flow</definition>
+        <argsstring>(GTextAttributes *text_attributes)</argsstring>
+        <name>graphics_text_attributes_restore_default_text_flow</name>
+        <param>
+          <type>GTextAttributes *</type>
+          <declname>text_attributes</declname>
+        </param>
+        <briefdescription>
+<para>Restores text flow to the rectangular default. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attributes for which to disable text flow </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1ga84e08b94b1509fd06f00735c1f67f2c3" kindref="member">graphics_text_attributes_enable_screen_text_flow</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga5aa332145a2bf45e742957ac07e27b99" kindref="member">text_layer_restore_default_text_flow_and_paging</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5128" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5128" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_drawing_1ga4e3ae8151d8d57e23fc160251242face" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+        <definition>GSize graphics_text_layout_get_content_size</definition>
+        <argsstring>(const char *text, GFont const font, const GRect box, const GTextOverflowMode overflow_mode, const GTextAlignment alignment)</argsstring>
+        <name>graphics_text_layout_get_content_size</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref> const</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>box</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___text_drawing_1gadad5abc1b1cfbddd48bd79f70c05b8fa" kindref="member">GTextOverflowMode</ref></type>
+          <declname>overflow_mode</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___text_drawing_1ga12cbd02b0d5668d7c9bd582077bf7f1d" kindref="member">GTextAlignment</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Obtain the maximum size that a text with given font, overflow mode and alignment occupies within a given rectangular constraint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The zero terminated UTF-8 string for which to calculate the size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font in which the text should be set while calculating the size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>box</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounding box in which the text should be constrained </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>overflow_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The overflow behavior, in case the text is larger than what fits inside the box. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The horizontal alignment of the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The maximum size occupied by the text </para>
+</simplesect>
+<simplesect kind="see"><para>app_graphics_text_layout_get_content_size_with_attributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5186" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5186" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___text_drawing_1ga151630f57a7e401d7df6c1a955b1cb24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+        <definition>GSize graphics_text_layout_get_content_size_with_attributes</definition>
+        <argsstring>(const char *text, GFont const font, const GRect box, const GTextOverflowMode overflow_mode, const GTextAlignment alignment, GTextAttributes *text_attributes)</argsstring>
+        <name>graphics_text_layout_get_content_size_with_attributes</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref> const</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>box</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___text_drawing_1gadad5abc1b1cfbddd48bd79f70c05b8fa" kindref="member">GTextOverflowMode</ref></type>
+          <declname>overflow_mode</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___text_drawing_1ga12cbd02b0d5668d7c9bd582077bf7f1d" kindref="member">GTextAlignment</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>GTextAttributes *</type>
+          <declname>text_attributes</declname>
+        </param>
+        <briefdescription>
+<para>Obtain the maximum size that a text with given font, overflow mode and alignment occupies within a given rectangular constraint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The zero terminated UTF-8 string for which to calculate the size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font in which the text should be set while calculating the size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>box</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounding box in which the text should be constrained </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>overflow_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The overflow behavior, in case the text is larger than what fits inside the box. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The horizontal alignment of the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text_attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional text attributes to describe the characteristics of the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The maximum size occupied by the text </para>
+</simplesect>
+<simplesect kind="see"><para>app_graphics_text_layout_get_content_size </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5201" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5201" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Functions to draw text into a graphics context </para>
+    </briefdescription>
+    <detaileddescription>
+<para>See <ref refid="group___graphics_context" kindref="compound">Graphics Context</ref> for more information about the graphics context.</para>
+<para>Other drawing functions and related documentation:<itemizedlist>
+<listitem><para><ref refid="group___drawing" kindref="compound">Drawing Primitives</ref></para>
+</listitem><listitem><para><ref refid="group___path_drawing" kindref="compound">Drawing Paths</ref></para>
+</listitem><listitem><para><ref refid="group___graphics_types" kindref="compound">Graphics Types</ref> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

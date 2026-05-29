@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___platform" kind="group">
     <compoundname>Platform</compoundname>
     <title>Platform</title>
@@ -49,17 +49,24 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523abec3788cd011476e3748d8e4d47ac550" prot="public">
+          <name>PlatformTypeGabbro</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="393" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="393" bodyend="400"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="401" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="401" bodyend="409"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
-      <memberdef kind="define" id="group___platform_1ga0f4a054cacd2b1cd3c5d9e4960a2e773" prot="public" static="no">
+      <memberdef kind="define" id="group___platform_1gad94a0ee6bc4084aabc0ddacc3a3ef8a8" prot="public" static="no">
         <name>PBL_PLATFORM_SWITCH</name>
         <param><defname>PLAT</defname></param>
         <param><defname>APLITE</defname></param>
@@ -68,16 +75,17 @@
         <param><defname>DIORITE</defname></param>
         <param><defname>EMERY</defname></param>
         <param><defname>FLINT</defname></param>
-        <initializer>  PBL_PLATFORM_SWITCH_DEFAULT(PLAT, APLITE, APLITE, BASALT, CHALK, DIORITE, EMERY, FLINT)</initializer>
+        <param><defname>GABBRO</defname></param>
+        <initializer>PBL_PLATFORM_SWITCH_DEFAULT(PLAT, APLITE, APLITE, BASALT, CHALK, DIORITE, EMERY, FLINT, GABBRO)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="414" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="414" bodyend="415"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="424" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="424" bodyend="425"/>
       </memberdef>
-      <memberdef kind="define" id="group___platform_1ga55a7a0f6845476c60bab0b4ac16b37e4" prot="public" static="no">
+      <memberdef kind="define" id="group___platform_1gac0b8413a5b0613d77263aa5abf2d1f3c" prot="public" static="no">
         <name>PBL_PLATFORM_SWITCH_DEFAULT</name>
         <param><defname>PLAT</defname></param>
         <param><defname>DEFAULT</defname></param>
@@ -87,13 +95,15 @@
         <param><defname>DIORITE</defname></param>
         <param><defname>EMERY</defname></param>
         <param><defname>FLINT</defname></param>
+        <param><defname>GABBRO</defname></param>
         <initializer>  (\
   ((PLAT) == PlatformTypeFlint) ? (FLINT) : \
   ((PLAT) == PlatformTypeEmery) ? (EMERY) : \
   ((PLAT) == PlatformTypeDiorite) ? (DIORITE) : \
   ((PLAT) == PlatformTypeChalk) ? (CHALK) : \
   ((PLAT) == PlatformTypeBasalt) ? (BASALT) : \
-  ((PLAT) == PlatformTypeBasalt) ? (APLITE) : \
+  ((PLAT) == PlatformTypeAplite) ? (APLITE) : \
+  ((PLAT) == PlatformTypeGabbro) ? (GABBRO) : \
   (DEFAULT) \
 )</initializer>
         <briefdescription>
@@ -102,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="404" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="404" bodyend="412"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="413" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="413" bodyend="422"/>
       </memberdef>
       <memberdef kind="define" id="group___platform_1gad161dc5d2e3ce42441da0c99fd9ccd2c" prot="public" static="no">
         <name>PBL_PLATFORM_TYPE_CURRENT</name>
@@ -113,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="402" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="402" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="411" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="411" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

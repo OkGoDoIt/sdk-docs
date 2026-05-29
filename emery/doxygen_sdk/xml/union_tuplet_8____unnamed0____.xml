@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="union_tuplet_8____unnamed0____" kind="union" language="C++" prot="public">
+    <compoundname>Tuplet.__unnamed0__</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_tuplet_8____unnamed0_____1a4b3a6218bb3e3a7303e8a171a60fcf92" prot="public" static="no" mutable="no">
+        <type>struct Tuplet::@370272006252140310005123322311174103326266177203::@017225334113150027123354140232023063206127302065</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>bytes</name>
+        <qualifiedname>Tuplet.__unnamed0__::bytes</qualifiedname>
+        <briefdescription>
+<para>Valid when <computeroutput>.type.</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad852031b350c69166303a05dbe294ec7" kindref="member">TUPLE_BYTE_ARRAY</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1966" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuplet_8____unnamed0_____1a59df64e03292f845a11befa53b2845d1" prot="public" static="no" mutable="no">
+        <type>struct Tuplet::@370272006252140310005123322311174103326266177203::@153313003372021250135134353155061243144275143307</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>cstring</name>
+        <qualifiedname>Tuplet.__unnamed0__::cstring</qualifiedname>
+        <briefdescription>
+<para>Valid when <computeroutput>.type.</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a73c9d3384801aec20d36c732d9218dab" kindref="member">TUPLE_CSTRING</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1973" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_tuplet_8____unnamed0_____1a157db7df530023575515d366c9b672e8" prot="public" static="no" mutable="no">
+        <type>struct Tuplet::@370272006252140310005123322311174103326266177203::@272327341332227344130375126257164017326374266014</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>integer</name>
+        <qualifiedname>Tuplet.__unnamed0__::integer</qualifiedname>
+        <briefdescription>
+<para>Valid when <computeroutput>.type.</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad691daf1df77095c1e19fe30b6cea5b4" kindref="member">TUPLE_INT</ref> or <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a6802e5d267fdda619ffb13fc80d873fe" kindref="member">TUPLE_UINT</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1981" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Anonymous union containing the reference to the <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>&apos;s value, being either a byte array, c-string or integer. See documentation of <computeroutput>.<ref refid="union_tuplet_8____unnamed0_____1a4b3a6218bb3e3a7303e8a171a60fcf92" kindref="member">bytes</ref></computeroutput>, <computeroutput>.<ref refid="union_tuplet_8____unnamed0_____1a59df64e03292f845a11befa53b2845d1" kindref="member">cstring</ref></computeroutput> and <computeroutput>.<ref refid="union_tuplet_8____unnamed0_____1a157db7df530023575515d366c9b672e8" kindref="member">integer</ref></computeroutput> fields. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="1959" column="3" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1959" bodyend="1982"/>
+    <listofallmembers>
+      <member refid="union_tuplet_8____unnamed0_____1a4b3a6218bb3e3a7303e8a171a60fcf92" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__</scope><name>bytes</name></member>
+      <member refid="union_tuplet_8____unnamed0_____1a59df64e03292f845a11befa53b2845d1" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__</scope><name>cstring</name></member>
+      <member refid="union_tuplet_8____unnamed0_____1a157db7df530023575515d366c9b672e8" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__</scope><name>integer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

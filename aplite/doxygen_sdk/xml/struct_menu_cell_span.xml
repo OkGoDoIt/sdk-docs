@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_menu_cell_span" kind="struct" language="C++" prot="public">
     <compoundname>MenuCellSpan</compoundname>
     <sectiondef kind="public-attrib">
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6940" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6940" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7066" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7066" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_cell_span_1a251934f51b14ef537c76c3f3e7e03741" prot="public" static="no" mutable="no">
         <type><ref refid="struct_menu_index" kindref="compound">MenuIndex</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6942" column="13" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6942" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7068" column="13" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7068" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_cell_span_1aaea74d9a2eac3058e333f5c0752c0d14" prot="public" static="no" mutable="no">
         <type>int16_t</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6941" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6941" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7067" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7067" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_cell_span_1ab363eac498f57e0cd015929b98b3083b" prot="public" static="no" mutable="no">
         <type>int16_t</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6939" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6939" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7065" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7065" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -76,7 +76,7 @@
         <link refid="struct_menu_index"/>
       </node>
     </collaborationgraph>
-    <location file="build/sdk/aplite/include/pebble.h" line="6938" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6938" bodyend="6943"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="7064" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7064" bodyend="7069"/>
     <listofallmembers>
       <member refid="struct_menu_cell_span_1ac881aadb2dff9059fe7b4a0c0e031d6e" prot="public" virt="non-virtual"><scope>MenuCellSpan</scope><name>h</name></member>
       <member refid="struct_menu_cell_span_1a251934f51b14ef537c76c3f3e7e03741" prot="public" virt="non-virtual"><scope>MenuCellSpan</scope><name>index</name></member>

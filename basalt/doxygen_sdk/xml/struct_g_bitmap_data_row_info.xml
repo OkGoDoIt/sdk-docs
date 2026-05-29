@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_g_bitmap_data_row_info" kind="struct" language="C++" prot="public">
     <compoundname>GBitmapDataRowInfo</compoundname>
     <includes local="no">pebble.h</includes>
@@ -11,13 +11,13 @@
         <name>data</name>
         <qualifiedname>GBitmapDataRowInfo::data</qualifiedname>
         <briefdescription>
-<para>Address of the byte at column 0 of a given data row in a bitmap. Use this to calculate the memory address of a pixel. For GBitmapFormat8BitCircular or GBitmapFormat8Bit this would be: <computeroutput>uint8_t *pixel_addr = row_info.addr + x</computeroutput>. Note that this byte can be outside of the valid range for this row. For example: The first valid pixel (<computeroutput>min_x=76</computeroutput>) of a row might start at 76 bytes after the given data pointer (assuming that 1 pixel is represented as 1 byte as in GBitmapFormat8BitCircular or GBitmapFormat8Bit). </para>
+<para>Address of the byte at column 0 of a given data row in a bitmap. Use this to calculate the memory address of a pixel. For GBitmapFormat8BitCircular or GBitmapFormat8Bit this would be: <computeroutput>uint8_t *pixel_addr = row_info.addr + x</computeroutput>. Note that this byte can be outside of the valid range for this row. For example: The first valid pixel (<computeroutput><ref refid="struct_g_bitmap_data_row_info_1aea3e456327c26defb9603b9e3630ee49" kindref="member">min_x</ref>=76</computeroutput>) of a row might start at 76 bytes after the given data pointer (assuming that 1 pixel is represented as 1 byte as in GBitmapFormat8BitCircular or GBitmapFormat8Bit). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3735" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3735" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4012" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4012" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_bitmap_data_row_info_1a7022e2c8200c4740e670180c3b450b49" prot="public" static="no" mutable="no">
         <type>int16_t</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3741" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3741" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4018" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4018" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_bitmap_data_row_info_1aea3e456327c26defb9603b9e3630ee49" prot="public" static="no" mutable="no">
         <type>int16_t</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3737" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3737" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4014" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4014" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -64,7 +64,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="3727" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3727" bodyend="3742"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="4004" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4004" bodyend="4019"/>
     <listofallmembers>
       <member refid="struct_g_bitmap_data_row_info_1a35192dcc967b233d6477988fffd119aa" prot="public" virt="non-virtual"><scope>GBitmapDataRowInfo</scope><name>data</name></member>
       <member refid="struct_g_bitmap_data_row_info_1a7022e2c8200c4740e670180c3b450b49" prot="public" virt="non-virtual"><scope>GBitmapDataRowInfo</scope><name>max_x</name></member>

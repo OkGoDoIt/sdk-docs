@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___window" kind="group">
+    <compoundname>Window</compoundname>
+    <title>Window</title>
+    <innerclass refid="struct_window_handlers" prot="public">WindowHandlers</innerclass>
+    <innergroup refid="group___action_menu">ActionMenu</innergroup>
+    <innergroup refid="group___number_window">NumberWindow</innergroup>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___window_1gadb2a551453af16dd3214a23b16e67544" prot="public" static="no">
+        <type>struct Window</type>
+        <definition>typedef struct Window Window</definition>
+        <argsstring></argsstring>
+        <name>Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5707" column="21" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___window_1ga92998c91c939958c0eea9c6c234bdfcb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* WindowHandler) (struct Window *window)</definition>
+        <argsstring>)(struct Window *window)</argsstring>
+        <name>WindowHandler</name>
+        <briefdescription>
+<para>Function signature for a handler that deals with transition events of a window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_window_handlers" kindref="compound">WindowHandlers</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___window_1gac59cf99a62ff53b5b4a25c6432438360" kindref="member">window_set_window_handlers()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5712" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5712" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___window_1ga3fadc1add04d170d81a7c2733d89b488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Window *</type>
+        <definition>Window * window_create</definition>
+        <argsstring>(void)</argsstring>
+        <name>window_create</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Creates a new Window on the heap and initalizes it with the default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Background color : <computeroutput><ref refid="group___color_definitions_1ga90fe70aef6e9a908811d1f4f72b44608" kindref="member">GColorWhite</ref></computeroutput></para>
+</listitem><listitem><para>Root layer&apos;s <computeroutput>update_proc</computeroutput> : function that fills the window&apos;s background using <computeroutput>background_color</computeroutput>.</para>
+</listitem><listitem><para><computeroutput>click_config_provider</computeroutput> : <computeroutput>NULL</computeroutput></para>
+</listitem><listitem><para><computeroutput>window_handlers</computeroutput> : all <computeroutput>NULL</computeroutput> <simplesect kind="return"><para>A pointer to the window. <computeroutput>NULL</computeroutput> if the window could not be created </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5748" column="8" declfile="build/sdk/emery/include/pebble.h" declline="5748" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga820c1ac9478c640ee5c43ec79c70ce47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_destroy</definition>
+        <argsstring>(Window *window)</argsstring>
+        <name>window_destroy</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a Window previously created by window_create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5751" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5751" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga25e9533dfaa586fd8e38205fbe685931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * window_get_click_config_context</definition>
+        <argsstring>(Window *window)</argsstring>
+        <name>window_get_click_config_context</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Gets the current click configuration provider context of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to get the click config provider context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5777" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5777" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga22519bc087f0779705c5981eff3e030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref></type>
+        <definition>ClickConfigProvider window_get_click_config_provider</definition>
+        <argsstring>(const Window *window)</argsstring>
+        <name>window_get_click_config_provider</name>
+        <param>
+          <type>const Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Gets the current click configuration provider of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to get the click config provider </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5773" column="21" declfile="build/sdk/emery/include/pebble.h" declline="5773" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga1c5f19fd53ea553a222f2adda37b4ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct Layer *</type>
+        <definition>struct Layer * window_get_root_layer</definition>
+        <argsstring>(const Window *window)</argsstring>
+        <name>window_get_root_layer</name>
+        <param>
+          <type>const Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Gets the root Layer of the window. The root layer is the layer at the bottom of the layer hierarchy for this window. It is the window&apos;s &quot;canvas&quot; if you will. By default, the root layer only draws a solid fill with the window&apos;s background color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to get the root layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The window&apos;s root layer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5792" column="13" declfile="build/sdk/emery/include/pebble.h" declline="5792" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1gabec333e6fa4f22cf6063fff8ff5ae66f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * window_get_user_data</definition>
+        <argsstring>(const Window *window)</argsstring>
+        <name>window_get_user_data</name>
+        <param>
+          <type>const Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Gets the pointer to developer-supplied data that was previously set using <ref refid="group___window_1gaaec64431b5c68ffbd51d6c9055891455" kindref="member">window_set_user_data()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___window_1gaaec64431b5c68ffbd51d6c9055891455" kindref="member">window_set_user_data</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to get the user data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5820" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5820" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga8e55dedc20b8f2000993fc3c937f4ea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool window_is_loaded</definition>
+        <argsstring>(Window *window)</argsstring>
+        <name>window_is_loaded</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Gets whether the window has been loaded. If a window is loaded, its <computeroutput>.load</computeroutput> handler has been called (and the <computeroutput>.unload</computeroutput> handler has not been called since). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the window is currently loaded or false if not. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window to query its loaded status </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_window_handlers" kindref="compound">WindowHandlers</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5807" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5807" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga3329027de707b949f02328492165cf05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_long_click_subscribe</definition>
+        <argsstring>(ButtonId button_id, uint16_t delay_ms, ClickHandler down_handler, ClickHandler up_handler)</argsstring>
+        <name>window_long_click_subscribe</name>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>delay_ms</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref></type>
+          <declname>down_handler</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref></type>
+          <declname>up_handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to long click events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be called from the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>The back button cannot be overridden with a long click. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The button events to subscribe to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Milliseconds after which &quot;handler&quot; is fired. A value of 0 means to use the system default 500ms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>down_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> to fire as soon as the button has been held for <computeroutput>delay_ms</computeroutput>. This may be NULL to have no down handler. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>up_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> to fire on the release of a long click. This may be NULL to have no up handler. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5863" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5863" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga041018e3b3db5bb7866283fffcd4b766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_multi_click_subscribe</definition>
+        <argsstring>(ButtonId button_id, uint8_t min_clicks, uint8_t max_clicks, uint16_t timeout, bool last_click_only, ClickHandler handler)</argsstring>
+        <name>window_multi_click_subscribe</name>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>min_clicks</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>max_clicks</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>last_click_only</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to multi click events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be called from the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref>. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The button events to subscribe to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_clicks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum number of clicks before handler is fired. Defaults to 2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_clicks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of clicks after which the click counter is reset. A value of 0 means use &quot;min&quot; also as &quot;max&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delay after which a sequence of clicks is considered finished, and the click counter is reset. A value of 0 means to use the system default 300ms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_click_only</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defaults to false. When true, only the handler for the last multi-click is called. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> to fire on this event. Fired for multi-clicks, as &quot;filtered&quot; by the <computeroutput>last_click_only</computeroutput>, <computeroutput>min</computeroutput>, and <computeroutput>max</computeroutput> parameters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5854" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5854" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga6cecc4f27755aaf91f1f232c4c6f8b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_raw_click_subscribe</definition>
+        <argsstring>(ButtonId button_id, ClickHandler down_handler, ClickHandler up_handler, void *context)</argsstring>
+        <name>window_raw_click_subscribe</name>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref></type>
+          <declname>down_handler</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref></type>
+          <declname>up_handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to raw click events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be called from within the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>The back button cannot be overridden with a raw click. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The button events to subscribe to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>down_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> to fire as soon as the button has been pressed. This may be NULL to have no down handler. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>up_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> to fire on the release of the button. This may be NULL to have no up handler. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If this context is not NULL, it will override the general context. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5872" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5872" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1gafbec4ea556f6015c6cd4c81dacb50c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_set_background_color</definition>
+        <argsstring>(Window *window, GColor background_color)</argsstring>
+        <name>window_set_background_color</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>background_color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the background color of the window, which is drawn automatically by the root layer of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to set the background color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>background_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new background color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___window_1ga1c5f19fd53ea553a222f2adda37b4ab3" kindref="member">window_get_root_layer()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5799" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5799" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1gaeefbe33bc69ffee444337b056912440c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_set_click_config_provider</definition>
+        <argsstring>(Window *window, ClickConfigProvider click_config_provider)</argsstring>
+        <name>window_set_click_config_provider</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref></type>
+          <declname>click_config_provider</declname>
+        </param>
+        <briefdescription>
+<para>Sets the click configuration provider callback function on the window. This will automatically setup the input handlers of the window as well to use the click recognizer subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to set the click config provider </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>click_config_provider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will be called to configure the click recognizers with the window </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___clicks" kindref="compound">Clicks</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5760" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5760" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_set_click_config_provider_with_context</definition>
+        <argsstring>(Window *window, ClickConfigProvider click_config_provider, void *context)</argsstring>
+        <name>window_set_click_config_provider_with_context</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref></type>
+          <declname>click_config_provider</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Same as <ref refid="group___window_1gaeefbe33bc69ffee444337b056912440c" kindref="member">window_set_click_config_provider()</ref>, but will assign a custom context pointer (instead of the window pointer) that will be passed into the <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> click event handlers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to set the click config provider </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>click_config_provider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will be called to configure the click recognizers with the window </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application specific data that will be passed to the click configuration provider callback (defaults to the window). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___clicks" kindref="compound">Clicks</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___window_1gaeefbe33bc69ffee444337b056912440c" kindref="member">window_set_click_config_provider</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5769" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5769" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1gab3b456b676a771612e0d8f254bd7e05c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_set_click_context</definition>
+        <argsstring>(ButtonId button_id, void *context)</argsstring>
+        <name>window_set_click_context</name>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Set the context that will be passed to handlers for the given button&apos;s events. By default the context passed to handlers is equal to the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> context (defaults to the window). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be called from within the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref>. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The button to set the context for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set the context that will be passed to handlers for the given button&apos;s events. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5879" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5879" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1gaaec64431b5c68ffbd51d6c9055891455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_set_user_data</definition>
+        <argsstring>(Window *window, void *data)</argsstring>
+        <name>window_set_user_data</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets a pointer to developer-supplied data that the window uses, to provide a means to access the data at later times in one of the window event handlers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___window_1gabec333e6fa4f22cf6063fff8ff5ae66f" kindref="member">window_get_user_data</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to set the user data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to user data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5814" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5814" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1gac59cf99a62ff53b5b4a25c6432438360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_set_window_handlers</definition>
+        <argsstring>(Window *window, WindowHandlers handlers)</argsstring>
+        <name>window_set_window_handlers</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_window_handlers" kindref="compound">WindowHandlers</ref></type>
+          <declname>handlers</declname>
+        </param>
+        <briefdescription>
+<para>Sets the window handlers of the window. These handlers get called e.g. when the user enters or leaves the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to set the window handlers </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handlers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handlers for the specified window </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_window_handlers" kindref="compound">WindowHandlers</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5784" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5784" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_single_click_subscribe</definition>
+        <argsstring>(ButtonId button_id, ClickHandler handler)</argsstring>
+        <name>window_single_click_subscribe</name>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to single click events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be called from the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para><ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe()</ref> and <ref refid="group___window_1ga1ff2467f009b80f8bc97ef197e34d332" kindref="member">window_single_repeating_click_subscribe()</ref> conflict, and cannot both be used on the same button. </para>
+</simplesect>
+<simplesect kind="note"><para>When there is a multi_click and/or long_click setup, there will be a delay before the single click </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The button events to subscribe to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> to fire on this event. handler will get fired. On the other hand, when there is no multi_click nor long_click setup, the single click handler will fire directly on button down. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___clicks" kindref="compound">Clicks</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___window_1ga1ff2467f009b80f8bc97ef197e34d332" kindref="member">window_single_repeating_click_subscribe</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5832" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5832" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_1ga1ff2467f009b80f8bc97ef197e34d332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_single_repeating_click_subscribe</definition>
+        <argsstring>(ButtonId button_id, uint16_t repeat_interval_ms, ClickHandler handler)</argsstring>
+        <name>window_single_repeating_click_subscribe</name>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>repeat_interval_ms</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to single click event, with a repeat interval. A single click is detected every time &quot;repeat_interval_ms&quot; has been reached. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be called from the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para><ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe()</ref> and <ref refid="group___window_1ga1ff2467f009b80f8bc97ef197e34d332" kindref="member">window_single_repeating_click_subscribe()</ref> conflict, and cannot both be used on the same button. </para>
+</simplesect>
+<simplesect kind="note"><para>The back button cannot be overridden with a repeating click. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The button events to subscribe to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>repeat_interval_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When holding down, how many milliseconds before the handler is fired again. A value of 0ms means &quot;no repeat timer&quot;. The minimum is 30ms, and values below will be disregarded. If there is a long-click handler subscribed on this button, <computeroutput>repeat_interval_ms</computeroutput> will not be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> to fire on this event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5844" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5844" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The basic building block of the user interface </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Windows are the top-level elements in the UI hierarchy and the basic building blocks for a Pebble UI. A single window is always displayed at a time on Pebble, with the exception of when animating from one window to the other, which, in that case, is managed by the window stack. You can stack windows on top of each other, but only the topmost window will be visible.</para>
+<para>Users wearing a Pebble typically interact with the content and media displayed in a window, clicking and pressing buttons on the watch, depending on what they see and wish to respond to in a window.</para>
+<para>Windows serve to display a hierarchy of layers on the screen and handle user input. When a window is visible, its root Layer (and all its child layers) are drawn onto the screen automatically.</para>
+<para>You need a window, which always fills the entire screen, to display images, text, and graphics in your Pebble app. A layer by itself doesn’t display on Pebble; it must be in the current window’s layer hierarchy to be visible.</para>
+<para>The Window Stack serves as the global manager of what window is presented and makes sure that input events are forwarded to the topmost window.</para>
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+</htmlonly> (chapter &quot;Window&quot;) for a conceptual overview of Window, the Window Stack and relevant code examples. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

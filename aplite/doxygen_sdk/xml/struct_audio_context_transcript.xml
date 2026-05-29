@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_audio_context_transcript" kind="struct" language="C++" prot="public">
+    <compoundname>AudioContextTranscript</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_audio_context_transcript_1adbf936a275addbf939283b0063bac1bf" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+        <definition>time_t AudioContextTranscript::end_time</definition>
+        <argsstring></argsstring>
+        <name>end_time</name>
+        <qualifiedname>AudioContextTranscript::end_time</qualifiedname>
+        <briefdescription>
+<para>End time of the segment in seconds since the Unix epoch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="3229" column="10" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_transcript_1a675d7693537c8bb21b3ea41bcd273813" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t AudioContextTranscript::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>AudioContextTranscript::flags</qualifiedname>
+        <briefdescription>
+<para>Reserved flags for future transcript details. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="3233" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_transcript_1a2ae6e3556fed90dd430266fb910e021a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t AudioContextTranscript::gap_count</definition>
+        <argsstring></argsstring>
+        <name>gap_count</name>
+        <qualifiedname>AudioContextTranscript::gap_count</qualifiedname>
+        <briefdescription>
+<para>Number of known capture gaps associated with this segment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="3231" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_transcript_1ad6861eef008b7a732730724207b1b033" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+        <definition>time_t AudioContextTranscript::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <qualifiedname>AudioContextTranscript::start_time</qualifiedname>
+        <briefdescription>
+<para>Start time of the segment in seconds since the Unix epoch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="3227" column="10" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_transcript_1ab7d60d4ca7df917e6c35615f317bb85e" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* AudioContextTranscript::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <qualifiedname>AudioContextTranscript::text</qualifiedname>
+        <briefdescription>
+<para>UTF-8 transcript text. Valid only during the callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="3235" column="14" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3235" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A transcript segment returned by an Audio Context request. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/aplite/include/pebble.h" line="3225" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="3225" bodyend="3236"/>
+    <listofallmembers>
+      <member refid="struct_audio_context_transcript_1adbf936a275addbf939283b0063bac1bf" prot="public" virt="non-virtual"><scope>AudioContextTranscript</scope><name>end_time</name></member>
+      <member refid="struct_audio_context_transcript_1a675d7693537c8bb21b3ea41bcd273813" prot="public" virt="non-virtual"><scope>AudioContextTranscript</scope><name>flags</name></member>
+      <member refid="struct_audio_context_transcript_1a2ae6e3556fed90dd430266fb910e021a" prot="public" virt="non-virtual"><scope>AudioContextTranscript</scope><name>gap_count</name></member>
+      <member refid="struct_audio_context_transcript_1ad6861eef008b7a732730724207b1b033" prot="public" virt="non-virtual"><scope>AudioContextTranscript</scope><name>start_time</name></member>
+      <member refid="struct_audio_context_transcript_1ab7d60d4ca7df917e6c35615f317bb85e" prot="public" virt="non-virtual"><scope>AudioContextTranscript</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

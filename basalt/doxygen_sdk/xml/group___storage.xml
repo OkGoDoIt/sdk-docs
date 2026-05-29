@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___storage" kind="group">
     <compoundname>Storage</compoundname>
     <title>Storage</title>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2970" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2970" bodyend="3022"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3062" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3062" bodyend="3114"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3025" column="17" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3025" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3117" column="17" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3117" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -209,11 +209,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>S_TRUE if successful, E_DOES_NOT_EXIST if a value was not set, or another error value from <ref refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kindref="member">StatusCode</ref>. </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3100" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3100" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3195" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3195" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga6d7d35339e88c77eb0f860e2e07a6741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -243,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3030" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3030" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3122" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3122" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga5cdebc74788804da4e0a293da392d219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -273,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3036" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3036" declcolumn="5"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3130" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3130" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga9799457707c05716e851dc72cf976d10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -303,7 +305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3042" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3042" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3136" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3136" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga8469286f3de1edbf1c275e6b5b871749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -357,7 +359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3058" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3058" declcolumn="5"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3152" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3152" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga1ee46476e67b7508b4f6ecac9ff2b202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -389,7 +391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3049" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3049" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3143" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3143" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga16c3265b8e698b61ae158c47f4136a1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -443,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3068" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3068" declcolumn="5"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3162" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3162" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga3e69f901337fa0843b206aabbae34356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___storage_1gaaabdaf7ee58ca7269bd4bf24efcde092" kindref="member">status_t</ref></type>
@@ -485,7 +487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3074" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3074" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3168" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3168" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1gab32240af0ba289ec526a0af7a7835ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -539,7 +541,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3089" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3089" declcolumn="5"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3183" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3183" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga3ef414652a47ece1554c392b97e42adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___storage_1gaaabdaf7ee58ca7269bd4bf24efcde092" kindref="member">status_t</ref></type>
@@ -583,7 +585,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3081" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3081" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3175" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3175" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___storage_1ga2cb47c0619583b4582f6c3b671c1447b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -625,7 +627,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3096" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3096" declcolumn="5"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3190" column="5" declfile="build/sdk/basalt/include/pebble.h" declline="3190" declcolumn="5"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -639,7 +641,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2964" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2964" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3056" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3056" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___storage_1ga9e91ea184bcf116ffa9d35319f7ceb13" prot="public" static="no">
+        <name>persist_get_max_size</name>
+        <param><defname>...</defname></param>
+        <initializer>(4096)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3124" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___storage_1gaa98cfabe4de457c0690d03549747bef6" prot="public" static="no">
         <name>PERSIST_STRING_MAX_LENGTH</name>
@@ -651,7 +665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2967" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2967" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3059" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3059" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -662,7 +676,7 @@
 <para>In Pebble OS, storage is defined by a collection of fields that you can create, modify or delete. In the API, a field is specified as a key with a corresponding value.</para>
 <para>Using the Storage API, every app is able to get its own persistent storage space. Each value in that space is associated with a <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> key.</para>
 <para>Storage supports saving integers, strings and byte arrays. The maximum size of byte arrays and strings is defined by PERSIST_DATA_MAX_LENGTH (currently set to 256 bytes). You call the function persist_exists(key), which returns a boolean indicating if the key exists or not. The Storage API enables your app to save its state, and when compared to using <ref refid="group___app_message" kindref="compound">AppMessage</ref> to retrieve values from the phone, it provides you with a much faster way to restore state. In addition, it draws less power from the battery.</para>
-<para>Note that the size of all persisted values cannot exceed 4K per app. </para>
+<para>The total size of an app&apos;s persisted values is capped; call persist_get_max_size to query the limit at runtime. </para>
     </detaileddescription>
   </compounddef>
 </doxygen>

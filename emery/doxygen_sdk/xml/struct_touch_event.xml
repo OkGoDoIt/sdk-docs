@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_touch_event" kind="struct" language="C++" prot="public">
+    <compoundname>TouchEvent</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_touch_event_1a6af459d2c1a03e0faf7f60e4f3a6a135" prot="public" static="no" mutable="no">
+        <type><ref refid="group___touch_service_1gaf9360ba7e12726eabae0c635d317ee6a" kindref="member">TouchEventType</ref></type>
+        <definition>TouchEventType TouchEvent::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>TouchEvent::type</qualifiedname>
+        <bitfield>8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="931" column="18" bodyfile="build/sdk/emery/include/pebble.h" bodystart="931" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_touch_event_1a6ac244661e28ac09e200dcec207b892c" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t TouchEvent::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>TouchEvent::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="932" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="932" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_touch_event_1ab50974376bc948ca79d74b6ef84b8f5e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t TouchEvent::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>TouchEvent::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="933" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="933" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Touch event data, carried directly in PebbleTouchEvent. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="930" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="930" bodyend="934"/>
+    <listofallmembers>
+      <member refid="struct_touch_event_1a6af459d2c1a03e0faf7f60e4f3a6a135" prot="public" virt="non-virtual"><scope>TouchEvent</scope><name>type</name></member>
+      <member refid="struct_touch_event_1a6ac244661e28ac09e200dcec207b892c" prot="public" virt="non-virtual"><scope>TouchEvent</scope><name>x</name></member>
+      <member refid="struct_touch_event_1ab50974376bc948ca79d74b6ef84b8f5e" prot="public" virt="non-virtual"><scope>TouchEvent</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

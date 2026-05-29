@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_uuid" kind="struct" language="C++" prot="public">
+    <compoundname>Uuid</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_uuid_1acbb33d696a0372ef92f948948f6f475c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte0</definition>
+        <argsstring></argsstring>
+        <name>byte0</name>
+        <qualifiedname>Uuid::byte0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1564" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1acd601719f97d4554c9544e691f10b626" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte1</definition>
+        <argsstring></argsstring>
+        <name>byte1</name>
+        <qualifiedname>Uuid::byte1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1565" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a9c4a2a8d5331350fc4c999165427b27a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte10</definition>
+        <argsstring></argsstring>
+        <name>byte10</name>
+        <qualifiedname>Uuid::byte10</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1574" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a77516abc51ca0b86999dd528432efaa3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte11</definition>
+        <argsstring></argsstring>
+        <name>byte11</name>
+        <qualifiedname>Uuid::byte11</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1575" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a37b5156095ea637b9a4e8cbc9c643263" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte12</definition>
+        <argsstring></argsstring>
+        <name>byte12</name>
+        <qualifiedname>Uuid::byte12</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1576" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1af3f5a8d61556674146739876fc452cf9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte13</definition>
+        <argsstring></argsstring>
+        <name>byte13</name>
+        <qualifiedname>Uuid::byte13</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1577" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1ad04598eff57da2a6f6e68fa25b063055" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte14</definition>
+        <argsstring></argsstring>
+        <name>byte14</name>
+        <qualifiedname>Uuid::byte14</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1578" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a185ed95644e4a46875ef8535ca5a8bc0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte15</definition>
+        <argsstring></argsstring>
+        <name>byte15</name>
+        <qualifiedname>Uuid::byte15</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1579" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a1616425d3d2f57558296b0f775fe8c66" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte2</definition>
+        <argsstring></argsstring>
+        <name>byte2</name>
+        <qualifiedname>Uuid::byte2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1566" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1ad3eb00c5e15549d7ace3389cdd61f8cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte3</definition>
+        <argsstring></argsstring>
+        <name>byte3</name>
+        <qualifiedname>Uuid::byte3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1567" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1aab02d39a2c8cab6f3bf37c1ee499170d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte4</definition>
+        <argsstring></argsstring>
+        <name>byte4</name>
+        <qualifiedname>Uuid::byte4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1568" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a97c544980b85511e204578d9f41777a4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte5</definition>
+        <argsstring></argsstring>
+        <name>byte5</name>
+        <qualifiedname>Uuid::byte5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1569" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1ab71527e9dc32f3d8c92636851e978531" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte6</definition>
+        <argsstring></argsstring>
+        <name>byte6</name>
+        <qualifiedname>Uuid::byte6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1570" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a897eca8998ae632db3e30d2360bf4163" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte7</definition>
+        <argsstring></argsstring>
+        <name>byte7</name>
+        <qualifiedname>Uuid::byte7</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1571" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a01457ef5912146347444666237ef3b9c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte8</definition>
+        <argsstring></argsstring>
+        <name>byte8</name>
+        <qualifiedname>Uuid::byte8</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1572" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_uuid_1a270e566690dd4e97438f6c7b40464b65" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Uuid::byte9</definition>
+        <argsstring></argsstring>
+        <name>byte9</name>
+        <qualifiedname>Uuid::byte9</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1573" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1573" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="1563" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1563" bodyend="1580"/>
+    <listofallmembers>
+      <member refid="struct_uuid_1acbb33d696a0372ef92f948948f6f475c" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte0</name></member>
+      <member refid="struct_uuid_1acd601719f97d4554c9544e691f10b626" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte1</name></member>
+      <member refid="struct_uuid_1a9c4a2a8d5331350fc4c999165427b27a" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte10</name></member>
+      <member refid="struct_uuid_1a77516abc51ca0b86999dd528432efaa3" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte11</name></member>
+      <member refid="struct_uuid_1a37b5156095ea637b9a4e8cbc9c643263" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte12</name></member>
+      <member refid="struct_uuid_1af3f5a8d61556674146739876fc452cf9" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte13</name></member>
+      <member refid="struct_uuid_1ad04598eff57da2a6f6e68fa25b063055" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte14</name></member>
+      <member refid="struct_uuid_1a185ed95644e4a46875ef8535ca5a8bc0" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte15</name></member>
+      <member refid="struct_uuid_1a1616425d3d2f57558296b0f775fe8c66" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte2</name></member>
+      <member refid="struct_uuid_1ad3eb00c5e15549d7ace3389cdd61f8cf" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte3</name></member>
+      <member refid="struct_uuid_1aab02d39a2c8cab6f3bf37c1ee499170d" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte4</name></member>
+      <member refid="struct_uuid_1a97c544980b85511e204578d9f41777a4" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte5</name></member>
+      <member refid="struct_uuid_1ab71527e9dc32f3d8c92636851e978531" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte6</name></member>
+      <member refid="struct_uuid_1a897eca8998ae632db3e30d2360bf4163" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte7</name></member>
+      <member refid="struct_uuid_1a01457ef5912146347444666237ef3b9c" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte8</name></member>
+      <member refid="struct_uuid_1a270e566690dd4e97438f6c7b40464b65" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte9</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

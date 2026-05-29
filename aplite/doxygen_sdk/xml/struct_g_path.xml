@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_g_path" kind="struct" language="C++" prot="public">
     <compoundname>GPath</compoundname>
     <includes local="no">pebble.h</includes>
@@ -11,13 +11,13 @@
         <name>num_points</name>
         <qualifiedname>GPath::num_points</qualifiedname>
         <briefdescription>
-<para>The number of points in the <computeroutput>points</computeroutput> array. </para>
+<para>The number of points in the <computeroutput><ref refid="struct_g_path_1a1c38d8ee2e1f7f9fd288bc39fa958190" kindref="member">points</ref></computeroutput> array. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4577" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4577" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4717" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4717" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_path_1ae15e816101f2e18925105c5a6be04392" prot="public" static="no" mutable="no">
         <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
@@ -26,13 +26,13 @@
         <name>offset</name>
         <qualifiedname>GPath::offset</qualifiedname>
         <briefdescription>
-<para>The translation that will to be used when drawing the path with <ref refid="group___path_drawing_1ga4aa5b80f8f98d2cb7e6701b39bb18e32" kindref="member">gpath_draw_filled()</ref> or <ref refid="group___path_drawing_1ga33e423daf4e125ae273111871159eead" kindref="member">gpath_draw_outline()</ref> </para>
+<para>The translation that will to be used when drawing the path with <ref refid="group___path_drawing_1ga4aa5b80f8f98d2cb7e6701b39bb18e32" kindref="member">gpath_draw_filled()</ref> or <ref refid="group___path_drawing_1ga33e423daf4e125ae273111871159eead" kindref="member">gpath_draw_outline()</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4585" column="10" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4585" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4725" column="10" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4725" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_path_1a1c38d8ee2e1f7f9fd288bc39fa958190" prot="public" static="no" mutable="no">
         <type><ref refid="struct_g_point" kindref="compound">GPoint</ref> *</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4579" column="10" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4579" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4719" column="10" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4719" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_path_1aeb2d6125fb6fb0e41711d1d65607b983" prot="public" static="no" mutable="no">
         <type>int32_t</type>
@@ -56,13 +56,13 @@
         <name>rotation</name>
         <qualifiedname>GPath::rotation</qualifiedname>
         <briefdescription>
-<para>The rotation that will be used when drawing the path with <ref refid="group___path_drawing_1ga4aa5b80f8f98d2cb7e6701b39bb18e32" kindref="member">gpath_draw_filled()</ref> or <ref refid="group___path_drawing_1ga33e423daf4e125ae273111871159eead" kindref="member">gpath_draw_outline()</ref> </para>
+<para>The rotation that will be used when drawing the path with <ref refid="group___path_drawing_1ga4aa5b80f8f98d2cb7e6701b39bb18e32" kindref="member">gpath_draw_filled()</ref> or <ref refid="group___path_drawing_1ga33e423daf4e125ae273111871159eead" kindref="member">gpath_draw_outline()</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4582" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4582" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4722" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4722" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -87,7 +87,7 @@
         <link refid="struct_g_point"/>
       </node>
     </collaborationgraph>
-    <location file="build/sdk/aplite/include/pebble.h" line="4575" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4575" bodyend="4586"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="4715" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4715" bodyend="4726"/>
     <listofallmembers>
       <member refid="struct_g_path_1aaefbfeade709d357a25b19a88f663460" prot="public" virt="non-virtual"><scope>GPath</scope><name>num_points</name></member>
       <member refid="struct_g_path_1ae15e816101f2e18925105c5a6be04392" prot="public" virt="non-virtual"><scope>GPath</scope><name>offset</name></member>

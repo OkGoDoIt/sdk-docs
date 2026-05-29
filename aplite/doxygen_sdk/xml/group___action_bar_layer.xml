@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___action_bar_layer" kind="group">
     <compoundname>ActionBarLayer</compoundname>
     <title>ActionBarLayer</title>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7559" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7559" bodyend="7565"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7687" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7687" bodyend="7693"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7568" column="29" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7568" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7696" column="29" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7696" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7655" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7655" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7783" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7783" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1ga1363c9fd456a626fb55928ee60ef295d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -128,7 +128,7 @@
           <declname>button_id</declname>
         </param>
         <briefdescription>
-<para>Convenience function to clear out an existing icon. All it does is call <computeroutput>action_bar_layer_set_icon(action_bar, button_id, NULL)</computeroutput> </para>
+<para>Convenience function to clear out an existing icon. All it does is call <computeroutput>action_bar_layer_set_icon(action_bar, button_id, NULL)</computeroutput>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7632" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7632" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7760" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7760" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1ga8070ea0e56c090655c5cf0697ee22831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ActionBarLayer *</type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7577" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="7577" declcolumn="16"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7705" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="7705" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1gaf4d591890572fe1aa058d4a48afd0a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7580" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7580" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7708" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7708" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1ga27b7a9cbdcf11110b98b877636f57fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Layer *</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7586" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="7586" declcolumn="7"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7714" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="7714" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1gaeaddd4bbb4443a5ae4d20be9b560e56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7662" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7662" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7790" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7790" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1gad9487f252db3c49da816f91daa8ad46b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7668" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7668" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7796" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7796" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1ga0abe5d50cc4845dc219bf69ca24b4466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7611" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7611" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7739" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7739" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1ga4f5d63fd993859e5a6602e509aa20103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -388,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7596" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7596" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7724" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7724" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1ga03f3cf8b2817e31ff6c9b670f934dfe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -446,7 +446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7625" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7625" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7753" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7753" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1gafb562eb59d855d5e3a394b6b28195727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -516,7 +516,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7682" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7682" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7810" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7810" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___action_bar_layer_1ga6cdc0a5af721bb556f15e9317c6ec934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -572,20 +572,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7692" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7692" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7820" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7820" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
       <memberdef kind="define" id="group___action_bar_layer_1gaff50ec1b958fedccf064d112c4b6b8ab" prot="public" static="no">
         <name>_ACTION_BAR_WIDTH</name>
         <param><defname>plat</defname></param>
-        <initializer>  PBL_PLATFORM_SWITCH(plat, \
-  /*aplite*/ 30, \
-  /*basalt*/ 30, \
-  /*chalk*/ 40, \
-  /*diorite*/ 30, \
-  /*emery*/ 34, \
-  /*flint*/ 30)</initializer>
+        <initializer>PBL_PLATFORM_SWITCH(plat, \
+/*aplite*/ 30, \
+/*basalt*/ 30, \
+/*chalk*/ 40, \
+/*diorite*/ 30, \
+/*emery*/ 34, \
+/*flint*/ 30, \
+/*gabbro*/ 34)</initializer>
         <briefdescription>
 <para>The width of the action bar in pixels, for all platforms. </para>
         </briefdescription>
@@ -593,7 +594,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7548" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7548" bodyend="7554"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7675" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7675" bodyend="7682"/>
       </memberdef>
       <memberdef kind="define" id="group___action_bar_layer_1gab5803f738d5e179c285d748003517435" prot="public" static="no">
         <name>ACTION_BAR_WIDTH</name>
@@ -605,7 +606,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7545" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7545" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7672" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7672" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___action_bar_layer_1ga782d6fedb33a9ebc53bd47703943bf72" prot="public" static="no">
         <name>NUM_ACTION_BAR_ITEMS</name>
@@ -617,7 +618,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7557" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7557" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7685" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7685" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -649,7 +650,7 @@
 <para><heading level="3">Geometry</heading>
 </para>
 <para><itemizedlist>
-<listitem><para>The action bar is 30 pixels wide. Use the <ref refid="group___action_bar_layer_1gab5803f738d5e179c285d748003517435" kindref="member">ACTION_BAR_WIDTH</ref> define.</para>
+<listitem><para>The action bar&apos;s width varies per platform. 30px on most displays, 34px on Emery and Gabbro, and 40px on Chalk. Use the <ref refid="group___action_bar_layer_1gab5803f738d5e179c285d748003517435" kindref="member">ACTION_BAR_WIDTH</ref> define.</para>
 </listitem><listitem><para>Icons should not be wider than 28 pixels, or taller than 18 pixels. It is recommended to use a size of around 15 x 15 pixels for the &quot;visual core&quot; of the icon, and extending or contracting where needed. <heading level="3">Example Code</heading>
 </para>
 </listitem></itemizedlist>

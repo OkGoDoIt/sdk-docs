@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___window_stack" kind="group">
     <compoundname>WindowStack</compoundname>
     <title>Window Stack</title>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5562" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5562" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5840" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5840" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___window_stack_1gad7ecab58903d1ea50dab8bb8b6af6d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Window *</type>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5557" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="5557" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5835" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="5835" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___window_stack_1ga1797d97dee8387653c13d40cf6fcffc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Window *</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5534" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="5534" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5812" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="5812" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___window_stack_1gacfbb60a6addd140d2b94f659b8630306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5538" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5538" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5816" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5816" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___window_stack_1gabc91655655af8fd71ac7c081f40d69b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5529" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5529" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5807" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5807" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___window_stack_1ga44a239d564b96ca93a149a29d89707d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5552" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5552" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5830" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5830" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -194,7 +194,23 @@
 <para>In Pebble OS, the window stack serves as the global manager of what window is presented, ensuring that input events are forwarded to the topmost window. The navigation model of Pebble centers on the concept of a vertical “stack” of windows, similar to mobile app interactions.</para>
 <para>In working with the Window Stack API, the basic operations include push and pop. When an app wants to display a new window, it pushes a new window onto the stack. This appears like a window sliding in from the right. As an app is closed, the window is popped off the stack and disappears.</para>
 <para>For more complicated operations, involving multiple windows, you can determine which windows reside on the stack, using <ref refid="group___window_stack_1ga9be3883d911fd1ea49c9207c219bc4bd" kindref="member">window_stack_contains_window()</ref> and remove any specific window, using <ref refid="group___window_stack_1ga44a239d564b96ca93a149a29d89707d1" kindref="member">window_stack_remove()</ref>.</para>
-<para>Refer to the <htmlonly>&lt;a href=&quot;https://developer.rebble.io/guides/user-interfaces/layers&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
 </htmlonly> (chapter &quot;Window Stack&quot;) for a conceptual overview of the window stack and relevant code examples.</para>
 <para>Also see the <ref refid="struct_window_handlers" kindref="compound">WindowHandlers</ref> of a <ref refid="group___window" kindref="compound">Window</ref> for the callbacks that can be added to a window in order to act upon window stack transitions. </para>
     </detaileddescription>

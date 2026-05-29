@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___vibes" kind="group">
     <compoundname>Vibes</compoundname>
     <title>Vibes</title>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="8246" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8246" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="8378" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8378" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___vibes_1gab248dc8961ee1356a106599e3aeef00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="8256" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8256" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="8388" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8388" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___vibes_1ga3412ed26dd91a20f77ba1a4c54b668e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -49,7 +49,7 @@
           <declname>pattern</declname>
         </param>
         <briefdescription>
-<para>Makes the watch emit a ‘custom’ vibration pattern. </para>
+<para>Makes the watch emit a &apos;custom&apos; vibration pattern. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="8261" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8261" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="8393" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8393" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___vibes_1ga93e5ca695c1ff3ed096b7f1b5cb29d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="8252" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8252" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="8384" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8384" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___vibes_1gaa5acf97e140e066834c1963da7f1d5db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="8249" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8249" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="8381" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8381" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

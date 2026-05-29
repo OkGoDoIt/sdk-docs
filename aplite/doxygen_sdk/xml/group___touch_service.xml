@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___touch_service" kind="group">
+    <compoundname>TouchService</compoundname>
+    <title>TouchService</title>
+    <innerclass refid="struct_touch_event" prot="public">TouchEvent</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___touch_service_1gaf9360ba7e12726eabae0c635d317ee6a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TouchEventType</name>
+        <enumvalue id="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aa3f0e0b086f7296785266b9c7d014d709" prot="public">
+          <name>TouchEvent_Touchdown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aabaa086b963af5fef224c379c48b6fc46" prot="public">
+          <name>TouchEvent_Liftoff</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aa01f025c00fea52cb6020e100d10fafed" prot="public">
+          <name>TouchEvent_PositionUpdate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Touch event type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="914" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="914" bodyend="918"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___touch_service_1gadf3d2651950c41d539f7fa67f5cf3063" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* TouchServiceHandler) (const TouchEvent *event, void *context)</definition>
+        <argsstring>)(const TouchEvent *event, void *context)</argsstring>
+        <name>TouchServiceHandler</name>
+        <briefdescription>
+<para>Callback for touch events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The touch event data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User-provided context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="930" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="930" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___touch_service_1gacd826c9087eb437e5dca894071c92170" prot="public" static="no">
+        <name>touch_service_is_enabled</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="936" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="936" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___touch_service_1ga7069187e7b5c13d493453f8fab9c7324" prot="public" static="no">
+        <name>touch_service_subscribe</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="932" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="932" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___touch_service_1ga4bc103e8e9aef9998244b0f52a19e582" prot="public" static="no">
+        <name>touch_service_unsubscribe</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="934" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="934" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

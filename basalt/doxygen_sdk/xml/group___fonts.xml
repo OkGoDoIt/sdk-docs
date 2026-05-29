@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___fonts" kind="group">
     <compoundname>Fonts</compoundname>
     <title>Fonts</title>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4655" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4655" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4933" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4933" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" prot="public" static="no">
         <type>FontInfo *</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4661" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4661" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4939" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4939" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4670" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="4670" declcolumn="7"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4948" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="4948" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___fonts_1gaaf4a526b0bbe417959eb7935b89a5f56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref></type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4680" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="4680" declcolumn="7"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4958" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="4958" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___fonts_1gae25249ea28fddf938ef900efdcf1777c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4687" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="4687" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4965" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="4965" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -149,7 +149,23 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/>(<ref refid="group___resources_1ga3f32b97d857618e5772f72d8e2dbc566" kindref="member">resource_get_handle</ref>(RESOURCE_ID_FONT_OSP_DIN_44));</highlight></codeline>
 </programlisting></para>
 <para>Raster Gothic Condensed is the font used throughout the Pebble system, largely because it is optimized for monochromatic displays. Pebble selected this font because it allows a relatively large number of characters to be displayed on a single line, also because the font has an excellent readability vs. size ratio.</para>
-<para>Refer to the chapter <htmlonly>&lt;a href=&quot;https://developer.rebble.io/guides/app-resources/&quot;&gt;App Resources in the Pebble Developer Guides&lt;/a&gt;
+<para>Refer to the chapter <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.getpebble.com/guides/pebble-apps/resources/&quot;&gt;App Resources in the Pebble Developer Guides&lt;/a&gt;
 </htmlonly> which explains how to work with font resources and embed a font into your app.</para>
 <para><simplesect kind="see"><para><ref refid="group___text_layer" kindref="compound">TextLayer</ref> </para>
 </simplesect>

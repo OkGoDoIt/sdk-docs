@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___unobstructed_area" kind="group">
     <compoundname>UnobstructedArea</compoundname>
     <title>UnobstructedArea</title>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6419" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6419" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6555" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6555" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___unobstructed_area_1gafeb86269bc8522d69f9e7550010f22a9" prot="public" static="no">
         <type>void(*</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6423" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6423" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6559" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6559" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___unobstructed_area_1gac5fd15359205d95238f97d9d2608249c" prot="public" static="no">
         <type>void(*</type>
@@ -91,68 +91,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6413" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6413" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6549" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6549" bodyend="-1"/>
       </memberdef>
     </sectiondef>
-    <sectiondef kind="func">
-      <memberdef kind="function" id="group___unobstructed_area_1ga268258f9f265f8d08406e0c64ac453f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void unobstructed_area_service_subscribe</definition>
-        <argsstring>(UnobstructedAreaHandlers handlers, void *context)</argsstring>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___unobstructed_area_1ga672d6a4bf7a469fdc079481497655f2a" prot="public" static="no">
         <name>unobstructed_area_service_subscribe</name>
-        <param>
-          <type>UnobstructedAreaHandlers</type>
-          <declname>handlers</declname>
-        </param>
-        <param>
-          <type>void *</type>
-          <declname>context</declname>
-        </param>
+        <param><defname>...</defname></param>
+        <initializer>do {} while(0)</initializer>
         <briefdescription>
-<para>Subscribe to be notified when the app&apos;s unobstructed area changes. When an unobstructed area begins changing, the <computeroutput>will_change</computeroutput> handler will be called, and every <computeroutput>will_change</computeroutput> call is always paired with a <computeroutput>did_change</computeroutput> call that occurs when it is done changing given that the <computeroutput>will_change</computeroutput> and <computeroutput>did_change</computeroutput> handlers are set. When subscribing while the unobstructed area is changing, the <computeroutput>will_change</computeroutput> handler will be called after subscription in the next event loop. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>handlers</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The handlers that should be called when the unobstructed area changes. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>context</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A user-provided context that will be passed to the callback handlers. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="see"><para><ref refid="group___layer_1ga1bbac31d1070f43b6ecce0d07eabf2a2" kindref="member">layer_get_unobstructed_bounds</ref> </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6443" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6443" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6570" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6570" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="group___unobstructed_area_1ga631676660d5b1b24cb82c4d7afc65f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void unobstructed_area_service_unsubscribe</definition>
-        <argsstring>(void)</argsstring>
+      <memberdef kind="define" id="group___unobstructed_area_1ga2cc4bf18dbe3742a9e114024909a626f" prot="public" static="no">
         <name>unobstructed_area_service_unsubscribe</name>
-        <param>
-          <type>void</type>
-        </param>
+        <param><defname>...</defname></param>
+        <initializer>do {} while(0)</initializer>
         <briefdescription>
-<para>Unsubscribe from notifications about changes to the app&apos;s unobstructed area. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6446" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6446" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6572" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6572" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

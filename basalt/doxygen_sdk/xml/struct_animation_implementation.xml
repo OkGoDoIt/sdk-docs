@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_animation_implementation" kind="struct" language="C++" prot="public">
     <compoundname>AnimationImplementation</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5945" column="32" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5945" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6223" column="32" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6223" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_animation_implementation_1a65ba4fd5d15779901d11d4b1224baf82" prot="public" static="no" mutable="no">
         <type><ref refid="group___animation_1ga1a6d9b072c7a3c2773b5f90c836a90cd" kindref="member">AnimationTeardownImplementation</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5951" column="35" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5951" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6229" column="35" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6229" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_animation_implementation_1a6eb3f553df358650fb53211fd3837506" prot="public" static="no" mutable="no">
         <type><ref refid="group___animation_1ga8e27aba7aaca1cd8a3409099d64da6ef" kindref="member">AnimationUpdateImplementation</ref></type>
@@ -47,14 +47,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5948" column="33" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5948" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6226" column="33" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6226" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>The 3 callbacks that implement a custom animation. Only the <computeroutput>.update</computeroutput> callback is mandatory, <computeroutput>.setup</computeroutput> and <computeroutput>.teardown</computeroutput> are optional. See the documentation with the function pointer typedefs for more information. </para>
+<para>The 3 callbacks that implement a custom animation. Only the <computeroutput>.<ref refid="struct_animation_implementation_1a6eb3f553df358650fb53211fd3837506" kindref="member">update</ref></computeroutput> callback is mandatory, <computeroutput>.<ref refid="struct_animation_implementation_1a4cfa9952ca859f0555e2db1b29f135b8" kindref="member">setup</ref></computeroutput> and <computeroutput>.<ref refid="struct_animation_implementation_1a65ba4fd5d15779901d11d4b1224baf82" kindref="member">teardown</ref></computeroutput> are optional. See the documentation with the function pointer typedefs for more information. </para>
     </briefdescription>
     <detaileddescription>
-<para><simplesect kind="note"><para>The <computeroutput>.setup</computeroutput> callback is called immediately after scheduling the animation, regardless if there is a delay set for that animation using <ref refid="group___animation_1ga178f894a2045805bca61cee16f6a8eed" kindref="member">animation_set_delay()</ref>.</para>
+<para><simplesect kind="note"><para>The <computeroutput>.<ref refid="struct_animation_implementation_1a4cfa9952ca859f0555e2db1b29f135b8" kindref="member">setup</ref></computeroutput> callback is called immediately after scheduling the animation, regardless if there is a delay set for that animation using <ref refid="group___animation_1ga178f894a2045805bca61cee16f6a8eed" kindref="member">animation_set_delay()</ref>.</para>
 </simplesect>
 The diagram below illustrates the order in which callbacks can be expected to get called over the life cycle of an animation. It also illustrates where the implementation of different animation callbacks are intended to be “living”. <image type="html" name="animations.png" inline="yes"></image>
  <image type="latex" name="animations.png" inline="yes"></image>
@@ -70,7 +70,7 @@ The diagram below illustrates the order in which callbacks can be expected to ge
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="5942" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5942" bodyend="5952"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="6220" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6220" bodyend="6230"/>
     <listofallmembers>
       <member refid="struct_animation_implementation_1a4cfa9952ca859f0555e2db1b29f135b8" prot="public" virt="non-virtual"><scope>AnimationImplementation</scope><name>setup</name></member>
       <member refid="struct_animation_implementation_1a65ba4fd5d15779901d11d4b1224baf82" prot="public" virt="non-virtual"><scope>AnimationImplementation</scope><name>teardown</name></member>

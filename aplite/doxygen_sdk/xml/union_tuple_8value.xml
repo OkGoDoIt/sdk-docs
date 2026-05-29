@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="union_tuple_8value" kind="union" language="C++" prot="public">
     <compoundname>Tuple.value</compoundname>
     <sectiondef kind="public-attrib">
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1719" column="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1662" column="10"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuple_8value_1a59a6c49cfff82ce638c44fec9cd91ddb" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1717" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1660" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuple_8value_1ace80d5ec65b1d2a2f1049eadc100db23" prot="public" static="no" mutable="no">
         <type>int16_t</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1734" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1677" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuple_8value_1a0241adbbd83925f051b694d40f02747f" prot="public" static="no" mutable="no">
         <type>int32_t</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1737" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1680" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuple_8value_1a27c006cc56b1ba88f960cf8b5144fcac" prot="public" static="no" mutable="no">
         <type>int8_t</type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1731" column="12"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1674" column="12"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuple_8value_1aa00ef2ef85ff67b7b39339886f19044f" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1725" column="14"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1668" column="14"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuple_8value_1a3de84ad0700f2a1571f633d399e1900e" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1728" column="14"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1671" column="14"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuple_8value_1a5f423e669d0a8f4ab7c4c3e6da27161a" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1722" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1665" column="13"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -134,7 +134,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="1715" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1715" bodyend="1738"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="1658" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1658" bodyend="1681"/>
     <listofallmembers>
       <member refid="union_tuple_8value_1a045a170bdc8241264dfe8fda3d1d77ff" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>cstring</name></member>
       <member refid="union_tuple_8value_1a59a6c49cfff82ce638c44fec9cd91ddb" prot="public" virt="non-virtual"><scope>Tuple.value</scope><name>data</name></member>

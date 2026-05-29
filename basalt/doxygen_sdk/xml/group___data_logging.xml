@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___data_logging" kind="group">
     <compoundname>DataLogging</compoundname>
     <title>DataLogging</title>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1409" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1409" bodyend="1418"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1471" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1471" bodyend="1480"/>
       </memberdef>
       <memberdef kind="enum" id="group___data_logging_1gaddc3b8874990b538c7fe17b019ace38f" prot="public" static="no" strong="no">
         <type></type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1421" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1421" bodyend="1429"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1483" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1483" bodyend="1491"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1405" column="14" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1405" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1467" column="14" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1467" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1440" column="23" declfile="build/sdk/basalt/include/pebble.h" declline="1440" declcolumn="23"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1502" column="23" declfile="build/sdk/basalt/include/pebble.h" declline="1502" declcolumn="23"/>
       </memberdef>
       <memberdef kind="function" id="group___data_logging_1ga649d07075da61f59d8a18ebb589573af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -221,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1449" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1449" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1511" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1511" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___data_logging_1ga6d287480242f84afaf7c01acc0ab2d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___data_logging_1gaddc3b8874990b538c7fe17b019ace38f" kindref="member">DataLoggingResult</ref></type>
@@ -283,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1473" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="1473" declcolumn="19"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1535" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="1535" declcolumn="19"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

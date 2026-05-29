@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___memory_management" kind="group">
     <compoundname>MemoryManagement</compoundname>
     <title>Memory Management</title>
@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2923" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="2923" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3014" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="3014" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___memory_management_1ga9e776141c2f26b29e3b94dfca5d482a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2927" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="2927" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3018" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="3018" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___memory_management_1gaf6da7fa2525589603f402bdaec598fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2936" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2936" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3027" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3027" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

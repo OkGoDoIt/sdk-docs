@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['calloc_0',['calloc',['../group___standard_memory.html#gad65564be3c3e7ff6f7586303aebf9949',1,'common.dox']]],
+  ['click_5fnumber_5fof_5fclicks_5fcounted_1',['click_number_of_clicks_counted',['../group___clicks.html#ga915cc99892dba2548494a9cc2b104dd7',1,'pebble.h']]],
+  ['click_5frecognizer_5fget_5fbutton_5fid_2',['click_recognizer_get_button_id',['../group___clicks.html#ga373020cf179b975eb53636154a9c6ce5',1,'pebble.h']]],
+  ['click_5frecognizer_5fis_5frepeating_3',['click_recognizer_is_repeating',['../group___clicks.html#gae9b3816aa6c1a9ebbc77ad621284b5b6',1,'pebble.h']]],
+  ['clock_5fcopy_5ftime_5fstring_4',['clock_copy_time_string',['../group___wall_time.html#ga5ddf6b7454fd49c0eb63d2e50d75fad7',1,'pebble.h']]],
+  ['clock_5fget_5ftimezone_5',['clock_get_timezone',['../group___wall_time.html#gae34db14b2f1e369c23894bffb6663fc8',1,'pebble.h']]],
+  ['clock_5fis_5f24h_5fstyle_6',['clock_is_24h_style',['../group___wall_time.html#ga69393fbc51be905740fff59a150bdca9',1,'pebble.h']]],
+  ['clock_5fis_5ftimezone_5fset_7',['clock_is_timezone_set',['../group___wall_time.html#ga95c658aa0d511e4b4ca549724e02ce72',1,'pebble.h']]],
+  ['clock_5fto_5ftimestamp_8',['clock_to_timestamp',['../group___wall_time.html#ga170869bfe009abc85f093b0f80224009',1,'pebble.h']]],
+  ['compass_5fservice_5fpeek_9',['compass_service_peek',['../group___compass_service.html#ga7339dd85a84316f71c8d9a2912900034',1,'pebble.h']]],
+  ['compass_5fservice_5fset_5fheading_5ffilter_10',['compass_service_set_heading_filter',['../group___compass_service.html#gad4bad2397ca6127b958fc8a8d255c411',1,'pebble.h']]],
+  ['compass_5fservice_5fsubscribe_11',['compass_service_subscribe',['../group___compass_service.html#gae2b8f9e053a9f879f43aa17ef5af5e66',1,'pebble.h']]],
+  ['compass_5fservice_5funsubscribe_12',['compass_service_unsubscribe',['../group___compass_service.html#gaecea99c12825526be416db6b5c69a871',1,'pebble.h']]],
+  ['connection_5fservice_5fpeek_5fpebble_5fapp_5fconnection_13',['connection_service_peek_pebble_app_connection',['../group___connection_service.html#ga422fcecd18a0f2c76b84d50259f2c4ff',1,'pebble.h']]],
+  ['connection_5fservice_5fpeek_5fpebblekit_5fconnection_14',['connection_service_peek_pebblekit_connection',['../group___connection_service.html#gaa490f72b81220c84fc05aefa687949d7',1,'pebble.h']]],
+  ['connection_5fservice_5fsubscribe_15',['connection_service_subscribe',['../group___connection_service.html#ga3efcf59e77df0a3e476224d66201dd37',1,'pebble.h']]],
+  ['connection_5fservice_5funsubscribe_16',['connection_service_unsubscribe',['../group___connection_service.html#ga652adc6f10699d9654bd12f34d91ad89',1,'pebble.h']]],
+  ['content_5findicator_5fconfigure_5fdirection_17',['content_indicator_configure_direction',['../group___scroll_layer.html#ga76d8252325d83822b5989c3151c296d1',1,'pebble.h']]],
+  ['content_5findicator_5fcreate_18',['content_indicator_create',['../group___scroll_layer.html#ga570fdb39b8045d11e1e63b7fb5cd9826',1,'pebble.h']]],
+  ['content_5findicator_5fdestroy_19',['content_indicator_destroy',['../group___scroll_layer.html#ga33627eb5467fbf346d73900eb3718106',1,'pebble.h']]],
+  ['content_5findicator_5fget_5fcontent_5favailable_20',['content_indicator_get_content_available',['../group___scroll_layer.html#gab78b12c113518ef42522b61bd46f8b86',1,'pebble.h']]],
+  ['content_5findicator_5fset_5fcontent_5favailable_21',['content_indicator_set_content_available',['../group___scroll_layer.html#ga8beb29f689a257c7b815e809209f6316',1,'pebble.h']]],
+  ['cos_5flookup_22',['cos_lookup',['../group___math.html#gaa8938fd0e58aed9906ecccacd8fde88c',1,'pebble.h']]]
+];

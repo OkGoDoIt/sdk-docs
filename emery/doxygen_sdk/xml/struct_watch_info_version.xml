@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_watch_info_version" kind="struct" language="C++" prot="public">
+    <compoundname>WatchInfoVersion</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_watch_info_version_1a1e7b5ff37561b37e7defc5d9925dca2f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WatchInfoVersion::major</definition>
+        <argsstring></argsstring>
+        <name>major</name>
+        <qualifiedname>WatchInfoVersion::major</qualifiedname>
+        <briefdescription>
+<para>Major version number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="287" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_watch_info_version_1a12ded59fd8f84d4c86b0a5cb6f91b08c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WatchInfoVersion::minor</definition>
+        <argsstring></argsstring>
+        <name>minor</name>
+        <qualifiedname>WatchInfoVersion::minor</qualifiedname>
+        <briefdescription>
+<para>Minor version number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="288" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_watch_info_version_1a820d5cf455587c5936f77857aa345c91" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WatchInfoVersion::patch</definition>
+        <argsstring></argsstring>
+        <name>patch</name>
+        <qualifiedname>WatchInfoVersion::patch</qualifiedname>
+        <briefdescription>
+<para>Patch version number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="289" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure containing the version of the firmware running on the watch. The version of the firmware has the form X.[X.[X]]. If a version number is not present it will be 0. For example: the version numbers of 2.4.1 are 2, 4, and 1. The version numbers of 2.4 are 2, 4, and 0. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="286" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="286" bodyend="290"/>
+    <listofallmembers>
+      <member refid="struct_watch_info_version_1a1e7b5ff37561b37e7defc5d9925dca2f" prot="public" virt="non-virtual"><scope>WatchInfoVersion</scope><name>major</name></member>
+      <member refid="struct_watch_info_version_1a12ded59fd8f84d4c86b0a5cb6f91b08c" prot="public" virt="non-virtual"><scope>WatchInfoVersion</scope><name>minor</name></member>
+      <member refid="struct_watch_info_version_1a820d5cf455587c5936f77857aa345c91" prot="public" virt="non-virtual"><scope>WatchInfoVersion</scope><name>patch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

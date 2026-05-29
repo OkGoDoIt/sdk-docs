@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="structtm" kind="struct" language="C++" prot="public">
+    <compoundname>tm</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtm_1a4892d556f104fbadf55043949c8de7fe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_gmtoff</definition>
+        <argsstring></argsstring>
+        <name>tm_gmtoff</name>
+        <qualifiedname>tm::tm_gmtoff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seconds east of UTC </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8948" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8948" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1a3e7ca4e37f1abcaf56b8a916c38eb9fe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_hour</definition>
+        <argsstring></argsstring>
+        <name>tm_hour</name>
+        <qualifiedname>tm::tm_hour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hours. [0-23] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8940" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8940" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1a5645ca0580c8ab2c24f6c2965d9c9f9c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_isdst</definition>
+        <argsstring></argsstring>
+        <name>tm_isdst</name>
+        <qualifiedname>tm::tm_isdst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DST. [-1/0/1] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8946" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8946" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1ab8d8904bad43b0c8b96e61941c5b5310" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_mday</definition>
+        <argsstring></argsstring>
+        <name>tm_mday</name>
+        <qualifiedname>tm::tm_mday</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Day. [1-31] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8941" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8941" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1af414eb7c86cc3099595211eee4d4211b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_min</definition>
+        <argsstring></argsstring>
+        <name>tm_min</name>
+        <qualifiedname>tm::tm_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minutes. [0-59] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8939" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8939" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1a112ac36fa2f593777138a417cf031e17" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_mon</definition>
+        <argsstring></argsstring>
+        <name>tm_mon</name>
+        <qualifiedname>tm::tm_mon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Month. [0-11] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8942" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8942" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1a4d098a9a5c03a00b2ee61e10851de81e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_sec</definition>
+        <argsstring></argsstring>
+        <name>tm_sec</name>
+        <qualifiedname>tm::tm_sec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seconds. [0-60] (1 leap second) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8938" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8938" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1afe81a8c46f1c693c43f259b288859f4f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_wday</definition>
+        <argsstring></argsstring>
+        <name>tm_wday</name>
+        <qualifiedname>tm::tm_wday</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Day of week. [0-6] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8944" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8944" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1a93a0ba77cc23796df84405dcbcc57eb1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_yday</definition>
+        <argsstring></argsstring>
+        <name>tm_yday</name>
+        <qualifiedname>tm::tm_yday</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Days in year.[0-365] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8945" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8945" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1a33adf78fd6476b2120ce3b9c4a852053" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tm::tm_year</definition>
+        <argsstring></argsstring>
+        <name>tm_year</name>
+        <qualifiedname>tm::tm_year</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Years since 1900 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8943" column="7" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8943" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtm_1ae5d2abaee5caf5b1a48d7fcf16300f87" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char tm::tm_zone[TZ_LEN]</definition>
+        <argsstring>[TZ_LEN]</argsstring>
+        <name>tm_zone</name>
+        <qualifiedname>tm::tm_zone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timezone abbreviation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8949" column="8" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8949" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>structure containing broken-down time for expressing calendar time (ie. Year, Month, Day of Month, Hour of Day) and timezone information </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="8937" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8937" bodyend="8950"/>
+    <listofallmembers>
+      <member refid="structtm_1a4892d556f104fbadf55043949c8de7fe" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_gmtoff</name></member>
+      <member refid="structtm_1a3e7ca4e37f1abcaf56b8a916c38eb9fe" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_hour</name></member>
+      <member refid="structtm_1a5645ca0580c8ab2c24f6c2965d9c9f9c" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_isdst</name></member>
+      <member refid="structtm_1ab8d8904bad43b0c8b96e61941c5b5310" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_mday</name></member>
+      <member refid="structtm_1af414eb7c86cc3099595211eee4d4211b" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_min</name></member>
+      <member refid="structtm_1a112ac36fa2f593777138a417cf031e17" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_mon</name></member>
+      <member refid="structtm_1a4d098a9a5c03a00b2ee61e10851de81e" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_sec</name></member>
+      <member refid="structtm_1afe81a8c46f1c693c43f259b288859f4f" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_wday</name></member>
+      <member refid="structtm_1a93a0ba77cc23796df84405dcbcc57eb1" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_yday</name></member>
+      <member refid="structtm_1a33adf78fd6476b2120ce3b9c4a852053" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_year</name></member>
+      <member refid="structtm_1ae5d2abaee5caf5b1a48d7fcf16300f87" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_zone</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

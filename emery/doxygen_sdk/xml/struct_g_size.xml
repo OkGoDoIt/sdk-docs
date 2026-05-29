@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_g_size" kind="struct" language="C++" prot="public">
+    <compoundname>GSize</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_size_1acb2d7af62d2615276d4776aa3a2ea0ca" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GSize::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>GSize::h</qualifiedname>
+        <briefdescription>
+<para>The height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3765" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_size_1ab4b00bc79cc43d5554d19fd273fe37e0" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GSize::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>GSize::w</qualifiedname>
+        <briefdescription>
+<para>The width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3763" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3763" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a 2-dimensional size. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="3761" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3761" bodyend="3766"/>
+    <listofallmembers>
+      <member refid="struct_g_size_1acb2d7af62d2615276d4776aa3a2ea0ca" prot="public" virt="non-virtual"><scope>GSize</scope><name>h</name></member>
+      <member refid="struct_g_size_1ab4b00bc79cc43d5554d19fd273fe37e0" prot="public" virt="non-virtual"><scope>GSize</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

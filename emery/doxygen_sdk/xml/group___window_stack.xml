@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___window_stack" kind="group">
+    <compoundname>WindowStack</compoundname>
+    <title>Window Stack</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___window_stack_1ga9be3883d911fd1ea49c9207c219bc4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool window_stack_contains_window</definition>
+        <argsstring>(Window *window)</argsstring>
+        <name>window_stack_contains_window</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the window is on the window stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window to look for on the window stack </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the window is currently on the window stack. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5944" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5944" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_stack_1gad7ecab58903d1ea50dab8bb8b6af6d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Window *</type>
+        <definition>Window * window_stack_get_top_window</definition>
+        <argsstring>(void)</argsstring>
+        <name>window_stack_get_top_window</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the topmost window on the stack that belongs to the app. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The topmost window on the stack that belongs to the app or NULL if no app window could be found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5939" column="8" declfile="build/sdk/emery/include/pebble.h" declline="5939" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_stack_1ga1797d97dee8387653c13d40cf6fcffc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Window *</type>
+        <definition>Window * window_stack_pop</definition>
+        <argsstring>(bool animated)</argsstring>
+        <name>window_stack_pop</name>
+        <param>
+          <type>bool</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+<para>Pops the topmost window on the navigation stack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See <ref refid="group___window_stack_1ga44a239d564b96ca93a149a29d89707d1" kindref="member">window_stack_remove()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The window that is popped, or NULL if there are no windows to pop. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5916" column="8" declfile="build/sdk/emery/include/pebble.h" declline="5916" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_stack_1gacfbb60a6addd140d2b94f659b8630306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_stack_pop_all</definition>
+        <argsstring>(const bool animated)</argsstring>
+        <name>window_stack_pop_all</name>
+        <param>
+          <type>const bool</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+<para>Pops all windows. See <ref refid="group___window_stack_1ga44a239d564b96ca93a149a29d89707d1" kindref="member">window_stack_remove()</ref> for a description of the <computeroutput>animated</computeroutput> parameter and notes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5920" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5920" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_stack_1gabc91655655af8fd71ac7c081f40d69b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void window_stack_push</definition>
+        <argsstring>(Window *window, bool animated)</argsstring>
+        <name>window_stack_push</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+<para>Pushes the given window on the window navigation stack, on top of the current topmost window of the app. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window to push on top </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pass in <computeroutput>true</computeroutput> to animate the push using a sliding animation, or <computeroutput>false</computeroutput> to skip the animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5911" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5911" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___window_stack_1ga44a239d564b96ca93a149a29d89707d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool window_stack_remove</definition>
+        <argsstring>(Window *window, bool animated)</argsstring>
+        <name>window_stack_remove</name>
+        <param>
+          <type>Window *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+<para>Removes a given window from the window stack that belongs to the app task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If there are no windows for the app left on the stack, the app will be killed by the system, shortly. To avoid this, make sure to push another window shortly after or before removing the last window. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window to remove. If the window is NULL or if it is not on the stack, this function is a no-op. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pass in <computeroutput>true</computeroutput> to animate the removal of the window using a side-to-side sliding animation to reveal the next window. This is only used in case the window happens to be on top of the window stack (thus visible). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if window was successfully removed, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5934" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5934" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The multiple window manager </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In Pebble OS, the window stack serves as the global manager of what window is presented, ensuring that input events are forwarded to the topmost window. The navigation model of Pebble centers on the concept of a vertical “stack” of windows, similar to mobile app interactions.</para>
+<para>In working with the Window Stack API, the basic operations include push and pop. When an app wants to display a new window, it pushes a new window onto the stack. This appears like a window sliding in from the right. As an app is closed, the window is popped off the stack and disappears.</para>
+<para>For more complicated operations, involving multiple windows, you can determine which windows reside on the stack, using <ref refid="group___window_stack_1ga9be3883d911fd1ea49c9207c219bc4bd" kindref="member">window_stack_contains_window()</ref> and remove any specific window, using <ref refid="group___window_stack_1ga44a239d564b96ca93a149a29d89707d1" kindref="member">window_stack_remove()</ref>.</para>
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+</htmlonly> (chapter &quot;Window Stack&quot;) for a conceptual overview of the window stack and relevant code examples.</para>
+<para>Also see the <ref refid="struct_window_handlers" kindref="compound">WindowHandlers</ref> of a <ref refid="group___window" kindref="compound">Window</ref> for the callbacks that can be added to a window in order to act upon window stack transitions. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

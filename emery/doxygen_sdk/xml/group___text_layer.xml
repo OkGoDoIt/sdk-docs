@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___text_layer" kind="group">
+    <compoundname>TextLayer</compoundname>
+    <title>TextLayer</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___text_layer_1gad11d2245f1c7a3b59b53f812c7053e53" prot="public" static="no">
+        <type>struct TextLayer</type>
+        <definition>typedef struct TextLayer TextLayer</definition>
+        <argsstring></argsstring>
+        <name>TextLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6850" column="24" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6850" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___text_layer_1gad86babd035e1a9a6f7ee4f8453f8cb25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TextLayer *</type>
+        <definition>TextLayer * text_layer_create</definition>
+        <argsstring>(GRect frame)</argsstring>
+        <name>text_layer_create</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new TextLayer on the heap and initializes it with the default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Font: Raster Gothic 14-point Boldface (system font)</para>
+</listitem><listitem><para>Text Alignment: <ref refid="group___text_drawing_1gga12cbd02b0d5668d7c9bd582077bf7f1da1c91d07ea9ed1ecbb9d01c2a2d0a369a" kindref="member">GTextAlignmentLeft</ref></para>
+</listitem><listitem><para>Text color: <ref refid="group___color_definitions_1ga03d3c53a6a31fe2d80def95b8c035e26" kindref="member">GColorBlack</ref></para>
+</listitem><listitem><para>Background color: <ref refid="group___color_definitions_1ga90fe70aef6e9a908811d1f4f72b44608" kindref="member">GColorWhite</ref></para>
+</listitem><listitem><para>Clips: <computeroutput>true</computeroutput></para>
+</listitem><listitem><para>Hidden: <computeroutput>false</computeroutput></para>
+</listitem><listitem><para>Caching: <computeroutput>false</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>The text layer is automatically marked dirty after this operation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame with which to initialze the TextLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the TextLayer. <computeroutput>NULL</computeroutput> if the TextLayer could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6866" column="11" declfile="build/sdk/emery/include/pebble.h" declline="6866" declcolumn="11"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1ga17a045487e54ec95c989434bd7289242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_destroy</definition>
+        <argsstring>(TextLayer *text_layer)</argsstring>
+        <name>text_layer_destroy</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a TextLayer previously created by text_layer_create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6869" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6869" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1ga473f54e257f089a9e7a5df0a0e56f625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_enable_screen_text_flow_and_paging</definition>
+        <argsstring>(TextLayer *text_layer, uint8_t inset)</argsstring>
+        <name>text_layer_enable_screen_text_flow_and_paging</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>inset</declname>
+        </param>
+        <briefdescription>
+<para>Enables text flow following the boundaries of the screen and pagination that introduces extra line spacing at page breaks to avoid partially clipped lines for the TextLayer. If the TextLayer is part of a <ref refid="group___scroll_layer" kindref="compound">ScrollLayer</ref> the ScrollLayer&apos;s frame will be used to configure paging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Make sure the TextLayer is part of the view hierarchy before calling this function. Otherwise it has no effect. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer for which to enable text flow and paging </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional amount of pixels to inset to the inside of the screen for text flow </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga5aa332145a2bf45e742957ac07e27b99" kindref="member">text_layer_restore_default_text_flow_and_paging</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1ga84e08b94b1509fd06f00735c1f67f2c3" kindref="member">graphics_text_attributes_enable_screen_text_flow</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1gaf447fb3ce85161d8d1ccb97ef78fed13" kindref="member">graphics_text_attributes_enable_paging</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6933" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6933" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1ga35fe649d979d4b002589fbaf86604f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+        <definition>GSize text_layer_get_content_size</definition>
+        <argsstring>(TextLayer *text_layer)</argsstring>
+        <name>text_layer_get_content_size</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the size occupied by the current text of the TextLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the TextLayer for which to calculate the text&apos;s size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The size occupied by the current text of the TextLayer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6945" column="7" declfile="build/sdk/emery/include/pebble.h" declline="6945" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1gad2bb47b3765f450537b097ef920eaea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * text_layer_get_layer</definition>
+        <argsstring>(TextLayer *text_layer)</argsstring>
+        <name>text_layer_get_layer</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the &quot;root&quot; Layer of the text layer, which is the parent for the sub- layers used for its implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the TextLayer for which to get the &quot;root&quot; Layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The &quot;root&quot; Layer of the text layer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6875" column="7" declfile="build/sdk/emery/include/pebble.h" declline="6875" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1gaa52e267bf1587d3e56a88791e1d29618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * text_layer_get_text</definition>
+        <argsstring>(TextLayer *text_layer)</argsstring>
+        <name>text_layer_get_text</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the pointer to the string that the TextLayer is using. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer for which to get the text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga19406f772604d595c5c1af7222992449" kindref="member">text_layer_set_text</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6890" column="12" declfile="build/sdk/emery/include/pebble.h" declline="6890" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1ga5aa332145a2bf45e742957ac07e27b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_restore_default_text_flow_and_paging</definition>
+        <argsstring>(TextLayer *text_layer)</argsstring>
+        <name>text_layer_restore_default_text_flow_and_paging</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <briefdescription>
+<para>Restores text flow and paging for the TextLayer to the rectangular defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer for which to restore text flow and paging </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga473f54e257f089a9e7a5df0a0e56f625" kindref="member">text_layer_enable_screen_text_flow_and_paging</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1ga0382b73150e1314d378b98d0547f925e" kindref="member">graphics_text_attributes_restore_default_text_flow</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1ga44f1cfbfa0b36d7fdc16174eed382adc" kindref="member">graphics_text_attributes_restore_default_paging</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6940" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6940" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1gabfeaa5a8a8062c5ed6c31c0dc853bc28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_set_background_color</definition>
+        <argsstring>(TextLayer *text_layer, GColor color)</argsstring>
+        <name>text_layer_set_background_color</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the background color of the bounding box that will be drawn behind the text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer of which to set the background color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new GColor to set the background to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_layer_1ga4e94ca9f977475342b3cccaf7e503515" kindref="member">text_layer_set_text_color</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6896" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6896" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1gadb8ccc8f9a14ab4a2386f6ccac8de0f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_set_font</definition>
+        <argsstring>(TextLayer *text_layer, GFont font)</argsstring>
+        <name>text_layer_set_font</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref></type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+<para>Sets the font of the TextLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer of which to set the font </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new <ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref> for the TextLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___fonts_1ga8d05ec62a2e79c75b2938c2e2d6ba70a" kindref="member">fonts_get_system_font</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___fonts_1gaaf4a526b0bbe417959eb7935b89a5f56" kindref="member">fonts_load_custom_font</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6914" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6914" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1ga654f359a8f5736aa5ca82735d8b03b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_set_overflow_mode</definition>
+        <argsstring>(TextLayer *text_layer, GTextOverflowMode line_mode)</argsstring>
+        <name>text_layer_set_overflow_mode</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___text_drawing_1gadad5abc1b1cfbddd48bd79f70c05b8fa" kindref="member">GTextOverflowMode</ref></type>
+          <declname>line_mode</declname>
+        </param>
+        <briefdescription>
+<para>Sets the line break mode of the TextLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer of which to set the overflow mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new <ref refid="group___text_drawing_1gadad5abc1b1cfbddd48bd79f70c05b8fa" kindref="member">GTextOverflowMode</ref> to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6907" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6907" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1ga3548811ef658bdc7755fe53f16d6e23b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_set_size</definition>
+        <argsstring>(TextLayer *text_layer, const GSize max_size)</argsstring>
+        <name>text_layer_set_size</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+          <declname>max_size</declname>
+        </param>
+        <briefdescription>
+<para>Update the size of the text layer This is a convenience function to update the frame of the TextLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer of which to set the size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new size for the TextLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6951" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6951" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1ga19406f772604d595c5c1af7222992449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_set_text</definition>
+        <argsstring>(TextLayer *text_layer, const char *text)</argsstring>
+        <name>text_layer_set_text</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Sets the pointer to the string where the TextLayer is supposed to find the text at a later point in time, when it needs to draw itself. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer of which to set the text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new text to set onto the TextLayer. This must be a null-terminated and valid UTF-8 string! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The string is not copied, so its buffer most likely cannot be stack allocated, but is recommended to be a buffer that is long-lived, at least as long as the TextLayer is part of a visible Layer hierarchy. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1gaa52e267bf1587d3e56a88791e1d29618" kindref="member">text_layer_get_text</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6885" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6885" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1gaf44cc52cecaa94867d927130da4d4aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_set_text_alignment</definition>
+        <argsstring>(TextLayer *text_layer, GTextAlignment text_alignment)</argsstring>
+        <name>text_layer_set_text_alignment</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___text_drawing_1ga12cbd02b0d5668d7c9bd582077bf7f1d" kindref="member">GTextAlignment</ref></type>
+          <declname>text_alignment</declname>
+        </param>
+        <briefdescription>
+<para>Sets the alignment of the TextLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer of which to set the alignment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text_alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new text alignment for the TextLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1ga12cbd02b0d5668d7c9bd582077bf7f1d" kindref="member">GTextAlignment</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6920" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6920" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___text_layer_1ga4e94ca9f977475342b3cccaf7e503515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void text_layer_set_text_color</definition>
+        <argsstring>(TextLayer *text_layer, GColor color)</argsstring>
+        <name>text_layer_set_text_color</name>
+        <param>
+          <type>TextLayer *</type>
+          <declname>text_layer</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the color of text that will be drawn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextLayer of which to set the text color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new GColor to set the text color to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___text_layer_1gabfeaa5a8a8062c5ed6c31c0dc853bc28" kindref="member">text_layer_set_background_color</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6902" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6902" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Layer that displays and formats a text string. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="text_layer.png" inline="yes"></image>
+ <image type="latex" name="text_layer.png" inline="yes"></image>
+ <image type="rtf" name="text_layer.png" inline="yes"></image>
+ <image type="docbook" name="text_layer.png" inline="yes"></image>
+ <image type="xml" name="text_layer.png" inline="yes"></image>
+</para>
+<para>The geometric information (bounds, frame) of the Layer is used as the &quot;box&quot; in which the text is drawn. The <ref refid="group___text_layer" kindref="compound">TextLayer</ref> also has a number of other properties that influence how the text is drawn. Most important of these properties are: a pointer to the string to draw itself, the font, the text color, the background color of the layer, the overflow mode and alignment of the text inside the layer. <simplesect kind="see"><para><ref refid="group___layer" kindref="compound">Layers</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing" kindref="compound">Drawing Text</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___fonts" kindref="compound">Fonts</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

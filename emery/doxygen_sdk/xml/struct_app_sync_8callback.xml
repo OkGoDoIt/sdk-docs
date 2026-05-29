@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_app_sync_8callback" kind="struct" language="C++" prot="public">
+    <compoundname>AppSync.callback</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_app_sync_8callback_1a5c18ef72771564b7f43c497dc507aeab" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>AppSync.callback::context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2611" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_sync_8callback_1acb5e100e5a9a3e7f6d1fd97512215282" prot="public" static="no" mutable="no">
+        <type><ref refid="group___app_sync_1ga43e176e0a49cbf63f462cd3be60311cc" kindref="member">AppSyncErrorCallback</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <qualifiedname>AppSync.callback::error</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2610" column="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_sync_8callback_1a70e07791296dba65f0b43b61b59989b7" prot="public" static="no" mutable="no">
+        <type><ref refid="group___app_sync_1gaea666eaaf02f4714acc592c280591782" kindref="member">AppSyncTupleChangedCallback</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>value_changed</name>
+        <qualifiedname>AppSync.callback::value_changed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2609" column="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="2608" column="3" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2608" bodyend="2612"/>
+    <listofallmembers>
+      <member refid="struct_app_sync_8callback_1a5c18ef72771564b7f43c497dc507aeab" prot="public" virt="non-virtual"><scope>AppSync.callback</scope><name>context</name></member>
+      <member refid="struct_app_sync_8callback_1acb5e100e5a9a3e7f6d1fd97512215282" prot="public" virt="non-virtual"><scope>AppSync.callback</scope><name>error</name></member>
+      <member refid="struct_app_sync_8callback_1a70e07791296dba65f0b43b61b59989b7" prot="public" virt="non-virtual"><scope>AppSync.callback</scope><name>value_changed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

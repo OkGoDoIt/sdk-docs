@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___number_window" kind="group">
+    <compoundname>NumberWindow</compoundname>
+    <title>NumberWindow</title>
+    <innerclass refid="struct_number_window_callbacks" prot="public">NumberWindowCallbacks</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___number_window_1ga8de4b9cc5b45357c609e9ab6fd350faf" prot="public" static="no">
+        <type>struct NumberWindow</type>
+        <definition>typedef struct NumberWindow NumberWindow</definition>
+        <argsstring></argsstring>
+        <name>NumberWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8357" column="27" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___number_window_1gacb00b785040c9b8ef732564face6b6cd" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* NumberWindowCallback) (struct NumberWindow *number_window, void *context)</definition>
+        <argsstring>)(struct NumberWindow *number_window, void *context)</argsstring>
+        <name>NumberWindowCallback</name>
+        <briefdescription>
+<para>Function signature for NumberWindow callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8360" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8360" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___number_window_1gac0bff5baf1faf81195a68bb30930b0a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>NumberWindow *</type>
+        <definition>NumberWindow * number_window_create</definition>
+        <argsstring>(const char *label, NumberWindowCallbacks callbacks, void *callback_context)</argsstring>
+        <name>number_window_create</name>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_number_window_callbacks" kindref="compound">NumberWindowCallbacks</ref></type>
+          <declname>callbacks</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callback_context</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new NumberWindow on the heap and initalizes it with the default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title or prompt to display in the NumberWindow. Must be long-lived and cannot be stack-allocated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callbacks </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application specific data that is passed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The number window is not pushed to the window stack. Use <ref refid="group___window_stack_1gabc91655655af8fd71ac7c081f40d69b2" kindref="member">window_stack_push()</ref> to do this. </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to the NumberWindow. <computeroutput>NULL</computeroutput> if the NumberWindow could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8384" column="14" declfile="build/sdk/emery/include/pebble.h" declline="8384" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group___number_window_1ga277a36f4533d07485db71d6e615e07a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void number_window_destroy</definition>
+        <argsstring>(NumberWindow *number_window)</argsstring>
+        <name>number_window_destroy</name>
+        <param>
+          <type>NumberWindow *</type>
+          <declname>number_window</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a NumberWindow previously created by number_window_create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8387" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8387" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___number_window_1ga035ef25b3c5ffc254df062cab1b4f9ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t number_window_get_value</definition>
+        <argsstring>(const NumberWindow *numberwindow)</argsstring>
+        <name>number_window_get_value</name>
+        <param>
+          <type>const NumberWindow *</type>
+          <declname>numberwindow</declname>
+        </param>
+        <briefdescription>
+<para>Gets the current value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberwindow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the NumberWindow for which to get the current value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8424" column="9" declfile="build/sdk/emery/include/pebble.h" declline="8424" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___number_window_1ga7b87ad10fd1b213d6ea5a3e092b53fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Window *</type>
+        <definition>Window * number_window_get_window</definition>
+        <argsstring>(NumberWindow *numberwindow)</argsstring>
+        <name>number_window_get_window</name>
+        <param>
+          <type>NumberWindow *</type>
+          <declname>numberwindow</declname>
+        </param>
+        <briefdescription>
+<para>Gets the &quot;root&quot; Window of the number window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberwindow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the NumberWindow for which to get the &quot;root&quot; Window </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The &quot;root&quot; Window of the number window. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8429" column="8" declfile="build/sdk/emery/include/pebble.h" declline="8429" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___number_window_1gadb5c0553f2f6d720c24b79eab033b16a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void number_window_set_label</definition>
+        <argsstring>(NumberWindow *numberwindow, const char *label)</argsstring>
+        <name>number_window_set_label</name>
+        <param>
+          <type>NumberWindow *</type>
+          <declname>numberwindow</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Sets the text of the title or prompt label. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberwindow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the NumberWindow for which to set the label text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new label text. Must be long-lived and cannot be stack-allocated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8394" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8394" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___number_window_1ga07b009ae91d3ec4174a8d4f107010760" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void number_window_set_max</definition>
+        <argsstring>(NumberWindow *numberwindow, int32_t max)</argsstring>
+        <name>number_window_set_max</name>
+        <param>
+          <type>NumberWindow *</type>
+          <declname>numberwindow</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Sets the maximum value this field can hold. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberwindow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the NumberWindow for which to set the maximum value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8400" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8400" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___number_window_1ga95e99edee6680b64afc7ac4fca6805e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void number_window_set_min</definition>
+        <argsstring>(NumberWindow *numberwindow, int32_t min)</argsstring>
+        <name>number_window_set_min</name>
+        <param>
+          <type>NumberWindow *</type>
+          <declname>numberwindow</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+<para>Sets the minimum value this field can hold. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberwindow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the NumberWindow for which to set the minimum value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8406" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8406" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___number_window_1ga06fb891c949608321679dbc712a34078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void number_window_set_step_size</definition>
+        <argsstring>(NumberWindow *numberwindow, int32_t step)</argsstring>
+        <name>number_window_set_step_size</name>
+        <param>
+          <type>NumberWindow *</type>
+          <declname>numberwindow</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+<para>Sets the amount by which to increment/decrement by on a button click. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberwindow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the NumberWindow for which to set the step increment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new step increment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8418" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8418" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___number_window_1ga3ad7755a252e1b38f9923b126463bab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void number_window_set_value</definition>
+        <argsstring>(NumberWindow *numberwindow, int32_t value)</argsstring>
+        <name>number_window_set_value</name>
+        <param>
+          <type>NumberWindow *</type>
+          <declname>numberwindow</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current value of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberwindow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the NumberWindow for which to set the current value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new current value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8412" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8412" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A ready-made Window prompting the user to pick a number </para>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="number_window.png" inline="yes"></image>
+ <image type="latex" name="number_window.png" inline="yes"></image>
+ <image type="rtf" name="number_window.png" inline="yes"></image>
+ <image type="docbook" name="number_window.png" inline="yes"></image>
+ <image type="xml" name="number_window.png" inline="yes"></image>
+ </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

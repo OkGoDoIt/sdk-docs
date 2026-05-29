@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___app_message" kind="group">
     <compoundname>AppMessage</compoundname>
     <title>AppMessage</title>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2206" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2206" bodyend="2253"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2149" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2149" bodyend="2196"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -183,7 +183,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2299" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2299" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2242" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___app_message_1gaac76ed32daf5f0da989eadaa10afee2b" prot="public" static="no">
         <type>void(*</type>
@@ -215,7 +215,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2285" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2285" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2228" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___app_message_1ga4f312e4c503cb1ceac932ed3b7ad069a" prot="public" static="no">
         <type>void(*</type>
@@ -239,7 +239,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
 <parametername direction="in">result</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The result of the operation. Some possibilities for the value include <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea4a03bcc21fc33a6acc7d73188b2b4b21" kindref="member">APP_MSG_SEND_TIMEOUT</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eadba700a7db67d4238d24e7379b69fba3" kindref="member">APP_MSG_SEND_REJECTED</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea8dda18d5302ef6b07aa83985e91b54b7" kindref="member">APP_MSG_NOT_CONNECTED</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea38e78da25eed665c85368df213ed8088" kindref="member">APP_MSG_APP_NOT_RUNNING</ref>, and the combination <computeroutput>(APP_MSG_NOT_CONNECTED | APP_MSG_APP_NOT_RUNNING)</computeroutput>.</para>
+<para>The result of the operation. Some possibilities for the value include <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea4a03bcc21fc33a6acc7d73188b2b4b21" kindref="member">APP_MSG_SEND_TIMEOUT</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eadba700a7db67d4238d24e7379b69fba3" kindref="member">APP_MSG_SEND_REJECTED</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea8dda18d5302ef6b07aa83985e91b54b7" kindref="member">APP_MSG_NOT_CONNECTED</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea38e78da25eed665c85368df213ed8088" kindref="member">APP_MSG_APP_NOT_RUNNING</ref>, and the combination <computeroutput>(<ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea8dda18d5302ef6b07aa83985e91b54b7" kindref="member">APP_MSG_NOT_CONNECTED</ref> | <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea38e78da25eed665c85368df213ed8088" kindref="member">APP_MSG_APP_NOT_RUNNING</ref>)</computeroutput>.</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -255,7 +255,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2331" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2331" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2274" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2274" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___app_message_1gacc26762468d7c5067aac6bc89f9874ee" prot="public" static="no">
         <type>void(*</type>
@@ -287,7 +287,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2311" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2311" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2254" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2254" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -306,7 +306,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2272" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2272" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2215" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2215" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1gad1a95b257c5e488b7bd62b66512bd7c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -326,7 +326,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2337" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2337" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2280" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2280" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1gad544294c297f3d1941bd94b6b396a24b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -350,7 +350,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2404" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="2404" declcolumn="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2347" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="2347" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1ga26735aa7eb22ab58bd7496e673d03155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref></type>
@@ -395,7 +395,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2268" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="2268" declcolumn="18"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2211" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="2211" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1ga7715e322ec2a7a49bf66aa63353190fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref></type>
@@ -429,7 +429,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2427" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="2427" declcolumn="18"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2370" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="2370" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1ga54169009d1ad008ea8e4f66005ce9cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref></type>
@@ -453,7 +453,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2438" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="2438" declcolumn="18"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2381" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="2381" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1gaa8161491da4b16dde64be8754cfde815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -477,7 +477,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2413" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="2413" declcolumn="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2356" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="2356" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1gad15eeddef5ffa5ea0185eb734c0fbe9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_message_1gad17a01f74a89117b239a3a14e3b67b8b" kindref="member">AppMessageInboxDropped</ref></type>
@@ -508,7 +508,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2369" column="24" declfile="build/sdk/aplite/include/pebble.h" declline="2369" declcolumn="24"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2312" column="24" declfile="build/sdk/aplite/include/pebble.h" declline="2312" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1ga9ab844c63d926f0e8f708a171b3838d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_message_1gaac76ed32daf5f0da989eadaa10afee2b" kindref="member">AppMessageInboxReceived</ref></type>
@@ -539,7 +539,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2357" column="25" declfile="build/sdk/aplite/include/pebble.h" declline="2357" declcolumn="25"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2300" column="25" declfile="build/sdk/aplite/include/pebble.h" declline="2300" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1ga73c134254ff2b17d3c57c7d019e79323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_message_1ga4f312e4c503cb1ceac932ed3b7ad069a" kindref="member">AppMessageOutboxFailed</ref></type>
@@ -570,7 +570,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2395" column="24" declfile="build/sdk/aplite/include/pebble.h" declline="2395" declcolumn="24"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2338" column="24" declfile="build/sdk/aplite/include/pebble.h" declline="2338" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1gae7cbb364b6e932c4bfd1ae89ecca87f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_message_1gacc26762468d7c5067aac6bc89f9874ee" kindref="member">AppMessageOutboxSent</ref></type>
@@ -601,7 +601,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2382" column="22" declfile="build/sdk/aplite/include/pebble.h" declline="2382" declcolumn="22"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2325" column="22" declfile="build/sdk/aplite/include/pebble.h" declline="2325" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="group___app_message_1gaf44fba92e602fc6853d7f46194f96f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -631,7 +631,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2345" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2345" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2288" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2288" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -650,7 +650,7 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2445" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2445" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2388" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2388" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___app_message_1ga6fe648fbe225cda63583342bb2305187" prot="public" static="no">
         <name>APP_MESSAGE_OUTBOX_SIZE_MINIMUM</name>
@@ -667,13 +667,13 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2452" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2452" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2395" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2395" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Bi-directional communication between phone apps and Pebble watchapps </para>
     </briefdescription>
     <detaileddescription>
-<para>Bi-directional communication between phone apps and Pebble watchapps</para>
 <para>AppMessage is a bi-directional messaging subsystem that enables communication between phone apps and Pebble watchapps. This is accomplished by allowing phone and watchapps to exchange arbitrary sets of key/value pairs. The key/value pairs are stored in the form of a Dictionary, the layout of which is left for the application developer to define.</para>
 <para>AppMessage implements a push-oriented messaging protocol, enabling your app to call functions and methods to push messages from Pebble to phone and vice versa. The protocol is symmetric: both Pebble and the phone can send messages. All messages are acknowledged. In this context, there is no client-server model, as such.</para>
 <para>During the sending phase, one side initiates the communication by transferring a dictionary over the air. The other side then receives this message and is given an opportunity to perform actions on that data. As soon as possible, the other side is expected to reply to the message with a simple acknowledgment that the message was received successfully.</para>
@@ -699,7 +699,23 @@ Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa
 </listitem></itemizedlist>
 </para>
 <para>Other errors are possible and described by <ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref>. A client of the AppMessage interface should use the result codes to be more robust in the face of communication problems either in the field or while debugging.</para>
-<para>Refer to the <htmlonly>&lt;a href=&quot;https://developer.rebble.io/guides/communication/index.html&quot;&gt;App Communication in the Pebble Developer Guides&lt;/a&gt;
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;http://developer.getpebble.com/guides/pebble-apps/communications/&quot;&gt;App Communication in the Pebble Developer Guides&lt;/a&gt;
 </htmlonly> for a conceptual overview and code usage.</para>
 <para>For code examples, refer to the SDK Examples that directly use App Message. These include:<itemizedlist>
 <listitem><para><ulink url="https://github.com/pebble-examples/pebblekit-js-weather">pebblekit-js-weather</ulink></para>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___math" kind="group">
     <compoundname>Math</compoundname>
     <title>Math</title>
@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="327" column="9" declfile="build/sdk/aplite/include/pebble.h" declline="327" declcolumn="9"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="337" column="9" declfile="build/sdk/aplite/include/pebble.h" declline="337" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___math_1gaa8938fd0e58aed9906ecccacd8fde88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -36,7 +36,7 @@
           <declname>angle</declname>
         </param>
         <briefdescription>
-<para>Look-up the cosine of the given angle from a pre-computed table. This is equivalent to calling <computeroutput>sin_lookup(angle + TRIG_MAX_ANGLE / 4)</computeroutput>. </para>
+<para>Look-up the cosine of the given angle from a pre-computed table. This is equivalent to calling <computeroutput><ref refid="group___math_1gad373193b20c68af1004a9dc2c35c2e48" kindref="member">sin_lookup</ref>(angle + <ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref> / 4)</computeroutput>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="323" column="9" declfile="build/sdk/aplite/include/pebble.h" declline="323" declcolumn="9"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="333" column="9" declfile="build/sdk/aplite/include/pebble.h" declline="333" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___math_1gad373193b20c68af1004a9dc2c35c2e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="317" column="9" declfile="build/sdk/aplite/include/pebble.h" declline="317" declcolumn="9"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="327" column="9" declfile="build/sdk/aplite/include/pebble.h" declline="327" declcolumn="9"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="312" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="312" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="322" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="322" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___math_1gade7adcdaf0a7aca734c444328afd6f77" prot="public" static="no">
         <name>TRIG_MAX_ANGLE</name>
@@ -117,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="302" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="302" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="312" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="312" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___math_1ga88044be2b97f747386820291a9952afe" prot="public" static="no">
         <name>TRIG_MAX_RATIO</name>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="297" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="297" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="307" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="307" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___math_1gae93c13590195997523319b436ff5dfe3" prot="public" static="no">
         <name>TRIGANGLE_TO_DEG</name>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="307" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="307" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="317" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="317" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

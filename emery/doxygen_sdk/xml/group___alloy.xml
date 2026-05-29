@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___alloy" kind="group">
+    <compoundname>Alloy</compoundname>
+    <title>Alloy</title>
+    <innerclass refid="struct_moddable_creation_record" prot="public">ModdableCreationRecord</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___alloy_1ga8d8bbd452a57a6a20810f1c2b78b1684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void moddable_createMachine</definition>
+        <argsstring>(ModdableCreationRecord *creation)</argsstring>
+        <name>moddable_createMachine</name>
+        <param>
+          <type><ref refid="struct_moddable_creation_record" kindref="compound">ModdableCreationRecord</ref> *</type>
+          <declname>creation</declname>
+        </param>
+        <briefdescription>
+<para>Create and start a Moddable XS virtual machine for an Alloy app. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration record, or NULL for default settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_moddable_creation_record" kindref="compound">ModdableCreationRecord</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2884" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2884" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___alloy_1ga8cef7fcb1e7e57a1e9d1d61983e1292a" prot="public" static="no">
+        <name>kModdableCreationFlagLogInstrumentation</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>Flag to enable XS instrumentation logging over Bluetooth. When set, the Moddable XS engine will log instrumentation data (e.g. memory usage, slot/chunk/stack statistics) via app_log. Logging is only active when a Bluetooth log listener is connected; otherwise this flag has no effect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_moddable_creation_record" kindref="compound">ModdableCreationRecord</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2866" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2866" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

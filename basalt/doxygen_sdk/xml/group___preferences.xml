@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___preferences" kind="group">
     <compoundname>Preferences</compoundname>
     <title>Preferences</title>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8303" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8303" bodyend="8309"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8711" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8711" bodyend="8717"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8314" column="22" declfile="build/sdk/basalt/include/pebble.h" declline="8314" declcolumn="22"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8722" column="22" declfile="build/sdk/basalt/include/pebble.h" declline="8722" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="group___preferences_1ga06f8d8a9859121b0682191a11e2889b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8296" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="8296" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8704" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="8704" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___preferences_1ga8de7f1d9eb8cbfd7078cad2201dfa5be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -116,13 +116,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8319" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8319" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8727" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8727" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Values recommended by the system </para>
     </briefdescription>
     <detaileddescription>
-<para>Values recommended by the system </para>
     </detaileddescription>
   </compounddef>
 </doxygen>

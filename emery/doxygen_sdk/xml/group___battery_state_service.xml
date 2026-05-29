@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___battery_state_service" kind="group">
+    <compoundname>BatteryStateService</compoundname>
+    <title>BatteryStateService</title>
+    <innerclass refid="struct_battery_charge_state" prot="public">BatteryChargeState</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___battery_state_service_1ga4aa17d228becf546edee7c193baba50f" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BatteryStateHandler) (BatteryChargeState charge)</definition>
+        <argsstring>)(BatteryChargeState charge)</argsstring>
+        <name>BatteryStateHandler</name>
+        <briefdescription>
+<para>Callback type for battery state change events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the state of the battery <ref refid="struct_battery_charge_state" kindref="compound">BatteryChargeState</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="614" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="614" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___battery_state_service_1ga0db4a30663844c173acb72f9204e6fcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_battery_charge_state" kindref="compound">BatteryChargeState</ref></type>
+        <definition>BatteryChargeState battery_state_service_peek</definition>
+        <argsstring>(void)</argsstring>
+        <name>battery_state_service_peek</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Peek at the last known battery state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a <ref refid="struct_battery_charge_state" kindref="compound">BatteryChargeState</ref> containing the last known data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="627" column="20" declfile="build/sdk/emery/include/pebble.h" declline="627" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="group___battery_state_service_1gadef114a27f24cc39e3ee5bda3756c865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void battery_state_service_subscribe</definition>
+        <argsstring>(BatteryStateHandler handler)</argsstring>
+        <name>battery_state_service_subscribe</name>
+        <param>
+          <type><ref refid="group___battery_state_service_1ga4aa17d228becf546edee7c193baba50f" kindref="member">BatteryStateHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to the battery state event service. Once subscribed, the handler gets called on every battery state change. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback to be executed on battery state change event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="619" column="6" declfile="build/sdk/emery/include/pebble.h" declline="619" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___battery_state_service_1ga787d24a03fe9a51cd61e24a9775efbc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void battery_state_service_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>battery_state_service_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from the battery state event service. Once unsubscribed, the previously registered handler will no longer be called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="623" column="6" declfile="build/sdk/emery/include/pebble.h" declline="623" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Determines when the battery state changes </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The BatteryStateService API lets you know when the battery state changes, that is, its current charge level, whether it is plugged and charging. It uses the <ref refid="struct_battery_charge_state" kindref="compound">BatteryChargeState</ref> structure to describe the current power state of Pebble.</para>
+<para>Refer to the <ulink url="https://github.com/pebble-examples/classio-battery-connection">classio-battery-connection</ulink> example, which demonstrates using the battery state service in a watchface. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

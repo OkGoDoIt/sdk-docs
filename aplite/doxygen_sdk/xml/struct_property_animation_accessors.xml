@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_property_animation_accessors" kind="struct" language="C++" prot="public">
     <compoundname>PropertyAnimationAccessors</compoundname>
     <includes local="no">pebble.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="struct_property_animation_accessors_1ac2afa5f4e03a7612d1a9dd578f6cb4f8" prot="public" static="no" mutable="no">
-        <type>union <ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref></type>
-        <definition>union PropertyAnimationAccessors PropertyAnimationAccessors::getter</definition>
+      <memberdef kind="variable" id="struct_property_animation_accessors_1aa49338a32018a34d0b4fe2257153c8eb" prot="public" static="no" mutable="no">
+        <type>union PropertyAnimationAccessors::@046257340314124061165206214330340260171123120263</type>
+        <definition>union PropertyAnimationAccessors::@046257340314124061165206214330340260171123120263 PropertyAnimationAccessors::getter</definition>
         <argsstring></argsstring>
         <name>getter</name>
         <qualifiedname>PropertyAnimationAccessors::getter</qualifiedname>
@@ -20,11 +20,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6256" column="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6392" column="10"/>
       </memberdef>
-      <memberdef kind="variable" id="struct_property_animation_accessors_1ae24e6f8ff06ac72a5bebd765eea188b4" prot="public" static="no" mutable="no">
-        <type>union <ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref></type>
-        <definition>union PropertyAnimationAccessors PropertyAnimationAccessors::setter</definition>
+      <memberdef kind="variable" id="struct_property_animation_accessors_1a34e20cb354dd414c7a57c11390250bd8" prot="public" static="no" mutable="no">
+        <type>union PropertyAnimationAccessors::@156135260234334324316062040004310334205301157340</type>
+        <definition>union PropertyAnimationAccessors::@156135260234334324316062040004310334205301157340 PropertyAnimationAccessors::setter</definition>
         <argsstring></argsstring>
         <name>setter</name>
         <qualifiedname>PropertyAnimationAccessors::setter</qualifiedname>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6240" column="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6376" column="10"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -48,10 +48,10 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="6225" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6225" bodyend="6257"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="6361" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6361" bodyend="6393"/>
     <listofallmembers>
-      <member refid="struct_property_animation_accessors_1ac2afa5f4e03a7612d1a9dd578f6cb4f8" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors</scope><name>getter</name></member>
-      <member refid="struct_property_animation_accessors_1ae24e6f8ff06ac72a5bebd765eea188b4" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors</scope><name>setter</name></member>
+      <member refid="struct_property_animation_accessors_1aa49338a32018a34d0b4fe2257153c8eb" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors</scope><name>getter</name></member>
+      <member refid="struct_property_animation_accessors_1a34e20cb354dd414c7a57c11390250bd8" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors</scope><name>setter</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

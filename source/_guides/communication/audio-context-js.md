@@ -19,7 +19,7 @@ description: |
 guide_group: communication
 order: 5
 related_docs:
-  - Pebble
+  - audioContext
 ---
 
 PebbleKit JS is the richest Audio Context runtime because it runs on the phone.
@@ -69,8 +69,14 @@ Pebble.audioContext.getStatus()
   });
 ```
 
-Common availability values include `DisabledByUser`, `PermissionDenied`,
-`CapabilityNotDeclared`, `TranscriptionUnavailable`, `NoData`, and `Error`.
+Common availability values include:
+
+* `DisabledByUser`
+* `PermissionDenied`
+* `CapabilityNotDeclared`
+* `TranscriptionUnavailable`
+* `NoData`
+* `Error`
 
 ## Status and Enable Flow
 
@@ -216,8 +222,8 @@ to reason about.
 
 ## Raw Audio
 
-Raw audio is delivered on the phone through PebbleKit JS. Apps need the
-explicit `audio_raw` capability and a separate user grant.
+Raw audio is delivered on the phone through PebbleKit JS.
+Apps need the explicit `audio_raw` capability and a separate user grant.
 
 {% alert important %}
 Raw audio may include sensitive sounds nearby. Request `audio_raw` only when

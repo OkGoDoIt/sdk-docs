@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_dictionary_iterator" kind="struct" language="C++" prot="public">
+    <compoundname>DictionaryIterator</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_dictionary_iterator_1a92ab563836acb6ea6af20c0f1c8f4981" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
+        <definition>Tuple* DictionaryIterator::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <qualifiedname>DictionaryIterator::cursor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1835" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_dictionary_iterator_1a425cdb246d7c88aee09763888979a3a7" prot="public" static="no" mutable="no">
+        <type>Dictionary *</type>
+        <definition>Dictionary* DictionaryIterator::dictionary</definition>
+        <argsstring></argsstring>
+        <name>dictionary</name>
+        <qualifiedname>DictionaryIterator::dictionary</qualifiedname>
+        <briefdescription>
+<para>The dictionary being iterated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1829" column="14" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1829" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_dictionary_iterator_1a8c032e6b049c07cef73c42cf67bfcc6c" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* DictionaryIterator::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>DictionaryIterator::end</qualifiedname>
+        <briefdescription>
+<para>Points to the first memory address after the last byte of the dictionary Points to the next <ref refid="struct_tuple" kindref="compound">Tuple</ref> in the dictionary. Given the end of the Dictionary has not yet been reached: when writing, the next key/value pair will be written at the cursor. When reading, the next call to <ref refid="group___dictionary_1ga0494e17cb2cb325f10d7c3172ecd676b" kindref="member">dict_read_next()</ref> will return the cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1830" column="14" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1830" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An iterator can be used to iterate over the key/value tuples in an existing dictionary, using <ref refid="group___dictionary_1ga0d5d65d21509a42a3113f8b09768d8c5" kindref="member">dict_read_begin_from_buffer()</ref>, <ref refid="group___dictionary_1gac1443377d1e746e315fc943016885cf2" kindref="member">dict_read_first()</ref> and <ref refid="group___dictionary_1ga0494e17cb2cb325f10d7c3172ecd676b" kindref="member">dict_read_next()</ref>. An iterator can also be used to append key/value tuples to a dictionary, for example using <ref refid="group___dictionary_1ga30091feef740732d5d6bc3cf2312642a" kindref="member">dict_write_data()</ref> or <ref refid="group___dictionary_1ga015dfe89d0ee2f8b4e16ddda21bcf556" kindref="member">dict_write_cstring()</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>DictionaryIterator</label>
+        <link refid="struct_dictionary_iterator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cursor</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Tuple</label>
+        <link refid="struct_tuple"/>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="1828" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1828" bodyend="1836"/>
+    <listofallmembers>
+      <member refid="struct_dictionary_iterator_1a92ab563836acb6ea6af20c0f1c8f4981" prot="public" virt="non-virtual"><scope>DictionaryIterator</scope><name>cursor</name></member>
+      <member refid="struct_dictionary_iterator_1a425cdb246d7c88aee09763888979a3a7" prot="public" virt="non-virtual"><scope>DictionaryIterator</scope><name>dictionary</name></member>
+      <member refid="struct_dictionary_iterator_1a8c032e6b049c07cef73c42cf67bfcc6c" prot="public" virt="non-virtual"><scope>DictionaryIterator</scope><name>end</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

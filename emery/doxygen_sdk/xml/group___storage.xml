@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___storage" kind="group">
+    <compoundname>Storage</compoundname>
+    <title>Storage</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" prot="public" static="no" strong="no">
+        <type></type>
+        <name>StatusCode</name>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a29c0c697bde0c7eb16b7f17bea656fb9" prot="public">
+          <name>S_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Operation completed successfully. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a7b7d81ed853af64388be3a5e5b371eae" prot="public">
+          <name>E_ERROR</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>An error occurred (no description). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a0bdce79d948b8215713bcf669df0b8f1" prot="public">
+          <name>E_UNKNOWN</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+<para>No idea what went wrong. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113ae13bac64d3fd01405399ecd3260593f5" prot="public">
+          <name>E_INTERNAL</name>
+          <initializer>= -3</initializer>
+          <briefdescription>
+<para>There was a generic internal logic error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a0330c6ed43cc808ebc402e8dd1545cd2" prot="public">
+          <name>E_INVALID_ARGUMENT</name>
+          <initializer>= -4</initializer>
+          <briefdescription>
+<para>The function was not called correctly. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113ad0f73bc18eeacdd07b0626ca00c36e69" prot="public">
+          <name>E_OUT_OF_MEMORY</name>
+          <initializer>= -5</initializer>
+          <briefdescription>
+<para>Insufficient allocatable memory available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113ae00145f46ca2bcab8f4c6c3c63c39d40" prot="public">
+          <name>E_OUT_OF_STORAGE</name>
+          <initializer>= -6</initializer>
+          <briefdescription>
+<para>Insufficient long-term storage available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a6426827fc6457cf07b47996f062b4fea" prot="public">
+          <name>E_OUT_OF_RESOURCES</name>
+          <initializer>= -7</initializer>
+          <briefdescription>
+<para>Insufficient resources available. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113ab6ca7abb674ed4b432be474346b02ff4" prot="public">
+          <name>E_RANGE</name>
+          <initializer>= -8</initializer>
+          <briefdescription>
+<para>Argument out of range (may be dynamic). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a8b2244ea72c3f8baf6c57eb9772ceb55" prot="public">
+          <name>E_DOES_NOT_EXIST</name>
+          <initializer>= -9</initializer>
+          <briefdescription>
+<para>Target of operation does not exist. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a28faee6e19cd71ecc7300c6a240054e0" prot="public">
+          <name>E_INVALID_OPERATION</name>
+          <initializer>= -10</initializer>
+          <briefdescription>
+<para>Operation not allowed (may depend on state). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a8d7cc15401f2b0ba151cfc53683f15e4" prot="public">
+          <name>E_BUSY</name>
+          <initializer>= -11</initializer>
+          <briefdescription>
+<para>Another operation prevented this one. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a39f460e759f0617c3110388d74c4b0ff" prot="public">
+          <name>E_AGAIN</name>
+          <initializer>= -12</initializer>
+          <briefdescription>
+<para>Operation not completed; try again. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a634340f260a88ae2889c4cf0502cc08b" prot="public">
+          <name>S_TRUE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Equivalent of boolean true. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a68f36740ce22fa7b0a5500578751c4df" prot="public">
+          <name>S_FALSE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Equivalent of boolean false. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113ae1acf82ac9fe0261196ad98e1aa66008" prot="public">
+          <name>S_NO_MORE_ITEMS</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>For list-style requests. At end of list. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a84443a6682392b6f7afa83fd096325cb" prot="public">
+          <name>S_NO_ACTION_REQUIRED</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>No action was taken as none was required. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Status codes. See <ref refid="group___storage_1gaaabdaf7ee58ca7269bd4bf24efcde092" kindref="member">status_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3082" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3082" bodyend="3134"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___storage_1gaaabdaf7ee58ca7269bd4bf24efcde092" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t status_t</definition>
+        <argsstring></argsstring>
+        <name>status_t</name>
+        <briefdescription>
+<para>Return value for system operations. See <ref refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kindref="member">StatusCode</ref> for possible values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3137" column="17" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3137" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___storage_1gac1933ab31d528d823214a078fb1823d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___storage_1gaaabdaf7ee58ca7269bd4bf24efcde092" kindref="member">status_t</ref></type>
+        <definition>status_t persist_delete</definition>
+        <argsstring>(const uint32_t key)</argsstring>
+        <name>persist_delete</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the value of a key from persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to delete from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>S_TRUE if successful, E_DOES_NOT_EXIST if a value was not set, or another error value from <ref refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kindref="member">StatusCode</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3219" column="10" declfile="build/sdk/emery/include/pebble.h" declline="3219" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga6d7d35339e88c77eb0f860e2e07a6741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool persist_exists</definition>
+        <argsstring>(const uint32_t key)</argsstring>
+        <name>persist_exists</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether a value has been set for a given key in persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if a value exists, otherwise false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3142" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3142" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1gafd53794e0a8923fe1645e4232f208e53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+        <definition>size_t persist_get_max_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>persist_get_max_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the maximum total size in bytes of all persisted values for the current app on this firmware. Apps targeting older SDKs that don&apos;t have this function should assume a 4 KB limit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The per-app persistent storage capacity in bytes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3148" column="8" declfile="build/sdk/emery/include/pebble.h" declline="3148" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga5cdebc74788804da4e0a293da392d219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int persist_get_size</definition>
+        <argsstring>(const uint32_t key)</argsstring>
+        <name>persist_get_size</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Gets the size of a value for a given key in persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to lookup the data size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The size of the value in bytes or <ref refid="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a8b2244ea72c3f8baf6c57eb9772ceb55" kindref="member">E_DOES_NOT_EXIST</ref> if there is no field matching the given key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3154" column="5" declfile="build/sdk/emery/include/pebble.h" declline="3154" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga9799457707c05716e851dc72cf976d10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool persist_read_bool</definition>
+        <argsstring>(const uint32_t key)</argsstring>
+        <name>persist_read_bool</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Reads a bool value for a given key from persistent storage. If the value has not yet been set, this will return false. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to read from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bool value of the key to read from. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3160" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3160" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga8469286f3de1edbf1c275e6b5b871749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int persist_read_data</definition>
+        <argsstring>(const uint32_t key, void *buffer, const size_t buffer_size)</argsstring>
+        <name>persist_read_data</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Reads a blob of data for a given key from persistent storage into a given buffer. If the value has not yet been set, the given buffer is left unchanged. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to read from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to a buffer to be written to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum size of the given buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written into the buffer or <ref refid="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a8b2244ea72c3f8baf6c57eb9772ceb55" kindref="member">E_DOES_NOT_EXIST</ref> if there is no field matching the given key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3176" column="5" declfile="build/sdk/emery/include/pebble.h" declline="3176" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga1ee46476e67b7508b4f6ecac9ff2b202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t persist_read_int</definition>
+        <argsstring>(const uint32_t key)</argsstring>
+        <name>persist_read_int</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Reads an int value for a given key from persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The int is a signed 32-bit integer. If the value has not yet been set, this will return 0. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to read from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The int value of the key to read from. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3167" column="9" declfile="build/sdk/emery/include/pebble.h" declline="3167" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga16c3265b8e698b61ae158c47f4136a1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int persist_read_string</definition>
+        <argsstring>(const uint32_t key, char *buffer, const size_t buffer_size)</argsstring>
+        <name>persist_read_string</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>Reads a string for a given key from persistent storage into a given buffer. The string will be null terminated. If the value has not yet been set, the given buffer is left unchanged. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to read from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to a buffer to be written to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum size of the given buffer. This includes the null character. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written into the buffer or <ref refid="group___storage_1ggae98a46f4ea1a43ca48acaf15d2eb7113a8b2244ea72c3f8baf6c57eb9772ceb55" kindref="member">E_DOES_NOT_EXIST</ref> if there is no field matching the given key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3186" column="5" declfile="build/sdk/emery/include/pebble.h" declline="3186" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga3e69f901337fa0843b206aabbae34356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___storage_1gaaabdaf7ee58ca7269bd4bf24efcde092" kindref="member">status_t</ref></type>
+        <definition>status_t persist_write_bool</definition>
+        <argsstring>(const uint32_t key, const bool value)</argsstring>
+        <name>persist_write_bool</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a bool value flag for a given key into persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to write to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The boolean value to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written if successful, a value from <ref refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kindref="member">StatusCode</ref> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3192" column="10" declfile="build/sdk/emery/include/pebble.h" declline="3192" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1gab32240af0ba289ec526a0af7a7835ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int persist_write_data</definition>
+        <argsstring>(const uint32_t key, const void *data, const size_t size)</argsstring>
+        <name>persist_write_data</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Writes a blob of data of a specified size in bytes for a given key into persistent storage. The maximum size is <ref refid="group___storage_1ga0131571894c87dd4e9d63007e3600f22" kindref="member">PERSIST_DATA_MAX_LENGTH</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to write to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to the blob of data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size in bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written if successful, a value from <ref refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kindref="member">StatusCode</ref> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3207" column="5" declfile="build/sdk/emery/include/pebble.h" declline="3207" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga3ef414652a47ece1554c392b97e42adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___storage_1gaaabdaf7ee58ca7269bd4bf24efcde092" kindref="member">status_t</ref></type>
+        <definition>status_t persist_write_int</definition>
+        <argsstring>(const uint32_t key, const int32_t value)</argsstring>
+        <name>persist_write_int</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes an int value for a given key into persistent storage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The int is a signed 32-bit integer. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to write to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The int value to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written if successful, a value from <ref refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kindref="member">StatusCode</ref> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3199" column="10" declfile="build/sdk/emery/include/pebble.h" declline="3199" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___storage_1ga2cb47c0619583b4582f6c3b671c1447b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int persist_write_string</definition>
+        <argsstring>(const uint32_t key, const char *cstring)</argsstring>
+        <name>persist_write_string</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>cstring</declname>
+        </param>
+        <briefdescription>
+<para>Writes a string a given key into persistent storage. The maximum size is <ref refid="group___storage_1gaa98cfabe4de457c0690d03549747bef6" kindref="member">PERSIST_STRING_MAX_LENGTH</ref> including the null terminator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key of the field to write to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cstring</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to null terminated string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes written if successful, a value from <ref refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kindref="member">StatusCode</ref> otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3214" column="5" declfile="build/sdk/emery/include/pebble.h" declline="3214" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___storage_1ga0131571894c87dd4e9d63007e3600f22" prot="public" static="no">
+        <name>PERSIST_DATA_MAX_LENGTH</name>
+        <initializer>256</initializer>
+        <briefdescription>
+<para>The maximum size of a persist value in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3076" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___storage_1gaa98cfabe4de457c0690d03549747bef6" prot="public" static="no">
+        <name>PERSIST_STRING_MAX_LENGTH</name>
+        <initializer><ref refid="group___storage_1ga0131571894c87dd4e9d63007e3600f22" kindref="member">PERSIST_DATA_MAX_LENGTH</ref></initializer>
+        <briefdescription>
+<para>The maximum size of a persist string in bytes including the NULL terminator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3079" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3079" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A mechanism to store persistent application data and state </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The Persistent Storage API provides you with a mechanism for performing a variety of tasks, like saving user settings, caching data from the phone app, or counting high scores for Pebble watchapp games.</para>
+<para>In Pebble OS, storage is defined by a collection of fields that you can create, modify or delete. In the API, a field is specified as a key with a corresponding value.</para>
+<para>Using the Storage API, every app is able to get its own persistent storage space. Each value in that space is associated with a <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> key.</para>
+<para>Storage supports saving integers, strings and byte arrays. The maximum size of byte arrays and strings is defined by PERSIST_DATA_MAX_LENGTH (currently set to 256 bytes). You call the function persist_exists(key), which returns a boolean indicating if the key exists or not. The Storage API enables your app to save its state, and when compared to using <ref refid="group___app_message" kindref="compound">AppMessage</ref> to retrieve values from the phone, it provides you with a much faster way to restore state. In addition, it draws less power from the battery.</para>
+<para>The total size of an app&apos;s persisted values is capped; call <ref refid="group___storage_1gafd53794e0a8923fe1645e4232f208e53" kindref="member">persist_get_max_size</ref> to query the limit at runtime. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

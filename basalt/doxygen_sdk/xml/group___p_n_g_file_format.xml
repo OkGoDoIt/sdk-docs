@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___p_n_g_file_format" kind="group">
     <compoundname>PNGFileFormat</compoundname>
     <title>PNG8 File Format</title>
     <briefdescription>
+<para>Pebble supports both a PBIs (uncompressed bitmap images) as well as PNG8 images. PNG images are compressed allowing for storage savings up to 90%. PNG8 is a PNG that uses palette-based or grayscale images with 1, 2, 4 or 8 bits per pixel. For palette-based images the pixel data represents the index into the palette, such that each pixel only needs to be large enough to represent the palette size, so </para>
     </briefdescription>
     <detaileddescription>
-<para>Pebble supports both a PBIs (uncompressed bitmap images) as well as PNG8 images. PNG images are compressed allowing for storage savings up to 90%. PNG8 is a PNG that uses palette-based or grayscale images with 1, 2, 4 or 8 bits per pixel. For palette-based images the pixel data represents the index into the palette, such that each pixel only needs to be large enough to represent the palette size, so <itemizedlist>
+<para><itemizedlist>
 <listitem><para><computeroutput>1-bit</computeroutput> supports up to 2 colors, </para>
 </listitem>
 <listitem><para><computeroutput>2-bit</computeroutput> supports up to 4 colors, </para>

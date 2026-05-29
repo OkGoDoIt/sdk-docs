@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___logging" kind="group">
     <compoundname>Logging</compoundname>
     <title>Logging</title>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1563" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1563" bodyend="1574"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1625" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1625" bodyend="1636"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1552" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1552" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1614" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1614" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -102,7 +102,7 @@
         <param><defname>level</defname></param>
         <param><defname>fmt</defname></param>
         <param><defname>args...</defname></param>
-        <initializer>  app_log(level, __FILE_NAME__, __LINE__, fmt, ## args)</initializer>
+        <initializer>app_log(level, __FILE_NAME__, __LINE__, fmt, ## args)</initializer>
         <briefdescription>
 <para>A helper macro that simplifies the use of the app_log function. </para>
         </briefdescription>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1559" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1559" bodyend="1560"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1621" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1621" bodyend="1622"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

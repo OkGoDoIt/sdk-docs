@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_animation_handlers" kind="struct" language="C++" prot="public">
     <compoundname>AnimationHandlers</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5823" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5823" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6101" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_animation_handlers_1a56e5f5b77c843b7bc7e58587a42e197a" prot="public" static="no" mutable="no">
         <type><ref refid="group___animation_1ga23a000ff9a55db7c73ce956a9c36a022" kindref="member">AnimationStoppedHandler</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="5825" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5825" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6103" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6103" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -43,7 +43,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="5821" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5821" bodyend="5826"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="6099" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6099" bodyend="6104"/>
     <listofallmembers>
       <member refid="struct_animation_handlers_1aabde74563b7b9821699bb5e9b3f4a59f" prot="public" virt="non-virtual"><scope>AnimationHandlers</scope><name>started</name></member>
       <member refid="struct_animation_handlers_1a56e5f5b77c843b7bc7e58587a42e197a" prot="public" virt="non-virtual"><scope>AnimationHandlers</scope><name>stopped</name></member>

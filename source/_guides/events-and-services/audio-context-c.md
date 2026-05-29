@@ -20,7 +20,7 @@ guide_group: events-and-services
 order: 6
 related_docs:
   - AudioContext
-  - LaunchReason
+  - AppLaunchReason
   - Dictation
 ---
 
@@ -45,9 +45,8 @@ Declare the capabilities your app needs in `package.json`:
 ]
 ```
 
-Use `audio_history` only if the app needs bounded transcript history. Use
-`audio_raw` only for a PebbleKit JS component that receives raw phone-side
-audio.
+Use `audio_history` only if the app needs bounded transcript history.
+Use `audio_raw` only for a PebbleKit JS component that receives raw phone-side audio.
 
 ## Check Cached Status
 
@@ -123,8 +122,7 @@ if (!audio_context_request_permission(permissions)) {
 ```
 
 The app must declare the matching capabilities in `package.json`. If it does
-not, later requests may fail with
-`AudioContextAvailabilityCapabilityNotDeclared`.
+not, later requests may fail with `AudioContextAvailabilityCapabilityNotDeclared`.
 
 ## Query Recent Transcript
 

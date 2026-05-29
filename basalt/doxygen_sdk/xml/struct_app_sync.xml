@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_app_sync" kind="struct" language="C++" prot="public">
     <compoundname>AppSync</compoundname>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="struct_app_sync_1a1b67948c3d37ee4e65b4dd243f31c22f" prot="public" static="no" mutable="no">
-        <type>union AppSync</type>
-        <definition>union AppSync AppSync</definition>
+        <type>union AppSync::@235270225215313222113115307274024037362234023267</type>
+        <definition>union AppSync::@235270225215313222113115307274024037362234023267 AppSync::@022331027133272075045277053243007366137256117336</definition>
         <argsstring></argsstring>
-        <name></name>
-        <qualifiedname>AppSync</qualifiedname>
+        <name>@022331027133272075045277053243007366137256117336</name>
+        <qualifiedname>AppSync::@022331027133272075045277053243007366137256117336</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2527" column="3"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2589" column="3"/>
       </memberdef>
       <memberdef kind="variable" id="struct_app_sync_1ab184df88bff7548e6fc2b1075879ea4c" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -29,11 +29,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2528" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2528" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2590" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2590" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_app_sync_1a305fd71f8dd0a63df31c54aac059649d" prot="public" static="no" mutable="no">
-        <type>struct AppSync</type>
-        <definition>struct AppSync AppSync::callback</definition>
+        <type>struct AppSync::@334035064310201346042134126072376142246317057315</type>
+        <definition>struct AppSync::@334035064310201346042134126072376142246317057315 AppSync::callback</definition>
         <argsstring></argsstring>
         <name>callback</name>
         <qualifiedname>AppSync::callback</qualifiedname>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2533" column="12"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2595" column="12"/>
       </memberdef>
       <memberdef kind="variable" id="struct_app_sync_1a852821fc80afd3359f29807bcc3afb94" prot="public" static="no" mutable="no">
         <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2523" column="22" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2523" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2585" column="22" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2585" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -83,7 +83,7 @@
         <link refid="struct_tuple"/>
       </node>
     </collaborationgraph>
-    <location file="build/sdk/basalt/include/pebble.h" line="2522" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2522" bodyend="2534"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="2584" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2584" bodyend="2596"/>
     <listofallmembers>
       <member refid="struct_app_sync_1ab184df88bff7548e6fc2b1075879ea4c" prot="public" virt="non-virtual"><scope>AppSync</scope><name>buffer_size</name></member>
       <member refid="struct_app_sync_1a305fd71f8dd0a63df31c54aac059649d" prot="public" virt="non-virtual"><scope>AppSync</scope><name>callback</name></member>

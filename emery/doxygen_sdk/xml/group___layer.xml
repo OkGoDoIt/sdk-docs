@@ -1,0 +1,942 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___layer" kind="group">
+    <compoundname>Layer</compoundname>
+    <title>Layers</title>
+    <innergroup refid="group___action_bar_layer">ActionBarLayer</innergroup>
+    <innergroup refid="group___bitmap_layer">BitmapLayer</innergroup>
+    <innergroup refid="group___menu_layer">MenuLayer</innergroup>
+    <innergroup refid="group___rot_bitmap_layer">RotBitmapLayer</innergroup>
+    <innergroup refid="group___scroll_layer">ScrollLayer</innergroup>
+    <innergroup refid="group___simple_menu_layer">SimpleMenuLayer</innergroup>
+    <innergroup refid="group___status_bar_layer">StatusBarLayer</innergroup>
+    <innergroup refid="group___text_layer">TextLayer</innergroup>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___layer_1ga0a0b68a32dcbcdb0bdcdfc430c27732a" prot="public" static="no">
+        <type>struct Layer</type>
+        <definition>typedef struct Layer Layer</definition>
+        <argsstring></argsstring>
+        <name>Layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5480" column="20" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___layer_1ga998bcd33d985d252283ebe02400041ee" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LayerUpdateProc) (struct Layer *layer, GContext *ctx)</definition>
+        <argsstring>)(struct Layer *layer, GContext *ctx)</argsstring>
+        <name>LayerUpdateProc</name>
+        <briefdescription>
+<para>Function signature for a Layer&apos;s render callback (the name of the type is derived from the words &apos;update procedure&apos;). The system will call the <computeroutput>.update_proc</computeroutput> callback whenever the Layer needs to be rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer that needs to be rendered </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context to draw into </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics" kindref="compound">Graphics</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1ga57eddbe4fe47beefadeaf775a3c8dcaa" kindref="member">layer_set_update_proc()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5490" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5490" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___layer_1ga282c3ba9878e23bfa19033a9487fdac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_add_child</definition>
+        <argsstring>(Layer *parent, Layer *child)</argsstring>
+        <name>layer_add_child</name>
+        <param>
+          <type>Layer *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>Layer *</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+<para>Adds the child layer to a given parent layer, making it appear in front of its parent and in front of any existing child layers of the parent. If the child layer was already part of a layer hierarchy, it will be removed from its old parent first. If added successfully, the parent (and children) will be marked dirty automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer to which to add the child layer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer to add to the parent layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5621" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5621" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1gab09fa69c5ba3a57bcfd59184003ece3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+        <definition>GPoint layer_convert_point_to_screen</definition>
+        <argsstring>(const Layer *layer, GPoint point)</argsstring>
+        <name>layer_convert_point_to_screen</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Converts a point from the layer&apos;s local coordinate system to screen coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If the layer isn&apos;t part of the view hierarchy the result is undefined. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The view whose coordinate system will be used to convert the value to the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A point specified in the local coordinate system (bounds) of the layer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The point converted to the coordinate system of the screen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5583" column="8" declfile="build/sdk/emery/include/pebble.h" declline="5583" declcolumn="8"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga30f05eabe6c17e81840a6daa50984135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>GRect layer_convert_rect_to_screen</definition>
+        <argsstring>(const Layer *layer, GRect rect)</argsstring>
+        <name>layer_convert_rect_to_screen</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Converts a rectangle from the layer&apos;s local coordinate system to screen coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If the layer isn&apos;t part of the view hierarchy the result is undefined. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The view whose coordinate system will be used to convert the value to the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle specified in the local coordinate system (bounds) of the layer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The rectangle converted to the coordinate system of the screen. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5590" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5590" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga9e88aa6fd9f3eb2e66834b5ba0bbaca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * layer_create</definition>
+        <argsstring>(GRect frame)</argsstring>
+        <name>layer_create</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Creates a layer on the heap and sets its frame and bounds. Default values: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para><computeroutput>bounds</computeroutput> : origin (0, 0) and a size equal to the frame that is passed in.</para>
+</listitem><listitem><para><computeroutput>clips</computeroutput> : <computeroutput>true</computeroutput></para>
+</listitem><listitem><para><computeroutput>hidden</computeroutput> : <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><computeroutput>update_proc</computeroutput> : <computeroutput>NULL</computeroutput> (draws nothing) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame at which the layer should be initialized. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___layer_1ga5a984a17781b97ce00ae34c437171934" kindref="member">layer_set_frame()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1ga0a99dca38b75b52264c0734b934c865c" kindref="member">layer_set_bounds()</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to the layer. <computeroutput>NULL</computeroutput> if the layer could not be created </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5503" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5503" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1gacafb2aae03252b548a2cac3c6634bbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * layer_create_with_data</definition>
+        <argsstring>(GRect frame, size_t data_size)</argsstring>
+        <name>layer_create_with_data</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>data_size</declname>
+        </param>
+        <briefdescription>
+<para>Creates a layer on the heap with extra space for callback data, and set its frame andbounds. Default values: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para><computeroutput>bounds</computeroutput> : origin (0, 0) and a size equal to the frame that is passed in.</para>
+</listitem><listitem><para><computeroutput>clips</computeroutput> : <computeroutput>true</computeroutput></para>
+</listitem><listitem><para><computeroutput>hidden</computeroutput> : <computeroutput>false</computeroutput></para>
+</listitem><listitem><para><computeroutput>update_proc</computeroutput> : <computeroutput>NULL</computeroutput> (draws nothing) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame at which the layer should be initialized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size (in bytes) of memory to allocate for callback data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___layer_1ga9e88aa6fd9f3eb2e66834b5ba0bbaca0" kindref="member">layer_create()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1ga5a984a17781b97ce00ae34c437171934" kindref="member">layer_set_frame()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1ga0a99dca38b75b52264c0734b934c865c" kindref="member">layer_set_bounds()</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>A pointer to the layer. <computeroutput>NULL</computeroutput> if the layer could not be created </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5517" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5517" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1gab989ba5a74d4bce391bd1d343673e946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_destroy</definition>
+        <argsstring>(Layer *layer)</argsstring>
+        <name>layer_destroy</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a layer previously created by layer_create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5520" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5520" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga3e99442ac9d3af36ec7c25118360710c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>GRect layer_get_bounds</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>layer_get_bounds</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the bounds of the layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to get the bounds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bounds of the layer </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1ga0a99dca38b75b52264c0734b934c865c" kindref="member">layer_set_bounds</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5570" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5570" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga459ca188ae94ee1cd59e691e5fcefaec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool layer_get_clips</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>layer_get_clips</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets whether clipping is enabled for the layer. If enabled, whatever the layer <emphasis>and its children</emphasis> will draw using their <computeroutput>.update_proc</computeroutput> callbacks, will be clipped by the this layer&apos;s frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to get the clipping property </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if clipping is enabled for the layer, false if clipping is not enabled for the layer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5672" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5672" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga0c1be3a06bbcc514e019ad399fe2e79f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * layer_get_data</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>layer_get_data</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the data from a layer that has been created with an extra data region. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer to get the data region from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A void pointer to the data region. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5677" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5677" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga76ed01d3619150b87604ebaa9dc282b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>GRect layer_get_frame</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>layer_get_frame</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the frame of the layer, which is it&apos;s bounding box relative to the coordinate system of its parent layer. If the frame has changed, <ref refid="group___layer_1ga00bc895642aa02ae2d224659529382c8" kindref="member">layer_mark_dirty()</ref> will be called automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to get the frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The frame of the layer </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1ga5a984a17781b97ce00ae34c437171934" kindref="member">layer_set_frame</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5557" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5557" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga2b4eb514c69ad32fe5cc0f8b3ab9b9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool layer_get_hidden</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>layer_get_hidden</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the visibility of the layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to get the visibility </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the layer is hidden, false if it is not hidden. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5655" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5655" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga1bbac31d1070f43b6ecce0d07eabf2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>GRect layer_get_unobstructed_bounds</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>layer_get_unobstructed_bounds</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Get the largest unobstructed bounds rectangle of a layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to get the unobstructed bounds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The unobstructed bounds of the layer. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___unobstructed_area" kindref="compound">UnobstructedArea</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5576" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5576" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga18f9609674a6cd0caa76e43b38286005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct Window *</type>
+        <definition>struct Window * layer_get_window</definition>
+        <argsstring>(const Layer *layer)</argsstring>
+        <name>layer_get_window</name>
+        <param>
+          <type>const Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the window that the layer is currently attached to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to get the window </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The window that this layer is currently attached to, or <computeroutput>NULL</computeroutput> if it has not been added to a window&apos;s layer hierarchy. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___window_1ga1c5f19fd53ea553a222f2adda37b4ab3" kindref="member">window_get_root_layer()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___layer_1ga282c3ba9878e23bfa19033a9487fdac1" kindref="member">layer_add_child()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5598" column="13" declfile="build/sdk/emery/include/pebble.h" declline="5598" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1gaad290a2abb7f0a37516bb7a45f4157db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_insert_above_sibling</definition>
+        <argsstring>(Layer *layer_to_insert, Layer *above_sibling_layer)</argsstring>
+        <name>layer_insert_above_sibling</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer_to_insert</declname>
+        </param>
+        <param>
+          <type>Layer *</type>
+          <declname>above_sibling_layer</declname>
+        </param>
+        <briefdescription>
+<para>Inserts the layer as a sibling in front of another layer. The above_layer has to be a child of a parent layer, otherwise this function will be a noop. If inserted successfully, the parent (and children) will be marked dirty automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer_to_insert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer to insert into the hierarchy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>above_sibling_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer that will be used as the sibling layer below which the insertion will take place </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5642" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5642" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1gaf838c6113463f2924f50be98e15231e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_insert_below_sibling</definition>
+        <argsstring>(Layer *layer_to_insert, Layer *below_sibling_layer)</argsstring>
+        <name>layer_insert_below_sibling</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer_to_insert</declname>
+        </param>
+        <param>
+          <type>Layer *</type>
+          <declname>below_sibling_layer</declname>
+        </param>
+        <briefdescription>
+<para>Inserts the layer as a sibling behind another layer. If the layer to insert was already part of a layer hierarchy, it will be removed from its old parent first. The below_layer has to be a child of a parent layer, otherwise this function will be a noop. If inserted successfully, the parent (and children) will be marked dirty automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer_to_insert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer to insert into the hierarchy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>below_sibling_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer that will be used as the sibling layer above which the insertion will take place </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5632" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5632" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga00bc895642aa02ae2d224659529382c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_mark_dirty</definition>
+        <argsstring>(Layer *layer)</argsstring>
+        <name>layer_mark_dirty</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Marks the complete layer as &quot;dirty&quot;, awaiting to be asked by the system to redraw itself. Typically, this function is called whenever state has changed that affects what the layer is displaying. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>The layer&apos;s <computeroutput>.update_proc</computeroutput> will not be called before this function returns, but will be called asynchronously, shortly.</para>
+</listitem><listitem><para>Internally, a call to this function will schedule a re-render of the window that the layer belongs to. In effect, all layers in that window&apos;s layer hierarchy will be asked to redraw.</para>
+</listitem><listitem><para>If an earlier re-render request is still pending, this function is a no-op. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer to mark dirty </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5531" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5531" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga20bc62c736890f73edd0a4381219950f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_remove_child_layers</definition>
+        <argsstring>(Layer *parent)</argsstring>
+        <name>layer_remove_child_layers</name>
+        <param>
+          <type>Layer *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Removes child layers from given layer If removed successfully, the child&apos;s parent layer will be marked dirty automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer from which to remove all child layers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5610" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5610" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga15574128ca92653c64d164f6f13e2361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_remove_from_parent</definition>
+        <argsstring>(Layer *child)</argsstring>
+        <name>layer_remove_from_parent</name>
+        <param>
+          <type>Layer *</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+<para>Removes the layer from its current parent layer If removed successfully, the child&apos;s parent layer will be marked dirty automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>child</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5604" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5604" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga0a99dca38b75b52264c0734b934c865c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_set_bounds</definition>
+        <argsstring>(Layer *layer, GRect bounds)</argsstring>
+        <name>layer_set_bounds</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bounds of the layer, which is it&apos;s bounding box relative to its frame. If the bounds has changed, <ref refid="group___layer_1ga00bc895642aa02ae2d224659529382c8" kindref="member">layer_mark_dirty()</ref> will be called automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to set the bounds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new bounds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___layer_1ga5a984a17781b97ce00ae34c437171934" kindref="member">layer_set_frame()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5564" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5564" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga0e7f5b5a70fceadc6245974306b11025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_set_clips</definition>
+        <argsstring>(Layer *layer, bool clips)</argsstring>
+        <name>layer_set_clips</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clips</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether clipping is enabled for the layer. If enabled, whatever the layer <emphasis>and its children</emphasis> will draw using their <computeroutput>.update_proc</computeroutput> callbacks, will be clipped by the this layer&apos;s frame. If the clipping has changed, <ref refid="group___layer_1ga00bc895642aa02ae2d224659529382c8" kindref="member">layer_mark_dirty()</ref> will be called automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to set the clipping property </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clips</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Supply <computeroutput>true</computeroutput> to make the layer clip to its frame, or <computeroutput>false</computeroutput> to make it non-clipping. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5664" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5664" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga5a984a17781b97ce00ae34c437171934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_set_frame</definition>
+        <argsstring>(Layer *layer, GRect frame)</argsstring>
+        <name>layer_set_frame</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Sets the frame of the layer, which is it&apos;s bounding box relative to the coordinate system of its parent layer. The size of the layer&apos;s bounds will be extended automatically, so that the bounds cover the new frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to set the frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___layer_1ga0a99dca38b75b52264c0734b934c865c" kindref="member">layer_set_bounds()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5549" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5549" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1gac267ce4cc84b0f39297b56edf5ca4b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_set_hidden</definition>
+        <argsstring>(Layer *layer, bool hidden)</argsstring>
+        <name>layer_set_hidden</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hidden</declname>
+        </param>
+        <briefdescription>
+<para>Sets the visibility of the layer. If the visibility has changed, <ref refid="group___layer_1ga00bc895642aa02ae2d224659529382c8" kindref="member">layer_mark_dirty()</ref> will be called automatically on the parent layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The layer for which to set the visibility </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hidden</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Supply <computeroutput>true</computeroutput> to make the layer hidden, or <computeroutput>false</computeroutput> to make it non-hidden. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5650" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5650" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___layer_1ga57eddbe4fe47beefadeaf775a3c8dcaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void layer_set_update_proc</definition>
+        <argsstring>(Layer *layer, LayerUpdateProc update_proc)</argsstring>
+        <name>layer_set_update_proc</name>
+        <param>
+          <type>Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___layer_1ga998bcd33d985d252283ebe02400041ee" kindref="member">LayerUpdateProc</ref></type>
+          <declname>update_proc</declname>
+        </param>
+        <briefdescription>
+<para>Sets the layer&apos;s render function. The system will call the <computeroutput>update_proc</computeroutput> automatically when the layer needs to redraw itself, see also <ref refid="group___layer_1ga00bc895642aa02ae2d224659529382c8" kindref="member">layer_mark_dirty()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the layer structure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update_proc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the function that will be called when the layer needs to be rendered. Typically, one performs a series of drawing commands in the implementation of the <computeroutput>update_proc</computeroutput>, see <ref refid="group___drawing" kindref="compound">Drawing Primitives</ref>, <ref refid="group___path_drawing" kindref="compound">Drawing Paths</ref> and <ref refid="group___text_drawing" kindref="compound">Drawing Text</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5540" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5540" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>User interface layers for displaying graphic components </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Layers are objects that can be displayed on a Pebble watchapp window, enabling users to see visual objects, like text or images. Each layer stores the information about its state necessary to draw or redraw the object that it represents and uses graphics routines along with this state to draw itself when asked. Layers can be used to display various graphics.</para>
+<para>Layers are the basic building blocks for your application UI. Layers can be nested inside each other. Every window has a root layer which is always the topmost layer. You provide a function that is called to draw the content of the layer when needed; or you can use standard layers that are provided by the system, such as text layer, image layer, menu layer, action bar layer, and so on.</para>
+<para>The Pebble layer hierarchy is the list of things that need to be drawn to the screen. Multiple layers can be arranged into a hierarchy. This enables ordering (front to back), layout and hierarchy. Through relative positioning, visual objects that are grouped together by adding them into the same layer can be moved all at once. This means that the child layers will move accordingly. If a parent layer has clipping enabled, all the children will be clipped to the frame of the parent.</para>
+<para>Pebble OS provides convenience layers with built-in logic for displaying different graphic components, like text and bitmap layers.</para>
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+</htmlonly> (chapter &quot;Layers&quot;) for a conceptual overview of Layers and relevant code examples.</para>
+<para>The Modules listed here contain what can be thought of conceptually as subclasses of Layer. The listed types can be safely type-casted to <computeroutput><ref refid="group___layer" kindref="compound">Layers</ref></computeroutput> (or <computeroutput><ref refid="group___layer" kindref="compound">Layers</ref> *</computeroutput> in case of a pointer). The <computeroutput>layer_...</computeroutput> functions can then be used with the data structures of these subclasses. <linebreak/>
+For example, the following is legal: <programlisting filename=".c"><codeline><highlight class="normal">TextLayer<sp/>*text_layer;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">layer_set_hidden((Layer<sp/>*)text_layer,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

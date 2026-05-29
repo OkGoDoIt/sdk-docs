@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_action_menu_config" kind="struct" language="C++" prot="public">
+    <compoundname>ActionMenuConfig</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_action_menu_config_1a23e7ed3b6c5b91ff6bc3f2cebeb3f890" prot="public" static="no" mutable="no">
+        <type>ActionMenuAlign</type>
+        <definition>ActionMenuAlign ActionMenuConfig::align</definition>
+        <argsstring></argsstring>
+        <name>align</name>
+        <qualifiedname>ActionMenuConfig::align</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8490" column="19" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_action_menu_config_1a7c0ad222fd92bf4373db32946035a22e" prot="public" static="no" mutable="no">
+        <type>struct ActionMenuConfig::@307241372117044217000353320234367311377311237046</type>
+        <definition>struct ActionMenuConfig::@307241372117044217000353320234367311377311237046 ActionMenuConfig::colors</definition>
+        <argsstring></argsstring>
+        <name>colors</name>
+        <qualifiedname>ActionMenuConfig::colors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8487" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_action_menu_config_1a0d96519c4aaba091722b3bd0f0e4860e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ActionMenuConfig::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>ActionMenuConfig::context</qualifiedname>
+        <briefdescription>
+<para>a context pointer which will be accessbile when actions are performed </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8483" column="8" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_action_menu_config_1a1cc3e28b2ae2a4aa130eab62b6f9b0f6" prot="public" static="no" mutable="no">
+        <type><ref refid="group___action_menu_1gab8a47f774bb7714e5da88cdceb2d108d" kindref="member">ActionMenuDidCloseCb</ref></type>
+        <definition>ActionMenuDidCloseCb ActionMenuConfig::did_close</definition>
+        <argsstring></argsstring>
+        <name>did_close</name>
+        <qualifiedname>ActionMenuConfig::did_close</qualifiedname>
+        <briefdescription>
+<para>a callback used to cleanup memory after the menu has closed </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8489" column="24" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_action_menu_config_1ab1ddd5b3a602bfc7a383854c672e12ec" prot="public" static="no" mutable="no">
+        <type>const ActionMenuLevel *</type>
+        <definition>const ActionMenuLevel* ActionMenuConfig::root_level</definition>
+        <argsstring></argsstring>
+        <name>root_level</name>
+        <qualifiedname>ActionMenuConfig::root_level</qualifiedname>
+        <briefdescription>
+<para>the root level of the ActionMenu </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8482" column="25" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_action_menu_config_1a88e39a8e30efbaf4668509fff34b7f17" prot="public" static="no" mutable="no">
+        <type><ref refid="group___action_menu_1gab8a47f774bb7714e5da88cdceb2d108d" kindref="member">ActionMenuDidCloseCb</ref></type>
+        <definition>ActionMenuDidCloseCb ActionMenuConfig::will_close</definition>
+        <argsstring></argsstring>
+        <name>will_close</name>
+        <qualifiedname>ActionMenuConfig::will_close</qualifiedname>
+        <briefdescription>
+<para>Called immediately before the ActionMenu closes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8488" column="24" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8488" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration struct for the ActionMenu. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="8481" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8481" bodyend="8491"/>
+    <listofallmembers>
+      <member refid="struct_action_menu_config_1a23e7ed3b6c5b91ff6bc3f2cebeb3f890" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>align</name></member>
+      <member refid="struct_action_menu_config_1a7c0ad222fd92bf4373db32946035a22e" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>colors</name></member>
+      <member refid="struct_action_menu_config_1a0d96519c4aaba091722b3bd0f0e4860e" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>context</name></member>
+      <member refid="struct_action_menu_config_1a1cc3e28b2ae2a4aa130eab62b6f9b0f6" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>did_close</name></member>
+      <member refid="struct_action_menu_config_1ab1ddd5b3a602bfc7a383854c672e12ec" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>root_level</name></member>
+      <member refid="struct_action_menu_config_1a88e39a8e30efbaf4668509fff34b7f17" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>will_close</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

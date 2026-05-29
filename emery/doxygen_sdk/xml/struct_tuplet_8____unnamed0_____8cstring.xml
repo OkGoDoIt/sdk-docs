@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_tuplet_8____unnamed0_____8cstring" kind="struct" language="C++" prot="public">
+    <compoundname>Tuplet.__unnamed0__.cstring</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_tuplet_8____unnamed0_____8cstring_1a8d777f385d3dfec8815d20f7496026dc" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Tuplet.__unnamed0__.cstring::data</qualifiedname>
+        <briefdescription>
+<para>Pointer to the c-string data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1970" column="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tuplet_8____unnamed0_____8cstring_1a2fa47f7c65fec19cc163b195725e3844" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>Tuplet.__unnamed0__.cstring::length</qualifiedname>
+        <briefdescription>
+<para>Length of the c-string, including terminating zero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1972" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Valid when <computeroutput>.type.</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a73c9d3384801aec20d36c732d9218dab" kindref="member">TUPLE_CSTRING</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="1968" column="5" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1968" bodyend="1973"/>
+    <listofallmembers>
+      <member refid="struct_tuplet_8____unnamed0_____8cstring_1a8d777f385d3dfec8815d20f7496026dc" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__.cstring</scope><name>data</name></member>
+      <member refid="struct_tuplet_8____unnamed0_____8cstring_1a2fa47f7c65fec19cc163b195725e3844" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__.cstring</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

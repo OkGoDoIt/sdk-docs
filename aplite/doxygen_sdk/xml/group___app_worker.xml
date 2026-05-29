@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___app_worker" kind="group">
     <compoundname>AppWorker</compoundname>
     <title>AppWorker</title>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2784" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2784" bodyend="2797"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2754" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2754" bodyend="2767"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2823" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2823" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2793" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2793" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2808" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2808" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2778" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2778" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_worker_1ga9a99c4ec6caf05627b53c49349f96e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_worker_1ga9732697a0e5e5718dfb265e061ec6a5d" kindref="member">AppWorkerResult</ref></type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2818" column="17" declfile="build/sdk/aplite/include/pebble.h" declline="2818" declcolumn="17"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2788" column="17" declfile="build/sdk/aplite/include/pebble.h" declline="2788" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="group___app_worker_1ga84f6780cd67e429f9b569eee36862d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___app_worker_1ga9732697a0e5e5718dfb265e061ec6a5d" kindref="member">AppWorkerResult</ref></type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2813" column="17" declfile="build/sdk/aplite/include/pebble.h" declline="2813" declcolumn="17"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2783" column="17" declfile="build/sdk/aplite/include/pebble.h" declline="2783" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="group___app_worker_1gae93a0baab484dda8e75e3d5699fd7463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2829" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2829" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2799" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2799" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_worker_1gabdd29f332fcaf8785fa2c73cf55addf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2833" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2833" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2803" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2803" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_worker_1gac1a4c6ddd568429bded6373d00559fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -255,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2838" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2838" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2808" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2808" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

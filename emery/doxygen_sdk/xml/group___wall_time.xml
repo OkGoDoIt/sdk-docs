@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___wall_time" kind="group">
+    <compoundname>WallTime</compoundname>
+    <title>Wall Time</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___wall_time_1ga38e35eaba0dce3be153ec798fb175de5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WeekDay</name>
+        <enumvalue id="group___wall_time_1gga38e35eaba0dce3be153ec798fb175de5ac738929b5715d2179b64240f54a7677e" prot="public">
+          <name>TODAY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Today. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___wall_time_1gga38e35eaba0dce3be153ec798fb175de5ad86a75e0b97510de54435996ae45b8d2" prot="public">
+          <name>SUNDAY</name>
+          <briefdescription>
+<para>Sunday. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___wall_time_1gga38e35eaba0dce3be153ec798fb175de5ac82db3248a96794aaefb922ea5fb293c" prot="public">
+          <name>MONDAY</name>
+          <briefdescription>
+<para>Monday. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___wall_time_1gga38e35eaba0dce3be153ec798fb175de5a347c4455723bb1bc2709647607a2b282" prot="public">
+          <name>TUESDAY</name>
+          <briefdescription>
+<para>Tuesday. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___wall_time_1gga38e35eaba0dce3be153ec798fb175de5a68288a23958cd9e1705fd81f0ee729c7" prot="public">
+          <name>WEDNESDAY</name>
+          <briefdescription>
+<para>Wednesday. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___wall_time_1gga38e35eaba0dce3be153ec798fb175de5ab4bfd6f883437c6cf31486dcf03ce0ff" prot="public">
+          <name>THURSDAY</name>
+          <briefdescription>
+<para>Thursday. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___wall_time_1gga38e35eaba0dce3be153ec798fb175de5a8f589731fd90a9890c0df9a9c3f96131" prot="public">
+          <name>FRIDAY</name>
+          <briefdescription>
+<para>Friday. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___wall_time_1gga38e35eaba0dce3be153ec798fb175de5a31bbcd6fa6a28095ef8de658126aa5ec" prot="public">
+          <name>SATURDAY</name>
+          <briefdescription>
+<para>Saturday. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Weekday values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="351" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="351" bodyend="360"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___wall_time_1ga5ddf6b7454fd49c0eb63d2e50d75fad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clock_copy_time_string</definition>
+        <argsstring>(char *buffer, uint8_t size)</argsstring>
+        <name>clock_copy_time_string</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Copies a time string into the buffer, formatted according to the user&apos;s time display preferences (such as 12h/24h time). Example results: &quot;7:30&quot; or &quot;15:00&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>AM/PM are also outputted with the time if the user&apos;s preference is 12h time. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the buffer to copy the time string into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum size of buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="368" column="6" declfile="build/sdk/emery/include/pebble.h" declline="368" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wall_time_1gae34db14b2f1e369c23894bffb6663fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clock_get_timezone</definition>
+        <argsstring>(char *timezone, const size_t buffer_size)</argsstring>
+        <name>clock_get_timezone</name>
+        <param>
+          <type>char *</type>
+          <declname>timezone</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>If timezone is set, copies the current timezone long name (e.g. America/Chicago) to user-provided buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timezone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the buffer to copy the timezone long name into </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the allocated buffer to copy the timezone long name into </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>timezone buffer should be at least TIMEZONE_NAME_LENGTH bytes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="396" column="6" declfile="build/sdk/emery/include/pebble.h" declline="396" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wall_time_1ga69393fbc51be905740fff59a150bdca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool clock_is_24h_style</definition>
+        <argsstring>(void)</argsstring>
+        <name>clock_is_24h_style</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the user&apos;s 12/24h clock style preference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the user prefers 24h-style time display or <computeroutput>false</computeroutput> if the user prefers 12h-style time display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="373" column="6" declfile="build/sdk/emery/include/pebble.h" declline="373" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wall_time_1ga95c658aa0d511e4b4ca549724e02ce72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool clock_is_timezone_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>clock_is_timezone_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks if timezone is currently set, otherwise gmtime == localtime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if timezone has been set, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="386" column="6" declfile="build/sdk/emery/include/pebble.h" declline="386" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wall_time_1ga170869bfe009abc85f093b0f80224009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+        <definition>time_t clock_to_timestamp</definition>
+        <argsstring>(WeekDay day, int hour, int minute)</argsstring>
+        <name>clock_to_timestamp</name>
+        <param>
+          <type><ref refid="group___wall_time_1ga38e35eaba0dce3be153ec798fb175de5" kindref="member">WeekDay</ref></type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minute</declname>
+        </param>
+        <briefdescription>
+<para>Converts a (day, hour, minute) specification to a UTC timestamp occurring in the future Always returns a timestamp for the next occurring instance, example: specifying TODAY@14:30 when it is 14:40 will return a timestamp for 7 days from now at 14:30. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___wall_time_1ga38e35eaba0dce3be153ec798fb175de5" kindref="member">WeekDay</ref> day of week including support for specifying TODAY </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hour specified in 24-hour format [0-23] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minute [0-59] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="382" column="8" declfile="build/sdk/emery/include/pebble.h" declline="382" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___wall_time_1ga4bed5f27a148b3560766fb6e2e573e01" prot="public" static="no">
+        <name>TIMEZONE_NAME_LENGTH</name>
+        <initializer>32</initializer>
+        <briefdescription>
+<para>The maximum length for a timezone full name (e.g. America/Chicago). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="389" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Functions, data structures and other things related to wall clock time. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This module contains utilities to get the current time and create strings with formatted dates and times. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

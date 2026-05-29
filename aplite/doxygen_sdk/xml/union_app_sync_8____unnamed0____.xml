@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="union_app_sync_8____unnamed0____" kind="union" language="C++" prot="public">
     <compoundname>AppSync.__unnamed0__</compoundname>
     <sectiondef kind="public-attrib">
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2526" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2469" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="union_app_sync_8____unnamed0_____1a43b5c9175984c071f30b873fdce0a000" prot="public" static="no" mutable="no">
         <type>Dictionary *</type>
@@ -29,14 +29,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2525" column="16"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2468" column="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="2524" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2524" bodyend="2527"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="2467" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2467" bodyend="2470"/>
     <listofallmembers>
       <member refid="union_app_sync_8____unnamed0_____1a7f2db423a49b305459147332fb01cf87" prot="public" virt="non-virtual"><scope>AppSync.__unnamed0__</scope><name>buffer</name></member>
       <member refid="union_app_sync_8____unnamed0_____1a43b5c9175984c071f30b873fdce0a000" prot="public" virt="non-virtual"><scope>AppSync.__unnamed0__</scope><name>current</name></member>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___platform" kind="group">
+    <compoundname>Platform</compoundname>
+    <title>Platform</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___platform_1ga527bfd1a86584280ea4bb3f8a1f8d523" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PlatformType</name>
+        <enumvalue id="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523ad5dc5fde65c949f7c38c002022d5bc23" prot="public">
+          <name>PlatformTypeAplite</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523a29796f4879f7cc6cd6b951bdd6eb80c9" prot="public">
+          <name>PlatformTypeBasalt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523a528f501f04b683d8b9b7e9f7e58f4c1f" prot="public">
+          <name>PlatformTypeChalk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523a7899685934cc5893d902af47ca92c65e" prot="public">
+          <name>PlatformTypeDiorite</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523a51ab53d390602dda73828e892a9f9e80" prot="public">
+          <name>PlatformTypeEmery</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523a322eddbce6297f690b1a7b6b56211306" prot="public">
+          <name>PlatformTypeFlint</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523abec3788cd011476e3748d8e4d47ac550" prot="public">
+          <name>PlatformTypeGabbro</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="403" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="403" bodyend="411"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___platform_1gad94a0ee6bc4084aabc0ddacc3a3ef8a8" prot="public" static="no">
+        <name>PBL_PLATFORM_SWITCH</name>
+        <param><defname>PLAT</defname></param>
+        <param><defname>APLITE</defname></param>
+        <param><defname>BASALT</defname></param>
+        <param><defname>CHALK</defname></param>
+        <param><defname>DIORITE</defname></param>
+        <param><defname>EMERY</defname></param>
+        <param><defname>FLINT</defname></param>
+        <param><defname>GABBRO</defname></param>
+        <initializer>PBL_PLATFORM_SWITCH_DEFAULT(PLAT, APLITE, APLITE, BASALT, CHALK, DIORITE, EMERY, FLINT, GABBRO)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="426" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="426" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="define" id="group___platform_1gac0b8413a5b0613d77263aa5abf2d1f3c" prot="public" static="no">
+        <name>PBL_PLATFORM_SWITCH_DEFAULT</name>
+        <param><defname>PLAT</defname></param>
+        <param><defname>DEFAULT</defname></param>
+        <param><defname>APLITE</defname></param>
+        <param><defname>BASALT</defname></param>
+        <param><defname>CHALK</defname></param>
+        <param><defname>DIORITE</defname></param>
+        <param><defname>EMERY</defname></param>
+        <param><defname>FLINT</defname></param>
+        <param><defname>GABBRO</defname></param>
+        <initializer>  (\
+  ((PLAT) == PlatformTypeFlint) ? (FLINT) : \
+  ((PLAT) == PlatformTypeEmery) ? (EMERY) : \
+  ((PLAT) == PlatformTypeDiorite) ? (DIORITE) : \
+  ((PLAT) == PlatformTypeChalk) ? (CHALK) : \
+  ((PLAT) == PlatformTypeBasalt) ? (BASALT) : \
+  ((PLAT) == PlatformTypeAplite) ? (APLITE) : \
+  ((PLAT) == PlatformTypeGabbro) ? (GABBRO) : \
+  (DEFAULT) \
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="415" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="415" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="define" id="group___platform_1gad161dc5d2e3ce42441da0c99fd9ccd2c" prot="public" static="no">
+        <name>PBL_PLATFORM_TYPE_CURRENT</name>
+        <initializer>PlatformTypeEmery</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="413" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

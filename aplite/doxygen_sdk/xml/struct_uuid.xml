@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_uuid" kind="struct" language="C++" prot="public">
     <compoundname>Uuid</compoundname>
     <sectiondef kind="public-attrib">
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1485" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1485" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1428" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1428" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1acd601719f97d4554c9544e691f10b626" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1486" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1486" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1429" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1429" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a9c4a2a8d5331350fc4c999165427b27a" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1495" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1495" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1438" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1438" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a77516abc51ca0b86999dd528432efaa3" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1496" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1496" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1439" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1439" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a37b5156095ea637b9a4e8cbc9c643263" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1497" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1497" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1440" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1440" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1af3f5a8d61556674146739876fc452cf9" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1498" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1498" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1441" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1441" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1ad04598eff57da2a6f6e68fa25b063055" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1499" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1499" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1442" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1442" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a185ed95644e4a46875ef8535ca5a8bc0" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1500" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1500" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1443" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1443" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a1616425d3d2f57558296b0f775fe8c66" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1487" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1487" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1430" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1430" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1ad3eb00c5e15549d7ace3389cdd61f8cf" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1488" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1488" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1431" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1431" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1aab02d39a2c8cab6f3bf37c1ee499170d" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1489" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1489" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1432" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1432" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a97c544980b85511e204578d9f41777a4" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1490" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1490" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1433" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1433" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1ab71527e9dc32f3d8c92636851e978531" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1491" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1491" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1434" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1434" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a897eca8998ae632db3e30d2360bf4163" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1492" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1492" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1435" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1435" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a01457ef5912146347444666237ef3b9c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1493" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1493" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1436" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1436" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_uuid_1a270e566690dd4e97438f6c7b40464b65" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -225,14 +225,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1494" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1494" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1437" column="11" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1437" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="1484" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1484" bodyend="1501"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="1427" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1427" bodyend="1444"/>
     <listofallmembers>
       <member refid="struct_uuid_1acbb33d696a0372ef92f948948f6f475c" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte0</name></member>
       <member refid="struct_uuid_1acd601719f97d4554c9544e691f10b626" prot="public" virt="non-virtual"><scope>Uuid</scope><name>byte1</name></member>

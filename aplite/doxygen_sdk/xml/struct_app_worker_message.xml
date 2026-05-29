@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_app_worker_message" kind="struct" language="C++" prot="public">
     <compoundname>AppWorkerMessage</compoundname>
     <includes local="no">pebble.h</includes>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2801" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2801" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2771" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2771" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_app_worker_message_1af2dc5659d8a2baf88498c3aa22a95995" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2802" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2802" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2772" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2772" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_app_worker_message_1ac2e93e4325306b77d7dc639fcf1b92d2" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2803" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2803" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2773" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2773" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -52,7 +52,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="2800" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2800" bodyend="2804"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="2770" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2770" bodyend="2774"/>
     <listofallmembers>
       <member refid="struct_app_worker_message_1a40a82cd6bd398a8aef2c7c316a34c492" prot="public" virt="non-virtual"><scope>AppWorkerMessage</scope><name>data0</name></member>
       <member refid="struct_app_worker_message_1af2dc5659d8a2baf88498c3aa22a95995" prot="public" virt="non-virtual"><scope>AppWorkerMessage</scope><name>data1</name></member>

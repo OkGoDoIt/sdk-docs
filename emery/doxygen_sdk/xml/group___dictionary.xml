@@ -1,0 +1,1513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___dictionary" kind="group">
+    <compoundname>Dictionary</compoundname>
+    <title>Dictionary</title>
+    <innerclass refid="struct_dictionary_iterator" prot="public">DictionaryIterator</innerclass>
+    <innerclass refid="struct_tuple" prot="public">Tuple</innerclass>
+    <innerclass refid="union_tuple_8value" prot="public">Tuple.value</innerclass>
+    <innerclass refid="struct_tuplet" prot="public">Tuplet</innerclass>
+    <innerclass refid="union_tuplet_8____unnamed0____" prot="public">Tuplet.__unnamed0__</innerclass>
+    <innerclass refid="struct_tuplet_8____unnamed0_____8bytes" prot="public">Tuplet.__unnamed0__.bytes</innerclass>
+    <innerclass refid="struct_tuplet_8____unnamed0_____8cstring" prot="public">Tuplet.__unnamed0__.cstring</innerclass>
+    <innerclass refid="struct_tuplet_8____unnamed0_____8integer" prot="public">Tuplet.__unnamed0__.integer</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DictionaryResult</name>
+        <enumvalue id="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" prot="public">
+          <name>DICT_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The operation returned successfully. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" prot="public">
+          <name>DICT_NOT_ENOUGH_STORAGE</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>There was not enough backing storage to complete the operation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" prot="public">
+          <name>DICT_INVALID_ARGS</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>One or more arguments were invalid or uninitialized. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351ad1c1a2b4398b21aca5d171b47f1b6876" prot="public">
+          <name>DICT_INTERNAL_INCONSISTENCY</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>The lengths and/or count of the dictionary its tuples are inconsistent. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a613e308b84e2711144a049c512393045" prot="public">
+          <name>DICT_MALLOC_FAILED</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>A requested operation required additional memory to be allocated, but the allocation failed, likely due to insufficient remaining heap memory. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Return values for dictionary write/conversion functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1750" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1750" bodyend="1762"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___dictionary_1gaf164f32d9bda6829f1738ef3fb2c6670" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TupleType</name>
+        <enumvalue id="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad852031b350c69166303a05dbe294ec7" prot="public">
+          <name>TUPLE_BYTE_ARRAY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The value is an array of bytes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a73c9d3384801aec20d36c732d9218dab" prot="public">
+          <name>TUPLE_CSTRING</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The value is a zero-terminated, UTF-8 C-string. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a6802e5d267fdda619ffb13fc80d873fe" prot="public">
+          <name>TUPLE_UINT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>The value is an unsigned integer. The tuple&apos;s <computeroutput>.length</computeroutput> field is used to determine the size of the integer (1, 2, or 4 bytes). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad691daf1df77095c1e19fe30b6cea5b4" prot="public">
+          <name>TUPLE_INT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>The value is a signed integer. The tuple&apos;s <computeroutput>.length</computeroutput> field is used to determine the size of the integer (1, 2, or 4 bytes). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values representing the type of data that the <computeroutput>value</computeroutput> field of a <ref refid="struct_tuple" kindref="compound">Tuple</ref> contains. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1765" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1765" bodyend="1776"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___dictionary_1ga95232b296908a30079adbfcb4f71a26e" prot="public" static="no">
+        <type>struct Dictionary</type>
+        <definition>typedef struct Dictionary Dictionary</definition>
+        <argsstring></argsstring>
+        <name>Dictionary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1821" column="25" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___dictionary_1ga9dcb8cc0ffca04141354048a6e3bd379" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* DictionaryKeyUpdatedCallback) (const uint32_t key, const Tuple *new_tuple, const Tuple *old_tuple, void *context)</definition>
+        <argsstring>)(const uint32_t key, const Tuple *new_tuple, const Tuple *old_tuple, void *context)</argsstring>
+        <name>DictionaryKeyUpdatedCallback</name>
+        <briefdescription>
+<para>Type of the callback used in <ref refid="group___dictionary_1ga8ab5934dba34043d2f3319e9ff9dcfc1" kindref="member">dict_merge()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key that is being updated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new tuple. The tuple points to the actual, updated destination dictionary or NULL_TUPLE in case there was an error (e.g. backing buffer was too small). Therefore the <ref refid="struct_tuple" kindref="compound">Tuple</ref> can be used after the callback returns, until the destination dictionary storage is free&apos;d (by the application itself). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>old_tuple</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The values that will be replaced with <computeroutput>new_tuple</computeroutput>. The key, value and type will be equal to the previous tuple in the old destination dictionary, however the <computeroutput>old_tuple points to a stack-allocated copy of the old data. @param context Pointer to application specific data The storage backing </computeroutput>old_tuple` can only be used during the callback and will no longer be valid after the callback returns. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___dictionary_1ga8ab5934dba34043d2f3319e9ff9dcfc1" kindref="member">dict_merge</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2070" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___dictionary_1gac42a608a61e00467c9d2c98bbc512458" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* DictionarySerializeCallback) (const uint8_t *const data, const uint16_t size, void *context)</definition>
+        <argsstring>)(const uint8_t *const data, const uint16_t size, void *context)</argsstring>
+        <name>DictionarySerializeCallback</name>
+        <briefdescription>
+<para>Callback for <ref refid="group___dictionary_1ga6de59736dc56fcda7e4df30ba10ba0cc" kindref="member">dict_serialize_tuplets()</ref> utility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data of the serialized dictionary </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context pointer as passed in to <ref refid="group___dictionary_1ga6de59736dc56fcda7e4df30ba10ba0cc" kindref="member">dict_serialize_tuplets()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___dictionary_1ga6de59736dc56fcda7e4df30ba10ba0cc" kindref="member">dict_serialize_tuplets</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2009" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2009" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___dictionary_1ga0551d069624fb5bfc066fecfa4153bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t dict_calc_buffer_size</definition>
+        <argsstring>(const uint8_t tuple_count,...)</argsstring>
+        <name>dict_calc_buffer_size</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>tuple_count</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Calculates the number of bytes that a dictionary will occupy, given one or more value lengths that need to be stored in the dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The formula to calculate the size of a Dictionary in bytes is: <preformatted>1 + (n * 7) + D1 + ... + Dn</preformatted> Where <computeroutput>n</computeroutput> is the number of Tuples in the Dictionary and <computeroutput>Dx</computeroutput> are the sizes of the values in the Tuples. The size of the Dictionary header is 1 byte. The size of the header for each <ref refid="struct_tuple" kindref="compound">Tuple</ref> is 7 bytes. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tuple_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total number of key/value pairs in the dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sizes of each of the values that need to be stored in the dictionary. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total number of bytes of storage needed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1849" column="10" declfile="build/sdk/emery/include/pebble.h" declline="1849" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1gad31424a83643adbfd9e84c4bd37e4627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t dict_calc_buffer_size_from_tuplets</definition>
+        <argsstring>(const Tuplet *const tuplets, const uint8_t tuplets_count)</argsstring>
+        <name>dict_calc_buffer_size_from_tuplets</name>
+        <param>
+          <type>const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> *const</type>
+          <declname>tuplets</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>tuplets_count</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the number of bytes that a dictionary will occupy, given one or more Tuplets that need to be stored in the dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>See <ref refid="group___dictionary_1ga0551d069624fb5bfc066fecfa4153bde" kindref="member">dict_calc_buffer_size()</ref> for the formula for the calculation. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tuplets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of Tuplets that need to be stored in the dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tuplets_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total number of Tuplets that follow. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total number of bytes of storage needed. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_tuplet" kindref="compound">Tuplet</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2055" column="10" declfile="build/sdk/emery/include/pebble.h" declline="2055" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga51f5783824fd0eb3a484bda1931f593f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
+        <definition>Tuple * dict_find</definition>
+        <argsstring>(const DictionaryIterator *iter, const uint32_t key)</argsstring>
+        <name>dict_find</name>
+        <param>
+          <type>const <ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Tries to find a <ref refid="struct_tuple" kindref="compound">Tuple</ref> with specified key in a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator to the dictionary to search in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key for which to find a <ref refid="struct_tuple" kindref="compound">Tuple</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a found <ref refid="struct_tuple" kindref="compound">Tuple</ref>, or NULL if there was no <ref refid="struct_tuple" kindref="compound">Tuple</ref> with the specified key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2091" column="7" declfile="build/sdk/emery/include/pebble.h" declline="2091" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga8ab5934dba34043d2f3319e9ff9dcfc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_merge</definition>
+        <argsstring>(DictionaryIterator *dest, uint32_t *dest_max_size_in_out, DictionaryIterator *source, const bool update_existing_keys_only, const DictionaryKeyUpdatedCallback key_callback, void *context)</argsstring>
+        <name>dict_merge</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> *</type>
+          <declname>dest_max_size_in_out</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>update_existing_keys_only</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___dictionary_1ga9dcb8cc0ffca04141354048a6e3bd379" kindref="member">DictionaryKeyUpdatedCallback</ref></type>
+          <declname>key_callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Merges entries from another &quot;source&quot; dictionary into a &quot;destination&quot; dictionary. All Tuples from the source are written into the destination dictionary, while updating the exsting Tuples with matching keys. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination dictionary to update </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">dest_max_size_in_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>In: the maximum size of buffer backing <computeroutput>dest</computeroutput>. Out: the final size of the updated dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source dictionary of which its Tuples will be used to update dest. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update_existing_keys_only</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify True if only the existing keys in <computeroutput>dest</computeroutput> should be updated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will be called for each <ref refid="struct_tuple" kindref="compound">Tuple</ref> in the merged destination dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to app specific data that will get passed in when <computeroutput>update_key_callback</computeroutput> is called. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2082" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2082" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga0d5d65d21509a42a3113f8b09768d8c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
+        <definition>Tuple * dict_read_begin_from_buffer</definition>
+        <argsstring>(DictionaryIterator *iter, const uint8_t *const buffer, const uint16_t size)</argsstring>
+        <name>dict_read_begin_from_buffer</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const uint8_t *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the dictionary iterator with a given buffer and size, in preparation of reading key/value tuples. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The storage of the dictionary </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The storage size of the dictionary </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The first tuple in the dictionary, or NULL in case the dictionary was empty or if there was a parsing error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1932" column="8" declfile="build/sdk/emery/include/pebble.h" declline="1932" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1gac1443377d1e746e315fc943016885cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
+        <definition>Tuple * dict_read_first</definition>
+        <argsstring>(DictionaryIterator *iter)</argsstring>
+        <name>dict_read_first</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Resets the iterator back to the same state as a call to <ref refid="group___dictionary_1ga0d5d65d21509a42a3113f8b09768d8c5" kindref="member">dict_read_begin_from_buffer()</ref> would do. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The first tuple in the dictionary, or NULL in case the dictionary was empty or if there was a parsing error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1942" column="8" declfile="build/sdk/emery/include/pebble.h" declline="1942" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga0494e17cb2cb325f10d7c3172ecd676b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_tuple" kindref="compound">Tuple</ref> *</type>
+        <definition>Tuple * dict_read_next</definition>
+        <argsstring>(DictionaryIterator *iter)</argsstring>
+        <name>dict_read_next</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Progresses the iterator to the next key/value pair. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The next tuple in the dictionary, or NULL in case the end has been reached or if there was a parsing error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1937" column="8" declfile="build/sdk/emery/include/pebble.h" declline="1937" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga6de59736dc56fcda7e4df30ba10ba0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_serialize_tuplets</definition>
+        <argsstring>(DictionarySerializeCallback callback, void *context, const Tuplet *const tuplets, const uint8_t tuplets_count)</argsstring>
+        <name>dict_serialize_tuplets</name>
+        <param>
+          <type><ref refid="group___dictionary_1gac42a608a61e00467c9d2c98bbc512458" kindref="member">DictionarySerializeCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> *const</type>
+          <declname>tuplets</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>tuplets_count</declname>
+        </param>
+        <briefdescription>
+<para>Utility function that takes a list of Tuplets from which a dictionary will be serialized, ready to transmit or store. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The callback will be called before the function returns, so the data that that <computeroutput>context</computeroutput> points to, can be stack allocated. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will be called with the serialized data of the generated dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to any application specific data that gets passed into the callback. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tuplets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of Tuplets that need to be serialized into the dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tuplets_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of tuplets that follow. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2020" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2020" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1gaeaaca187fe71e6d2dd8a4eb4deec2069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_serialize_tuplets_to_buffer</definition>
+        <argsstring>(const Tuplet *const tuplets, const uint8_t tuplets_count, uint8_t *buffer, uint32_t *size_in_out)</argsstring>
+        <name>dict_serialize_tuplets_to_buffer</name>
+        <param>
+          <type>const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> *const</type>
+          <declname>tuplets</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>tuplets_count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> *</type>
+          <declname>size_in_out</declname>
+        </param>
+        <briefdescription>
+<para>Utility function that takes an array of Tuplets and serializes them into a dictionary with a given buffer and size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tuplets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of tuplets </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tuplets_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of tuplets in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer in which to write the serialized dictionary </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size_in_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The available buffer size in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">size_in_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes written </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2030" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2030" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga93526111e666de9fdca7276f6ca73c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_serialize_tuplets_to_buffer_with_iter</definition>
+        <argsstring>(DictionaryIterator *iter, const Tuplet *const tuplets, const uint8_t tuplets_count, uint8_t *buffer, uint32_t *size_in_out)</argsstring>
+        <name>dict_serialize_tuplets_to_buffer_with_iter</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> *const</type>
+          <declname>tuplets</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>tuplets_count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> *</type>
+          <declname>size_in_out</declname>
+        </param>
+        <briefdescription>
+<para>Serializes an array of Tuplets into a dictionary with a given buffer and size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tuplets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of tuplets </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tuplets_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of tuplets in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer in which to write the serialized dictionary </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size_in_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The available buffer size in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">size_in_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes written </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2040" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2040" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1gaa7fbb0db218e7e6f59eccfa2650fd645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t dict_size</definition>
+        <argsstring>(DictionaryIterator *iter)</argsstring>
+        <name>dict_size</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the size of data that has been written to the dictionary. AKA, the &quot;dictionary size&quot;. Note that this is most likely different than the size of the backing storage/backing buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total number of bytes which have been written to the dictionary. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1856" column="10" declfile="build/sdk/emery/include/pebble.h" declline="1856" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga9ec44fce51a2ce464a954b2bdd240ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_begin</definition>
+        <argsstring>(DictionaryIterator *iter, uint8_t *const buffer, const uint16_t size)</argsstring>
+        <name>dict_write_begin</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the dictionary iterator with a given buffer and size, resets and empties it, in preparation of writing key/value tuples. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The storage of the dictionary </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The storage size of the dictionary </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___dictionary_1ga0551d069624fb5bfc066fecfa4153bde" kindref="member">dict_calc_buffer_size</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___dictionary_1ga3eb27175dd477e85ddd6add9bd1f8989" kindref="member">dict_write_end</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1866" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1866" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga015dfe89d0ee2f8b4e16ddda21bcf556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_cstring</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const char *const cstring)</argsstring>
+        <name>dict_write_cstring</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const char *const</type>
+          <declname>cstring</declname>
+        </param>
+        <briefdescription>
+<para>Adds a key with a C string value pair to the dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cstring</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the zero-terminated C string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+<simplesect kind="note"><para>The string will be copied into the backing storage of the dictionary. </para>
+</simplesect>
+<simplesect kind="note"><para>There is <emphasis>no</emphasis> checking for duplicate keys. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1885" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1885" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga30091feef740732d5d6bc3cf2312642a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_data</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const uint8_t *const data, const uint16_t size)</argsstring>
+        <name>dict_write_data</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const uint8_t *const</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Adds a key with a byte array value pair to the dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the byte array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the byte array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+<simplesect kind="note"><para>The data will be copied into the backing storage of the dictionary. </para>
+</simplesect>
+<simplesect kind="note"><para>There is <emphasis>no</emphasis> checking for duplicate keys. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1876" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1876" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga3eb27175dd477e85ddd6add9bd1f8989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t dict_write_end</definition>
+        <argsstring>(DictionaryIterator *iter)</argsstring>
+        <name>dict_write_end</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>End a series of writing operations to a dictionary. This must be called before reading back from the dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The size in bytes of the finalized dictionary, or 0 if the parameters were invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1924" column="10" declfile="build/sdk/emery/include/pebble.h" declline="1924" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga8c4675ccaca8f466f87efb43ae2b2da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_int</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const void *integer, const uint8_t width_bytes, const bool is_signed)</argsstring>
+        <name>dict_write_int</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>integer</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>width_bytes</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>is_signed</declname>
+        </param>
+        <briefdescription>
+<para>Adds a key with an integer value pair to the dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the integer value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the integer value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_signed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the integer&apos;s type is signed or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+<simplesect kind="note"><para>There is <emphasis>no</emphasis> checking for duplicate keys. <ref refid="group___dictionary_1ga8c4675ccaca8f466f87efb43ae2b2da5" kindref="member">dict_write_int()</ref> is only for serializing a single integer. width_bytes can only be 1, 2, or 4. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1896" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1896" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga16ab88d25be7f5910ed679e59462df75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_int16</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const int16_t value)</argsstring>
+        <name>dict_write_int16</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1916" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1916" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga00170057efcbe91274f059b4b1999990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_int32</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const int32_t value)</argsstring>
+        <name>dict_write_int32</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1918" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1918" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga8bccc25123cb35e72ac9a13058669874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_int8</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const int8_t value)</argsstring>
+        <name>dict_write_int8</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const int8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1914" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1914" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga5ed3421ff8e8deda77545aae7d63f191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_tuplet</definition>
+        <argsstring>(DictionaryIterator *iter, const Tuplet *const tuplet)</argsstring>
+        <name>dict_write_tuplet</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> *const</type>
+          <declname>tuplet</declname>
+        </param>
+        <briefdescription>
+<para>Serializes a <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> and writes the resulting <ref refid="struct_tuple" kindref="compound">Tuple</ref> into a dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tuplet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> describing the key/value pair to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2046" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2046" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga33e8aeb09931564c43ac7d0989bd270c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_uint16</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const uint16_t value)</argsstring>
+        <name>dict_write_uint16</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1910" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1910" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga55bc40ddb66d9a0aef4c26ff64c9709e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_uint32</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const uint32_t value)</argsstring>
+        <name>dict_write_uint32</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1912" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1912" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictionary_1ga8fab9c8ce0fdae44a891c6784f4d38a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictionary_1gaafae887a6d07cde8d11885c755b55351" kindref="member">DictionaryResult</ref></type>
+        <definition>DictionaryResult dict_write_uint8</definition>
+        <argsstring>(DictionaryIterator *iter, const uint32_t key, const uint8_t value)</argsstring>
+        <name>dict_write_uint8</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Adds a key with an unsigned, 8-bit integer value pair to the dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unsigned, 8-bit integer value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351af73d82390e594bfac5d10931183b27a6" kindref="member">DICT_OK</ref>, <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a436347bb1e21285a334a96da7b9e8f04" kindref="member">DICT_NOT_ENOUGH_STORAGE</ref> or <ref refid="group___dictionary_1ggaafae887a6d07cde8d11885c755b55351a7f135de6b3f8f23083dc99dcb49ac2a2" kindref="member">DICT_INVALID_ARGS</ref> </para>
+</simplesect>
+<simplesect kind="note"><para>There is <emphasis>no</emphasis> checking for duplicate keys. </para>
+</simplesect>
+<simplesect kind="note"><para>There are counterpart functions for different signedness and widths, <computeroutput>dict_write_uint16()</computeroutput>, <computeroutput>dict_write_uint32()</computeroutput>, <computeroutput>dict_write_int8()</computeroutput>, <computeroutput>dict_write_int16()</computeroutput> and <computeroutput>dict_write_int32()</computeroutput>. The documentation is not repeated for brevity&apos;s sake. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1908" column="18" declfile="build/sdk/emery/include/pebble.h" declline="1908" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___dictionary_1ga8d30623394e3c7e368ea9403412e9c79" prot="public" static="no">
+        <name>TupletBytes</name>
+        <param><defname>_key</defname></param>
+        <param><defname>_data</defname></param>
+        <param><defname>_length</defname></param>
+        <initializer>((const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>) { .type = <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad852031b350c69166303a05dbe294ec7" kindref="member">TUPLE_BYTE_ARRAY</ref>, .key = _key, .bytes = { .data = _data, .length = _length }})</initializer>
+        <briefdescription>
+<para>Macro to create a <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> with a byte array value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1989" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1989" bodyend="1990"/>
+      </memberdef>
+      <memberdef kind="define" id="group___dictionary_1ga6bc99ab1d451b29385733bb92f3c937a" prot="public" static="no">
+        <name>TupletCString</name>
+        <param><defname>_key</defname></param>
+        <param><defname>_cstring</defname></param>
+        <initializer>((const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>) { .type = <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a73c9d3384801aec20d36c732d9218dab" kindref="member">TUPLE_CSTRING</ref>, .key = _key, .cstring = { .data = _cstring, .length = _cstring ? <ref refid="group___standard_string_1ga008e171a518fe0e0352f31b245e03875" kindref="member">strlen</ref>(_cstring) + 1 : 0 }})</initializer>
+        <briefdescription>
+<para>Macro to create a <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> with a c-string value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_cstring</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The c-string value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1995" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1995" bodyend="1996"/>
+      </memberdef>
+      <memberdef kind="define" id="group___dictionary_1ga152caed0a3d5db76c063b69a01157e57" prot="public" static="no">
+        <name>TupletInteger</name>
+        <param><defname>_key</defname></param>
+        <param><defname>_integer</defname></param>
+        <initializer>((const <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>) { .type = IS_SIGNED(_integer) ? <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad691daf1df77095c1e19fe30b6cea5b4" kindref="member">TUPLE_INT</ref> : <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a6802e5d267fdda619ffb13fc80d873fe" kindref="member">TUPLE_UINT</ref>, .key = _key, .integer = { .storage = _integer, .width = sizeof(_integer) }})</initializer>
+        <briefdescription>
+<para>Macro to create a <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> with an integer value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2001" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2001" bodyend="2002"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data serialization utilities </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Data residing in different parts of Pebble memory (RAM) may need to be gathered and assembled into a single continuous block for transport over the network via Bluetooth. The process of gathering and assembling this continuous block of data is called serialization.</para>
+<para>You use data serialization utilities, like Dictionary, <ref refid="struct_tuple" kindref="compound">Tuple</ref> and <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> data structures and accompanying functions, to accomplish this task. No transformations are performed on the actual data, however. These Pebble utilities simply help assemble the data into one continuous buffer according to a specific format.</para>
+<para><ref refid="group___app_message" kindref="compound">AppMessage</ref> uses these utilities<ndash/>in particular, Dictionary<ndash/>to send information between mobile and Pebble watchapps.</para>
+<para><heading level="3">Writing key/value pairs</heading>
+</para>
+<para>To write two key/value pairs, without using Tuplets, you would do this: <programlisting filename=".c"><codeline><highlight class="comment">//<sp/>Byte<sp/>array<sp/>+<sp/>key:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>SOME_DATA_KEY<sp/>=<sp/>0xb00bf00b;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>data[]<sp/>=<sp/>{0,<sp/>1,<sp/>2,<sp/>3,<sp/>4,<sp/>5,<sp/>6,<sp/>7,<sp/>8,<sp/>9};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>CString<sp/>+<sp/>key:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>SOME_STRING_KEY<sp/>=<sp/>0xabbababe;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Hello<sp/>World&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Calculate<sp/>the<sp/>buffer<sp/>size<sp/>that<sp/>is<sp/>needed<sp/>for<sp/>the<sp/>final<sp/>Dictionary:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>key_count<sp/>=<sp/>2;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>size<sp/>=<sp/><ref refid="group___dictionary_1ga0551d069624fb5bfc066fecfa4153bde" kindref="member">dict_calc_buffer_size</ref>(key_count,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___standard_string_1ga008e171a518fe0e0352f31b245e03875" kindref="member">strlen</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>+<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Stack-allocated<sp/>buffer<sp/>in<sp/>which<sp/>to<sp/>create<sp/>the<sp/>Dictionary:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/>buffer[size];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Iterator<sp/>variable,<sp/>keeps<sp/>the<sp/>state<sp/>of<sp/>the<sp/>creation<sp/>serialization<sp/>process:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref><sp/>iter;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Begin:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___dictionary_1ga9ec44fce51a2ce464a954b2bdd240ded" kindref="member">dict_write_begin</ref>(&amp;iter,<sp/>buffer,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(buffer));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Write<sp/>the<sp/>Data:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___dictionary_1ga30091feef740732d5d6bc3cf2312642a" kindref="member">dict_write_data</ref>(&amp;iter,<sp/>SOME_DATA_KEY,<sp/>data,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Write<sp/>the<sp/>CString:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___dictionary_1ga015dfe89d0ee2f8b4e16ddda21bcf556" kindref="member">dict_write_cstring</ref>(&amp;iter,<sp/>SOME_STRING_KEY,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>End:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>final_size<sp/>=<sp/><ref refid="group___dictionary_1ga3eb27175dd477e85ddd6add9bd1f8989" kindref="member">dict_write_end</ref>(&amp;iter);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>buffer<sp/>now<sp/>contains<sp/>the<sp/>serialized<sp/>information</highlight></codeline>
+</programlisting></para>
+<para><heading level="3">Reading key/value pairs</heading>
+</para>
+<para>To iterate over the key/value pairs in the dictionary that was created in the previous example code, you would do this:</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal"><ref refid="struct_tuple" kindref="compound">Tuple</ref><sp/>*tuple<sp/>=<sp/><ref refid="group___dictionary_1ga0d5d65d21509a42a3113f8b09768d8c5" kindref="member">dict_read_begin_from_buffer</ref>(&amp;iter,<sp/>buffer,<sp/>final_size);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tuple)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(tuple-&gt;<ref refid="struct_tuple_1ae0a5c5233ca231aa7c1a368d340a97c0" kindref="member">key</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SOME_DATA_KEY:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>foo(tuple-&gt;<ref refid="struct_tuple_1abffe03a348ffad0015ac86d9857d5994" kindref="member">value</ref>-&gt;data,<sp/>tuple-&gt;<ref refid="struct_tuple_1ac83219d80bf6300b0afe53d5b30955a9" kindref="member">length</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SOME_STRING_KEY:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>bar(tuple-&gt;<ref refid="struct_tuple_1abffe03a348ffad0015ac86d9857d5994" kindref="member">value</ref>-&gt;cstring);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>tuple<sp/>=<sp/><ref refid="group___dictionary_1ga0494e17cb2cb325f10d7c3172ecd676b" kindref="member">dict_read_next</ref>(&amp;iter);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><heading level="3"><ref refid="struct_tuple" kindref="compound">Tuple</ref> and <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> data structures</heading>
+</para>
+<para>To understand the difference between <ref refid="struct_tuple" kindref="compound">Tuple</ref> and <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> data structures: <ref refid="struct_tuple" kindref="compound">Tuple</ref> is the header for a serialized key/value pair, while <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> is a helper data structure that references the value you want to serialize. This data structure exists to make the creation of a Dictionary easier to write. Use this mnemonic to remember the difference: TupleT(emplate), the <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> being a template to create a Dictionary with <ref refid="struct_tuple" kindref="compound">Tuple</ref> structures.</para>
+<para>For example: <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="struct_tuplet" kindref="compound">Tuplet</ref><sp/>pairs[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___dictionary_1ga152caed0a3d5db76c063b69a01157e57" kindref="member">TupletInteger</ref>(WEATHER_ICON_KEY,<sp/>(uint8_t)<sp/>1),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___dictionary_1ga6bc99ab1d451b29385733bb92f3c937a" kindref="member">TupletCString</ref>(WEATHER_TEMPERATURE_KEY,<sp/></highlight><highlight class="stringliteral">&quot;1234<sp/>Fahrenheit&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">uint8_t<sp/>buffer[256];</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(buffer);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___dictionary_1gaeaaca187fe71e6d2dd8a4eb4deec2069" kindref="member">dict_serialize_tuplets_to_buffer</ref>(pairs,<sp/>ARRAY_LENGTH(pairs),<sp/>buffer,<sp/>&amp;size);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>buffer<sp/>now<sp/>contains<sp/>the<sp/>serialized<sp/>information</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

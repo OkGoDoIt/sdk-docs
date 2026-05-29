@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___app_focus_service" kind="group">
+    <compoundname>AppFocusService</compoundname>
+    <title>AppFocusService</title>
+    <innerclass refid="struct_app_focus_handlers" prot="public">AppFocusHandlers</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___app_focus_service_1ga6a6ebdab396361f14aef0c252efc96bb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppFocusHandler) (bool in_focus)</definition>
+        <argsstring>)(bool in_focus)</argsstring>
+        <name>AppFocusHandler</name>
+        <briefdescription>
+<para>Callback type for focus events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_focus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the app is gaining focus, false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="533" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___app_focus_service_1gad3b5ca8c13082e236e1334d60307ae9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_focus_service_subscribe</definition>
+        <argsstring>(AppFocusHandler handler)</argsstring>
+        <name>app_focus_service_subscribe</name>
+        <param>
+          <type><ref refid="group___app_focus_service_1ga6a6ebdab396361f14aef0c252efc96bb" kindref="member">AppFocusHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to the focus event service. Once subscribed, the handler gets called every time the app focus changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Calling this function is equivalent to <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group___app_focus_service_1ga519e14f1ff52ade4c3a3ccdf04825460" kindref="member">app_focus_service_subscribe_handlers</ref>((<ref refid="struct_app_focus_handlers" kindref="compound">AppFocusHandlers</ref>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.will_focus<sp/>=<sp/>handler,</highlight></codeline>
+<codeline><highlight class="normal">});</highlight></codeline>
+</programlisting> </para>
+</simplesect>
+<simplesect kind="note"><para>Out focus events are triggered when a modal window is about to open and cover the app. </para>
+</simplesect>
+<simplesect kind="note"><para>In focus events are triggered when a modal window which is covering the app is about to close. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback to be called on will-focus events. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="581" column="6" declfile="build/sdk/emery/include/pebble.h" declline="581" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_focus_service_1ga519e14f1ff52ade4c3a3ccdf04825460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_focus_service_subscribe_handlers</definition>
+        <argsstring>(AppFocusHandlers handlers)</argsstring>
+        <name>app_focus_service_subscribe_handlers</name>
+        <param>
+          <type><ref refid="struct_app_focus_handlers" kindref="compound">AppFocusHandlers</ref></type>
+          <declname>handlers</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to the focus event service. Once subscribed, the handlers get called every time the app gains or loses focus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handlers which will be called on will-focus and did-focus events. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="struct_app_focus_handlers" kindref="compound">AppFocusHandlers</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="567" column="6" declfile="build/sdk/emery/include/pebble.h" declline="567" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_focus_service_1ga28a3e31c137ca5d5c563701aee986726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_focus_service_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_focus_service_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from the focus event service. Once unsubscribed, the previously registered handlers will no longer be called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="585" column="6" declfile="build/sdk/emery/include/pebble.h" declline="585" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handling app focus The AppFocusService allows developers to be notified when their apps become visible on the screen. Common reasons your app may be running but not be on screen are: it&apos;s still in the middle of launching and being revealed by a system animation, or it is being covered by a system window such as a notification. This service is useful for apps that require a high degree of user interactivity, like a game where you&apos;ll want to pause when a notification covers your app window. It can be also used for apps that want to sync up an intro animation to the end of the system animation that occurs before your app is visible. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

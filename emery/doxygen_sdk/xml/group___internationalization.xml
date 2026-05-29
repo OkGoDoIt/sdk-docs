@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___internationalization" kind="group">
+    <compoundname>Internationalization</compoundname>
+    <title>Internationalization</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___internationalization_1ga59393a889e8841782de64f37366840a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * i18n_get_system_locale</definition>
+        <argsstring>(void)</argsstring>
+        <name>i18n_get_system_locale</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the ISO locale name for the language currently set on the watch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A string containing the ISO locale name (e.g. &quot;fr&quot;, &quot;en_US&quot;, ...) </para>
+</simplesect>
+<simplesect kind="note"><para>It is possible for the locale to change while your app is running. And thus, two calls to i18n_get_system_locale may return different values. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="194" column="12" declfile="build/sdk/emery/include/pebble.h" declline="194" declcolumn="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Internationalization &amp; Localization APIs </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

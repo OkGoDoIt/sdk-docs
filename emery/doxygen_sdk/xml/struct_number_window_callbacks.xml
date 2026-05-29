@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_number_window_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>NumberWindowCallbacks</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_number_window_callbacks_1abdd61f04b83744b16efb197e578abc4d" prot="public" static="no" mutable="no">
+        <type><ref refid="group___number_window_1gacb00b785040c9b8ef732564face6b6cd" kindref="member">NumberWindowCallback</ref></type>
+        <definition>NumberWindowCallback NumberWindowCallbacks::decremented</definition>
+        <argsstring></argsstring>
+        <name>decremented</name>
+        <qualifiedname>NumberWindowCallbacks::decremented</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called as the value is decremented. Optional, leave <computeroutput>NULL</computeroutput> if unused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8369" column="24" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_number_window_callbacks_1a859555b6e90e9f30ebf83ade1843edb4" prot="public" static="no" mutable="no">
+        <type><ref refid="group___number_window_1gacb00b785040c9b8ef732564face6b6cd" kindref="member">NumberWindowCallback</ref></type>
+        <definition>NumberWindowCallback NumberWindowCallbacks::incremented</definition>
+        <argsstring></argsstring>
+        <name>incremented</name>
+        <qualifiedname>NumberWindowCallbacks::incremented</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called as the value is incremented. Optional, leave <computeroutput>NULL</computeroutput> if unused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8366" column="24" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_number_window_callbacks_1a4e684ff178c36b96c583fd5e292ee542" prot="public" static="no" mutable="no">
+        <type><ref refid="group___number_window_1gacb00b785040c9b8ef732564face6b6cd" kindref="member">NumberWindowCallback</ref></type>
+        <definition>NumberWindowCallback NumberWindowCallbacks::selected</definition>
+        <argsstring></argsstring>
+        <name>selected</name>
+        <qualifiedname>NumberWindowCallbacks::selected</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called as the value is confirmed, in other words the SELECT button is clicked. Optional, leave <computeroutput>NULL</computeroutput> if unused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8373" column="24" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8373" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure containing all the callbacks for a NumberWindow. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="8363" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8363" bodyend="8374"/>
+    <listofallmembers>
+      <member refid="struct_number_window_callbacks_1abdd61f04b83744b16efb197e578abc4d" prot="public" virt="non-virtual"><scope>NumberWindowCallbacks</scope><name>decremented</name></member>
+      <member refid="struct_number_window_callbacks_1a859555b6e90e9f30ebf83ade1843edb4" prot="public" virt="non-virtual"><scope>NumberWindowCallbacks</scope><name>incremented</name></member>
+      <member refid="struct_number_window_callbacks_1a4e684ff178c36b96c583fd5e292ee542" prot="public" virt="non-virtual"><scope>NumberWindowCallbacks</scope><name>selected</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

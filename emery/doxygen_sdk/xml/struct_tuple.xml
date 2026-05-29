@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_tuple" kind="struct" language="C++" prot="public">
+    <compoundname>Tuple</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_tuple_1ae0a5c5233ca231aa7c1a368d340a97c0" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t Tuple::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>Tuple::key</qualifiedname>
+        <briefdescription>
+<para>The key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1783" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tuple_1ac83219d80bf6300b0afe53d5b30955a9" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t Tuple::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>Tuple::length</qualifiedname>
+        <briefdescription>
+<para>The length of <computeroutput>.<ref refid="struct_tuple_1abffe03a348ffad0015ac86d9857d5994" kindref="member">value</ref></computeroutput> in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1787" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tuple_1ae2c621840b9fa7c2e7ef21074331d317" prot="public" static="no" mutable="no">
+        <type><ref refid="group___dictionary_1gaf164f32d9bda6829f1738ef3fb2c6670" kindref="member">TupleType</ref></type>
+        <definition>TupleType Tuple::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>Tuple::type</qualifiedname>
+        <bitfield>8</bitfield>
+        <briefdescription>
+<para>The type of data that the <computeroutput>.<ref refid="struct_tuple_1abffe03a348ffad0015ac86d9857d5994" kindref="member">value</ref></computeroutput> fields contains. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1785" column="13" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tuple_1abffe03a348ffad0015ac86d9857d5994" prot="public" static="no" mutable="no">
+        <type>union Tuple::@323301304274074363150321251343252162076247064076</type>
+        <definition>union Tuple::@323301304274074363150321251343252162076247064076 Tuple::value[]</definition>
+        <argsstring>[]</argsstring>
+        <name>value</name>
+        <qualifiedname>Tuple::value</qualifiedname>
+        <briefdescription>
+<para>The value itself. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The different union fields are provided for convenience, avoiding the need for manual casts. <simplesect kind="note"><para>The array length is of incomplete length on purpose, to facilitate variable length data and because a data length of zero is valid. </para>
+</simplesect>
+<simplesect kind="note"><para><bold>Important: The integers are little endian!</bold> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1817" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure for one serialized key/value tuple. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>The structure is variable length! The length depends on the value data that the tuple contains. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="1781" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1781" bodyend="1818"/>
+    <listofallmembers>
+      <member refid="struct_tuple_1ae0a5c5233ca231aa7c1a368d340a97c0" prot="public" virt="non-virtual"><scope>Tuple</scope><name>key</name></member>
+      <member refid="struct_tuple_1ac83219d80bf6300b0afe53d5b30955a9" prot="public" virt="non-virtual"><scope>Tuple</scope><name>length</name></member>
+      <member refid="struct_tuple_1ae2c621840b9fa7c2e7ef21074331d317" prot="public" virt="non-virtual"><scope>Tuple</scope><name>type</name></member>
+      <member refid="struct_tuple_1abffe03a348ffad0015ac86d9857d5994" prot="public" virt="non-virtual"><scope>Tuple</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

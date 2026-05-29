@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_menu_index" kind="struct" language="C++" prot="public">
+    <compoundname>MenuIndex</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_menu_index_1abdefc68549bda67cfbae350ba78c6b59" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t MenuIndex::row</definition>
+        <argsstring></argsstring>
+        <name>row</name>
+        <qualifiedname>MenuIndex::row</qualifiedname>
+        <briefdescription>
+<para>The index of the row within the section with index <computeroutput>.<ref refid="struct_menu_index_1a9d05a7245c3d2f4c95fb6b33e8fb2a1a" kindref="member">section</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7307" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_index_1a9d05a7245c3d2f4c95fb6b33e8fb2a1a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t MenuIndex::section</definition>
+        <argsstring></argsstring>
+        <name>section</name>
+        <qualifiedname>MenuIndex::section</qualifiedname>
+        <briefdescription>
+<para>The index of the section. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7305" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7305" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure to represent an menu item&apos;s position in a menu, by specifying the section index and the row index within that section. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="7303" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7303" bodyend="7308"/>
+    <listofallmembers>
+      <member refid="struct_menu_index_1abdefc68549bda67cfbae350ba78c6b59" prot="public" virt="non-virtual"><scope>MenuIndex</scope><name>row</name></member>
+      <member refid="struct_menu_index_1a9d05a7245c3d2f4c95fb6b33e8fb2a1a" prot="public" virt="non-virtual"><scope>MenuIndex</scope><name>section</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

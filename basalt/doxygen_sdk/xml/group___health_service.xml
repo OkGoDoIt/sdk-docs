@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___health_service" kind="group">
     <compoundname>HealthService</compoundname>
     <title>HealthService</title>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1289" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1289" bodyend="1295"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1351" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1351" bodyend="1357"/>
       </memberdef>
       <memberdef kind="enum" id="group___health_service_1ga34a9840fdec40a4c494e28b07a968e4d" prot="public" static="no" strong="no">
         <type></type>
@@ -117,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1058" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1058" bodyend="1071"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1120" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1120" bodyend="1133"/>
       </memberdef>
       <memberdef kind="enum" id="group___health_service_1ga5c64b0ab1489de7fd5d34f3c2085562f" prot="public" static="no" strong="no">
         <type></type>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="988" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="988" bodyend="1002"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1050" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1050" bodyend="1064"/>
       </memberdef>
       <memberdef kind="enum" id="group___health_service_1gacb8b01b2eb863fa85913d491ec5cd214" prot="public" static="no" strong="no">
         <type></type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1191" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1191" bodyend="1206"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1253" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1253" bodyend="1268"/>
       </memberdef>
       <memberdef kind="enum" id="group___health_service_1ga3e51f2b31333a3a34b9b801c660ba412" prot="public" static="no" strong="no">
         <type></type>
@@ -240,13 +240,13 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
-<para>Iteration direction, passed to <ref refid="group___health_service_1gafc77a68038973cedaf79cac32307077c" kindref="member">health_service_activities_iterate()</ref>. When iterating backwards (<computeroutput>HealthIterationDirectionPast</computeroutput>), activities that have a greater value for <computeroutput>time_end</computeroutput> come first. When iterating forward (<computeroutput>HealthIterationDirectionFuture</computeroutput>), activities that have a smaller value for <computeroutput>time_start</computeroutput> come first. </para>
+<para>Iteration direction, passed to <ref refid="group___health_service_1gafc77a68038973cedaf79cac32307077c" kindref="member">health_service_activities_iterate()</ref>. When iterating backwards (<computeroutput><ref refid="group___health_service_1gga3e51f2b31333a3a34b9b801c660ba412a57010626eb710bda3d4290cc8c8cd95c" kindref="member">HealthIterationDirectionPast</ref></computeroutput>), activities that have a greater value for <computeroutput>time_end</computeroutput> come first. When iterating forward (<computeroutput><ref refid="group___health_service_1gga3e51f2b31333a3a34b9b801c660ba412a0f72858eb42714069450729a9497c859" kindref="member">HealthIterationDirectionFuture</ref></computeroutput>), activities that have a smaller value for <computeroutput>time_start</computeroutput> come first. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1093" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1093" bodyend="1098"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1155" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1155" bodyend="1160"/>
       </memberdef>
       <memberdef kind="enum" id="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" prot="public" static="no" strong="no">
         <type></type>
@@ -330,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="888" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="888" bodyend="907"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="950" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="950" bodyend="969"/>
       </memberdef>
       <memberdef kind="enum" id="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" prot="public" static="no" strong="no">
         <type></type>
@@ -378,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1118" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1118" bodyend="1128"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1180" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1180" bodyend="1190"/>
       </memberdef>
       <memberdef kind="enum" id="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" prot="public" static="no" strong="no">
         <type></type>
@@ -422,7 +422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="942" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="942" bodyend="953"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1004" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1004" bodyend="1015"/>
       </memberdef>
       <memberdef kind="enum" id="group___health_service_1ga5290ef739be94d7ae1cc8ba16bdc808d" prot="public" static="no" strong="no">
         <type></type>
@@ -458,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1343" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1343" bodyend="1350"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1405" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1405" bodyend="1412"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -510,7 +510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1085" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1085" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1147" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___health_service_1ga1d5cc8116a00623340c27accec560642" prot="public" static="no">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -524,7 +524,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1052" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1052" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1114" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___health_service_1ga982b6d3060b68509b41e8178bab91417" prot="public" static="no">
         <type>void(*</type>
@@ -556,7 +556,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1212" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1212" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1274" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1274" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___health_service_1ga86ade35770156a641962400e527357ef" prot="public" static="no">
         <type>struct <ref refid="group___health_service_1ga86ade35770156a641962400e527357ef" kindref="member">HealthMetricAlert</ref></type>
@@ -564,13 +564,13 @@
         <argsstring></argsstring>
         <name>HealthMetricAlert</name>
         <briefdescription>
-<para>Type used as a handle to a registered metric alert (returned by <ref refid="group___health_service_1ga38ba66f8d16a5cc4d3d2461203a77f75" kindref="member">health_service_register_metric_alert</ref>) </para>
+<para>Type used as a handle to a registered metric alert (returned by <ref refid="group___health_service_1ga38ba66f8d16a5cc4d3d2461203a77f75" kindref="member">health_service_register_metric_alert</ref>). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="914" column="32" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="914" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="976" column="32" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="976" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" prot="public" static="no">
         <type>int32_t</type>
@@ -584,7 +584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="910" column="17" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="910" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="972" column="17" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="972" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -674,7 +674,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1110" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1110" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1172" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1172" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gab550229af26f6438505bc8a07f090afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
@@ -716,7 +716,7 @@
 <codeline><highlight class="normal"><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref><sp/>value<sp/>=<sp/><ref refid="group___health_service_1gab550229af26f6438505bc8a07f090afd" kindref="member">health_service_aggregate_averaged</ref>(<ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3af1c65a9410883fe8b5f84def71a29130" kindref="member">HealthMetricHeartRateBPM</ref>,<sp/>time_start,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/>time_end,<sp/><ref refid="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa999e43f842718bd2b8b09d7984fc0336" kindref="member">HealthAggregationAvg</ref>,<sp/><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaaec3c77cdd4e3f7c193fef79cab832af" kindref="member">HealthServiceTimeScopeWeekly</ref>);</highlight></codeline>
 </programlisting></para>
-<para>To get the average of the minimum heart rate seen on Mondays for example, you would instead pass in <computeroutput>HealthAggregationMin</computeroutput></para>
+<para>To get the average of the minimum heart rate seen on Mondays for example, you would instead pass in <computeroutput><ref refid="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa4f86bb4009320b5e228294fa40d3951e" kindref="member">HealthAggregationMin</ref></computeroutput></para>
 <para>Certain <ref refid="group___health_service_1ga5c64b0ab1489de7fd5d34f3c2085562f" kindref="member">HealthAggregation</ref> operations are only applicable to certain types of metrics. See the notes above on <ref refid="group___health_service_1ga5c64b0ab1489de7fd5d34f3c2085562f" kindref="member">HealthAggregation</ref> for details. Use <ref refid="group___health_service_1gaae36aba04f5eedb015f03593b2af735b" kindref="member">health_service_metric_aggregate_averaged_accessible</ref> to check for applicability at run time.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -755,7 +755,7 @@
 <parametername>scope</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref> value describing how the average should be computed. Use <computeroutput>HealthServiceTimeScopeOnce</computeroutput> to not compute an average. </para>
+<para><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref> value describing how the average should be computed. Use <computeroutput><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaf99627b4fe91ddd080ee8ba561e93bcd" kindref="member">HealthServiceTimeScopeOnce</ref></computeroutput> to not compute an average. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -765,7 +765,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1047" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="1047" declcolumn="13"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1109" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="1109" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gaa7d3865b67ac3d815bf5e6c0231643f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref></type>
@@ -819,7 +819,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1187" column="32" declfile="build/sdk/basalt/include/pebble.h" declline="1187" declcolumn="32"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1249" column="32" declfile="build/sdk/basalt/include/pebble.h" declline="1249" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gad4cb3b65f31c344de41428ec50d0a281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -849,7 +849,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1286" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1286" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1348" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1348" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga29280e11a9628779a3dcaa6d62d90d4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -891,7 +891,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1221" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1221" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1283" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1283" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gaea64b699d2c04f24c221b2ae11644b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -911,7 +911,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1225" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1225" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1287" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1287" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gaeea0c8be0d13dd2fc9dc1048867ed318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -922,7 +922,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>Return how long a heart rate sample period request (sent via <computeroutput>health_service_set_heart_rate_sample_period</computeroutput>) will remain active after the app exits. If there is no current request by this app, this call will return 0. </para>
+<para>Return how long a heart rate sample period request (sent via <computeroutput><ref refid="group___health_service_1ga33ad67b62ecd57736008087e7c275db9" kindref="member">health_service_set_heart_rate_sample_period</ref></computeroutput>) will remain active after the app exits. If there is no current request by this app, this call will return 0. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para>The number of seconds the heart rate sample period request will remain active after the app exits, or 0 if there is no active request by this app. </para>
@@ -931,7 +931,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1257" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1257" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1319" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1319" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gab089154cc1c0c0d074122013035420c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1ga5290ef739be94d7ae1cc8ba16bdc808d" kindref="member">MeasurementSystem</ref></type>
@@ -961,7 +961,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1356" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="1356" declcolumn="19"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1418" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="1418" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gad42347be400c448e5fceda786019611c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -1029,7 +1029,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1335" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1335" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1397" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="1397" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga3304f85962047c248c80be3d23ddf87d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref></type>
@@ -1085,7 +1085,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1143" column="32" declfile="build/sdk/basalt/include/pebble.h" declline="1143" declcolumn="32"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1205" column="32" declfile="build/sdk/basalt/include/pebble.h" declline="1205" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gaae36aba04f5eedb015f03593b2af735b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref></type>
@@ -1163,7 +1163,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1174" column="32" declfile="build/sdk/basalt/include/pebble.h" declline="1174" declcolumn="32"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1236" column="32" declfile="build/sdk/basalt/include/pebble.h" declline="1236" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga4a000fb819876b98072201768524f060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref></type>
@@ -1231,7 +1231,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1160" column="32" declfile="build/sdk/basalt/include/pebble.h" declline="1160" declcolumn="32"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1222" column="32" declfile="build/sdk/basalt/include/pebble.h" declline="1222" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga8d822a2968297e755b078430cc365b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref></type>
@@ -1251,7 +1251,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1076" column="22" declfile="build/sdk/basalt/include/pebble.h" declline="1076" declcolumn="22"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1138" column="22" declfile="build/sdk/basalt/include/pebble.h" declline="1138" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga2e5451dc845d6f77a49725cb25f4fe07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
@@ -1263,7 +1263,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
           <declname>metric</declname>
         </param>
         <briefdescription>
-<para>Convenience function for peeking at the current value of a metric. This is useful for metrics like <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3af1c65a9410883fe8b5f84def71a29130" kindref="member">HealthMetricHeartRateBPM</ref> that represent instantaneous values. It is NOT applicable for metrics like <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a5cecb29b3d75c6c0a7bb2bd3656ebf5e" kindref="member">HealthMetricStepCount</ref> that must be accumulated over time (it will return 0 if passed that type of metric). This call is equivalent to calling <computeroutput>health_service_aggregate_averaged(metric, time(NULL), time(NULL), HealthAggregationAvg, HealthServiceTimeScopeOnce)</computeroutput> </para>
+<para>Convenience function for peeking at the current value of a metric. This is useful for metrics like <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3af1c65a9410883fe8b5f84def71a29130" kindref="member">HealthMetricHeartRateBPM</ref> that represent instantaneous values. It is NOT applicable for metrics like <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a5cecb29b3d75c6c0a7bb2bd3656ebf5e" kindref="member">HealthMetricStepCount</ref> that must be accumulated over time (it will return 0 if passed that type of metric). This call is equivalent to calling <computeroutput><ref refid="group___health_service_1gab550229af26f6438505bc8a07f090afd" kindref="member">health_service_aggregate_averaged</ref>(metric, time(NULL), time(NULL), <ref refid="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa999e43f842718bd2b8b09d7984fc0336" kindref="member">HealthAggregationAvg</ref>, <ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaf99627b4fe91ddd080ee8ba561e93bcd" kindref="member">HealthServiceTimeScopeOnce</ref>)</computeroutput>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -1281,7 +1281,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="939" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="939" declcolumn="13"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1001" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="1001" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga38ba66f8d16a5cc4d3d2461203a77f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1ga86ade35770156a641962400e527357ef" kindref="member">HealthMetricAlert</ref> *</type>
@@ -1306,7 +1306,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaf99627b4fe91ddd080ee8ba561e93bcd" kindref="member">HealthServiceTimeScopeOnce</ref>);</highlight></codeline>
 <codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alert_supported<sp/>=<sp/>(accessible<sp/>&amp;<sp/><ref refid="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a0701b27f4f15811fb72665286b6eea0c" kindref="member">HealthServiceAccessibilityMaskAvailable</ref>);</highlight></codeline>
 </programlisting></para>
-<para>In the current implementation, only one alert per metric can be registered at a time. Future implementations may support two or more simulataneous alert registrations per metric. To change the alert threshold in the current implementation, cancel the original registration using <computeroutput>health_service_cancel_metric_alert</computeroutput> before registering the new threshold. <parameterlist kind="param"><parameteritem>
+<para>In the current implementation, only one alert per metric can be registered at a time. Future implementations may support two or more simulataneous alert registrations per metric. To change the alert threshold in the current implementation, cancel the original registration using <computeroutput><ref refid="group___health_service_1gad4cb3b65f31c344de41428ec50d0a281" kindref="member">health_service_cancel_metric_alert</ref></computeroutput> before registering the new threshold. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>metric</parametername>
 </parameternamelist>
@@ -1329,7 +1329,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1280" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="1280" declcolumn="19"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1342" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="1342" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga33ad67b62ecd57736008087e7c275db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1344,8 +1344,8 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
 <para>Set the desired sampling period for heart rate readings. Normally, the system will sample the heart rate using a sampling period that is automatically chosen to provide useful information without undue battery drain (it automatically samples more often during periods of intense activity, and less often when the user is idle). If desired though, an application can request a specific sampling period using this call. The system will use this as a suggestion, but does not guarantee that the requested period will be used. The actual sampling period may be greater or less due to system needs or heart rate sensor reading quality issues. </para>
         </briefdescription>
         <detaileddescription>
-<para>Each time a new heart rate reading becomes available, a <computeroutput>HealthEventHeartRateUpdate</computeroutput> event will be sent to the application&apos;s <computeroutput><ref refid="group___health_service_1ga982b6d3060b68509b41e8178bab91417" kindref="member">HealthEventHandler</ref></computeroutput>. The sample period request will remain in effect the entire time the app is running unless it is explicitly cancelled (by calling this method again with 0 as the desired interval). If the app exits without first cancelling the request, it will remain in effect even for a limited time afterwards. To determine how long it will remain active after the app exits, use <computeroutput>health_service_get_heart_rate_sample_period_expiration_sec</computeroutput>.</para>
-<para>Unless the app explicitly needs to access to historical high-resolution heart rate data, it is best practice to always cancel the sample period request before exiting in order to maximize battery life. Historical heart rate data can be accessed using the <computeroutput>health_service_get_minute_history</computeroutput> call. <parameterlist kind="param"><parameteritem>
+<para>Each time a new heart rate reading becomes available, a <computeroutput><ref refid="group___health_service_1ggacb8b01b2eb863fa85913d491ec5cd214a4ea6de3cb20650becc17ee2f1b36af8f" kindref="member">HealthEventHeartRateUpdate</ref></computeroutput> event will be sent to the application&apos;s <computeroutput><ref refid="group___health_service_1ga982b6d3060b68509b41e8178bab91417" kindref="member">HealthEventHandler</ref></computeroutput>. The sample period request will remain in effect the entire time the app is running unless it is explicitly cancelled (by calling this method again with 0 as the desired interval). If the app exits without first cancelling the request, it will remain in effect even for a limited time afterwards. To determine how long it will remain active after the app exits, use <computeroutput><ref refid="group___health_service_1gaeea0c8be0d13dd2fc9dc1048867ed318" kindref="member">health_service_get_heart_rate_sample_period_expiration_sec</ref></computeroutput>.</para>
+<para>Unless the app explicitly needs to access to historical high-resolution heart rate data, it is best practice to always cancel the sample period request before exiting in order to maximize battery life. Historical heart rate data can be accessed using the <computeroutput><ref refid="group___health_service_1gad42347be400c448e5fceda786019611c" kindref="member">health_service_get_minute_history</ref></computeroutput> call. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>interval_sec</parametername>
 </parameternamelist>
@@ -1360,7 +1360,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1250" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1250" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1312" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="1312" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga88dd4742916eda84dbf2b15f7171c34c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
@@ -1416,7 +1416,7 @@ time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="924" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="924" declcolumn="13"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="986" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="986" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1ga648ca6a090db119e09e15bc77b4eb47d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
@@ -1493,7 +1493,7 @@ time_start, time_end, HealthAggregationSum, scope)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="983" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="983" declcolumn="13"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1045" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="1045" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group___health_service_1gaa3443d2e23058d0924742ff57527b528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
@@ -1523,7 +1523,7 @@ time_start, time_end, HealthAggregationSum, scope)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="929" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="929" declcolumn="13"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="991" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="991" declcolumn="13"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -1537,7 +1537,7 @@ time_start, time_end, HealthAggregationSum, scope)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1055" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1055" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1117" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___health_service_1ga2acea450417f9ff4320d6a145b8d7faf" prot="public" static="no">
         <name>PBL_IF_HEALTH_ELSE</name>
@@ -1551,13 +1551,13 @@ time_start, time_end, HealthAggregationSum, scope)</computeroutput></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1340" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1340" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1402" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1402" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Get access to health information like step count, sleep totals, etc. </para>
     </briefdescription>
     <detaileddescription>
-<para>Get access to health information like step count, sleep totals, etc.</para>
 <para>The HealthService provides your app access to the step count and sleep activity of the user. </para>
     </detaileddescription>
   </compounddef>

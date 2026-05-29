@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_property_animation_implementation" kind="struct" language="C++" prot="public">
     <compoundname>PropertyAnimationImplementation</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6266" column="30" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6266" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6402" column="30" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6402" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_property_animation_implementation_1a4f8d0d4c92845fcc68bf491b6097d96d" prot="public" static="no" mutable="no">
         <type><ref refid="struct_animation_implementation" kindref="compound">AnimationImplementation</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6264" column="27" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6264" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6400" column="27" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6400" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -60,7 +60,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="build/sdk/aplite/include/pebble.h" line="6262" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6262" bodyend="6267"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="6398" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6398" bodyend="6403"/>
     <listofallmembers>
       <member refid="struct_property_animation_implementation_1a96d72abf30076e6639cf68313303465a" prot="public" virt="non-virtual"><scope>PropertyAnimationImplementation</scope><name>accessors</name></member>
       <member refid="struct_property_animation_implementation_1a4f8d0d4c92845fcc68bf491b6097d96d" prot="public" virt="non-virtual"><scope>PropertyAnimationImplementation</scope><name>base</name></member>

@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___wakeup" kind="group">
+    <compoundname>Wakeup</compoundname>
+    <title>Wakeup</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___wakeup_1ga0c5e3b57b4dc2b1affff3ca24f332c55" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* WakeupHandler) (WakeupId wakeup_id, int32_t cookie)</definition>
+        <argsstring>)(WakeupId wakeup_id, int32_t cookie)</argsstring>
+        <name>WakeupHandler</name>
+        <briefdescription>
+<para>The type of function which can be called when a wakeup event occurs. <linebreak/>
+ The arguments will be the id of the wakeup event that occurred, as well as the scheduled cookie provided to <ref refid="group___wakeup_1ga8c69fb46a7fdbc0a77fae0f6a2f9da5d" kindref="member">wakeup_schedule</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3233" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t WakeupId</definition>
+        <argsstring></argsstring>
+        <name>WakeupId</name>
+        <briefdescription>
+<para><ref refid="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" kindref="member">WakeupId</ref> is an identifier for a wakeup event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3228" column="17" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3228" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___wakeup_1gabbe54a1d30d2fc18694572961fd4e89f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wakeup_cancel</definition>
+        <argsstring>(WakeupId wakeup_id)</argsstring>
+        <name>wakeup_cancel</name>
+        <param>
+          <type><ref refid="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" kindref="member">WakeupId</ref></type>
+          <declname>wakeup_id</declname>
+        </param>
+        <briefdescription>
+<para>Cancels a wakeup event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wakeup_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wakeup event to cancel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3258" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3258" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wakeup_1ga1e6e5dd7843ce0a1c9f88593617fcf3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wakeup_cancel_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>wakeup_cancel_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Cancels all wakeup event for the app. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3261" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3261" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wakeup_1ga4b39e11604da247e2ee7a9249d75169b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool wakeup_get_launch_event</definition>
+        <argsstring>(WakeupId *wakeup_id, int32_t *cookie)</argsstring>
+        <name>wakeup_get_launch_event</name>
+        <param>
+          <type><ref refid="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" kindref="member">WakeupId</ref> *</type>
+          <declname>wakeup_id</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>cookie</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the wakeup event info for an app that was launched by a wakeup_event (ie. <ref refid="group___launch_reason_1ga1674ca6a6f48cb98b8762da667eadfc1" kindref="member">launch_reason()</ref> === APP_LAUNCH_WAKEUP) so that an app may display information regarding the wakeup event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wakeup_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" kindref="member">WakeupId</ref> for the wakeup event that caused the app to wakeup </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cookie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>App provided reason for the wakeup event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if app was launched due to a wakeup event, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3269" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3269" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wakeup_1ga20cedaca47991ed554ec624630e529a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool wakeup_query</definition>
+        <argsstring>(WakeupId wakeup_id, time_t *timestamp)</argsstring>
+        <name>wakeup_query</name>
+        <param>
+          <type><ref refid="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" kindref="member">WakeupId</ref></type>
+          <declname>wakeup_id</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref> *</type>
+          <declname>timestamp</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the current <ref refid="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" kindref="member">WakeupId</ref> is still scheduled and therefore valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wakeup_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wakeup event to query for validity and scheduled time </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optionally points to an address of a <ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref> variable to store the time that the wakeup event is scheduled to occur. (The time is in UTC, but local time when <ref refid="group___wall_time_1ga95c658aa0d511e4b4ca549724e02ce72" kindref="member">clock_is_timezone_set</ref> returns false). You may pass NULL instead if you do not need it. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if <ref refid="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" kindref="member">WakeupId</ref> is still scheduled, false if it doesn&apos;t exist or has already occurred </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3280" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3280" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wakeup_1ga8c69fb46a7fdbc0a77fae0f6a2f9da5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___wakeup_1ga012047a2e8fa4d77a788324144e15c8f" kindref="member">WakeupId</ref></type>
+        <definition>WakeupId wakeup_schedule</definition>
+        <argsstring>(time_t timestamp, int32_t cookie, bool notify_if_missed)</argsstring>
+        <name>wakeup_schedule</name>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>cookie</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>notify_if_missed</declname>
+        </param>
+        <briefdescription>
+<para>Registers a wakeup event that triggers a callback at the specified time. Applications may only schedule up to 8 wakeup events. Wakeup events are given a 1 minute duration window, in that no application may schedule a wakeup event with 1 minute of a currently scheduled wakeup event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timestamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The requested time (UTC) for the wakeup event to occur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cookie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application specific reason for the wakeup event </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>notify_if_missed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On powering on Pebble, will alert user when notifications were missed due to Pebble being off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>negative values indicate errors (<ref refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kindref="member">StatusCode</ref>) E_RANGE if the event cannot be scheduled due to another event in that period. E_INVALID_ARGUMENT if the time requested is in the past. E_OUT_OF_RESOURCES if the application has already scheduled all 8 wakeup events. E_INTERNAL if a system error occurred during scheduling. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3254" column="10" declfile="build/sdk/emery/include/pebble.h" declline="3254" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___wakeup_1gaea67463087f97d88fd136525c8101f51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wakeup_service_subscribe</definition>
+        <argsstring>(WakeupHandler handler)</argsstring>
+        <name>wakeup_service_subscribe</name>
+        <param>
+          <type><ref refid="group___wakeup_1ga0c5e3b57b4dc2b1affff3ca24f332c55" kindref="member">WakeupHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Registers a <ref refid="group___wakeup_1ga0c5e3b57b4dc2b1affff3ca24f332c55" kindref="member">WakeupHandler</ref> to be called when wakeup events occur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The handler is only called for wakeup events which occur while the app is already running; use <ref refid="group___launch_reason_1ga1674ca6a6f48cb98b8762da667eadfc1" kindref="member">launch_reason()</ref> === <ref refid="group___launch_reason_1gga3846fa158615c2ee77c5c708cb4f340aab5f55e17f8dfe390b73fbc4ad4a3f6ae" kindref="member">APP_LAUNCH_WAKEUP</ref> to detect when the app was launched by a wakeup event. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that gets called when the wakeup event occurs </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3239" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3239" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Allows applications to schedule to be launched even if they are not running. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___app" kind="group">
+    <compoundname>App</compoundname>
+    <title>App</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___app_1ga76a67379592a1844028767ee20332730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_event_loop</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_event_loop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>The event loop for C apps, to be used in app&apos;s main(). Will block until the app is ready to exit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2854" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2854" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>App entry point and event loop. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>App is a module that provides you with an event loop for your Pebble app. All interaction between Pebble apps and the underlying Pebble OS takes place through an event loop. Before calling the <ref refid="group___app_1ga76a67379592a1844028767ee20332730" kindref="member">app_event_loop()</ref> function, you subscribe to event services and implement event handlers. Each handler receives specific types of Events dispatched throughout the life of the Pebble watchapp.</para>
+<para>The <ref refid="group___app_1ga76a67379592a1844028767ee20332730" kindref="member">app_event_loop()</ref> function takes care of both waiting for new events to become available on the watchapp event bus and routing new events to the appropriate handler. <ref refid="group___event_service" kindref="compound">Event Service</ref> allows an app to directly register for different types of events. This function will block until the watchapp is ready to exit, and should be placed in the app&apos;s main() function.</para>
+<para>A watchapp typically configures and uses the <ref refid="group___app_1ga76a67379592a1844028767ee20332730" kindref="member">app_event_loop()</ref> as follows:</para>
+<para><programlisting filename=".c"><codeline><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>set<sp/>up<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Enter<sp/>the<sp/>main<sp/>event<sp/>loop.<sp/>This<sp/>will<sp/>block<sp/>until<sp/>the<sp/>app<sp/>is<sp/>ready<sp/>to<sp/>exit.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___app_1ga76a67379592a1844028767ee20332730" kindref="member">app_event_loop</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>clean<sp/>up<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___graphics_context" kind="group">
     <compoundname>GraphicsContext</compoundname>
     <title>Graphics Context</title>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3964" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="3964" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4104" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4104" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_context_1ga64bc6cc5f86dabcd4b3cfa9fcffa328c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -60,7 +60,7 @@
           <declname>mode</declname>
         </param>
         <briefdescription>
-<para>Sets the current bitmap compositing mode of the graphics context. </para>
+<para>Sets the current bitmap compositing mode of the graphics context. The default mode is GCompOpAssign i.e. bitmap transparency disabled. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3958" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="3958" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4098" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4098" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_context_1ga891b4629c483386546a9fe20d36bbfa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3942" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="3942" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4081" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4081" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_context_1ga22a22f399842bcaef72842d64e0195fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3937" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="3937" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4076" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4076" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_context_1ga18a48052681339dd0d157078117f813b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3973" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="3973" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4113" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4113" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_context_1gabf002f4de8793c7d2f4a804a4a438ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="3947" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="3947" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4086" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4086" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

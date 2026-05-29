@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___touch_service" kind="group">
+    <compoundname>TouchService</compoundname>
+    <title>TouchService</title>
+    <innerclass refid="struct_touch_event" prot="public">TouchEvent</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___touch_service_1gaf9360ba7e12726eabae0c635d317ee6a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TouchEventType</name>
+        <enumvalue id="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aa3f0e0b086f7296785266b9c7d014d709" prot="public">
+          <name>TouchEvent_Touchdown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aabaa086b963af5fef224c379c48b6fc46" prot="public">
+          <name>TouchEvent_Liftoff</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aa01f025c00fea52cb6020e100d10fafed" prot="public">
+          <name>TouchEvent_PositionUpdate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Touch event type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="923" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="923" bodyend="927"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___touch_service_1gadf3d2651950c41d539f7fa67f5cf3063" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* TouchServiceHandler) (const TouchEvent *event, void *context)</definition>
+        <argsstring>)(const TouchEvent *event, void *context)</argsstring>
+        <name>TouchServiceHandler</name>
+        <briefdescription>
+<para>Callback for touch events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The touch event data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User-provided context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="939" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="939" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___touch_service_1gaa77b04ad8ac78f2f42b9a7aa0ce8ddb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool touch_service_is_enabled</definition>
+        <argsstring>(void)</argsstring>
+        <name>touch_service_is_enabled</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if touch input is currently being delivered to apps. Returns false on platforms without a touchscreen, or when touch has been disabled system-wide (future feature). Apps can poll this (for example on window appear) to avoid looking broken when touch is unavailable. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="953" column="6" declfile="build/sdk/emery/include/pebble.h" declline="953" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___touch_service_1ga6c1ddd8495e6380d408ed80dcf03c544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touch_service_subscribe</definition>
+        <argsstring>(TouchServiceHandler handler, void *context)</argsstring>
+        <name>touch_service_subscribe</name>
+        <param>
+          <type><ref refid="group___touch_service_1gadf3d2651950c41d539f7fa67f5cf3063" kindref="member">TouchServiceHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to touch events. The touch sensor is enabled while subscribed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback invoked for each touch event </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User context passed to the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="944" column="6" declfile="build/sdk/emery/include/pebble.h" declline="944" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___touch_service_1gae2cf800f24a15aeaad2d534ee0d93758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touch_service_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>touch_service_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from touch events. The touch sensor is disabled if no other subscribers remain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="947" column="6" declfile="build/sdk/emery/include/pebble.h" declline="947" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

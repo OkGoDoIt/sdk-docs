@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_content_indicator_config" kind="struct" language="C++" prot="public">
+    <compoundname>ContentIndicatorConfig</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_content_indicator_config_1aedebeb60025633d4e1c36cb617707f05" prot="public" static="no" mutable="no">
+        <type><ref refid="group___graphics_types_1gac8aa0eb3d3065fde8d2d6f282fa47f6a" kindref="member">GAlign</ref></type>
+        <definition>GAlign ContentIndicatorConfig::alignment</definition>
+        <argsstring></argsstring>
+        <name>alignment</name>
+        <qualifiedname>ContentIndicatorConfig::alignment</qualifiedname>
+        <briefdescription>
+<para>The alignment of the arrow within the provided layer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7183" column="10" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_content_indicator_config_1a46e20757d60727dd38e9edeefc5c8f12" prot="public" static="no" mutable="no">
+        <type>struct ContentIndicatorConfig::@131203015256120066306074053232173362245021347160</type>
+        <definition>struct ContentIndicatorConfig::@131203015256120066306074053232173362245021347160 ContentIndicatorConfig::colors</definition>
+        <argsstring></argsstring>
+        <name>colors</name>
+        <qualifiedname>ContentIndicatorConfig::colors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7187" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_content_indicator_config_1a88ec60f998fcf148443b075189665aea" prot="public" static="no" mutable="no">
+        <type>Layer *</type>
+        <definition>Layer* ContentIndicatorConfig::layer</definition>
+        <argsstring></argsstring>
+        <name>layer</name>
+        <qualifiedname>ContentIndicatorConfig::layer</qualifiedname>
+        <briefdescription>
+<para>The layer where the arrow indicator will be rendered when content is available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7181" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_content_indicator_config_1a4772a880f0d9148c0649c27a72440d0a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ContentIndicatorConfig::times_out</definition>
+        <argsstring></argsstring>
+        <name>times_out</name>
+        <qualifiedname>ContentIndicatorConfig::times_out</qualifiedname>
+        <briefdescription>
+<para>Whether the display of the arrow indicator should timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7182" column="8" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7182" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Struct used to configure directions for ContentIndicator. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___scroll_layer_1ga76d8252325d83822b5989c3151c296d1" kindref="member">content_indicator_configure_direction</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="7180" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7180" bodyend="7188"/>
+    <listofallmembers>
+      <member refid="struct_content_indicator_config_1aedebeb60025633d4e1c36cb617707f05" prot="public" virt="non-virtual"><scope>ContentIndicatorConfig</scope><name>alignment</name></member>
+      <member refid="struct_content_indicator_config_1a46e20757d60727dd38e9edeefc5c8f12" prot="public" virt="non-virtual"><scope>ContentIndicatorConfig</scope><name>colors</name></member>
+      <member refid="struct_content_indicator_config_1a88ec60f998fcf148443b075189665aea" prot="public" virt="non-virtual"><scope>ContentIndicatorConfig</scope><name>layer</name></member>
+      <member refid="struct_content_indicator_config_1a4772a880f0d9148c0649c27a72440d0a" prot="public" virt="non-virtual"><scope>ContentIndicatorConfig</scope><name>times_out</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

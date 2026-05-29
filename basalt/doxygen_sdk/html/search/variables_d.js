@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['patch_0',['patch',['../group___watch_info.html#a820d5cf455587c5936f77857aa345c91',1,'WatchInfoVersion']]],
-  ['points_1',['points',['../group___path_drawing.html#a9060d72e677cfa33dc4c26e0829299c6',1,'GPathInfo::points'],['../group___path_drawing.html#a1c38d8ee2e1f7f9fd288bc39fa958190',1,'GPath::points']]]
+  ['offset_0',['offset',['../group___path_drawing.html#ae15e816101f2e18925105c5a6be04392',1,'GPath']]],
+  ['orientation_1',['orientation',['../group___health_service.html#a560cbd4c793a5e55e8f5b7107c3b4aaa',1,'HealthMinuteData']]],
+  ['origin_2',['origin',['../group___graphics_types.html#a28af4b04e081517f4f546c4af5b44612',1,'GRect']]]
 ];

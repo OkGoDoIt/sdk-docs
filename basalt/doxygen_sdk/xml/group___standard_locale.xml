@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___standard_locale" kind="group">
     <compoundname>StandardLocale</compoundname>
     <title>Locale</title>
@@ -21,9 +21,9 @@
 <para>Set the app&apos;s locale for a category of routines. </para>
         </briefdescription>
         <detaileddescription>
-<para><computeroutput>setlocale</computeroutput> can be used to:<itemizedlist>
-<listitem><para>set the app&apos;s locale to a specific locale: <computeroutput>setlocale(LC_ALL, &quot;en_CA&quot;)</computeroutput></para>
-</listitem><listitem><para>set the app&apos;s locale to the system locale: <computeroutput>setlocale(LC_ALL, &quot;&quot;)</computeroutput></para>
+<para><computeroutput><ref refid="group___standard_locale_1ga32b174e036be8744d4fcdde290012d3c" kindref="member">setlocale</ref></computeroutput> can be used to:<itemizedlist>
+<listitem><para>set the app&apos;s locale to a specific locale: <computeroutput><ref refid="group___standard_locale_1ga32b174e036be8744d4fcdde290012d3c" kindref="member">setlocale</ref>(LC_ALL, "en_CA")</computeroutput></para>
+</listitem><listitem><para>set the app&apos;s locale to the system locale: <computeroutput><ref refid="group___standard_locale_1ga32b174e036be8744d4fcdde290012d3c" kindref="member">setlocale</ref>(LC_ALL, "")</computeroutput></para>
 </listitem><listitem><para>get the app&apos;s curent locale: <computeroutput>setlocale(LC_ALL, NULL)</computeroutput></para>
 </listitem></itemizedlist>
 </para>

@@ -70,7 +70,7 @@ var searchData=
   ['dictionarykeyupdatedcallback_67',['DictionaryKeyUpdatedCallback',['../group___dictionary.html#ga9dcb8cc0ffca04141354048a6e3bd379',1,'pebble.h']]],
   ['dictionaryresult_68',['DictionaryResult',['../group___dictionary.html#gaafae887a6d07cde8d11885c755b55351',1,'pebble.h']]],
   ['dictionaryserializecallback_69',['DictionarySerializeCallback',['../group___dictionary.html#gac42a608a61e00467c9d2c98bbc512458',1,'pebble.h']]],
-  ['did_5fclose_70',['did_close',['../group___action_menu.html#a1cc3e28b2ae2a4aa130eab62b6f9b0f6',1,'ActionMenuConfig']]],
+  ['did_5fclose_70',['did_close',['../struct_action_menu_config.html#a1cc3e28b2ae2a4aa130eab62b6f9b0f6',1,'ActionMenuConfig']]],
   ['did_5ffocus_71',['did_focus',['../group___app_focus_service.html#abaee3a26942d24710a62a5f0b634094b',1,'AppFocusHandlers']]],
   ['did_5fread_72',['did_read',['../group___smartstrap.html#ad99ecaa5517352b08704d6e10ed9f1bd',1,'SmartstrapHandlers']]],
   ['did_5fvibrate_73',['did_vibrate',['../group___accelerometer_service.html#a8e60f95e0d893d078f9906b51cbf9cc7',1,'AccelData']]],

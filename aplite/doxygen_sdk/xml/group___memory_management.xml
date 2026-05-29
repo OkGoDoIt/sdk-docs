@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___memory_management" kind="group">
     <compoundname>MemoryManagement</compoundname>
     <title>Memory Management</title>
@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2923" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="2923" declcolumn="8"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2895" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="2895" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___memory_management_1ga9e776141c2f26b29e3b94dfca5d482a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
@@ -42,47 +42,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2927" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="2927" declcolumn="8"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2899" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="2899" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="group___memory_management_1gaf6da7fa2525589603f402bdaec598fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void memory_cache_flush</definition>
-        <argsstring>(void *start, size_t size)</argsstring>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___memory_management_1ga91e006a3f2443c165538ec9fd113d30d" prot="public" static="no">
         <name>memory_cache_flush</name>
-        <param>
-          <type>void *</type>
-          <declname>start</declname>
-        </param>
-        <param>
-          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
-          <declname>size</declname>
-        </param>
+        <param><defname>...</defname></param>
+        <initializer>do {} while(0)</initializer>
         <briefdescription>
-<para>Flushes the data cache and invalidates the instruction cache for the given region of memory, if necessary. This is only required when your app is loading or modifying code in memory and intends to execute it. On some platforms, code executed may be cached internally to improve performance. After writing to memory, but before executing, this function must be called in order to avoid undefined behavior. On platforms without caching, this performs no operation. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>start</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The beginning of the buffer to flush </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>size</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>How many bytes to flush </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2936" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2936" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2901" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="2901" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

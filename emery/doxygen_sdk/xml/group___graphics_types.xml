@@ -1,0 +1,2398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___graphics_types" kind="group">
+    <compoundname>GraphicsTypes</compoundname>
+    <title>Graphics Types</title>
+    <innerclass refid="struct_g_bitmap_data_row_info" prot="public">GBitmapDataRowInfo</innerclass>
+    <innerclass refid="union_g_color8" prot="public">GColor8</innerclass>
+    <innerclass refid="struct_g_color8_8____unnamed0____" prot="public">GColor8.__unnamed0__</innerclass>
+    <innerclass refid="struct_g_edge_insets" prot="public">GEdgeInsets</innerclass>
+    <innerclass refid="struct_g_point" prot="public">GPoint</innerclass>
+    <innerclass refid="struct_g_rect" prot="public">GRect</innerclass>
+    <innerclass refid="struct_g_size" prot="public">GSize</innerclass>
+    <innergroup refid="group___color_definitions">Color Definitions</innergroup>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___graphics_types_1gac8aa0eb3d3065fde8d2d6f282fa47f6a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GAlign</name>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aa51bd2083cb00987d9e770436985642b2" prot="public">
+          <name>GAlignCenter</name>
+          <briefdescription>
+<para>Align by centering. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aae47b90e410e218b1035083f7d6df8371" prot="public">
+          <name>GAlignTopLeft</name>
+          <briefdescription>
+<para>Align by making the top edges overlap and left edges overlap. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aaa6582295979f7c0661f6b5c686a5a606" prot="public">
+          <name>GAlignTopRight</name>
+          <briefdescription>
+<para>Align by making the top edges overlap and left edges overlap. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aa2791f2177d74ec6baf029a8e25f731d9" prot="public">
+          <name>GAlignTop</name>
+          <briefdescription>
+<para>Align by making the top edges overlap and centered horizontally. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aab6fc58bfb9c295f87bee0e6d77b4d683" prot="public">
+          <name>GAlignLeft</name>
+          <briefdescription>
+<para>Align by making the left edges overlap and centered vertically. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aa0e09ed4f51fd1f8b81205a61405b6eeb" prot="public">
+          <name>GAlignBottom</name>
+          <briefdescription>
+<para>Align by making the bottom edges overlap and centered horizontally. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aa91754028af85b5079e59025bc13bc021" prot="public">
+          <name>GAlignRight</name>
+          <briefdescription>
+<para>Align by making the right edges overlap and centered vertically. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aab7802cc31f96f00cc88cc9d9fd3d8467" prot="public">
+          <name>GAlignBottomRight</name>
+          <briefdescription>
+<para>Align by making the bottom edges overlap and right edges overlap. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1ggac8aa0eb3d3065fde8d2d6f282fa47f6aa0d082bc1a280106ce0c8ce60508ed44d" prot="public">
+          <name>GAlignBottomLeft</name>
+          <briefdescription>
+<para>Align by making the bottom edges overlap and left edges overlap. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values to specify how two things should be aligned relative to each other. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><image type="html" name="galign.png" inline="yes"></image>
+ <image type="latex" name="galign.png" inline="yes"></image>
+ <image type="rtf" name="galign.png" inline="yes"></image>
+ <image type="docbook" name="galign.png" inline="yes"></image>
+ <image type="xml" name="galign.png" inline="yes"></image>
+</para>
+<para><simplesect kind="see"><para><ref refid="group___bitmap_layer_1ga4c1765f9330890641c4c09ba7e894894" kindref="member">bitmap_layer_set_alignment()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4138" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4138" bodyend="4157"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GBitmapFormat</name>
+        <enumvalue id="group___graphics_types_1gga5c29b6b52478182a01ec4863de80ebfaa4a19fe4ee514ab4c9da643377e7a0919" prot="public">
+          <name>GBitmapFormat1Bit</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga5c29b6b52478182a01ec4863de80ebfaa379f34a266d13ff26667e9d48b78c214" prot="public">
+          <name>GBitmapFormat8Bit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga5c29b6b52478182a01ec4863de80ebfaaf4dbe9f8d4234d1b3eef4f2b5c5a74b7" prot="public">
+          <name>GBitmapFormat1BitPalette</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga5c29b6b52478182a01ec4863de80ebfaa20fc9092eb054cded232d327e738e420" prot="public">
+          <name>GBitmapFormat2BitPalette</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga5c29b6b52478182a01ec4863de80ebfaacad10398a0abbde035cc3714554b07bc" prot="public">
+          <name>GBitmapFormat4BitPalette</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga5c29b6b52478182a01ec4863de80ebfaa6add5dcbbc7705019e0db6c12d341c01" prot="public">
+          <name>GBitmapFormat8BitCircular</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The format of a GBitmap can either be 1-bit or 8-bit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3853" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3853" bodyend="3860"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___graphics_types_1ga0d021422bd90a2a49e6c8d848e6d556f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GCompOp</name>
+        <enumvalue id="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3d668fac5e660241746c082d7155e059" prot="public">
+          <name>GCompOpAssign</name>
+          <briefdescription>
+<para>Assign the pixel values of the source image to the destination pixels, effectively replacing the previous values for those pixels. For color displays, when drawing a palettized or 8-bit GBitmap image, the opacity value is ignored. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa1ee43eff5811f9066ee8a94498e7d828" prot="public">
+          <name>GCompOpAssignInverted</name>
+          <briefdescription>
+<para>Assign the <bold>inverted</bold> pixel values of the source image to the destination pixels, effectively replacing the previous values for those pixels. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>For bitmaps with a format different from GBitmapFormat1Bit, this mode is not supported and the resulting behavior is undefined. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa30d689e91f2ce16dd949b4076fb76ce4" prot="public">
+          <name>GCompOpOr</name>
+          <briefdescription>
+<para>Use the boolean operator <computeroutput>OR</computeroutput> to composite the source and destination pixels. The visual result of this compositing mode is the source&apos;s white pixels are painted onto the destination and the source&apos;s black pixels are treated as clear. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>For bitmaps with a format different from GBitmapFormat1Bit, this mode is not supported and the resulting behavior is undefined. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa0859125379c8687a92843a6db44fb7a6" prot="public">
+          <name>GCompOpAnd</name>
+          <briefdescription>
+<para>Use the boolean operator <computeroutput>AND</computeroutput> to composite the source and destination pixels. The visual result of this compositing mode is the source&apos;s black pixels are painted onto the destination and the source&apos;s white pixels are treated as clear. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>For bitmaps with a format different from GBitmapFormat1Bit, this mode is not supported and the resulting behavior is undefined. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556faba6dadf20ebce8ba4c25ecf3c9a39142" prot="public">
+          <name>GCompOpClear</name>
+          <briefdescription>
+<para>Clears the bits in the destination image, using the source image as mask. The visual result of this compositing mode is that for the parts where the source image is white, the destination image will be painted black. Other parts will be left untouched. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>For bitmaps with a format different from GBitmapFormat1Bit, this mode is not supported and the resulting behavior is undefined. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3ca84b5c70798643a3bd07b263c47fe6" prot="public">
+          <name>GCompOpSet</name>
+          <briefdescription>
+<para>Sets the bits in the destination image, using the source image as mask. This mode is required to apply any transparency of your bitmap. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="note"><para>For bitmaps of the format GBitmapFormat1Bit, the visual result of this compositing mode is that for the parts where the source image is black, the destination image will be painted white. Other parts will be left untouched. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values to specify how the source image should be composited onto the destination image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><image type="html" name="compops.png" inline="yes"></image>
+ <image type="latex" name="compops.png" inline="yes"></image>
+ <image type="rtf" name="compops.png" inline="yes"></image>
+ <image type="docbook" name="compops.png" inline="yes"></image>
+ <image type="xml" name="compops.png" inline="yes"></image>
+</para>
+<para>Contrived example of how the different compositing modes affect drawing. Often, the &quot;destination image&quot; is the render buffer and thus contains the image of what has been drawn before or &quot;underneath&quot;.</para>
+<para>For color displays, only two compositing modes are supported, <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3d668fac5e660241746c082d7155e059" kindref="member">GCompOpAssign</ref> and <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3ca84b5c70798643a3bd07b263c47fe6" kindref="member">GCompOpSet</ref>. The behavior of other compositing modes are undefined and may change in the future. Transparency can be achieved using <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3ca84b5c70798643a3bd07b263c47fe6" kindref="member">GCompOpSet</ref> and requires pixel values with alpha value .a &lt; 3. <simplesect kind="see"><para><ref refid="group___bitmap_layer_1ga7bc761ca8227881c5853cbc0e279385e" kindref="member">bitmap_layer_set_compositing_mode()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_context_1ga64bc6cc5f86dabcd4b3cfa9fcffa328c" kindref="member">graphics_context_set_compositing_mode()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___drawing_1ga2df0bc47f542ea60500d3070670725f9" kindref="member">graphics_draw_bitmap_in_rect()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___drawing_1ga34f27bdfadc25a04b7b49d5cd8011266" kindref="member">graphics_draw_rotated_bitmap()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4186" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4186" bodyend="4222"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___graphics_types_1gaed0df2406540fa4c66b5bb2bfb6fe4e3" prot="public" static="no">
+        <type>struct GBitmap</type>
+        <definition>typedef struct GBitmap GBitmap</definition>
+        <argsstring></argsstring>
+        <name>GBitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3863" column="22" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_types_1gaab4efc3f23535c390cd81f0bae9a903c" prot="public" static="no">
+        <type>struct GBitmapSequence</type>
+        <definition>typedef struct GBitmapSequence GBitmapSequence</definition>
+        <argsstring></argsstring>
+        <name>GBitmapSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3866" column="30" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_types_1ga7b74248edea0c97b98702660c0251aa7" prot="public" static="no">
+        <type>GColor8</type>
+        <definition>typedef GColor8 GColor</definition>
+        <argsstring></argsstring>
+        <name>GColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3703" column="17" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___graphics_types_1ga83252ff59db719f37ccbb80393c53e89" prot="public" static="no">
+        <type>struct GContext</type>
+        <definition>typedef struct GContext GContext</definition>
+        <argsstring></argsstring>
+        <name>GContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4225" column="23" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4225" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___graphics_types_1ga73f7340bbffad2bc8aeda4e4565c65f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * gbitmap_create_as_sub_bitmap</definition>
+        <argsstring>(const GBitmap *base_bitmap, GRect sub_rect)</argsstring>
+        <name>gbitmap_create_as_sub_bitmap</name>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>base_bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>sub_rect</declname>
+        </param>
+        <briefdescription>
+<para>Create a new GBitmap on the heap as a sub-bitmap of a &apos;base&apos; GBitmap, using a <ref refid="struct_g_rect" kindref="compound">GRect</ref> to indicate what portion of the base to use. The sub-bitmap will just reference the image data and palette of the base bitmap. No deep-copying occurs as a result of calling this function, thus the caller is responsible for making sure the base bitmap and palette will remain available when using the sub-bitmap. Note that you should not destroy the parent bitmap until the sub_bitmap has been destroyed. The resulting GBitmap must be destroyed using <ref refid="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" kindref="member">gbitmap_destroy()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">base_bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap that the sub-bitmap of which the image data will be used by the sub-bitmap </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sub_rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle within the image data of the base bitmap. The bounds of the base bitmap will be used to clip <computeroutput>sub_rect</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the GBitmap. <computeroutput>NULL</computeroutput> if the GBitmap could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3970" column="9" declfile="build/sdk/emery/include/pebble.h" declline="3970" declcolumn="9"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga8b7536253fb1e614201c473580863f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * gbitmap_create_blank</definition>
+        <argsstring>(GSize size, GBitmapFormat format)</argsstring>
+        <name>gbitmap_create_blank</name>
+        <param>
+          <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new blank GBitmap on the heap initialized to zeroes. In the case that the format indicates a palettized bitmap, a palette of appropriate size will also be allocated on the heap. The resulting GBitmap must be destroyed using <ref refid="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" kindref="member">gbitmap_destroy()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Pebble image dimensions as a <ref refid="struct_g_size" kindref="compound">GSize</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref> the created image should be in. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the GBitmap. <computeroutput>NULL</computeroutput> if the GBitmap could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3990" column="9" declfile="build/sdk/emery/include/pebble.h" declline="3990" declcolumn="9"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga135af9d75278c08abb584464728b0c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * gbitmap_create_blank_with_palette</definition>
+        <argsstring>(GSize size, GBitmapFormat format, GColor *palette, bool free_on_destroy)</argsstring>
+        <name>gbitmap_create_blank_with_palette</name>
+        <param>
+          <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>GColor *</type>
+          <declname>palette</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>free_on_destroy</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new blank GBitmap on the heap, initialized to zeroes, and assigns it the given palette. No deep-copying of the palette occurs, so the caller is responsible for making sure the palette remains available when using the resulting bitmap. Management of that memory can be handed off to the system with the free_on_destroy argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Pebble image dimensions as a <ref refid="struct_g_size" kindref="compound">GSize</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref> the created image and palette should be in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>palette</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to a palette that is to be used for this GBitmap. The palette should be large enough to hold enough colors for the specified format. For example, GBitmapFormat2BitPalette should have 4 colors, since 2^2 = 4. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free_on_destroy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set whether the palette data should be freed along with the bitmap data when the GBitmap is destroyed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Pointer to the GBitmap. <computeroutput>NULL</computeroutput> if the GBitmap could not be created. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4005" column="9" declfile="build/sdk/emery/include/pebble.h" declline="4005" declcolumn="9"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga339b6cfb4c7fd3d851e39e92d3baf487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * gbitmap_create_from_png_data</definition>
+        <argsstring>(const uint8_t *png_data, size_t png_data_size)</argsstring>
+        <name>gbitmap_create_from_png_data</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>png_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>png_data_size</declname>
+        </param>
+        <briefdescription>
+<para>Create a GBitmap based on raw PNG data. The resulting GBitmap must be destroyed using <ref refid="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" kindref="member">gbitmap_destroy()</ref>. The developer is responsible for freeing png_data following this call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>PNG decoding currently supports 1,2,4 and 8 bit palettized and grayscale images. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>png_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PNG image data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>png_data_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PNG image size in bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the GBitmap. <computeroutput>NULL</computeroutput> if the GBitmap could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3980" column="9" declfile="build/sdk/emery/include/pebble.h" declline="3980" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gabb3697502db2ec3df0ada64ba15770e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * gbitmap_create_palettized_from_1bit</definition>
+        <argsstring>(const GBitmap *src_bitmap)</argsstring>
+        <name>gbitmap_create_palettized_from_1bit</name>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>src_bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Given a 1-bit GBitmap, create a new bitmap of format GBitmapFormat1BitPalette. The new data buffer is allocated on the heap, and a 2-color palette is allocated as well. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src_bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A GBitmap of format GBitmapFormat1Bit which is to be copied into a newly created GBitmap of format GBitmapFormat1BitPalettized. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created 1-bit palettized GBitmap, or NULL if there is not sufficient space. </para>
+</simplesect>
+<simplesect kind="note"><para>The new bitmap does not depend on any data from src_bitmap, so src_bitmap can be freed without worry. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4015" column="9" declfile="build/sdk/emery/include/pebble.h" declline="4015" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga18d06bd1fec2f88f027879664ef6185c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * gbitmap_create_with_data</definition>
+        <argsstring>(const uint8_t *data)</argsstring>
+        <name>gbitmap_create_with_data</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new GBitmap on the heap initialized with the provided Pebble image data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The resulting GBitmap must be destroyed using <ref refid="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" kindref="member">gbitmap_destroy()</ref> but the image data will not be freed automatically. The developer is responsible for keeping the image data in memory as long as the bitmap is used and releasing it after the bitmap is destroyed. <simplesect kind="note"><para>One way to generate Pebble image data is to use bitmapgen.py in the Pebble SDK to generate a .pbi file. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Pebble image data. Must not be NULL. The function assumes the data to be correct; there are no sanity checks performed on the data. The data will not be copied and the pointer must remain valid for the lifetime of this GBitmap. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the GBitmap. <computeroutput>NULL</computeroutput> if the GBitmap could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3954" column="9" declfile="build/sdk/emery/include/pebble.h" declline="3954" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga80248fd5ac8a50211f0cd4110a45fa59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmap *</type>
+        <definition>GBitmap * gbitmap_create_with_resource</definition>
+        <argsstring>(uint32_t resource_id)</argsstring>
+        <name>gbitmap_create_with_resource</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>resource_id</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new GBitmap on the heap using a Pebble image file stored as a resource. The resulting GBitmap must be destroyed using <ref refid="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" kindref="member">gbitmap_destroy()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the bitmap resource to load </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the GBitmap. <computeroutput>NULL</computeroutput> if the GBitmap could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3939" column="9" declfile="build/sdk/emery/include/pebble.h" declline="3939" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gbitmap_destroy</definition>
+        <argsstring>(GBitmap *bitmap)</argsstring>
+        <name>gbitmap_destroy</name>
+        <param>
+          <type>GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a GBitmap. This must be called for every bitmap that&apos;s been created with gbitmap_create_*. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will also free the memory of the bitmap data (bitmap-&gt;addr) if the bitmap was created with <ref refid="group___graphics_types_1ga8b7536253fb1e614201c473580863f2d" kindref="member">gbitmap_create_blank()</ref> or <ref refid="group___graphics_types_1ga80248fd5ac8a50211f0cd4110a45fa59" kindref="member">gbitmap_create_with_resource()</ref>.</para>
+<para>If the GBitmap was created with <ref refid="group___graphics_types_1ga18d06bd1fec2f88f027879664ef6185c" kindref="member">gbitmap_create_with_data()</ref>, you must release the memory after calling <ref refid="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" kindref="member">gbitmap_destroy()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4025" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4025" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gafce95e410fee76c66526f167c8415f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>GRect gbitmap_get_bounds</definition>
+        <argsstring>(const GBitmap *bitmap)</argsstring>
+        <name>gbitmap_get_bounds</name>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Gets the bounds of the content for the GBitmap. This is set when loading the image or if changed by <ref refid="group___graphics_types_1ga3ef230f384923b9d02b735ac7c0aa7e4" kindref="member">gbitmap_set_bounds</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to get the bounding box from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bounding box for the GBitmap. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga3ef230f384923b9d02b735ac7c0aa7e4" kindref="member">gbitmap_set_bounds</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3909" column="7" declfile="build/sdk/emery/include/pebble.h" declline="3909" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga032629d36d12d13aadfd5176fd0463c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t gbitmap_get_bytes_per_row</definition>
+        <argsstring>(const GBitmap *bitmap)</argsstring>
+        <name>gbitmap_get_bytes_per_row</name>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of bytes per row in the bitmap data for the given GBitmap. On rectangular displays, this can be used as a safe way of iterating over the rows in the bitmap, since bytes per row should be set according to format. On circular displays with pixel format of GBitmapFormat8BitCircular this will return 0, and should not be used for iteration over frame buffer pixels. Instead, use <ref refid="struct_g_bitmap_data_row_info" kindref="compound">GBitmapDataRowInfo</ref>, which provides safe minimum and maximum x values for a given row&apos;s y value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to get the bytes per row </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes per row of the GBitmap </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1gac346bcebc653a196ddb2aecc04dc0ac6" kindref="member">gbitmap_get_data</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3877" column="10" declfile="build/sdk/emery/include/pebble.h" declline="3877" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gac346bcebc653a196ddb2aecc04dc0ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t * gbitmap_get_data</definition>
+        <argsstring>(const GBitmap *bitmap)</argsstring>
+        <name>gbitmap_get_data</name>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Get a pointer to the raw image data section of the given GBitmap as specified by the format of the bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to get the data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the raw image data for the GBitmap </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga032629d36d12d13aadfd5176fd0463c8" kindref="member">gbitmap_get_bytes_per_row</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>GBitmap </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3890" column="9" declfile="build/sdk/emery/include/pebble.h" declline="3890" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga5c307d3424e0af8d03d988bb69a5ee0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_bitmap_data_row_info" kindref="compound">GBitmapDataRowInfo</ref></type>
+        <definition>GBitmapDataRowInfo gbitmap_get_data_row_info</definition>
+        <argsstring>(const GBitmap *bitmap, uint16_t y)</argsstring>
+        <name>gbitmap_get_data_row_info</name>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Provides information about a pixel data row. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to get row info </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute row number in the pixel data, independent from the bitmap&apos;s bounds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Description of the row </para>
+</simplesect>
+<simplesect kind="note"><para>This function does not respect the bitmap&apos;s bounds but purely operates on the pixel data. This function works with every bitmap format including GBitmapFormat1Bit. The result of the function for invalid rows is undefined. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1gac346bcebc653a196ddb2aecc04dc0ac6" kindref="member">gbitmap_get_data</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4133" column="20" declfile="build/sdk/emery/include/pebble.h" declline="4133" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga3c8c92415f93744d2a5aec9cb40194c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref></type>
+        <definition>GBitmapFormat gbitmap_get_format</definition>
+        <argsstring>(const GBitmap *bitmap)</argsstring>
+        <name>gbitmap_get_format</name>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Get the <ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref> for the GBitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to get the format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The format of the given GBitmap. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3882" column="15" declfile="build/sdk/emery/include/pebble.h" declline="3882" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gad88c0e6a210a3f40563d15b29ecf4a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GColor *</type>
+        <definition>GColor * gbitmap_get_palette</definition>
+        <argsstring>(const GBitmap *bitmap)</argsstring>
+        <name>gbitmap_get_palette</name>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Get the palette for the given GBitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to get the palette from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to a GColor array containing the palette colors. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga4450b2f567703a3e27bcbb51117aa087" kindref="member">gbitmap_set_palette</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3921" column="8" declfile="build/sdk/emery/include/pebble.h" declline="3921" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gaf130cb37155bf94d76ee262d03577d54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GBitmapSequence *</type>
+        <definition>GBitmapSequence * gbitmap_sequence_create_with_resource</definition>
+        <argsstring>(uint32_t resource_id)</argsstring>
+        <name>gbitmap_sequence_create_with_resource</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>resource_id</declname>
+        </param>
+        <briefdescription>
+<para>Creates a GBitmapSequence from the specified resource (APNG/PNG files). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource to load and create GBitmapSequence from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GBitmapSequence pointer if the resource was loaded, NULL otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4030" column="17" declfile="build/sdk/emery/include/pebble.h" declline="4030" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga80e569d755b657753e3508db7f3738ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gbitmap_sequence_destroy</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence)</argsstring>
+        <name>gbitmap_sequence_destroy</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the GBitmapSequence structure and frees any allocated memory/decoder_data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the bitmap sequence to free (delete) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4064" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4064" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga0f780293a25c9533e3a7f225e5e32110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+        <definition>GSize gbitmap_sequence_get_bitmap_size</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence)</argsstring>
+        <name>gbitmap_sequence_get_bitmap_size</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <briefdescription>
+<para>This function gets the minimum required size (dimensions) necessary to render the bitmap sequence to a GBitmap using the /ref gbitmap_sequence_update_bitmap_next_frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to loaded bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Dimensions required to render the bitmap sequence to a GBitmap </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4100" column="7" declfile="build/sdk/emery/include/pebble.h" declline="4100" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga310e83ec73f9bf4615be74f70875bb14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t gbitmap_sequence_get_current_frame_idx</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence)</argsstring>
+        <name>gbitmap_sequence_get_current_frame_idx</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <briefdescription>
+<para>This function gets the current frame number for the bitmap sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to loaded bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of current frame in the current loop of the bitmap sequence </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4074" column="9" declfile="build/sdk/emery/include/pebble.h" declline="4074" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga9043176bcb76648ea06178359cf49956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t gbitmap_sequence_get_play_count</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence)</argsstring>
+        <name>gbitmap_sequence_get_play_count</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <briefdescription>
+<para>This function gets the play count (number of times to repeat) the bitmap sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This value is initialized by the bitmap sequence data, and is modified by <ref refid="group___graphics_types_1gaccb2389a62d110a0b36c05fec3026b45" kindref="member">gbitmap_sequence_set_play_count</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to loaded bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Play count of bitmap sequence, PLAY_COUNT_INFINITE for infinite looping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4086" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4086" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga2baea5c5caff4c96de103895e63e66e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t gbitmap_sequence_get_total_num_frames</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence)</argsstring>
+        <name>gbitmap_sequence_get_total_num_frames</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <briefdescription>
+<para>This function sets the total number of frames for the bitmap sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to loaded bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of frames contained in a single loop of the bitmap sequence </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4079" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4079" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga38f7d5f9f91c51ba1735ff570ee83f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gbitmap_sequence_restart</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence)</argsstring>
+        <name>gbitmap_sequence_restart</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <briefdescription>
+<para>Restarts the GBitmapSequence to the first frame <ref refid="group___graphics_types_1ga0f7029b68fc5f0b6a8869a0aa7717fdc" kindref="member">gbitmap_sequence_update_bitmap_next_frame</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to loaded bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if sequence was restarted, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4069" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4069" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gaccb2389a62d110a0b36c05fec3026b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gbitmap_sequence_set_play_count</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence, uint32_t play_count)</argsstring>
+        <name>gbitmap_sequence_set_play_count</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>play_count</declname>
+        </param>
+        <briefdescription>
+<para>This function sets the play count (number of times to repeat) the bitmap sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to loaded bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>play_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of times to repeat the bitmap sequence with 0 disabling update_by_elapsed and update_next_frame, and PLAY_COUNT_INFINITE for infinite looping of the animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4093" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4093" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga7c9b86d6acd020cbe4982d00cfd80ff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gbitmap_sequence_update_bitmap_by_elapsed</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence, GBitmap *bitmap, uint32_t elapsed_ms)</argsstring>
+        <name>gbitmap_sequence_update_bitmap_by_elapsed</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <param>
+          <type>GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>elapsed_ms</declname>
+        </param>
+        <briefdescription>
+<para>Updates the contents of the bitmap sequence to the frame at elapsed in the sequence. For looping animations this accounts for the loop, for example an animation of 1 second that is configured to loop 2 times updated to 1500 ms elapsed time will display the sequence frame at 500 ms. Elapsed time is the time from the start of the animation, and will be ignored if it is for a time earlier than the last rendered frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to loaded bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the initialized GBitmap in which to render the bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elapsed_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Elapsed time in milliseconds in the sequence relative to start </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if a frame was rendered. False if all frames (and loops) have already been rendered for the sequence. Will also return false if frame could not be rendered (includes out of memory errors). </para>
+</simplesect>
+<simplesect kind="note"><para>GBitmap must be large enough to accommodate the bitmap_sequence image <ref refid="group___graphics_types_1ga0f780293a25c9533e3a7f225e5e32110" kindref="member">gbitmap_sequence_get_bitmap_size</ref> </para>
+</simplesect>
+<simplesect kind="note"><para>This function is disabled for play_count 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4059" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4059" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga0f7029b68fc5f0b6a8869a0aa7717fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gbitmap_sequence_update_bitmap_next_frame</definition>
+        <argsstring>(GBitmapSequence *bitmap_sequence, GBitmap *bitmap, uint32_t *delay_ms)</argsstring>
+        <name>gbitmap_sequence_update_bitmap_next_frame</name>
+        <param>
+          <type>GBitmapSequence *</type>
+          <declname>bitmap_sequence</declname>
+        </param>
+        <param>
+          <type>GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> *</type>
+          <declname>delay_ms</declname>
+        </param>
+        <briefdescription>
+<para>Updates the contents of the bitmap sequence to the next frame and optionally returns the delay in milliseconds until the next frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap_sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to loaded bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the initialized GBitmap in which to render the bitmap sequence </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">delay_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not NULL, returns the delay in milliseconds until the next frame. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if frame was rendered. False if all frames (and loops) have been rendered for the sequence. Will also return false if frame could not be rendered (includes out of memory errors). </para>
+</simplesect>
+<simplesect kind="note"><para>GBitmap must be large enough to accommodate the bitmap_sequence image <ref refid="group___graphics_types_1ga0f780293a25c9533e3a7f225e5e32110" kindref="member">gbitmap_sequence_get_bitmap_size</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4042" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4042" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga3ef230f384923b9d02b735ac7c0aa7e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gbitmap_set_bounds</definition>
+        <argsstring>(GBitmap *bitmap, GRect bounds)</argsstring>
+        <name>gbitmap_set_bounds</name>
+        <param>
+          <type>GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>Set the bounds of the given GBitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to set the bounding box. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounding box to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1gafce95e410fee76c66526f167c8415f3f" kindref="member">gbitmap_get_bounds</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3915" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3915" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga64f2a0d2488f425a710864e127d1d327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gbitmap_set_data</definition>
+        <argsstring>(GBitmap *bitmap, uint8_t *data, GBitmapFormat format, uint16_t row_size_bytes, bool free_on_destroy)</argsstring>
+        <name>gbitmap_set_data</name>
+        <param>
+          <type>GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>row_size_bytes</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>free_on_destroy</declname>
+        </param>
+        <briefdescription>
+<para>Set the bitmap data for the given GBitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to set data to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the bitmap data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the format of the bitmap data. If this is a palettized format, make sure that there is an accompanying call to <ref refid="group___graphics_types_1ga4450b2f567703a3e27bcbb51117aa087" kindref="member">gbitmap_set_palette</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row_size_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many bytes a single row takes. For example, bitmap data of format GBitmapFormat1Bit must have a row size as a multiple of 4 bytes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free_on_destroy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set whether the data should be freed when the GBitmap is destroyed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" kindref="member">gbitmap_destroy</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3901" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3901" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga4450b2f567703a3e27bcbb51117aa087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gbitmap_set_palette</definition>
+        <argsstring>(GBitmap *bitmap, GColor *palette, bool free_on_destroy)</argsstring>
+        <name>gbitmap_set_palette</name>
+        <param>
+          <type>GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>GColor *</type>
+          <declname>palette</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>free_on_destroy</declname>
+        </param>
+        <briefdescription>
+<para>Set the palette for the given GBitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the GBitmap to set the palette to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>palette</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The palette to be used. Make sure that the palette is large enough for the bitmap&apos;s format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free_on_destroy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set whether the palette data should be freed when the GBitmap is destroyed or when another palette is set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga3c8c92415f93744d2a5aec9cb40194c8" kindref="member">gbitmap_get_format</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" kindref="member">gbitmap_destroy</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga4450b2f567703a3e27bcbb51117aa087" kindref="member">gbitmap_set_palette</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3932" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3932" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga40df0077888f77ac5b0a07d8d7304a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gcolor_equal</definition>
+        <argsstring>(GColor8 x, GColor8 y)</argsstring>
+        <name>gcolor_equal</name>
+        <param>
+          <type>GColor8</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>GColor8</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>True if both colors are identical or both are invisible (i.e. both have alpha values of .a=0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3708" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3708" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga5d02d53f14eef571f131c784a1eaf3c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GColor8</type>
+        <definition>GColor8 gcolor_legible_over</definition>
+        <argsstring>(GColor8 background_color)</argsstring>
+        <name>gcolor_legible_over</name>
+        <param>
+          <type>GColor8</type>
+          <declname>background_color</declname>
+        </param>
+        <briefdescription>
+<para>This method assists in improving the legibility of text on various background colors. It takes the background color for the region in question and computes a color for maximum legibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>background_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Background color for the region in question </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A legible color for the given background color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3715" column="9" declfile="build/sdk/emery/include/pebble.h" declline="3715" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga55941ba733d6b685ba3fcd316ce12af0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gpoint_equal</definition>
+        <argsstring>(const GPoint *const point_a, const GPoint *const point_b)</argsstring>
+        <name>gpoint_equal</name>
+        <param>
+          <type>const <ref refid="struct_g_point" kindref="compound">GPoint</ref> *const</type>
+          <declname>point_a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_point" kindref="compound">GPoint</ref> *const</type>
+          <declname>point_b</declname>
+        </param>
+        <briefdescription>
+<para>Tests whether 2 points are equal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the first point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the second point </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if both points are equal, <computeroutput>false</computeroutput> if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3758" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3758" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gad714d5d1dd0509196d8aadbdba2ac510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void grect_align</definition>
+        <argsstring>(GRect *rect, const GRect *inside_rect, const GAlign alignment, const bool clip)</argsstring>
+        <name>grect_align</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref> *</type>
+          <declname>inside_rect</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___graphics_types_1gac8aa0eb3d3065fde8d2d6f282fa47f6a" kindref="member">GAlign</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+<para>Aligns one rectangle within another rectangle, using an alignment parameter. The relative coordinate systems of both rectangles are assumed to be the same. When clip is true, <computeroutput>rect</computeroutput> is also clipped by the constraint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to align (in place) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The aligned and optionally clipped rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inside_rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle in which to align <computeroutput>rect</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines the alignment of <computeroutput>rect</computeroutput> within <computeroutput>inside_rect</computeroutput> by specifying what edges of should overlap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines whether <computeroutput>rect</computeroutput> should be trimmed using the edges of <computeroutput>inside_rect</computeroutput> in case <computeroutput>rect</computeroutput> extends outside of the area that <computeroutput>inside_rect</computeroutput> covers after the alignment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4169" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4169" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gae3a0a9c97927d0a72f3c5d8340e950fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+        <definition>GPoint grect_center_point</definition>
+        <argsstring>(const GRect *rect)</argsstring>
+        <name>grect_center_point</name>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to compute the center-point of a given rectangle. This is equal to <computeroutput>(rect-&gt;x + rect-&gt;width / 2, rect-&gt;y + rect-&gt;height / 2)</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle for which to calculate the center point. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The point at the center of <computeroutput>rect</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3834" column="8" declfile="build/sdk/emery/include/pebble.h" declline="3834" declcolumn="8"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga0be9e99bf608e20c4ce33c48a859efa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void grect_clip</definition>
+        <argsstring>(GRect *const rect_to_clip, const GRect *const rect_clipper)</argsstring>
+        <name>grect_clip</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref> *const</type>
+          <declname>rect_to_clip</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref> *const</type>
+          <declname>rect_clipper</declname>
+        </param>
+        <briefdescription>
+<para>Trim one rectangle using the edges of a second rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rect_to_clip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle that needs to be clipped (in place). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">rect_to_clip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The clipped rectangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect_clipper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle of which the edges will serve as &quot;scissors&quot; in order to trim <computeroutput>rect_to_clip</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3822" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3822" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga8952ac950ca4ec1195106e7b208a82c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool grect_contains_point</definition>
+        <argsstring>(const GRect *rect, const GPoint *point)</argsstring>
+        <name>grect_contains_point</name>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_point" kindref="compound">GPoint</ref> *</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Tests whether a rectangle contains a point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the rectangle contains the point, or <computeroutput>false</computeroutput> if it does not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3828" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3828" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga45ade8bcee6668a5b9fc3a5dc2adbb4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>GRect grect_crop</definition>
+        <argsstring>(GRect rect, const int32_t crop_size_px)</argsstring>
+        <name>grect_crop</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>const int32_t</type>
+          <declname>crop_size_px</declname>
+        </param>
+        <briefdescription>
+<para>Reduce the width and height of a rectangle by insetting each of the edges with a fixed inset. The returned rectangle will be centered relative to the input rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The function will trip an assertion if the crop yields a rectangle with negative width or height. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle that will be inset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>crop_size_px</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The inset by which each of the rectangle will be inset. A positive inset value results in a smaller rectangle, while negative inset value results in a larger rectangle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cropped rectangle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3844" column="7" declfile="build/sdk/emery/include/pebble.h" declline="3844" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gac4bfb1da25ab4fec1a84ffbc50a40bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool grect_equal</definition>
+        <argsstring>(const GRect *const rect_a, const GRect *const rect_b)</argsstring>
+        <name>grect_equal</name>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref> *const</type>
+          <declname>rect_a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref> *const</type>
+          <declname>rect_b</declname>
+        </param>
+        <briefdescription>
+<para>Tests whether 2 rectangles are equal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the first rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the second rectangle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if both rectangles are equal, <computeroutput>false</computeroutput> if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3799" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3799" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>GRect grect_inset</definition>
+        <argsstring>(GRect rect, GEdgeInsets insets)</argsstring>
+        <name>grect_inset</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref></type>
+          <declname>insets</declname>
+        </param>
+        <briefdescription>
+<para>Returns a rectangle that is shrinked or expanded by the given edge insets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The rectangle is standardized and then the inset parameters are applied. If the resulting rectangle would have a negative height or width, a GRectZero is returned. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle that will be inset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>insets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The insets that will be applied </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The resulting rectangle </para>
+</simplesect>
+<simplesect kind="note"><para>Use this function in together with the <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" kindref="member">GRect</ref><sp/>r_inset_all_sides<sp/>=<sp/><ref refid="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56" kindref="member">grect_inset</ref>(r,<sp/><ref refid="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" kindref="member">GEdgeInsets</ref>(10));</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" kindref="member">GRect</ref><sp/>r_inset_vertical_horizontal<sp/>=<sp/><ref refid="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56" kindref="member">grect_inset</ref>(r,<sp/><ref refid="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" kindref="member">GEdgeInsets</ref>(10,<sp/>20));</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" kindref="member">GRect</ref><sp/>r_expand_top_right_shrink_bottom_left<sp/>=<sp/><ref refid="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56" kindref="member">grect_inset</ref>(r,<sp/><ref refid="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" kindref="member">GEdgeInsets</ref>(-10,<sp/>-10,<sp/>10,<sp/>10));</highlight></codeline>
+</programlisting> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4285" column="7" declfile="build/sdk/emery/include/pebble.h" declline="4285" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" compoundref="pebble_8h" startline="4270" endline="4271">GEdgeInsets</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1gabbece2417a145e398e6c1ce512203150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool grect_is_empty</definition>
+        <argsstring>(const GRect *const rect)</argsstring>
+        <name>grect_is_empty</name>
+        <param>
+          <type>const <ref refid="struct_g_rect" kindref="compound">GRect</ref> *const</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Tests whether the size of the rectangle is (0, 0). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the rectangle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the rectangle its size is (0, 0), or <computeroutput>false</computeroutput> if not. </para>
+</simplesect>
+<simplesect kind="note"><para>If the width and/or height of a rectangle is negative, this function will return <computeroutput>true</computeroutput>! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3806" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3806" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga6fcd8b24daede67494e49fa4803760a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void grect_standardize</definition>
+        <argsstring>(GRect *rect)</argsstring>
+        <name>grect_standardize</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Converts a rectangle&apos;s values so that the components of its size (width and/or height) are both positive. In the width and/or height are negative, the origin will offset, so that the final rectangle overlaps with the original. For example, a <ref refid="struct_g_rect" kindref="compound">GRect</ref> with size (-10, -5) and origin (20, 20), will be standardized to size (10, 5) and origin (10, 15). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to convert. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The standardized rectangle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3815" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3815" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___graphics_types_1ga182655c93aaff5c2df45aba496c64b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gsize_equal</definition>
+        <argsstring>(const GSize *size_a, const GSize *size_b)</argsstring>
+        <name>gsize_equal</name>
+        <param>
+          <type>const <ref refid="struct_g_size" kindref="compound">GSize</ref> *</type>
+          <declname>size_a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_size" kindref="compound">GSize</ref> *</type>
+          <declname>size_b</declname>
+        </param>
+        <briefdescription>
+<para>Tests whether 2 sizes are equal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size_a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the first size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the second size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if both sizes are equal, <computeroutput>false</computeroutput> if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3778" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3778" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___graphics_types_1ga8cb8f728e01e63674935d7601f438841" prot="public" static="no">
+        <name>COLOR_FALLBACK</name>
+        <param><defname>color</defname></param>
+        <param><defname>bw</defname></param>
+        <initializer>(color)</initializer>
+        <briefdescription>
+<para>Convenience macro allowing use of a fallback color for black and white platforms. On color platforms, the first expression will be chosen, the second otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3719" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga3c778a69b007e2dd2aeb2a8253d2a3ad" prot="public" static="no">
+        <name>GColorFromHEX</name>
+        <param><defname>v</defname></param>
+        <initializer><ref refid="group___graphics_types_1ga5526fda29291b139ceb4c736f7aa61e4" kindref="member">GColorFromRGB</ref>(((v) &gt;&gt; 16) &amp; 0xff, ((v) &gt;&gt; 8) &amp; 0xff, ((v) &amp; 0xff))</initializer>
+        <briefdescription>
+<para>Convert hex integer to GColor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer hex value (e.g. 0x64ff46) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GColor created from the hex value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/gcolor_definitions.h" line="40" column="9" bodyfile="build/sdk/emery/include/gcolor_definitions.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga5526fda29291b139ceb4c736f7aa61e4" prot="public" static="no">
+        <name>GColorFromRGB</name>
+        <param><defname>red</defname></param>
+        <param><defname>green</defname></param>
+        <param><defname>blue</defname></param>
+        <initializer><ref refid="group___graphics_types_1gaa7922ac35d2b7fd40547083eed4ed757" kindref="member">GColorFromRGBA</ref>(red, green, blue, 255)</initializer>
+        <briefdescription>
+<para>Convert RGB to GColor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Red value from 0 - 255 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Green value from 0 - 255 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Blue value from 0 - 255 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GColor created from the RGB values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/gcolor_definitions.h" line="34" column="9" bodyfile="build/sdk/emery/include/gcolor_definitions.h" bodystart="34" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1gaa7922ac35d2b7fd40547083eed4ed757" prot="public" static="no">
+        <name>GColorFromRGBA</name>
+        <param><defname>red</defname></param>
+        <param><defname>green</defname></param>
+        <param><defname>blue</defname></param>
+        <param><defname>alpha</defname></param>
+        <initializer>((GColor8){ \
+.a = (uint8_t)(alpha) &gt;&gt; 6, \
+.r = (uint8_t)(red) &gt;&gt; 6, \
+.g = (uint8_t)(green) &gt;&gt; 6, \
+.b = (uint8_t)(blue) &gt;&gt; 6, \
+})</initializer>
+        <briefdescription>
+<para>Convert RGBA to GColor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Red value from 0 - 255 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Green value from 0 - 255 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Blue value from 0 - 255 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alpha value from 0 - 255 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GColor created from the RGB values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/gcolor_definitions.h" line="22" column="9" bodyfile="build/sdk/emery/include/gcolor_definitions.h" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" prot="public" static="no">
+        <name>GEdgeInsets</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="group___graphics_types_1ga1524bd1b8af82ffca01955db009076a6" kindref="member">GEdgeInsetsN</ref>(__VA_ARGS__, <ref refid="group___graphics_types_1gab35ab5cb43abaeb0798f19f30a077c21" kindref="member">GEdgeInsets4</ref>, <ref refid="group___graphics_types_1gae5df1ff8865d2032e680a2cf84311e1a" kindref="member">GEdgeInsets3</ref>, <ref refid="group___graphics_types_1gab130dc3e0dc8d5b4b47c12b02ee9a22e" kindref="member">GEdgeInsets2</ref>, <ref refid="group___graphics_types_1ga35765ba41b7bd443ac54356610599549" kindref="member">GEdgeInsets1</ref>)(__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>Convenience macro to make a <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> This macro follows the CSS shorthand notation where you can call it with. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>just one value <ref refid="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" kindref="member">GEdgeInsets(v1)</ref> to configure all edges with v1 (<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = v1, .right = v1, .bottom = v1, .left = v1}</para>
+</listitem><listitem><para>two values v1, v2 to configure a vertical and horizontal inset as (<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = v1, .right = v2, .bottom = v1, .left = v2}</para>
+</listitem><listitem><para>three values v1, v2, v3 to configure it with (<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = v1, .right = v2, .bottom = v3, .left = v2}</para>
+</listitem><listitem><para>four values v1, v2, v3, v4 to configure it with (<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = v1, .right = v2, .bottom = v3, .left = v4} <simplesect kind="see"><para>grect_insets </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4270" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4270" bodyend="4271"/>
+        <referencedby refid="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56">grect_inset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga35765ba41b7bd443ac54356610599549" prot="public" static="no">
+        <name>GEdgeInsets1</name>
+        <param><defname>trbl</defname></param>
+        <initializer>((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = trbl, .right = trbl, .bottom = trbl, .left = trbl})</initializer>
+        <briefdescription>
+<para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4253" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4253" bodyend="4254"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1gab130dc3e0dc8d5b4b47c12b02ee9a22e" prot="public" static="no">
+        <name>GEdgeInsets2</name>
+        <param><defname>tb</defname></param>
+        <param><defname>rl</defname></param>
+        <initializer>((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = tb, .right = rl, .bottom = tb, .left = rl})</initializer>
+        <briefdescription>
+<para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4249" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4249" bodyend="4250"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1gae5df1ff8865d2032e680a2cf84311e1a" prot="public" static="no">
+        <name>GEdgeInsets3</name>
+        <param><defname>t</defname></param>
+        <param><defname>rl</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = t, .right = rl, .bottom = b, .left = rl})</initializer>
+        <briefdescription>
+<para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4245" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4245" bodyend="4246"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1gab35ab5cb43abaeb0798f19f30a077c21" prot="public" static="no">
+        <name>GEdgeInsets4</name>
+        <param><defname>t</defname></param>
+        <param><defname>r</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>l</defname></param>
+        <initializer>((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = t, .right = r, .bottom = b, .left = l})</initializer>
+        <briefdescription>
+<para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4241" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4241" bodyend="4242"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga1524bd1b8af82ffca01955db009076a6" prot="public" static="no">
+        <name>GEdgeInsetsN</name>
+        <param><defname>_1</defname></param>
+        <param><defname>_2</defname></param>
+        <param><defname>_3</defname></param>
+        <param><defname>_4</defname></param>
+        <param><defname>NAME</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>NAME</initializer>
+        <briefdescription>
+<para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4257" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" prot="public" static="no">
+        <name>GPoint</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>((GPoint){(x), (y)})</initializer>
+        <briefdescription>
+<para>Convenience macro to make a <ref refid="struct_g_point" kindref="compound">GPoint</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3749" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3749" bodyend="-1"/>
+        <referencedby refid="group___draw_command_1ga680ab532e364bea92d68c802784c59b6">gdraw_command_frame_draw</referencedby>
+        <referencedby refid="group___draw_command_1gac3d2d0e3bf0df97af606a8bc6dc0c764">gdraw_command_get_point</referencedby>
+        <referencedby refid="group___draw_command_1ga8912135a38f099affdf89926540ed3dd">gdraw_command_image_draw</referencedby>
+        <referencedby refid="group___draw_command_1gae9b05ea306378530d2645e81353e229a">gdraw_command_set_point</referencedby>
+        <referencedby refid="group___path_drawing_1ga1ba79344b9a34432a44af09bed8b00fd">gpath_move_to</referencedby>
+        <referencedby refid="group___graphics_types_1ga55941ba733d6b685ba3fcd316ce12af0">gpoint_equal</referencedby>
+        <referencedby refid="group___drawing_1gaadb2a677766c80dc05ab1bc92a35379b">gpoint_from_polar</referencedby>
+        <referencedby refid="group___drawing_1ga6356bbba09f4ebf3b79d34af93ef5321">graphics_draw_circle</referencedby>
+        <referencedby refid="group___drawing_1gaa5477f3debdc11b018b30cd53e3505c3">graphics_draw_line</referencedby>
+        <referencedby refid="group___drawing_1gaaa3daaaddacc92d108129d52cda36e43">graphics_draw_pixel</referencedby>
+        <referencedby refid="group___drawing_1ga34f27bdfadc25a04b7b49d5cd8011266">graphics_draw_rotated_bitmap</referencedby>
+        <referencedby refid="group___drawing_1gac8ade795e8d0845cdb80709d2984b31f">graphics_fill_circle</referencedby>
+        <referencedby refid="group___text_drawing_1gaf447fb3ce85161d8d1ccb97ef78fed13">graphics_text_attributes_enable_paging</referencedby>
+        <referencedby refid="group___graphics_types_1gae3a0a9c97927d0a72f3c5d8340e950fd">grect_center_point</referencedby>
+        <referencedby refid="group___graphics_types_1ga8952ac950ca4ec1195106e7b208a82c0">grect_contains_point</referencedby>
+        <referencedby refid="group___layer_1gab09fa69c5ba3a57bcfd59184003ece3e">layer_convert_point_to_screen</referencedby>
+        <referencedby refid="group___property_animation_1gaf5654417381134288c269d55619f26a1">property_animation_create_bounds_origin</referencedby>
+        <referencedby refid="group___rot_bitmap_layer_1ga455a2e9f47703fe44a1054ff02396162">rot_bitmap_set_src_ic</referencedby>
+        <referencedby refid="group___scroll_layer_1ga2fda3786915d157310adc5cca2db535a">scroll_layer_get_content_offset</referencedby>
+        <referencedby refid="group___scroll_layer_1ga09d6b9d6b9016eb438a7e3d51eb4041d">scroll_layer_set_content_offset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga24192f6809de17d816671a1d6a7b59b5" prot="public" static="no">
+        <name>GPointZero</name>
+        <initializer><ref refid="struct_g_point" kindref="compound">GPoint</ref>(0, 0)</initializer>
+        <briefdescription>
+<para>Convenience macro to make a <ref refid="struct_g_point" kindref="compound">GPoint</ref> at (0, 0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3752" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" prot="public" static="no">
+        <name>GRect</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>w</defname></param>
+        <param><defname>h</defname></param>
+        <initializer>((GRect){{(x), (y)}, {(w), (h)}})</initializer>
+        <briefdescription>
+<para>Convenience macro to make a <ref refid="struct_g_rect" kindref="compound">GRect</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3790" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3790" bodyend="-1"/>
+        <referencedby refid="group___bitmap_layer_1gadd992eb1a89f66007a6311d9021ba32b">bitmap_layer_create</referencedby>
+        <referencedby refid="group___graphics_types_1ga73f7340bbffad2bc8aeda4e4565c65f4">gbitmap_create_as_sub_bitmap</referencedby>
+        <referencedby refid="group___graphics_types_1gafce95e410fee76c66526f167c8415f3f">gbitmap_get_bounds</referencedby>
+        <referencedby refid="group___graphics_types_1ga3ef230f384923b9d02b735ac7c0aa7e4">gbitmap_set_bounds</referencedby>
+        <referencedby refid="group___drawing_1gaadb2a677766c80dc05ab1bc92a35379b">gpoint_from_polar</referencedby>
+        <referencedby refid="group___drawing_1ga0ece100bf105aa8ebdce24923773727f">graphics_draw_arc</referencedby>
+        <referencedby refid="group___drawing_1ga2df0bc47f542ea60500d3070670725f9">graphics_draw_bitmap_in_rect</referencedby>
+        <referencedby refid="group___drawing_1gaebdc0672005bb6d0b0b210053fda30f8">graphics_draw_rect</referencedby>
+        <referencedby refid="group___drawing_1ga67acca83492c185b640d8cccb44c7ab5">graphics_draw_round_rect</referencedby>
+        <referencedby refid="group___text_drawing_1gad02d08f03f2e33a5abc660f0dd23c85b">graphics_draw_text</referencedby>
+        <referencedby refid="group___drawing_1ga22179ba7e9e48f8b4cfada99d2051d85">graphics_fill_radial</referencedby>
+        <referencedby refid="group___drawing_1ga8c9b95e1c9fc0ce82107b95b8b804822">graphics_fill_rect</referencedby>
+        <referencedby refid="group___text_drawing_1gaf447fb3ce85161d8d1ccb97ef78fed13">graphics_text_attributes_enable_paging</referencedby>
+        <referencedby refid="group___text_drawing_1ga4e3ae8151d8d57e23fc160251242face">graphics_text_layout_get_content_size</referencedby>
+        <referencedby refid="group___text_drawing_1ga151630f57a7e401d7df6c1a955b1cb24">graphics_text_layout_get_content_size_with_attributes</referencedby>
+        <referencedby refid="group___graphics_types_1gad714d5d1dd0509196d8aadbdba2ac510">grect_align</referencedby>
+        <referencedby refid="group___graphics_types_1gae3a0a9c97927d0a72f3c5d8340e950fd">grect_center_point</referencedby>
+        <referencedby refid="group___drawing_1ga2aaac0fe709b8d1977b1c8efe68b1c24">grect_centered_from_polar</referencedby>
+        <referencedby refid="group___graphics_types_1ga0be9e99bf608e20c4ce33c48a859efa6">grect_clip</referencedby>
+        <referencedby refid="group___graphics_types_1ga8952ac950ca4ec1195106e7b208a82c0">grect_contains_point</referencedby>
+        <referencedby refid="group___graphics_types_1ga45ade8bcee6668a5b9fc3a5dc2adbb4c">grect_crop</referencedby>
+        <referencedby refid="group___graphics_types_1gac4bfb1da25ab4fec1a84ffbc50a40bb5">grect_equal</referencedby>
+        <referencedby refid="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56">grect_inset</referencedby>
+        <referencedby refid="group___graphics_types_1gabbece2417a145e398e6c1ce512203150">grect_is_empty</referencedby>
+        <referencedby refid="group___graphics_types_1ga6fcd8b24daede67494e49fa4803760a8">grect_standardize</referencedby>
+        <referencedby refid="group___layer_1ga30f05eabe6c17e81840a6daa50984135">layer_convert_rect_to_screen</referencedby>
+        <referencedby refid="group___layer_1ga9e88aa6fd9f3eb2e66834b5ba0bbaca0">layer_create</referencedby>
+        <referencedby refid="group___layer_1gacafb2aae03252b548a2cac3c6634bbca">layer_create_with_data</referencedby>
+        <referencedby refid="group___layer_1ga3e99442ac9d3af36ec7c25118360710c">layer_get_bounds</referencedby>
+        <referencedby refid="group___layer_1ga76ed01d3619150b87604ebaa9dc282b7">layer_get_frame</referencedby>
+        <referencedby refid="group___layer_1ga1bbac31d1070f43b6ecce0d07eabf2a2">layer_get_unobstructed_bounds</referencedby>
+        <referencedby refid="group___layer_1ga0a99dca38b75b52264c0734b934c865c">layer_set_bounds</referencedby>
+        <referencedby refid="group___layer_1ga5a984a17781b97ce00ae34c437171934">layer_set_frame</referencedby>
+        <referencedby refid="group___menu_layer_1ga34535815f3255db9148df950813ed33f">menu_layer_create</referencedby>
+        <referencedby refid="group___property_animation_1gafa235d899037ae80a7488df2d6c8f020">property_animation_create_layer_frame</referencedby>
+        <referencedby refid="group___scroll_layer_1ga0d97f30d3b27b841b69b1d80e9aff7f6">scroll_layer_create</referencedby>
+        <referencedby refid="group___scroll_layer_1ga9282d6e6c53061b26b2df60e8b2d9553">scroll_layer_set_frame</referencedby>
+        <referencedby refid="group___simple_menu_layer_1gad083734e2df1ef8cab501e423e952faf">simple_menu_layer_create</referencedby>
+        <referencedby refid="group___text_layer_1gad86babd035e1a9a6f7ee4f8453f8cb25">text_layer_create</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga1d67ac54b909f89dfd99e52eb1a7c0bc" prot="public" static="no">
+        <name>GRectZero</name>
+        <initializer><ref refid="struct_g_rect" kindref="compound">GRect</ref>(0, 0, 0, 0)</initializer>
+        <briefdescription>
+<para>Convenience macro to make a <ref refid="struct_g_rect" kindref="compound">GRect</ref> of ((0, 0), (0, 0)). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3793" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" prot="public" static="no">
+        <name>GSize</name>
+        <param><defname>w</defname></param>
+        <param><defname>h</defname></param>
+        <initializer>((GSize){(w), (h)})</initializer>
+        <briefdescription>
+<para>Convenience macro to make a <ref refid="struct_g_size" kindref="compound">GSize</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3769" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3769" bodyend="-1"/>
+        <referencedby refid="group___graphics_types_1ga8b7536253fb1e614201c473580863f2d">gbitmap_create_blank</referencedby>
+        <referencedby refid="group___graphics_types_1ga135af9d75278c08abb584464728b0c81">gbitmap_create_blank_with_palette</referencedby>
+        <referencedby refid="group___graphics_types_1ga0f780293a25c9533e3a7f225e5e32110">gbitmap_sequence_get_bitmap_size</referencedby>
+        <referencedby refid="group___draw_command_1gaf2c34c0b5c5e432a42e65c3dfe682ad9">gdraw_command_image_get_bounds_size</referencedby>
+        <referencedby refid="group___draw_command_1ga9eaa4743fa7753d77a392a3e71f1aee8">gdraw_command_image_set_bounds_size</referencedby>
+        <referencedby refid="group___draw_command_1ga51566383cf5f41abe0136979beb87947">gdraw_command_sequence_get_bounds_size</referencedby>
+        <referencedby refid="group___draw_command_1ga7471751849309b99c788db58e1171bb7">gdraw_command_sequence_set_bounds_size</referencedby>
+        <referencedby refid="group___text_drawing_1ga4e3ae8151d8d57e23fc160251242face">graphics_text_layout_get_content_size</referencedby>
+        <referencedby refid="group___text_drawing_1ga151630f57a7e401d7df6c1a955b1cb24">graphics_text_layout_get_content_size_with_attributes</referencedby>
+        <referencedby refid="group___drawing_1ga2aaac0fe709b8d1977b1c8efe68b1c24">grect_centered_from_polar</referencedby>
+        <referencedby refid="group___graphics_types_1ga182655c93aaff5c2df45aba496c64b7e">gsize_equal</referencedby>
+        <referencedby refid="group___scroll_layer_1gaaf9a11857e592b96f6e98f883d3bb479">scroll_layer_get_content_size</referencedby>
+        <referencedby refid="group___scroll_layer_1ga95d1e0f61d1bf54eabd1c59f3e295489">scroll_layer_set_content_size</referencedby>
+        <referencedby refid="group___text_layer_1ga35fe649d979d4b002589fbaf86604f2a">text_layer_get_content_size</referencedby>
+        <referencedby refid="group___text_layer_1ga3548811ef658bdc7755fe53f16d6e23b">text_layer_set_size</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga7b5e385c855d8c9ad59209816f62b808" prot="public" static="no">
+        <name>GSizeZero</name>
+        <initializer><ref refid="struct_g_size" kindref="compound">GSize</ref>(0, 0)</initializer>
+        <briefdescription>
+<para>Convenience macro to make a <ref refid="struct_g_size" kindref="compound">GSize</ref> of (0, 0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3772" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1gaa7ac313277ed0b20e858ba4f8f0f039d" prot="public" static="no">
+        <name>PBL_IF_BW_ELSE</name>
+        <param><defname>if_true</defname></param>
+        <param><defname>if_false</defname></param>
+        <initializer>(if_false)</initializer>
+        <briefdescription>
+<para>Convenience macro to switch between two expression depending on the screen of the platform. On black&amp; white platforms, the first expression will be chosen, the second otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3731" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga5a7411380c062d7024c411bdc0794206" prot="public" static="no">
+        <name>PBL_IF_COLOR_ELSE</name>
+        <param><defname>if_true</defname></param>
+        <param><defname>if_false</defname></param>
+        <initializer>(if_true)</initializer>
+        <briefdescription>
+<para>Convenience macro to switch between two expression depending on the screen of the platform. On color platforms, the first expression will be chosen, the second otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3735" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga93dc1082b2412cc4931cc1f0e870e250" prot="public" static="no">
+        <name>PBL_IF_RECT_ELSE</name>
+        <param><defname>if_true</defname></param>
+        <param><defname>if_false</defname></param>
+        <initializer>(if_true)</initializer>
+        <briefdescription>
+<para>Convenience macro to switch between two expression depending on the screen of the platform. On platforms with rectangular screen, the first expression will be chosen, the second otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3723" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga4f9bce65d188c24cbb92dcce0c616e2c" prot="public" static="no">
+        <name>PBL_IF_ROUND_ELSE</name>
+        <param><defname>if_true</defname></param>
+        <param><defname>if_false</defname></param>
+        <initializer>(if_false)</initializer>
+        <briefdescription>
+<para>Convenience macro to switch between two expression depending on the screen of the platform. On platforms with round screen, the first expression will be chosen, the second otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3727" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1gace600ef49d59abf22dbaad7b5018d746" prot="public" static="no">
+        <name>PLAY_COUNT_INFINITE</name>
+        <initializer>UINT32_MAX</initializer>
+        <briefdescription>
+<para>Repeat Sequence or animation indefinitely. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3847" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___graphics_types_1ga77075c217c0911bc6ea68dbdc73787e6" prot="public" static="no">
+        <name>PLAY_DURATION_INFINITE</name>
+        <initializer>UINT32_MAX</initializer>
+        <briefdescription>
+<para>Duration of Sequence or animation is infinite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3850" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3850" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Basic graphics types (point, rect, size, color, bitmaps, etc.) and utility functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

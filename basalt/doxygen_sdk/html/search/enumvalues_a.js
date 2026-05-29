@@ -16,7 +16,15 @@ var searchData=
   ['smartstrapresulttimeout_13',['SmartstrapResultTimeOut',['../group___smartstrap.html#gga84dc8e008822a759ff6823c06829ac8aa21cf4c71d56ba7c84805b9908c204e1d',1,'pebble.h']]],
   ['sniff_5finterval_5fnormal_14',['SNIFF_INTERVAL_NORMAL',['../group___app_comm.html#ggad85d78fd5b9d36fb69242afa57e79f48a3b964e796c51c86c94eadf17b8dbcf17',1,'pebble.h']]],
   ['sniff_5finterval_5freduced_15',['SNIFF_INTERVAL_REDUCED',['../group___app_comm.html#ggad85d78fd5b9d36fb69242afa57e79f48a8de75571a0bcf3ac565ced0628577382',1,'pebble.h']]],
-  ['statusbarlayerseparatormodedotted_16',['StatusBarLayerSeparatorModeDotted',['../group___status_bar_layer.html#ggaf7316a23f8fa3b482551ea4cbbb414faa15cfb9da70e7753b3e8efeaedaa1b318',1,'pebble.h']]],
-  ['statusbarlayerseparatormodenone_17',['StatusBarLayerSeparatorModeNone',['../group___status_bar_layer.html#ggaf7316a23f8fa3b482551ea4cbbb414faa5fd87a47081ee5add2afa2d67d3ab9c6',1,'pebble.h']]],
-  ['sunday_18',['SUNDAY',['../group___wall_time.html#gga38e35eaba0dce3be153ec798fb175de5ad86a75e0b97510de54435996ae45b8d2',1,'pebble.h']]]
+  ['speakerfinishreasondone_16',['SpeakerFinishReasonDone',['../group___speaker.html#gga78ed2e1da9755cc3a55c770d079ab84dae9d089591716032eb958ac7190e35c9a',1,'pebble.h']]],
+  ['speakerfinishreasonerror_17',['SpeakerFinishReasonError',['../group___speaker.html#gga78ed2e1da9755cc3a55c770d079ab84dadc6de5727cb44ad1733ba694303488a5',1,'pebble.h']]],
+  ['speakerfinishreasonpreempted_18',['SpeakerFinishReasonPreempted',['../group___speaker.html#gga78ed2e1da9755cc3a55c770d079ab84dad97fb5517430a15be8638995773e6ad4',1,'pebble.h']]],
+  ['speakerfinishreasonstopped_19',['SpeakerFinishReasonStopped',['../group___speaker.html#gga78ed2e1da9755cc3a55c770d079ab84da7d66638f7870dc333b8d6c5a11a471a9',1,'pebble.h']]],
+  ['speakerpcmformat_5f16khz_5f16bit_20',['SpeakerPcmFormat_16kHz_16bit',['../group___speaker.html#ggaf647901e7f8ebfaa0f41f433cec0b1cfaf815a281cbff1329b5207f64d8757ff6',1,'pebble.h']]],
+  ['speakerpcmformat_5f16khz_5f8bit_21',['SpeakerPcmFormat_16kHz_8bit',['../group___speaker.html#ggaf647901e7f8ebfaa0f41f433cec0b1cfab9b116ba8c142eb89365f47fd5ea0f2f',1,'pebble.h']]],
+  ['speakerpcmformat_5f8khz_5f16bit_22',['SpeakerPcmFormat_8kHz_16bit',['../group___speaker.html#ggaf647901e7f8ebfaa0f41f433cec0b1cfa13e49d4bb80e2470c0c6bb4a09236e4b',1,'pebble.h']]],
+  ['speakerpcmformat_5f8khz_5f8bit_23',['SpeakerPcmFormat_8kHz_8bit',['../group___speaker.html#ggaf647901e7f8ebfaa0f41f433cec0b1cfa722061d71f152a7c015bcecd7c8ef515',1,'pebble.h']]],
+  ['statusbarlayerseparatormodedotted_24',['StatusBarLayerSeparatorModeDotted',['../group___status_bar_layer.html#ggaf7316a23f8fa3b482551ea4cbbb414faa15cfb9da70e7753b3e8efeaedaa1b318',1,'pebble.h']]],
+  ['statusbarlayerseparatormodenone_25',['StatusBarLayerSeparatorModeNone',['../group___status_bar_layer.html#ggaf7316a23f8fa3b482551ea4cbbb414faa5fd87a47081ee5add2afa2d67d3ab9c6',1,'pebble.h']]],
+  ['sunday_26',['SUNDAY',['../group___wall_time.html#gga38e35eaba0dce3be153ec798fb175de5ad86a75e0b97510de54435996ae45b8d2',1,'pebble.h']]]
 ];

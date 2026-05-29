@@ -68,6 +68,7 @@ var searchData=
   ['minute_5funit_65',['MINUTE_UNIT',['../group___tick_timer_service.html#gga0423d00e0eb199de523a92031b5a1107af135dc6b67dce70c7b4b961605aa6970',1,'pebble.h']]],
   ['miscellaneous_66',['Miscellaneous',['../group___misc.html',1,'']]],
   ['mktime_67',['mktime',['../group___standard_time.html#ga308ef252844d2144895207aa52e6a89f',1,'pebble.h']]],
-  ['monday_68',['MONDAY',['../group___wall_time.html#gga38e35eaba0dce3be153ec798fb175de5ac82db3248a96794aaefb922ea5fb293c',1,'pebble.h']]],
-  ['month_5funit_69',['MONTH_UNIT',['../group___tick_timer_service.html#gga0423d00e0eb199de523a92031b5a1107ac5c028cac926fb83169e7b43fa089b16',1,'pebble.h']]]
+  ['moddablecreationrecord_68',['ModdableCreationRecord',['../group___alloy.html#struct_moddable_creation_record',1,'']]],
+  ['monday_69',['MONDAY',['../group___wall_time.html#gga38e35eaba0dce3be153ec798fb175de5ac82db3248a96794aaefb922ea5fb293c',1,'pebble.h']]],
+  ['month_5funit_70',['MONTH_UNIT',['../group___tick_timer_service.html#gga0423d00e0eb199de523a92031b5a1107ac5c028cac926fb83169e7b43fa089b16',1,'pebble.h']]]
 ];

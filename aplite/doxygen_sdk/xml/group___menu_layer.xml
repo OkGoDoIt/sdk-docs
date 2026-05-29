@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___menu_layer" kind="group">
     <compoundname>MenuLayer</compoundname>
     <title>MenuLayer</title>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7250" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7250" bodyend="7265"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7376" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7376" bodyend="7391"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6946" column="24" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6946" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7072" column="24" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7072" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga0da8b1c3217c1e8d883db5f18b9af45e" prot="public" static="no">
         <type>void(*</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7105" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7105" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7231" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7231" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga0c8e4633e1afd155b84da4cafed85733" prot="public" static="no">
         <type>void(*</type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7038" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7038" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7164" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1gaa9a6e4c6917fa5867084d7d42065b960" prot="public" static="no">
         <type>void(*</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7019" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7019" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7145" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1gab8e034db214248f6295aa5de5022236c" prot="public" static="no">
         <type>void(*</type>
@@ -266,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7055" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7055" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7181" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga82de9589c6396079effc7168a3653495" prot="public" static="no">
         <type>int16_t(*</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6978" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6978" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7104" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga32010bc41d8fed5c49e11852cefc1c2e" prot="public" static="no">
         <type>int16_t(*</type>
@@ -358,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6991" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6991" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7117" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga74142f776a0397b1a351ad006aa594f4" prot="public" static="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref>(*</type>
@@ -404,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6966" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6966" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7092" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7092" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1gaae26b43fcb87f61fa576f42bc1e82b1c" prot="public" static="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref>(*</type>
@@ -442,7 +442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6954" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6954" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7080" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7080" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga859f9ba8f0d6d3739d2c1752bcb752ce" prot="public" static="no">
         <type>int16_t(*</type>
@@ -488,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7003" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7003" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7129" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga1ebbfd7a75087df42d18a49472cd96c3" prot="public" static="no">
         <type>void(*</type>
@@ -532,7 +532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7067" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7067" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7193" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga7100c9c19e1d40fc38caf5aed173fe5a" prot="public" static="no">
         <type>void(*</type>
@@ -584,7 +584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7079" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7079" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7205" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___menu_layer_1ga98271ef6f7cc49d39e5deab09def2cef" prot="public" static="no">
         <type>void(*</type>
@@ -634,7 +634,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7093" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7093" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7219" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7219" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -712,7 +712,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6890" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6890" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7016" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7016" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga4c5a3ee444809867a98960e0e2a18f36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -764,7 +764,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6911" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6911" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7037" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7037" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gac67e868d2dddb6e52a8305c9ba53145d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -794,7 +794,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7316" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7316" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7442" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7442" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga76909b138aee51bdbbb73973b2439e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -846,7 +846,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6901" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6901" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7027" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7027" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gafb6be4eaa702186306ee58e40f38334e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int16_t</type>
@@ -888,8 +888,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6936" column="9" declfile="build/sdk/aplite/include/pebble.h" declline="6936" declcolumn="9"/>
-        <references refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" compoundref="pebble_8h" startline="6929">MenuIndex</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="7062" column="9" declfile="build/sdk/aplite/include/pebble.h" declline="7062" declcolumn="9"/>
+        <references refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" compoundref="pebble_8h" startline="7055">MenuIndex</references>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga34535815f3255db9148df950813ed33f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>MenuLayer *</type>
@@ -919,8 +919,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7202" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="7202" declcolumn="11"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="7328" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="7328" declcolumn="11"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3548">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gaf6e9405bcc2e2a1e7dd1d5b3e17c67c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -938,7 +938,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7205" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7205" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7331" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7331" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gaaec73a07ea6056b95785dd8a65bcf8fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -959,7 +959,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7353" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7353" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7479" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7479" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga646ed9af7fc1a1133fc4f0aa59382b11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Layer *</type>
@@ -989,7 +989,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7211" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="7211" declcolumn="7"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7337" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="7337" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gaae1afff90df8a2664cf7e62ca92ebef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ScrollLayer *</type>
@@ -1019,7 +1019,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7217" column="13" declfile="build/sdk/aplite/include/pebble.h" declline="7217" declcolumn="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7343" column="13" declfile="build/sdk/aplite/include/pebble.h" declline="7343" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga58eeeb8e62a830158ed0c8a4d9cac001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_menu_index" kindref="compound">MenuIndex</ref></type>
@@ -1051,8 +1051,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7299" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="7299" declcolumn="11"/>
-        <references refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" compoundref="pebble_8h" startline="6929">MenuIndex</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="7425" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="7425" declcolumn="11"/>
+        <references refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" compoundref="pebble_8h" startline="7055">MenuIndex</references>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga6f49bed3f1e7d49d4f744ecfa8cc751b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1094,8 +1094,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7368" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7368" declcolumn="6"/>
-        <references refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" compoundref="pebble_8h" startline="6929">MenuIndex</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="7494" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7494" declcolumn="6"/>
+        <references refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" compoundref="pebble_8h" startline="7055">MenuIndex</references>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gac478321c34b578ffc84970c685298270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1135,7 +1135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7349" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7349" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7475" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7475" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gafdd9aaff5e9eab326a67dad8b1c286f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1163,7 +1163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7307" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7307" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7433" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7433" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga859926c731b20da448f1d4413cbb96d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1217,7 +1217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7227" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7227" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7353" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7353" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gaf9c29284fcdbfca4ed29fbac6cbf708b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1259,7 +1259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7361" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7361" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7487" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7487" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1gac3847f5a2bd8f09f5966920c5469965a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1305,7 +1305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7245" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7245" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7371" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7371" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga5291ab9cb36673dcd52dd60a5c121a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1359,7 +1359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7338" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7338" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7464" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7464" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga92bc2bceb77247dcc26da78b259d7dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1413,7 +1413,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7327" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7327" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7453" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7453" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga7ddd82cbbc7fa6b479b35ba0dfb04562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1479,8 +1479,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7289" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7289" declcolumn="6"/>
-        <references refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" compoundref="pebble_8h" startline="6929">MenuIndex</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="7415" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7415" declcolumn="6"/>
+        <references refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" compoundref="pebble_8h" startline="7055">MenuIndex</references>
       </memberdef>
       <memberdef kind="function" id="group___menu_layer_1ga27d5ac45541dd3b0ad9f1f0adb25720a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1546,7 +1546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7275" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7275" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7401" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7401" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -1560,7 +1560,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6914" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6914" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7040" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7040" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___menu_layer_1ga49063aae2b5ddd7d148146132a1fe4c2" prot="public" static="no">
         <name>MENU_CELL_ROUND_FOCUSED_SHORT_CELL_HEIGHT</name>
@@ -1572,7 +1572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7372" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7372" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7498" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7498" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___menu_layer_1ga3423fc3a969c93e563ca759d1af201e5" prot="public" static="no">
         <name>MENU_CELL_ROUND_FOCUSED_TALL_CELL_HEIGHT</name>
@@ -1584,7 +1584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7380" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7380" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7506" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7506" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___menu_layer_1ga76e21dd5ca0924eb18c205dd996b824c" prot="public" static="no">
         <name>MENU_CELL_ROUND_UNFOCUSED_SHORT_CELL_HEIGHT</name>
@@ -1596,7 +1596,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7376" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7376" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7502" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7502" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___menu_layer_1ga9d871e54cfa695a4f20c51c47be61c18" prot="public" static="no">
         <name>MENU_CELL_ROUND_UNFOCUSED_TALL_CELL_HEIGHT</name>
@@ -1608,7 +1608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7384" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7384" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7510" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7510" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___menu_layer_1gaf4d33c86cd0b49b45389005d579ff7c1" prot="public" static="no">
         <name>MENU_INDEX_NOT_FOUND</name>
@@ -1619,7 +1619,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6917" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6917" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7043" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7043" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" prot="public" static="no">
         <name>MenuIndex</name>
@@ -1633,7 +1633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6929" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6929" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7055" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7055" bodyend="-1"/>
         <referencedby refid="group___menu_layer_1gafb6be4eaa702186306ee58e40f38334e">menu_index_compare</referencedby>
         <referencedby refid="group___menu_layer_1ga58eeeb8e62a830158ed0c8a4d9cac001">menu_layer_get_selected_index</referencedby>
         <referencedby refid="group___menu_layer_1ga6f49bed3f1e7d49d4f744ecfa8cc751b">menu_layer_is_index_selected</referencedby>

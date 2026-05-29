@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___compass_service" kind="group">
     <compoundname>CompassService</compoundname>
     <title>CompassService</title>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="767" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="767" bodyend="777"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="799" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="799" bodyend="809"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="784" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="784" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="816" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="816" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___compass_service_1gaeee5f09887203b1c06f7d9c56415adea" prot="public" static="no">
         <type>void(*</type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="802" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="802" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="834" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="834" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="830" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="830" declcolumn="5"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="862" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="862" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___compass_service_1gad4bad2397ca6127b958fc8a8d255c411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="812" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="812" declcolumn="5"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="844" column="5" declfile="build/sdk/aplite/include/pebble.h" declline="844" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group___compass_service_1gae2b8f9e053a9f879f43aa17ef5af5e66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="820" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="820" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="852" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="852" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___compass_service_1gaecea99c12825526be416db6b5c69a871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -198,13 +198,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="825" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="825" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="857" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="857" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>The Compass Service combines information from Pebble&apos;s accelerometer and magnetometer to automatically calibrate the compass and transform the raw magnetic field information into a <ref refid="group___compass_service_1gab55689ab750b772e4a435905407843c4" kindref="member">CompassHeading</ref>, that is an angle to north. It also provides magnetic north and information about its status and accuracy through the <ref refid="struct_compass_heading_data" kindref="compound">CompassHeadingData</ref> structure. The API is designed to also provide true north in a future release. </para>
     </briefdescription>
     <detaileddescription>
-<para>The Compass Service combines information from Pebble&apos;s accelerometer and magnetometer to automatically calibrate the compass and transform the raw magnetic field information into a <ref refid="group___compass_service_1gab55689ab750b772e4a435905407843c4" kindref="member">CompassHeading</ref>, that is an angle to north. It also provides magnetic north and information about its status and accuracy through the <ref refid="struct_compass_heading_data" kindref="compound">CompassHeadingData</ref> structure. The API is designed to also provide true north in a future release.</para>
 <para>Note that not all platforms have compasses. To check for the presence of a compass at compile time for the current platform use the <computeroutput>PBL_COMPASS</computeroutput> define.</para>
 <para>To learn more about the Compass Service and how to use it, read the <ulink url="https://developer.getpebble.com/guides/pebble-apps/sensors/magnetometer/">Determining Direction</ulink> guide.</para>
 <para>For available code samples, see the <ulink url="https://github.com/pebble-examples/feature-compass">feature-compass</ulink> example. </para>

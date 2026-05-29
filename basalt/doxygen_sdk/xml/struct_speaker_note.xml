@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_speaker_note" kind="struct" language="C++" prot="public">
+    <compoundname>SpeakerNote</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_speaker_note_1ae8c93d76fb24e5f24ab94d70aab921d5" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t SpeakerNote::duration_ms</definition>
+        <argsstring></argsstring>
+        <name>duration_ms</name>
+        <qualifiedname>SpeakerNote::duration_ms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8577" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_speaker_note_1ae9214e01ed0b28709b046133f250383f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SpeakerNote::midi_note</definition>
+        <argsstring></argsstring>
+        <name>midi_note</name>
+        <qualifiedname>SpeakerNote::midi_note</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8575" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_speaker_note_1a27e777eba8e9cc32807be7682b618cec" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SpeakerNote::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <qualifiedname>SpeakerNote::reserved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8579" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_speaker_note_1a15258c6d4c0848457bd59dad44fa352e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SpeakerNote::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <qualifiedname>SpeakerNote::velocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8578" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_speaker_note_1a0b1bb6e069a47b765e06ef92bb96a3f3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SpeakerNote::waveform</definition>
+        <argsstring></argsstring>
+        <name>waveform</name>
+        <qualifiedname>SpeakerNote::waveform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8576" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8576" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A single note in a sequence. midi_note: MIDI note number (0-127, 60=C4). 0 = rest (silence). waveform: SpeakerWaveform value. duration_ms: Note duration in ms (max 10000). velocity: Volume 0-127 (0 = use global volume). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/basalt/include/pebble.h" line="8574" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8574" bodyend="8580"/>
+    <listofallmembers>
+      <member refid="struct_speaker_note_1ae8c93d76fb24e5f24ab94d70aab921d5" prot="public" virt="non-virtual"><scope>SpeakerNote</scope><name>duration_ms</name></member>
+      <member refid="struct_speaker_note_1ae9214e01ed0b28709b046133f250383f" prot="public" virt="non-virtual"><scope>SpeakerNote</scope><name>midi_note</name></member>
+      <member refid="struct_speaker_note_1a27e777eba8e9cc32807be7682b618cec" prot="public" virt="non-virtual"><scope>SpeakerNote</scope><name>reserved</name></member>
+      <member refid="struct_speaker_note_1a15258c6d4c0848457bd59dad44fa352e" prot="public" virt="non-virtual"><scope>SpeakerNote</scope><name>velocity</name></member>
+      <member refid="struct_speaker_note_1a0b1bb6e069a47b765e06ef92bb96a3f3" prot="public" virt="non-virtual"><scope>SpeakerNote</scope><name>waveform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

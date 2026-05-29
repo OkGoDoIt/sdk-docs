@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_simple_menu_item" kind="struct" language="C++" prot="public">
+    <compoundname>SimpleMenuItem</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_simple_menu_item_1a60ff7fe31f28c32726e167db58228c11" prot="public" static="no" mutable="no">
+        <type><ref refid="group___simple_menu_layer_1ga738da5d7abed9feb0809d4a9115aba3a" kindref="member">SimpleMenuLayerSelectCallback</ref></type>
+        <definition>SimpleMenuLayerSelectCallback SimpleMenuItem::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <qualifiedname>SimpleMenuItem::callback</qualifiedname>
+        <briefdescription>
+<para>The callback that needs to be called upon a click on the SELECT button. Optional, leave <computeroutput>NULL</computeroutput> if unused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7796" column="33" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_simple_menu_item_1abdcb2509876059ad6c0f2a887927f952" prot="public" static="no" mutable="no">
+        <type>GBitmap *</type>
+        <definition>GBitmap* SimpleMenuItem::icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <qualifiedname>SimpleMenuItem::icon</qualifiedname>
+        <briefdescription>
+<para>The icon of the menu item. Optional, leave <computeroutput>NULL</computeroutput> if unused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7793" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_simple_menu_item_1a26f49bf0073e1a9c32f32cc1c2ae608d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SimpleMenuItem::subtitle</definition>
+        <argsstring></argsstring>
+        <name>subtitle</name>
+        <qualifiedname>SimpleMenuItem::subtitle</qualifiedname>
+        <briefdescription>
+<para>The subtitle of the menu item. Optional, leave <computeroutput>NULL</computeroutput> if unused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7791" column="14" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_simple_menu_item_1a3f4b4f9cbfbc573c71480f0a8861eacf" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SimpleMenuItem::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>SimpleMenuItem::title</qualifiedname>
+        <briefdescription>
+<para>The title of the menu item. Required. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7789" column="14" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7789" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure containing the information of a menu item. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="7787" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7787" bodyend="7797"/>
+    <listofallmembers>
+      <member refid="struct_simple_menu_item_1a60ff7fe31f28c32726e167db58228c11" prot="public" virt="non-virtual"><scope>SimpleMenuItem</scope><name>callback</name></member>
+      <member refid="struct_simple_menu_item_1abdcb2509876059ad6c0f2a887927f952" prot="public" virt="non-virtual"><scope>SimpleMenuItem</scope><name>icon</name></member>
+      <member refid="struct_simple_menu_item_1a26f49bf0073e1a9c32f32cc1c2ae608d" prot="public" virt="non-virtual"><scope>SimpleMenuItem</scope><name>subtitle</name></member>
+      <member refid="struct_simple_menu_item_1a3f4b4f9cbfbc573c71480f0a8861eacf" prot="public" virt="non-virtual"><scope>SimpleMenuItem</scope><name>title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

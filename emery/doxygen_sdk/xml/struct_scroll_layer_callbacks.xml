@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_scroll_layer_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>ScrollLayerCallbacks</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_scroll_layer_callbacks_1a8e8c71425fed8bab16d447d74cf167e2" prot="public" static="no" mutable="no">
+        <type><ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref></type>
+        <definition>ClickConfigProvider ScrollLayerCallbacks::click_config_provider</definition>
+        <argsstring></argsstring>
+        <name>click_config_provider</name>
+        <qualifiedname>ScrollLayerCallbacks::click_config_provider</qualifiedname>
+        <briefdescription>
+<para>Provider function to set up the SELECT button handlers. This will be called after the scroll layer has configured the click configurations for the up/down buttons, so it can also be used to modify the default up/down scrolling behavior. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7003" column="23" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7003" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_scroll_layer_callbacks_1ad2cb7771ef3ff8930996d188565dcf1e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___scroll_layer_1ga1d78b150f7c6907988d00b7b75891560" kindref="member">ScrollLayerCallback</ref></type>
+        <definition>ScrollLayerCallback ScrollLayerCallbacks::content_offset_changed_handler</definition>
+        <argsstring></argsstring>
+        <name>content_offset_changed_handler</name>
+        <qualifiedname>ScrollLayerCallbacks::content_offset_changed_handler</qualifiedname>
+        <briefdescription>
+<para>Called every time the the content offset changes. During a scrolling animation, it will be called for each intermediary offset as well. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7007" column="23" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7007" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>All the callbacks that the ScrollLayer exposes for use by applications. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>The context parameter can be set using <ref refid="group___scroll_layer_1gaeb62332973b899f585563270fa7db637" kindref="member">scroll_layer_set_context()</ref> and gets passed in as context with all of these callbacks. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="6997" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6997" bodyend="7009"/>
+    <listofallmembers>
+      <member refid="struct_scroll_layer_callbacks_1a8e8c71425fed8bab16d447d74cf167e2" prot="public" virt="non-virtual"><scope>ScrollLayerCallbacks</scope><name>click_config_provider</name></member>
+      <member refid="struct_scroll_layer_callbacks_1ad2cb7771ef3ff8930996d188565dcf1e" prot="public" virt="non-virtual"><scope>ScrollLayerCallbacks</scope><name>content_offset_changed_handler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

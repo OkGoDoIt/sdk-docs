@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['x_0',['x',['../group___accelerometer_service.html#abe5df85a74073f78086968cbbe82b32f',1,'AccelData::x'],['../group___accelerometer_service.html#a918cd7be9f4ad84dca85d76e8e866259',1,'AccelRawData::x'],['../group___graphics_types.html#a1f1a9ce775dde3448a265dc36b2024f4',1,'GPoint::x']]]
+  ['w_0',['w',['../group___graphics_types.html#ab4b00bc79cc43d5554d19fd273fe37e0',1,'GSize']]],
+  ['width_1',['width',['../group___dictionary.html#aeaae26a6fb20ed3ef54fb23bfa0b1fcc',1,'Tuplet.__unnamed0__.integer']]],
+  ['will_5fclose_2',['will_close',['../struct_action_menu_config.html#a88e39a8e30efbaf4668509fff34b7f17',1,'ActionMenuConfig']]],
+  ['will_5ffocus_3',['will_focus',['../group___app_focus_service.html#a6f30cc68eec1ca941a2af248d3c7c34b',1,'AppFocusHandlers']]]
 ];

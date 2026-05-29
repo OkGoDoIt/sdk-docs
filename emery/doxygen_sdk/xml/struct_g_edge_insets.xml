@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_g_edge_insets" kind="struct" language="C++" prot="public">
+    <compoundname>GEdgeInsets</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_edge_insets_1a7d4eeb631159c5e1c390e4d1977db076" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GEdgeInsets::bottom</definition>
+        <argsstring></argsstring>
+        <name>bottom</name>
+        <qualifiedname>GEdgeInsets::bottom</qualifiedname>
+        <briefdescription>
+<para>The inset at the bottom of an object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4235" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_edge_insets_1a5c938248cd6eb0903c0cf4598b16d1db" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GEdgeInsets::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <qualifiedname>GEdgeInsets::left</qualifiedname>
+        <briefdescription>
+<para>The inset at the left of an object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4237" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_edge_insets_1ade8f711f8102b23424dd71e596f04e8d" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GEdgeInsets::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <qualifiedname>GEdgeInsets::right</qualifiedname>
+        <briefdescription>
+<para>The inset at the right of an object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4233" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_edge_insets_1ad8b0695df388d95c89f26e72613db5c8" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GEdgeInsets::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <qualifiedname>GEdgeInsets::top</qualifiedname>
+        <briefdescription>
+<para>The inset at the top of an object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4231" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4231" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents insets for four sides. Negative values mean a side extends. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56" kindref="member">grect_inset</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="4229" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4229" bodyend="4238"/>
+    <listofallmembers>
+      <member refid="struct_g_edge_insets_1a7d4eeb631159c5e1c390e4d1977db076" prot="public" virt="non-virtual"><scope>GEdgeInsets</scope><name>bottom</name></member>
+      <member refid="struct_g_edge_insets_1a5c938248cd6eb0903c0cf4598b16d1db" prot="public" virt="non-virtual"><scope>GEdgeInsets</scope><name>left</name></member>
+      <member refid="struct_g_edge_insets_1ade8f711f8102b23424dd71e596f04e8d" prot="public" virt="non-virtual"><scope>GEdgeInsets</scope><name>right</name></member>
+      <member refid="struct_g_edge_insets_1ad8b0695df388d95c89f26e72613db5c8" prot="public" virt="non-virtual"><scope>GEdgeInsets</scope><name>top</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

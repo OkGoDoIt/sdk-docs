@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___backlight_service" kind="group">
+    <compoundname>BacklightService</compoundname>
+    <title>BacklightService</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___backlight_service_1gaff97a146bf53486db045f464b1d17207" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BacklightHandler) (bool on)</definition>
+        <argsstring>)(bool on)</argsstring>
+        <name>BacklightHandler</name>
+        <briefdescription>
+<para>Callback type for backlight on/off events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>on</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true when the backlight has just turned on, false when it has just turned fully off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="643" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="643" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___backlight_service_1ga4ede1c843e775131504df9dcb77bf4d2" prot="public" static="no">
+        <name>backlight_service_subscribe</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="645" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___backlight_service_1gaf3a028cb80fab13d64427777a3d78934" prot="public" static="no">
+        <name>backlight_service_unsubscribe</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="647" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Notifies your app when the backlight turns on or off. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The BacklightService lets your app react to the backlight turning on. The handler is invoked whenever the backlight transitions between off and on (any non-off state — fully on, on with timeout, or fading out is treated as &quot;on&quot;). This means you get a single edge per wake, not one event per fade step. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -63,7 +63,7 @@ var searchData=
   ['property_5fanimation_5fupdate_5fint16_60',['property_animation_update_int16',['../group___property_animation.html#ga798776416e2c1f86e80ff19672d7ddf5',1,'pebble.h']]],
   ['property_5fanimation_5fupdate_5fuint32_61',['property_animation_update_uint32',['../group___property_animation.html#gaf45e09b9458d5f63bf9d63dd6ed25f5a',1,'pebble.h']]],
   ['propertyanimation_62',['PropertyAnimation',['../group___property_animation.html',1,'']]],
-  ['propertyanimationaccessors_63',['PropertyAnimationAccessors',['../group___property_animation.html#struct_property_animation_accessors',1,'']]],
+  ['propertyanimationaccessors_63',['PropertyAnimationAccessors',['../struct_property_animation_accessors.html',1,'']]],
   ['propertyanimationaccessors_2egetter_64',['PropertyAnimationAccessors.getter',['../group___property_animation.html#union_property_animation_accessors_8getter',1,'']]],
   ['propertyanimationaccessors_2esetter_65',['PropertyAnimationAccessors.setter',['../group___property_animation.html#union_property_animation_accessors_8setter',1,'']]],
   ['propertyanimationimplementation_66',['PropertyAnimationImplementation',['../group___property_animation.html#struct_property_animation_implementation',1,'']]],

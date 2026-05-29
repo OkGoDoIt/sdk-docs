@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_g_point" kind="struct" language="C++" prot="public">
     <compoundname>GPoint</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3362" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3362" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3639" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3639" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_g_point_1a94afc39fa39df567b9e78702d1f07b3e" prot="public" static="no" mutable="no">
         <type>int16_t</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3364" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3364" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3641" column="11" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3641" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -43,7 +43,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="3360" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3360" bodyend="3365"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="3637" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3637" bodyend="3642"/>
     <listofallmembers>
       <member refid="struct_g_point_1a1f1a9ce775dde3448a265dc36b2024f4" prot="public" virt="non-virtual"><scope>GPoint</scope><name>x</name></member>
       <member refid="struct_g_point_1a94afc39fa39df567b9e78702d1f07b3e" prot="public" virt="non-virtual"><scope>GPoint</scope><name>y</name></member>

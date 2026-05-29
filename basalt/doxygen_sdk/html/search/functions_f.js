@@ -50,7 +50,7 @@ var searchData=
   ['strcat_47',['strcat',['../group___standard_string.html#ga19546e43db31c3095991b04023b422b2',1,'common.dox']]],
   ['strcmp_48',['strcmp',['../group___standard_string.html#ga6f3dcb20ff11ff9db5904c3cfb61a38c',1,'common.dox']]],
   ['strcpy_49',['strcpy',['../group___standard_string.html#gac5082c8ce4f0cddd88bf4d0d2e738308',1,'common.dox']]],
-  ['strftime_50',['strftime',['../group___standard_time.html#ga03c7f6e1209ced1ebc8accd5fd9eaa3c',1,'pebble.h']]],
+  ['strftime_50',['strftime',['../group___standard_time.html#gac68767378c2e2128373675a6a36d12d0',1,'pebble.h']]],
   ['strlen_51',['strlen',['../group___standard_string.html#ga008e171a518fe0e0352f31b245e03875',1,'common.dox']]],
   ['strncat_52',['strncat',['../group___standard_string.html#gaef7c0be850a2df7a4e4c5f76774a721b',1,'common.dox']]],
   ['strncmp_53',['strncmp',['../group___standard_string.html#gab36f95eb212013e67f97dacede2751db',1,'common.dox']]],

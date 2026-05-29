@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['backlight_5fservice_5fsubscribe_0',['backlight_service_subscribe',['../group___backlight_service.html#ga205e34c794c288f291ab19d0b8b315ed',1,'pebble.h']]],
+  ['backlight_5fservice_5funsubscribe_1',['backlight_service_unsubscribe',['../group___backlight_service.html#ga42701b4ecfca195a783f3e7cf0e544bb',1,'pebble.h']]],
+  ['battery_5fstate_5fservice_5fpeek_2',['battery_state_service_peek',['../group___battery_state_service.html#ga0db4a30663844c173acb72f9204e6fcb',1,'pebble.h']]],
+  ['battery_5fstate_5fservice_5fsubscribe_3',['battery_state_service_subscribe',['../group___battery_state_service.html#gadef114a27f24cc39e3ee5bda3756c865',1,'pebble.h']]],
+  ['battery_5fstate_5fservice_5funsubscribe_4',['battery_state_service_unsubscribe',['../group___battery_state_service.html#ga787d24a03fe9a51cd61e24a9775efbc6',1,'pebble.h']]],
+  ['bitmap_5flayer_5fcreate_5',['bitmap_layer_create',['../group___bitmap_layer.html#gadd992eb1a89f66007a6311d9021ba32b',1,'pebble.h']]],
+  ['bitmap_5flayer_5fdestroy_6',['bitmap_layer_destroy',['../group___bitmap_layer.html#ga4ef30a7562a029d81e2956ab8068f0f5',1,'pebble.h']]],
+  ['bitmap_5flayer_5fget_5fbitmap_7',['bitmap_layer_get_bitmap',['../group___bitmap_layer.html#ga40cfc5af67b6df6c62c8745768a7cecd',1,'pebble.h']]],
+  ['bitmap_5flayer_5fget_5flayer_8',['bitmap_layer_get_layer',['../group___bitmap_layer.html#gaf850045cef510d5e206ff4f4b542fd8c',1,'pebble.h']]],
+  ['bitmap_5flayer_5fset_5falignment_9',['bitmap_layer_set_alignment',['../group___bitmap_layer.html#ga4c1765f9330890641c4c09ba7e894894',1,'pebble.h']]],
+  ['bitmap_5flayer_5fset_5fbackground_5fcolor_10',['bitmap_layer_set_background_color',['../group___bitmap_layer.html#ga67522a1e62431f0f68d161d83fb6d83e',1,'pebble.h']]],
+  ['bitmap_5flayer_5fset_5fbitmap_11',['bitmap_layer_set_bitmap',['../group___bitmap_layer.html#ga919b52c2feb69c13966f4a52815377f8',1,'pebble.h']]],
+  ['bitmap_5flayer_5fset_5fcompositing_5fmode_12',['bitmap_layer_set_compositing_mode',['../group___bitmap_layer.html#ga7bc761ca8227881c5853cbc0e279385e',1,'pebble.h']]],
+  ['bluetooth_5fconnection_5fservice_5fpeek_13',['bluetooth_connection_service_peek',['../group___connection_service.html#ga31ae0c22e1cbf2af34b39b49e98c777a',1,'pebble.h']]],
+  ['bluetooth_5fconnection_5fservice_5fsubscribe_14',['bluetooth_connection_service_subscribe',['../group___connection_service.html#ga8aeb8a0512a53c1eec9b7a1547cd8ae5',1,'pebble.h']]],
+  ['bluetooth_5fconnection_5fservice_5funsubscribe_15',['bluetooth_connection_service_unsubscribe',['../group___connection_service.html#gae3a446e0d93d0d71f4265d5ff9352c0a',1,'pebble.h']]]
+];

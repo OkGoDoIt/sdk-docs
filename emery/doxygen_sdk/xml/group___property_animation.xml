@@ -1,0 +1,1432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___property_animation" kind="group">
+    <compoundname>PropertyAnimation</compoundname>
+    <title>PropertyAnimation</title>
+    <innerclass refid="struct_property_animation_accessors" prot="public">PropertyAnimationAccessors</innerclass>
+    <innerclass refid="union_property_animation_accessors_8getter" prot="public">PropertyAnimationAccessors.getter</innerclass>
+    <innerclass refid="union_property_animation_accessors_8setter" prot="public">PropertyAnimationAccessors.setter</innerclass>
+    <innerclass refid="struct_property_animation_implementation" prot="public">PropertyAnimationImplementation</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___property_animation_1gacc7310bfebe0e5a86da1e4634139a926" prot="public" static="no">
+        <type>GColor8(*</type>
+        <definition>typedef GColor8(* GColor8Getter) (void *subject)</definition>
+        <argsstring>)(void *subject)</argsstring>
+        <name>GColor8Getter</name>
+        <briefdescription>
+<para>Function signature of a getter function to get the current property of type GColor8 of the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6597" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga45cf8d9b79d330875e5bb5e4c415573e" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* GColor8Setter) (void *subject, GColor8 gcolor)</definition>
+        <argsstring>)(void *subject, GColor8 gcolor)</argsstring>
+        <name>GColor8Setter</name>
+        <briefdescription>
+<para>Function signature of a setter function to set a property of type GColor8 onto the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1gafc7f66d6981fa46530b212de7b2663aa" kindref="member">property_animation_update_gcolor8()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6591" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga15081a96a1c078f2249312272bad7063" prot="public" static="no">
+        <type><ref refid="group___property_animation_1ga8e5e2922e940ba341ecd12a1222674c1" kindref="member">GPointReturn</ref>(*</type>
+        <definition>typedef GPointReturn(* GPointGetter) (void *subject)</definition>
+        <argsstring>)(void *subject)</argsstring>
+        <name>GPointGetter</name>
+        <briefdescription>
+<para>Function signature of a getter function to get the current property of type <ref refid="struct_g_point" kindref="compound">GPoint</ref> of the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6576" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga8e5e2922e940ba341ecd12a1222674c1" prot="public" static="no">
+        <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+        <definition>typedef GPoint GPointReturn</definition>
+        <argsstring></argsstring>
+        <name>GPointReturn</name>
+        <briefdescription>
+<para>Work-around for function pointer return type <ref refid="struct_g_point" kindref="compound">GPoint</ref> to avoid tripping the pre-processor to use the equally named <ref refid="struct_g_point" kindref="compound">GPoint</ref> define. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6540" column="16" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga4ab8cc6589e74bd6c6b30275ec442fde" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* GPointSetter) (void *subject, GPoint gpoint)</definition>
+        <argsstring>)(void *subject, GPoint gpoint)</argsstring>
+        <name>GPointSetter</name>
+        <briefdescription>
+<para>Function signature of a setter function to set a property of type <ref refid="struct_g_point" kindref="compound">GPoint</ref> onto the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1gacf429c1542a3d76735bf23e6fa7d8449" kindref="member">property_animation_update_gpoint()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6571" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga5c49d2de8b35ee91cec627187d59b70d" prot="public" static="no">
+        <type><ref refid="group___property_animation_1gabf18ade37c724a027e0fadee01accbeb" kindref="member">GRectReturn</ref>(*</type>
+        <definition>typedef GRectReturn(* GRectGetter) (void *subject)</definition>
+        <argsstring>)(void *subject)</argsstring>
+        <name>GRectGetter</name>
+        <briefdescription>
+<para>Function signature of a getter function to get the current property of type <ref refid="struct_g_rect" kindref="compound">GRect</ref> of the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6586" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1gabf18ade37c724a027e0fadee01accbeb" prot="public" static="no">
+        <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+        <definition>typedef GRect GRectReturn</definition>
+        <argsstring></argsstring>
+        <name>GRectReturn</name>
+        <briefdescription>
+<para>Work-around for function pointer return type <ref refid="struct_g_rect" kindref="compound">GRect</ref> to avoid tripping the pre-processor to use the equally named <ref refid="struct_g_rect" kindref="compound">GRect</ref> define. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6544" column="15" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga61b3aafd7d96fe2d8447c9adcd4f8393" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* GRectSetter) (void *subject, GRect grect)</definition>
+        <argsstring>)(void *subject, GRect grect)</argsstring>
+        <name>GRectSetter</name>
+        <briefdescription>
+<para>Function signature of a setter function to set a property of type <ref refid="struct_g_rect" kindref="compound">GRect</ref> onto the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1ga9e290a0375528eac0a1a12b4387d6caa" kindref="member">property_animation_update_grect()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6581" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga13179c04776f22968437e35b256f3597" prot="public" static="no">
+        <type>int16_t(*</type>
+        <definition>typedef int16_t(* Int16Getter) (void *subject)</definition>
+        <argsstring>)(void *subject)</argsstring>
+        <name>Int16Getter</name>
+        <briefdescription>
+<para>Function signature of a getter function to get the current property of type int16_t of the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6555" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga1105bd1b67e2fa493129b70aa0b615ec" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* Int16Setter) (void *subject, int16_t int16)</definition>
+        <argsstring>)(void *subject, int16_t int16)</argsstring>
+        <name>Int16Setter</name>
+        <briefdescription>
+<para>Function signature of a setter function to set a property of type int16_t onto the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1ga798776416e2c1f86e80ff19672d7ddf5" kindref="member">property_animation_update_int16()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6549" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1gac2eaae73c959c7183421dbd40cb7a852" prot="public" static="no">
+        <type>struct PropertyAnimation</type>
+        <definition>typedef struct PropertyAnimation PropertyAnimation</definition>
+        <argsstring></argsstring>
+        <name>PropertyAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6416" column="32" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga481c32f9df91cbb4e7d3839ff57ba789" prot="public" static="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref>(*</type>
+        <definition>typedef uint32_t(* UInt32Getter) (void *subject)</definition>
+        <argsstring>)(void *subject)</argsstring>
+        <name>UInt32Getter</name>
+        <briefdescription>
+<para>Function signature of a getter function to get the current property of type <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> of the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6566" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___property_animation_1ga9bcdb4cabe3a5cc327b178337ab85669" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* UInt32Setter) (void *subject, uint32_t uint32)</definition>
+        <argsstring>)(void *subject, uint32_t uint32)</argsstring>
+        <name>UInt32Setter</name>
+        <briefdescription>
+<para>Function signature of a setter function to set a property of type <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> onto the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___property_animation_1ga798776416e2c1f86e80ff19672d7ddf5" kindref="member">property_animation_update_int16()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6560" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6560" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PropertyAnimation *</type>
+        <definition>PropertyAnimation * property_animation_create</definition>
+        <argsstring>(const PropertyAnimationImplementation *implementation, void *subject, void *from_value, void *to_value)</argsstring>
+        <name>property_animation_create</name>
+        <param>
+          <type>const <ref refid="struct_property_animation_implementation" kindref="compound">PropertyAnimationImplementation</ref> *</type>
+          <declname>implementation</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>subject</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>from_value</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>to_value</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new PropertyAnimation on the heap and and initializes it with the specified values. The same defaults are used as with <ref refid="group___animation_1ga2d06beeb875d75076cd28eebe96fd9f2" kindref="member">animation_create()</ref>. If the <computeroutput>from_value</computeroutput> or the <computeroutput>to_value</computeroutput> is <computeroutput>NULL</computeroutput>, the getter accessor will be called to get the current value of the property and be used instead. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>implementation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the implementation of the animation. In most cases, it makes sense to pass in a <computeroutput>static const</computeroutput> struct pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the &quot;subject&quot; being animated. This will be passed in when the getter/ setter accessors are called, see <ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref>, <ref refid="group___property_animation_1ga4ab8cc6589e74bd6c6b30275ec442fde" kindref="member">GPointSetter</ref>, and friends. The value of this pointer will be copied into the <computeroutput>.subject</computeroutput> field of the PropertyAnimation struct. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the value that the subject should animate from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the value that the subject should animate to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Pass in <computeroutput>NULL</computeroutput> as one of the value arguments to have it set automatically to the subject&apos;s current property value, as returned by the getter function. Also note that passing in <computeroutput>NULL</computeroutput> for both <computeroutput>from_value</computeroutput> and <computeroutput>to_value</computeroutput>, will result in the animation having the same from- and to- values, effectively not doing anything. </para>
+</simplesect>
+<simplesect kind="return"><para>A handle to the property animation. <computeroutput>NULL</computeroutput> if animation could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6460" column="19" declfile="build/sdk/emery/include/pebble.h" declline="6460" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1gaf5654417381134288c269d55619f26a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PropertyAnimation *</type>
+        <definition>PropertyAnimation * property_animation_create_bounds_origin</definition>
+        <argsstring>(struct Layer *layer, GPoint *from, GPoint *to)</argsstring>
+        <name>property_animation_create_bounds_origin</name>
+        <param>
+          <type>struct Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref> *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to create and initialize a property animation that animates the bound&apos;s origin of a Layer. It sets up the PropertyAnimation to use <ref refid="group___layer_1ga0a99dca38b75b52264c0734b934c865c" kindref="member">layer_set_bounds()</ref> and <ref refid="group___layer_1ga3e99442ac9d3af36ec7c25118360710c" kindref="member">layer_get_bounds()</ref> as accessors and uses the <computeroutput>layer</computeroutput> parameter as the subject for the animation. The same defaults are used as with <ref refid="group___animation_1ga2d06beeb875d75076cd28eebe96fd9f2" kindref="member">animation_create()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the layer that will be animated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from_origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the origin that the bounds should animate from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the origin that the layer should animate to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A handle to the property animation. <computeroutput>NULL</computeroutput> if animation could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6440" column="19" declfile="build/sdk/emery/include/pebble.h" declline="6440" declcolumn="19"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1gafa235d899037ae80a7488df2d6c8f020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PropertyAnimation *</type>
+        <definition>PropertyAnimation * property_animation_create_layer_frame</definition>
+        <argsstring>(struct Layer *layer, GRect *from_frame, GRect *to_frame)</argsstring>
+        <name>property_animation_create_layer_frame</name>
+        <param>
+          <type>struct Layer *</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref> *</type>
+          <declname>from_frame</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref> *</type>
+          <declname>to_frame</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to create and initialize a property animation that animates the frame of a Layer. It sets up the PropertyAnimation to use <ref refid="group___layer_1ga5a984a17781b97ce00ae34c437171934" kindref="member">layer_set_frame()</ref> and <ref refid="group___layer_1ga76ed01d3619150b87604ebaa9dc282b7" kindref="member">layer_get_frame()</ref> as accessors and uses the <computeroutput>layer</computeroutput> parameter as the subject for the animation. The same defaults are used as with <ref refid="group___animation_1ga2d06beeb875d75076cd28eebe96fd9f2" kindref="member">animation_create()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the layer that will be animated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame that the layer should animate from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame that the layer should animate to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Pass in <computeroutput>NULL</computeroutput> as one of the frame arguments to have it set automatically to the layer&apos;s current frame. This will result in a call to <ref refid="group___layer_1ga76ed01d3619150b87604ebaa9dc282b7" kindref="member">layer_get_frame()</ref> to get the current frame of the layer. </para>
+</simplesect>
+<simplesect kind="return"><para>A handle to the property animation. <computeroutput>NULL</computeroutput> if animation could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6429" column="19" declfile="build/sdk/emery/include/pebble.h" declline="6429" declcolumn="19"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1ga5206441e917a1e0f5bdce035df1e2bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void property_animation_destroy</definition>
+        <argsstring>(PropertyAnimation *property_animation)</argsstring>
+        <name>property_animation_destroy</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a property animation allocated by <ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref> or relatives. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the return value from property_animation_create </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6465" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6465" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool property_animation_from</definition>
+        <argsstring>(PropertyAnimation *property_animation, void *from, size_t size, bool set)</argsstring>
+        <name>property_animation_from</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+<para>Helper function used by the property_animation_get|set_from_.* macros. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the property animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the from value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to set new value, false to retrieve existing one </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful, false on failure (usually a bad animation_h) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6772" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6772" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1gac740054cbb16590073e1d2dc9224baf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Animation *</type>
+        <definition>Animation * property_animation_get_animation</definition>
+        <argsstring>(PropertyAnimation *property_animation)</argsstring>
+        <name>property_animation_get_animation</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to retrieve an animation instance from a property animation instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="group___animation" kindref="compound">Animation</ref> within this PropertyAnimation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6654" column="11" declfile="build/sdk/emery/include/pebble.h" declline="6654" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1ga954c8e865863bf03e05ff011f1cc48dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool property_animation_subject</definition>
+        <argsstring>(PropertyAnimation *property_animation, void **subject, bool set)</argsstring>
+        <name>property_animation_subject</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>subject</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+<para>Helper function used by the property_animation_get|set_subject macros. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the property animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subject to get or set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to set new subject, false to retrieve existing value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful, false on failure (usually a bad animation_h) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6764" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6764" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool property_animation_to</definition>
+        <argsstring>(PropertyAnimation *property_animation, void *to, size_t size, bool set)</argsstring>
+        <name>property_animation_to</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+<para>Helper function used by the property_animation_get|set_to_.* macros. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handle to the property animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the to value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to set new value, false to retrieve existing one </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successful, false on failure (usually a bad animation_h) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6781" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6781" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1gafc7f66d6981fa46530b212de7b2663aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void property_animation_update_gcolor8</definition>
+        <argsstring>(PropertyAnimation *property_animation, const uint32_t distance_normalized)</argsstring>
+        <name>property_animation_update_gcolor8</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>distance_normalized</declname>
+        </param>
+        <briefdescription>
+<para>Default update callback for a property animations to update a property of type GColor8. Assign this function to the <computeroutput>.base.update</computeroutput> callback field of your <ref refid="struct_property_animation_implementation" kindref="compound">PropertyAnimationImplementation</ref>, in combination with a <computeroutput>.getter</computeroutput> and <computeroutput>.setter</computeroutput> accessors of types <ref refid="group___property_animation_1gacc7310bfebe0e5a86da1e4634139a926" kindref="member">GColor8Getter</ref> and <ref refid="group___property_animation_1ga45cf8d9b79d330875e5bb5e4c415573e" kindref="member">GColor8Setter</ref>. The implementation of this function will calculate the next rectangle of the animation and call the setter to set the new value upon the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property animation for which the update is requested. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance_normalized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current normalized distance. See <ref refid="group___animation_1ga8e27aba7aaca1cd8a3409099d64da6ef" kindref="member">AnimationUpdateImplementation</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is not supposed to be called &quot;manually&quot;, but will be called automatically when the animation is being run. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6535" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6535" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1gacf429c1542a3d76735bf23e6fa7d8449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void property_animation_update_gpoint</definition>
+        <argsstring>(PropertyAnimation *property_animation, const uint32_t distance_normalized)</argsstring>
+        <name>property_animation_update_gpoint</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>distance_normalized</declname>
+        </param>
+        <briefdescription>
+<para>Default update callback for a property animations to update a property of type <ref refid="struct_g_point" kindref="compound">GPoint</ref>. Assign this function to the <computeroutput>.base.update</computeroutput> callback field of your <ref refid="struct_property_animation_implementation" kindref="compound">PropertyAnimationImplementation</ref>, in combination with a <computeroutput>.getter</computeroutput> and <computeroutput>.setter</computeroutput> accessors of types <ref refid="group___property_animation_1ga15081a96a1c078f2249312272bad7063" kindref="member">GPointGetter</ref> and <ref refid="group___property_animation_1ga4ab8cc6589e74bd6c6b30275ec442fde" kindref="member">GPointSetter</ref>. The implementation of this function will calculate the next point of the animation and call the setter to set the new point upon the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property animation for which the update is requested. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance_normalized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current normalized distance. See <ref refid="group___animation_1ga8e27aba7aaca1cd8a3409099d64da6ef" kindref="member">AnimationUpdateImplementation</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is not supposed to be called &quot;manually&quot;, but will be called automatically when the animation is being run. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6507" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6507" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1ga9e290a0375528eac0a1a12b4387d6caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void property_animation_update_grect</definition>
+        <argsstring>(PropertyAnimation *property_animation, const uint32_t distance_normalized)</argsstring>
+        <name>property_animation_update_grect</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>distance_normalized</declname>
+        </param>
+        <briefdescription>
+<para>Default update callback for a property animations to update a property of type <ref refid="struct_g_rect" kindref="compound">GRect</ref>. Assign this function to the <computeroutput>.base.update</computeroutput> callback field of your <ref refid="struct_property_animation_implementation" kindref="compound">PropertyAnimationImplementation</ref>, in combination with a <computeroutput>.getter</computeroutput> and <computeroutput>.setter</computeroutput> accessors of types <ref refid="group___property_animation_1ga5c49d2de8b35ee91cec627187d59b70d" kindref="member">GRectGetter</ref> and <ref refid="group___property_animation_1ga61b3aafd7d96fe2d8447c9adcd4f8393" kindref="member">GRectSetter</ref>. The implementation of this function will calculate the next rectangle of the animation and call the setter to set the new rectangle upon the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property animation for which the update is requested. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance_normalized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current normalized distance. See <ref refid="group___animation_1ga8e27aba7aaca1cd8a3409099d64da6ef" kindref="member">AnimationUpdateImplementation</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is not supposed to be called &quot;manually&quot;, but will be called automatically when the animation is being run. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6521" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6521" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1ga798776416e2c1f86e80ff19672d7ddf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void property_animation_update_int16</definition>
+        <argsstring>(PropertyAnimation *property_animation, const uint32_t distance_normalized)</argsstring>
+        <name>property_animation_update_int16</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>distance_normalized</declname>
+        </param>
+        <briefdescription>
+<para>Default update callback for a property animations to update a property of type int16_t. Assign this function to the <computeroutput>.base.update</computeroutput> callback field of your <ref refid="struct_property_animation_implementation" kindref="compound">PropertyAnimationImplementation</ref>, in combination with a <computeroutput>.getter</computeroutput> and <computeroutput>.setter</computeroutput> accessors of types <ref refid="group___property_animation_1ga13179c04776f22968437e35b256f3597" kindref="member">Int16Getter</ref> and <ref refid="group___property_animation_1ga1105bd1b67e2fa493129b70aa0b615ec" kindref="member">Int16Setter</ref>. The implementation of this function will calculate the next value of the animation and call the setter to set the new value upon the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property animation for which the update is requested. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance_normalized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current normalized distance. See <ref refid="group___animation_1ga8e27aba7aaca1cd8a3409099d64da6ef" kindref="member">AnimationUpdateImplementation</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is not supposed to be called &quot;manually&quot;, but will be called automatically when the animation is being run. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6478" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6478" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___property_animation_1gaf45e09b9458d5f63bf9d63dd6ed25f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void property_animation_update_uint32</definition>
+        <argsstring>(PropertyAnimation *property_animation, const uint32_t distance_normalized)</argsstring>
+        <name>property_animation_update_uint32</name>
+        <param>
+          <type>PropertyAnimation *</type>
+          <declname>property_animation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>distance_normalized</declname>
+        </param>
+        <briefdescription>
+<para>Default update callback for a property animations to update a property of type <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref>. Assign this function to the <computeroutput>.base.update</computeroutput> callback field of your <ref refid="struct_property_animation_implementation" kindref="compound">PropertyAnimationImplementation</ref>, in combination with a <computeroutput>.getter</computeroutput> and <computeroutput>.setter</computeroutput> accessors of types <ref refid="group___property_animation_1ga481c32f9df91cbb4e7d3839ff57ba789" kindref="member">UInt32Getter</ref> and <ref refid="group___property_animation_1ga9bcdb4cabe3a5cc327b178337ab85669" kindref="member">UInt32Setter</ref>. The implementation of this function will calculate the next value of the animation and call the setter to set the new value upon the subject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property animation for which the update is requested. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance_normalized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current normalized distance. See <ref refid="group___animation_1ga8e27aba7aaca1cd8a3409099d64da6ef" kindref="member">AnimationUpdateImplementation</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is not supposed to be called &quot;manually&quot;, but will be called automatically when the animation is being run. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6492" column="6" declfile="build/sdk/emery/include/pebble.h" declline="6492" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___property_animation_1gac74f0d591ff008864be66a6239f018c1" prot="public" static="no">
+        <name>property_animation_clone</name>
+        <param><defname>property_animation</defname></param>
+        <initializer>(PropertyAnimation *)animation_clone((Animation *)property_animation)</initializer>
+        <briefdescription>
+<para>Convenience function to clone a property animation instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The property animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A clone of the original Animation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6659" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6659" bodyend="6660"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga2985e81db278b07c103d79d7c04e5acd" prot="public" static="no">
+        <name>property_animation_get_from_gpoint</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), false)</initializer>
+        <briefdescription>
+<para>Convenience function to retrieve the &apos;from&apos; <ref refid="struct_g_point" kindref="compound">GPoint</ref> value from property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value will be retrieved into this pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6680" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6680" bodyend="6681"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga0c76c13ffeb7e067409d59edc0cb3d5b" prot="public" static="no">
+        <name>property_animation_get_from_grect</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), false)</initializer>
+        <briefdescription>
+<para>Convenience function to retrieve the &apos;from&apos; <ref refid="struct_g_rect" kindref="compound">GRect</ref> value from property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value will be retrieved into this pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6666" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6666" bodyend="6667"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1gaacc7b66bdc0525ed2326d99c199539c5" prot="public" static="no">
+        <name>property_animation_get_from_int16</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(int16_t), false)</initializer>
+        <briefdescription>
+<para>Convenience function to retrieve the &apos;from&apos; int16_t value from property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value will be retrieved into this pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6694" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6694" bodyend="6695"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga76b367393dbdc2497564d297ca1e50fc" prot="public" static="no">
+        <name>property_animation_get_subject</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1ga954c8e865863bf03e05ff011f1cc48dc" kindref="member">property_animation_subject</ref>(property_animation, value_ptr, false)</initializer>
+        <briefdescription>
+<para>Retrieve the subject of a property animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer used to store the subject of this property animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The subject of this PropertyAnimation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6750" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6750" bodyend="6751"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga2c14ad5fce3aa9470933d88443d2a1cf" prot="public" static="no">
+        <name>property_animation_get_to_gpoint</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), false)</initializer>
+        <briefdescription>
+<para>Convenience function to retrieve the &apos;to&apos; <ref refid="struct_g_point" kindref="compound">GPoint</ref> value from property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value will be retrieved into this pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6722" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6722" bodyend="6723"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga125613c9f7992b073e53887811317344" prot="public" static="no">
+        <name>property_animation_get_to_grect</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), false)</initializer>
+        <briefdescription>
+<para>Convenience function to retrieve the &apos;to&apos; <ref refid="struct_g_rect" kindref="compound">GRect</ref> value from property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value will be retrieved into this pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6708" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6708" bodyend="6709"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga2d6abe586d12259e50e715fddc590317" prot="public" static="no">
+        <name>property_animation_get_to_int16</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(int16_t), false)</initializer>
+        <briefdescription>
+<para>Convenience function to retrieve the &apos;to&apos; int16_t value from property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value will be retrieved into this pointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6736" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6736" bodyend="6737"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga8cfa43a8668e3bf721178e3807daa079" prot="public" static="no">
+        <name>property_animation_set_from_gpoint</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), true)</initializer>
+        <briefdescription>
+<para>Convenience function to set the &apos;from&apos; <ref refid="struct_g_point" kindref="compound">GPoint</ref> value of property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6687" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6687" bodyend="6688"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1gadc45e733ab1f524f8799cadb1600f4e4" prot="public" static="no">
+        <name>property_animation_set_from_grect</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), true)</initializer>
+        <briefdescription>
+<para>Convenience function to set the &apos;from&apos; <ref refid="struct_g_rect" kindref="compound">GRect</ref> value of property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6673" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6673" bodyend="6674"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1gacd2d23da9bcf553295ee8dd884e8810b" prot="public" static="no">
+        <name>property_animation_set_from_int16</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(int16_t), true)</initializer>
+        <briefdescription>
+<para>Convenience function to set the &apos;from&apos; int16_t value of property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6701" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6701" bodyend="6702"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1gaae4074fd81062a564a5e5b4821bfde2b" prot="public" static="no">
+        <name>property_animation_set_subject</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1ga954c8e865863bf03e05ff011f1cc48dc" kindref="member">property_animation_subject</ref>(property_animation, value_ptr, true)</initializer>
+        <briefdescription>
+<para>Set the subject of a property animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new subject value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6756" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6756" bodyend="6757"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga2a5dea87101e82c2527380aa0027065f" prot="public" static="no">
+        <name>property_animation_set_to_gpoint</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), true)</initializer>
+        <briefdescription>
+<para>Convenience function to set the &apos;to&apos; <ref refid="struct_g_point" kindref="compound">GPoint</ref> value of property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6729" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6729" bodyend="6730"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga1a9451d9b6e010051d76ccee0a71e6c5" prot="public" static="no">
+        <name>property_animation_set_to_grect</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), true)</initializer>
+        <briefdescription>
+<para>Convenience function to set the &apos;to&apos; <ref refid="struct_g_rect" kindref="compound">GRect</ref> value of property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6715" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6715" bodyend="6716"/>
+      </memberdef>
+      <memberdef kind="define" id="group___property_animation_1ga8158508c6fd67c0dce3a6bbc69f3d605" prot="public" static="no">
+        <name>property_animation_set_to_int16</name>
+        <param><defname>property_animation</defname></param>
+        <param><defname>value_ptr</defname></param>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(int16_t), true)</initializer>
+        <briefdescription>
+<para>Convenience function to set the &apos;to&apos; int16_t value of property animation handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>property_animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The PropertyAnimation to be accessed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the new value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success, false on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6743" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6743" bodyend="6744"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A ProperyAnimation animates the value of a &quot;property&quot; of a &quot;subject&quot; over time. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><heading level="3">Animating a Layer&apos;s frame property</heading>
+</para>
+<para>Currently there is only one specific type of property animation offered off-the-shelf, namely one to change the frame (property) of a layer (subject), see <ref refid="group___property_animation_1gafa235d899037ae80a7488df2d6c8f020" kindref="member">property_animation_create_layer_frame()</ref>.</para>
+<para><heading level="3">Implementing a custom PropertyAnimation</heading>
+</para>
+<para>It is fairly simple to create your own variant of a PropertyAnimation.</para>
+<para>Please refer to <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+</htmlonly> (chapter &quot;Property Animations&quot;) for a conceptual overview of the animation framework and make sure you understand the underlying <ref refid="group___animation" kindref="compound">Animation</ref>, in case you are not familiar with it, before trying to implement a variation on PropertyAnimation.</para>
+<para>To implement a custom property animation, use <ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref> and provide a function pointers to the accessors (getter and setter) and setup, update and teardown callbacks in the implementation argument. Note that the type of property to animate with <ref refid="group___property_animation" kindref="compound">PropertyAnimation</ref> is limited to int16_t, <ref refid="struct_g_point" kindref="compound">GPoint</ref> or <ref refid="struct_g_rect" kindref="compound">GRect</ref>.</para>
+<para>For each of these types, there are implementations provided for the necessary <computeroutput>.update</computeroutput> handler of the animation: see <ref refid="group___property_animation_1ga798776416e2c1f86e80ff19672d7ddf5" kindref="member">property_animation_update_int16()</ref>, <ref refid="group___property_animation_1gacf429c1542a3d76735bf23e6fa7d8449" kindref="member">property_animation_update_gpoint()</ref> and <ref refid="group___property_animation_1ga9e290a0375528eac0a1a12b4387d6caa" kindref="member">property_animation_update_grect()</ref>. These update functions expect the <computeroutput>.accessors</computeroutput> to conform to the following interface: Any getter needs to have the following function signature: <computeroutput>__type__ getter(void *subject);</computeroutput> Any setter needs to have to following function signature: <computeroutput>void setter(void *subject,
+__type__ value);</computeroutput> See <ref refid="group___property_animation_1ga13179c04776f22968437e35b256f3597" kindref="member">Int16Getter</ref>, <ref refid="group___property_animation_1ga1105bd1b67e2fa493129b70aa0b615ec" kindref="member">Int16Setter</ref>, <ref refid="group___property_animation_1ga15081a96a1c078f2249312272bad7063" kindref="member">GPointGetter</ref>, <ref refid="group___property_animation_1ga4ab8cc6589e74bd6c6b30275ec442fde" kindref="member">GPointSetter</ref>, <ref refid="group___property_animation_1ga5c49d2de8b35ee91cec627187d59b70d" kindref="member">GRectGetter</ref>, <ref refid="group___property_animation_1ga61b3aafd7d96fe2d8447c9adcd4f8393" kindref="member">GRectSetter</ref> for the typedefs that accompany the update fuctions.</para>
+<para><programlisting filename=".c"><codeline><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_property_animation_implementation" kindref="compound">PropertyAnimationImplementation</ref><sp/>my_implementation<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.base<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>using<sp/>the<sp/>&quot;stock&quot;<sp/>update<sp/>callback:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.update<sp/>=<sp/>(<ref refid="group___animation_1ga8e27aba7aaca1cd8a3409099d64da6ef" kindref="member">AnimationUpdateImplementation</ref>)<sp/><ref refid="group___property_animation_1gacf429c1542a3d76735bf23e6fa7d8449" kindref="member">property_animation_update_gpoint</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.accessors<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>my<sp/>accessors<sp/>that<sp/>get/set<sp/>a<sp/>GPoint<sp/>from/onto<sp/>my<sp/>subject:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.setter<sp/>=<sp/>{<sp/>.gpoint<sp/>=<sp/>my_layer_set_corner_point,<sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.getter<sp/>=<sp/>{<sp/>.gpoint<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___property_animation_1ga15081a96a1c078f2249312272bad7063" kindref="member">GPointGetter</ref>)<sp/>my_layer_get_corner_point,<sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>PropertyAnimation*<sp/>s_my_animation_ptr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" kindref="member">GPoint</ref><sp/>s_to_point<sp/>=<sp/><ref refid="group___graphics_types_1ga24192f6809de17d816671a1d6a7b59b5" kindref="member">GPointZero</ref>;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>NULL<sp/>as<sp/>&apos;from&apos;<sp/>value,<sp/>this<sp/>will<sp/>make<sp/>the<sp/>animation<sp/>framework<sp/>call<sp/>the<sp/>getter</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>get<sp/>the<sp/>current<sp/>value<sp/>of<sp/>the<sp/>property<sp/>and<sp/>use<sp/>that<sp/>as<sp/>the<sp/>&apos;from&apos;<sp/>value:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">s_my_animation_ptr<sp/>=<sp/><ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create</ref>(&amp;my_implementation,<sp/>my_layer,<sp/>NULL,<sp/>&amp;s_to_point);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___animation_1gaf06c5eb66bae91cafc9b6a1ca382a072" kindref="member">animation_schedule</ref>(<ref refid="group___property_animation_1gac740054cbb16590073e1d2dc9224baf9" kindref="member">property_animation_get_animation</ref>(s_my_animation_ptr));</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

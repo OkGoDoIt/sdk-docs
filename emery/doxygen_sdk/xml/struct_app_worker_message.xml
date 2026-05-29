@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_app_worker_message" kind="struct" language="C++" prot="public">
+    <compoundname>AppWorkerMessage</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_app_worker_message_1a40a82cd6bd398a8aef2c7c316a34c492" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t AppWorkerMessage::data0</definition>
+        <argsstring></argsstring>
+        <name>data0</name>
+        <qualifiedname>AppWorkerMessage::data0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2910" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2910" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_worker_message_1af2dc5659d8a2baf88498c3aa22a95995" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t AppWorkerMessage::data1</definition>
+        <argsstring></argsstring>
+        <name>data1</name>
+        <qualifiedname>AppWorkerMessage::data1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2911" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_worker_message_1ac2e93e4325306b77d7dc639fcf1b92d2" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t AppWorkerMessage::data2</definition>
+        <argsstring></argsstring>
+        <name>data2</name>
+        <qualifiedname>AppWorkerMessage::data2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2912" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2912" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Generic structure of a worker message that can be sent between an app and its worker. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="2909" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2909" bodyend="2913"/>
+    <listofallmembers>
+      <member refid="struct_app_worker_message_1a40a82cd6bd398a8aef2c7c316a34c492" prot="public" virt="non-virtual"><scope>AppWorkerMessage</scope><name>data0</name></member>
+      <member refid="struct_app_worker_message_1af2dc5659d8a2baf88498c3aa22a95995" prot="public" virt="non-virtual"><scope>AppWorkerMessage</scope><name>data1</name></member>
+      <member refid="struct_app_worker_message_1ac2e93e4325306b77d7dc639fcf1b92d2" prot="public" virt="non-virtual"><scope>AppWorkerMessage</scope><name>data2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_g_bitmap_data_row_info" kind="struct" language="C++" prot="public">
+    <compoundname>GBitmapDataRowInfo</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_bitmap_data_row_info_1a35192dcc967b233d6477988fffd119aa" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* GBitmapDataRowInfo::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>GBitmapDataRowInfo::data</qualifiedname>
+        <briefdescription>
+<para>Address of the byte at column 0 of a given data row in a bitmap. Use this to calculate the memory address of a pixel. For GBitmapFormat8BitCircular or GBitmapFormat8Bit this would be: <computeroutput>uint8_t *pixel_addr = row_info.addr + x</computeroutput>. Note that this byte can be outside of the valid range for this row. For example: The first valid pixel (<computeroutput><ref refid="struct_g_bitmap_data_row_info_1aea3e456327c26defb9603b9e3630ee49" kindref="member">min_x</ref>=76</computeroutput>) of a row might start at 76 bytes after the given data pointer (assuming that 1 pixel is represented as 1 byte as in GBitmapFormat8BitCircular or GBitmapFormat8Bit). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4116" column="13" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_bitmap_data_row_info_1a7022e2c8200c4740e670180c3b450b49" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GBitmapDataRowInfo::max_x</definition>
+        <argsstring></argsstring>
+        <name>max_x</name>
+        <qualifiedname>GBitmapDataRowInfo::max_x</qualifiedname>
+        <briefdescription>
+<para>The absolute column of the last valid pixel for a given data row. For optimization reasons the result can be anywhere between grect_get_max_x(bitmap_bounds) - 1 and the physical data boundary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4122" column="13" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_bitmap_data_row_info_1aea3e456327c26defb9603b9e3630ee49" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t GBitmapDataRowInfo::min_x</definition>
+        <argsstring></argsstring>
+        <name>min_x</name>
+        <qualifiedname>GBitmapDataRowInfo::min_x</qualifiedname>
+        <briefdescription>
+<para>The absolute column of a first valid pixel for a given data row. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4118" column="13" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4118" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Description of a single data row in the pixel data of a bitmap. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This data type describes the actual pixel data of a bitmap and does not respect the bitmap&apos;s bounds. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga5c307d3424e0af8d03d988bb69a5ee0b" kindref="member">gbitmap_get_data_row_info</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1gac346bcebc653a196ddb2aecc04dc0ac6" kindref="member">gbitmap_get_data</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1gafce95e410fee76c66526f167c8415f3f" kindref="member">gbitmap_get_bounds</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="4108" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4108" bodyend="4123"/>
+    <listofallmembers>
+      <member refid="struct_g_bitmap_data_row_info_1a35192dcc967b233d6477988fffd119aa" prot="public" virt="non-virtual"><scope>GBitmapDataRowInfo</scope><name>data</name></member>
+      <member refid="struct_g_bitmap_data_row_info_1a7022e2c8200c4740e670180c3b450b49" prot="public" virt="non-virtual"><scope>GBitmapDataRowInfo</scope><name>max_x</name></member>
+      <member refid="struct_g_bitmap_data_row_info_1aea3e456327c26defb9603b9e3630ee49" prot="public" virt="non-virtual"><scope>GBitmapDataRowInfo</scope><name>min_x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_tuple" kind="struct" language="C++" prot="public">
     <compoundname>Tuple</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1704" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1704" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1766" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1766" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_tuple_1ac83219d80bf6300b0afe53d5b30955a9" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -26,13 +26,13 @@
         <name>length</name>
         <qualifiedname>Tuple::length</qualifiedname>
         <briefdescription>
-<para>The length of <computeroutput>.value</computeroutput> in bytes. </para>
+<para>The length of <computeroutput>.<ref refid="struct_tuple_1a4112891dd8566ed1c82562560b730b50" kindref="member">value</ref></computeroutput> in bytes. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1708" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1708" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1770" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1770" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_tuple_1ae2c621840b9fa7c2e7ef21074331d317" prot="public" static="no" mutable="no">
         <type><ref refid="group___dictionary_1gaf164f32d9bda6829f1738ef3fb2c6670" kindref="member">TupleType</ref></type>
@@ -42,17 +42,17 @@
         <qualifiedname>Tuple::type</qualifiedname>
         <bitfield>8</bitfield>
         <briefdescription>
-<para>The type of data that the <computeroutput>.value</computeroutput> fields contains. </para>
+<para>The type of data that the <computeroutput>.<ref refid="struct_tuple_1a4112891dd8566ed1c82562560b730b50" kindref="member">value</ref></computeroutput> fields contains. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1706" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1706" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1768" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1768" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_tuple_1a4112891dd8566ed1c82562560b730b50" prot="public" static="no" mutable="no">
-        <type>union <ref refid="struct_tuple" kindref="compound">Tuple</ref></type>
-        <definition>union Tuple Tuple::value[]</definition>
+        <type>union Tuple::@212116262305264147156235035013332061075122331074</type>
+        <definition>union Tuple::@212116262305264147156235035013332061075122331074 Tuple::value[]</definition>
         <argsstring>[]</argsstring>
         <name>value</name>
         <qualifiedname>Tuple::value</qualifiedname>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1738" column="11"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1800" column="11"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -79,7 +79,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="1702" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1702" bodyend="1739"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="1764" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1764" bodyend="1801"/>
     <listofallmembers>
       <member refid="struct_tuple_1ae0a5c5233ca231aa7c1a368d340a97c0" prot="public" virt="non-virtual"><scope>Tuple</scope><name>key</name></member>
       <member refid="struct_tuple_1ac83219d80bf6300b0afe53d5b30955a9" prot="public" virt="non-virtual"><scope>Tuple</scope><name>length</name></member>

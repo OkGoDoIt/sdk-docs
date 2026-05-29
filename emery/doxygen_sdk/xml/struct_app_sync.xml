@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_app_sync" kind="struct" language="C++" prot="public">
+    <compoundname>AppSync</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_app_sync_1a47aec09b2ecd346cb479d31cc38eac72" prot="public" static="no" mutable="no">
+        <type>union AppSync::@374264205260143164350365244264137163135200153205</type>
+        <definition>union AppSync::@374264205260143164350365244264137163135200153205 AppSync::@221314324167210153342070161302336271233122107235</definition>
+        <argsstring></argsstring>
+        <name>@221314324167210153342070161302336271233122107235</name>
+        <qualifiedname>AppSync::@221314324167210153342070161302336271233122107235</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2606" column="3"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_sync_1ab184df88bff7548e6fc2b1075879ea4c" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t AppSync::buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <qualifiedname>AppSync::buffer_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2607" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_sync_1a0486c0140827a3c8119c54727b0a3ee3" prot="public" static="no" mutable="no">
+        <type>struct AppSync::@030331033365333253150014021061017316346232306045</type>
+        <definition>struct AppSync::@030331033365333253150014021061017316346232306045 AppSync::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <qualifiedname>AppSync::callback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2612" column="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_sync_1a852821fc80afd3359f29807bcc3afb94" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref></type>
+        <definition>DictionaryIterator AppSync::current_iter</definition>
+        <argsstring></argsstring>
+        <name>current_iter</name>
+        <qualifiedname>AppSync::current_iter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2602" column="22" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2602" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AppSync</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>current_iter</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DictionaryIterator</label>
+        <link refid="struct_dictionary_iterator"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cursor</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Tuple</label>
+        <link refid="struct_tuple"/>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="2601" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2601" bodyend="2613"/>
+    <listofallmembers>
+      <member refid="struct_app_sync_1ab184df88bff7548e6fc2b1075879ea4c" prot="public" virt="non-virtual"><scope>AppSync</scope><name>buffer_size</name></member>
+      <member refid="struct_app_sync_1a0486c0140827a3c8119c54727b0a3ee3" prot="public" virt="non-virtual"><scope>AppSync</scope><name>callback</name></member>
+      <member refid="struct_app_sync_1a852821fc80afd3359f29807bcc3afb94" prot="public" virt="non-virtual"><scope>AppSync</scope><name>current_iter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

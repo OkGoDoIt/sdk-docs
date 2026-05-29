@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___smartstrap" kind="group">
     <compoundname>Smartstrap</compoundname>
     <title>Smartstrap</title>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4844" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4844" bodyend="4860"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5122" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5122" bodyend="5138"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4870" column="34" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4870" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5148" column="34" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___smartstrap_1gabbc436295eaf481c9358813990f85330" prot="public" static="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4866" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4866" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5144" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___smartstrap_1ga2786c9423e3e0bf81461deb5d28a3e82" prot="public" static="no">
         <type>void(*</type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4895" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4895" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5173" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___smartstrap_1gae3447433eba742537cd13bd58e907c45" prot="public" static="no">
         <type>void(*</type>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4885" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4885" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5163" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___smartstrap_1gae77e1b9b9b9ebec76be6ee5ee6d658b3" prot="public" static="no">
         <type>void(*</type>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4875" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4875" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5153" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" prot="public" static="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -222,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4863" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4863" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5141" column="18" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___smartstrap_1gabe74eee0435816d46af2a39d5f10f3c6" prot="public" static="no">
         <type>void(*</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4891" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4891" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5169" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5169" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -306,13 +306,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><computeroutput>SmartstrapResultOk</computeroutput> if a write operation was started and the <computeroutput>buffer</computeroutput> and <computeroutput>buffer_length</computeroutput> parameters were set, or an error otherwise. </para>
+<simplesect kind="return"><para><computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" kindref="member">SmartstrapResultOk</ref></computeroutput> if a write operation was started and the <computeroutput>buffer</computeroutput> and <computeroutput>buffer_length</computeroutput> parameters were set, or an error otherwise. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4987" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="4987" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5265" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="5265" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1ga107b850449693ecd2048077c4d28df2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___smartstrap_1ga4ea96ce94fb4765d39d9c70eff321569" kindref="member">SmartstrapAttribute</ref> *</type>
@@ -368,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4944" column="21" declfile="build/sdk/basalt/include/pebble.h" declline="4944" declcolumn="21"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5222" column="21" declfile="build/sdk/basalt/include/pebble.h" declline="5222" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1ga078a16b08dbc08080358cbea3dab6a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -398,7 +398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4954" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="4954" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5232" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5232" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1ga1eceb872794eb6523ec365dbaca30575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" kindref="member">SmartstrapResult</ref></type>
@@ -446,13 +446,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><computeroutput>SmartstrapResultOk</computeroutput> if a write operation was queued to be sent to the smartstrap. The <computeroutput>did_write</computeroutput> handler will be called when the request is written to the smartstrap, and if <computeroutput>request_read</computeroutput> was set to true, the <computeroutput>did_read</computeroutput> handler will be called when the read is complete. </para>
+<simplesect kind="return"><para><computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" kindref="member">SmartstrapResultOk</ref></computeroutput> if a write operation was queued to be sent to the smartstrap. The <computeroutput>did_write</computeroutput> handler will be called when the request is written to the smartstrap, and if <computeroutput>request_read</computeroutput> was set to true, the <computeroutput>did_read</computeroutput> handler will be called when the read is complete. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4999" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="4999" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5277" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="5277" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1ga704e596ad8a914a8ea9eabc2ecf566ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___smartstrap_1gabbc436295eaf481c9358813990f85330" kindref="member">SmartstrapAttributeId</ref></type>
@@ -482,7 +482,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4970" column="23" declfile="build/sdk/basalt/include/pebble.h" declline="4970" declcolumn="23"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5248" column="23" declfile="build/sdk/basalt/include/pebble.h" declline="5248" declcolumn="23"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1ga55a0a201de9fb28d397e89e3d9916a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" kindref="member">SmartstrapServiceId</ref></type>
@@ -512,7 +512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4965" column="21" declfile="build/sdk/basalt/include/pebble.h" declline="4965" declcolumn="21"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5243" column="21" declfile="build/sdk/basalt/include/pebble.h" declline="5243" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1gabb0da17b41d48b01aa545786671275b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" kindref="member">SmartstrapResult</ref></type>
@@ -536,13 +536,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><computeroutput>SmartstrapResultOk</computeroutput> if the read operation was started. The <computeroutput>did_read</computeroutput> callback will be called once the read request has been completed. </para>
+<simplesect kind="return"><para><computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" kindref="member">SmartstrapResultOk</ref></computeroutput> if the read operation was started. The <computeroutput>did_read</computeroutput> callback will be called once the read request has been completed. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4977" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="4977" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5255" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="5255" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1gad64edbf8e9cd6b7abc4e11fc74e63eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -572,7 +572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4959" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="4959" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5237" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5237" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1ga48c5b65d9f8d0070854d9451a26ec30e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -604,7 +604,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4932" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="4932" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5210" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5210" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1ga5a78e451bd596692e0affbdcc01eae50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" kindref="member">SmartstrapResult</ref></type>
@@ -623,13 +623,13 @@
 </simplesect>
 <simplesect kind="see"><para><ref refid="group___smartstrap_1ga7ebbfcea4142202197d8595f04aee9fc" kindref="member">smartstrap_unsubscribe</ref> </para>
 </simplesect>
-<simplesect kind="return"><para><computeroutput>SmartstrapResultNotPresent</computeroutput> if the watch does not have a smartstrap port or <computeroutput>SmartstrapResultOk</computeroutput> otherwise. </para>
+<simplesect kind="return"><para><computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aa84771fd8db30b2ea6fa1005687589191" kindref="member">SmartstrapResultNotPresent</ref></computeroutput> if the watch does not have a smartstrap port or <computeroutput><ref refid="group___smartstrap_1gga84dc8e008822a759ff6823c06829ac8aaf66884579bfb6a44ec70593f367dc9e6" kindref="member">SmartstrapResultOk</ref></computeroutput> otherwise. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4915" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="4915" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5193" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="5193" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___smartstrap_1ga7ebbfcea4142202197d8595f04aee9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -649,7 +649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4922" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="4922" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5200" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="5200" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -665,7 +665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4841" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4841" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5119" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___smartstrap_1ga65820921e9784db17cfe8d5deef8f058" prot="public" static="no">
         <name>SMARTSTRAP_RAW_DATA_ATTRIBUTE_ID</name>
@@ -677,7 +677,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4837" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4837" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5115" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___smartstrap_1ga4474a7976feaad01871ea8bd3f8ee2f6" prot="public" static="no">
         <name>SMARTSTRAP_RAW_DATA_SERVICE_ID</name>
@@ -689,7 +689,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4834" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4834" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5112" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___smartstrap_1ga6c7eaabf882a7666ff5a541644bb74c5" prot="public" static="no">
         <name>SMARTSTRAP_TIMEOUT_DEFAULT</name>
@@ -701,7 +701,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4831" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4831" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5109" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5109" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

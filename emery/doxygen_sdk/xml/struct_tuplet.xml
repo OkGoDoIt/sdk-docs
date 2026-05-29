@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_tuplet" kind="struct" language="C++" prot="public">
+    <compoundname>Tuplet</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_tuplet_1a2bb4cc1542ea79ad06698bebd1dadd61" prot="public" static="no" mutable="no">
+        <type>union Tuplet::@370272006252140310005123322311174103326266177203</type>
+        <definition>union Tuplet::@370272006252140310005123322311174103326266177203 Tuplet::@250242225307337343032050053172014135012132206211</definition>
+        <argsstring></argsstring>
+        <name>@250242225307337343032050053172014135012132206211</name>
+        <qualifiedname>Tuplet::@250242225307337343032050053172014135012132206211</qualifiedname>
+        <briefdescription>
+<para>Anonymous union containing the reference to the <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>&apos;s value, being either a byte array, c-string or integer. See documentation of <computeroutput>.bytes</computeroutput>, <computeroutput>.cstring</computeroutput> and <computeroutput>.integer</computeroutput> fields. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See documentation of <computeroutput>.bytes</computeroutput>, <computeroutput>.cstring</computeroutput> and <computeroutput>.integer</computeroutput> fields. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1982" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tuplet_1a0d335183753df2961b426478c17b553a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t Tuplet::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>Tuplet::key</qualifiedname>
+        <briefdescription>
+<para>The key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1955" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1955" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tuplet_1a1451fd4819f780d8877c0ac8d52151d2" prot="public" static="no" mutable="no">
+        <type><ref refid="group___dictionary_1gaf164f32d9bda6829f1738ef3fb2c6670" kindref="member">TupleType</ref></type>
+        <definition>TupleType Tuplet::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>Tuplet::type</qualifiedname>
+        <briefdescription>
+<para>The type of the <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>. This determines which of the struct fields in the anonymomous union are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1953" column="13" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1953" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Non-serialized, template data structure for a key/value pair. For strings and byte arrays, it only has a pointer to the actual data. For integers, it provides storage for integers up to 32-bits wide. The <ref refid="struct_tuplet" kindref="compound">Tuplet</ref> data structure is useful when creating dictionaries from values that are already stored in arbitrary buffers. See also <ref refid="struct_tuple" kindref="compound">Tuple</ref>, with is the header of a serialized key/value pair. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="1950" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1950" bodyend="1983"/>
+    <listofallmembers>
+      <member refid="struct_tuplet_1a0d335183753df2961b426478c17b553a" prot="public" virt="non-virtual"><scope>Tuplet</scope><name>key</name></member>
+      <member refid="struct_tuplet_1a1451fd4819f780d8877c0ac8d52151d2" prot="public" virt="non-virtual"><scope>Tuplet</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

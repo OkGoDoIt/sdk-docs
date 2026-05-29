@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___p_b_i_file_format" kind="group">
     <compoundname>PBIFileFormat</compoundname>
     <title>PBI File Format</title>
     <briefdescription>
+<para>PBIs are uncompressed bitmap images with support for color-mapping palettes. PBIs store images either as raw image pixels (1-bit black and white, or 8-bit ARGB) or as palette-based images with 1, 2, or 4 bits per pixel. For palette-based images the pixel data represents the index into the palette, such that each pixel only needs to be large enough to represent the palette size, so </para>
     </briefdescription>
     <detaileddescription>
-<para>PBIs are uncompressed bitmap images with support for color-mapping palettes. PBIs store images either as raw image pixels (1-bit black and white, or 8-bit ARGB) or as palette-based images with 1, 2, or 4 bits per pixel. For palette-based images the pixel data represents the index into the palette, such that each pixel only needs to be large enough to represent the palette size, so <itemizedlist>
+<para><itemizedlist>
 <listitem><para><computeroutput>1-bit</computeroutput> supports up to 2 colors, </para>
 </listitem>
 <listitem><para><computeroutput>2-bit</computeroutput> supports up to 4 colors, </para>

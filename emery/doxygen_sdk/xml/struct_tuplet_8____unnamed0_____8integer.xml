@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_tuplet_8____unnamed0_____8integer" kind="struct" language="C++" prot="public">
+    <compoundname>Tuplet.__unnamed0__.integer</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_tuplet_8____unnamed0_____8integer_1addecebdea58b5f264d27f1f7909bab74" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <qualifiedname>Tuplet.__unnamed0__.integer::storage</qualifiedname>
+        <briefdescription>
+<para>Actual storage of the integer. The signedness can be derived from the <computeroutput>.type</computeroutput> value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1978" column="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tuplet_8____unnamed0_____8integer_1aeaae26a6fb20ed3ef54fb23bfa0b1fcc" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>Tuplet.__unnamed0__.integer::width</qualifiedname>
+        <briefdescription>
+<para>Width of the integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1980" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Valid when <computeroutput>.type.</computeroutput> is <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670ad691daf1df77095c1e19fe30b6cea5b4" kindref="member">TUPLE_INT</ref> or <ref refid="group___dictionary_1ggaf164f32d9bda6829f1738ef3fb2c6670a6802e5d267fdda619ffb13fc80d873fe" kindref="member">TUPLE_UINT</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="1975" column="5" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1975" bodyend="1981"/>
+    <listofallmembers>
+      <member refid="struct_tuplet_8____unnamed0_____8integer_1addecebdea58b5f264d27f1f7909bab74" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__.integer</scope><name>storage</name></member>
+      <member refid="struct_tuplet_8____unnamed0_____8integer_1aeaae26a6fb20ed3ef54fb23bfa0b1fcc" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__.integer</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___wall_time" kind="group">
     <compoundname>WallTime</compoundname>
     <title>Wall Time</title>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="339" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="339" bodyend="348"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="349" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="349" bodyend="358"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="356" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="356" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="366" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="366" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___wall_time_1gae34db14b2f1e369c23894bffb6663fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="386" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="386" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="394" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="394" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___wall_time_1ga69393fbc51be905740fff59a150bdca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="361" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="361" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="371" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="371" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___wall_time_1ga95c658aa0d511e4b4ca549724e02ce72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="376" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="376" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="384" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="384" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___wall_time_1ga170869bfe009abc85f093b0f80224009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
@@ -228,9 +228,7 @@
 <para>Converts a (day, hour, minute) specification to a UTC timestamp occurring in the future Always returns a timestamp for the next occurring instance, example: specifying TODAY@14:30 when it is 14:40 will return a timestamp for 7 days from now at 14:30. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>This function does not support Daylight Saving Time (DST) changes, events scheduled during a DST change will be off by an hour. </para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>day</parametername>
 </parameternamelist>
@@ -259,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="372" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="372" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="380" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="380" declcolumn="8"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -267,13 +265,13 @@
         <name>TIMEZONE_NAME_LENGTH</name>
         <initializer>32</initializer>
         <briefdescription>
-<para>The maximum length for a timezone full name (e.g. America/Chicago) </para>
+<para>The maximum length for a timezone full name (e.g. America/Chicago). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="379" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="379" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="387" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="387" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

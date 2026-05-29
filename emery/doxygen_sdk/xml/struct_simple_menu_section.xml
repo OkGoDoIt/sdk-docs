@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_simple_menu_section" kind="struct" language="C++" prot="public">
+    <compoundname>SimpleMenuSection</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_simple_menu_section_1a377ff366a71e19cfe6c1dbb8f233f91b" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_simple_menu_item" kindref="compound">SimpleMenuItem</ref> *</type>
+        <definition>const SimpleMenuItem* SimpleMenuSection::items</definition>
+        <argsstring></argsstring>
+        <name>items</name>
+        <qualifiedname>SimpleMenuSection::items</qualifiedname>
+        <briefdescription>
+<para>Array of items in the section. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7804" column="24" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_simple_menu_section_1ac0331245bc7c1a881acf42d00c4f6789" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t SimpleMenuSection::num_items</definition>
+        <argsstring></argsstring>
+        <name>num_items</name>
+        <qualifiedname>SimpleMenuSection::num_items</qualifiedname>
+        <briefdescription>
+<para>Number of items in the <computeroutput>.<ref refid="struct_simple_menu_section_1a377ff366a71e19cfe6c1dbb8f233f91b" kindref="member">items</ref></computeroutput> array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7806" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7806" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_simple_menu_section_1a4c8e4113f9641b51e1d16e3c32f465dc" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SimpleMenuSection::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>SimpleMenuSection::title</qualifiedname>
+        <briefdescription>
+<para>Title of the section. Optional, leave <computeroutput>NULL</computeroutput> if unused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7802" column="14" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7802" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure containing the information of a menu section. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>SimpleMenuItem</label>
+        <link refid="struct_simple_menu_item"/>
+      </node>
+      <node id="1">
+        <label>SimpleMenuSection</label>
+        <link refid="struct_simple_menu_section"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>items</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="7800" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7800" bodyend="7807"/>
+    <listofallmembers>
+      <member refid="struct_simple_menu_section_1a377ff366a71e19cfe6c1dbb8f233f91b" prot="public" virt="non-virtual"><scope>SimpleMenuSection</scope><name>items</name></member>
+      <member refid="struct_simple_menu_section_1ac0331245bc7c1a881acf42d00c4f6789" prot="public" virt="non-virtual"><scope>SimpleMenuSection</scope><name>num_items</name></member>
+      <member refid="struct_simple_menu_section_1a4c8e4113f9641b51e1d16e3c32f465dc" prot="public" virt="non-virtual"><scope>SimpleMenuSection</scope><name>title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

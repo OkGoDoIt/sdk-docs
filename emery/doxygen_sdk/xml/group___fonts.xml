@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___fonts" kind="group">
+    <compoundname>Fonts</compoundname>
+    <title>Fonts</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___fonts_1ga3c63e9a14b4461242195b77ddc6ef195" prot="public" static="no">
+        <type>struct FontInfo</type>
+        <definition>typedef struct FontInfo FontInfo</definition>
+        <argsstring></argsstring>
+        <name>FontInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5037" column="23" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" prot="public" static="no">
+        <type>FontInfo *</type>
+        <definition>typedef FontInfo* GFont</definition>
+        <argsstring></argsstring>
+        <name>GFont</name>
+        <briefdescription>
+<para>Pointer to opaque font data structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___fonts_1gaaf4a526b0bbe417959eb7935b89a5f56" kindref="member">fonts_load_custom_font()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1gadb8ccc8f9a14ab4a2386f6ccac8de0f1" kindref="member">text_layer_set_font()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1gad02d08f03f2e33a5abc660f0dd23c85b" kindref="member">graphics_draw_text()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5043" column="18" bodyfile="build/sdk/emery/include/pebble.h" bodystart="5043" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___fonts_1ga8d05ec62a2e79c75b2938c2e2d6ba70a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref></type>
+        <definition>GFont fonts_get_system_font</definition>
+        <argsstring>(const char *font_key)</argsstring>
+        <name>fonts_get_system_font</name>
+        <param>
+          <type>const char *</type>
+          <declname>font_key</declname>
+        </param>
+        <briefdescription>
+<para>Loads a system font corresponding to the specified font key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string key of the font to load. See <ulink url="https://developer.pebble.com/guides/app-resources/system-fonts/">System Fonts</ulink> guide for a list of system fonts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An opaque pointer to the loaded font, or, a pointer to the default (fallback) font if the specified font cannot be loaded. </para>
+</simplesect>
+<simplesect kind="note"><para>This may load a font from the flash peripheral into RAM. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5052" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5052" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___fonts_1gaaf4a526b0bbe417959eb7935b89a5f56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref></type>
+        <definition>GFont fonts_load_custom_font</definition>
+        <argsstring>(ResHandle handle)</argsstring>
+        <name>fonts_load_custom_font</name>
+        <param>
+          <type><ref refid="group___resources_1gabc5102ad91f29ffca2b77dce7caa8664" kindref="member">ResHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Loads a custom font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The resource handle of the font to load. See resource_ids.auto.h for a list of resource IDs, and use <ref refid="group___resources_1ga3f32b97d857618e5772f72d8e2dbc566" kindref="member">resource_get_handle()</ref> to obtain the resource handle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An opaque pointer to the loaded font, or a pointer to the default (fallback) font if the specified font cannot be loaded. </para>
+</simplesect>
+<simplesect kind="see"><para>Read the <ulink url="http://developer.getpebble.com/guides/pebble-apps/resources/">App Resources</ulink> guide on how to embed a font into your app. </para>
+</simplesect>
+<simplesect kind="note"><para>this may load a font from the flash peripheral into RAM. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5062" column="7" declfile="build/sdk/emery/include/pebble.h" declline="5062" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___fonts_1gae25249ea28fddf938ef900efdcf1777c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fonts_unload_custom_font</definition>
+        <argsstring>(GFont font)</argsstring>
+        <name>fonts_unload_custom_font</name>
+        <param>
+          <type><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref></type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+<para>Unloads the specified custom font and frees the memory that is occupied by it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When an application exits, the system automatically unloads all fonts that have been loaded. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font to unload. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="5069" column="6" declfile="build/sdk/emery/include/pebble.h" declline="5069" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Custom and system fonts. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Pebble OS provides you with a wide range of system fonts that you can use when you need to display and render text or numbers in your Pebble watchface or watchapp.</para>
+<para>If you want to use a system font, you call <ref refid="group___fonts_1ga8d05ec62a2e79c75b2938c2e2d6ba70a" kindref="member">fonts_get_system_font()</ref> and simply pass it the name of the system font you want.</para>
+<para>To use a custom font, call <ref refid="group___fonts_1gaaf4a526b0bbe417959eb7935b89a5f56" kindref="member">fonts_load_custom_font()</ref>. The sample code feature_custom_font shows how you can do this programmatically, using a font resource to convert a TrueType font into a rasterized version of that font at a specified font size.</para>
+<para>For example:</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group___fonts_1gacc1ebd584f1ee580b863b24744c8aecb" kindref="member">GFont</ref><sp/>custom_font<sp/>=<sp/><ref refid="group___fonts_1gaaf4a526b0bbe417959eb7935b89a5f56" kindref="member">fonts_load_custom_font</ref></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>(<ref refid="group___resources_1ga3f32b97d857618e5772f72d8e2dbc566" kindref="member">resource_get_handle</ref>(RESOURCE_ID_FONT_OSP_DIN_44));</highlight></codeline>
+</programlisting></para>
+<para>Raster Gothic Condensed is the font used throughout the Pebble system, largely because it is optimized for monochromatic displays. Pebble selected this font because it allows a relatively large number of characters to be displayed on a single line, also because the font has an excellent readability vs. size ratio.</para>
+<para>Refer to the chapter <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.getpebble.com/guides/pebble-apps/resources/&quot;&gt;App Resources in the Pebble Developer Guides&lt;/a&gt;
+</htmlonly> which explains how to work with font resources and embed a font into your app.</para>
+<para><simplesect kind="see"><para><ref refid="group___text_layer" kindref="compound">TextLayer</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing" kindref="compound">Drawing Text</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_layer_1gadb8ccc8f9a14ab4a2386f6ccac8de0f1" kindref="member">text_layer_set_font</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___text_drawing_1gad02d08f03f2e33a5abc660f0dd23c85b" kindref="member">graphics_draw_text</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

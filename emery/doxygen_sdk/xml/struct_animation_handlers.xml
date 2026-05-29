@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_animation_handlers" kind="struct" language="C++" prot="public">
+    <compoundname>AnimationHandlers</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_animation_handlers_1aabde74563b7b9821699bb5e9b3f4a59f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___animation_1ga9ec8ca1223ae71964feca04a92e4510b" kindref="member">AnimationStartedHandler</ref></type>
+        <definition>AnimationStartedHandler AnimationHandlers::started</definition>
+        <argsstring></argsstring>
+        <name>started</name>
+        <qualifiedname>AnimationHandlers::started</qualifiedname>
+        <briefdescription>
+<para>The handler that will be called when an animation is started. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6205" column="27" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_animation_handlers_1a56e5f5b77c843b7bc7e58587a42e197a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___animation_1ga23a000ff9a55db7c73ce956a9c36a022" kindref="member">AnimationStoppedHandler</ref></type>
+        <definition>AnimationStoppedHandler AnimationHandlers::stopped</definition>
+        <argsstring></argsstring>
+        <name>stopped</name>
+        <qualifiedname>AnimationHandlers::stopped</qualifiedname>
+        <briefdescription>
+<para>The handler that will be called when an animation is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6207" column="27" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6207" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The handlers that will get called when an animation starts and stops. See documentation with the function pointer types for more information. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___animation_1ga6be3103c0d142d49cd5c3204c102e53c" kindref="member">animation_set_handlers</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="6203" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6203" bodyend="6208"/>
+    <listofallmembers>
+      <member refid="struct_animation_handlers_1aabde74563b7b9821699bb5e9b3f4a59f" prot="public" virt="non-virtual"><scope>AnimationHandlers</scope><name>started</name></member>
+      <member refid="struct_animation_handlers_1a56e5f5b77c843b7bc7e58587a42e197a" prot="public" virt="non-virtual"><scope>AnimationHandlers</scope><name>stopped</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

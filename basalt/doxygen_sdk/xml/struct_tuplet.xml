@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_tuplet" kind="struct" language="C++" prot="public">
     <compoundname>Tuplet</compoundname>
     <includes local="no">pebble.h</includes>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="struct_tuplet_1a704a685c985e5966b896d2e81ffbeed0" prot="public" static="no" mutable="no">
-        <type>union <ref refid="struct_tuplet" kindref="compound">Tuplet</ref></type>
-        <definition>union Tuplet Tuplet</definition>
+        <type>union Tuplet::@201274067351243154220117266121003107324005143166</type>
+        <definition>union Tuplet::@201274067351243154220117266121003107324005143166 Tuplet::@055031011256062212360157047341325021122344061003</definition>
         <argsstring></argsstring>
-        <name></name>
-        <qualifiedname>Tuplet</qualifiedname>
+        <name>@055031011256062212360157047341325021122344061003</name>
+        <qualifiedname>Tuplet::@055031011256062212360157047341325021122344061003</qualifiedname>
         <briefdescription>
 <para>Anonymous union containing the reference to the <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>&apos;s value, being either a byte array, c-string or integer. See documentation of <computeroutput>.bytes</computeroutput>, <computeroutput>.cstring</computeroutput> and <computeroutput>.integer</computeroutput> fields. </para>
         </briefdescription>
@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1903" column="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1965" column="9"/>
       </memberdef>
       <memberdef kind="variable" id="struct_tuplet_1a0d335183753df2961b426478c17b553a" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1876" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1876" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1938" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1938" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_tuplet_1a1451fd4819f780d8877c0ac8d52151d2" prot="public" static="no" mutable="no">
         <type><ref refid="group___dictionary_1gaf164f32d9bda6829f1738ef3fb2c6670" kindref="member">TupleType</ref></type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1874" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1874" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1936" column="13" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1936" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -56,7 +56,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="1871" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1871" bodyend="1904"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="1933" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1933" bodyend="1966"/>
     <listofallmembers>
       <member refid="struct_tuplet_1a0d335183753df2961b426478c17b553a" prot="public" virt="non-virtual"><scope>Tuplet</scope><name>key</name></member>
       <member refid="struct_tuplet_1a1451fd4819f780d8877c0ac8d52151d2" prot="public" virt="non-virtual"><scope>Tuplet</scope><name>type</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="union_property_animation_accessors_8setter" kind="union" language="C++" prot="public">
     <compoundname>PropertyAnimationAccessors.setter</compoundname>
     <sectiondef kind="public-attrib">
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6237" column="19"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6373" column="19"/>
       </memberdef>
       <memberdef kind="variable" id="union_property_animation_accessors_8setter_1a820d13b0b4b76e8659d0235331a7ed56" prot="public" static="no" mutable="no">
         <type><ref refid="group___property_animation_1ga4ab8cc6589e74bd6c6b30275ec442fde" kindref="member">GPointSetter</ref></type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6233" column="18"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6369" column="18"/>
       </memberdef>
       <memberdef kind="variable" id="union_property_animation_accessors_8setter_1a4b497bbd7d638860952c6c8b1faa6590" prot="public" static="no" mutable="no">
         <type><ref refid="group___property_animation_1ga61b3aafd7d96fe2d8447c9adcd4f8393" kindref="member">GRectSetter</ref></type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6235" column="17"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6371" column="17"/>
       </memberdef>
       <memberdef kind="variable" id="union_property_animation_accessors_8setter_1ace80d5ec65b1d2a2f1049eadc100db23" prot="public" static="no" mutable="no">
         <type><ref refid="group___property_animation_1ga1105bd1b67e2fa493129b70aa0b615ec" kindref="member">Int16Setter</ref></type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6231" column="17"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6367" column="17"/>
       </memberdef>
       <memberdef kind="variable" id="union_property_animation_accessors_8setter_1a3de84ad0700f2a1571f633d399e1900e" prot="public" static="no" mutable="no">
         <type><ref refid="group___property_animation_1ga9bcdb4cabe3a5cc327b178337ab85669" kindref="member">UInt32Setter</ref></type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6239" column="18"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6375" column="18"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -87,7 +87,7 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="6229" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6229" bodyend="6240"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="6365" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6365" bodyend="6376"/>
     <listofallmembers>
       <member refid="union_property_animation_accessors_8setter_1acc82322d31f73d57d2ae447832623232" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors.setter</scope><name>gcolor8</name></member>
       <member refid="union_property_animation_accessors_8setter_1a820d13b0b4b76e8659d0235331a7ed56" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors.setter</scope><name>gpoint</name></member>

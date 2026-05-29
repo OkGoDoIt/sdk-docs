@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___app_glance" kind="group">
+    <compoundname>AppGlance</compoundname>
+    <title>App Glance</title>
+    <innerclass refid="struct_app_glance_slice" prot="public">AppGlanceSlice</innerclass>
+    <innerclass refid="struct_app_glance_slice_layout" prot="public">AppGlanceSliceLayout</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___app_glance_1ga2d8c182280b6b6f6ef7412f448a3f846" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AppGlanceResult</name>
+        <enumvalue id="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846a4efbe9a2117b1d7533a562df2f6697be" prot="public">
+          <name>APP_GLANCE_RESULT_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The slice was successfully added to the app&apos;s glance. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846a7802d5cde444d8e1e1063c7938ef0039" prot="public">
+          <name>APP_GLANCE_RESULT_INVALID_TEMPLATE_STRING</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>The subtitle_template_string provided in the slice was invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846a725b17020ee822f983c38868470e9450" prot="public">
+          <name>APP_GLANCE_RESULT_TEMPLATE_STRING_TOO_LONG</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>The subtitle_template_string provided in the slice was longer than 150 bytes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846af73c0305b4b2a2890e7ab6952e644787" prot="public">
+          <name>APP_GLANCE_RESULT_INVALID_ICON</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>The icon provided in the slice was invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846a00fa2515a1f22fb6383dc725cfa809c2" prot="public">
+          <name>APP_GLANCE_RESULT_SLICE_CAPACITY_EXCEEDED</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>The provided slice would exceed the app glance&apos;s slice capacity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846a8125cf3f883f95001e1d71676d423b80" prot="public">
+          <name>APP_GLANCE_RESULT_EXPIRES_IN_THE_PAST</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>The expiration_time provided in the slice expires in the past. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846ac8522e376dc8c4fe20db5dca2cfaa67f" prot="public">
+          <name>APP_GLANCE_RESULT_INVALID_SESSION</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+<para>The AppGlanceReloadSession provided was invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Bitfield enum describing the result of trying to add an <ref refid="struct_app_glance_slice" kindref="compound">AppGlanceSlice</ref> to an app&apos;s glance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3640" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3640" bodyend="3655"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppGlanceReloadCallback) (AppGlanceReloadSession *session, size_t limit, void *context)</definition>
+        <argsstring>)(AppGlanceReloadSession *session, size_t limit, void *context)</argsstring>
+        <name>AppGlanceReloadCallback</name>
+        <briefdescription>
+<para>User-provided callback for reloading the slices in the app&apos;s glance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A session variable that must be passed to <ref refid="group___app_glance_1ga3f4c77679d1bfeb7006cb54013d3ae8e" kindref="member">app_glance_add_slice</ref> when adding slices to the app&apos;s glance; it becomes invalid when the <ref refid="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" kindref="member">AppGlanceReloadCallback</ref> returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of entries that can be added to the app&apos;s glance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User-provided context provided when calling <ref refid="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" kindref="member">app_glance_reload()</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3672" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___app_glance_1gaef71860d15d412da5d9c7fe4e8e67afe" prot="public" static="no">
+        <type>struct AppGlanceReloadSession</type>
+        <definition>typedef struct AppGlanceReloadSession AppGlanceReloadSession</definition>
+        <argsstring></argsstring>
+        <name>AppGlanceReloadSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3658" column="37" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___app_glance_1ga6862953d9c7d936dee481fc8934bc8a6" prot="public" static="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>typedef uint32_t PublishedId</definition>
+        <argsstring></argsstring>
+        <name>PublishedId</name>
+        <briefdescription>
+<para>The ID of a published app resource defined within the publishedMedia section of package.json. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3609" column="18" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3609" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___app_glance_1ga3f4c77679d1bfeb7006cb54013d3ae8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_glance_1ga2d8c182280b6b6f6ef7412f448a3f846" kindref="member">AppGlanceResult</ref></type>
+        <definition>AppGlanceResult app_glance_add_slice</definition>
+        <argsstring>(AppGlanceReloadSession *session, AppGlanceSlice slice)</argsstring>
+        <name>app_glance_add_slice</name>
+        <param>
+          <type>AppGlanceReloadSession *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_app_glance_slice" kindref="compound">AppGlanceSlice</ref></type>
+          <declname>slice</declname>
+        </param>
+        <briefdescription>
+<para>Add a slice to the app&apos;s glance. This function will only succeed if called with a valid AppGlanceReloadSession that is provided in an <ref refid="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" kindref="member">AppGlanceReloadCallback</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The session variable provided in an <ref refid="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" kindref="member">AppGlanceReloadCallback</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slice to add to the app&apos;s glance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of trying to add the slice to the app&apos;s glance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3665" column="17" declfile="build/sdk/emery/include/pebble.h" declline="3665" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_glance_reload</definition>
+        <argsstring>(AppGlanceReloadCallback callback, void *context)</argsstring>
+        <name>app_glance_reload</name>
+        <param>
+          <type><ref refid="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" kindref="member">AppGlanceReloadCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Clear any existing slices in the app&apos;s glance and trigger a reload via the provided callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A function that will be called to add new slices to the app&apos;s glance; even if the provided callback is NULL, any existing slices will still be cleared from the app&apos;s glance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User-provided context that will be passed to the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3679" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3679" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___app_glance_1gaddb5b953247ac6b492a2398a5630451c" prot="public" static="no">
+        <name>APP_GLANCE_SLICE_DEFAULT_ICON</name>
+        <initializer>((<ref refid="group___app_glance_1ga6862953d9c7d936dee481fc8934bc8a6" kindref="member">PublishedId</ref>)0)</initializer>
+        <briefdescription>
+<para>Can be used for the icon of an <ref refid="struct_app_glance_slice" kindref="compound">AppGlanceSlice</ref> so that the slice displays the app&apos;s default icon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3616" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___app_glance_1ga5ffc28353367e3fce95b42cf0cfd1476" prot="public" static="no">
+        <name>APP_GLANCE_SLICE_NO_EXPIRATION</name>
+        <initializer>((<ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref>)0)</initializer>
+        <briefdescription>
+<para>Can be used for the expiration_time of an <ref refid="struct_app_glance_slice" kindref="compound">AppGlanceSlice</ref> so that the slice never expires. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3612" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3612" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>API for the application to modify its &quot;glance&quot; i.e. app menu subtitle. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Apps have the ability to show a temporary icon and subtitle in the app selection menu; this is known as a &quot;glance&quot;. For example, the app might use it to display a preview of its current state such as the currently playing song or the number of pending notifications.</para>
+<para>The glance is loaded with a stack of <ref refid="struct_app_glance_slice" kindref="compound">AppGlanceSlice</ref> structs; only the latest slice is shown, and they are set to expire at a certain time to show the next slice in the stack.</para>
+<para>To update the glance with a stack of slices, you must define an <ref refid="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" kindref="member">AppGlanceReloadCallback</ref> and give it to <ref refid="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" kindref="member">app_glance_reload</ref>. The implementation of your <ref refid="group___app_glance_1gab4a4ef9e5cf075ebd273166de42fd096" kindref="member">AppGlanceReloadCallback</ref> should call <ref refid="group___app_glance_1ga3f4c77679d1bfeb7006cb54013d3ae8e" kindref="member">app_glance_add_slice</ref> to add slices to the glance.</para>
+<para>The main window&apos;s unload handler is usually a good place to call <ref refid="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" kindref="member">app_glance_reload</ref>.</para>
+<para><simplesect kind="warning"><para>PBL_PLATFORM_APLITE does not support App Glance.</para>
+</simplesect>
+Example code: <programlisting filename=".c"><codeline><highlight class="preprocessor">#if<sp/>!PBL_PLATFORM_APLITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>glance_reload_callback(AppGlanceReloadSession<sp/>*session,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>limit,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="struct_app_glance_slice" kindref="compound">AppGlanceSlice</ref><sp/>slice<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.expiration_time<sp/>=<sp/><ref refid="group___app_glance_1ga5ffc28353367e3fce95b42cf0cfd1476" kindref="member">APP_GLANCE_SLICE_NO_EXPIRATION</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.layout.icon<sp/>=<sp/><ref refid="group___app_glance_1gaddb5b953247ac6b492a2398a5630451c" kindref="member">APP_GLANCE_SLICE_DEFAULT_ICON</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.layout.subtitle_template_string<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;hello!&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___app_glance_1ga2d8c182280b6b6f6ef7412f448a3f846" kindref="member">AppGlanceResult</ref><sp/>result<sp/>=<sp/><ref refid="group___app_glance_1ga3f4c77679d1bfeb7006cb54013d3ae8e" kindref="member">app_glance_add_slice</ref>(session,<sp/>slice);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result<sp/>!=<sp/><ref refid="group___app_glance_1gga2d8c182280b6b6f6ef7412f448a3f846a4efbe9a2117b1d7533a562df2f6697be" kindref="member">APP_GLANCE_RESULT_SUCCESS</ref>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___logging_1ga06b605436a57d1bf57503bc6e4af0efa" kindref="member">APP_LOG</ref>(<ref refid="group___logging_1ggab6022249fcd453283cdf062c39b2009aae0c054555cf8a95d81c337e40d0fd7ac" kindref="member">APP_LOG_LEVEL_ERROR</ref>,<sp/></highlight><highlight class="stringliteral">&quot;app_glance_add_slice()<sp/>returned<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>result);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!PBL_PLATFORM_APLITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main_window_unload(Window<sp/>*window)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!PBL_PLATFORM_APLITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___app_glance_1ga2c2b3e00b595c162171801e863be7fdb" kindref="member">app_glance_reload</ref>(glance_reload_callback,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>!PBL_PLATFORM_APLITE</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

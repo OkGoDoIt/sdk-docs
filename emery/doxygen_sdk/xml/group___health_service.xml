@@ -1,0 +1,1564 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___health_service" kind="group">
+    <compoundname>HealthService</compoundname>
+    <title>HealthService</title>
+    <innerclass refid="struct_health_minute_data" prot="public">HealthMinuteData</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___health_service_1gaccbf0605e07a25743f59dfb10ff50c0e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AmbientLightLevel</name>
+        <enumvalue id="group___health_service_1ggaccbf0605e07a25743f59dfb10ff50c0ea98efa1139954bca4db8b28a74ca2a734" prot="public">
+          <name>AmbientLightLevelUnknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggaccbf0605e07a25743f59dfb10ff50c0ea9e73c295fb076d19667f33fd39d2559e" prot="public">
+          <name>AmbientLightLevelVeryDark</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggaccbf0605e07a25743f59dfb10ff50c0ea8e078ddf2cf1db7745916755f42f13f9" prot="public">
+          <name>AmbientLightLevelDark</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggaccbf0605e07a25743f59dfb10ff50c0ea85ddd5b1307e0e55f30c9e3bf79c8a45" prot="public">
+          <name>AmbientLightLevelLight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggaccbf0605e07a25743f59dfb10ff50c0ea93df8db4718fa162860d98a24527dfee" prot="public">
+          <name>AmbientLightLevelVeryLight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Light level enum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1368" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1368" bodyend="1374"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___health_service_1ga34a9840fdec40a4c494e28b07a968e4d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HealthActivity</name>
+        <enumvalue id="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da2209a2e7de5d164372c16f38bba30a29" prot="public">
+          <name>HealthActivityNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No special activity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da9639d25463a742602ad0b39b79875026" prot="public">
+          <name>HealthActivitySleep</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>The &apos;sleeping&apos; activity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da4d92fd276157107bcd12f8df113ab299" prot="public">
+          <name>HealthActivityRestfulSleep</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>The &apos;restful sleeping&apos; activity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da1bc1833ceedc8468a8a4c35fbf3f92c3" prot="public">
+          <name>HealthActivityWalk</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>The &apos;walk&apos; activity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da317c349cc654706c3d88955c211a2d24" prot="public">
+          <name>HealthActivityRun</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>The &apos;run&apos; activity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da54d0b891a7e32edd762906e9fa9f59f3" prot="public">
+          <name>HealthActivityOpenWorkout</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>The &apos;generic&apos; activity. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Health-related activities that can be accessed using. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1137" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1137" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___health_service_1ga5c64b0ab1489de7fd5d34f3c2085562f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HealthAggregation</name>
+        <enumvalue id="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa11b337c4816e5ecebfebda0df620ba63" prot="public">
+          <name>HealthAggregationSum</name>
+          <briefdescription>
+<para>Sum the metric. The result is the same as calling <ref refid="group___health_service_1ga648ca6a090db119e09e15bc77b4eb47d" kindref="member">health_service_sum_averaged()</ref>. This operation is only applicable for metrics that accumulate, like HealthMetricStepCount, HealthMetricActiveSeconds, etc. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa999e43f842718bd2b8b09d7984fc0336" prot="public">
+          <name>HealthAggregationAvg</name>
+          <briefdescription>
+<para>Use the average of the metric. This is only applicable for metrics that measure instantaneous values, like HealthMetricHeartRateBPM. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa4f86bb4009320b5e228294fa40d3951e" prot="public">
+          <name>HealthAggregationMin</name>
+          <briefdescription>
+<para>Use the minimum value of the metric. This is only applicable for metrics that measure instantaneous values, like HealthMetricHeartRateBPM. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa569cdb891c9bc152e64ae6fef8985056" prot="public">
+          <name>HealthAggregationMax</name>
+          <briefdescription>
+<para>Use the maximum value of the metric. This is only applicable for metrics that measure instantaneous values, like HealthMetricHeartRateBPM. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Used by <ref refid="group___health_service_1gab550229af26f6438505bc8a07f090afd" kindref="member">health_service_aggregate_averaged()</ref> to specify what type of aggregation to perform. This aggregation is applied to the metric before the average is computed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1067" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1067" bodyend="1081"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___health_service_1gacb8b01b2eb863fa85913d491ec5cd214" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HealthEventType</name>
+        <enumvalue id="group___health_service_1ggacb8b01b2eb863fa85913d491ec5cd214a0026de973784c058ae4427f74dbd33b4" prot="public">
+          <name>HealthEventSignificantUpdate</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>All data is considered as outdated and apps should re-read all health data. This happens after an app is subscribed via <ref refid="group___health_service_1ga29280e11a9628779a3dcaa6d62d90d4a" kindref="member">health_service_events_subscribe()</ref>, on a change of the day, or in other cases that significantly change the underlying data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggacb8b01b2eb863fa85913d491ec5cd214a4dc44d3933aa0610724c83706d30c5d3" prot="public">
+          <name>HealthEventMovementUpdate</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Recent values around <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a5cecb29b3d75c6c0a7bb2bd3656ebf5e" kindref="member">HealthMetricStepCount</ref>, <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3ad7ca8b311a4fe1033cdd4b6222ee132a" kindref="member">HealthMetricActiveSeconds</ref>, or <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a0f434943f49f2f3d0e55c4d6f394dfa1" kindref="member">HealthMetricWalkedDistanceMeters</ref> have changed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggacb8b01b2eb863fa85913d491ec5cd214ae632acc63f0d7cefc21751a78bac3ec9" prot="public">
+          <name>HealthEventSleepUpdate</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Recent values around <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3ade6eaa01705db69180da4c11fce4195f" kindref="member">HealthMetricSleepSeconds</ref>, <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a6b8cddaa42ff5c77af7f952afcfbbc72" kindref="member">HealthMetricSleepRestfulSeconds</ref>, <ref refid="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da9639d25463a742602ad0b39b79875026" kindref="member">HealthActivitySleep</ref>, and <ref refid="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da4d92fd276157107bcd12f8df113ab299" kindref="member">HealthActivityRestfulSleep</ref> changed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggacb8b01b2eb863fa85913d491ec5cd214ab12ebe7dd7b5644beabffd8d99cdcc38" prot="public">
+          <name>HealthEventMetricAlert</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>A metric has crossed the threshold set by <ref refid="group___health_service_1ga38ba66f8d16a5cc4d3d2461203a77f75" kindref="member">health_service_register_metric_alert</ref>. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggacb8b01b2eb863fa85913d491ec5cd214a4ea6de3cb20650becc17ee2f1b36af8f" prot="public">
+          <name>HealthEventHeartRateUpdate</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Value of <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3af1c65a9410883fe8b5f84def71a29130" kindref="member">HealthMetricHeartRateBPM</ref> or <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3abf4c5ef41540465e271dc0b3c9b04c57" kindref="member">HealthMetricHeartRateRawBPM</ref> has changed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Health event enum. Passed into the <ref refid="group___health_service_1ga982b6d3060b68509b41e8178bab91417" kindref="member">HealthEventHandler</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1270" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1270" bodyend="1285"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___health_service_1ga3e51f2b31333a3a34b9b801c660ba412" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HealthIterationDirection</name>
+        <enumvalue id="group___health_service_1gga3e51f2b31333a3a34b9b801c660ba412a57010626eb710bda3d4290cc8c8cd95c" prot="public">
+          <name>HealthIterationDirectionPast</name>
+          <briefdescription>
+<para>Iterate into the past. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga3e51f2b31333a3a34b9b801c660ba412a0f72858eb42714069450729a9497c859" prot="public">
+          <name>HealthIterationDirectionFuture</name>
+          <briefdescription>
+<para>Iterate into the future. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Iteration direction, passed to <ref refid="group___health_service_1gafc77a68038973cedaf79cac32307077c" kindref="member">health_service_activities_iterate()</ref>. When iterating backwards (<computeroutput><ref refid="group___health_service_1gga3e51f2b31333a3a34b9b801c660ba412a57010626eb710bda3d4290cc8c8cd95c" kindref="member">HealthIterationDirectionPast</ref></computeroutput>), activities that have a greater value for <computeroutput>time_end</computeroutput> come first. When iterating forward (<computeroutput><ref refid="group___health_service_1gga3e51f2b31333a3a34b9b801c660ba412a0f72858eb42714069450729a9497c859" kindref="member">HealthIterationDirectionFuture</ref></computeroutput>), activities that have a smaller value for <computeroutput>time_start</computeroutput> come first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1172" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1172" bodyend="1177"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HealthMetric</name>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a5cecb29b3d75c6c0a7bb2bd3656ebf5e" prot="public">
+          <name>HealthMetricStepCount</name>
+          <briefdescription>
+<para>The number of steps counted. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3ad7ca8b311a4fe1033cdd4b6222ee132a" prot="public">
+          <name>HealthMetricActiveSeconds</name>
+          <briefdescription>
+<para>The number of seconds spent active (i.e. not resting). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a0f434943f49f2f3d0e55c4d6f394dfa1" prot="public">
+          <name>HealthMetricWalkedDistanceMeters</name>
+          <briefdescription>
+<para>The distance walked, in meters. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3ade6eaa01705db69180da4c11fce4195f" prot="public">
+          <name>HealthMetricSleepSeconds</name>
+          <briefdescription>
+<para>The number of seconds spent sleeping. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a6b8cddaa42ff5c77af7f952afcfbbc72" prot="public">
+          <name>HealthMetricSleepRestfulSeconds</name>
+          <briefdescription>
+<para>The number of sleep seconds in the &apos;restful&apos; or deep sleep state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3ae202bb92c5513e35c963ea6ab3e28f90" prot="public">
+          <name>HealthMetricRestingKCalories</name>
+          <briefdescription>
+<para>The number of kcal (Calories) burned while resting due to resting metabolism. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a1654afd84a30c0f71bbbd5c4f9e65c9e" prot="public">
+          <name>HealthMetricActiveKCalories</name>
+          <briefdescription>
+<para>The number of kcal (Calories) burned while active. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3af1c65a9410883fe8b5f84def71a29130" prot="public">
+          <name>HealthMetricHeartRateBPM</name>
+          <briefdescription>
+<para>The heart rate, in beats per minute. This is a filtered value that is at most 15 minutes old. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3abf4c5ef41540465e271dc0b3c9b04c57" prot="public">
+          <name>HealthMetricHeartRateRawBPM</name>
+          <briefdescription>
+<para>The raw heart rate value of the most recent sample, in beats per minute. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Health metric values used to retrieve health data. For example, using <ref refid="group___health_service_1ga88dd4742916eda84dbf2b15f7171c34c" kindref="member">health_service_sum()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="967" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="967" bodyend="986"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HealthServiceAccessibilityMask</name>
+        <enumvalue id="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a0701b27f4f15811fb72665286b6eea0c" prot="public">
+          <name>HealthServiceAccessibilityMaskAvailable</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Return values are available and represent the collected health information. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226ad684aa27d8932c867f1baa2ff1281712" prot="public">
+          <name>HealthServiceAccessibilityMaskNoPermission</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>The user hasn&apos;t granted permission. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a18c6863afe9e4bfe1916ddf1d9e16652" prot="public">
+          <name>HealthServiceAccessibilityMaskNotSupported</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>The queried combination of time span and <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref> or <ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref> is currently unsupported. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a83bdd996cecc28f1260ad67ca87c3629" prot="public">
+          <name>HealthServiceAccessibilityMaskNotAvailable</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>No samples were recorded for the given time span. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Possible values returned by <ref refid="group___health_service_1ga3304f85962047c248c80be3d23ddf87d" kindref="member">health_service_metric_accessible()</ref>. The values are used in combination as a bitmask. For example, to check if any data is available for a given request use: bool any_data_available = value &amp; HealthServiceAccessibilityMaskAvailable;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1197" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1197" bodyend="1207"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HealthServiceTimeScope</name>
+        <enumvalue id="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaf99627b4fe91ddd080ee8ba561e93bcd" prot="public">
+          <name>HealthServiceTimeScopeOnce</name>
+          <briefdescription>
+<para>No average computed. The result is the same as calling <ref refid="group___health_service_1ga88dd4742916eda84dbf2b15f7171c34c" kindref="member">health_service_sum()</ref>. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaaec3c77cdd4e3f7c193fef79cab832af" prot="public">
+          <name>HealthServiceTimeScopeWeekly</name>
+          <briefdescription>
+<para>Compute average using the same day from each week. For example, every Monday if the passed in time range falls on a Monday. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga84f7e66171302b36daa84acf1e93949ea2ed422b0ca09fe36bcf50c7aaebff300" prot="public">
+          <name>HealthServiceTimeScopeDailyWeekdayOrWeekend</name>
+          <briefdescription>
+<para>Compute average using either weekdays (Monday to Friday) or weekends (Saturday and Sunday), depending on which day the passed in time range falls. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga84f7e66171302b36daa84acf1e93949ea13d545c164ed834be3fda9d2c035305e" prot="public">
+          <name>HealthServiceTimeScopeDaily</name>
+          <briefdescription>
+<para>Compute average across all days of the week. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Used by <ref refid="group___health_service_1ga648ca6a090db119e09e15bc77b4eb47d" kindref="member">health_service_sum_averaged()</ref> to specify how the average is computed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1021" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1021" bodyend="1032"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___health_service_1ga5290ef739be94d7ae1cc8ba16bdc808d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MeasurementSystem</name>
+        <enumvalue id="group___health_service_1gga5290ef739be94d7ae1cc8ba16bdc808daf792fca6c330fe27cd69291fb2e41ac0" prot="public">
+          <name>MeasurementSystemUnknown</name>
+          <briefdescription>
+<para>The measurement system is unknown, or does not apply to the chosen metric. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga5290ef739be94d7ae1cc8ba16bdc808da5d27de1db8f37d32b8f0dbb1b970a200" prot="public">
+          <name>MeasurementSystemMetric</name>
+          <briefdescription>
+<para>The metric measurement system. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___health_service_1gga5290ef739be94d7ae1cc8ba16bdc808da85af4ee135273c3865ccfec9e766992b" prot="public">
+          <name>MeasurementSystemImperial</name>
+          <briefdescription>
+<para>The imperial measurement system. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of measurement system a <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref> may be measured in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1422" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1422" bodyend="1429"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___health_service_1ga840b6b03c1e55d20d4625eee87d65903" prot="public" static="no">
+        <type>bool(*</type>
+        <definition>typedef bool(* HealthActivityIteratorCB) (HealthActivity activity, time_t time_start, time_t time_end, void *context)</definition>
+        <argsstring>)(HealthActivity activity, time_t time_start, time_t time_end, void *context)</argsstring>
+        <name>HealthActivityIteratorCB</name>
+        <briefdescription>
+<para>Callback used by <ref refid="group___health_service_1gafc77a68038973cedaf79cac32307077c" kindref="member">health_service_activities_iterate()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which activity the caller is being informed about. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start UTC time of the activity. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End UTC time of the activity. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>context</computeroutput> parameter initially passed to <ref refid="group___health_service_1gafc77a68038973cedaf79cac32307077c" kindref="member">health_service_activities_iterate()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if you are interested in more activities, or <computeroutput>false</computeroutput> to stop iterating. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1164" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___health_service_1ga1d5cc8116a00623340c27accec560642" prot="public" static="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>typedef uint32_t HealthActivityMask</definition>
+        <argsstring></argsstring>
+        <name>HealthActivityMask</name>
+        <briefdescription>
+<para>Expresses a set of <ref refid="group___health_service_1ga34a9840fdec40a4c494e28b07a968e4d" kindref="member">HealthActivity</ref> values as a bitmask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1131" column="18" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___health_service_1ga982b6d3060b68509b41e8178bab91417" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* HealthEventHandler) (HealthEventType event, void *context)</definition>
+        <argsstring>)(HealthEventType event, void *context)</argsstring>
+        <name>HealthEventHandler</name>
+        <briefdescription>
+<para>Developer-supplied event handler, called when a health-related event occurs after subscribing via <ref refid="group___health_service_1ga29280e11a9628779a3dcaa6d62d90d4a" kindref="member">health_service_events_subscribe()</ref>;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of health-related event that occured. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The developer-supplied context pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1291" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___health_service_1ga86ade35770156a641962400e527357ef" prot="public" static="no">
+        <type>struct <ref refid="group___health_service_1ga86ade35770156a641962400e527357ef" kindref="member">HealthMetricAlert</ref></type>
+        <definition>typedef struct HealthMetricAlert HealthMetricAlert</definition>
+        <argsstring></argsstring>
+        <name>HealthMetricAlert</name>
+        <briefdescription>
+<para>Type used as a handle to a registered metric alert (returned by <ref refid="group___health_service_1ga38ba66f8d16a5cc4d3d2461203a77f75" kindref="member">health_service_register_metric_alert</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="993" column="32" bodyfile="build/sdk/emery/include/pebble.h" bodystart="993" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t HealthValue</definition>
+        <argsstring></argsstring>
+        <name>HealthValue</name>
+        <briefdescription>
+<para>Type used to represent <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref> values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="989" column="17" bodyfile="build/sdk/emery/include/pebble.h" bodystart="989" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___health_service_1gafc77a68038973cedaf79cac32307077c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void health_service_activities_iterate</definition>
+        <argsstring>(HealthActivityMask activity_mask, time_t time_start, time_t time_end, HealthIterationDirection direction, HealthActivityIteratorCB callback, void *context)</argsstring>
+        <name>health_service_activities_iterate</name>
+        <param>
+          <type><ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref></type>
+          <declname>activity_mask</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_end</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga3e51f2b31333a3a34b9b801c660ba412" kindref="member">HealthIterationDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga840b6b03c1e55d20d4625eee87d65903" kindref="member">HealthActivityIteratorCB</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Iterates backwards or forward within a given time span to list all recorded activities. For example, this can be used to find the last recorded sleep phase or all deep sleep phases in a given time range. Any activity that overlaps with <computeroutput>time_start</computeroutput> and <computeroutput>time_end</computeroutput> will be included, even if the start time starts before <computeroutput>time_start</computeroutput> or end time ends after <computeroutput>time_end</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitmask containing set of activities you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTC time of the earliest time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTC time of the latest time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction in which to iterate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Developer-supplied callback that is called for each activity iterated over. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Developer-supplied context pointer that is passed to the callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1189" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1189" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gab550229af26f6438505bc8a07f090afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
+        <definition>HealthValue health_service_aggregate_averaged</definition>
+        <argsstring>(HealthMetric metric, time_t time_start, time_t time_end, HealthAggregation aggregation, HealthServiceTimeScope scope)</argsstring>
+        <name>health_service_aggregate_averaged</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_end</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga5c64b0ab1489de7fd5d34f3c2085562f" kindref="member">HealthAggregation</ref></type>
+          <declname>aggregation</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref></type>
+          <declname>scope</declname>
+        </param>
+        <briefdescription>
+<para>Return the value of an aggregated metric over a given time range. This call is more flexible than health_service_sum_averaged because it lets you specify which aggregation function to perform. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The aggregation function <computeroutput>aggregation</computeroutput> is applied to the metric <computeroutput>metric</computeroutput> over the given time range <computeroutput>time_start</computeroutput> to <computeroutput>time_end</computeroutput> first, and then an average is computed based on the passed in <computeroutput>scope</computeroutput>.</para>
+<para>For example, if you want to get the average number of steps taken from 12 AM (midnight) to 9 AM across all days you would specify: <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref><sp/>time_start<sp/>=<sp/><ref refid="group___standard_time_1gaad04b872745a08a1e531f6590194bd9b" kindref="member">time_start_of_today</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref><sp/>time_end<sp/>=<sp/>time_start<sp/>+<sp/>(9<sp/>*<sp/>SECONDS_PER_HOUR);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref><sp/>value<sp/>=<sp/><ref refid="group___health_service_1gab550229af26f6438505bc8a07f090afd" kindref="member">health_service_aggregate_averaged</ref>(<ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a5cecb29b3d75c6c0a7bb2bd3656ebf5e" kindref="member">HealthMetricStepCount</ref>,<sp/>time_start,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>time_end,<sp/><ref refid="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa11b337c4816e5ecebfebda0df620ba63" kindref="member">HealthAggregationSum</ref>,<sp/><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949ea13d545c164ed834be3fda9d2c035305e" kindref="member">HealthServiceTimeScopeDaily</ref>);</highlight></codeline>
+</programlisting></para>
+<para>If you want to compute the average heart rate on Mondays and today is a Monday, you would specify: <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref><sp/>time_start<sp/>=<sp/><ref refid="group___standard_time_1gaad04b872745a08a1e531f6590194bd9b" kindref="member">time_start_of_today</ref>(),</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref><sp/>time_end<sp/>=<sp/>time_start<sp/>+<sp/>SECONDS_PER_DAY,</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref><sp/>value<sp/>=<sp/><ref refid="group___health_service_1gab550229af26f6438505bc8a07f090afd" kindref="member">health_service_aggregate_averaged</ref>(<ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3af1c65a9410883fe8b5f84def71a29130" kindref="member">HealthMetricHeartRateBPM</ref>,<sp/>time_start,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>time_end,<sp/><ref refid="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa999e43f842718bd2b8b09d7984fc0336" kindref="member">HealthAggregationAvg</ref>,<sp/><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaaec3c77cdd4e3f7c193fef79cab832af" kindref="member">HealthServiceTimeScopeWeekly</ref>);</highlight></codeline>
+</programlisting></para>
+<para>To get the average of the minimum heart rate seen on Mondays for example, you would instead pass in <computeroutput><ref refid="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa4f86bb4009320b5e228294fa40d3951e" kindref="member">HealthAggregationMin</ref></computeroutput></para>
+<para>Certain <ref refid="group___health_service_1ga5c64b0ab1489de7fd5d34f3c2085562f" kindref="member">HealthAggregation</ref> operations are only applicable to certain types of metrics. See the notes above on <ref refid="group___health_service_1ga5c64b0ab1489de7fd5d34f3c2085562f" kindref="member">HealthAggregation</ref> for details. Use <ref refid="group___health_service_1gaae36aba04f5eedb015f03593b2af735b" kindref="member">health_service_metric_aggregate_averaged_accessible</ref> to check for applicability at run time.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref> to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTC time of the start of the query interval. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTC time of the end of the query interval. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aggregation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the aggregation function to perform on the metric. This operation is performed across the passed in time range <computeroutput>time_start</computeroutput> to <computeroutput>time_end</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref> value describing how the average should be computed. Use <computeroutput><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaf99627b4fe91ddd080ee8ba561e93bcd" kindref="member">HealthServiceTimeScopeOnce</ref></computeroutput> to not compute an average. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The average of the aggregation performed on the given metric over the given time range, if available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1126" column="13" declfile="build/sdk/emery/include/pebble.h" declline="1126" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gaa7d3865b67ac3d815bf5e6c0231643f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref></type>
+        <definition>HealthServiceAccessibilityMask health_service_any_activity_accessible</definition>
+        <argsstring>(HealthActivityMask activity_mask, time_t time_start, time_t time_end)</argsstring>
+        <name>health_service_any_activity_accessible</name>
+        <param>
+          <type><ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref></type>
+          <declname>activity_mask</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_end</declname>
+        </param>
+        <briefdescription>
+<para>Check if a certain combination of metric, <ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref> and time span is accessible. Developers should check if the return value is <ref refid="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a0701b27f4f15811fb72665286b6eea0c" kindref="member">HealthServiceAccessibilityMaskAvailable</ref> before calling any other HealthService APIs that involve the given activities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitmask of activities you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Earliest UTC time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest UTC time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref> representing which of the passed <ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref> values are available under the given constraints. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1266" column="32" declfile="build/sdk/emery/include/pebble.h" declline="1266" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gad4cb3b65f31c344de41428ec50d0a281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool health_service_cancel_metric_alert</definition>
+        <argsstring>(HealthMetricAlert *alert)</argsstring>
+        <name>health_service_cancel_metric_alert</name>
+        <param>
+          <type><ref refid="group___health_service_1ga86ade35770156a641962400e527357ef" kindref="member">HealthMetricAlert</ref> *</type>
+          <declname>alert</declname>
+        </param>
+        <briefdescription>
+<para>Cancel an metric alert previously created with <ref refid="group___health_service_1ga38ba66f8d16a5cc4d3d2461203a77f75" kindref="member">health_service_register_metric_alert</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group___health_service_1ga86ade35770156a641962400e527357ef" kindref="member">HealthMetricAlert</ref> previously returned by <ref refid="group___health_service_1ga38ba66f8d16a5cc4d3d2461203a77f75" kindref="member">health_service_register_metric_alert</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> on success, <computeroutput>false</computeroutput> on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1365" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1365" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga29280e11a9628779a3dcaa6d62d90d4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool health_service_events_subscribe</definition>
+        <argsstring>(HealthEventHandler handler, void *context)</argsstring>
+        <name>health_service_events_subscribe</name>
+        <param>
+          <type><ref refid="group___health_service_1ga982b6d3060b68509b41e8178bab91417" kindref="member">HealthEventHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to HealthService events. This allocates a cache on the application&apos;s heap of up to 2048 bytes that will be de-allocated if you call <ref refid="group___health_service_1gaea64b699d2c04f24c221b2ae11644b38" kindref="member">health_service_events_unsubscribe()</ref>. If there&apos;s not enough heap available, this function will return <computeroutput>false</computeroutput> and will not subscribe to any events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Developer-supplied event handler function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Developer-supplied context pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> on success, <computeroutput>false</computeroutput> on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1300" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1300" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gaea64b699d2c04f24c221b2ae11644b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool health_service_events_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>health_service_events_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from HealthService events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> on success, <computeroutput>false</computeroutput> on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1304" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1304" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gaeea0c8be0d13dd2fc9dc1048867ed318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t health_service_get_heart_rate_sample_period_expiration_sec</definition>
+        <argsstring>(void)</argsstring>
+        <name>health_service_get_heart_rate_sample_period_expiration_sec</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return how long a heart rate sample period request (sent via <computeroutput><ref refid="group___health_service_1ga33ad67b62ecd57736008087e7c275db9" kindref="member">health_service_set_heart_rate_sample_period</ref></computeroutput>) will remain active after the app exits. If there is no current request by this app, this call will return 0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of seconds the heart rate sample period request will remain active after the app exits, or 0 if there is no active request by this app. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1336" column="10" declfile="build/sdk/emery/include/pebble.h" declline="1336" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gab089154cc1c0c0d074122013035420c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1ga5290ef739be94d7ae1cc8ba16bdc808d" kindref="member">MeasurementSystem</ref></type>
+        <definition>MeasurementSystem health_service_get_measurement_system_for_display</definition>
+        <argsstring>(HealthMetric metric)</argsstring>
+        <name>health_service_get_measurement_system_for_display</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <briefdescription>
+<para>Get the preferred measurement system for a given <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref>, if the user has chosen a preferred system and it is applicable to that metric. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A metric value chosen from <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value from <ref refid="group___health_service_1ga5290ef739be94d7ae1cc8ba16bdc808d" kindref="member">MeasurementSystem</ref> if applicable, else <ref refid="group___health_service_1gga5290ef739be94d7ae1cc8ba16bdc808daf792fca6c330fe27cd69291fb2e41ac0" kindref="member">MeasurementSystemUnknown</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1435" column="19" declfile="build/sdk/emery/include/pebble.h" declline="1435" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gad42347be400c448e5fceda786019611c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t health_service_get_minute_history</definition>
+        <argsstring>(HealthMinuteData *minute_data, uint32_t max_records, time_t *time_start, time_t *time_end)</argsstring>
+        <name>health_service_get_minute_history</name>
+        <param>
+          <type><ref refid="struct_health_minute_data" kindref="compound">HealthMinuteData</ref> *</type>
+          <declname>minute_data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>max_records</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref> *</type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref> *</type>
+          <declname>time_end</declname>
+        </param>
+        <briefdescription>
+<para>Return historical minute data records. This fills in the <computeroutput>minute_data</computeroutput> array parameter with minute by minute statistics of the user&apos;s steps, average watch orientation, etc. The data is returned in time order, with the oldest minute data returned at <computeroutput>minute_data[0]</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minute_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to an array of <ref refid="struct_health_minute_data" kindref="compound">HealthMinuteData</ref> records that will be filled in with the historical minute data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_records</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of records the <computeroutput>minute_data</computeroutput> array can hold. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On entry, the UTC time of the first requested record. On exit, the UTC time of the first second of the first record actually returned. If <computeroutput>time_start</computeroutput> on entry is somewhere in the middle of a minute interval, this function behaves as if the caller passed in the start of that minute. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>On entry, the UTC time of the end of the requested range of records. On exit, the UTC time of the end of the last record actually returned (i.e. start time of last record + 60). If <computeroutput>time_end</computeroutput> on entry is somewhere in the middle of a minute interval, this function behaves as if the caller passed in the end of that minute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Actual number of records returned. May be less then the maximum requested. </para>
+</simplesect>
+<simplesect kind="note"><para>If the return value is zero, <computeroutput>time_start</computeroutput> and <computeroutput>time_end</computeroutput> are meaningless. It&apos;s not guaranteed that all records contain valid data, even if the return value is greater than zero. Check <computeroutput><ref refid="struct_health_minute_data_1ab8393912a432b53f7b530011462308d6" kindref="member">HealthMinuteData.is_invalid</ref></computeroutput> to see if a given record contains valid data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1414" column="10" declfile="build/sdk/emery/include/pebble.h" declline="1414" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga3304f85962047c248c80be3d23ddf87d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref></type>
+        <definition>HealthServiceAccessibilityMask health_service_metric_accessible</definition>
+        <argsstring>(HealthMetric metric, time_t time_start, time_t time_end)</argsstring>
+        <name>health_service_metric_accessible</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_end</declname>
+        </param>
+        <briefdescription>
+<para>Check if a certain combination of metric and time span is accessible using <ref refid="group___health_service_1ga88dd4742916eda84dbf2b15f7171c34c" kindref="member">health_service_sum</ref> by returning a value of <ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref>. Developers should check if the return value is <ref refid="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a0701b27f4f15811fb72665286b6eea0c" kindref="member">HealthServiceAccessibilityMaskAvailable</ref> before calling <ref refid="group___health_service_1ga88dd4742916eda84dbf2b15f7171c34c" kindref="member">health_service_sum</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this call is the same as calling <computeroutput>health_service_metric_averaged_accessible(metric,
+time_start, time_end, HealthServiceTimeScopeOnce)</computeroutput></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metric to query for data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Earliest UTC time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest UTC time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref> representing the accessible metrics in this time range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1222" column="32" declfile="build/sdk/emery/include/pebble.h" declline="1222" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gaae36aba04f5eedb015f03593b2af735b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref></type>
+        <definition>HealthServiceAccessibilityMask health_service_metric_aggregate_averaged_accessible</definition>
+        <argsstring>(HealthMetric metric, time_t time_start, time_t time_end, HealthAggregation aggregation, HealthServiceTimeScope scope)</argsstring>
+        <name>health_service_metric_aggregate_averaged_accessible</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_end</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga5c64b0ab1489de7fd5d34f3c2085562f" kindref="member">HealthAggregation</ref></type>
+          <declname>aggregation</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref></type>
+          <declname>scope</declname>
+        </param>
+        <briefdescription>
+<para>Check if a certain combination of metric, time span, aggregation operation, and scope is accessible for calculating aggregated, averaged data by returning a value of <ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref>. Developers should check if the return value is <ref refid="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a0701b27f4f15811fb72665286b6eea0c" kindref="member">HealthServiceAccessibilityMaskAvailable</ref> before calling <ref refid="group___health_service_1gab550229af26f6438505bc8a07f090afd" kindref="member">health_service_aggregate_averaged</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metric to query for averaged data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Earliest UTC time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest UTC time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aggregation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The aggregation to perform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref> value describing how the average should be computed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A \HealthServiceAccessibilityMask value decribing whether averaged data is available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1253" column="32" declfile="build/sdk/emery/include/pebble.h" declline="1253" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga4a000fb819876b98072201768524f060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref></type>
+        <definition>HealthServiceAccessibilityMask health_service_metric_averaged_accessible</definition>
+        <argsstring>(HealthMetric metric, time_t time_start, time_t time_end, HealthServiceTimeScope scope)</argsstring>
+        <name>health_service_metric_averaged_accessible</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_end</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref></type>
+          <declname>scope</declname>
+        </param>
+        <briefdescription>
+<para>Check if a certain combination of metric, time span, and scope is accessible for calculating summed, averaged data by returning a value of <ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref>. Developers should check if the return value is <ref refid="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a0701b27f4f15811fb72665286b6eea0c" kindref="member">HealthServiceAccessibilityMaskAvailable</ref> before calling <ref refid="group___health_service_1ga648ca6a090db119e09e15bc77b4eb47d" kindref="member">health_service_sum_averaged</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that this call is the same as calling <computeroutput>health_service_metric_aggregate_averaged_accessible(metric, time_start, time_end,
+ HealthAggregationSum, HealthServiceTimeScopeOnce)</computeroutput></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metric to query for averaged data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Earliest UTC time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latest UTC time you are interested in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref> value describing how the average should be computed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A \HealthServiceAccessibilityMask value decribing whether averaged data is available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1239" column="32" declfile="build/sdk/emery/include/pebble.h" declline="1239" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga8d822a2968297e755b078430cc365b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref></type>
+        <definition>HealthActivityMask health_service_peek_current_activities</definition>
+        <argsstring>(void)</argsstring>
+        <name>health_service_peek_current_activities</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref> containing a set of bits, one set for each activity that is currently active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A bitmask with zero or more <ref refid="group___health_service_1ga1d5cc8116a00623340c27accec560642" kindref="member">HealthActivityMask</ref> bits set as appropriate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1155" column="22" declfile="build/sdk/emery/include/pebble.h" declline="1155" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga2e5451dc845d6f77a49725cb25f4fe07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
+        <definition>HealthValue health_service_peek_current_value</definition>
+        <argsstring>(HealthMetric metric)</argsstring>
+        <name>health_service_peek_current_value</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function for peeking at the current value of a metric. This is useful for metrics like <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3af1c65a9410883fe8b5f84def71a29130" kindref="member">HealthMetricHeartRateBPM</ref> that represent instantaneous values. It is NOT applicable for metrics like <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a5cecb29b3d75c6c0a7bb2bd3656ebf5e" kindref="member">HealthMetricStepCount</ref> that must be accumulated over time (it will return 0 if passed that type of metric). This call is equivalent to calling <computeroutput><ref refid="group___health_service_1gab550229af26f6438505bc8a07f090afd" kindref="member">health_service_aggregate_averaged</ref>(metric, time(NULL), time(NULL), <ref refid="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa999e43f842718bd2b8b09d7984fc0336" kindref="member">HealthAggregationAvg</ref>, <ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaf99627b4fe91ddd080ee8ba561e93bcd" kindref="member">HealthServiceTimeScopeOnce</ref>)</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metric to query. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value of that metric, if available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1018" column="13" declfile="build/sdk/emery/include/pebble.h" declline="1018" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga38ba66f8d16a5cc4d3d2461203a77f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1ga86ade35770156a641962400e527357ef" kindref="member">HealthMetricAlert</ref> *</type>
+        <definition>HealthMetricAlert * health_service_register_metric_alert</definition>
+        <argsstring>(HealthMetric metric, HealthValue threshold)</argsstring>
+        <name>health_service_register_metric_alert</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+<para>Register for an alert when a metric crosses the given threshold. When the metric crosses this threshold (either goes above or below it), a <ref refid="group___health_service_1ggacb8b01b2eb863fa85913d491ec5cd214ab12ebe7dd7b5644beabffd8d99cdcc38" kindref="member">HealthEventMetricAlert</ref> event will be generated. To cancel this registration, pass the returned <ref refid="group___health_service_1ga86ade35770156a641962400e527357ef" kindref="member">HealthMetricAlert</ref> value to <ref refid="group___health_service_1gad4cb3b65f31c344de41428ec50d0a281" kindref="member">health_service_cancel_metric_alert</ref>. The only metric currently supported by this call is <ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3af1c65a9410883fe8b5f84def71a29130" kindref="member">HealthMetricHeartRateBPM</ref>, but future versions may support additional metrics. To see if a specific metric is supported by this call, use: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref><sp/>now<sp/>=<sp/><ref refid="group___standard_time_1ga99ef1cb2c789827dd5db3886dccf9067" kindref="member">time</ref>(NULL);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___health_service_1gaf190ee0fcb0c06560199a35156eac226" kindref="member">HealthServiceAccessibilityMask</ref><sp/>accessible<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___health_service_1gaae36aba04f5eedb015f03593b2af735b" kindref="member">health_service_metric_aggregate_averaged_accessible</ref>(metric,<sp/>now,<sp/>now,<sp/><ref refid="group___health_service_1gga5c64b0ab1489de7fd5d34f3c2085562fa999e43f842718bd2b8b09d7984fc0336" kindref="member">HealthAggregationAvg</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949eaf99627b4fe91ddd080ee8ba561e93bcd" kindref="member">HealthServiceTimeScopeOnce</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alert_supported<sp/>=<sp/>(accessible<sp/>&amp;<sp/><ref refid="group___health_service_1ggaf190ee0fcb0c06560199a35156eac226a0701b27f4f15811fb72665286b6eea0c" kindref="member">HealthServiceAccessibilityMaskAvailable</ref>);</highlight></codeline>
+</programlisting></para>
+<para>In the current implementation, only one alert per metric can be registered at a time. Future implementations may support two or more simulataneous alert registrations per metric. To change the alert threshold in the current implementation, cancel the original registration using <computeroutput><ref refid="group___health_service_1gad4cb3b65f31c344de41428ec50d0a281" kindref="member">health_service_cancel_metric_alert</ref></computeroutput> before registering the new threshold. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref> to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The threshold value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>handle to the alert registration on success, NULL on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1359" column="19" declfile="build/sdk/emery/include/pebble.h" declline="1359" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga33ad67b62ecd57736008087e7c275db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool health_service_set_heart_rate_sample_period</definition>
+        <argsstring>(uint16_t interval_sec)</argsstring>
+        <name>health_service_set_heart_rate_sample_period</name>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>interval_sec</declname>
+        </param>
+        <briefdescription>
+<para>Set the desired sampling period for heart rate readings. Normally, the system will sample the heart rate using a sampling period that is automatically chosen to provide useful information without undue battery drain (it automatically samples more often during periods of intense activity, and less often when the user is idle). If desired though, an application can request a specific sampling period using this call. The system will use this as a suggestion, but does not guarantee that the requested period will be used. The actual sampling period may be greater or less due to system needs or heart rate sensor reading quality issues. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each time a new heart rate reading becomes available, a <computeroutput><ref refid="group___health_service_1ggacb8b01b2eb863fa85913d491ec5cd214a4ea6de3cb20650becc17ee2f1b36af8f" kindref="member">HealthEventHeartRateUpdate</ref></computeroutput> event will be sent to the application&apos;s <computeroutput><ref refid="group___health_service_1ga982b6d3060b68509b41e8178bab91417" kindref="member">HealthEventHandler</ref></computeroutput>. The sample period request will remain in effect the entire time the app is running unless it is explicitly cancelled (by calling this method again with 0 as the desired interval). If the app exits without first cancelling the request, it will remain in effect even for a limited time afterwards. To determine how long it will remain active after the app exits, use <computeroutput><ref refid="group___health_service_1gaeea0c8be0d13dd2fc9dc1048867ed318" kindref="member">health_service_get_heart_rate_sample_period_expiration_sec</ref></computeroutput>.</para>
+<para>Unless the app explicitly needs to access to historical high-resolution heart rate data, it is best practice to always cancel the sample period request before exiting in order to maximize battery life. Historical heart rate data can be accessed using the <computeroutput><ref refid="group___health_service_1gad42347be400c448e5fceda786019611c" kindref="member">health_service_get_minute_history</ref></computeroutput> call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interval_sec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>desired interval between heart rate reading updates. Pass 0 to go back to automatically chosen intervals. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> on success, <computeroutput>false</computeroutput> on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1329" column="6" declfile="build/sdk/emery/include/pebble.h" declline="1329" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga88dd4742916eda84dbf2b15f7171c34c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
+        <definition>HealthValue health_service_sum</definition>
+        <argsstring>(HealthMetric metric, time_t time_start, time_t time_end)</argsstring>
+        <name>health_service_sum</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_end</declname>
+        </param>
+        <briefdescription>
+<para>Return the sum of a <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref>&apos;s values over a time range. The <computeroutput>time_start</computeroutput> and <computeroutput>time_end</computeroutput> parameters define the range of time you want the sum for. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The value returned will be based on daily totals, weighted for the length of the specified time range. This may change in the future. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metric to query for data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTC time of the earliest data item to incorporate into the sum. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTC time of the most recent data item to incorporate into the sum. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of that metric over the given time range, if available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1003" column="13" declfile="build/sdk/emery/include/pebble.h" declline="1003" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1ga648ca6a090db119e09e15bc77b4eb47d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
+        <definition>HealthValue health_service_sum_averaged</definition>
+        <argsstring>(HealthMetric metric, time_t time_start, time_t time_end, HealthServiceTimeScope scope)</argsstring>
+        <name>health_service_sum_averaged</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+          <declname>time_end</declname>
+        </param>
+        <param>
+          <type><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref></type>
+          <declname>scope</declname>
+        </param>
+        <briefdescription>
+<para>Return the value of a metric&apos;s sum over a given time range between <computeroutput>time_start</computeroutput> and <computeroutput>time_end</computeroutput>. Using this call you can specify the time range that you are interested in getting the average for, as well as a <computeroutput>scope</computeroutput> specifier on how to compute an average of the sum. For example, if you want to get the average number of steps taken from 12 AM (midnight) to 9 AM across all days you would specify: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref><sp/>time_start<sp/>=<sp/><ref refid="group___standard_time_1gaad04b872745a08a1e531f6590194bd9b" kindref="member">time_start_of_today</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref><sp/>time_end<sp/>=<sp/>time_start<sp/>+<sp/>(9<sp/>*<sp/>SECONDS_PER_HOUR);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref><sp/>value<sp/>=<sp/><ref refid="group___health_service_1ga648ca6a090db119e09e15bc77b4eb47d" kindref="member">health_service_sum_averaged</ref>(<ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a5cecb29b3d75c6c0a7bb2bd3656ebf5e" kindref="member">HealthMetricStepCount</ref>,<sp/>time_start,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>time_end,<sp/><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949ea13d545c164ed834be3fda9d2c035305e" kindref="member">HealthServiceTimeScopeDaily</ref>);</highlight></codeline>
+</programlisting> If you want the average number of steps taken on a weekday (Monday to Friday) and today is a Monday (in the local timezone) you would specify: <programlisting filename=".c"><codeline><highlight class="normal">time_start<sp/>=<sp/><ref refid="group___standard_time_1gaad04b872745a08a1e531f6590194bd9b" kindref="member">time_start_of_today</ref>();</highlight></codeline>
+<codeline><highlight class="normal">time_end<sp/>=<sp/>time_start<sp/>+<sp/>SECONDS_PER_DAY;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref><sp/>value<sp/>=<sp/><ref refid="group___health_service_1ga648ca6a090db119e09e15bc77b4eb47d" kindref="member">health_service_sum_averaged</ref>(<ref refid="group___health_service_1gga8d2c6a34cef5b66c9d4612f53b9a60a3a5cecb29b3d75c6c0a7bb2bd3656ebf5e" kindref="member">HealthMetricStepCount</ref>,<sp/>time_start,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>time_end,<sp/><ref refid="group___health_service_1gga84f7e66171302b36daa84acf1e93949ea2ed422b0ca09fe36bcf50c7aaebff300" kindref="member">HealthServiceTimeScopeDailyWeekdayOrWeekend</ref>);</highlight></codeline>
+</programlisting></para>
+<para>Note that this call is the same as calling <computeroutput>health_service_aggregate_averaged(metric,
+time_start, time_end, HealthAggregationSum, scope)</computeroutput></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which <ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref> to query. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTC time of the start of the query interval. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTC time of the end of the query interval. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___health_service_1ga84f7e66171302b36daa84acf1e93949e" kindref="member">HealthServiceTimeScope</ref> value describing how the average should be computed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The average of the sum of the given metric over the given time range, if available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1062" column="13" declfile="build/sdk/emery/include/pebble.h" declline="1062" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group___health_service_1gaa3443d2e23058d0924742ff57527b528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___health_service_1ga3d3db71ea01c7346038ef4de2c9e6869" kindref="member">HealthValue</ref></type>
+        <definition>HealthValue health_service_sum_today</definition>
+        <argsstring>(HealthMetric metric)</argsstring>
+        <name>health_service_sum_today</name>
+        <param>
+          <type><ref refid="group___health_service_1ga8d2c6a34cef5b66c9d4612f53b9a60a3" kindref="member">HealthMetric</ref></type>
+          <declname>metric</declname>
+        </param>
+        <briefdescription>
+<para>Convenience wrapper for <ref refid="group___health_service_1ga88dd4742916eda84dbf2b15f7171c34c" kindref="member">health_service_sum()</ref> that returns the sum for today. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metric to query. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of that metric&apos;s data for today, if available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1008" column="13" declfile="build/sdk/emery/include/pebble.h" declline="1008" declcolumn="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___health_service_1gad318afc2a73685157baa00f20da5f154" prot="public" static="no">
+        <name>HealthActivityMaskAll</name>
+        <initializer>((<ref refid="group___health_service_1gga34a9840fdec40a4c494e28b07a968e4da54d0b891a7e32edd762906e9fa9f59f3" kindref="member">HealthActivityOpenWorkout</ref> &lt;&lt; 1) - 1)</initializer>
+        <briefdescription>
+<para>A mask value representing all available activities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1134" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___health_service_1ga2acea450417f9ff4320d6a145b8d7faf" prot="public" static="no">
+        <name>PBL_IF_HEALTH_ELSE</name>
+        <param><defname>if_true</defname></param>
+        <param><defname>if_false</defname></param>
+        <initializer>(if_true)</initializer>
+        <briefdescription>
+<para>Convenience macro to switch between two expressions depending on health support. On platforms with health support the first expression will be chosen, the second otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="1419" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="1419" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Get access to health information like step count, sleep totals, etc. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The HealthService provides your app access to the step count and sleep activity of the user. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

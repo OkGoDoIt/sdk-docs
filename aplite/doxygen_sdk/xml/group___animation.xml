@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___animation" kind="group">
     <compoundname>Animation</compoundname>
     <title>Animation</title>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5587" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5587" bodyend="5604"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5723" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5723" bodyend="5740"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5579" column="24" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5579" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5715" column="24" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5715" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___animation_1gae406e3b3721112668a9ed1dcde726916" prot="public" static="no">
         <type><ref refid="group___animation_1gabb6803caccab653812620022f1162b10" kindref="member">AnimationProgress</ref>(*</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5779" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5779" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5915" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5915" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___animation_1gabb6803caccab653812620022f1162b10" prot="public" static="no">
         <type>int32_t</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5583" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5583" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5719" column="17" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5719" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___animation_1gafb5afefd9137b22576b0e598e9714f15" prot="public" static="no">
         <type>void(*</type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5893" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5893" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6029" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6029" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___animation_1ga9ec8ca1223ae71964feca04a92e4510b" prot="public" static="no">
         <type>void(*</type>
@@ -214,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5803" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5803" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5939" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5939" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___animation_1ga23a000ff9a55db7c73ce956a9c36a022" prot="public" static="no">
         <type>void(*</type>
@@ -258,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5816" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5816" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5952" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5952" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___animation_1ga1a6d9b072c7a3c2773b5f90c836a90cd" prot="public" static="no">
         <type>void(*</type>
@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5925" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5925" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6061" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6061" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___animation_1ga8e27aba7aaca1cd8a3409099d64da6ef" prot="public" static="no">
         <type>void(*</type>
@@ -321,7 +321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5915" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5915" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6051" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6051" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -340,7 +340,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5643" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5643" declcolumn="11"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5779" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5779" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga2d06beeb875d75076cd28eebe96fd9f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Animation *</type>
@@ -369,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5617" column="12" declfile="build/sdk/aplite/include/pebble.h" declline="5617" declcolumn="12"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5753" column="12" declfile="build/sdk/aplite/include/pebble.h" declline="5753" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga6d9762bffda2eb7ef9851982cc96732e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -390,7 +390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5621" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5621" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5757" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5757" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga129737703945e2d74cbfceaad3a83e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -420,7 +420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5848" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5848" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5984" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5984" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga934a383bfe3d54e28bc35666746acc2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___animation_1gaf481a363d622c146285096e6395d9ec8" kindref="member">AnimationCurve</ref></type>
@@ -450,7 +450,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5774" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="5774" declcolumn="16"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5910" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="5910" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga254d765661f2cf3731eeec549a2a3c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___animation_1gae406e3b3721112668a9ed1dcde726916" kindref="member">AnimationCurveFunction</ref></type>
@@ -480,7 +480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5794" column="24" declfile="build/sdk/aplite/include/pebble.h" declline="5794" declcolumn="24"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5930" column="24" declfile="build/sdk/aplite/include/pebble.h" declline="5930" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gae8d7733db8d3740743ee6ddc9e76ba05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -510,7 +510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5759" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="5759" declcolumn="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5895" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="5895" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gad5d3b099d7493271911dc4a398d5ce02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -564,7 +564,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5744" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="5744" declcolumn="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5880" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="5880" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga0c3a4188b3256c635874896d56c0c1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -608,7 +608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5696" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5696" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5832" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5832" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga3f1f966f5c9b62fa4e758b24a30cc4b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="struct_animation_implementation" kindref="compound">AnimationImplementation</ref> *</type>
@@ -640,7 +640,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5972" column="31" declfile="build/sdk/aplite/include/pebble.h" declline="5972" declcolumn="31"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6108" column="31" declfile="build/sdk/aplite/include/pebble.h" declline="6108" declcolumn="31"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga7679fa59b76ef10d2ebb93b7359d3fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -670,7 +670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5725" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="5725" declcolumn="10"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5861" column="10" declfile="build/sdk/aplite/include/pebble.h" declline="5861" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga6c444c59c8343ee8706704ba4aba3c6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -700,7 +700,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5710" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5710" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5846" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5846" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gab297cbc2a30d0fbf49e3bee3d1ddaf6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -735,7 +735,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5886" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5886" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6022" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6022" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gaf06c5eb66bae91cafc9b6a1ca382a072" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -770,7 +770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5863" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5863" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5999" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5999" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gae53b48498f8695442dc10a7a5af75c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Animation *</type>
@@ -829,7 +829,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5654" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5654" declcolumn="11"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5790" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5790" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga54894eb9ae0b4367b7cc03e6a95e2526" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Animation *</type>
@@ -873,7 +873,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5662" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5662" declcolumn="11"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5798" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5798" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gae477015bc607ba8f6909523b2bb41fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -919,7 +919,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5769" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5769" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5905" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5905" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga2061033d921f150bd5fe9133cb371de3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -965,7 +965,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5789" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5789" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5925" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5925" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga178f894a2045805bca61cee16f6a8eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1009,7 +1009,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5754" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5754" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5890" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5890" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gaf2c4249a27be4fc8ae57197520e6a929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1053,7 +1053,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5735" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5735" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5871" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5871" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga58f7c1e36d2a7f94a2f7164445975967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1095,7 +1095,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5688" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5688" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5824" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5824" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga6be3103c0d142d49cd5c3204c102e53c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1151,7 +1151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5840" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5840" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5976" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5976" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga2366c45f05dfde0d7aacc934363a2fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1197,7 +1197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5965" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5965" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6101" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6101" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga2423c3ae2e77ec822ba6e9710bf8a446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1241,7 +1241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5720" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5720" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5856" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5856" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga3721e7aef9d93dfa443ac43d75ab32e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1257,7 +1257,7 @@
           <declname>reverse</declname>
         </param>
         <briefdescription>
-<para>Set an animation to run in reverse (or forward) </para>
+<para>Set an animation to run in reverse (or forward). </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="note"><para>Trying to set an attribute when an animation is immutable will return false (failure). An animation is immutable once it has been added to a sequence or spawn animation or has been scheduled. </para>
@@ -1285,7 +1285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5705" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5705" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5841" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5841" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gaa7dcae03d5548cba8085fae0a302a48b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Animation *</type>
@@ -1344,7 +1344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5673" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5673" declcolumn="11"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5809" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5809" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1ga66df7aea50037e884d8605f66658e2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Animation *</type>
@@ -1388,7 +1388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5681" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5681" declcolumn="11"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5817" column="11" declfile="build/sdk/aplite/include/pebble.h" declline="5817" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gad37f0e1a710d8f3910079d13f0b010a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1424,7 +1424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5873" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5873" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6009" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6009" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___animation_1gae341f7686c501f34cb553150ec7aa0ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1444,7 +1444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5877" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="5877" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6013" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6013" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -1463,7 +1463,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5630" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5630" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5766" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5766" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___animation_1ga43b9b82f56dbc751c7e3b25198b17d09" prot="public" static="no">
         <name>ANIMATION_NORMALIZED_MAX</name>
@@ -1475,7 +1475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5641" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5641" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5777" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5777" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___animation_1ga96ce276742a60f74e5d2eb7ba2199d62" prot="public" static="no">
         <name>ANIMATION_NORMALIZED_MIN</name>
@@ -1487,7 +1487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5638" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5638" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5774" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5774" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___animation_1ga40afb5f144a0d3dca9056fdecbad023c" prot="public" static="no">
         <name>ANIMATION_PLAY_COUNT_INFINITE</name>
@@ -1502,7 +1502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="5635" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5635" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="5771" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="5771" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1510,7 +1510,23 @@
     </briefdescription>
     <detaileddescription>
 <para>The Animation framework provides your Pebble app with an base layer to create arbitrary animations. The simplest way to work with animations is to use the layer frame <ref refid="group___property_animation" kindref="compound">PropertyAnimation</ref>, which enables you to move a Layer around on the screen. Using <ref refid="group___animation_1ga2366c45f05dfde0d7aacc934363a2fe8" kindref="member">animation_set_implementation()</ref>, you can implement a custom animation.</para>
-<para>Refer to the <htmlonly>&lt;a href=&quot;https://developer.rebble.io/guides/user-interfaces/layers&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
 </htmlonly> (chapter &quot;Animation&quot;) for a conceptual overview of the animation framework and on how to write custom animations. </para>
     </detaileddescription>
   </compounddef>

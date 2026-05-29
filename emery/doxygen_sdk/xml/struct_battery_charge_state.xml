@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_battery_charge_state" kind="struct" language="C++" prot="public">
+    <compoundname>BatteryChargeState</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_battery_charge_state_1ad4364805c751979a0572c94d5dabc459" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BatteryChargeState::charge_percent</definition>
+        <argsstring></argsstring>
+        <name>charge_percent</name>
+        <qualifiedname>BatteryChargeState::charge_percent</qualifiedname>
+        <briefdescription>
+<para>A percentage (0-100) of how full the battery is. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="605" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_battery_charge_state_1a1a2d28c28d3d230b5f8fe2fd089ff9dd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BatteryChargeState::is_charging</definition>
+        <argsstring></argsstring>
+        <name>is_charging</name>
+        <qualifiedname>BatteryChargeState::is_charging</qualifiedname>
+        <briefdescription>
+<para>True if the battery is currently being charged. False if not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="607" column="8" bodyfile="build/sdk/emery/include/pebble.h" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_battery_charge_state_1a00910c85f1f068363a7b400151b7f8e4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BatteryChargeState::is_plugged</definition>
+        <argsstring></argsstring>
+        <name>is_plugged</name>
+        <qualifiedname>BatteryChargeState::is_plugged</qualifiedname>
+        <briefdescription>
+<para>True if the charger cable is connected. False if not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="609" column="8" bodyfile="build/sdk/emery/include/pebble.h" bodystart="609" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure for retrieval of the battery charge state. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="603" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="603" bodyend="610"/>
+    <listofallmembers>
+      <member refid="struct_battery_charge_state_1ad4364805c751979a0572c94d5dabc459" prot="public" virt="non-virtual"><scope>BatteryChargeState</scope><name>charge_percent</name></member>
+      <member refid="struct_battery_charge_state_1a1a2d28c28d3d230b5f8fe2fd089ff9dd" prot="public" virt="non-virtual"><scope>BatteryChargeState</scope><name>is_charging</name></member>
+      <member refid="struct_battery_charge_state_1a00910c85f1f068363a7b400151b7f8e4" prot="public" virt="non-virtual"><scope>BatteryChargeState</scope><name>is_plugged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

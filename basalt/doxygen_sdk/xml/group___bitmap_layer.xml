@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___bitmap_layer" kind="group">
     <compoundname>BitmapLayer</compoundname>
     <title>BitmapLayer</title>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7800" column="26" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7800" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8081" column="26" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8081" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -44,8 +44,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7810" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="7810" declcolumn="13"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="8091" column="13" declfile="build/sdk/basalt/include/pebble.h" declline="8091" declcolumn="13"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___bitmap_layer_1ga4ef30a7562a029d81e2956ab8068f0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7813" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7813" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8094" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8094" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___bitmap_layer_1ga40cfc5af67b6df6c62c8745768a7cecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const GBitmap *</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7825" column="15" declfile="build/sdk/basalt/include/pebble.h" declline="7825" declcolumn="15"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8106" column="15" declfile="build/sdk/basalt/include/pebble.h" declline="8106" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="group___bitmap_layer_1gaf850045cef510d5e206ff4f4b542fd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Layer *</type>
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7819" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="7819" declcolumn="7"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8100" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="8100" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___bitmap_layer_1ga4c1765f9330890641c4c09ba7e894894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7845" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7845" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8126" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8126" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___bitmap_layer_1ga67522a1e62431f0f68d161d83fb6d83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -199,11 +199,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="see"><para><ref refid="group___bitmap_layer_1ga7bc761ca8227881c5853cbc0e279385e" kindref="member">bitmap_layer_set_compositing_mode</ref> for enabling transparency </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7853" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7853" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8135" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8135" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___bitmap_layer_1ga919b52c2feb69c13966f4a52815377f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -243,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7834" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7834" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8115" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8115" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___bitmap_layer_1ga7bc761ca8227881c5853cbc0e279385e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -263,8 +265,8 @@
         </briefdescription>
         <detaileddescription>
 <para>The compositing mode only affects the drawing of the bitmap and not the drawing of the background color.</para>
-<para>For Aplite, there is no notion of &quot;transparency&quot; in the graphics system. However, the effect of transparency can be created by masking and using compositing modes.</para>
-<para>For Basalt, when drawing GBitmap images, <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3ca84b5c70798643a3bd07b263c47fe6" kindref="member">GCompOpSet</ref> will be required to apply any transparency.</para>
+<para>For black&amp;white platforms, there is no notion of &quot;transparency&quot; in the graphics system. However, the effect of transparency can be created by masking and using compositing modes.</para>
+<para>For color platforms, when drawing GBitmap images, <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3ca84b5c70798643a3bd07b263c47fe6" kindref="member">GCompOpSet</ref> is required to apply any transparency.</para>
 <para>The bitmap layer is automatically marked dirty after this operation. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>bitmap_layer</parametername>
@@ -288,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7872" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7872" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8154" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8154" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

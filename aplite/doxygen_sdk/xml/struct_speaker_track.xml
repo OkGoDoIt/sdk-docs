@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_speaker_track" kind="struct" language="C++" prot="public">
+    <compoundname>SpeakerTrack</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_speaker_track_1aec342d83aa1e35ef2b4fee98bbd87c31" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_speaker_note" kindref="compound">SpeakerNote</ref> *</type>
+        <definition>const SpeakerNote* SpeakerTrack::notes</definition>
+        <argsstring></argsstring>
+        <name>notes</name>
+        <qualifiedname>SpeakerTrack::notes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="8484" column="21" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="8484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_speaker_track_1aea8cff81c0621c84b815f0667eaf4501" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t SpeakerTrack::num_notes</definition>
+        <argsstring></argsstring>
+        <name>num_notes</name>
+        <qualifiedname>SpeakerTrack::num_notes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="8485" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="8485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_speaker_track_1a387680bf01ce732c5d4744823b7902a6" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_speaker_sample" kindref="compound">SpeakerSample</ref> *</type>
+        <definition>const SpeakerSample* SpeakerTrack::sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <qualifiedname>SpeakerTrack::sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="8486" column="23" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="8486" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A single monophonic voice. Multiple tracks are mixed together by speaker_play_tracks() to produce polyphony. notes: array of notes to play sequentially. num_notes: length of the notes array. sample: if non-NULL, notes are played by pitch-shifting this sample; note.waveform is ignored. If NULL, notes use their waveform field. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>SpeakerNote</label>
+        <link refid="struct_speaker_note"/>
+      </node>
+      <node id="3">
+        <label>SpeakerSample</label>
+        <link refid="struct_speaker_sample"/>
+      </node>
+      <node id="1">
+        <label>SpeakerTrack</label>
+        <link refid="struct_speaker_track"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>notes</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sample</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/aplite/include/pebble.h" line="8483" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="8483" bodyend="8487"/>
+    <listofallmembers>
+      <member refid="struct_speaker_track_1aec342d83aa1e35ef2b4fee98bbd87c31" prot="public" virt="non-virtual"><scope>SpeakerTrack</scope><name>notes</name></member>
+      <member refid="struct_speaker_track_1aea8cff81c0621c84b815f0667eaf4501" prot="public" virt="non-virtual"><scope>SpeakerTrack</scope><name>num_notes</name></member>
+      <member refid="struct_speaker_track_1a387680bf01ce732c5d4744823b7902a6" prot="public" virt="non-virtual"><scope>SpeakerTrack</scope><name>sample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

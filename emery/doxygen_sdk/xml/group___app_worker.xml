@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___app_worker" kind="group">
+    <compoundname>AppWorker</compoundname>
+    <title>AppWorker</title>
+    <innerclass refid="struct_app_worker_message" prot="public">AppWorkerMessage</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___app_worker_1ga9732697a0e5e5718dfb265e061ec6a5d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AppWorkerResult</name>
+        <enumvalue id="group___app_worker_1gga9732697a0e5e5718dfb265e061ec6a5da94009622897d84fdf4d254c45a50b6bd" prot="public">
+          <name>APP_WORKER_RESULT_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Success. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_worker_1gga9732697a0e5e5718dfb265e061ec6a5da9b36919aa66f787b95ae3dbe964c52ef" prot="public">
+          <name>APP_WORKER_RESULT_NO_WORKER</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>No worker found for the current app. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_worker_1gga9732697a0e5e5718dfb265e061ec6a5da848f57b881f82a472439b8519b34732c" prot="public">
+          <name>APP_WORKER_RESULT_DIFFERENT_APP</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>A worker for a different app is already running. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_worker_1gga9732697a0e5e5718dfb265e061ec6a5daed4965d390f0ca313b0daf102469ab54" prot="public">
+          <name>APP_WORKER_RESULT_NOT_RUNNING</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>The worker is not running. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_worker_1gga9732697a0e5e5718dfb265e061ec6a5daf21c365a14cf7268d9b5bc1bc37eb70a" prot="public">
+          <name>APP_WORKER_RESULT_ALREADY_RUNNING</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>The worker is already running. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_worker_1gga9732697a0e5e5718dfb265e061ec6a5dabca8de916dae9cf8dd28bd2b4fea9701" prot="public">
+          <name>APP_WORKER_RESULT_ASKING_CONFIRMATION</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>The user will be asked for confirmation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Possible error codes from app_worker_launch, app_worker_kill. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2893" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2893" bodyend="2906"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___app_worker_1gaf70afc0dd4ceb096ef5170a2ba751bb0" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppWorkerMessageHandler) (uint16_t type, AppWorkerMessage *data)</definition>
+        <argsstring>)(uint16_t type, AppWorkerMessage *data)</argsstring>
+        <name>AppWorkerMessageHandler</name>
+        <briefdescription>
+<para>Callback type for worker messages. Messages can be sent from worker to app or vice versa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An application defined message type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to message data. The receiver must know the structure of the data provided by the sender. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2932" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2932" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___app_worker_1ga6b92572431bb41d2e48144fec4929672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool app_worker_is_running</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_worker_is_running</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Determine if the worker for the current app is running. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if running </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2917" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2917" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_worker_1ga9a99c4ec6caf05627b53c49349f96e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_worker_1ga9732697a0e5e5718dfb265e061ec6a5d" kindref="member">AppWorkerResult</ref></type>
+        <definition>AppWorkerResult app_worker_kill</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_worker_kill</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Kill the worker for the current app. Note that this is an asynchronous operation, a result code of APP_WORKER_RESULT_SUCCESS merely means that the request was successfully queued up. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>result code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2927" column="17" declfile="build/sdk/emery/include/pebble.h" declline="2927" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_worker_1ga84f6780cd67e429f9b569eee36862d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_worker_1ga9732697a0e5e5718dfb265e061ec6a5d" kindref="member">AppWorkerResult</ref></type>
+        <definition>AppWorkerResult app_worker_launch</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_worker_launch</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Launch the worker for the current app. Note that this is an asynchronous operation, a result code of APP_WORKER_RESULT_SUCCESS merely means that the request was successfully queued up. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>result code </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2922" column="17" declfile="build/sdk/emery/include/pebble.h" declline="2922" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_worker_1gae93a0baab484dda8e75e3d5699fd7463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool app_worker_message_subscribe</definition>
+        <argsstring>(AppWorkerMessageHandler handler)</argsstring>
+        <name>app_worker_message_subscribe</name>
+        <param>
+          <type><ref refid="group___app_worker_1gaf70afc0dd4ceb096ef5170a2ba751bb0" kindref="member">AppWorkerMessageHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to worker messages. Once subscribed, the handler gets called on every message emitted by the other task (either worker or app). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback to be executed when the event is received </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2938" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2938" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_worker_1gabdd29f332fcaf8785fa2c73cf55addf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool app_worker_message_unsubscribe</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_worker_message_unsubscribe</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Unsubscribe from worker messages. Once unsubscribed, the previously registered handler will no longer be called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true on success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2942" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2942" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_worker_1gac1a4c6ddd568429bded6373d00559fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_worker_send_message</definition>
+        <argsstring>(uint8_t type, AppWorkerMessage *data)</argsstring>
+        <name>app_worker_send_message</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_app_worker_message" kindref="compound">AppWorkerMessage</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Send a message to the other task (either worker or app). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An application defined message type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message data structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2947" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2947" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Runs in the background, and can communicate with the foreground app. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

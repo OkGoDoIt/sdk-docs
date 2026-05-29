@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_moddable_creation_record" kind="struct" language="C++" prot="public">
+    <compoundname>ModdableCreationRecord</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_moddable_creation_record_1a1caa937e8b7a3874c2d448c3178df62a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ModdableCreationRecord::chunk</definition>
+        <argsstring></argsstring>
+        <name>chunk</name>
+        <qualifiedname>ModdableCreationRecord::chunk</qualifiedname>
+        <briefdescription>
+<para>Chunk heap size in bytes (0 for default). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="2859" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moddable_creation_record_1ae0a1093f4bbee23a0a641178502ba2ff" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ModdableCreationRecord::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>ModdableCreationRecord::flags</qualifiedname>
+        <briefdescription>
+<para>Combination of kModdableCreationFlag* values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="2860" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2860" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moddable_creation_record_1a563aeaa464900e12489792b98a68b07b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ModdableCreationRecord::fxBuildFFI</definition>
+        <argsstring></argsstring>
+        <name>fxBuildFFI</name>
+        <qualifiedname>ModdableCreationRecord::fxBuildFFI</qualifiedname>
+        <briefdescription>
+<para>Optional pointer to an fxBuildFFI function for custom native bindings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="2861" column="5" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moddable_creation_record_1acdcbcce2a33eeccef88dc4b8c17c6df2" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ModdableCreationRecord::recordSize</definition>
+        <argsstring></argsstring>
+        <name>recordSize</name>
+        <qualifiedname>ModdableCreationRecord::recordSize</qualifiedname>
+        <briefdescription>
+<para>Size of this struct in bytes (for versioning). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="2855" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moddable_creation_record_1aab9cbb91dfd8511b60f752dc8d0271ff" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ModdableCreationRecord::slot</definition>
+        <argsstring></argsstring>
+        <name>slot</name>
+        <qualifiedname>ModdableCreationRecord::slot</qualifiedname>
+        <briefdescription>
+<para>Slot heap size in bytes (0 for default). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="2858" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moddable_creation_record_1a8f3df4625c883041832533e8975afeb2" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ModdableCreationRecord::stack</definition>
+        <argsstring></argsstring>
+        <name>stack</name>
+        <qualifiedname>ModdableCreationRecord::stack</qualifiedname>
+        <briefdescription>
+<para>Stack size in bytes (0 for default). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="2857" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2857" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration record for creating a Moddable XS virtual machine. Used with moddable_createMachine() to customize the JS runtime. Set recordSize to sizeof(ModdableCreationRecord) for version compatibility. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/basalt/include/pebble.h" line="2854" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2854" bodyend="2862"/>
+    <listofallmembers>
+      <member refid="struct_moddable_creation_record_1a1caa937e8b7a3874c2d448c3178df62a" prot="public" virt="non-virtual"><scope>ModdableCreationRecord</scope><name>chunk</name></member>
+      <member refid="struct_moddable_creation_record_1ae0a1093f4bbee23a0a641178502ba2ff" prot="public" virt="non-virtual"><scope>ModdableCreationRecord</scope><name>flags</name></member>
+      <member refid="struct_moddable_creation_record_1a563aeaa464900e12489792b98a68b07b" prot="public" virt="non-virtual"><scope>ModdableCreationRecord</scope><name>fxBuildFFI</name></member>
+      <member refid="struct_moddable_creation_record_1acdcbcce2a33eeccef88dc4b8c17c6df2" prot="public" virt="non-virtual"><scope>ModdableCreationRecord</scope><name>recordSize</name></member>
+      <member refid="struct_moddable_creation_record_1aab9cbb91dfd8511b60f752dc8d0271ff" prot="public" virt="non-virtual"><scope>ModdableCreationRecord</scope><name>slot</name></member>
+      <member refid="struct_moddable_creation_record_1a8f3df4625c883041832533e8975afeb2" prot="public" virt="non-virtual"><scope>ModdableCreationRecord</scope><name>stack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

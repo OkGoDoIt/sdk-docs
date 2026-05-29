@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="structtm" kind="struct" language="C++" prot="public">
     <compoundname>tm</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8370" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8370" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8778" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8778" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1a3e7ca4e37f1abcaf56b8a916c38eb9fe" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8362" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8362" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8770" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8770" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1a5645ca0580c8ab2c24f6c2965d9c9f9c" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8368" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8368" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8776" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8776" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1ab8d8904bad43b0c8b96e61941c5b5310" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8363" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8363" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8771" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8771" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1af414eb7c86cc3099595211eee4d4211b" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8361" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8361" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8769" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8769" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1a112ac36fa2f593777138a417cf031e17" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8364" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8364" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8772" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8772" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1a4d098a9a5c03a00b2ee61e10851de81e" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8360" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8360" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8768" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8768" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1afe81a8c46f1c693c43f259b288859f4f" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8366" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8366" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8774" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8774" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1a93a0ba77cc23796df84405dcbcc57eb1" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8367" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8367" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8775" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8775" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1a33adf78fd6476b2120ce3b9c4a852053" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8365" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8365" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8773" column="7" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8773" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtm_1ae5d2abaee5caf5b1a48d7fcf16300f87" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8371" column="8" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8371" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8779" column="8" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8779" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -175,7 +175,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="8359" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8359" bodyend="8372"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="8767" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8767" bodyend="8780"/>
     <listofallmembers>
       <member refid="structtm_1a4892d556f104fbadf55043949c8de7fe" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_gmtoff</name></member>
       <member refid="structtm_1a3e7ca4e37f1abcaf56b8a916c38eb9fe" prot="public" virt="non-virtual"><scope>tm</scope><name>tm_hour</name></member>

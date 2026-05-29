@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_menu_index" kind="struct" language="C++" prot="public">
     <compoundname>MenuIndex</compoundname>
     <includes local="no">pebble.h</includes>
@@ -11,13 +11,13 @@
         <name>row</name>
         <qualifiedname>MenuIndex::row</qualifiedname>
         <briefdescription>
-<para>The index of the row within the section with index <computeroutput>.section</computeroutput> </para>
+<para>The index of the row within the section with index <computeroutput>.<ref refid="struct_menu_index_1a9d05a7245c3d2f4c95fb6b33e8fb2a1a" kindref="member">section</ref></computeroutput>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6925" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6925" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7051" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7051" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_index_1a9d05a7245c3d2f4c95fb6b33e8fb2a1a" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6923" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6923" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7049" column="12" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7049" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -40,7 +40,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="6921" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6921" bodyend="6926"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="7047" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7047" bodyend="7052"/>
     <listofallmembers>
       <member refid="struct_menu_index_1abdefc68549bda67cfbae350ba78c6b59" prot="public" virt="non-virtual"><scope>MenuIndex</scope><name>row</name></member>
       <member refid="struct_menu_index_1a9d05a7245c3d2f4c95fb6b33e8fb2a1a" prot="public" virt="non-virtual"><scope>MenuIndex</scope><name>section</name></member>

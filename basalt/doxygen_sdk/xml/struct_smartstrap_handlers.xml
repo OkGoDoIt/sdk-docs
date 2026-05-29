@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_smartstrap_handlers" kind="struct" language="C++" prot="public">
     <compoundname>SmartstrapHandlers</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4900" column="40" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4900" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5178" column="40" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_smartstrap_handlers_1ad99ecaa5517352b08704d6e10ed9f1bd" prot="public" static="no" mutable="no">
         <type><ref refid="group___smartstrap_1gae3447433eba742537cd13bd58e907c45" kindref="member">SmartstrapReadHandler</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4902" column="25" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4902" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5180" column="25" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_smartstrap_handlers_1a5fe356165a501f797013b22519c63583" prot="public" static="no" mutable="no">
         <type><ref refid="group___smartstrap_1gabe74eee0435816d46af2a39d5f10f3c6" kindref="member">SmartstrapWriteHandler</ref></type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4904" column="26" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4904" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5182" column="26" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_smartstrap_handlers_1a17fc299cd231967fbd0344ae469640b3" prot="public" static="no" mutable="no">
         <type><ref refid="group___smartstrap_1ga2786c9423e3e0bf81461deb5d28a3e82" kindref="member">SmartstrapNotifyHandler</ref></type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="4906" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4906" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="5184" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5184" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -70,7 +70,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="4898" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4898" bodyend="4907"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="5176" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="5176" bodyend="5185"/>
     <listofallmembers>
       <member refid="struct_smartstrap_handlers_1a8a70b918dce365b73ec96fb155dac6cf" prot="public" virt="non-virtual"><scope>SmartstrapHandlers</scope><name>availability_did_change</name></member>
       <member refid="struct_smartstrap_handlers_1ad99ecaa5517352b08704d6e10ed9f1bd" prot="public" virt="non-virtual"><scope>SmartstrapHandlers</scope><name>did_read</name></member>

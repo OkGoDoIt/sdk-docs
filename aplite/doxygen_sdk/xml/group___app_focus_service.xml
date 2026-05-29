@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___app_focus_service" kind="group">
     <compoundname>AppFocusService</compoundname>
     <title>AppFocusService</title>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="521" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="521" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="531" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="531" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="569" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="569" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="579" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="579" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_focus_service_1ga519e14f1ff52ade4c3a3ccdf04825460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="555" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="555" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="565" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="565" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___app_focus_service_1ga28a3e31c137ca5d5c563701aee986726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -113,13 +113,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="573" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="573" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="583" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="583" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Handling app focus The AppFocusService allows developers to be notified when their apps become visible on the screen. Common reasons your app may be running but not be on screen are: it&apos;s still in the middle of launching and being revealed by a system animation, or it is being covered by a system window such as a notification. This service is useful for apps that require a high degree of user interactivity, like a game where you&apos;ll want to pause when a notification covers your app window. It can be also used for apps that want to sync up an intro animation to the end of the system animation that occurs before your app is visible. </para>
     </briefdescription>
     <detaileddescription>
-<para>Handling app focus The AppFocusService allows developers to be notified when their apps become visible on the screen. Common reasons your app may be running but not be on screen are: it&apos;s still in the middle of launching and being revealed by a system animation, or it is being covered by a system window such as a notification. This service is useful for apps that require a high degree of user interactivity, like a game where you&apos;ll want to pause when a notification covers your app window. It can be also used for apps that want to sync up an intro animation to the end of the system animation that occurs before your app is visible. </para>
     </detaileddescription>
   </compounddef>
 </doxygen>

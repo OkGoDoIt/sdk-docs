@@ -1,0 +1,1031 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___scroll_layer" kind="group">
+    <compoundname>ScrollLayer</compoundname>
+    <title>ScrollLayer</title>
+    <innerclass refid="struct_content_indicator_config" prot="public">ContentIndicatorConfig</innerclass>
+    <innerclass refid="struct_content_indicator_config_8colors" prot="public">ContentIndicatorConfig.colors</innerclass>
+    <innerclass refid="struct_scroll_layer_callbacks" prot="public">ScrollLayerCallbacks</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___scroll_layer_1ga8e9145430b2f9f92d02cf73cedab942c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ContentIndicatorDirection</name>
+        <enumvalue id="group___scroll_layer_1gga8e9145430b2f9f92d02cf73cedab942ca253fd0364ee895f8a06e8e4a25c6923f" prot="public">
+          <name>ContentIndicatorDirectionUp</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The up direction. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___scroll_layer_1gga8e9145430b2f9f92d02cf73cedab942ca975fe336ecd65b683ff9c73e21610e72" prot="public">
+          <name>ContentIndicatorDirectionDown</name>
+          <briefdescription>
+<para>The down direction. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___scroll_layer_1gga8e9145430b2f9f92d02cf73cedab942ca42f1415e203d09c71751a203e14ca8df" prot="public">
+          <name>NumContentIndicatorDirections</name>
+          <briefdescription>
+<para>The number of supported directions. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Value to describe directions for ContentIndicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___scroll_layer_1ga76d8252325d83822b5989c3151c296d1" kindref="member">content_indicator_configure_direction</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___scroll_layer_1ga8beb29f689a257c7b815e809209f6316" kindref="member">content_indicator_set_content_available</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7172" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7172" bodyend="7176"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___scroll_layer_1ga339729a64770132606a8ba833c993710" prot="public" static="no">
+        <type>struct ContentIndicator</type>
+        <definition>typedef struct ContentIndicator ContentIndicator</definition>
+        <argsstring></argsstring>
+        <name>ContentIndicator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7162" column="31" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___scroll_layer_1ga8d8b42edcb055403e522951bb6953251" prot="public" static="no">
+        <type>struct ScrollLayer</type>
+        <definition>typedef struct ScrollLayer ScrollLayer</definition>
+        <argsstring></argsstring>
+        <name>ScrollLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6989" column="26" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___scroll_layer_1ga1d78b150f7c6907988d00b7b75891560" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* ScrollLayerCallback) (struct ScrollLayer *scroll_layer, void *context)</definition>
+        <argsstring>)(struct ScrollLayer *scroll_layer, void *context)</argsstring>
+        <name>ScrollLayerCallback</name>
+        <briefdescription>
+<para>Function signature for the <computeroutput>.content_offset_changed_handler</computeroutput> callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6992" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6992" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___scroll_layer_1ga76d8252325d83822b5989c3151c296d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool content_indicator_configure_direction</definition>
+        <argsstring>(ContentIndicator *content_indicator, ContentIndicatorDirection direction, const ContentIndicatorConfig *config)</argsstring>
+        <name>content_indicator_configure_direction</name>
+        <param>
+          <type>ContentIndicator *</type>
+          <declname>content_indicator</declname>
+        </param>
+        <param>
+          <type><ref refid="group___scroll_layer_1ga8e9145430b2f9f92d02cf73cedab942c" kindref="member">ContentIndicatorDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_content_indicator_config" kindref="compound">ContentIndicatorConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Configures a ContentIndicator for the given direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content_indicator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ContentIndicator to configure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction for which to configure the ContentIndicator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration to use to configure the ContentIndicator. If NULL, the data for the specified direction will be reset. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the ContentIndicator was successfully configured for the given direction, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7205" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7205" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga570fdb39b8045d11e1e63b7fb5cd9826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ContentIndicator *</type>
+        <definition>ContentIndicator * content_indicator_create</definition>
+        <argsstring>(void)</argsstring>
+        <name>content_indicator_create</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Creates a ContentIndicator on the heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the ContentIndicator. <computeroutput>NULL</computeroutput> if the ContentIndicator could not be created. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7192" column="18" declfile="build/sdk/emery/include/pebble.h" declline="7192" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga33627eb5467fbf346d73900eb3718106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void content_indicator_destroy</definition>
+        <argsstring>(ContentIndicator *content_indicator)</argsstring>
+        <name>content_indicator_destroy</name>
+        <param>
+          <type>ContentIndicator *</type>
+          <declname>content_indicator</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a ContentIndicator previously created using <ref refid="group___scroll_layer_1ga570fdb39b8045d11e1e63b7fb5cd9826" kindref="member">content_indicator_create()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content_indicator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ContentIndicator to destroy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7196" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7196" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1gab78b12c113518ef42522b61bd46f8b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool content_indicator_get_content_available</definition>
+        <argsstring>(ContentIndicator *content_indicator, ContentIndicatorDirection direction)</argsstring>
+        <name>content_indicator_get_content_available</name>
+        <param>
+          <type>ContentIndicator *</type>
+          <declname>content_indicator</declname>
+        </param>
+        <param>
+          <type><ref refid="group___scroll_layer_1ga8e9145430b2f9f92d02cf73cedab942c" kindref="member">ContentIndicatorDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the availability status of content in the given direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content_indicator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ContentIndicator for which to get the content availability. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction for which to get the content availability. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if content is available in the given direction, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7213" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7213" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga8beb29f689a257c7b815e809209f6316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void content_indicator_set_content_available</definition>
+        <argsstring>(ContentIndicator *content_indicator, ContentIndicatorDirection direction, bool available)</argsstring>
+        <name>content_indicator_set_content_available</name>
+        <param>
+          <type>ContentIndicator *</type>
+          <declname>content_indicator</declname>
+        </param>
+        <param>
+          <type><ref refid="group___scroll_layer_1ga8e9145430b2f9f92d02cf73cedab942c" kindref="member">ContentIndicatorDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>available</declname>
+        </param>
+        <briefdescription>
+<para>Sets the availability status of content in the given direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>content_indicator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ContentIndicator for which to set the content availability. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction for which to set the content availability. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>available</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether or not content is available. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If times_out is enabled, calling this function resets any previously scheduled timeout timer for the ContentIndicator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7222" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7222" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga318c7ebc11aa6d2ecf12c534bf1274cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_add_child</definition>
+        <argsstring>(ScrollLayer *scroll_layer, Layer *child)</argsstring>
+        <name>scroll_layer_add_child</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type>Layer *</type>
+          <declname>child</declname>
+        </param>
+        <briefdescription>
+<para>Adds the child layer to the content sub-layer of the ScrollLayer. This will make the child layer part of the scrollable contents. The content sub-layer of the ScrollLayer will become the parent of the child layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer to which to add the child layer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Layer to add to the content sub-layer of the ScrollLayer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>You may need to update the size of the scrollable contents using <ref refid="group___scroll_layer_1ga95d1e0f61d1bf54eabd1c59f3e295489" kindref="member">scroll_layer_set_content_size()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7039" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7039" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga0d97f30d3b27b841b69b1d80e9aff7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ScrollLayer *</type>
+        <definition>ScrollLayer * scroll_layer_create</definition>
+        <argsstring>(GRect frame)</argsstring>
+        <name>scroll_layer_create</name>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new ScrollLayer on the heap and initalizes it with the default values: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Clips: <computeroutput>true</computeroutput></para>
+</listitem><listitem><para>Hidden: <computeroutput>false</computeroutput></para>
+</listitem><listitem><para>Content size: <computeroutput>frame.size</computeroutput></para>
+</listitem><listitem><para>Content offset: <ref refid="group___graphics_types_1ga24192f6809de17d816671a1d6a7b59b5" kindref="member">GPointZero</ref></para>
+</listitem><listitem><para>Callbacks: None (<computeroutput>NULL</computeroutput> for each one)</para>
+</listitem><listitem><para>Callback context: <computeroutput>NULL</computeroutput> <simplesect kind="return"><para>A pointer to the ScrollLayer. <computeroutput>NULL</computeroutput> if the ScrollLayer could not be created </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7020" column="13" declfile="build/sdk/emery/include/pebble.h" declline="7020" declcolumn="13"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga2fa5ed30c56396db4f3b0325d3e22365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_destroy</definition>
+        <argsstring>(ScrollLayer *scroll_layer)</argsstring>
+        <name>scroll_layer_destroy</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a ScrollLayer previously created by scroll_layer_create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7023" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7023" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga10bb09ab49d9086eb069ad66b589c218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ContentIndicator *</type>
+        <definition>ContentIndicator * scroll_layer_get_content_indicator</definition>
+        <argsstring>(ScrollLayer *scroll_layer)</argsstring>
+        <name>scroll_layer_get_content_indicator</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the ContentIndicator for a ScrollLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer for which to get the ContentIndicator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the ContentIndicator, or <computeroutput>NULL</computeroutput> upon failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7167" column="18" declfile="build/sdk/emery/include/pebble.h" declline="7167" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga2fda3786915d157310adc5cca2db535a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+        <definition>GPoint scroll_layer_get_content_offset</definition>
+        <argsstring>(ScrollLayer *scroll_layer)</argsstring>
+        <name>scroll_layer_get_content_offset</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the point by which the contents are offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer for which to get the content offset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___scroll_layer_1ga09d6b9d6b9016eb438a7e3d51eb4041d" kindref="member">scroll_layer_set_content_offset</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7100" column="8" declfile="build/sdk/emery/include/pebble.h" declline="7100" declcolumn="8"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1gaaf9a11857e592b96f6e98f883d3bb479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+        <definition>GSize scroll_layer_get_content_size</definition>
+        <argsstring>(const ScrollLayer *scroll_layer)</argsstring>
+        <name>scroll_layer_get_content_size</name>
+        <param>
+          <type>const ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the size of the contents layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer for which to get the content size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___scroll_layer_1ga95d1e0f61d1bf54eabd1c59f3e295489" kindref="member">scroll_layer_set_content_size</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7113" column="7" declfile="build/sdk/emery/include/pebble.h" declline="7113" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga258aab4c7516e91c3c5fd06d90a3d5fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * scroll_layer_get_layer</definition>
+        <argsstring>(const ScrollLayer *scroll_layer)</argsstring>
+        <name>scroll_layer_get_layer</name>
+        <param>
+          <type>const ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the &quot;root&quot; Layer of the scroll layer, which is the parent for the sub- layers used for its implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the ScrollLayer for which to get the &quot;root&quot; Layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The &quot;root&quot; Layer of the scroll layer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7029" column="7" declfile="build/sdk/emery/include/pebble.h" declline="7029" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1gaa4cbbb9540f3ccbf3d67394aa6dae85a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool scroll_layer_get_paging</definition>
+        <argsstring>(ScrollLayer *scroll_layer)</argsstring>
+        <name>scroll_layer_get_paging</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <briefdescription>
+<para>Check whether or not the ScrollLayer uses paging when pressing buttons. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scroll layer for which to get the paging behavior. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True, if paging is enabled; false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7159" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7159" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1gaf77b23563424e49f40b6da8972b8c950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool scroll_layer_get_shadow_hidden</definition>
+        <argsstring>(const ScrollLayer *scroll_layer)</argsstring>
+        <name>scroll_layer_get_shadow_hidden</name>
+        <param>
+          <type>const ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the visibility of the scroll layer shadow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scroll layer for which to get the visibility </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the shadow is hidden, false if it is not hidden. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7148" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7148" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga5e9eb81851e021f62a552e304b5eca49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_scroll_down_click_handler</definition>
+        <argsstring>(ClickRecognizerRef recognizer, void *context)</argsstring>
+        <name>scroll_layer_scroll_down_click_handler</name>
+        <param>
+          <type><ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref></type>
+          <declname>recognizer</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>The click handlers for the DOWN button that the scroll layer will install as part of <ref refid="group___scroll_layer_1ga2c65fbd5bdc6af121312141368207775" kindref="member">scroll_layer_set_click_config_onto_window()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This handler is exposed, in case one wants to implement an alternative handler for the DOWN button, as a way to invoke the default behavior. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recognizer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The click recognizer for which the handler is called </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A void pointer to the ScrollLayer that is the context of the click event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7135" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7135" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga54271d3c507498c6548d142b017c949a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_scroll_up_click_handler</definition>
+        <argsstring>(ClickRecognizerRef recognizer, void *context)</argsstring>
+        <name>scroll_layer_scroll_up_click_handler</name>
+        <param>
+          <type><ref refid="group___clicks_1gab0f235645c2d1eb7b622542b59706085" kindref="member">ClickRecognizerRef</ref></type>
+          <declname>recognizer</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>The click handlers for the UP button that the scroll layer will install as part of <ref refid="group___scroll_layer_1ga2c65fbd5bdc6af121312141368207775" kindref="member">scroll_layer_set_click_config_onto_window()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This handler is exposed, in case one wants to implement an alternative handler for the UP button, as a way to invoke the default behavior. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recognizer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The click recognizer for which the handler is called </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A void pointer to the ScrollLayer that is the context of the click event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7127" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7127" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga2aaf8ab053b356ccfc61afefe2504faf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_set_callbacks</definition>
+        <argsstring>(ScrollLayer *scroll_layer, ScrollLayerCallbacks callbacks)</argsstring>
+        <name>scroll_layer_set_callbacks</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_scroll_layer_callbacks" kindref="compound">ScrollLayerCallbacks</ref></type>
+          <declname>callbacks</declname>
+        </param>
+        <briefdescription>
+<para>Sets the callbacks that the scroll layer exposes. The <computeroutput>context</computeroutput> as set by <ref refid="group___scroll_layer_1gaeb62332973b899f585563270fa7db637" kindref="member">scroll_layer_set_context()</ref> is passed into each of the callbacks. See <ref refid="struct_scroll_layer_callbacks" kindref="compound">ScrollLayerCallbacks</ref> for the different callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If the <computeroutput>context</computeroutput> is NULL, a pointer to scroll_layer is used as context parameter instead when calling callbacks. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer for which to assign new callbacks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callbacks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callbacks. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7072" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7072" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga2c65fbd5bdc6af121312141368207775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_set_click_config_onto_window</definition>
+        <argsstring>(ScrollLayer *scroll_layer, struct Window *window)</argsstring>
+        <name>scroll_layer_set_click_config_onto_window</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type>struct Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to set the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> callback on the given window to scroll layer&apos;s internal click config provider. This internal click configuration provider, will set up the default UP &amp; DOWN scrolling behavior. This function calls <ref refid="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" kindref="member">window_set_click_config_provider_with_context</ref> to accomplish this. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If you application has set a <computeroutput>.click_config_provider</computeroutput> callback using <ref refid="group___scroll_layer_1ga2aaf8ab053b356ccfc61afefe2504faf" kindref="member">scroll_layer_set_callbacks()</ref>, this will be called by the internal click config provider, after configuring the UP &amp; DOWN buttons. This allows your application to configure the SELECT button behavior and optionally override the UP &amp; DOWN button behavior. The callback context for the SELECT click recognizer is automatically set to the scroll layer&apos;s context (see <ref refid="group___scroll_layer_1gaeb62332973b899f585563270fa7db637" kindref="member">scroll_layer_set_context()</ref> ). This context is passed into <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> callbacks. For the UP and DOWN buttons, the scroll layer itself is passed in by default as the callback context in order to deal with those buttons presses to scroll up and down automatically. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer that needs to receive click events. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window for which to set the click configuration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___clicks" kindref="compound">Clicks</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" kindref="member">window_set_click_config_provider_with_context</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7063" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7063" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga09d6b9d6b9016eb438a7e3d51eb4041d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_set_content_offset</definition>
+        <argsstring>(ScrollLayer *scroll_layer, GPoint offset, bool animated)</argsstring>
+        <name>scroll_layer_set_content_offset</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+<para>Scrolls to the given offset, optionally animated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When scrolling down, the offset&apos;s <computeroutput>.y</computeroutput> decrements. When scrolling up, the offset&apos;s <computeroutput>.y</computeroutput> increments. If scrolled completely to the top, the offset is <ref refid="group___graphics_types_1ga24192f6809de17d816671a1d6a7b59b5" kindref="member">GPointZero</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>The <computeroutput>.x</computeroutput> field must be <computeroutput>0</computeroutput>. Horizontal scrolling is not supported. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer for which to set the content offset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The final content offset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pass in <computeroutput>true</computeroutput> to animate to the new content offset, or <computeroutput>false</computeroutput> to set the new content offset without animating. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___scroll_layer_1ga2fda3786915d157310adc5cca2db535a" kindref="member">scroll_layer_get_content_offset</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7095" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7095" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga95d1e0f61d1bf54eabd1c59f3e295489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_set_content_size</definition>
+        <argsstring>(ScrollLayer *scroll_layer, GSize size)</argsstring>
+        <name>scroll_layer_set_content_size</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Sets the size of the contents layer. This determines the area that is scrollable. At the moment, this needs to be set &quot;manually&quot; and is not derived from the geometry of the contents layers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer for which to set the content size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new content size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___scroll_layer_1gaaf9a11857e592b96f6e98f883d3bb479" kindref="member">scroll_layer_get_content_size</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7108" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7108" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1gaeb62332973b899f585563270fa7db637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_set_context</definition>
+        <argsstring>(ScrollLayer *scroll_layer, void *context)</argsstring>
+        <name>scroll_layer_set_context</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Sets a new callback context. This context is passed into the scroll layer&apos;s callbacks and also the <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> for the SELECT button. If <computeroutput>NULL</computeroutput> or not set, the context defaults to a pointer to the ScrollLayer itself. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer for which to assign the new callback context. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callback context. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___scroll_layer_1ga2c65fbd5bdc6af121312141368207775" kindref="member">scroll_layer_set_click_config_onto_window</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___scroll_layer_1ga2aaf8ab053b356ccfc61afefe2504faf" kindref="member">scroll_layer_set_callbacks</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7083" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7083" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1ga9282d6e6c53061b26b2df60e8b2d9553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_set_frame</definition>
+        <argsstring>(ScrollLayer *scroll_layer, GRect frame)</argsstring>
+        <name>scroll_layer_set_frame</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Set the frame of the scroll layer and adjusts the internal layers&apos; geometry accordingly. The scroll layer is marked dirty automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ScrollLayer for which to set the frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7119" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7119" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3790">GRect</references>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1gaeebdc9b857953f55822da9e6b77bd0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_set_paging</definition>
+        <argsstring>(ScrollLayer *scroll_layer, bool paging_enabled)</argsstring>
+        <name>scroll_layer_set_paging</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>paging_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables paging of the ScrollLayer (default: disabled). When enabled, every button press will change the scroll offset by the frame&apos;s height. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scroll layer for which to enable or disable paging </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>paging_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True, if paging should be enabled. False to enable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7154" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7154" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___scroll_layer_1gab8d87f6647984e9532e848f04f610ae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scroll_layer_set_shadow_hidden</definition>
+        <argsstring>(ScrollLayer *scroll_layer, bool hidden)</argsstring>
+        <name>scroll_layer_set_shadow_hidden</name>
+        <param>
+          <type>ScrollLayer *</type>
+          <declname>scroll_layer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hidden</declname>
+        </param>
+        <briefdescription>
+<para>Sets the visibility of the scroll layer shadow. If the visibility has changed, <ref refid="group___layer_1ga00bc895642aa02ae2d224659529382c8" kindref="member">layer_mark_dirty()</ref> will be called automatically on the scroll layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scroll_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scroll layer for which to set the shadow visibility </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hidden</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Supply <computeroutput>true</computeroutput> to make the shadow hidden, or <computeroutput>false</computeroutput> to make it non-hidden. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7143" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7143" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Layer that scrolls its contents, animated. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="scroll_layer.png" inline="yes"></image>
+ <image type="latex" name="scroll_layer.png" inline="yes"></image>
+ <image type="rtf" name="scroll_layer.png" inline="yes"></image>
+ <image type="docbook" name="scroll_layer.png" inline="yes"></image>
+ <image type="xml" name="scroll_layer.png" inline="yes"></image>
+</para>
+<para><heading level="3">Key Points</heading>
+</para>
+<para><itemizedlist>
+<listitem><para>Facilitates vertical scrolling of a layer sub-hierarchy zero or more arbitrary layers. The example image shows a scroll layer containing one large TextLayer.</para>
+</listitem><listitem><para>Shadows to indicate that there is more content are automatically drawn on top of the content. When the end of the scroll layer is reached, the shadow will automatically be retracted.</para>
+</listitem><listitem><para>Scrolling from one offset to another is animated implicitly by default.</para>
+</listitem><listitem><para>The scroll layer contains a &quot;content&quot; sub-layer, which is the layer that is actually moved up an down. Any layer that is a child of this &quot;content&quot; sub-layer, will be moved as well. Effectively, an entire layout of layers can be scrolled this way. Use the convenience function <ref refid="group___scroll_layer_1ga318c7ebc11aa6d2ecf12c534bf1274cb" kindref="member">scroll_layer_add_child()</ref> to add child layers to the &quot;content&quot; sub-layer.</para>
+</listitem><listitem><para>The scroll layer needs to be informed of the total size of the contents, in order to calculate from and to what point it should be able to scroll. Use <ref refid="group___scroll_layer_1ga95d1e0f61d1bf54eabd1c59f3e295489" kindref="member">scroll_layer_set_content_size()</ref> to set the size of the contents.</para>
+</listitem><listitem><para>The button behavior is set up, using the convenience function <ref refid="group___scroll_layer_1ga2c65fbd5bdc6af121312141368207775" kindref="member">scroll_layer_set_click_config_onto_window()</ref>. This will associate the UP and DOWN buttons with scrolling up and down.</para>
+</listitem><listitem><para>The SELECT button can be configured by installing a click configuration provider using <ref refid="group___scroll_layer_1ga2aaf8ab053b356ccfc61afefe2504faf" kindref="member">scroll_layer_set_callbacks()</ref>.</para>
+</listitem><listitem><para>To scroll programatically to a certain offset, use <ref refid="group___scroll_layer_1ga09d6b9d6b9016eb438a7e3d51eb4041d" kindref="member">scroll_layer_set_content_offset()</ref>.</para>
+</listitem><listitem><para>It is possible to get called back for each scrolling increment, by installing the <computeroutput>.content_offset_changed_handler</computeroutput> callback using <ref refid="group___scroll_layer_1ga2aaf8ab053b356ccfc61afefe2504faf" kindref="member">scroll_layer_set_callbacks()</ref>.</para>
+</listitem><listitem><para>Only vertical scrolling is supported at the moment. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

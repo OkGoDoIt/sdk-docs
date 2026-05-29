@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___text_drawing" kind="group">
     <compoundname>TextDrawing</compoundname>
     <title>Drawing Text</title>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4722" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4722" bodyend="4729"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4862" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4862" bodyend="4869"/>
       </memberdef>
       <memberdef kind="enum" id="group___text_drawing_1gadad5abc1b1cfbddd48bd79f70c05b8fa" prot="public" static="no" strong="no">
         <type></type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4706" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4706" bodyend="4717"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4846" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4846" bodyend="4857"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4732" column="30" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4732" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4872" column="30" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="4872" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -201,8 +201,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4790" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4790" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="4930" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4930" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3548">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___text_drawing_1gabade3d7b15ab0927ab237047899948d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GTextAttributes *</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4737" column="17" declfile="build/sdk/aplite/include/pebble.h" declline="4737" declcolumn="17"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4877" column="17" declfile="build/sdk/aplite/include/pebble.h" declline="4877" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="group___text_drawing_1gaba4f390d8439da0532b2fbe762fb4a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4740" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4740" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4880" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4880" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___text_drawing_1gaf447fb3ce85161d8d1ccb97ef78fed13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -302,9 +302,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4774" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4774" declcolumn="6"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="4914" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4914" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3507">GPoint</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3548">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___text_drawing_1ga84e08b94b1509fd06f00735c1f67f2c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -348,7 +348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4754" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4754" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4894" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4894" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___text_drawing_1ga44f1cfbfa0b36d7fdc16174eed382adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -380,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4761" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4761" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4901" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4901" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___text_drawing_1ga0382b73150e1314d378b98d0547f925e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -412,7 +412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4746" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4746" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="4886" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="4886" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___text_drawing_1ga4e3ae8151d8d57e23fc160251242face" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
@@ -492,9 +492,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4804" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="4804" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
-        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3388">GSize</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="4944" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="4944" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3548">GRect</references>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3527">GSize</references>
       </memberdef>
       <memberdef kind="function" id="group___text_drawing_1ga151630f57a7e401d7df6c1a955b1cb24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
@@ -586,9 +586,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="4819" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="4819" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
-        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3388">GSize</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="4959" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="4959" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3548">GRect</references>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3527">GSize</references>
       </memberdef>
     </sectiondef>
     <briefdescription>

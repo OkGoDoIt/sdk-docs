@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___exit_reason" kind="group">
     <compoundname>ExitReason</compoundname>
     <title>Exit Reason</title>
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3212" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3212" bodyend="3217"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3446" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3446" bodyend="3451"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3221" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3221" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3455" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3455" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

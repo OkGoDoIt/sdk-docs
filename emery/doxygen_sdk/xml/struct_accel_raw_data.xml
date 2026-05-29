@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_accel_raw_data" kind="struct" language="C++" prot="public">
+    <compoundname>AccelRawData</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_accel_raw_data_1a918cd7be9f4ad84dca85d76e8e866259" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AccelRawData::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>AccelRawData::x</qualifiedname>
+        <briefdescription>
+<para>acceleration along the x axis </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="693" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_raw_data_1ad0b4192d713701f157945e1102d1355e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AccelRawData::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>AccelRawData::y</qualifiedname>
+        <briefdescription>
+<para>acceleration along the y axis </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="695" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_raw_data_1a15db790b41710b4d7781150f079ff538" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t AccelRawData::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>AccelRawData::z</qualifiedname>
+        <briefdescription>
+<para>acceleration along the z axis </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="697" column="11" bodyfile="build/sdk/emery/include/pebble.h" bodystart="697" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A single accelerometer sample for all three axes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="691" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="691" bodyend="698"/>
+    <listofallmembers>
+      <member refid="struct_accel_raw_data_1a918cd7be9f4ad84dca85d76e8e866259" prot="public" virt="non-virtual"><scope>AccelRawData</scope><name>x</name></member>
+      <member refid="struct_accel_raw_data_1ad0b4192d713701f157945e1102d1355e" prot="public" virt="non-virtual"><scope>AccelRawData</scope><name>y</name></member>
+      <member refid="struct_accel_raw_data_1a15db790b41710b4d7781150f079ff538" prot="public" virt="non-virtual"><scope>AccelRawData</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

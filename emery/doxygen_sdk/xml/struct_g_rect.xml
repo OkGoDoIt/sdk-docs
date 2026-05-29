@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_g_rect" kind="struct" language="C++" prot="public">
+    <compoundname>GRect</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_rect_1a28af4b04e081517f4f546c4af5b44612" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+        <definition>GPoint GRect::origin</definition>
+        <argsstring></argsstring>
+        <name>origin</name>
+        <qualifiedname>GRect::origin</qualifiedname>
+        <briefdescription>
+<para>The coordinate of the upper-lefthand corner point of the rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3784" column="10" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_rect_1acd904b1a13b264f257827a295d2d208e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+        <definition>GSize GRect::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>GRect::size</qualifiedname>
+        <briefdescription>
+<para>The size of the rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3786" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3786" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a rectangle and defining it using the origin of the upper-lefthand corner and its size. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>GPoint</label>
+        <link refid="struct_g_point"/>
+      </node>
+      <node id="1">
+        <label>GRect</label>
+        <link refid="struct_g_rect"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>origin</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GSize</label>
+        <link refid="struct_g_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="3782" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3782" bodyend="3787"/>
+    <listofallmembers>
+      <member refid="struct_g_rect_1a28af4b04e081517f4f546c4af5b44612" prot="public" virt="non-virtual"><scope>GRect</scope><name>origin</name></member>
+      <member refid="struct_g_rect_1acd904b1a13b264f257827a295d2d208e" prot="public" virt="non-virtual"><scope>GRect</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

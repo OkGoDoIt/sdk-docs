@@ -1,0 +1,727 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___app_message" kind="group">
+    <compoundname>AppMessage</compoundname>
+    <title>AppMessage</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AppMessageResult</name>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea12a6ea49b151222e76cf4b99b7c0c4cc" prot="public">
+          <name>APP_MSG_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>(0) All good, operation was successful. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea4a03bcc21fc33a6acc7d73188b2b4b21" prot="public">
+          <name>APP_MSG_SEND_TIMEOUT</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>(2) The other end did not confirm receiving the sent data with an (n)ack in time. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eadba700a7db67d4238d24e7379b69fba3" prot="public">
+          <name>APP_MSG_SEND_REJECTED</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>(4) The other end rejected the sent data, with a &quot;nack&quot; reply. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea8dda18d5302ef6b07aa83985e91b54b7" prot="public">
+          <name>APP_MSG_NOT_CONNECTED</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>(8) The other end was not connected. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea38e78da25eed665c85368df213ed8088" prot="public">
+          <name>APP_MSG_APP_NOT_RUNNING</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>(16) The local application was not running. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eadfb91bdd9c369cc2eb00e019b4cf3846" prot="public">
+          <name>APP_MSG_INVALID_ARGS</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+<para>(32) The function was called with invalid arguments. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaad6af2baa488efedd56b17f0ed1e8339" prot="public">
+          <name>APP_MSG_BUSY</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+<para>(64) There are pending (in or outbound) messages that need to be processed first before new ones can be received or sent. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaf2eb603be26c295d0a16433564a72598" prot="public">
+          <name>APP_MSG_BUFFER_OVERFLOW</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+<para>(128) The buffer was too small to contain the incoming message. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea9ea88c5f059e1aee4010fee576d766bd" prot="public">
+          <name>APP_MSG_ALREADY_RELEASED</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+<para>(512) The resource had already been released. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea1655968e4f04aa0b357acc4605dcff64" prot="public">
+          <name>APP_MSG_CALLBACK_ALREADY_REGISTERED</name>
+          <initializer>= 1 &lt;&lt; 10</initializer>
+          <briefdescription>
+<para>(1024) The callback was already registered. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaf423093b0f84bca4495e227bdcd207bd" prot="public">
+          <name>APP_MSG_CALLBACK_NOT_REGISTERED</name>
+          <initializer>= 1 &lt;&lt; 11</initializer>
+          <briefdescription>
+<para>(2048) The callback could not be deregistered, because it had not been registered before. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ead1cce21da2d8b46e305f9550a7384238" prot="public">
+          <name>APP_MSG_OUT_OF_MEMORY</name>
+          <initializer>= 1 &lt;&lt; 12</initializer>
+          <briefdescription>
+<para>(4096) The system did not have sufficient application memory to perform the requested operation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eab8679d62177c2bce72ab899c0cf3353a" prot="public">
+          <name>APP_MSG_CLOSED</name>
+          <initializer>= 1 &lt;&lt; 13</initializer>
+          <briefdescription>
+<para>(8192) App message was closed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaa965e9ce0375fcc796fddaf12e319ee4" prot="public">
+          <name>APP_MSG_INTERNAL_ERROR</name>
+          <initializer>= 1 &lt;&lt; 14</initializer>
+          <briefdescription>
+<para>(16384) An internal OS error prevented AppMessage from completing an operation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea6c6486cbe2dc939fc4d49d0401371820" prot="public">
+          <name>APP_MSG_INVALID_STATE</name>
+          <initializer>= 1 &lt;&lt; 15</initializer>
+          <briefdescription>
+<para>(32768) The function was called while App Message was not in the appropriate state. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>AppMessage result codes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2285" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2285" bodyend="2332"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___app_message_1gad17a01f74a89117b239a3a14e3b67b8b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppMessageInboxDropped) (AppMessageResult reason, void *context)</definition>
+        <argsstring>)(AppMessageResult reason, void *context)</argsstring>
+        <name>AppMessageInboxDropped</name>
+        <briefdescription>
+<para>Called after an incoming message is dropped. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reason why the message was dropped. Some possibilities include <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaad6af2baa488efedd56b17f0ed1e8339" kindref="member">APP_MSG_BUSY</ref> and <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaf2eb603be26c295d0a16433564a72598" kindref="member">APP_MSG_BUFFER_OVERFLOW</ref>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application data as specified when registering the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa63353190fd" kindref="member">app_message_outbox_begin()</ref> from this handler to prepare a new message. This will invalidate the previous dictionary iterator; do not use it after calling <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa63353190fd" kindref="member">app_message_outbox_begin()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2378" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___app_message_1gaac76ed32daf5f0da989eadaa10afee2b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppMessageInboxReceived) (DictionaryIterator *iterator, void *context)</definition>
+        <argsstring>)(DictionaryIterator *iterator, void *context)</argsstring>
+        <name>AppMessageInboxReceived</name>
+        <briefdescription>
+<para>Called after an incoming message is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator to the received message. Never NULL. Note that the iterator cannot be modified or saved off. The library may need to re-use the buffered space where this message is supplied. Returning from the callback indicates to the library that the received message contents are no longer needed or have already been externalized outside its buffering space and iterator.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application data as specified when registering the callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2364" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___app_message_1ga4f312e4c503cb1ceac932ed3b7ad069a" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppMessageOutboxFailed) (DictionaryIterator *iterator, AppMessageResult reason, void *context)</definition>
+        <argsstring>)(DictionaryIterator *iterator, AppMessageResult reason, void *context)</argsstring>
+        <name>AppMessageOutboxFailed</name>
+        <briefdescription>
+<para>Called after an outbound message has not been sent successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator to the sent message. The iterator will be in the final state that was sent. Note that the iterator cannot be modified or saved off as the library will re-open the dictionary with dict_begin() after this callback returns.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The result of the operation. Some possibilities for the value include <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea4a03bcc21fc33a6acc7d73188b2b4b21" kindref="member">APP_MSG_SEND_TIMEOUT</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eadba700a7db67d4238d24e7379b69fba3" kindref="member">APP_MSG_SEND_REJECTED</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea8dda18d5302ef6b07aa83985e91b54b7" kindref="member">APP_MSG_NOT_CONNECTED</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea38e78da25eed665c85368df213ed8088" kindref="member">APP_MSG_APP_NOT_RUNNING</ref>, and the combination <computeroutput>(<ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea8dda18d5302ef6b07aa83985e91b54b7" kindref="member">APP_MSG_NOT_CONNECTED</ref> | <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea38e78da25eed665c85368df213ed8088" kindref="member">APP_MSG_APP_NOT_RUNNING</ref>)</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application data as specified when registering the callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Note that you can call <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa63353190fd" kindref="member">app_message_outbox_begin()</ref> from this handler to prepare a new message. This will invalidate the previous dictionary iterator; do not use it after calling <ref refid="group___app_message_1ga7715e322ec2a7a49bf66aa63353190fd" kindref="member">app_message_outbox_begin()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2410" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___app_message_1gacc26762468d7c5067aac6bc89f9874ee" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppMessageOutboxSent) (DictionaryIterator *iterator, void *context)</definition>
+        <argsstring>)(DictionaryIterator *iterator, void *context)</argsstring>
+        <name>AppMessageOutboxSent</name>
+        <briefdescription>
+<para>Called after an outbound message has been sent and the reply has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dictionary iterator to the sent message. The iterator will be in the final state that was sent. Note that the iterator cannot be modified or saved off as the library will re-open the dictionary with dict_begin() after this callback returns.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to application data as specified when registering the callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2390" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2390" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___app_message_1ga4794243c5779d5e861f964b61e0a7652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_message_deregister_callbacks</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_message_deregister_callbacks</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deregisters all callbacks and their context. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2351" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2351" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1gad1a95b257c5e488b7bd62b66512bd7c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * app_message_get_context</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_message_get_context</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the context that will be passed to all AppMessage callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current context on record. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2416" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2416" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1gad544294c297f3d1941bd94b6b396a24b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t app_message_inbox_size_maximum</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_message_inbox_size_maximum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Programatically determine the inbox size maximum in the current configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The inbox size maximum on this firmware.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___app_message_1ga8a213339bca4388cf17c3f4c4b2e11fd" kindref="member">APP_MESSAGE_INBOX_SIZE_MINIMUM</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___app_message_1gaa8161491da4b16dde64be8754cfde815" kindref="member">app_message_outbox_size_maximum()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2483" column="10" declfile="build/sdk/emery/include/pebble.h" declline="2483" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1ga26735aa7eb22ab58bd7496e673d03155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref></type>
+        <definition>AppMessageResult app_message_open</definition>
+        <argsstring>(const uint32_t size_inbound, const uint32_t size_outbound)</argsstring>
+        <name>app_message_open</name>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>size_inbound</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>size_outbound</declname>
+        </param>
+        <briefdescription>
+<para>Open AppMessage to transfers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="group___dictionary_1gad31424a83643adbfd9e84c4bd37e4627" kindref="member">dict_calc_buffer_size_from_tuplets()</ref> or <ref refid="group___dictionary_1ga0551d069624fb5bfc066fecfa4153bde" kindref="member">dict_calc_buffer_size()</ref> to estimate the size you need.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size_inbound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The required size for the Inbox buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size_outbound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The required size for the Outbox buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A result code such as <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea12a6ea49b151222e76cf4b99b7c0c4cc" kindref="member">APP_MSG_OK</ref> or <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ead1cce21da2d8b46e305f9550a7384238" kindref="member">APP_MSG_OUT_OF_MEMORY</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>It is recommended that if the Inbox will be used, that at least the Inbox callbacks should be registered before this call. Otherwise it is possible for an Inbox message to be NACK&apos;ed without being seen by the application. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2347" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2347" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1ga7715e322ec2a7a49bf66aa63353190fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref></type>
+        <definition>AppMessageResult app_message_outbox_begin</definition>
+        <argsstring>(DictionaryIterator **iterator)</argsstring>
+        <name>app_message_outbox_begin</name>
+        <param>
+          <type><ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> **</type>
+          <declname>iterator</declname>
+        </param>
+        <briefdescription>
+<para>Begin writing to the Outbox&apos;s Dictionary buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location to write the <ref refid="struct_dictionary_iterator" kindref="compound">DictionaryIterator</ref> pointer. This will be NULL on failure.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A result code, including but not limited to <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea12a6ea49b151222e76cf4b99b7c0c4cc" kindref="member">APP_MSG_OK</ref>, <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eadfb91bdd9c369cc2eb00e019b4cf3846" kindref="member">APP_MSG_INVALID_ARGS</ref> or <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaad6af2baa488efedd56b17f0ed1e8339" kindref="member">APP_MSG_BUSY</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>After a successful call, one can add values to the dictionary using functions like <ref refid="group___dictionary_1ga30091feef740732d5d6bc3cf2312642a" kindref="member">dict_write_data()</ref> and friends.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___dictionary" kindref="compound">Dictionary</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2506" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2506" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1ga54169009d1ad008ea8e4f66005ce9cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref></type>
+        <definition>AppMessageResult app_message_outbox_send</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_message_outbox_send</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sends the outbound dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A result code, including but not limited to <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29ea12a6ea49b151222e76cf4b99b7c0c4cc" kindref="member">APP_MSG_OK</ref> or <ref refid="group___app_message_1gga695a78c926b20edbb14d7faf5a78c29eaad6af2baa488efedd56b17f0ed1e8339" kindref="member">APP_MSG_BUSY</ref>. The APP_MSG_OK code does not mean that the message was sent successfully, but only that the start of processing was successful. Since this call is asynchronous, callbacks provide the final result instead.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___app_message_1gacc26762468d7c5067aac6bc89f9874ee" kindref="member">AppMessageOutboxSent</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___app_message_1ga4f312e4c503cb1ceac932ed3b7ad069a" kindref="member">AppMessageOutboxFailed</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2517" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2517" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1gaa8161491da4b16dde64be8754cfde815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t app_message_outbox_size_maximum</definition>
+        <argsstring>(void)</argsstring>
+        <name>app_message_outbox_size_maximum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Programatically determine the outbox size maximum in the current configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The outbox size maximum on this firmware.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___app_message_1ga6fe648fbe225cda63583342bb2305187" kindref="member">APP_MESSAGE_OUTBOX_SIZE_MINIMUM</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___app_message_1gad544294c297f3d1941bd94b6b396a24b" kindref="member">app_message_inbox_size_maximum()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2492" column="10" declfile="build/sdk/emery/include/pebble.h" declline="2492" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1gad15eeddef5ffa5ea0185eb734c0fbe9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_message_1gad17a01f74a89117b239a3a14e3b67b8b" kindref="member">AppMessageInboxDropped</ref></type>
+        <definition>AppMessageInboxDropped app_message_register_inbox_dropped</definition>
+        <argsstring>(AppMessageInboxDropped dropped_callback)</argsstring>
+        <name>app_message_register_inbox_dropped</name>
+        <param>
+          <type><ref refid="group___app_message_1gad17a01f74a89117b239a3a14e3b67b8b" kindref="member">AppMessageInboxDropped</ref></type>
+          <declname>dropped_callback</declname>
+        </param>
+        <briefdescription>
+<para>Registers a function that will be called after any Inbox message is received but dropped by the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only one callback may be registered at a time. Each subsequent call to this function will replace the previous callback. The callback is optional; setting it to NULL will deregister the current callback and no function will be called anymore.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dropped_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will be called going forward; NULL to not have a callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previous callback (or NULL) that was on record. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2448" column="24" declfile="build/sdk/emery/include/pebble.h" declline="2448" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1ga9ab844c63d926f0e8f708a171b3838d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_message_1gaac76ed32daf5f0da989eadaa10afee2b" kindref="member">AppMessageInboxReceived</ref></type>
+        <definition>AppMessageInboxReceived app_message_register_inbox_received</definition>
+        <argsstring>(AppMessageInboxReceived received_callback)</argsstring>
+        <name>app_message_register_inbox_received</name>
+        <param>
+          <type><ref refid="group___app_message_1gaac76ed32daf5f0da989eadaa10afee2b" kindref="member">AppMessageInboxReceived</ref></type>
+          <declname>received_callback</declname>
+        </param>
+        <briefdescription>
+<para>Registers a function that will be called after any Inbox message is received successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only one callback may be registered at a time. Each subsequent call to this function will replace the previous callback. The callback is optional; setting it to NULL will deregister the current callback and no function will be called anymore.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">received_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will be called going forward; NULL to not have a callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previous callback (or NULL) that was on record. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2436" column="25" declfile="build/sdk/emery/include/pebble.h" declline="2436" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1ga73c134254ff2b17d3c57c7d019e79323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_message_1ga4f312e4c503cb1ceac932ed3b7ad069a" kindref="member">AppMessageOutboxFailed</ref></type>
+        <definition>AppMessageOutboxFailed app_message_register_outbox_failed</definition>
+        <argsstring>(AppMessageOutboxFailed failed_callback)</argsstring>
+        <name>app_message_register_outbox_failed</name>
+        <param>
+          <type><ref refid="group___app_message_1ga4f312e4c503cb1ceac932ed3b7ad069a" kindref="member">AppMessageOutboxFailed</ref></type>
+          <declname>failed_callback</declname>
+        </param>
+        <briefdescription>
+<para>Registers a function that will be called after any Outbox message is not sent with a timely ACK reply. The call to <ref refid="group___app_message_1ga54169009d1ad008ea8e4f66005ce9cfc" kindref="member">app_message_outbox_send()</ref> must have succeeded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only one callback may be registered at a time. Each subsequent call to this function will replace the previous callback. The callback is optional; setting it to NULL will deregister the current callback and no function will be called anymore.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">failed_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will be called going forward; NULL to not have a callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previous callback (or NULL) that was on record. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2474" column="24" declfile="build/sdk/emery/include/pebble.h" declline="2474" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1gae7cbb364b6e932c4bfd1ae89ecca87f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___app_message_1gacc26762468d7c5067aac6bc89f9874ee" kindref="member">AppMessageOutboxSent</ref></type>
+        <definition>AppMessageOutboxSent app_message_register_outbox_sent</definition>
+        <argsstring>(AppMessageOutboxSent sent_callback)</argsstring>
+        <name>app_message_register_outbox_sent</name>
+        <param>
+          <type><ref refid="group___app_message_1gacc26762468d7c5067aac6bc89f9874ee" kindref="member">AppMessageOutboxSent</ref></type>
+          <declname>sent_callback</declname>
+        </param>
+        <briefdescription>
+<para>Registers a function that will be called after any Outbox message is sent and an ACK reply occurs in a timely fashion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only one callback may be registered at a time. Each subsequent call to this function will replace the previous callback. The callback is optional; setting it to NULL will deregister the current callback and no function will be called anymore.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sent_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that will be called going forward; NULL to not have a callback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previous callback (or NULL) that was on record. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2461" column="22" declfile="build/sdk/emery/include/pebble.h" declline="2461" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group___app_message_1gaf44fba92e602fc6853d7f46194f96f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * app_message_set_context</definition>
+        <argsstring>(void *context)</argsstring>
+        <name>app_message_set_context</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Sets the context that will be passed to all AppMessage callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context that will be passed to all AppMessage callbacks.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previous context that was on record. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2424" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2424" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___app_message_1ga8a213339bca4388cf17c3f4c4b2e11fd" prot="public" static="no">
+        <name>APP_MESSAGE_INBOX_SIZE_MINIMUM</name>
+        <initializer>124</initializer>
+        <briefdescription>
+<para>As long as the firmware maintains its current major version, inboxes of this size or smaller will be allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___app_message_1gad544294c297f3d1941bd94b6b396a24b" kindref="member">app_message_inbox_size_maximum()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___app_message_1ga6fe648fbe225cda63583342bb2305187" kindref="member">APP_MESSAGE_OUTBOX_SIZE_MINIMUM</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2524" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___app_message_1ga6fe648fbe225cda63583342bb2305187" prot="public" static="no">
+        <name>APP_MESSAGE_OUTBOX_SIZE_MINIMUM</name>
+        <initializer>636</initializer>
+        <briefdescription>
+<para>As long as the firmware maintains its current major version, outboxes of this size or smaller will be allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___app_message_1gaa8161491da4b16dde64be8754cfde815" kindref="member">app_message_outbox_size_maximum()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___app_message_1ga8a213339bca4388cf17c3f4c4b2e11fd" kindref="member">APP_MESSAGE_INBOX_SIZE_MINIMUM</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2531" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2531" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Bi-directional communication between phone apps and Pebble watchapps </para>
+    </briefdescription>
+    <detaileddescription>
+<para>AppMessage is a bi-directional messaging subsystem that enables communication between phone apps and Pebble watchapps. This is accomplished by allowing phone and watchapps to exchange arbitrary sets of key/value pairs. The key/value pairs are stored in the form of a Dictionary, the layout of which is left for the application developer to define.</para>
+<para>AppMessage implements a push-oriented messaging protocol, enabling your app to call functions and methods to push messages from Pebble to phone and vice versa. The protocol is symmetric: both Pebble and the phone can send messages. All messages are acknowledged. In this context, there is no client-server model, as such.</para>
+<para>During the sending phase, one side initiates the communication by transferring a dictionary over the air. The other side then receives this message and is given an opportunity to perform actions on that data. As soon as possible, the other side is expected to reply to the message with a simple acknowledgment that the message was received successfully.</para>
+<para>PebbleKit JavaScript provides you with a set of standard JavaScript APIs that let your app receive messages from the watch, make HTTP requests, and send new messages to the watch. AppMessage APIs are used to send and receive data. A Pebble watchapp can use the resources of the connected phone to fetch information from web services, send information to web APIs, or store login credentials. On the JavaScript side, you communicate with Pebble via a Pebble object exposed in the namespace.</para>
+<para>Messages always need to get either ACKnowledged or &quot;NACK&apos;ed,&quot; that is, not acknowledged. If not, messages will result in a time-out failure. The AppMessage subsystem takes care of this implicitly. In the phone libraries, this step is a bit more explicit.</para>
+<para>The Pebble watch interfaces make a distinction between the Inbox and the Outbox calls. The Inbox receives messages from the phone on the watch; the Outbox sends messages from the watch to the phone. These two buffers can be managed separately.</para>
+<para><heading level="4">Warning</heading>
+</para>
+<para>A critical constraint of AppMessage is that messages are limited in size. An ingoing (outgoing) message larger than the inbox (outbox) will not be transmitted and will generate an error. You can choose your inbox and outbox size when you call <ref refid="group___app_message_1ga26735aa7eb22ab58bd7496e673d03155" kindref="member">app_message_open()</ref>.</para>
+<para>Pebble SDK provides a static minimum guaranteed size (APP_MESSAGE_INBOX_SIZE_MINIMUM and APP_MESSAGE_OUTBOX_SIZE_MINIMUM). Requesting a buffer of the minimum guaranteed size (or smaller) is always guaranteed to succeed on all Pebbles in this SDK version or higher, and with every phone.</para>
+<para>In some context, Pebble might be able to provide your application with larger inbox/outbox. You can call <ref refid="group___app_message_1gad544294c297f3d1941bd94b6b396a24b" kindref="member">app_message_inbox_size_maximum()</ref> and <ref refid="group___app_message_1gaa8161491da4b16dde64be8754cfde815" kindref="member">app_message_outbox_size_maximum()</ref> in your code to get the largest possible value you can use.</para>
+<para>To always get the largest buffer available, follow this best practice:</para>
+<para>app_message_open(<ref refid="group___app_message_1gad544294c297f3d1941bd94b6b396a24b" kindref="member">app_message_inbox_size_maximum()</ref>, <ref refid="group___app_message_1gaa8161491da4b16dde64be8754cfde815" kindref="member">app_message_outbox_size_maximum()</ref>)</para>
+<para>AppMessage uses your application heap space. That means that the sizes you pick for the AppMessage inbox and outbox buffers are important in optimizing your app’s performance. The more you use for AppMessage, the less space you’ll have for the rest of your app.</para>
+<para>To register callbacks, you should call <ref refid="group___app_message_1ga9ab844c63d926f0e8f708a171b3838d3" kindref="member">app_message_register_inbox_received()</ref>, <ref refid="group___app_message_1gad15eeddef5ffa5ea0185eb734c0fbe9d" kindref="member">app_message_register_inbox_dropped()</ref>, <ref refid="group___app_message_1gae7cbb364b6e932c4bfd1ae89ecca87f9" kindref="member">app_message_register_outbox_sent()</ref>, <ref refid="group___app_message_1ga73c134254ff2b17d3c57c7d019e79323" kindref="member">app_message_register_outbox_failed()</ref>.</para>
+<para>Pebble recommends that you call them before <ref refid="group___app_message_1ga26735aa7eb22ab58bd7496e673d03155" kindref="member">app_message_open()</ref> to ensure you do not miss a message arriving between starting AppMessage and registering the callback. You can set a context that will be passed to all the callbacks with <ref refid="group___app_message_1gaf44fba92e602fc6853d7f46194f96f0f" kindref="member">app_message_set_context()</ref>.</para>
+<para>In circumstances that may not be ideal, when using AppMessage several types of errors may occur. For example:</para>
+<para><itemizedlist>
+<listitem><para>The send can’t start because the system state won&apos;t allow for a success. Several reasons you&apos;re unable to perform a send: A send() is already occurring (only one is possible at a time) or Bluetooth is not enabled or connected.</para>
+</listitem><listitem><para>The send and receive occur, but the receiver can’t accept the message. For instance, there is no app that receives such a message.</para>
+</listitem><listitem><para>The send occurs, but the receiver either does not actually receive the message or can’t handle it in a timely fashion.</para>
+</listitem><listitem><para>In the case of a dropped message, the phone sends a message to the watchapp, while there is still an unprocessed message in the Inbox.</para>
+</listitem></itemizedlist>
+</para>
+<para>Other errors are possible and described by <ref refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kindref="member">AppMessageResult</ref>. A client of the AppMessage interface should use the result codes to be more robust in the face of communication problems either in the field or while debugging.</para>
+<para>Refer to the <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;http://developer.getpebble.com/guides/pebble-apps/communications/&quot;&gt;App Communication in the Pebble Developer Guides&lt;/a&gt;
+</htmlonly> for a conceptual overview and code usage.</para>
+<para>For code examples, refer to the SDK Examples that directly use App Message. These include:<itemizedlist>
+<listitem><para><ulink url="https://github.com/pebble-examples/pebblekit-js-weather">pebblekit-js-weather</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/pebble-examples/pebblekit-js-quotes">pebblekit-js-quotes</ulink> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

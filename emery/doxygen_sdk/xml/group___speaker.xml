@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___speaker" kind="group">
+    <compoundname>Speaker</compoundname>
+    <title>Speaker</title>
+    <innerclass refid="struct_speaker_note" prot="public">SpeakerNote</innerclass>
+    <innerclass refid="struct_speaker_sample" prot="public">SpeakerSample</innerclass>
+    <innerclass refid="struct_speaker_track" prot="public">SpeakerTrack</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___speaker_1ga78ed2e1da9755cc3a55c770d079ab84d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpeakerFinishReason</name>
+        <enumvalue id="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dae9d089591716032eb958ac7190e35c9a" prot="public">
+          <name>SpeakerFinishReasonDone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Playback completed naturally. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84da7d66638f7870dc333b8d6c5a11a471a9" prot="public">
+          <name>SpeakerFinishReasonStopped</name>
+          <briefdescription>
+<para>Playback was stopped by the app. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dad97fb5517430a15be8638995773e6ad4" prot="public">
+          <name>SpeakerFinishReasonPreempted</name>
+          <briefdescription>
+<para>Preempted by higher priority source. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dadc6de5727cb44ad1733ba694303488a5" prot="public">
+          <name>SpeakerFinishReasonError</name>
+          <briefdescription>
+<para>An error occurred. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Reason reported when speaker playback ends. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8709" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8709" bodyend="8714"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___speaker_1gaf647901e7f8ebfaa0f41f433cec0b1cf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpeakerPcmFormat</name>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa722061d71f152a7c015bcecd7c8ef515" prot="public">
+          <name>SpeakerPcmFormat_8kHz_8bit</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>8kHz 8-bit signed (1 byte/sample) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfab9b116ba8c142eb89365f47fd5ea0f2f" prot="public">
+          <name>SpeakerPcmFormat_16kHz_8bit</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>16kHz 8-bit signed (1 byte/sample) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa13e49d4bb80e2470c0c6bb4a09236e4b" prot="public">
+          <name>SpeakerPcmFormat_8kHz_16bit</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>8kHz 16-bit signed little-endian (2 bytes/sample) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfaf815a281cbff1329b5207f64d8757ff6" prot="public">
+          <name>SpeakerPcmFormat_16kHz_16bit</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>16kHz 16-bit signed little-endian (2 bytes/sample) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa7b5d8d71d49ec5d2f386e9d9a79dda8c" prot="public">
+          <name>SpeakerPcmFormatCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>PCM audio format for speaker streaming. Bit layout: bit0 = sample rate (0=8kHz, 1=16kHz), bit1 = bit depth (0=8-bit, 1=16-bit). All formats are mono signed PCM (8-bit samples are signed [-128,127], not unsigned). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8693" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8693" bodyend="8699"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___speaker_1ga2221221a7c5108e31588b3dfe54475f6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpeakerStatus</name>
+        <enumvalue id="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6a6ad97282e2f90e73fd22cff0e89f3bc8" prot="public">
+          <name>SpeakerStatusIdle</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6ad2cb9207cbd46ab7fd92fc1688ed65de" prot="public">
+          <name>SpeakerStatusPlaying</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6a6a342d24566c1b3444ef3797461ad2b6" prot="public">
+          <name>SpeakerStatusDraining</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Speaker status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8702" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8702" bodyend="8706"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___speaker_1ga2014113689236c9c6faa6edd3717063b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SpeakerWaveform</name>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063baa29192771443600c640c17f1bac71d8a" prot="public">
+          <name>SpeakerWaveformSine</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063bab85a8d25840269528a963138a8ca95f4" prot="public">
+          <name>SpeakerWaveformSquare</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063ba27960bafe539dd39f6e0e2a40486bf80" prot="public">
+          <name>SpeakerWaveformTriangle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063baff0bafac9cf416c6a686a7cc6d8e1cf7" prot="public">
+          <name>SpeakerWaveformSawtooth</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___speaker_1gga2014113689236c9c6faa6edd3717063bafd0d5feed18dec91914b0f8a97e27a06" prot="public">
+          <name>SpeakerWaveformCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8669" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8669" bodyend="8675"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___speaker_1ga281d71da9d5fc1d38b91b82ddb3cae01" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SpeakerFinishedCallback) (SpeakerFinishReason reason, void *ctx)</definition>
+        <argsstring>)(SpeakerFinishReason reason, void *ctx)</argsstring>
+        <name>SpeakerFinishedCallback</name>
+        <briefdescription>
+<para>Callback invoked when playback finishes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Why playback ended </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8719" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8719" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___speaker_1ga54645a35a0f8212517fc974c9412c020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___speaker_1ga2221221a7c5108e31588b3dfe54475f6" kindref="member">SpeakerStatus</ref></type>
+        <definition>SpeakerStatus speaker_get_status</definition>
+        <argsstring>(void)</argsstring>
+        <name>speaker_get_status</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the current speaker status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current <ref refid="group___speaker_1ga2221221a7c5108e31588b3dfe54475f6" kindref="member">SpeakerStatus</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8796" column="15" declfile="build/sdk/emery/include/pebble.h" declline="8796" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1ga9ebcc9f0b37290ef66a603c7b6f7b335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool speaker_is_muted</definition>
+        <argsstring>(void)</argsstring>
+        <name>speaker_is_muted</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check whether the speaker is currently muted system-wide. The watch can mute the speaker either always-on (Settings → Sounds &amp; Haptics) or for the duration of Quiet Time (Settings → Quiet Time). Apps cannot override the mute, but they can use this to adapt UI or skip long sounds the user won&apos;t hear. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the speaker is currently muted </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8810" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8810" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1ga972a1c6863c223ad4795d2a3b8ef857c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool speaker_play_notes</definition>
+        <argsstring>(const SpeakerNote *notes, uint32_t num_notes, uint8_t volume)</argsstring>
+        <name>speaker_play_notes</name>
+        <param>
+          <type>const <ref refid="struct_speaker_note" kindref="compound">SpeakerNote</ref> *</type>
+          <declname>notes</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>num_notes</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Play a sequence of notes on the speaker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>notes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of <ref refid="struct_speaker_note" kindref="compound">SpeakerNote</ref> structs defining the melody </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_notes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of notes in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Playback volume (0-100) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if playback started successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8754" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8754" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1ga5e06b6b6dcff9e9b126dae6dc00cd05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool speaker_play_tone</definition>
+        <argsstring>(uint16_t frequency_hz, uint32_t duration_ms, uint8_t volume, SpeakerWaveform waveform)</argsstring>
+        <name>speaker_play_tone</name>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>frequency_hz</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>duration_ms</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>volume</declname>
+        </param>
+        <param>
+          <type>SpeakerWaveform</type>
+          <declname>waveform</declname>
+        </param>
+        <briefdescription>
+<para>Play a single tone on the speaker (convenience wrapper). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frequency_hz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tone frequency in Hz </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tone duration in milliseconds (max 10000) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Playback volume (0-100) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waveform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Waveform to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if playback started successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8769" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8769" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1gadc0dc973988f4d3cdcfed1721af0467c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool speaker_play_tracks</definition>
+        <argsstring>(const SpeakerTrack *tracks, uint32_t num_tracks, uint8_t volume)</argsstring>
+        <name>speaker_play_tracks</name>
+        <param>
+          <type>const <ref refid="struct_speaker_track" kindref="compound">SpeakerTrack</ref> *</type>
+          <declname>tracks</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>num_tracks</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Play N monophonic tracks in parallel, mixed (polyphony). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tracks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of track descriptors (notes + optional sample). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_tracks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of tracks. Must be &gt;= 1 and &lt;= 4. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Playback volume (0-100). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if playback started successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8761" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8761" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1ga8b82e40afe04b4ce6d794693e10b0604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void speaker_set_finish_callback</definition>
+        <argsstring>(SpeakerFinishedCallback cb, void *ctx)</argsstring>
+        <name>speaker_set_finish_callback</name>
+        <param>
+          <type><ref refid="group___speaker_1ga281d71da9d5fc1d38b91b82ddb3cae01" kindref="member">SpeakerFinishedCallback</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback invoked when speaker playback ends. The callback runs on the app task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback to invoke, or NULL to unregister. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User context passed back to cb. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8802" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8802" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1ga7b1edaca1aaf83e2d5deac7edb6a2fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void speaker_set_volume</definition>
+        <argsstring>(uint8_t volume)</argsstring>
+        <name>speaker_set_volume</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Set the speaker volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Volume level (0-100) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8792" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8792" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1ga1a5ee24961e0cf334b52e03e3e297310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void speaker_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>speaker_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Stop any active speaker playback immediately. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8788" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8788" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1ga058d8f8c79651478750a44cb27547ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void speaker_stream_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>speaker_stream_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Close the PCM stream. Buffered data will be played before stopping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8785" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8785" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1ga2e1fcfb4fa86415925f92f9fdf037333" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool speaker_stream_open</definition>
+        <argsstring>(SpeakerPcmFormat format, uint8_t volume)</argsstring>
+        <name>speaker_stream_open</name>
+        <param>
+          <type><ref refid="group___speaker_1gaf647901e7f8ebfaa0f41f433cec0b1cf" kindref="member">SpeakerPcmFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Open a raw PCM stream for app-generated audio. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PCM format specifying sample rate and bit depth </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Playback volume (0-100) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if stream opened successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8776" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8776" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___speaker_1gae0ee993df0901c45791913eb276360f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t speaker_stream_write</definition>
+        <argsstring>(const void *data, uint32_t num_bytes)</argsstring>
+        <name>speaker_stream_write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>num_bytes</declname>
+        </param>
+        <briefdescription>
+<para>Write PCM data to the open stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer of PCM data in the format specified at open </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes actually written (may be less if buffer is full) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8782" column="10" declfile="build/sdk/emery/include/pebble.h" declline="8782" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Controlling the speaker </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The Speaker API provides calls that let you play sounds through the watch&apos;s speaker. You can play simple note sequences (melodies), single tones, or stream raw PCM audio.</para>
+<para>Note sequences are compact representations of melodies using MIDI-like note definitions, supporting 4 basic waveforms: sine, square, triangle, and sawtooth.</para>
+<para>Raw PCM streaming allows apps to generate arbitrary audio in configurable formats. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

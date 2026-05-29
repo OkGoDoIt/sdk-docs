@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___rot_bitmap_layer" kind="group">
     <compoundname>RotBitmapLayer</compoundname>
     <title>RotBitmapLayer</title>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7897" column="29" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7897" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8179" column="29" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8179" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7907" column="16" declfile="build/sdk/basalt/include/pebble.h" declline="7907" declcolumn="16"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8189" column="16" declfile="build/sdk/basalt/include/pebble.h" declline="8189" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group___rot_bitmap_layer_1ga8b3b96d607c07aa1a64a0bf6c78f5bf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7912" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7912" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8194" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8194" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___rot_bitmap_layer_1ga1392050689ca39d86949c8b4744ddaa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7928" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7928" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8212" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8212" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___rot_bitmap_layer_1ga0aa9e535226e88bad75410ce177c27af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7923" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7923" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8207" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8207" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___rot_bitmap_layer_1ga05bb6f3e05c774b3e20b8ff4d1068d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7918" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7918" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8202" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8202" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___rot_bitmap_layer_1ga5ddf5cbe3499a3ee5487e82d5d5659d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -221,7 +221,7 @@
           <declname>mode</declname>
         </param>
         <briefdescription>
-<para>Sets the compositing mode of how the bitmap image is composited onto what has been drawn beneath the RotBitmapLayer. By default this is <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3d668fac5e660241746c082d7155e059" kindref="member">GCompOpAssign</ref>. The RotBitmapLayer is automatically marked dirty after this operation. </para>
+<para>Sets the compositing mode of how the bitmap image is composited onto what has been drawn beneath the RotBitmapLayer. By default this is <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3d668fac5e660241746c082d7155e059" kindref="member">GCompOpAssign</ref>, i.e. transparency disabled. The RotBitmapLayer is automatically marked dirty after this operation. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -247,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7949" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7949" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8233" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8233" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___rot_bitmap_layer_1ga455a2e9f47703fe44a1054ff02396162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -289,8 +289,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7940" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7940" declcolumn="6"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="8224" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8224" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3645">GPoint</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___rot_bitmap_layer_1gaf6dd151d101195a7b6a3cff87f66c65a" prot="public" static="no">
+        <name>rot_bitmap_layer_get_layer</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="8196" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8196" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

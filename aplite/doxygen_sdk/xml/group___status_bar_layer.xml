@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___status_bar_layer" kind="group">
     <compoundname>StatusBarLayer</compoundname>
     <title>StatusBarLayer</title>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7705" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7705" bodyend="7710"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7833" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7833" bodyend="7838"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7702" column="29" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7702" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7830" column="29" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7830" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7741" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="7741" declcolumn="16"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7870" column="16" declfile="build/sdk/aplite/include/pebble.h" declline="7870" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="group___status_bar_layer_1ga8888bc8140ee6693e8221b805043d1fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7745" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7745" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7874" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7874" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___status_bar_layer_1ga2a25ec0661cce481fdf30048f510142a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GColor</type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7757" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="7757" declcolumn="8"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7886" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="7886" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___status_bar_layer_1ga2fdfa31254d64f33c5d3c5b00ce160dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GColor</type>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7762" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="7762" declcolumn="8"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7891" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="7891" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___status_bar_layer_1ga1a65700d523ed23ae9231c59af9327c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Layer *</type>
@@ -194,13 +194,13 @@
 </parameterlist>
 <simplesect kind="return"><para>The &quot;root&quot; Layer of the status bar. </para>
 </simplesect>
-<simplesect kind="note"><para>The result is always equal to <computeroutput>(Layer *) status_bar_layer</computeroutput>. </para>
+<simplesect kind="note"><para>The result is always equal to <computeroutput>(<ref refid="group___layer" kindref="compound">Layers</ref> *) status_bar_layer</computeroutput>. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7752" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="7752" declcolumn="7"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7881" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="7881" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___status_bar_layer_1ga818d409a6c42775771c3febf03e10e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7768" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7768" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7897" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7897" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___status_bar_layer_1ga8372ccc195ab25b123a3d3c9244bace4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -292,20 +292,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7774" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7774" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7903" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="7903" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
       <memberdef kind="define" id="group___status_bar_layer_1ga1d71abbf343b208cca2bc87339b95361" prot="public" static="no">
         <name>_STATUS_BAR_LAYER_HEIGHT</name>
         <param><defname>plat</defname></param>
-        <initializer>  PBL_PLATFORM_SWITCH(plat, \
-  /*aplite*/ 16, \
-  /*basalt*/ 16, \
-  /*chalk*/ 24, \
-  /*diorite*/ 16, \
-  /*emery*/ 20, \
-  /*flint*/ 16)</initializer>
+        <initializer>PBL_PLATFORM_SWITCH(plat, \
+/*aplite*/ 16, \
+/*basalt*/ 16, \
+/*chalk*/ 24, \
+/*diorite*/ 16, \
+/*emery*/ 20, \
+/*flint*/ 16, \
+/*gabbro*/ 20)</initializer>
         <briefdescription>
 <para>The fixed height of the status bar, including separator height, for all platforms. </para>
         </briefdescription>
@@ -313,7 +314,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7716" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7716" bodyend="7722"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7844" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7844" bodyend="7851"/>
       </memberdef>
       <memberdef kind="define" id="group___status_bar_layer_1ga98226d0d569dae3c62512820d3c5eeea" prot="public" static="no">
         <name>STATUS_BAR_LAYER_HEIGHT</name>
@@ -325,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="7713" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7713" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="7841" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="7841" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

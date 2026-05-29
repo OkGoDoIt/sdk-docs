@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___preferences" kind="group">
+    <compoundname>Preferences</compoundname>
+    <title>Preferences</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___preferences_1ga79bc51d6d253271357abd87a15b7cb13" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PreferredContentSize</name>
+        <enumvalue id="group___preferences_1gga79bc51d6d253271357abd87a15b7cb13a34b13d486ea95df8b80a32ac7e6b63d3" prot="public">
+          <name>PreferredContentSizeSmall</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___preferences_1gga79bc51d6d253271357abd87a15b7cb13a8eb78866f10224a237f8a6b9ef00de53" prot="public">
+          <name>PreferredContentSizeMedium</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___preferences_1gga79bc51d6d253271357abd87a15b7cb13a11caa9e0237ae1cbafa6ef8fef3738b8" prot="public">
+          <name>PreferredContentSizeLarge</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___preferences_1gga79bc51d6d253271357abd87a15b7cb13a4768a90035dc3be5ca2e6d1844ecf456" prot="public">
+          <name>PreferredContentSizeExtraLarge</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___preferences_1gga79bc51d6d253271357abd87a15b7cb13ad5856c487f4da54a2ceb2dae5e343c54" prot="public">
+          <name>NumPreferredContentSizes</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="group___preferences_1ga79bc51d6d253271357abd87a15b7cb13" kindref="member">PreferredContentSize</ref> represents the display scale of all the app&apos;s UI components. The enum contains all sizes that all platforms as a whole are capable of displaying, but each individual platform may not be able to display all sizes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>As of version 4.1, platforms other than Emery cannot display extra large and Emery itself cannot display small. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8881" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8881" bodyend="8887"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___preferences_1gac4168382248a21f5bc737532ec9fda9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___preferences_1ga79bc51d6d253271357abd87a15b7cb13" kindref="member">PreferredContentSize</ref></type>
+        <definition>PreferredContentSize preferred_content_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>preferred_content_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the user&apos;s preferred content size representing the scale of all the app&apos;s UI components should use for display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The user&apos;s <ref refid="group___preferences_1ga79bc51d6d253271357abd87a15b7cb13" kindref="member">PreferredContentSize</ref> setting. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8892" column="22" declfile="build/sdk/emery/include/pebble.h" declline="8892" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group___preferences_1ga06f8d8a9859121b0682191a11e2889b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t preferred_result_display_duration</definition>
+        <argsstring>(void)</argsstring>
+        <name>preferred_result_display_duration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the recommended amount of milliseconds a result window should be visible before it should automatically close. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>It is the application developer&apos;s responsibility to automatically close a result window. </para>
+</simplesect>
+<simplesect kind="return"><para>The recommended result window timeout duration in milliseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8874" column="10" declfile="build/sdk/emery/include/pebble.h" declline="8874" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___preferences_1ga8de7f1d9eb8cbfd7078cad2201dfa5be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool quiet_time_is_active</definition>
+        <argsstring>(void)</argsstring>
+        <name>quiet_time_is_active</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Users can toggle Quiet Time manually or on schedule. Watchfaces and apps should respect this choice and avoid disturbing actions such as vibration if quiet time is active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True, if Quiet Time is currently active. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8897" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8897" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Values recommended by the system </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___alloy" kind="group">
+    <compoundname>Alloy</compoundname>
+    <title>Alloy</title>
+    <innerclass refid="struct_moddable_creation_record" prot="public">ModdableCreationRecord</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___alloy_1ga8cef7fcb1e7e57a1e9d1d61983e1292a" prot="public" static="no">
+        <name>kModdableCreationFlagLogInstrumentation</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>Flag to enable XS instrumentation logging over Bluetooth. When set, the Moddable XS engine will log instrumentation data (e.g. memory usage, slot/chunk/stack statistics) via app_log. Logging is only active when a Bluetooth log listener is connected; otherwise this flag has no effect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_moddable_creation_record" kindref="compound">ModdableCreationRecord</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="2849" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___alloy_1ga3ba305ef9fb21605573f5647c0bf867e" prot="public" static="no">
+        <name>moddable_createMachine</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="2864" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2864" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

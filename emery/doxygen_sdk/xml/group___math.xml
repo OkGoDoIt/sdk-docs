@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___math" kind="group">
+    <compoundname>Math</compoundname>
+    <title>Math</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___math_1gae01f6d5abe76070a07881337246cc4de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t atan2_lookup</definition>
+        <argsstring>(int16_t y, int16_t x)</argsstring>
+        <name>atan2_lookup</name>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Look-up the arctangent of a given x, y pair The angle value is scaled linearly, such that a value of 0x10000 corresponds to 360 degrees or 2 PI radians. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="339" column="9" declfile="build/sdk/emery/include/pebble.h" declline="339" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___math_1gaa8938fd0e58aed9906ecccacd8fde88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t cos_lookup</definition>
+        <argsstring>(int32_t angle)</argsstring>
+        <name>cos_lookup</name>
+        <param>
+          <type>int32_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Look-up the cosine of the given angle from a pre-computed table. This is equivalent to calling <computeroutput><ref refid="group___math_1gad373193b20c68af1004a9dc2c35c2e48" kindref="member">sin_lookup</ref>(angle + <ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref> / 4)</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle for which to compute the cosine. The angle value is scaled linearly, such that a value of 0x10000 corresponds to 360 degrees or 2 PI radians. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="335" column="9" declfile="build/sdk/emery/include/pebble.h" declline="335" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___math_1gad373193b20c68af1004a9dc2c35c2e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t sin_lookup</definition>
+        <argsstring>(int32_t angle)</argsstring>
+        <name>sin_lookup</name>
+        <param>
+          <type>int32_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Look-up the sine of the given angle from a pre-computed table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle for which to compute the cosine. The angle value is scaled linearly, such that a value of 0x10000 corresponds to 360 degrees or 2 PI radians. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="329" column="9" declfile="build/sdk/emery/include/pebble.h" declline="329" declcolumn="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___math_1ga3645eb975058adf6013d4c6cbb518ed8" prot="public" static="no">
+        <name>DEG_TO_TRIGANGLE</name>
+        <param><defname>angle</defname></param>
+        <initializer>(((angle) * <ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref>) / 360)</initializer>
+        <briefdescription>
+<para>Converts from an angle in degrees to the equivalent fixed point value representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___math_1gae93c13590195997523319b436ff5dfe3" kindref="member">TRIGANGLE_TO_DEG</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="324" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___math_1gade7adcdaf0a7aca734c444328afd6f77" prot="public" static="no">
+        <name>TRIG_MAX_ANGLE</name>
+        <initializer>0x10000</initializer>
+        <briefdescription>
+<para>Angle value that corresponds to 360 degrees or 2 PI radians. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___math_1gad373193b20c68af1004a9dc2c35c2e48" kindref="member">sin_lookup</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___math_1gaa8938fd0e58aed9906ecccacd8fde88c" kindref="member">cos_lookup</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="314" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___math_1ga88044be2b97f747386820291a9952afe" prot="public" static="no">
+        <name>TRIG_MAX_RATIO</name>
+        <initializer>0xffff</initializer>
+        <briefdescription>
+<para>The largest value that can result from a call to <ref refid="group___math_1gad373193b20c68af1004a9dc2c35c2e48" kindref="member">sin_lookup</ref> or <ref refid="group___math_1gaa8938fd0e58aed9906ecccacd8fde88c" kindref="member">cos_lookup</ref>. For a code example, see the detailed description at the top of this chapter: <ref refid="group___math" kindref="compound">Math</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="309" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___math_1gae93c13590195997523319b436ff5dfe3" prot="public" static="no">
+        <name>TRIGANGLE_TO_DEG</name>
+        <param><defname>trig_angle</defname></param>
+        <initializer>(((trig_angle) * 360) / <ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref>)</initializer>
+        <briefdescription>
+<para>Converts from a fixed point value representation to the equivalent value in degrees. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___math_1ga3645eb975058adf6013d4c6cbb518ed8" kindref="member">DEG_TO_TRIGANGLE</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="319" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Math routines. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Below is a code example that uses the trigonometry functions to calculate the coordinate at which the second hand of a watch ends, using seconds from the system time. <programlisting filename=".c"><codeline><highlight class="normal"><ref refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" kindref="member">GPoint</ref><sp/>secondHand;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" kindref="member">GPoint</ref><sp/>center;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtm" kindref="compound">tm</ref><sp/>*tick_time<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal">int32_t<sp/>secondHandLength<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">int32_t<sp/>second_angle<sp/>=<sp/><ref refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kindref="member">TRIG_MAX_ANGLE</ref><sp/>*<sp/>tick_time-&gt;<ref refid="structtm_1a4d098a9a5c03a00b2ee61e10851de81e" kindref="member">tm_sec</ref><sp/>/<sp/>60;</highlight></codeline>
+<codeline><highlight class="normal">secondHand.<ref refid="struct_g_point_1a94afc39fa39df567b9e78702d1f07b3e" kindref="member">y</ref><sp/>=<sp/>(-<ref refid="group___math_1gaa8938fd0e58aed9906ecccacd8fde88c" kindref="member">cos_lookup</ref>(second_angle)<sp/>*<sp/>secondHandLength<sp/>/<sp/><ref refid="group___math_1ga88044be2b97f747386820291a9952afe" kindref="member">TRIG_MAX_RATIO</ref>)<sp/>+<sp/>center.<ref refid="struct_g_point_1a94afc39fa39df567b9e78702d1f07b3e" kindref="member">y</ref>;</highlight></codeline>
+<codeline><highlight class="normal">secondHand.<ref refid="struct_g_point_1a1f1a9ce775dde3448a265dc36b2024f4" kindref="member">x</ref><sp/>=<sp/>(<ref refid="group___math_1gad373193b20c68af1004a9dc2c35c2e48" kindref="member">sin_lookup</ref>(second_angle)<sp/>*<sp/>secondHandLength<sp/>/<sp/><ref refid="group___math_1ga88044be2b97f747386820291a9952afe" kindref="member">TRIG_MAX_RATIO</ref>)<sp/>+<sp/>center.<ref refid="struct_g_point_1a1f1a9ce775dde3448a265dc36b2024f4" kindref="member">x</ref>;</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

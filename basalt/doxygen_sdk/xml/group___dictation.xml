@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___dictation" kind="group">
     <compoundname>Dictation</compoundname>
     <title>Dictation</title>
@@ -74,7 +74,7 @@
         <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20faa25ba58496758178207c97075be07c9e" prot="public">
           <name>DictationSessionStatusFailureRecognizerError</name>
           <briefdescription>
-<para>Cloud recognizer failed to transcribe speech (only possible if error dialogs disabled) </para>
+<para>Cloud recognizer failed to transcribe speech (only possible if error dialogs disabled). </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2021" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2021" bodyend="2048"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2083" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2083" bodyend="2110"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2019" column="31" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2019" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2081" column="31" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2081" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___dictation_1ga0b17d3b4eaff685892d456449f9ecbf8" prot="public" static="no">
         <type>void(*</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2058" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2058" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2120" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2120" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -170,7 +170,7 @@
           <declname>callback_context</declname>
         </param>
         <briefdescription>
-<para>Create a dictation session. The session object can be used more than once to get a transcription. When a transcription is received a buffer will be allocated to store the text in with a maximum size specified by buffer_size. When a transcription and accepted by the user or a failure of some sort occurs, the callback specified will be called with the status and the transcription if one was accepted. </para>
+<para>Create a dictation session. The session object can be used more than once to get a transcription. When a transcription is received a buffer will be allocated to store the text in with a maximum size specified by buffer_size. When a transcription is accepted by the user or a failure of some sort occurs, the callback specified will be called with the status and the transcription if one was accepted. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2076" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2076" declcolumn="18"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2138" column="18" declfile="build/sdk/basalt/include/pebble.h" declline="2138" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___dictation_1ga0af2815ced7aab8113967347c57212b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2082" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2082" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2144" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2144" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___dictation_1ga9cdf88f9e484b512b2f07ff94849732b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -272,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2103" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2103" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2165" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2165" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___dictation_1gaa40c7e199fee41225c3b45bcd88adbde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2109" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2109" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2171" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="2171" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___dictation_1gafcd7f7452a120b1b54f613bdb536958c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictation_1ga0379abc18ef975d7f954ed644981c20f" kindref="member">DictationSessionStatus</ref></type>
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2090" column="24" declfile="build/sdk/basalt/include/pebble.h" declline="2090" declcolumn="24"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2152" column="24" declfile="build/sdk/basalt/include/pebble.h" declline="2152" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group___dictation_1gaf1c224329967693f830d8d4f2158ce0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___dictation_1ga0379abc18ef975d7f954ed644981c20f" kindref="member">DictationSessionStatus</ref></type>
@@ -372,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2096" column="24" declfile="build/sdk/basalt/include/pebble.h" declline="2096" declcolumn="24"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2158" column="24" declfile="build/sdk/basalt/include/pebble.h" declline="2158" declcolumn="24"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -388,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="2113" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2113" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="2175" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="2175" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

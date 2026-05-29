@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_simple_menu_section" kind="struct" language="C++" prot="public">
     <compoundname>SimpleMenuSection</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7422" column="24" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7422" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7700" column="24" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7700" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_simple_menu_section_1ac0331245bc7c1a881acf42d00c4f6789" prot="public" static="no" mutable="no">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -26,13 +26,13 @@
         <name>num_items</name>
         <qualifiedname>SimpleMenuSection::num_items</qualifiedname>
         <briefdescription>
-<para>Number of items in the <computeroutput>.items</computeroutput> array. </para>
+<para>Number of items in the <computeroutput>.<ref refid="struct_simple_menu_section_1a377ff366a71e19cfe6c1dbb8f233f91b" kindref="member">items</ref></computeroutput> array. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7424" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7424" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7702" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7702" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_simple_menu_section_1a4c8e4113f9641b51e1d16e3c32f465dc" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7420" column="14" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7420" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7698" column="14" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7698" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -68,7 +68,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="build/sdk/basalt/include/pebble.h" line="7418" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7418" bodyend="7425"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="7696" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7696" bodyend="7703"/>
     <listofallmembers>
       <member refid="struct_simple_menu_section_1a377ff366a71e19cfe6c1dbb8f233f91b" prot="public" virt="non-virtual"><scope>SimpleMenuSection</scope><name>items</name></member>
       <member refid="struct_simple_menu_section_1ac0331245bc7c1a881acf42d00c4f6789" prot="public" virt="non-virtual"><scope>SimpleMenuSection</scope><name>num_items</name></member>

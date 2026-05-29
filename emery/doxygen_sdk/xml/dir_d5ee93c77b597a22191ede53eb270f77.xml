@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="dir_d5ee93c77b597a22191ede53eb270f77" kind="dir">
+    <compoundname>include</compoundname>
+    <innerdir refid="dir_7f0c25cb4695a5f70af57d846d705032">doxygen</innerdir>
+    <innerfile refid="gcolor__definitions_8h">gcolor_definitions.h</innerfile>
+    <innerfile refid="pebble_8h">pebble.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/"/>
+  </compounddef>
+</doxygen>

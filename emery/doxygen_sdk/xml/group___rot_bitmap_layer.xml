@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___rot_bitmap_layer" kind="group">
+    <compoundname>RotBitmapLayer</compoundname>
+    <title>RotBitmapLayer</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___rot_bitmap_layer_1gaf94f9d4016f030dec4ca1193f858be5f" prot="public" static="no">
+        <type>struct RotBitmapLayer</type>
+        <definition>typedef struct RotBitmapLayer RotBitmapLayer</definition>
+        <argsstring></argsstring>
+        <name>RotBitmapLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8283" column="29" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8283" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___rot_bitmap_layer_1gaf47afa0782b6414637c2071ef4f0114f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RotBitmapLayer *</type>
+        <definition>RotBitmapLayer * rot_bitmap_layer_create</definition>
+        <argsstring>(GBitmap *bitmap)</argsstring>
+        <name>rot_bitmap_layer_create</name>
+        <param>
+          <type>GBitmap *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new RotBitmapLayer on the heap and initializes it with the default values: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Angle: 0</para>
+</listitem><listitem><para>Compositing mode: <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3d668fac5e660241746c082d7155e059" kindref="member">GCompOpAssign</ref></para>
+</listitem><listitem><para>Corner clip color: GColorClear</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to display in this RotBitmapLayer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the RotBitmapLayer. <computeroutput>NULL</computeroutput> if the RotBitmapLayer could not be created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8293" column="16" declfile="build/sdk/emery/include/pebble.h" declline="8293" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___rot_bitmap_layer_1ga8b3b96d607c07aa1a64a0bf6c78f5bf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rot_bitmap_layer_destroy</definition>
+        <argsstring>(RotBitmapLayer *bitmap)</argsstring>
+        <name>rot_bitmap_layer_destroy</name>
+        <param>
+          <type>RotBitmapLayer *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a RotBitmapLayer and frees all associated memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>It is the developer responsibility to free the GBitmap. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RotBitmapLayer to destroy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8298" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8298" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___rot_bitmap_layer_1ga4185d3ca9a578c6e37a079df070a4bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * rot_bitmap_layer_get_layer</definition>
+        <argsstring>(const RotBitmapLayer *rot_bitmap_layer)</argsstring>
+        <name>rot_bitmap_layer_get_layer</name>
+        <param>
+          <type>const RotBitmapLayer *</type>
+          <declname>rot_bitmap_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the &quot;root&quot; Layer of the RotBitmapLayer, which is the parent for the sub- layers used for its implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rot_bitmap_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the RotBitmapLayer for which to get the &quot;root&quot; Layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The &quot;root&quot; Layer of the RotBitmapLayer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8304" column="7" declfile="build/sdk/emery/include/pebble.h" declline="8304" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___rot_bitmap_layer_1ga1392050689ca39d86949c8b4744ddaa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rot_bitmap_layer_increment_angle</definition>
+        <argsstring>(RotBitmapLayer *bitmap, int32_t angle_change)</argsstring>
+        <name>rot_bitmap_layer_increment_angle</name>
+        <param>
+          <type>RotBitmapLayer *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle_change</declname>
+        </param>
+        <briefdescription>
+<para>Change the rotation angle of this RotBitmapLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RotBitmapLayer on which to change the rotation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle_change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation angle change </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8320" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8320" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___rot_bitmap_layer_1ga0aa9e535226e88bad75410ce177c27af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rot_bitmap_layer_set_angle</definition>
+        <argsstring>(RotBitmapLayer *bitmap, int32_t angle)</argsstring>
+        <name>rot_bitmap_layer_set_angle</name>
+        <param>
+          <type>RotBitmapLayer *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Sets the rotation angle of this RotBitmapLayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RotBitmapLayer on which to change the rotation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation is an integer between 0 (no rotation) and 0x10000 (360 degree rotation). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___math_1gad373193b20c68af1004a9dc2c35c2e48" kindref="member">sin_lookup()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8315" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8315" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___rot_bitmap_layer_1ga05bb6f3e05c774b3e20b8ff4d1068d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rot_bitmap_layer_set_corner_clip_color</definition>
+        <argsstring>(RotBitmapLayer *bitmap, GColor color)</argsstring>
+        <name>rot_bitmap_layer_set_corner_clip_color</name>
+        <param>
+          <type>RotBitmapLayer *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Defines what color to use in areas that are not covered by the source bitmap. By default this is GColorClear. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RotBitmapLayer on which to change the corner clip color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The corner clip color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8310" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8310" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___rot_bitmap_layer_1ga5ddf5cbe3499a3ee5487e82d5d5659d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rot_bitmap_set_compositing_mode</definition>
+        <argsstring>(RotBitmapLayer *bitmap, GCompOp mode)</argsstring>
+        <name>rot_bitmap_set_compositing_mode</name>
+        <param>
+          <type>RotBitmapLayer *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="group___graphics_types_1ga0d021422bd90a2a49e6c8d848e6d556f" kindref="member">GCompOp</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Sets the compositing mode of how the bitmap image is composited onto what has been drawn beneath the RotBitmapLayer. By default this is <ref refid="group___graphics_types_1gga0d021422bd90a2a49e6c8d848e6d556fa3d668fac5e660241746c082d7155e059" kindref="member">GCompOpAssign</ref>, i.e. transparency disabled. The RotBitmapLayer is automatically marked dirty after this operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RotBitmapLayer on which to change the rotation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The compositing mode to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___graphics_types_1ga0d021422bd90a2a49e6c8d848e6d556f" kindref="member">GCompOp</ref> for visual examples of the different compositing modes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8341" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8341" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___rot_bitmap_layer_1ga455a2e9f47703fe44a1054ff02396162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rot_bitmap_set_src_ic</definition>
+        <argsstring>(RotBitmapLayer *bitmap, GPoint ic)</argsstring>
+        <name>rot_bitmap_set_src_ic</name>
+        <param>
+          <type>RotBitmapLayer *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>ic</declname>
+        </param>
+        <briefdescription>
+<para>Defines the only point that will not be affected by the rotation in the source bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, if you pass <ref refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" kindref="member">GPoint(0, 0)</ref>, the image will rotate around the top-left corner.</para>
+<para>This point is always projected at the center of the RotBitmapLayer. Calling this function automatically adjusts the width and height of the RotBitmapLayer so that the entire bitmap can fit inside the layer at all rotation angles.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RotBitmapLayer on which to change the rotation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The only point in the original image that will not be affected by the rotation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8332" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8332" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Layer that displays a rotated bitmap image. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A RotBitmapLayer is like a <ref refid="group___bitmap_layer" kindref="compound">BitmapLayer</ref> but has the ability to be rotated (by default, around its center). The amount of rotation is specified using <ref refid="group___rot_bitmap_layer_1ga0aa9e535226e88bad75410ce177c27af" kindref="member">rot_bitmap_layer_set_angle()</ref> or <ref refid="group___rot_bitmap_layer_1ga1392050689ca39d86949c8b4744ddaa2" kindref="member">rot_bitmap_layer_increment_angle()</ref>. The rotation argument to those functions is specified as an amount of clockwise rotation, where the value 0x10000 represents a full 360 degree rotation and 0 represent no rotation, and it scales linearly between those values, just like <ref refid="group___math_1gad373193b20c68af1004a9dc2c35c2e48" kindref="member">sin_lookup</ref>.</para>
+<para>The center of rotation in the source bitmap is always placed at the center of the RotBitmapLayer and the size of the RotBitmapLayer is automatically calculated so that the entire Bitmap can fit in at all rotation angles.</para>
+<para>For example, if the image is 10px wide and high, the RotBitmapLayer will be 14px wide ( sqrt(10^2+10^2) ).</para>
+<para>By default, the center of rotation in the source bitmap is the center of the bitmap but you can call <ref refid="group___rot_bitmap_layer_1ga455a2e9f47703fe44a1054ff02396162" kindref="member">rot_bitmap_set_src_ic()</ref> to change the center of rotation.</para>
+<para><simplesect kind="note"><para>RotBitmapLayer has performance limitations that can degrade user experience (see <ref refid="group___drawing_1ga34f27bdfadc25a04b7b49d5cd8011266" kindref="member">graphics_draw_rotated_bitmap</ref>). Use sparingly. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

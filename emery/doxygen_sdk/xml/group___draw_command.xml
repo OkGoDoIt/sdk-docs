@@ -1,0 +1,1744 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___draw_command" kind="group">
+    <compoundname>DrawCommand</compoundname>
+    <title>Draw Commands</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___draw_command_1gacf7487ecae2c3be099135069a81ec742" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GDrawCommandType</name>
+        <enumvalue id="group___draw_command_1ggacf7487ecae2c3be099135069a81ec742aeb5ac59494df57e5d09e5319757112ce" prot="public">
+          <name>GDrawCommandTypeInvalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Invalid draw command type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___draw_command_1ggacf7487ecae2c3be099135069a81ec742a5c89db962f2c3eec0ea5c94c99b0a6f5" prot="public">
+          <name>GDrawCommandTypePath</name>
+          <briefdescription>
+<para>Arbitrary path draw command type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___draw_command_1ggacf7487ecae2c3be099135069a81ec742aaad34ae28b8727de4c844eb43aef7137" prot="public">
+          <name>GDrawCommandTypeCircle</name>
+          <briefdescription>
+<para>Circle draw command type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___draw_command_1ggacf7487ecae2c3be099135069a81ec742a9ded82147f73517e0a8b5183fbd7fe12" prot="public">
+          <name>GDrawCommandTypePrecisePath</name>
+          <briefdescription>
+<para>Arbitrary path drawn with sub-pixel precision (1/8th precision). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4660" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4660" bodyend="4665"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" prot="public" static="no">
+        <type>struct <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref></type>
+        <definition>typedef struct GDrawCommand GDrawCommand</definition>
+        <argsstring></argsstring>
+        <name>GDrawCommand</name>
+        <briefdescription>
+<para>Draw commands are the basic building block of the draw command system, encoding the type of command to draw, the stroke width and color, fill color, and points that define the path (or center of a circle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4633" column="27" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" prot="public" static="no">
+        <type>struct <ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref></type>
+        <definition>typedef struct GDrawCommandFrame GDrawCommandFrame</definition>
+        <argsstring></argsstring>
+        <name>GDrawCommandFrame</name>
+        <briefdescription>
+<para>Draw command frames contain a list of commands to draw for that frame and a duration, indicating the length of time for which the frame should be drawn in an animation sequence. Frames form the building blocks of a <ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref>, which consists of multiple frames. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4639" column="32" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___draw_command_1ga023d866e81192283537363724ea676b1" prot="public" static="no">
+        <type>struct <ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref></type>
+        <definition>typedef struct GDrawCommandImage GDrawCommandImage</definition>
+        <argsstring></argsstring>
+        <name>GDrawCommandImage</name>
+        <briefdescription>
+<para>Draw command images contain a list of commands that can be drawn. An image can be loaded from PDC file data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4643" column="32" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" prot="public" static="no">
+        <type>struct <ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref></type>
+        <definition>typedef struct GDrawCommandList GDrawCommandList</definition>
+        <argsstring></argsstring>
+        <name>GDrawCommandList</name>
+        <briefdescription>
+<para>Draw command lists contain a list of commands that can be iterated over and drawn all at once. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4646" column="31" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___draw_command_1ga8673acd7b16457f494e5ed4844da9b76" prot="public" static="no">
+        <type>bool(*</type>
+        <definition>typedef bool(* GDrawCommandListIteratorCb) (GDrawCommand *command, uint32_t index, void *context)</definition>
+        <argsstring>)(GDrawCommand *command, uint32_t index, void *context)</argsstring>
+        <name>GDrawCommandListIteratorCb</name>
+        <briefdescription>
+<para>Callback for iterating over draw command list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> in iteration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the current command in the list </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context pointer for the iteration operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the iteration should continue after this command is processed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4653" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" prot="public" static="no">
+        <type>struct <ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref></type>
+        <definition>typedef struct GDrawCommandSequence GDrawCommandSequence</definition>
+        <argsstring></argsstring>
+        <name>GDrawCommandSequence</name>
+        <briefdescription>
+<para>Draw command sequences allow the animation of frames over time. Each sequence has a list of frames that can be accessed by the elapsed duration of the animation (not maintained internally) or by index. Sequences can be loaded from PDC file data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4658" column="35" bodyfile="build/sdk/emery/include/pebble.h" bodystart="4658" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___draw_command_1ga271a3bd357f07b65900f1e326a2f80c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_draw</definition>
+        <argsstring>(GContext *ctx, GDrawCommand *command)</argsstring>
+        <name>gdraw_command_draw</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Draw a command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> to draw </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4670" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4670" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga680ab532e364bea92d68c802784c59b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_frame_draw</definition>
+        <argsstring>(GContext *ctx, GDrawCommandSequence *sequence, GDrawCommandFrame *frame, GPoint offset)</argsstring>
+        <name>gdraw_command_frame_draw</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <param>
+          <type><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Draw a frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sequence from which the frame comes from (this is required) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from draw context origin to draw the frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4765" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4765" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga7ef2d0abe6feca8442c61175d623ad09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> *</type>
+        <definition>GDrawCommandList * gdraw_command_frame_get_command_list</definition>
+        <argsstring>(GDrawCommandFrame *frame)</argsstring>
+        <name>gdraw_command_frame_get_command_list</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Get the command list of the frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> from which to get the command list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>command list </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4905" column="18" declfile="build/sdk/emery/include/pebble.h" declline="4905" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga78b86ef1fd1110451275311334746dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t gdraw_command_frame_get_duration</definition>
+        <argsstring>(GDrawCommandFrame *frame)</argsstring>
+        <name>gdraw_command_frame_get_duration</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Get the duration of the frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> from which to get the duration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>duration of the frame in milliseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4776" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4776" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga11fc91b8acf565273ee4ed264cf5ac40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_frame_set_duration</definition>
+        <argsstring>(GDrawCommandFrame *frame, uint32_t duration)</argsstring>
+        <name>gdraw_command_frame_set_duration</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Set the duration of the frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> for which to set the duration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>duration of the frame in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4771" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4771" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga44450dfcb31e2787511e305e713f0941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GColor</type>
+        <definition>GColor gdraw_command_get_fill_color</definition>
+        <argsstring>(GDrawCommand *command)</argsstring>
+        <name>gdraw_command_get_fill_color</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Get the fill color of a command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to get the fill color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fill color of the given <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4685" column="8" declfile="build/sdk/emery/include/pebble.h" declline="4685" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga83f2e4e65b3d6a5ed31dac75dfc55271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdraw_command_get_hidden</definition>
+        <argsstring>(GDrawCommand *command)</argsstring>
+        <name>gdraw_command_get_hidden</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Return whether a command is hidden. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to get the hidden status </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if command is hidden </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4758" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4758" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga8d5ee5ab59aa36aa66fd4c1e0b20d835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t gdraw_command_get_num_points</definition>
+        <argsstring>(GDrawCommand *command)</argsstring>
+        <name>gdraw_command_get_num_points</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of points in a command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4708" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4708" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gae3521fade966157c4be16c7090982b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gdraw_command_get_path_open</definition>
+        <argsstring>(GDrawCommand *command)</argsstring>
+        <name>gdraw_command_get_path_open</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Return whether a stroke command path is open. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This only works for commands of type GDrawCommandPath and GDrawCommandPrecisePath </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to get the path open status </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the path is open </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4747" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4747" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gac3d2d0e3bf0df97af606a8bc6dc0c764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+        <definition>GPoint gdraw_command_get_point</definition>
+        <argsstring>(GDrawCommand *command, uint16_t point_idx)</argsstring>
+        <name>gdraw_command_get_point</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>point_idx</declname>
+        </param>
+        <briefdescription>
+<para>Get the value of a point in a command from the specified index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to get a point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index to get the point for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The point in the <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> specified by point_idx </para>
+</simplesect>
+<simplesect kind="note"><para>The index <bold>must</bold> be less than the number of points </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4721" column="8" declfile="build/sdk/emery/include/pebble.h" declline="4721" declcolumn="8"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga61cd43bac25cfb0627f78cb0f894d1a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+        <definition>uint16_t gdraw_command_get_radius</definition>
+        <argsstring>(GDrawCommand *command)</argsstring>
+        <name>gdraw_command_get_radius</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Get the radius of a circle command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>this only works for commands of typeGDrawCommandCircle. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to get the circle radius </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The radius in pixels if command is of type GDrawCommandCircle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4733" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4733" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga4fa8e6610acf926cbcd7826bc7afc34c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GColor</type>
+        <definition>GColor gdraw_command_get_stroke_color</definition>
+        <argsstring>(GDrawCommand *command)</argsstring>
+        <name>gdraw_command_get_stroke_color</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Get the stroke color of a command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to get the stroke color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The stroke color of the given <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4695" column="8" declfile="build/sdk/emery/include/pebble.h" declline="4695" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gab01816dd1cda335b88a521686912c981" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t gdraw_command_get_stroke_width</definition>
+        <argsstring>(GDrawCommand *command)</argsstring>
+        <name>gdraw_command_get_stroke_width</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Get the stroke width of a command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to get the stroke width </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The stroke width of the given <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4705" column="9" declfile="build/sdk/emery/include/pebble.h" declline="4705" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga5d130318502ad97d7ab4126ddf9acc7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1gacf7487ecae2c3be099135069a81ec742" kindref="member">GDrawCommandType</ref></type>
+        <definition>GDrawCommandType gdraw_command_get_type</definition>
+        <argsstring>(GDrawCommand *command)</argsstring>
+        <name>gdraw_command_get_type</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Get the command type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to get the type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The type of the given <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4675" column="18" declfile="build/sdk/emery/include/pebble.h" declline="4675" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga30ef7abf7d215c7ea9aa628cd77de5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> *</type>
+        <definition>GDrawCommandImage * gdraw_command_image_clone</definition>
+        <argsstring>(GDrawCommandImage *image)</argsstring>
+        <name>gdraw_command_image_clone</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> as a copy from a given image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image to copy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>cloned image or NULL if the operation failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4786" column="19" declfile="build/sdk/emery/include/pebble.h" declline="4786" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga0d84c5adc309eade2e0b200e982e27ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> *</type>
+        <definition>GDrawCommandImage * gdraw_command_image_create_with_resource</definition>
+        <argsstring>(uint32_t resource_id)</argsstring>
+        <name>gdraw_command_image_create_with_resource</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>resource_id</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> from the specified resource (PDC file). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource containing data to load and create <ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> pointer if the resource was loaded, NULL otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4781" column="19" declfile="build/sdk/emery/include/pebble.h" declline="4781" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga1a58c00b978dc449aeb20336eb04c61b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_image_destroy</definition>
+        <argsstring>(GDrawCommandImage *image)</argsstring>
+        <name>gdraw_command_image_destroy</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the <ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> structure and frees associated data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the image to free (delete) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4790" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4790" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga8912135a38f099affdf89926540ed3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_image_draw</definition>
+        <argsstring>(GContext *ctx, GDrawCommandImage *image, GPoint offset)</argsstring>
+        <name>gdraw_command_image_draw</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Draw an image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from draw context origin to draw the image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4796" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4796" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gaf2c34c0b5c5e432a42e65c3dfe682ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+        <definition>GSize gdraw_command_image_get_bounds_size</definition>
+        <argsstring>(GDrawCommandImage *image)</argsstring>
+        <name>gdraw_command_image_get_bounds_size</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Get size of the bounding box surrounding all draw commands in the image. This bounding box can be used to set the graphics context or layer bounds when drawing the image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> from which to get the bounding box size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bounding box size </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4802" column="7" declfile="build/sdk/emery/include/pebble.h" declline="4802" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gae59eee9ae3a4ee91e5008cbae21bbb24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> *</type>
+        <definition>GDrawCommandList * gdraw_command_image_get_command_list</definition>
+        <argsstring>(GDrawCommandImage *image)</argsstring>
+        <name>gdraw_command_image_get_command_list</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Get the command list of the image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> from which to get the command list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>command list </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4813" column="18" declfile="build/sdk/emery/include/pebble.h" declline="4813" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga9eaa4743fa7753d77a392a3e71f1aee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_image_set_bounds_size</definition>
+        <argsstring>(GDrawCommandImage *image, GSize size)</argsstring>
+        <name>gdraw_command_image_set_bounds_size</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set size of the bounding box surrounding all draw commands in the image. This bounding box can be used to set the graphics context or layer bounds when drawing the image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> for which to set the bounding box size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bounding box size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4808" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4808" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gae4c444659781387c1e92e80cc43190c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_list_draw</definition>
+        <argsstring>(GContext *ctx, GDrawCommandList *command_list)</argsstring>
+        <name>gdraw_command_list_draw</name>
+        <param>
+          <type>GContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> *</type>
+          <declname>command_list</declname>
+        </param>
+        <briefdescription>
+<para>Draw all commands in a command list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination graphics context in which to draw </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>command_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of commands to draw </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4825" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4825" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga80b019a473b0e3bdc2a0fb4ea71fa11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+        <definition>GDrawCommand * gdraw_command_list_get_command</definition>
+        <argsstring>(GDrawCommandList *command_list, uint16_t command_idx)</argsstring>
+        <name>gdraw_command_list_get_command</name>
+        <param>
+          <type><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> *</type>
+          <declname>command_list</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>command_idx</declname>
+        </param>
+        <briefdescription>
+<para>Get the command at the specified index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>the specified index must be less than the number of commands in the list </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> from which to get a command </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>command_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the command to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> at the specified index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4832" column="14" declfile="build/sdk/emery/include/pebble.h" declline="4832" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gabd949593cad36370ea737f925232aaf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t gdraw_command_list_get_num_commands</definition>
+        <argsstring>(GDrawCommandList *command_list)</argsstring>
+        <name>gdraw_command_list_get_num_commands</name>
+        <param>
+          <type><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> *</type>
+          <declname>command_list</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of commands in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> from which to get the number of commands </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of commands in command list </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4837" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4837" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga5b0efa756e6105ecc3dc262bd8079a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_list_iterate</definition>
+        <argsstring>(GDrawCommandList *command_list, GDrawCommandListIteratorCb handle_command, void *callback_context)</argsstring>
+        <name>gdraw_command_list_iterate</name>
+        <param>
+          <type><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> *</type>
+          <declname>command_list</declname>
+        </param>
+        <param>
+          <type><ref refid="group___draw_command_1ga8673acd7b16457f494e5ed4844da9b76" kindref="member">GDrawCommandListIteratorCb</ref></type>
+          <declname>handle_command</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callback_context</declname>
+        </param>
+        <briefdescription>
+<para>Iterate over all commands in a command list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> over which to iterate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handle_command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iterator callback </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context pointer to be passed into the iterator callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4819" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4819" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga6a4fa735fbf9fcaae6e2631f2a36b133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+        <definition>GDrawCommandSequence * gdraw_command_sequence_clone</definition>
+        <argsstring>(GDrawCommandSequence *sequence)</argsstring>
+        <name>gdraw_command_sequence_clone</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> as a copy from a given sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sequence to copy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>cloned sequence or NULL if the operation failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4847" column="22" declfile="build/sdk/emery/include/pebble.h" declline="4847" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gadbca088eb5f0e779cd091396cbffef28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+        <definition>GDrawCommandSequence * gdraw_command_sequence_create_with_resource</definition>
+        <argsstring>(uint32_t resource_id)</argsstring>
+        <name>gdraw_command_sequence_create_with_resource</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>resource_id</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> from the specified resource (PDC file). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resource_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource containing data to load and create <ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> pointer if the resource was loaded, NULL otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4842" column="22" declfile="build/sdk/emery/include/pebble.h" declline="4842" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gac272b521bc425b8a4447543109e30487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_sequence_destroy</definition>
+        <argsstring>(GDrawCommandSequence *sequence)</argsstring>
+        <name>gdraw_command_sequence_destroy</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the <ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> structure and frees associated data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the sequence to destroy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4851" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4851" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga51566383cf5f41abe0136979beb87947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+        <definition>GSize gdraw_command_sequence_get_bounds_size</definition>
+        <argsstring>(GDrawCommandSequence *sequence)</argsstring>
+        <name>gdraw_command_sequence_get_bounds_size</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Get the size of the bounding box surrounding all draw commands in the sequence. This bounding box can be used to set the graphics context or layer bounds when drawing the frames in the sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> from which to get the bounds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bounding box size </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4873" column="7" declfile="build/sdk/emery/include/pebble.h" declline="4873" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga79c3e5f133d22dd60e44514b0531270a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> *</type>
+        <definition>GDrawCommandFrame * gdraw_command_sequence_get_frame_by_elapsed</definition>
+        <argsstring>(GDrawCommandSequence *sequence, uint32_t elapsed_ms)</argsstring>
+        <name>gdraw_command_sequence_get_frame_by_elapsed</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>elapsed_ms</declname>
+        </param>
+        <briefdescription>
+<para>Get the frame that should be shown after the specified amount of elapsed time The last frame will be returned if the elapsed time exceeds the total time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> from which to get the frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>elapsed_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>elapsed time in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to <ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> that should be displayed at the elapsed time </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4858" column="19" declfile="build/sdk/emery/include/pebble.h" declline="4858" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gae49110f63c2be10b72da797d5ba0006d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> *</type>
+        <definition>GDrawCommandFrame * gdraw_command_sequence_get_frame_by_index</definition>
+        <argsstring>(GDrawCommandSequence *sequence, uint32_t index)</argsstring>
+        <name>gdraw_command_sequence_get_frame_by_index</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the frame at the specified index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> from which to get the frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of frame to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to <ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> at the specified index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4865" column="19" declfile="build/sdk/emery/include/pebble.h" declline="4865" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gacd856c140d4250d05adfed30a787ea11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t gdraw_command_sequence_get_num_frames</definition>
+        <argsstring>(GDrawCommandSequence *sequence)</argsstring>
+        <name>gdraw_command_sequence_get_num_frames</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of frames in the sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> from which to get the number of frames </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of frames in the sequence </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4900" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4900" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga7c42817bf50c0b9cf045caf5aec3808a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t gdraw_command_sequence_get_play_count</definition>
+        <argsstring>(GDrawCommandSequence *sequence)</argsstring>
+        <name>gdraw_command_sequence_get_play_count</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Get the play count of the sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> from which to get the play count </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>play count of sequence </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4885" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4885" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gab8051f9f7475d5c6d83a7cd6aacc32b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t gdraw_command_sequence_get_total_duration</definition>
+        <argsstring>(GDrawCommandSequence *sequence)</argsstring>
+        <name>gdraw_command_sequence_get_total_duration</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Get the total duration of the sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> from which to get the total duration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>total duration of the sequence in milliseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4895" column="10" declfile="build/sdk/emery/include/pebble.h" declline="4895" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga7471751849309b99c788db58e1171bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_sequence_set_bounds_size</definition>
+        <argsstring>(GDrawCommandSequence *sequence, GSize size)</argsstring>
+        <name>gdraw_command_sequence_set_bounds_size</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set size of the bounding box surrounding all draw commands in the sequence. This bounding box can be used to set the graphics context or layer bounds when drawing the frames in the sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> for which to set the bounds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bounding box size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4880" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4880" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3769">GSize</references>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gad533c4953d7ddc14635faa269ad1c781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_sequence_set_play_count</definition>
+        <argsstring>(GDrawCommandSequence *sequence, uint32_t play_count)</argsstring>
+        <name>gdraw_command_sequence_set_play_count</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> *</type>
+          <declname>sequence</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>play_count</declname>
+        </param>
+        <briefdescription>
+<para>Set the play count of the sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref> for which to set the play count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>play_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>play count </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4890" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4890" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gabed52e73ebdcce37fda76b98cc09e5c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_set_fill_color</definition>
+        <argsstring>(GDrawCommand *command, GColor fill_color)</argsstring>
+        <name>gdraw_command_set_fill_color</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>fill_color</declname>
+        </param>
+        <briefdescription>
+<para>Set the fill color of a command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ref DrawCommand for which to set the fill color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fill_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GColor to set for the fill </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4680" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4680" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga3e659db5ff78a1eb1e157e16d5836271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_set_hidden</definition>
+        <argsstring>(GDrawCommand *command, bool hidden)</argsstring>
+        <name>gdraw_command_set_hidden</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hidden</declname>
+        </param>
+        <briefdescription>
+<para>Set a command as hidden. This command will not be drawn when <ref refid="group___draw_command_1ga271a3bd357f07b65900f1e326a2f80c6" kindref="member">gdraw_command_draw</ref> is called with this command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> for which to set the hidden status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hidden</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if command should be hidden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4753" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4753" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga452eee4f4a81ebbc3d1749844cf4fe40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_set_path_open</definition>
+        <argsstring>(GDrawCommand *command, bool path_open)</argsstring>
+        <name>gdraw_command_set_path_open</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>path_open</declname>
+        </param>
+        <briefdescription>
+<para>Set the path of a stroke command to be open. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This only works for commands of type GDrawCommandPath and GDrawCommandPrecisePath </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> for which to set the path open status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path_open</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if path should be hidden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4740" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4740" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1gae9b05ea306378530d2645e81353e229a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_set_point</definition>
+        <argsstring>(GDrawCommand *command, uint16_t point_idx, GPoint point)</argsstring>
+        <name>gdraw_command_set_point</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>point_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Set the value of the point in a command at the specified index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> for which to set the value of a point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the point to set the value for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new point value to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4714" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4714" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3749">GPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga0957c6372b3088a4e728f11f61181a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_set_radius</definition>
+        <argsstring>(GDrawCommand *command, uint16_t radius)</argsstring>
+        <name>gdraw_command_set_radius</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Set the radius of a circle command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This only works for commands of type GDrawCommandCircle </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> from which to set the circle radius </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius to set for the circle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4727" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4727" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga93d7104ded31ebb3459b7ee988379d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_set_stroke_color</definition>
+        <argsstring>(GDrawCommand *command, GColor stroke_color)</argsstring>
+        <name>gdraw_command_set_stroke_color</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>stroke_color</declname>
+        </param>
+        <briefdescription>
+<para>Set the stroke color of a command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> for which to set the stroke color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stroke_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GColor to set for the stroke </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4690" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4690" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___draw_command_1ga462b48019cc6b3ca1fb4052f8c0b19cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gdraw_command_set_stroke_width</definition>
+        <argsstring>(GDrawCommand *command, uint8_t stroke_width)</argsstring>
+        <name>gdraw_command_set_stroke_width</name>
+        <param>
+          <type><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>stroke_width</declname>
+        </param>
+        <briefdescription>
+<para>Set the stroke width of a command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> for which to set the stroke width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stroke_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stroke width to set for the command </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="4700" column="6" declfile="build/sdk/emery/include/pebble.h" declline="4700" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Pebble Draw Commands are a way to encode arbitrary path draw and fill calls in binary format, so that vector-like graphics can be represented on the watch. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These draw commands can be loaded from resources, manipulated in place and drawn to the current graphics context. Each <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> can be an arbitrary path or a circle with optional fill or stroke. The stroke width and color of the stroke and fill are also encoded within the <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref>. Paths can can be drawn open or closed.</para>
+<para>All aspects of a draw command can be modified, except for the number of points in a path (a circle only has one point, the center).</para>
+<para>Draw commands are grouped into a <ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref>, which can be drawn all at once. Each individual <ref refid="group___draw_command_1ga0e4b73c8630f72d3596f02205368f45b" kindref="member">GDrawCommand</ref> can be accessed from a <ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> for modification.</para>
+<para>A <ref refid="group___draw_command_1gadb59ea1b3f487e6daa8fc7e436a975e1" kindref="member">GDrawCommandList</ref> forms the basis for <ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> and <ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> objects. A <ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> represents a static image and can be represented by the PDC file format and can be loaded as a resource.</para>
+<para>Once you have a <ref refid="group___draw_command_1ga023d866e81192283537363724ea676b1" kindref="member">GDrawCommandImage</ref> loaded in memory you can draw it on the screen in a <ref refid="group___layer_1ga998bcd33d985d252283ebe02400041ee" kindref="member">LayerUpdateProc</ref> with the <ref refid="group___draw_command_1ga8912135a38f099affdf89926540ed3dd" kindref="member">gdraw_command_image_draw()</ref>.</para>
+<para>A <ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> represents a single frame of an animated sequence, with multiple frames making up a single <ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref>, which can also be stored as a PDC and loaded as a resource.</para>
+<para>To draw a <ref refid="group___draw_command_1ga09d3d9395864d2ca00c5302cd3d87c35" kindref="member">GDrawCommandSequence</ref>, use the <ref refid="group___draw_command_1ga79c3e5f133d22dd60e44514b0531270a" kindref="member">gdraw_command_sequence_get_frame_by_elapsed()</ref> to obtain the current <ref refid="group___draw_command_1ga3445222b976ea26c0e6127775a0b0503" kindref="member">GDrawCommandFrame</ref> and <ref refid="group___draw_command_1ga680ab532e364bea92d68c802784c59b6" kindref="member">gdraw_command_frame_draw()</ref> to draw it.</para>
+<para>Draw commands also allow access to drawing with sub-pixel precision. The points are treated as Fixed point types in the format 13.3, so that 1/8th of a pixel precision is possible. Only the points in draw commands of the type GDrawCommandTypePrecisePath will be treated as higher precision. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

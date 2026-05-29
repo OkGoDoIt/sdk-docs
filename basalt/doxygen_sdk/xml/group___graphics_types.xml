@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___graphics_types" kind="group">
     <compoundname>GraphicsTypes</compoundname>
     <title>Graphics Types</title>
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3757" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3757" bodyend="3776"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4034" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4034" bodyend="4053"/>
       </memberdef>
       <memberdef kind="enum" id="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" prot="public" static="no" strong="no">
         <type></type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3472" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3472" bodyend="3479"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3749" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3749" bodyend="3756"/>
       </memberdef>
       <memberdef kind="enum" id="group___graphics_types_1ga0d021422bd90a2a49e6c8d848e6d556f" prot="public" static="no" strong="no">
         <type></type>
@@ -249,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3805" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3805" bodyend="3841"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4082" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4082" bodyend="4118"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -264,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3482" column="22" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3482" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3759" column="22" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3759" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___graphics_types_1gaab4efc3f23535c390cd81f0bae9a903c" prot="public" static="no">
         <type>struct GBitmapSequence</type>
@@ -277,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3485" column="30" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3485" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3762" column="30" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3762" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___graphics_types_1ga7b74248edea0c97b98702660c0251aa7" prot="public" static="no">
         <type>GColor8</type>
@@ -290,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3322" column="17" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3322" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3599" column="17" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3599" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___graphics_types_1ga83252ff59db719f37ccbb80393c53e89" prot="public" static="no">
         <type>struct GContext</type>
@@ -303,7 +303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3844" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3844" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4121" column="23" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4121" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -347,8 +347,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3589" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3589" declcolumn="9"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3866" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3866" declcolumn="9"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga8b7536253fb1e614201c473580863f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GBitmap *</type>
@@ -390,8 +390,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3609" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3609" declcolumn="9"/>
-        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3388">GSize</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3886" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3886" declcolumn="9"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3665">GSize</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga135af9d75278c08abb584464728b0c81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GBitmap *</type>
@@ -457,8 +457,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3624" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3624" declcolumn="9"/>
-        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3388">GSize</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3901" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3901" declcolumn="9"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3665">GSize</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga339b6cfb4c7fd3d851e39e92d3baf487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GBitmap *</type>
@@ -502,7 +502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3599" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3599" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3876" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3876" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gabb3697502db2ec3df0ada64ba15770e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GBitmap *</type>
@@ -534,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3634" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3634" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3911" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3911" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga18d06bd1fec2f88f027879664ef6185c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GBitmap *</type>
@@ -566,7 +566,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3573" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3573" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3850" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3850" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga80248fd5ac8a50211f0cd4110a45fa59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GBitmap *</type>
@@ -596,7 +596,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3558" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3558" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3835" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3835" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga0b0540c1de9ecadbef44e7d87e05ca92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -616,7 +616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3644" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3644" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3921" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3921" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gafce95e410fee76c66526f167c8415f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
@@ -648,8 +648,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3528" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="3528" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3805" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="3805" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga032629d36d12d13aadfd5176fd0463c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -681,7 +681,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3496" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3496" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3773" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3773" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gac346bcebc653a196ddb2aecc04dc0ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t *</type>
@@ -715,7 +715,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3509" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3509" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3786" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3786" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga5c307d3424e0af8d03d988bb69a5ee0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_bitmap_data_row_info" kindref="compound">GBitmapDataRowInfo</ref></type>
@@ -761,7 +761,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3752" column="20" declfile="build/sdk/basalt/include/pebble.h" declline="3752" declcolumn="20"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4029" column="20" declfile="build/sdk/basalt/include/pebble.h" declline="4029" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga3c8c92415f93744d2a5aec9cb40194c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___graphics_types_1ga5c29b6b52478182a01ec4863de80ebfa" kindref="member">GBitmapFormat</ref></type>
@@ -791,7 +791,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3501" column="15" declfile="build/sdk/basalt/include/pebble.h" declline="3501" declcolumn="15"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3778" column="15" declfile="build/sdk/basalt/include/pebble.h" declline="3778" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gad88c0e6a210a3f40563d15b29ecf4a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GColor *</type>
@@ -823,7 +823,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3540" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="3540" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3817" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="3817" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gaf130cb37155bf94d76ee262d03577d54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GBitmapSequence *</type>
@@ -835,7 +835,7 @@
           <declname>resource_id</declname>
         </param>
         <briefdescription>
-<para>Creates a GBitmapSequence from the specified resource (APNG/PNG files) </para>
+<para>Creates a GBitmapSequence from the specified resource (APNG/PNG files). </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -853,7 +853,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3649" column="17" declfile="build/sdk/basalt/include/pebble.h" declline="3649" declcolumn="17"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3926" column="17" declfile="build/sdk/basalt/include/pebble.h" declline="3926" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga80e569d755b657753e3508db7f3738ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -881,7 +881,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3683" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3683" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3960" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3960" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga0f780293a25c9533e3a7f225e5e32110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
@@ -911,8 +911,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3719" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="3719" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3388">GSize</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3996" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="3996" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3665">GSize</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga310e83ec73f9bf4615be74f70875bb14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -942,7 +942,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3693" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3693" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3970" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3970" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga9043176bcb76648ea06178359cf49956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -974,7 +974,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3705" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3705" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3982" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3982" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga2baea5c5caff4c96de103895e63e66e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
@@ -1004,7 +1004,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3698" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3698" declcolumn="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3975" column="10" declfile="build/sdk/basalt/include/pebble.h" declline="3975" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga38f7d5f9f91c51ba1735ff570ee83f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1034,7 +1034,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3688" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3688" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3965" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3965" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gaccb2389a62d110a0b36c05fec3026b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1074,7 +1074,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3712" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3712" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3989" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3989" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga7c9b86d6acd020cbe4982d00cfd80ff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1132,7 +1132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3678" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3678" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3955" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3955" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga0f7029b68fc5f0b6a8869a0aa7717fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1188,7 +1188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3661" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3661" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3938" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3938" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga3ef230f384923b9d02b735ac7c0aa7e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1230,8 +1230,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3534" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3534" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3811" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3811" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga64f2a0d2488f425a710864e127d1d327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1309,7 +1309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3520" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3520" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3797" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3797" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga4450b2f567703a3e27bcbb51117aa087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1367,7 +1367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3551" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3551" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3828" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3828" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga40df0077888f77ac5b0a07d8d7304a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1389,7 +1389,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3327" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3327" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3604" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3604" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga5d02d53f14eef571f131c784a1eaf3c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>GColor8</type>
@@ -1419,7 +1419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3334" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3334" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3611" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="3611" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga55941ba733d6b685ba3fcd316ce12af0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1461,8 +1461,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3377" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3377" declcolumn="6"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3654" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3654" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3645">GPoint</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gad714d5d1dd0509196d8aadbdba2ac510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1534,8 +1534,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3788" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3788" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="4065" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="4065" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gae3a0a9c97927d0a72f3c5d8340e950fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
@@ -1565,9 +1565,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3453" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="3453" declcolumn="8"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3730" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="3730" declcolumn="8"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3645">GPoint</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga0be9e99bf608e20c4ce33c48a859efa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1615,8 +1615,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3441" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3441" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3718" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3718" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga8952ac950ca4ec1195106e7b208a82c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1658,9 +1658,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3447" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3447" declcolumn="6"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3724" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3724" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3645">GPoint</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga45ade8bcee6668a5b9fc3a5dc2adbb4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
@@ -1704,8 +1704,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3463" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="3463" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3740" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="3740" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gac4bfb1da25ab4fec1a84ffbc50a40bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1747,8 +1747,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3418" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3418" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3695" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3695" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
@@ -1797,9 +1797,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3904" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="3904" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" compoundref="pebble_8h" startline="3889" endline="3890">GEdgeInsets</references>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="4181" column="7" declfile="build/sdk/basalt/include/pebble.h" declline="4181" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" compoundref="pebble_8h" startline="4166" endline="4167">GEdgeInsets</references>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1gabbece2417a145e398e6c1ce512203150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1831,8 +1831,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3425" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3425" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3702" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3702" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga6fcd8b24daede67494e49fa4803760a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1868,8 +1868,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3434" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3434" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3711" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3711" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___graphics_types_1ga182655c93aaff5c2df45aba496c64b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1911,8 +1911,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3397" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3397" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3388">GSize</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="3674" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="3674" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3665">GSize</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
@@ -1928,7 +1928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3338" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3338" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3615" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3615" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga3c778a69b007e2dd2aeb2a8253d2a3ad" prot="public" static="no">
         <name>GColorFromHEX</name>
@@ -1960,7 +1960,7 @@
         <param><defname>red</defname></param>
         <param><defname>green</defname></param>
         <param><defname>blue</defname></param>
-        <initializer>  <ref refid="group___graphics_types_1gaa7922ac35d2b7fd40547083eed4ed757" kindref="member">GColorFromRGBA</ref>(red, green, blue, 255)</initializer>
+        <initializer><ref refid="group___graphics_types_1gaa7922ac35d2b7fd40547083eed4ed757" kindref="member">GColorFromRGBA</ref>(red, green, blue, 255)</initializer>
         <briefdescription>
 <para>Convert RGB to GColor. </para>
         </briefdescription>
@@ -2004,12 +2004,12 @@
         <param><defname>green</defname></param>
         <param><defname>blue</defname></param>
         <param><defname>alpha</defname></param>
-        <initializer>  ((GColor8){ \
-  .a = (uint8_t)(alpha) &gt;&gt; 6, \
-  .r = (uint8_t)(red) &gt;&gt; 6, \
-  .g = (uint8_t)(green) &gt;&gt; 6, \
-  .b = (uint8_t)(blue) &gt;&gt; 6, \
-  })</initializer>
+        <initializer>((GColor8){ \
+.a = (uint8_t)(alpha) &gt;&gt; 6, \
+.r = (uint8_t)(red) &gt;&gt; 6, \
+.g = (uint8_t)(green) &gt;&gt; 6, \
+.b = (uint8_t)(blue) &gt;&gt; 6, \
+})</initializer>
         <briefdescription>
 <para>Convert RGBA to GColor. </para>
         </briefdescription>
@@ -2058,7 +2058,7 @@
       <memberdef kind="define" id="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" prot="public" static="no">
         <name>GEdgeInsets</name>
         <param><defname>...</defname></param>
-        <initializer>  <ref refid="group___graphics_types_1ga1524bd1b8af82ffca01955db009076a6" kindref="member">GEdgeInsetsN</ref>(__VA_ARGS__, <ref refid="group___graphics_types_1gab35ab5cb43abaeb0798f19f30a077c21" kindref="member">GEdgeInsets4</ref>, <ref refid="group___graphics_types_1gae5df1ff8865d2032e680a2cf84311e1a" kindref="member">GEdgeInsets3</ref>, <ref refid="group___graphics_types_1gab130dc3e0dc8d5b4b47c12b02ee9a22e" kindref="member">GEdgeInsets2</ref>, <ref refid="group___graphics_types_1ga35765ba41b7bd443ac54356610599549" kindref="member">GEdgeInsets1</ref>)(__VA_ARGS__)</initializer>
+        <initializer><ref refid="group___graphics_types_1ga1524bd1b8af82ffca01955db009076a6" kindref="member">GEdgeInsetsN</ref>(__VA_ARGS__, <ref refid="group___graphics_types_1gab35ab5cb43abaeb0798f19f30a077c21" kindref="member">GEdgeInsets4</ref>, <ref refid="group___graphics_types_1gae5df1ff8865d2032e680a2cf84311e1a" kindref="member">GEdgeInsets3</ref>, <ref refid="group___graphics_types_1gab130dc3e0dc8d5b4b47c12b02ee9a22e" kindref="member">GEdgeInsets2</ref>, <ref refid="group___graphics_types_1ga35765ba41b7bd443ac54356610599549" kindref="member">GEdgeInsets1</ref>)(__VA_ARGS__)</initializer>
         <briefdescription>
 <para>Convenience macro to make a <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> This macro follows the CSS shorthand notation where you can call it with. </para>
         </briefdescription>
@@ -2075,13 +2075,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3889" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3889" bodyend="3890"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4166" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4166" bodyend="4167"/>
         <referencedby refid="group___graphics_types_1ga818b4cc0be88f40cbaf6a4b73497ae56">grect_inset</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga35765ba41b7bd443ac54356610599549" prot="public" static="no">
         <name>GEdgeInsets1</name>
         <param><defname>trbl</defname></param>
-        <initializer>  ((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = trbl, .right = trbl, .bottom = trbl, .left = trbl})</initializer>
+        <initializer>((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = trbl, .right = trbl, .bottom = trbl, .left = trbl})</initializer>
         <briefdescription>
 <para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
         </briefdescription>
@@ -2089,13 +2089,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3872" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3872" bodyend="3873"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4149" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4149" bodyend="4150"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1gab130dc3e0dc8d5b4b47c12b02ee9a22e" prot="public" static="no">
         <name>GEdgeInsets2</name>
         <param><defname>tb</defname></param>
         <param><defname>rl</defname></param>
-        <initializer>  ((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = tb, .right = rl, .bottom = tb, .left = rl})</initializer>
+        <initializer>((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = tb, .right = rl, .bottom = tb, .left = rl})</initializer>
         <briefdescription>
 <para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
         </briefdescription>
@@ -2103,14 +2103,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3868" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3868" bodyend="3869"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4145" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4145" bodyend="4146"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1gae5df1ff8865d2032e680a2cf84311e1a" prot="public" static="no">
         <name>GEdgeInsets3</name>
         <param><defname>t</defname></param>
         <param><defname>rl</defname></param>
         <param><defname>b</defname></param>
-        <initializer>  ((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = t, .right = rl, .bottom = b, .left = rl})</initializer>
+        <initializer>((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = t, .right = rl, .bottom = b, .left = rl})</initializer>
         <briefdescription>
 <para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
         </briefdescription>
@@ -2118,7 +2118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3864" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3864" bodyend="3865"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4141" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4141" bodyend="4142"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1gab35ab5cb43abaeb0798f19f30a077c21" prot="public" static="no">
         <name>GEdgeInsets4</name>
@@ -2126,7 +2126,7 @@
         <param><defname>r</defname></param>
         <param><defname>b</defname></param>
         <param><defname>l</defname></param>
-        <initializer>  ((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = t, .right = r, .bottom = b, .left = l})</initializer>
+        <initializer>((<ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref>){.top = t, .right = r, .bottom = b, .left = l})</initializer>
         <briefdescription>
 <para>helper for <ref refid="struct_g_edge_insets" kindref="compound">GEdgeInsets</ref> macro </para>
         </briefdescription>
@@ -2134,7 +2134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3860" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3860" bodyend="3861"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4137" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4137" bodyend="4138"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga1524bd1b8af82ffca01955db009076a6" prot="public" static="no">
         <name>GEdgeInsetsN</name>
@@ -2152,7 +2152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3876" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3876" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="4153" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="4153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" prot="public" static="no">
         <name>GPoint</name>
@@ -2166,7 +2166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3368" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3368" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3645" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3645" bodyend="-1"/>
         <referencedby refid="group___draw_command_1ga680ab532e364bea92d68c802784c59b6">gdraw_command_frame_draw</referencedby>
         <referencedby refid="group___draw_command_1gac3d2d0e3bf0df97af606a8bc6dc0c764">gdraw_command_get_point</referencedby>
         <referencedby refid="group___draw_command_1ga8912135a38f099affdf89926540ed3dd">gdraw_command_image_draw</referencedby>
@@ -2198,7 +2198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3371" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3371" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3648" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3648" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" prot="public" static="no">
         <name>GRect</name>
@@ -2214,7 +2214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3409" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3409" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3686" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3686" bodyend="-1"/>
         <referencedby refid="group___bitmap_layer_1gadd992eb1a89f66007a6311d9021ba32b">bitmap_layer_create</referencedby>
         <referencedby refid="group___graphics_types_1ga73f7340bbffad2bc8aeda4e4565c65f4">gbitmap_create_as_sub_bitmap</referencedby>
         <referencedby refid="group___graphics_types_1gafce95e410fee76c66526f167c8415f3f">gbitmap_get_bounds</referencedby>
@@ -2265,7 +2265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3412" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3412" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3689" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3689" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" prot="public" static="no">
         <name>GSize</name>
@@ -2279,7 +2279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3388" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3388" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3665" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3665" bodyend="-1"/>
         <referencedby refid="group___graphics_types_1ga8b7536253fb1e614201c473580863f2d">gbitmap_create_blank</referencedby>
         <referencedby refid="group___graphics_types_1ga135af9d75278c08abb584464728b0c81">gbitmap_create_blank_with_palette</referencedby>
         <referencedby refid="group___graphics_types_1ga0f780293a25c9533e3a7f225e5e32110">gbitmap_sequence_get_bitmap_size</referencedby>
@@ -2306,7 +2306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3391" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3391" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3668" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3668" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1gaa7ac313277ed0b20e858ba4f8f0f039d" prot="public" static="no">
         <name>PBL_IF_BW_ELSE</name>
@@ -2320,7 +2320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3350" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3350" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3627" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3627" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga5a7411380c062d7024c411bdc0794206" prot="public" static="no">
         <name>PBL_IF_COLOR_ELSE</name>
@@ -2334,7 +2334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3354" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3354" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3631" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3631" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga93dc1082b2412cc4931cc1f0e870e250" prot="public" static="no">
         <name>PBL_IF_RECT_ELSE</name>
@@ -2348,7 +2348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3342" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3342" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3619" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3619" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga4f9bce65d188c24cbb92dcce0c616e2c" prot="public" static="no">
         <name>PBL_IF_ROUND_ELSE</name>
@@ -2362,7 +2362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3346" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3346" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3623" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3623" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1gace600ef49d59abf22dbaad7b5018d746" prot="public" static="no">
         <name>PLAY_COUNT_INFINITE</name>
@@ -2374,7 +2374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3466" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3466" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3743" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3743" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___graphics_types_1ga77075c217c0911bc6ea68dbdc73787e6" prot="public" static="no">
         <name>PLAY_DURATION_INFINITE</name>
@@ -2386,7 +2386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="3469" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3469" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="3746" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3746" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

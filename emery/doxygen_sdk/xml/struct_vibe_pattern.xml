@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_vibe_pattern" kind="struct" language="C++" prot="public">
+    <compoundname>VibePattern</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_vibe_pattern_1aba389d1d1c6f6e3cc49687a1a443c302" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref> *</type>
+        <definition>const uint32_t* VibePattern::durations</definition>
+        <argsstring></argsstring>
+        <name>durations</name>
+        <qualifiedname>VibePattern::durations</qualifiedname>
+        <briefdescription>
+<para>Pointer to an array of segment durations, measured in milli-seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum allowed duration is 10000ms. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8629" column="18" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vibe_pattern_1a0ea4a7f770c28f400daf3bd255e730e7" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t VibePattern::num_segments</definition>
+        <argsstring></argsstring>
+        <name>num_segments</name>
+        <qualifiedname>VibePattern::num_segments</qualifiedname>
+        <briefdescription>
+<para>The length of the array of durations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8633" column="12" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8633" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure describing a vibration pattern. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A pattern consists of at least 1 vibe-on duration, optionally followed by alternating vibe-off + vibe-on durations. Each segment may have a different duration.</para>
+<para>Example code: <programlisting filename=".c"><codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Vibe<sp/>pattern:<sp/>ON<sp/>for<sp/>200ms,<sp/>OFF<sp/>for<sp/>100ms,<sp/>ON<sp/>for<sp/>400ms:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref><sp/>segments[]<sp/>=<sp/>{<sp/>200,<sp/>100,<sp/>400<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">VibePattern<sp/>pat<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.durations<sp/>=<sp/>segments,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.num_segments<sp/>=<sp/>ARRAY_LENGTH(segments),</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___vibes_1ga3412ed26dd91a20f77ba1a4c54b668e1" kindref="member">vibes_enqueue_custom_pattern</ref>(pat);</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ref refid="group___vibes_1ga3412ed26dd91a20f77ba1a4c54b668e1" kindref="member">vibes_enqueue_custom_pattern</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="8624" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8624" bodyend="8634"/>
+    <listofallmembers>
+      <member refid="struct_vibe_pattern_1aba389d1d1c6f6e3cc49687a1a443c302" prot="public" virt="non-virtual"><scope>VibePattern</scope><name>durations</name></member>
+      <member refid="struct_vibe_pattern_1a0ea4a7f770c28f400daf3bd255e730e7" prot="public" virt="non-virtual"><scope>VibePattern</scope><name>num_segments</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___property_animation" kind="group">
     <compoundname>PropertyAnimation</compoundname>
     <title>PropertyAnimation</title>
@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6215" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6215" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6493" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6493" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga45cf8d9b79d330875e5bb5e4c415573e" prot="public" static="no">
         <type>void(*</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6209" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6209" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6487" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6487" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga15081a96a1c078f2249312272bad7063" prot="public" static="no">
         <type><ref refid="group___property_animation_1ga8e5e2922e940ba341ecd12a1222674c1" kindref="member">GPointReturn</ref>(*</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6194" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6194" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6472" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6472" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga8e5e2922e940ba341ecd12a1222674c1" prot="public" static="no">
         <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6158" column="16" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6158" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6436" column="16" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6436" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga4ab8cc6589e74bd6c6b30275ec442fde" prot="public" static="no">
         <type>void(*</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6189" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6189" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6467" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6467" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga5c49d2de8b35ee91cec627187d59b70d" prot="public" static="no">
         <type><ref refid="group___property_animation_1gabf18ade37c724a027e0fadee01accbeb" kindref="member">GRectReturn</ref>(*</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6204" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6204" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6482" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6482" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1gabf18ade37c724a027e0fadee01accbeb" prot="public" static="no">
         <type><ref refid="struct_g_rect" kindref="compound">GRect</ref></type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6162" column="15" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6162" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6440" column="15" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6440" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga61b3aafd7d96fe2d8447c9adcd4f8393" prot="public" static="no">
         <type>void(*</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6199" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6199" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6477" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6477" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga13179c04776f22968437e35b256f3597" prot="public" static="no">
         <type>int16_t(*</type>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6173" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6173" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6451" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6451" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga1105bd1b67e2fa493129b70aa0b615ec" prot="public" static="no">
         <type>void(*</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6167" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6167" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6445" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6445" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1gac2eaae73c959c7183421dbd40cb7a852" prot="public" static="no">
         <type>struct PropertyAnimation</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6034" column="32" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6034" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6312" column="32" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6312" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga481c32f9df91cbb4e7d3839ff57ba789" prot="public" static="no">
         <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref>(*</type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6184" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6184" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6462" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6462" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___property_animation_1ga9bcdb4cabe3a5cc327b178337ab85669" prot="public" static="no">
         <type>void(*</type>
@@ -237,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6178" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6178" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6456" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6456" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -307,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6078" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="6078" declcolumn="19"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6356" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="6356" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1gaf5654417381134288c269d55619f26a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>PropertyAnimation *</type>
@@ -361,8 +361,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6058" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="6058" declcolumn="19"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="6336" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="6336" declcolumn="19"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3645">GPoint</references>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1gafa235d899037ae80a7488df2d6c8f020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>PropertyAnimation *</type>
@@ -418,8 +418,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6047" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="6047" declcolumn="19"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/basalt/include/pebble.h" line="6325" column="19" declfile="build/sdk/basalt/include/pebble.h" declline="6325" declcolumn="19"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3686">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1ga5206441e917a1e0f5bdce035df1e2bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -447,7 +447,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6083" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6083" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6361" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6361" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -513,7 +513,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6390" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6390" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6668" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6668" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1gac740054cbb16590073e1d2dc9224baf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Animation *</type>
@@ -543,7 +543,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6272" column="11" declfile="build/sdk/basalt/include/pebble.h" declline="6272" declcolumn="11"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6550" column="11" declfile="build/sdk/basalt/include/pebble.h" declline="6550" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1ga954c8e865863bf03e05ff011f1cc48dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -597,7 +597,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6382" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6382" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6660" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6660" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -663,7 +663,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6399" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6399" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6677" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6677" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1gafc7f66d6981fa46530b212de7b2663aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -705,7 +705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6153" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6153" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6431" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6431" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1gacf429c1542a3d76735bf23e6fa7d8449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -747,7 +747,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6125" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6125" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6403" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6403" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1ga9e290a0375528eac0a1a12b4387d6caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -789,7 +789,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6139" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6139" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6417" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6417" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1ga798776416e2c1f86e80ff19672d7ddf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -831,7 +831,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6096" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6096" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6374" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6374" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___property_animation_1gaf45e09b9458d5f63bf9d63dd6ed25f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -873,14 +873,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6110" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6110" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6388" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="6388" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="define">
       <memberdef kind="define" id="group___property_animation_1gac74f0d591ff008864be66a6239f018c1" prot="public" static="no">
         <name>property_animation_clone</name>
         <param><defname>property_animation</defname></param>
-        <initializer>    (PropertyAnimation *)animation_clone((Animation *)property_animation)</initializer>
+        <initializer>(PropertyAnimation *)animation_clone((Animation *)property_animation)</initializer>
         <briefdescription>
 <para>Convenience function to clone a property animation instance. </para>
         </briefdescription>
@@ -900,13 +900,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6277" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6277" bodyend="6278"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6555" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6555" bodyend="6556"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga2985e81db278b07c103d79d7c04e5acd" prot="public" static="no">
         <name>property_animation_get_from_gpoint</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), false)</initializer>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), false)</initializer>
         <briefdescription>
 <para>Convenience function to retrieve the &apos;from&apos; <ref refid="struct_g_point" kindref="compound">GPoint</ref> value from property animation handle. </para>
         </briefdescription>
@@ -934,13 +934,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6298" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6298" bodyend="6299"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6576" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6576" bodyend="6577"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga0c76c13ffeb7e067409d59edc0cb3d5b" prot="public" static="no">
         <name>property_animation_get_from_grect</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), false)</initializer>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), false)</initializer>
         <briefdescription>
 <para>Convenience function to retrieve the &apos;from&apos; <ref refid="struct_g_rect" kindref="compound">GRect</ref> value from property animation handle. </para>
         </briefdescription>
@@ -968,13 +968,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6284" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6284" bodyend="6285"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6562" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6562" bodyend="6563"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1gaacc7b66bdc0525ed2326d99c199539c5" prot="public" static="no">
         <name>property_animation_get_from_int16</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(int16_t), false)</initializer>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(int16_t), false)</initializer>
         <briefdescription>
 <para>Convenience function to retrieve the &apos;from&apos; int16_t value from property animation handle. </para>
         </briefdescription>
@@ -1002,13 +1002,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6312" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6312" bodyend="6313"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6590" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6590" bodyend="6591"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga76b367393dbdc2497564d297ca1e50fc" prot="public" static="no">
         <name>property_animation_get_subject</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1ga954c8e865863bf03e05ff011f1cc48dc" kindref="member">property_animation_subject</ref>(property_animation, value_ptr, false)</initializer>
+        <initializer><ref refid="group___property_animation_1ga954c8e865863bf03e05ff011f1cc48dc" kindref="member">property_animation_subject</ref>(property_animation, value_ptr, false)</initializer>
         <briefdescription>
 <para>Retrieve the subject of a property animation. </para>
         </briefdescription>
@@ -1036,13 +1036,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6368" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6368" bodyend="6369"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6646" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6646" bodyend="6647"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga2c14ad5fce3aa9470933d88443d2a1cf" prot="public" static="no">
         <name>property_animation_get_to_gpoint</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), false)</initializer>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), false)</initializer>
         <briefdescription>
 <para>Convenience function to retrieve the &apos;to&apos; <ref refid="struct_g_point" kindref="compound">GPoint</ref> value from property animation handle. </para>
         </briefdescription>
@@ -1070,13 +1070,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6340" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6340" bodyend="6341"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6618" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6618" bodyend="6619"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga125613c9f7992b073e53887811317344" prot="public" static="no">
         <name>property_animation_get_to_grect</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), false)</initializer>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), false)</initializer>
         <briefdescription>
 <para>Convenience function to retrieve the &apos;to&apos; <ref refid="struct_g_rect" kindref="compound">GRect</ref> value from property animation handle. </para>
         </briefdescription>
@@ -1104,13 +1104,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6326" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6326" bodyend="6327"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6604" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6604" bodyend="6605"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga2d6abe586d12259e50e715fddc590317" prot="public" static="no">
         <name>property_animation_get_to_int16</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(int16_t), false)</initializer>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(int16_t), false)</initializer>
         <briefdescription>
 <para>Convenience function to retrieve the &apos;to&apos; int16_t value from property animation handle. </para>
         </briefdescription>
@@ -1138,13 +1138,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6354" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6354" bodyend="6355"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6632" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6632" bodyend="6633"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga8cfa43a8668e3bf721178e3807daa079" prot="public" static="no">
         <name>property_animation_set_from_gpoint</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), true)</initializer>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), true)</initializer>
         <briefdescription>
 <para>Convenience function to set the &apos;from&apos; <ref refid="struct_g_point" kindref="compound">GPoint</ref> value of property animation handle. </para>
         </briefdescription>
@@ -1172,13 +1172,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6305" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6305" bodyend="6306"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6583" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6583" bodyend="6584"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1gadc45e733ab1f524f8799cadb1600f4e4" prot="public" static="no">
         <name>property_animation_set_from_grect</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), true)</initializer>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), true)</initializer>
         <briefdescription>
 <para>Convenience function to set the &apos;from&apos; <ref refid="struct_g_rect" kindref="compound">GRect</ref> value of property animation handle. </para>
         </briefdescription>
@@ -1206,13 +1206,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6291" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6291" bodyend="6292"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6569" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6569" bodyend="6570"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1gacd2d23da9bcf553295ee8dd884e8810b" prot="public" static="no">
         <name>property_animation_set_from_int16</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(int16_t), true)</initializer>
+        <initializer><ref refid="group___property_animation_1ga1b5ed4282fc64f083db63cc2dd2aa206" kindref="member">property_animation_from</ref>(property_animation, value_ptr, sizeof(int16_t), true)</initializer>
         <briefdescription>
 <para>Convenience function to set the &apos;from&apos; int16_t value of property animation handle. </para>
         </briefdescription>
@@ -1240,13 +1240,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6319" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6319" bodyend="6320"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6597" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6597" bodyend="6598"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1gaae4074fd81062a564a5e5b4821bfde2b" prot="public" static="no">
         <name>property_animation_set_subject</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1ga954c8e865863bf03e05ff011f1cc48dc" kindref="member">property_animation_subject</ref>(property_animation, value_ptr, true)</initializer>
+        <initializer><ref refid="group___property_animation_1ga954c8e865863bf03e05ff011f1cc48dc" kindref="member">property_animation_subject</ref>(property_animation, value_ptr, true)</initializer>
         <briefdescription>
 <para>Set the subject of a property animation. </para>
         </briefdescription>
@@ -1272,13 +1272,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6374" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6374" bodyend="6375"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6652" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6652" bodyend="6653"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga2a5dea87101e82c2527380aa0027065f" prot="public" static="no">
         <name>property_animation_set_to_gpoint</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), true)</initializer>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_point" kindref="compound">GPoint</ref>), true)</initializer>
         <briefdescription>
 <para>Convenience function to set the &apos;to&apos; <ref refid="struct_g_point" kindref="compound">GPoint</ref> value of property animation handle. </para>
         </briefdescription>
@@ -1306,13 +1306,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6347" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6347" bodyend="6348"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6625" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6625" bodyend="6626"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga1a9451d9b6e010051d76ccee0a71e6c5" prot="public" static="no">
         <name>property_animation_set_to_grect</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), true)</initializer>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(<ref refid="struct_g_rect" kindref="compound">GRect</ref>), true)</initializer>
         <briefdescription>
 <para>Convenience function to set the &apos;to&apos; <ref refid="struct_g_rect" kindref="compound">GRect</ref> value of property animation handle. </para>
         </briefdescription>
@@ -1340,13 +1340,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6333" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6333" bodyend="6334"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6611" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6611" bodyend="6612"/>
       </memberdef>
       <memberdef kind="define" id="group___property_animation_1ga8158508c6fd67c0dce3a6bbc69f3d605" prot="public" static="no">
         <name>property_animation_set_to_int16</name>
         <param><defname>property_animation</defname></param>
         <param><defname>value_ptr</defname></param>
-        <initializer>    <ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(int16_t), true)</initializer>
+        <initializer><ref refid="group___property_animation_1gafb7345529de71a5c23909a7427d937b2" kindref="member">property_animation_to</ref>(property_animation, value_ptr, sizeof(int16_t), true)</initializer>
         <briefdescription>
 <para>Convenience function to set the &apos;to&apos; int16_t value of property animation handle. </para>
         </briefdescription>
@@ -1374,7 +1374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="6361" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6361" bodyend="6362"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="6639" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="6639" bodyend="6640"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1387,7 +1387,23 @@
 <para><heading level="3">Implementing a custom PropertyAnimation</heading>
 </para>
 <para>It is fairly simple to create your own variant of a PropertyAnimation.</para>
-<para>Please refer to <htmlonly>&lt;a href=&quot;https://developer.rebble.io/guides/user-interfaces/layers&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
+<para>Please refer to <htmlonly>&lt;!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+
+&lt;a href=&quot;https://developer.repebble.com/guides/user-interfaces/layers/&quot;&gt;User Interface Layers chapter in the Pebble Developer Guides&lt;/a&gt;
 </htmlonly> (chapter &quot;Property Animations&quot;) for a conceptual overview of the animation framework and make sure you understand the underlying <ref refid="group___animation" kindref="compound">Animation</ref>, in case you are not familiar with it, before trying to implement a variation on PropertyAnimation.</para>
 <para>To implement a custom property animation, use <ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref> and provide a function pointers to the accessors (getter and setter) and setup, update and teardown callbacks in the implementation argument. Note that the type of property to animate with <ref refid="group___property_animation" kindref="compound">PropertyAnimation</ref> is limited to int16_t, <ref refid="struct_g_point" kindref="compound">GPoint</ref> or <ref refid="struct_g_rect" kindref="compound">GRect</ref>.</para>
 <para>For each of these types, there are implementations provided for the necessary <computeroutput>.update</computeroutput> handler of the animation: see <ref refid="group___property_animation_1ga798776416e2c1f86e80ff19672d7ddf5" kindref="member">property_animation_update_int16()</ref>, <ref refid="group___property_animation_1gacf429c1542a3d76735bf23e6fa7d8449" kindref="member">property_animation_update_gpoint()</ref> and <ref refid="group___property_animation_1ga9e290a0375528eac0a1a12b4387d6caa" kindref="member">property_animation_update_grect()</ref>. These update functions expect the <computeroutput>.accessors</computeroutput> to conform to the following interface: Any getter needs to have the following function signature: <computeroutput>__type__ getter(void *subject);</computeroutput> Any setter needs to have to following function signature: <computeroutput>void setter(void *subject,

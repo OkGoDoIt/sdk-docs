@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_menu_layer_callbacks" kind="struct" language="C++" prot="public">
     <compoundname>MenuLayerCallbacks</compoundname>
     <includes local="no">pebble.h</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7187" column="35" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7187" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7465" column="35" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7465" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1a17fe3e517c3ae67f5d3132f3b849d5da" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga0c8e4633e1afd155b84da4cafed85733" kindref="member">MenuLayerDrawHeaderCallback</ref></type>
@@ -29,13 +29,13 @@
 <para>Callback that gets called to render a section header. This gets called for each section header, every time it needs to be re-rendered. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Must be set to a valid callback, unless <computeroutput>.get_header_height</computeroutput> is <computeroutput>NULL</computeroutput>. Causes undefined behavior otherwise. </para>
+<para><simplesect kind="note"><para>Must be set to a valid callback, unless <computeroutput>.<ref refid="struct_menu_layer_callbacks_1aa322d0392bd4aeae12bbc740bd6c0af1" kindref="member">get_header_height</ref></computeroutput> is <computeroutput>NULL</computeroutput>. Causes undefined behavior otherwise. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7147" column="31" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7147" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7425" column="31" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7425" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1a5a3e2169ba3368e9b555b9b58bcc2637" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1gaa9a6e4c6917fa5867084d7d42065b960" kindref="member">MenuLayerDrawRowCallback</ref></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7140" column="28" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7140" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7418" column="28" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7418" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1aa83d81bcb2b4ea93586d617927a458ff" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1gab8e034db214248f6295aa5de5022236c" kindref="member">MenuLayerDrawSeparatorCallback</ref></type>
@@ -65,13 +65,13 @@
 <para>Callback that gets called to render a separator. This gets called for each separator, every time it needs to be re-rendered. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>Must be set to a valid callback, unless <computeroutput>.get_separator_height</computeroutput> is <computeroutput>NULL</computeroutput>. Causes undefined behavior otherwise. </para>
+<para><simplesect kind="note"><para>Must be set to a valid callback, unless <computeroutput>.<ref refid="struct_menu_layer_callbacks_1ac91125c87adb3a6d1240d25cde609fc7" kindref="member">get_separator_height</ref></computeroutput> is <computeroutput>NULL</computeroutput>. Causes undefined behavior otherwise. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7173" column="34" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7173" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7451" column="34" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7451" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1adb2f2b8fdf1356ed991546205a08a540" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga82de9589c6396079effc7168a3653495" kindref="member">MenuLayerGetCellHeightCallback</ref></type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7128" column="34" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7128" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7406" column="34" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7406" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1aa322d0392bd4aeae12bbc740bd6c0af1" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga32010bc41d8fed5c49e11852cefc1c2e" kindref="member">MenuLayerGetHeaderHeightCallback</ref></type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7134" column="36" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7134" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7412" column="36" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7412" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1a0f5f4c1ba320f1709fe015f0c9b5682c" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga74142f776a0397b1a351ad006aa594f4" kindref="member">MenuLayerGetNumberOfRowsInSectionsCallback</ref></type>
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7120" column="46" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7120" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7398" column="46" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7398" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1ae238e0615b104181c18306eb65b381ab" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1gaae26b43fcb87f61fa576f42bc1e82b1c" kindref="member">MenuLayerGetNumberOfSectionsCallback</ref></type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7115" column="40" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7115" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7393" column="40" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1ac91125c87adb3a6d1240d25cde609fc7" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga859f9ba8f0d6d3739d2c1752bcb752ce" kindref="member">MenuLayerGetSeparatorHeightCallback</ref></type>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7166" column="39" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7166" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7444" column="39" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7444" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1a88bd478b423a2d6fe9e667d23a02050f" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga1ebbfd7a75087df42d18a49472cd96c3" kindref="member">MenuLayerSelectCallback</ref></type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7152" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7152" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7430" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7430" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1a37b862ad3aceeaf906834b7d2fdb0196" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga1ebbfd7a75087df42d18a49472cd96c3" kindref="member">MenuLayerSelectCallback</ref></type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7157" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7157" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7435" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7435" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1a0f35fb6edefe0879f351f16d471cb1a1" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga7100c9c19e1d40fc38caf5aed173fe5a" kindref="member">MenuLayerSelectionChangedCallback</ref></type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7161" column="37" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7161" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7439" column="37" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7439" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_menu_layer_callbacks_1ae75c7da79ce259416ef21946ffc54d0d" prot="public" static="no" mutable="no">
         <type><ref refid="group___menu_layer_1ga98271ef6f7cc49d39e5deab09def2cef" kindref="member">MenuLayerSelectionWillChangeCallback</ref></type>
@@ -230,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7179" column="40" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7179" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="7457" column="40" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7457" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -256,7 +256,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="build/sdk/basalt/include/pebble.h" line="7111" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7111" bodyend="7188"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="7389" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7389" bodyend="7466"/>
     <listofallmembers>
       <member refid="struct_menu_layer_callbacks_1ad8d53453564259ac83409e3dd410b88b" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>draw_background</name></member>
       <member refid="struct_menu_layer_callbacks_1a17fe3e517c3ae67f5d3132f3b849d5da" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>draw_header</name></member>

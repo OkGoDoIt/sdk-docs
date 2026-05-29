@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_unobstructed_area_handlers" kind="struct" language="C++" prot="public">
+    <compoundname>UnobstructedAreaHandlers</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unobstructed_area_handlers_1a433baca7bbf89e5f55820fff9fdb4d36" prot="public" static="no" mutable="no">
+        <type><ref refid="group___unobstructed_area_1ga4cb9b5fc0706ddb72fc1e1eece890fb4" kindref="member">UnobstructedAreaChangeHandler</ref></type>
+        <definition>UnobstructedAreaChangeHandler UnobstructedAreaHandlers::change</definition>
+        <argsstring></argsstring>
+        <name>change</name>
+        <qualifiedname>UnobstructedAreaHandlers::change</qualifiedname>
+        <briefdescription>
+<para>Handler that will be called every time the unobstructed area changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6811" column="33" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6811" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unobstructed_area_handlers_1a9431c0beb675018020246e30e723b6d5" prot="public" static="no" mutable="no">
+        <type><ref refid="group___unobstructed_area_1gafeb86269bc8522d69f9e7550010f22a9" kindref="member">UnobstructedAreaDidChangeHandler</ref></type>
+        <definition>UnobstructedAreaDidChangeHandler UnobstructedAreaHandlers::did_change</definition>
+        <argsstring></argsstring>
+        <name>did_change</name>
+        <qualifiedname>UnobstructedAreaHandlers::did_change</qualifiedname>
+        <briefdescription>
+<para>Handler that will be called after the unobstructed area has finished changing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6813" column="36" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unobstructed_area_handlers_1a2f36f497d77ca72340e6fff777d59079" prot="public" static="no" mutable="no">
+        <type><ref refid="group___unobstructed_area_1gac5fd15359205d95238f97d9d2608249c" kindref="member">UnobstructedAreaWillChangeHandler</ref></type>
+        <definition>UnobstructedAreaWillChangeHandler UnobstructedAreaHandlers::will_change</definition>
+        <argsstring></argsstring>
+        <name>will_change</name>
+        <qualifiedname>UnobstructedAreaHandlers::will_change</qualifiedname>
+        <briefdescription>
+<para>Handler that will be called just before the unobstructed area will begin changing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6809" column="37" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6809" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>GPoint</label>
+        <link refid="struct_g_point"/>
+      </node>
+      <node id="2">
+        <label>GRect</label>
+        <link refid="struct_g_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>origin</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GSize</label>
+        <link refid="struct_g_size"/>
+      </node>
+      <node id="1">
+        <label>UnobstructedAreaHandlers</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>will_change</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="6807" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6807" bodyend="6814"/>
+    <listofallmembers>
+      <member refid="struct_unobstructed_area_handlers_1a433baca7bbf89e5f55820fff9fdb4d36" prot="public" virt="non-virtual"><scope>UnobstructedAreaHandlers</scope><name>change</name></member>
+      <member refid="struct_unobstructed_area_handlers_1a9431c0beb675018020246e30e723b6d5" prot="public" virt="non-virtual"><scope>UnobstructedAreaHandlers</scope><name>did_change</name></member>
+      <member refid="struct_unobstructed_area_handlers_1a2f36f497d77ca72340e6fff777d59079" prot="public" virt="non-virtual"><scope>UnobstructedAreaHandlers</scope><name>will_change</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

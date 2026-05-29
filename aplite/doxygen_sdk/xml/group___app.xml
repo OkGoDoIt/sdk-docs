@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___app" kind="group">
     <compoundname>App</compoundname>
     <title>App</title>
@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="2775" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2775" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="2718" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="2718" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

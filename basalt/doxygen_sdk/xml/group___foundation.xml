@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___foundation" kind="group">
     <compoundname>Foundation</compoundname>
     <title>Foundation</title>
+    <innergroup refid="group___alloy">Alloy</innergroup>
     <innergroup refid="group___app">App</innergroup>
     <innergroup refid="group___app_comm">App Communication</innergroup>
     <innergroup refid="group___app_glance">App Glance</innergroup>
     <innergroup refid="group___app_message">AppMessage</innergroup>
     <innergroup refid="group___app_sync">AppSync</innergroup>
     <innergroup refid="group___app_worker">AppWorker</innergroup>
+    <innergroup refid="group___audio">Context</innergroup>
     <innergroup refid="group___data_logging">DataLogging</innergroup>
     <innergroup refid="group___data_structures">DataStructures</innergroup>
     <innergroup refid="group___dictation">Dictation</innergroup>

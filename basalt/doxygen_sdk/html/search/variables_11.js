@@ -1,8 +1,24 @@
 var searchData=
 [
-  ['uint16_0',['uint16',['../group___dictionary.html#aa00ef2ef85ff67b7b39339886f19044f',1,'Tuple.value']]],
-  ['uint32_1',['uint32',['../group___dictionary.html#a3de84ad0700f2a1571f633d399e1900e',1,'Tuple.value::uint32'],['../group___property_animation.html#a3de84ad0700f2a1571f633d399e1900e',1,'PropertyAnimationAccessors.setter::uint32'],['../group___property_animation.html#a3de84ad0700f2a1571f633d399e1900e',1,'PropertyAnimationAccessors.getter::uint32']]],
-  ['uint8_2',['uint8',['../group___dictionary.html#a5f423e669d0a8f4ab7c4c3e6da27161a',1,'Tuple.value']]],
-  ['unload_3',['unload',['../group___window.html#afeab97dcb674e7182b287d1565ec88b4',1,'WindowHandlers']]],
-  ['update_4',['update',['../group___animation.html#a6eb3f553df358650fb53211fd3837506',1,'AnimationImplementation']]]
+  ['teardown_0',['teardown',['../group___animation.html#a65ba4fd5d15779901d11d4b1224baf82',1,'AnimationImplementation']]],
+  ['text_1',['text',['../group___audio.html#ab7d60d4ca7df917e6c35615f317bb85e',1,'AudioContextTranscript']]],
+  ['times_5fout_2',['times_out',['../struct_content_indicator_config.html#a4772a880f0d9148c0649c27a72440d0a',1,'ContentIndicatorConfig']]],
+  ['timestamp_3',['timestamp',['../group___accelerometer_service.html#acb871e01f60e4aec0a29eafc108102d9',1,'AccelData']]],
+  ['title_4',['title',['../group___simple_menu_layer.html#a3f4b4f9cbfbc573c71480f0a8861eacf',1,'SimpleMenuItem::title'],['../group___simple_menu_layer.html#a4c8e4113f9641b51e1d16e3c32f465dc',1,'SimpleMenuSection::title']]],
+  ['tm_5fgmtoff_5',['tm_gmtoff',['../group___standard_time.html#a4892d556f104fbadf55043949c8de7fe',1,'tm']]],
+  ['tm_5fhour_6',['tm_hour',['../group___standard_time.html#a3e7ca4e37f1abcaf56b8a916c38eb9fe',1,'tm']]],
+  ['tm_5fisdst_7',['tm_isdst',['../group___standard_time.html#a5645ca0580c8ab2c24f6c2965d9c9f9c',1,'tm']]],
+  ['tm_5fmday_8',['tm_mday',['../group___standard_time.html#ab8d8904bad43b0c8b96e61941c5b5310',1,'tm']]],
+  ['tm_5fmin_9',['tm_min',['../group___standard_time.html#af414eb7c86cc3099595211eee4d4211b',1,'tm']]],
+  ['tm_5fmon_10',['tm_mon',['../group___standard_time.html#a112ac36fa2f593777138a417cf031e17',1,'tm']]],
+  ['tm_5fsec_11',['tm_sec',['../group___standard_time.html#a4d098a9a5c03a00b2ee61e10851de81e',1,'tm']]],
+  ['tm_5fwday_12',['tm_wday',['../group___standard_time.html#afe81a8c46f1c693c43f259b288859f4f',1,'tm']]],
+  ['tm_5fyday_13',['tm_yday',['../group___standard_time.html#a93a0ba77cc23796df84405dcbcc57eb1',1,'tm']]],
+  ['tm_5fyear_14',['tm_year',['../group___standard_time.html#a33adf78fd6476b2120ce3b9c4a852053',1,'tm']]],
+  ['tm_5fzone_15',['tm_zone',['../group___standard_time.html#ae5d2abaee5caf5b1a48d7fcf16300f87',1,'tm']]],
+  ['top_16',['top',['../group___graphics_types.html#ad8b0695df388d95c89f26e72613db5c8',1,'GEdgeInsets']]],
+  ['transcribing_17',['transcribing',['../group___audio.html#a4eb0f199a6b1248651f6fc667032d292',1,'AudioContextStatus']]],
+  ['trigger_5ftime_18',['trigger_time',['../group___audio.html#a1ac2f8c757eaf78d9cb8f794444f5c9e',1,'AudioContextTriggerInfo']]],
+  ['true_5fheading_19',['true_heading',['../group___compass_service.html#a1f1fdeabef33b1ab1ef6db10c07dfeed',1,'CompassHeadingData']]],
+  ['type_20',['type',['../struct_tuple.html#ae2c621840b9fa7c2e7ef21074331d317',1,'Tuple::type'],['../struct_tuplet.html#a1451fd4819f780d8877c0ac8d52151d2',1,'Tuplet::type']]]
 ];

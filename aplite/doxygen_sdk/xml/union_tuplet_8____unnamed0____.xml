@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="union_tuplet_8____unnamed0____" kind="union" language="C++" prot="public">
     <compoundname>Tuplet.__unnamed0__</compoundname>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="union_tuplet_8____unnamed0_____1a4b3a6218bb3e3a7303e8a171a60fcf92" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="struct_tuplet" kindref="compound">Tuplet</ref></type>
+        <type>struct Tuplet::@033072354207361156122142000225033215107306146050::@207041032057332017062311025101000266006106263112</type>
         <definition></definition>
         <argsstring></argsstring>
         <name>bytes</name>
@@ -16,10 +16,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1887" column="11"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1830" column="11"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuplet_8____unnamed0_____1a59df64e03292f845a11befa53b2845d1" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="struct_tuplet" kindref="compound">Tuplet</ref></type>
+        <type>struct Tuplet::@033072354207361156122142000225033215107306146050::@210224325100246147072174352251005222052130314067</type>
         <definition></definition>
         <argsstring></argsstring>
         <name>cstring</name>
@@ -31,10 +31,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1894" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1837" column="13"/>
       </memberdef>
       <memberdef kind="variable" id="union_tuplet_8____unnamed0_____1a157db7df530023575515d366c9b672e8" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="struct_tuplet" kindref="compound">Tuplet</ref></type>
+        <type>struct Tuplet::@033072354207361156122142000225033215107306146050::@366326017074212363055061124133253124110370245313</type>
         <definition></definition>
         <argsstring></argsstring>
         <name>integer</name>
@@ -46,15 +46,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1902" column="13"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1845" column="13"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Anonymous union containing the reference to the <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>&apos;s value, being either a byte array, c-string or integer. See documentation of <computeroutput>.bytes</computeroutput>, <computeroutput>.cstring</computeroutput> and <computeroutput>.integer</computeroutput> fields. </para>
+<para>Anonymous union containing the reference to the <ref refid="struct_tuplet" kindref="compound">Tuplet</ref>&apos;s value, being either a byte array, c-string or integer. See documentation of <computeroutput>.<ref refid="union_tuplet_8____unnamed0_____1a4b3a6218bb3e3a7303e8a171a60fcf92" kindref="member">bytes</ref></computeroutput>, <computeroutput>.<ref refid="union_tuplet_8____unnamed0_____1a59df64e03292f845a11befa53b2845d1" kindref="member">cstring</ref></computeroutput> and <computeroutput>.<ref refid="union_tuplet_8____unnamed0_____1a157db7df530023575515d366c9b672e8" kindref="member">integer</ref></computeroutput> fields. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/aplite/include/pebble.h" line="1880" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1880" bodyend="1903"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="1823" column="3" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1823" bodyend="1846"/>
     <listofallmembers>
       <member refid="union_tuplet_8____unnamed0_____1a4b3a6218bb3e3a7303e8a171a60fcf92" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__</scope><name>bytes</name></member>
       <member refid="union_tuplet_8____unnamed0_____1a59df64e03292f845a11befa53b2845d1" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__</scope><name>cstring</name></member>

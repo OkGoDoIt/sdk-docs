@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_property_animation_accessors" kind="struct" language="C++" prot="public">
+    <compoundname>PropertyAnimationAccessors</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_property_animation_accessors_1a9831586288fe2167def0e56710cdaae9" prot="public" static="no" mutable="no">
+        <type>union PropertyAnimationAccessors::@001102335050352003361256145260121353353115312141</type>
+        <definition>union PropertyAnimationAccessors::@001102335050352003361256145260121353353115312141 PropertyAnimationAccessors::getter</definition>
+        <argsstring></argsstring>
+        <name>getter</name>
+        <qualifiedname>PropertyAnimationAccessors::getter</qualifiedname>
+        <briefdescription>
+<para>Function pointer to the implementation of the function that <bold>gets</bold> the current property value. This function will be called during <ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref>, to get the current property value, in case the <computeroutput>from_value</computeroutput> or <computeroutput>to_value</computeroutput> argument is <computeroutput>NULL</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6638" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_property_animation_accessors_1a68b112f67265dee7095d2496e03d5ffb" prot="public" static="no" mutable="no">
+        <type>union PropertyAnimationAccessors::@075030031054313122026061044305007347314005112253</type>
+        <definition>union PropertyAnimationAccessors::@075030031054313122026061044305007347314005112253 PropertyAnimationAccessors::setter</definition>
+        <argsstring></argsstring>
+        <name>setter</name>
+        <qualifiedname>PropertyAnimationAccessors::setter</qualifiedname>
+        <briefdescription>
+<para>Function pointer to the implementation of the function that <bold>sets</bold> the updated property value. This function will be called repeatedly for each animation frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6622" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure containing the setter and getter function pointers that the property animation should use. The specified setter function will be used by the animation&apos;s update callback. <linebreak/>
+ Based on the type of the property (int16_t, <ref refid="struct_g_point" kindref="compound">GPoint</ref> or <ref refid="struct_g_rect" kindref="compound">GRect</ref>), the accompanying update callback should be used, see <ref refid="group___property_animation_1ga798776416e2c1f86e80ff19672d7ddf5" kindref="member">property_animation_update_int16()</ref>, <ref refid="group___property_animation_1gacf429c1542a3d76735bf23e6fa7d8449" kindref="member">property_animation_update_gpoint()</ref> and <ref refid="group___property_animation_1ga9e290a0375528eac0a1a12b4387d6caa" kindref="member">property_animation_update_grect()</ref>. <linebreak/>
+ The getter function is used when the animation is initialized, to assign the current value of the subject&apos;s property as &quot;from&quot; or &quot;to&quot; value, see <ref refid="group___property_animation_1ga5d15ed77f4ea0bd90d07d05cf4b60f3a" kindref="member">property_animation_create()</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="6607" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6607" bodyend="6639"/>
+    <listofallmembers>
+      <member refid="struct_property_animation_accessors_1a9831586288fe2167def0e56710cdaae9" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors</scope><name>getter</name></member>
+      <member refid="struct_property_animation_accessors_1a68b112f67265dee7095d2496e03d5ffb" prot="public" virt="non-virtual"><scope>PropertyAnimationAccessors</scope><name>setter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

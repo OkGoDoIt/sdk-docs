@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_menu_layer_callbacks" kind="struct" language="C++" prot="public">
+    <compoundname>MenuLayerCallbacks</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1ad8d53453564259ac83409e3dd410b88b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga0da8b1c3217c1e8d883db5f18b9af45e" kindref="member">MenuLayerDrawBackgroundCallback</ref></type>
+        <definition>MenuLayerDrawBackgroundCallback MenuLayerCallbacks::draw_background</definition>
+        <argsstring></argsstring>
+        <name>draw_background</name>
+        <qualifiedname>MenuLayerCallbacks::draw_background</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called before any cells are drawn. This supports two states, either highlighted or not highlighted. If highlighted is specified, it is expected to be colored in the same style as the menu&apos;s cells are. If this callback is not specified, it will default to the colors set with <ref refid="group___menu_layer_1ga92bc2bceb77247dcc26da78b259d7dd4" kindref="member">menu_layer_set_normal_colors</ref> and <ref refid="group___menu_layer_1ga5291ab9cb36673dcd52dd60a5c121a52" kindref="member">menu_layer_set_highlight_colors</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7569" column="35" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1a17fe3e517c3ae67f5d3132f3b849d5da" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga0c8e4633e1afd155b84da4cafed85733" kindref="member">MenuLayerDrawHeaderCallback</ref></type>
+        <definition>MenuLayerDrawHeaderCallback MenuLayerCallbacks::draw_header</definition>
+        <argsstring></argsstring>
+        <name>draw_header</name>
+        <qualifiedname>MenuLayerCallbacks::draw_header</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called to render a section header. This gets called for each section header, every time it needs to be re-rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be set to a valid callback, unless <computeroutput>.<ref refid="struct_menu_layer_callbacks_1aa322d0392bd4aeae12bbc740bd6c0af1" kindref="member">get_header_height</ref></computeroutput> is <computeroutput>NULL</computeroutput>. Causes undefined behavior otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7529" column="31" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1a5a3e2169ba3368e9b555b9b58bcc2637" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1gaa9a6e4c6917fa5867084d7d42065b960" kindref="member">MenuLayerDrawRowCallback</ref></type>
+        <definition>MenuLayerDrawRowCallback MenuLayerCallbacks::draw_row</definition>
+        <argsstring></argsstring>
+        <name>draw_row</name>
+        <qualifiedname>MenuLayerCallbacks::draw_row</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called to render a menu item. This gets called for each menu item, every time it needs to be re-rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be set to a valid callback; <computeroutput>NULL</computeroutput> causes undefined behavior. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7522" column="28" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1aa83d81bcb2b4ea93586d617927a458ff" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1gab8e034db214248f6295aa5de5022236c" kindref="member">MenuLayerDrawSeparatorCallback</ref></type>
+        <definition>MenuLayerDrawSeparatorCallback MenuLayerCallbacks::draw_separator</definition>
+        <argsstring></argsstring>
+        <name>draw_separator</name>
+        <qualifiedname>MenuLayerCallbacks::draw_separator</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called to render a separator. This gets called for each separator, every time it needs to be re-rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be set to a valid callback, unless <computeroutput>.<ref refid="struct_menu_layer_callbacks_1ac91125c87adb3a6d1240d25cde609fc7" kindref="member">get_separator_height</ref></computeroutput> is <computeroutput>NULL</computeroutput>. Causes undefined behavior otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7555" column="34" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1adb2f2b8fdf1356ed991546205a08a540" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga82de9589c6396079effc7168a3653495" kindref="member">MenuLayerGetCellHeightCallback</ref></type>
+        <definition>MenuLayerGetCellHeightCallback MenuLayerCallbacks::get_cell_height</definition>
+        <argsstring></argsstring>
+        <name>get_cell_height</name>
+        <qualifiedname>MenuLayerCallbacks::get_cell_height</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called to get the height of a cell. This can get called at various moments throughout the life of a menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When <computeroutput>NULL</computeroutput>, the default height of MENU_CELL_BASIC_CELL_HEIGHT pixels is used. Developers may wish to use <ref refid="group___menu_layer_1ga49063aae2b5ddd7d148146132a1fe4c2" kindref="member">MENU_CELL_ROUND_FOCUSED_SHORT_CELL_HEIGHT</ref> and <ref refid="group___menu_layer_1ga76e21dd5ca0924eb18c205dd996b824c" kindref="member">MENU_CELL_ROUND_UNFOCUSED_SHORT_CELL_HEIGHT</ref> on a round display to respect the system aesthetic. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7510" column="34" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1aa322d0392bd4aeae12bbc740bd6c0af1" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga32010bc41d8fed5c49e11852cefc1c2e" kindref="member">MenuLayerGetHeaderHeightCallback</ref></type>
+        <definition>MenuLayerGetHeaderHeightCallback MenuLayerCallbacks::get_header_height</definition>
+        <argsstring></argsstring>
+        <name>get_header_height</name>
+        <qualifiedname>MenuLayerCallbacks::get_header_height</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called to get the height of a section header. This can get called at various moments throughout the life of a menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When <computeroutput>NULL</computeroutput>, the default height of 0 pixels is used. This disables section headers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7516" column="36" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1a0f5f4c1ba320f1709fe015f0c9b5682c" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga74142f776a0397b1a351ad006aa594f4" kindref="member">MenuLayerGetNumberOfRowsInSectionsCallback</ref></type>
+        <definition>MenuLayerGetNumberOfRowsInSectionsCallback MenuLayerCallbacks::get_num_rows</definition>
+        <argsstring></argsstring>
+        <name>get_num_rows</name>
+        <qualifiedname>MenuLayerCallbacks::get_num_rows</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called to get the number of rows in a section. This can get called at various moments throughout the life of a menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Must be set to a valid callback; <computeroutput>NULL</computeroutput> causes undefined behavior. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7502" column="46" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1ae238e0615b104181c18306eb65b381ab" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1gaae26b43fcb87f61fa576f42bc1e82b1c" kindref="member">MenuLayerGetNumberOfSectionsCallback</ref></type>
+        <definition>MenuLayerGetNumberOfSectionsCallback MenuLayerCallbacks::get_num_sections</definition>
+        <argsstring></argsstring>
+        <name>get_num_sections</name>
+        <qualifiedname>MenuLayerCallbacks::get_num_sections</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called to get the number of sections in the menu. This can get called at various moments throughout the life of a menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When <computeroutput>NULL</computeroutput>, the number of sections defaults to 1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7497" column="40" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1ac91125c87adb3a6d1240d25cde609fc7" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga859f9ba8f0d6d3739d2c1752bcb752ce" kindref="member">MenuLayerGetSeparatorHeightCallback</ref></type>
+        <definition>MenuLayerGetSeparatorHeightCallback MenuLayerCallbacks::get_separator_height</definition>
+        <argsstring></argsstring>
+        <name>get_separator_height</name>
+        <qualifiedname>MenuLayerCallbacks::get_separator_height</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called to get the height of a separator This can get called at various moments throughout the life of a menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When <computeroutput>NULL</computeroutput>, the default height of 0 is used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7548" column="39" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1a88bd478b423a2d6fe9e667d23a02050f" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga1ebbfd7a75087df42d18a49472cd96c3" kindref="member">MenuLayerSelectCallback</ref></type>
+        <definition>MenuLayerSelectCallback MenuLayerCallbacks::select_click</definition>
+        <argsstring></argsstring>
+        <name>select_click</name>
+        <qualifiedname>MenuLayerCallbacks::select_click</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called when the user triggers a click with the SELECT button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When <computeroutput>NULL</computeroutput>, click events for the SELECT button are ignored. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7534" column="27" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1a37b862ad3aceeaf906834b7d2fdb0196" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga1ebbfd7a75087df42d18a49472cd96c3" kindref="member">MenuLayerSelectCallback</ref></type>
+        <definition>MenuLayerSelectCallback MenuLayerCallbacks::select_long_click</definition>
+        <argsstring></argsstring>
+        <name>select_long_click</name>
+        <qualifiedname>MenuLayerCallbacks::select_long_click</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called when the user triggers a long click with the SELECT button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When <computeroutput>NULL</computeroutput>, long click events for the SELECT button are ignored. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7539" column="27" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1a0f35fb6edefe0879f351f16d471cb1a1" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga7100c9c19e1d40fc38caf5aed173fe5a" kindref="member">MenuLayerSelectionChangedCallback</ref></type>
+        <definition>MenuLayerSelectionChangedCallback MenuLayerCallbacks::selection_changed</definition>
+        <argsstring></argsstring>
+        <name>selection_changed</name>
+        <qualifiedname>MenuLayerCallbacks::selection_changed</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called whenever the selection changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>When <computeroutput>NULL</computeroutput>, selection change events are ignored. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7543" column="37" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_menu_layer_callbacks_1ae75c7da79ce259416ef21946ffc54d0d" prot="public" static="no" mutable="no">
+        <type><ref refid="group___menu_layer_1ga98271ef6f7cc49d39e5deab09def2cef" kindref="member">MenuLayerSelectionWillChangeCallback</ref></type>
+        <definition>MenuLayerSelectionWillChangeCallback MenuLayerCallbacks::selection_will_change</definition>
+        <argsstring></argsstring>
+        <name>selection_will_change</name>
+        <qualifiedname>MenuLayerCallbacks::selection_will_change</qualifiedname>
+        <briefdescription>
+<para>Callback that gets called before the selected cell changes. This gets called before the selected item in the MenuLayer is changed, and will allow for the selected cell to be overridden. This allows for skipping cells in the menu, locking selection onto a given item,. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7561" column="40" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7561" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure containing all the callbacks of a <ref refid="group___menu_layer" kindref="compound">MenuLayer</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MenuIndex</label>
+        <link refid="struct_menu_index"/>
+      </node>
+      <node id="1">
+        <label>MenuLayerCallbacks</label>
+        <link refid="struct_menu_layer_callbacks"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>draw_row</edgelabel>
+          <edgelabel>draw_separator</edgelabel>
+          <edgelabel>select_click</edgelabel>
+          <edgelabel>select_long_click</edgelabel>
+          <edgelabel>selection_changed</edgelabel>
+          <edgelabel>selection_will_change</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="7493" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7493" bodyend="7570"/>
+    <listofallmembers>
+      <member refid="struct_menu_layer_callbacks_1ad8d53453564259ac83409e3dd410b88b" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>draw_background</name></member>
+      <member refid="struct_menu_layer_callbacks_1a17fe3e517c3ae67f5d3132f3b849d5da" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>draw_header</name></member>
+      <member refid="struct_menu_layer_callbacks_1a5a3e2169ba3368e9b555b9b58bcc2637" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>draw_row</name></member>
+      <member refid="struct_menu_layer_callbacks_1aa83d81bcb2b4ea93586d617927a458ff" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>draw_separator</name></member>
+      <member refid="struct_menu_layer_callbacks_1adb2f2b8fdf1356ed991546205a08a540" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>get_cell_height</name></member>
+      <member refid="struct_menu_layer_callbacks_1aa322d0392bd4aeae12bbc740bd6c0af1" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>get_header_height</name></member>
+      <member refid="struct_menu_layer_callbacks_1a0f5f4c1ba320f1709fe015f0c9b5682c" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>get_num_rows</name></member>
+      <member refid="struct_menu_layer_callbacks_1ae238e0615b104181c18306eb65b381ab" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>get_num_sections</name></member>
+      <member refid="struct_menu_layer_callbacks_1ac91125c87adb3a6d1240d25cde609fc7" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>get_separator_height</name></member>
+      <member refid="struct_menu_layer_callbacks_1a88bd478b423a2d6fe9e667d23a02050f" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>select_click</name></member>
+      <member refid="struct_menu_layer_callbacks_1a37b862ad3aceeaf906834b7d2fdb0196" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>select_long_click</name></member>
+      <member refid="struct_menu_layer_callbacks_1a0f35fb6edefe0879f351f16d471cb1a1" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>selection_changed</name></member>
+      <member refid="struct_menu_layer_callbacks_1ae75c7da79ce259416ef21946ffc54d0d" prot="public" virt="non-virtual"><scope>MenuLayerCallbacks</scope><name>selection_will_change</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

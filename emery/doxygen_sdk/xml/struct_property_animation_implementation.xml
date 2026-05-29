@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_property_animation_implementation" kind="struct" language="C++" prot="public">
+    <compoundname>PropertyAnimationImplementation</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_property_animation_implementation_1a96d72abf30076e6639cf68313303465a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_property_animation_accessors" kindref="compound">PropertyAnimationAccessors</ref></type>
+        <definition>PropertyAnimationAccessors PropertyAnimationImplementation::accessors</definition>
+        <argsstring></argsstring>
+        <name>accessors</name>
+        <qualifiedname>PropertyAnimationImplementation::accessors</qualifiedname>
+        <briefdescription>
+<para>The accessors to set/get the property to be animated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6648" column="30" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_property_animation_implementation_1a4f8d0d4c92845fcc68bf491b6097d96d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_animation_implementation" kindref="compound">AnimationImplementation</ref></type>
+        <definition>AnimationImplementation PropertyAnimationImplementation::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <qualifiedname>PropertyAnimationImplementation::base</qualifiedname>
+        <briefdescription>
+<para>The &quot;inherited&quot; fields from the Animation &quot;base class&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="6646" column="27" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6646" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure containing a collection of function pointers that form the implementation of the property animation. See the code example at the top (<ref refid="group___property_animation" kindref="compound">PropertyAnimation</ref>). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>AnimationImplementation</label>
+        <link refid="struct_animation_implementation"/>
+      </node>
+      <node id="3">
+        <label>PropertyAnimationAccessors</label>
+        <link refid="struct_property_animation_accessors"/>
+      </node>
+      <node id="1">
+        <label>PropertyAnimationImplementation</label>
+        <link refid="struct_property_animation_implementation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>accessors</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="build/sdk/emery/include/pebble.h" line="6644" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="6644" bodyend="6649"/>
+    <listofallmembers>
+      <member refid="struct_property_animation_implementation_1a96d72abf30076e6639cf68313303465a" prot="public" virt="non-virtual"><scope>PropertyAnimationImplementation</scope><name>accessors</name></member>
+      <member refid="struct_property_animation_implementation_1a4f8d0d4c92845fcc68bf491b6097d96d" prot="public" virt="non-virtual"><scope>PropertyAnimationImplementation</scope><name>base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___memory_management" kind="group">
+    <compoundname>MemoryManagement</compoundname>
+    <title>Memory Management</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___memory_management_1ga887f21116cdcf560a095bbbc786686b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+        <definition>size_t heap_bytes_free</definition>
+        <argsstring>(void)</argsstring>
+        <name>heap_bytes_free</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Calculates the number of bytes of heap memory <emphasis>not</emphasis> currently being used by the application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bytes on the heap not currently being used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3034" column="8" declfile="build/sdk/emery/include/pebble.h" declline="3034" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___memory_management_1ga9e776141c2f26b29e3b94dfca5d482a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+        <definition>size_t heap_bytes_used</definition>
+        <argsstring>(void)</argsstring>
+        <name>heap_bytes_used</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Calculates the number of bytes of heap memory currently being used by the application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bytes on the heap currently being used. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3038" column="8" declfile="build/sdk/emery/include/pebble.h" declline="3038" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="group___memory_management_1gaf6da7fa2525589603f402bdaec598fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void memory_cache_flush</definition>
+        <argsstring>(void *start, size_t size)</argsstring>
+        <name>memory_cache_flush</name>
+        <param>
+          <type>void *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_memory_1ga7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Flushes the data cache and invalidates the instruction cache for the given region of memory, if necessary. This is only required when your app is loading or modifying code in memory and intends to execute it. On some platforms, code executed may be cached internally to improve performance. After writing to memory, but before executing, this function must be called in order to avoid undefined behavior. On platforms without caching, this performs no operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The beginning of the buffer to flush </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How many bytes to flush </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3047" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3047" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Utility functions for managing an application&apos;s memory. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

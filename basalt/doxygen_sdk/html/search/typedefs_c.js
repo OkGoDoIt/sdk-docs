@@ -10,5 +10,6 @@ var searchData=
   ['smartstrapserviceavailabilityhandler_7',['SmartstrapServiceAvailabilityHandler',['../group___smartstrap.html#gae77e1b9b9b9ebec76be6ee5ee6d658b3',1,'pebble.h']]],
   ['smartstrapserviceid_8',['SmartstrapServiceId',['../group___smartstrap.html#ga1ce83768c0652417bf8d273223655b0c',1,'pebble.h']]],
   ['smartstrapwritehandler_9',['SmartstrapWriteHandler',['../group___smartstrap.html#gabe74eee0435816d46af2a39d5f10f3c6',1,'pebble.h']]],
-  ['status_5ft_10',['status_t',['../group___storage.html#gaaabdaf7ee58ca7269bd4bf24efcde092',1,'pebble.h']]]
+  ['speakerfinishedcallback_10',['SpeakerFinishedCallback',['../group___speaker.html#ga281d71da9d5fc1d38b91b82ddb3cae01',1,'pebble.h']]],
+  ['status_5ft_11',['status_t',['../group___storage.html#gaaabdaf7ee58ca7269bd4bf24efcde092',1,'pebble.h']]]
 ];

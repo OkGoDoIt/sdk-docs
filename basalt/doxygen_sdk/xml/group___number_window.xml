@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___number_window" kind="group">
     <compoundname>NumberWindow</compoundname>
     <title>NumberWindow</title>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7965" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7965" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8249" column="27" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___number_window_1gacb00b785040c9b8ef732564face6b6cd" prot="public" static="no">
         <type>void(*</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7968" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="7968" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8252" column="9" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8252" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7992" column="14" declfile="build/sdk/basalt/include/pebble.h" declline="7992" declcolumn="14"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8276" column="14" declfile="build/sdk/basalt/include/pebble.h" declline="8276" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="group___number_window_1ga277a36f4533d07485db71d6e615e07a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="7995" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="7995" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8279" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8279" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___number_window_1ga035ef25b3c5ffc254df062cab1b4f9ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8032" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="8032" declcolumn="9"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8316" column="9" declfile="build/sdk/basalt/include/pebble.h" declline="8316" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group___number_window_1ga7b87ad10fd1b213d6ea5a3e092b53fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Window *</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8037" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8037" declcolumn="8"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8321" column="8" declfile="build/sdk/basalt/include/pebble.h" declline="8321" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="group___number_window_1gadb5c0553f2f6d720c24b79eab033b16a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -206,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8002" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8002" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8286" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8286" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___number_window_1ga07b009ae91d3ec4174a8d4f107010760" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -246,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8008" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8008" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8292" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8292" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___number_window_1ga95e99edee6680b64afc7ac4fca6805e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8014" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8014" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8298" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8298" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___number_window_1ga06fb891c949608321679dbc712a34078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -326,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8026" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8026" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8310" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8310" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___number_window_1ga3ad7755a252e1b38f9923b126463bab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -366,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8020" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8020" declcolumn="6"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8304" column="6" declfile="build/sdk/basalt/include/pebble.h" declline="8304" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

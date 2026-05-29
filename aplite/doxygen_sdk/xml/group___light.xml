@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___light" kind="group">
     <compoundname>Light</compoundname>
     <title>Light</title>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="8282" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8282" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="8532" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8532" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___light_1ga7074135af850ea753dc5a98378bca122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -47,7 +47,57 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="8276" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8276" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="8526" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="8526" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___light_1gad227a0d5abf2ad6102bdf12821f6d1f5" prot="public" static="no">
+        <name>light_is_on</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="8522" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="8522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___light_1gaa171caf273a128f9f41cb4dcb470cee9" prot="public" static="no">
+        <name>light_set_color</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="8534" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="8534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___light_1gab007b0b0c15e212b96c700c084ff2c3e" prot="public" static="no">
+        <name>light_set_color_rgb888</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="8536" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="8536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___light_1gab4f9fd2e26be84a3e2a0fc5ecadf54e9" prot="public" static="no">
+        <name>light_set_system_color</name>
+        <param><defname>...</defname></param>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/aplite/include/pebble.h" line="8538" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="8538" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

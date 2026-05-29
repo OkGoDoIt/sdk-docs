@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_app_focus_handlers" kind="struct" language="C++" prot="public">
+    <compoundname>AppFocusHandlers</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_app_focus_handlers_1abaee3a26942d24710a62a5f0b634094b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___app_focus_service_1ga6a6ebdab396361f14aef0c252efc96bb" kindref="member">AppFocusHandler</ref></type>
+        <definition>AppFocusHandler AppFocusHandlers::did_focus</definition>
+        <argsstring></argsstring>
+        <name>did_focus</name>
+        <qualifiedname>AppFocusHandlers::did_focus</qualifiedname>
+        <briefdescription>
+<para>Handler which will be called when an animation finished which has put the app into focus or taken the app out of focus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This will be called with in_focus set to true when a window which was covering the app has closed and the app has gained focus. </para>
+</simplesect>
+<simplesect kind="note"><para>This will be called with in_focus set to false when a window has opened which is now covering the app, causing the app to lose focus. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="560" column="19" bodyfile="build/sdk/emery/include/pebble.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_app_focus_handlers_1a6f30cc68eec1ca941a2af248d3c7c34b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___app_focus_service_1ga6a6ebdab396361f14aef0c252efc96bb" kindref="member">AppFocusHandler</ref></type>
+        <definition>AppFocusHandler AppFocusHandlers::will_focus</definition>
+        <argsstring></argsstring>
+        <name>will_focus</name>
+        <qualifiedname>AppFocusHandlers::will_focus</qualifiedname>
+        <briefdescription>
+<para>Handler which will be called right before an app will lose or gain focus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This will be called with in_focus set to true when a window which is covering the app is about to close and return focus to the app. </para>
+</simplesect>
+<simplesect kind="note"><para>This will be called with in_focus set to false when a window which will cover the app is about to open, causing the app to lose focus. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="553" column="19" bodyfile="build/sdk/emery/include/pebble.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>There are two different focus events which take place when transitioning to and from an app being in focus. Below is an example of when these events will occur: 1) The app is launched. Once the system animation to the app has completed and the app is completely in focus, the did_focus handler is called with in_focus set to true. 2) A notification comes in and the animation to show the notification starts. The will_focus handler is called with in_focus set to false. 3) The animation completes and the notification is in focus, with the app being completely covered. The did_focus hander is called with in_focus set to false. 4) The notification is dismissed and the animation to return to the app starts. The will_focus handler is called with in_focus set to true. 5) The animation completes and the app is in focus. The did_focus handler is called with in_focus set to true. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/emery/include/pebble.h" line="547" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="547" bodyend="561"/>
+    <listofallmembers>
+      <member refid="struct_app_focus_handlers_1abaee3a26942d24710a62a5f0b634094b" prot="public" virt="non-virtual"><scope>AppFocusHandlers</scope><name>did_focus</name></member>
+      <member refid="struct_app_focus_handlers_1a6f30cc68eec1ca941a2af248d3c7c34b" prot="public" virt="non-virtual"><scope>AppFocusHandlers</scope><name>will_focus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

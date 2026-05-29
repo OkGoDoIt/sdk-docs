@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_dictionary_iterator" kind="struct" language="C++" prot="public">
     <compoundname>DictionaryIterator</compoundname>
     <includes local="no">pebble.h</includes>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1756" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1756" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1699" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1699" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_dictionary_iterator_1a425cdb246d7c88aee09763888979a3a7" prot="public" static="no" mutable="no">
         <type>Dictionary *</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1750" column="14" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1750" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1693" column="14" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1693" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_dictionary_iterator_1a8c032e6b049c07cef73c42cf67bfcc6c" prot="public" static="no" mutable="no">
         <type>const void *</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="1751" column="14" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1751" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="1694" column="14" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1694" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -67,7 +67,7 @@
         <link refid="struct_tuple"/>
       </node>
     </collaborationgraph>
-    <location file="build/sdk/aplite/include/pebble.h" line="1749" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1749" bodyend="1757"/>
+    <location file="build/sdk/aplite/include/pebble.h" line="1692" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="1692" bodyend="1700"/>
     <listofallmembers>
       <member refid="struct_dictionary_iterator_1a92ab563836acb6ea6af20c0f1c8f4981" prot="public" virt="non-virtual"><scope>DictionaryIterator</scope><name>cursor</name></member>
       <member refid="struct_dictionary_iterator_1a425cdb246d7c88aee09763888979a3a7" prot="public" virt="non-virtual"><scope>DictionaryIterator</scope><name>dictionary</name></member>

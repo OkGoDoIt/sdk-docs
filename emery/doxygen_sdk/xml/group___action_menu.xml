@@ -1,0 +1,770 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___action_menu" kind="group">
+    <compoundname>ActionMenu</compoundname>
+    <title>ActionMenu</title>
+    <innerclass refid="struct_action_menu_config" prot="public">ActionMenuConfig</innerclass>
+    <innerclass refid="struct_action_menu_config_8colors" prot="public">ActionMenuConfig.colors</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___action_menu_1ga69ec87ec804dc309944ab111d35355d1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ActionMenuAlign</name>
+        <enumvalue id="group___action_menu_1gga69ec87ec804dc309944ab111d35355d1a5aa439acdf80967e7791a33da4b3e892" prot="public">
+          <name>ActionMenuAlignTop</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___action_menu_1gga69ec87ec804dc309944ab111d35355d1acee020e07fa7f2a075970a3ad707e258" prot="public">
+          <name>ActionMenuAlignCenter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8442" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8442" bodyend="8445"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___action_menu_1ga89f1ef389af9e5e26c2303c90c423ed8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ActionMenuLevelDisplayMode</name>
+        <enumvalue id="group___action_menu_1gga89f1ef389af9e5e26c2303c90c423ed8acb4dd794f121663ef3dfbb98b1f000a2" prot="public">
+          <name>ActionMenuLevelDisplayModeWide</name>
+          <briefdescription>
+<para>Each item gets its own row. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___action_menu_1gga89f1ef389af9e5e26c2303c90c423ed8a7849e09f38fe5b11e38eb4bcffe551ea" prot="public">
+          <name>ActionMenuLevelDisplayModeThin</name>
+          <briefdescription>
+<para>Grid view: multiple items per row. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>enum value that controls whether menu items are displayed in a grid (similarly to the emoji replies) or in a single column (reminiscent of <ref refid="group___menu_layer" kindref="compound">MenuLayer</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8460" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8460" bodyend="8463"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___action_menu_1gaab8981c6ff0ffb81af9bb00276c7b9e4" prot="public" static="no">
+        <type>struct ActionMenu</type>
+        <definition>typedef struct ActionMenu ActionMenu</definition>
+        <argsstring></argsstring>
+        <name>ActionMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8447" column="25" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___action_menu_1gab8a47f774bb7714e5da88cdceb2d108d" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* ActionMenuDidCloseCb) (ActionMenu *menu, const ActionMenuItem *performed_action, void *context)</definition>
+        <argsstring>)(ActionMenu *menu, const ActionMenuItem *performed_action, void *context)</argsstring>
+        <name>ActionMenuDidCloseCb</name>
+        <briefdescription>
+<para>Callback executed after the ActionMenu has closed, so memory may be freed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the root level passed to the ActionMenu </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>performed_action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ActionMenuItem for the action that was performed, NULL if the ActionMenu is closing without an action being selected by the user </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context passed to the ActionMenu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8454" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___action_menu_1gaa09ae5ea4ecbd91e96da1cb952422812" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* ActionMenuEachItemCb) (const ActionMenuItem *item, void *context)</definition>
+        <argsstring>)(const ActionMenuItem *item, void *context)</argsstring>
+        <name>ActionMenuEachItemCb</name>
+        <briefdescription>
+<para>Callback invoked for each item in an action menu hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current action menu item </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>caller-provided context callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8478" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___action_menu_1ga91633763538637774e330258b2417224" prot="public" static="no">
+        <type>struct ActionMenuItem</type>
+        <definition>typedef struct ActionMenuItem ActionMenuItem</definition>
+        <argsstring></argsstring>
+        <name>ActionMenuItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8437" column="29" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___action_menu_1ga4563e957b4c122650222ab573539e5e6" prot="public" static="no">
+        <type>struct ActionMenuLevel</type>
+        <definition>typedef struct ActionMenuLevel ActionMenuLevel</definition>
+        <argsstring></argsstring>
+        <name>ActionMenuLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8440" column="30" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___action_menu_1ga5a73a1a03a2e71b12f8ab24d7dd0b723" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* ActionMenuPerformActionCb) (ActionMenu *action_menu, const ActionMenuItem *action, void *context)</definition>
+        <argsstring>)(ActionMenu *action_menu, const ActionMenuItem *action, void *context)</argsstring>
+        <name>ActionMenuPerformActionCb</name>
+        <briefdescription>
+<para>Callback executed when a given action is selected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the action menu currently on screen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the action that was triggered </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context passed to the action menu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>the action menu is closed immediately after an action is performed, unless it is frozen in the <ref refid="group___action_menu_1ga5a73a1a03a2e71b12f8ab24d7dd0b723" kindref="member">ActionMenuPerformActionCb</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8471" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="8471" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___action_menu_1ga64072aa0788ed31f0910f91cdb52eea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_menu_close</definition>
+        <argsstring>(ActionMenu *action_menu, bool animated)</argsstring>
+        <name>action_menu_close</name>
+        <param>
+          <type>ActionMenu *</type>
+          <declname>action_menu</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+<para>Close the ActionMenu, whether it is frozen or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>this API can be used on a frozen ActionMenu once the data required to build the result window has been received and the result window has been set </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ActionMenu to close </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether or not show a close animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8589" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8589" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga71d7abf4fdcb9d574d4c83f77a9f3c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_menu_freeze</definition>
+        <argsstring>(ActionMenu *action_menu)</argsstring>
+        <name>action_menu_freeze</name>
+        <param>
+          <type>ActionMenu *</type>
+          <declname>action_menu</declname>
+        </param>
+        <briefdescription>
+<para>Freeze the ActionMenu. The ActionMenu will no longer respond to user input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>this API should be used when waiting for asynchronous operation. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ActionMenu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8570" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8570" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga197221bae2a2ff29f9a55f3b7b158083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * action_menu_get_context</definition>
+        <argsstring>(ActionMenu *action_menu)</argsstring>
+        <name>action_menu_get_context</name>
+        <param>
+          <type>ActionMenu *</type>
+          <declname>action_menu</declname>
+        </param>
+        <briefdescription>
+<para>Get the context pointer this ActionMenu was created with. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an ActionMenu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the context pointer initially provided in the <ref refid="struct_action_menu_config" kindref="compound">ActionMenuConfig</ref>. NULL if none exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8554" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8554" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga4d0eefc109c8a2f405052836433823e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ActionMenuLevel *</type>
+        <definition>ActionMenuLevel * action_menu_get_root_level</definition>
+        <argsstring>(ActionMenu *action_menu)</argsstring>
+        <name>action_menu_get_root_level</name>
+        <param>
+          <type>ActionMenu *</type>
+          <declname>action_menu</declname>
+        </param>
+        <briefdescription>
+<para>Get the root level of an ActionMenu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ActionMenu you want to know about </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the root ActionMenuLevel for the given ActionMenu, NULL if invalid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8559" column="17" declfile="build/sdk/emery/include/pebble.h" declline="8559" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1gaf92e946e67f1a5f2b494a5a41644c43d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_menu_hierarchy_destroy</definition>
+        <argsstring>(const ActionMenuLevel *root, ActionMenuEachItemCb each_cb, void *context)</argsstring>
+        <name>action_menu_hierarchy_destroy</name>
+        <param>
+          <type>const ActionMenuLevel *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type><ref refid="group___action_menu_1gaa09ae5ea4ecbd91e96da1cb952422812" kindref="member">ActionMenuEachItemCb</ref></type>
+          <declname>each_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a hierarchy of ActionMenuLevels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the root level in the hierarchy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>each_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a callback to call on every ActionMenuItem in every level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a context pointer to pass to each_cb on invocation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Typical implementations will cleanup memory allocated for the item label/data associated with each item in the callback </para>
+</simplesect>
+<simplesect kind="note"><para>Hierarchy is traversed in post-order. In other words, all children items are freed before their parent is freed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8546" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8546" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1gae6299840012d421d2f1377dcaf3f4f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * action_menu_item_get_action_data</definition>
+        <argsstring>(const ActionMenuItem *item)</argsstring>
+        <name>action_menu_item_get_action_data</name>
+        <param>
+          <type>const ActionMenuItem *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Getter for the action_data pointer of a given ActionMenuitem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___action_menu_1gab1b287abbee2a661985e118698da44ad" kindref="member">action_menu_level_add_action</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ActionMenuItem of interest </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the data. NULL if invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8502" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8502" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga30b43afb17fd09b8b13b6737e5d547f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * action_menu_item_get_label</definition>
+        <argsstring>(const ActionMenuItem *item)</argsstring>
+        <name>action_menu_item_get_label</name>
+        <param>
+          <type>const ActionMenuItem *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Getter for the label of a given ActionMenuItem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ActionMenuItem of interest </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the string label. NULL if invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8496" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8496" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1gab1b287abbee2a661985e118698da44ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ActionMenuItem *</type>
+        <definition>ActionMenuItem * action_menu_level_add_action</definition>
+        <argsstring>(ActionMenuLevel *level, const char *label, ActionMenuPerformActionCb cb, void *action_data)</argsstring>
+        <name>action_menu_level_add_action</name>
+        <param>
+          <type>ActionMenuLevel *</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type><ref refid="group___action_menu_1ga5a73a1a03a2e71b12f8ab24d7dd0b723" kindref="member">ActionMenuPerformActionCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>action_data</declname>
+        </param>
+        <briefdescription>
+<para>Add an action to an ActionLevel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the level to add the action to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the text to display for the action in the menu </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback that will be triggered when this action is actuated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to pass to the callback for this action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a reference to the new ActionMenuItem on success, NULL if the level is full </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8524" column="16" declfile="build/sdk/emery/include/pebble.h" declline="8524" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1gafbd111dea39ddcbb64ee1d5c5dd4c48b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ActionMenuItem *</type>
+        <definition>ActionMenuItem * action_menu_level_add_child</definition>
+        <argsstring>(ActionMenuLevel *level, ActionMenuLevel *child, const char *label)</argsstring>
+        <name>action_menu_level_add_child</name>
+        <param>
+          <type>ActionMenuLevel *</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>ActionMenuLevel *</type>
+          <declname>child</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Add a child to this ActionMenuLevel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parent level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the child level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the text to display in the action menu for this level </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a reference to the new ActionMenuItem on success, NULL if the level is full </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8534" column="16" declfile="build/sdk/emery/include/pebble.h" declline="8534" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga200b1b407fa6ef8e8a686e7d97e8809a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ActionMenuLevel *</type>
+        <definition>ActionMenuLevel * action_menu_level_create</definition>
+        <argsstring>(uint16_t max_items)</argsstring>
+        <name>action_menu_level_create</name>
+        <param>
+          <type><ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
+          <declname>max_items</declname>
+        </param>
+        <briefdescription>
+<para>Create a new action menu level with storage allocated for a given number of items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the max number of items that will be displayed at that level </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>levels are freed alongside the whole hierarchy so no destroy API is provided. </para>
+</simplesect>
+<simplesect kind="note"><para>by default, levels are using ActionMenuLevelDisplayModeWide. Use <ref refid="group___action_menu_1ga4a1a85c141bc29811f9b2a6030538630" kindref="member">action_menu_level_set_display_mode</ref> to change it. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___action_menu_1gaf92e946e67f1a5f2b494a5a41644c43d" kindref="member">action_menu_hierarchy_destroy</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8510" column="17" declfile="build/sdk/emery/include/pebble.h" declline="8510" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga4a1a85c141bc29811f9b2a6030538630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_menu_level_set_display_mode</definition>
+        <argsstring>(ActionMenuLevel *level, ActionMenuLevelDisplayMode display_mode)</argsstring>
+        <name>action_menu_level_set_display_mode</name>
+        <param>
+          <type>ActionMenuLevel *</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="group___action_menu_1ga89f1ef389af9e5e26c2303c90c423ed8" kindref="member">ActionMenuLevelDisplayMode</ref></type>
+          <declname>display_mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the action menu display mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ActionMenuLevel whose display mode you want to change </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>display_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The display mode for the action menu (3 vs. 1 item per row) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8515" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8515" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga1e3e6f36b95af8840afc8a1f3199dad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ActionMenu *</type>
+        <definition>ActionMenu * action_menu_open</definition>
+        <argsstring>(ActionMenuConfig *config)</argsstring>
+        <name>action_menu_open</name>
+        <param>
+          <type><ref refid="struct_action_menu_config" kindref="compound">ActionMenuConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Open a new ActionMenu. The ActionMenu acts much like a window. It fills the whole screen and handles clicks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the configuration info for this new ActionMenu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the new ActionMenu </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8565" column="12" declfile="build/sdk/emery/include/pebble.h" declline="8565" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga020e13aa8074060a3944651f80f54c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_menu_set_result_window</definition>
+        <argsstring>(ActionMenu *action_menu, Window *result_window)</argsstring>
+        <name>action_menu_set_result_window</name>
+        <param>
+          <type>ActionMenu *</type>
+          <declname>action_menu</declname>
+        </param>
+        <param>
+          <type>Window *</type>
+          <declname>result_window</declname>
+        </param>
+        <briefdescription>
+<para>Set the result window for an ActionMenu. The result window will be shown when the ActionMenu closes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ActionMenu </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the window to insert, pass NULL to remove the current result window </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>repeated call will result in only the last call to be applied, i.e. only one result window is ever set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8582" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8582" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_menu_1ga65478f21c474bd41ae612ec0e5288eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_menu_unfreeze</definition>
+        <argsstring>(ActionMenu *action_menu)</argsstring>
+        <name>action_menu_unfreeze</name>
+        <param>
+          <type>ActionMenu *</type>
+          <declname>action_menu</declname>
+        </param>
+        <briefdescription>
+<para>Unfreeze the ActionMenu previously frozen with <ref refid="group___action_menu_1ga71d7abf4fdcb9d574d4c83f77a9f3c4b" kindref="member">action_menu_freeze</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ActionMenu to unfreeze </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8574" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8574" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

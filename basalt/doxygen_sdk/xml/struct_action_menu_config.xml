@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_action_menu_config" kind="struct" language="C++" prot="public">
     <compoundname>ActionMenuConfig</compoundname>
     <includes local="no">pebble.h</includes>
@@ -16,11 +16,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8098" column="19" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8098" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8382" column="19" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8382" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct_action_menu_config_1a5e0624c071ff54e7595c8401ed5cffe8" prot="public" static="no" mutable="no">
-        <type>struct <ref refid="struct_action_menu_config" kindref="compound">ActionMenuConfig</ref></type>
-        <definition>struct ActionMenuConfig ActionMenuConfig::colors</definition>
+      <memberdef kind="variable" id="struct_action_menu_config_1aec34a4be3d4003c537153f0c8fb27976" prot="public" static="no" mutable="no">
+        <type>struct ActionMenuConfig::@235137020161346022027107272366071246377360260252</type>
+        <definition>struct ActionMenuConfig::@235137020161346022027107272366071246377360260252 ActionMenuConfig::colors</definition>
         <argsstring></argsstring>
         <name>colors</name>
         <qualifiedname>ActionMenuConfig::colors</qualifiedname>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8095" column="10"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8379" column="10"/>
       </memberdef>
       <memberdef kind="variable" id="struct_action_menu_config_1a0d96519c4aaba091722b3bd0f0e4860e" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8091" column="8" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8091" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8375" column="8" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8375" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_action_menu_config_1a1cc3e28b2ae2a4aa130eab62b6f9b0f6" prot="public" static="no" mutable="no">
         <type><ref refid="group___action_menu_1gab8a47f774bb7714e5da88cdceb2d108d" kindref="member">ActionMenuDidCloseCb</ref></type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8097" column="24" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8097" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8381" column="24" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8381" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_action_menu_config_1ab1ddd5b3a602bfc7a383854c672e12ec" prot="public" static="no" mutable="no">
         <type>const ActionMenuLevel *</type>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8090" column="25" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8090" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8374" column="25" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8374" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_action_menu_config_1a88e39a8e30efbaf4668509fff34b7f17" prot="public" static="no" mutable="no">
         <type><ref refid="group___action_menu_1gab8a47f774bb7714e5da88cdceb2d108d" kindref="member">ActionMenuDidCloseCb</ref></type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="8096" column="24" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8096" bodyend="-1"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="8380" column="24" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8380" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -98,10 +98,10 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="8089" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8089" bodyend="8099"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="8373" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="8373" bodyend="8383"/>
     <listofallmembers>
       <member refid="struct_action_menu_config_1a23e7ed3b6c5b91ff6bc3f2cebeb3f890" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>align</name></member>
-      <member refid="struct_action_menu_config_1a5e0624c071ff54e7595c8401ed5cffe8" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>colors</name></member>
+      <member refid="struct_action_menu_config_1aec34a4be3d4003c537153f0c8fb27976" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>colors</name></member>
       <member refid="struct_action_menu_config_1a0d96519c4aaba091722b3bd0f0e4860e" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>context</name></member>
       <member refid="struct_action_menu_config_1a1cc3e28b2ae2a4aa130eab62b6f9b0f6" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>did_close</name></member>
       <member refid="struct_action_menu_config_1ab1ddd5b3a602bfc7a383854c672e12ec" prot="public" virt="non-virtual"><scope>ActionMenuConfig</scope><name>root_level</name></member>

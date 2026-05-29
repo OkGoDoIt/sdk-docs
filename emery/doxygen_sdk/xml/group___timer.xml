@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___timer" kind="group">
+    <compoundname>Timer</compoundname>
+    <title>Timer</title>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___timer_1gacb2087b757d9ad7fe0c8ef2a2e9fecc9" prot="public" static="no">
+        <type>struct AppTimer</type>
+        <definition>typedef struct AppTimer AppTimer</definition>
+        <argsstring></argsstring>
+        <name>AppTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3000" column="23" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___timer_1ga465ac36f13df1644650dc90bb968c9d8" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AppTimerCallback) (void *data)</definition>
+        <argsstring>)(void *data)</argsstring>
+        <name>AppTimerCallback</name>
+        <briefdescription>
+<para>The type of function which can be called when a timer fires. The argument will be the <computeroutput>callback_data</computeroutput> passed to <ref refid="group___timer_1gaac4aa5acb23bf4ed47aa33355a6e378b" kindref="member">app_timer_register()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3004" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="3004" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___timer_1ga00bc7ef3a57f2321c5f88e7820724825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void app_timer_cancel</definition>
+        <argsstring>(AppTimer *timer_handle)</argsstring>
+        <name>app_timer_cancel</name>
+        <param>
+          <type>AppTimer *</type>
+          <declname>timer_handle</declname>
+        </param>
+        <briefdescription>
+<para>Cancels an already registered timer. Once cancelled the handle may no longer be used for any purpose. Elapsed timers do not need to be cancelled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3023" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3023" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___timer_1gaac4aa5acb23bf4ed47aa33355a6e378b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AppTimer *</type>
+        <definition>AppTimer * app_timer_register</definition>
+        <argsstring>(uint32_t timeout_ms, AppTimerCallback callback, void *callback_data)</argsstring>
+        <name>app_timer_register</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>timeout_ms</declname>
+        </param>
+        <param>
+          <type><ref refid="group___timer_1ga465ac36f13df1644650dc90bb968c9d8" kindref="member">AppTimerCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callback_data</declname>
+        </param>
+        <briefdescription>
+<para>Registers a timer that ends up in callback being called some specified time in the future. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expiry time in milliseconds from the current time </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback that gets called at expiry time </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data that will be passed to callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to an <computeroutput>AppTimer</computeroutput> that can be used to later reschedule or cancel this timer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3011" column="10" declfile="build/sdk/emery/include/pebble.h" declline="3011" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="group___timer_1ga34584069c4304e375425549f13cad1e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool app_timer_reschedule</definition>
+        <argsstring>(AppTimer *timer_handle, uint32_t new_timeout_ms)</argsstring>
+        <name>app_timer_reschedule</name>
+        <param>
+          <type>AppTimer *</type>
+          <declname>timer_handle</declname>
+        </param>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>new_timeout_ms</declname>
+        </param>
+        <briefdescription>
+<para>Reschedules an already running timer for some point in the future. Elapsed timers cannot be rescheduled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timer_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer to reschedule </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_timeout_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new expiry time in milliseconds from the current time </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the timer was rescheduled, false if the timer has already elapsed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="3018" column="6" declfile="build/sdk/emery/include/pebble.h" declline="3018" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___timer_1ga00f41133e14542220d184131f9dcb863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void psleep</definition>
+        <argsstring>(int millis)</argsstring>
+        <name>psleep</name>
+        <param>
+          <type>int</type>
+          <declname>millis</declname>
+        </param>
+        <briefdescription>
+<para>Waits for a certain amount of milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>millis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of milliseconds to wait for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2997" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2997" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Can be used to execute some code at some point in the future. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

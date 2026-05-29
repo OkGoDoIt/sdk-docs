@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.14.0" xml:lang="en-US">
+<doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.17.0" xml:lang="en-US">
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA["Pebble SDK"]]></value></option>
   <option  id='PROJECT_NUMBER' default='yes' type='string'><value><![CDATA[]]></value></option>
@@ -52,6 +52,7 @@
   <option  id='EXTENSION_MAPPING' default='yes' type='stringlist'>
   </option>
   <option  id='MARKDOWN_SUPPORT' default='yes' type='bool'><value>YES</value></option>
+  <option  id='MARKDOWN_STRICT' default='yes' type='bool'><value>YES</value></option>
   <option  id='TOC_INCLUDE_HEADINGS' default='yes' type='int'><value>6</value></option>
   <option  id='MARKDOWN_ID_STYLE' default='yes' type='string'><value>DOXYGEN</value></option>
   <option  id='AUTOLINK_SUPPORT' default='yes' type='bool'><value>YES</value></option>
@@ -103,6 +104,8 @@
   <option  id='GENERATE_TESTLIST' default='yes' type='bool'><value>YES</value></option>
   <option  id='GENERATE_BUGLIST' default='yes' type='bool'><value>YES</value></option>
   <option  id='GENERATE_DEPRECATEDLIST' default='yes' type='bool'><value>YES</value></option>
+  <option  id='GENERATE_REQUIREMENTS' default='yes' type='bool'><value>YES</value></option>
+  <option  id='REQ_TRACEABILITY_INFO' default='yes' type='string'><value>YES</value></option>
   <option  id='ENABLED_SECTIONS' default='yes' type='stringlist'>
   </option>
   <option  id='MAX_INITIALIZER_LINES' default='yes' type='int'><value>30</value></option>
@@ -128,9 +131,9 @@
   <option  id='WARN_LINE_FORMAT' default='yes' type='string'><value><![CDATA["at line $line of file $file"]]></value></option>
   <option  id='WARN_LOGFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='INPUT' default='no' type='stringlist'>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/common.dox]]></value>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/mainpage_sdk.dox]]></value>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/external_refs]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/common.dox]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/mainpage_sdk.dox]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/external_refs]]></value>
     <value><![CDATA[build/sdk/aplite/include/pebble.h]]></value>
     <value><![CDATA[build/sdk/aplite/include/doxygen/pebble_worker.h]]></value>
     <value><![CDATA[build/sdk/aplite/include/gcolor_definitions.h]]></value>
@@ -149,22 +152,20 @@
     <value><![CDATA[*/src/fw/vendor/*]]></value>
     <value><![CDATA[*/src/core/vendor/*]]></value>
     <value><![CDATA[*/src/boot/vendor/*]]></value>
-    <value><![CDATA[*/src/core/system/system_stm32f2xx.c]]></value>
-    <value><![CDATA[*/src/boot/stm32f2xx_it.c]]></value>
     <value><![CDATA[*_private*]]></value>
     <value><![CDATA[*_internal*]]></value>
   </option>
   <option  id='EXCLUDE_SYMBOLS' default='yes' type='stringlist'>
   </option>
   <option  id='EXAMPLE_PATH' default='no' type='stringlist'>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/external_refs]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/external_refs]]></value>
   </option>
   <option  id='EXAMPLE_PATTERNS' default='yes' type='stringlist'>
     <value><![CDATA[*]]></value>
   </option>
   <option  id='EXAMPLE_RECURSIVE' default='yes' type='bool'><value>NO</value></option>
   <option  id='IMAGE_PATH' default='no' type='stringlist'>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/images]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/images]]></value>
   </option>
   <option  id='INPUT_FILTER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='FILTER_PATTERNS' default='yes' type='stringlist'>
@@ -184,28 +185,23 @@
   <option  id='SOURCE_TOOLTIPS' default='yes' type='bool'><value>YES</value></option>
   <option  id='USE_HTAGS' default='yes' type='bool'><value>NO</value></option>
   <option  id='VERBATIM_HEADERS' default='no' type='bool'><value>NO</value></option>
-  <option  id='CLANG_ASSISTED_PARSING' default='yes' type='bool'><value>NO</value></option>
-  <option  id='CLANG_ADD_INC_PATHS' default='yes' type='bool'><value>YES</value></option>
-  <option  id='CLANG_OPTIONS' default='yes' type='stringlist'>
-  </option>
-  <option  id='CLANG_DATABASE_PATH' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='ALPHABETICAL_INDEX' default='yes' type='bool'><value>YES</value></option>
   <option  id='IGNORE_PREFIX' default='yes' type='stringlist'>
   </option>
   <option  id='GENERATE_HTML' default='yes' type='bool'><value>YES</value></option>
   <option  id='HTML_OUTPUT' default='yes' type='string'><value><![CDATA[html]]></value></option>
   <option  id='HTML_FILE_EXTENSION' default='yes' type='string'><value><![CDATA[.html]]></value></option>
-  <option  id='HTML_HEADER' default='no' type='string'><value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/template/header.html]]></value></option>
-  <option  id='HTML_FOOTER' default='no' type='string'><value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/template/footer.html]]></value></option>
-  <option  id='HTML_STYLESHEET' default='no' type='string'><value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/template/stylesheet.css]]></value></option>
+  <option  id='HTML_HEADER' default='no' type='string'><value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/template/header.html]]></value></option>
+  <option  id='HTML_FOOTER' default='no' type='string'><value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/template/footer.html]]></value></option>
+  <option  id='HTML_STYLESHEET' default='no' type='string'><value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/template/stylesheet.css]]></value></option>
   <option  id='HTML_EXTRA_STYLESHEET' default='yes' type='stringlist'>
   </option>
   <option  id='HTML_EXTRA_FILES' default='no' type='stringlist'>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/template/bg-navbar.png]]></value>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/template/navbar-icon.png]]></value>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/template/navbar-brdr.png]]></value>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/template/bootstrap.css]]></value>
-    <value><![CDATA[/__w/sdk-docs/sdk-docs/sdk/docs/template/pebble-developer.css]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/template/bg-navbar.png]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/template/navbar-icon.png]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/template/navbar-brdr.png]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/template/bootstrap.css]]></value>
+    <value><![CDATA[/Users/roger/Repos/pebble/PebbleOS/sdk/docs/template/pebble-developer.css]]></value>
   </option>
   <option  id='HTML_COLORSTYLE' default='yes' type='string'><value>AUTO_LIGHT</value></option>
   <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>0</value></option>
@@ -339,6 +335,7 @@
   <option  id='HIDE_UNDOC_RELATIONS' default='no' type='bool'><value>NO</value></option>
   <option  id='HAVE_DOT' default='yes' type='bool'><value>NO</value></option>
   <option  id='DOT_NUM_THREADS' default='yes' type='int'><value>0</value></option>
+  <option  id='DOT_BATCH_SIZE' default='yes' type='int'><value>50</value></option>
   <option  id='DOT_COMMON_ATTR' default='yes' type='string'><value><![CDATA["fontname=Helvetica,fontsize=10"]]></value></option>
   <option  id='DOT_EDGE_ATTR' default='yes' type='string'><value><![CDATA["labelfontname=Helvetica,labelfontsize=10"]]></value></option>
   <option  id='DOT_NODE_ATTR' default='yes' type='string'><value><![CDATA["shape=box,height=0.2,width=0.4"]]></value></option>
@@ -373,9 +370,14 @@
   </option>
   <option  id='PLANTUMLFILE_DIRS' default='yes' type='stringlist'>
   </option>
+  <option  id='MERMAID_PATH' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='MERMAID_CONFIG_FILE' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='MERMAID_RENDER_MODE' default='yes' type='string'><value>AUTO</value></option>
+  <option  id='MERMAID_JS_URL' default='yes' type='string'><value><![CDATA[https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs]]></value></option>
+  <option  id='MERMAIDFILE_DIRS' default='yes' type='stringlist'>
+  </option>
   <option  id='DOT_GRAPH_MAX_NODES' default='yes' type='int'><value>50</value></option>
   <option  id='MAX_DOT_GRAPH_DEPTH' default='yes' type='int'><value>0</value></option>
-  <option  id='DOT_MULTI_TARGETS' default='yes' type='bool'><value>NO</value></option>
   <option  id='GENERATE_LEGEND' default='yes' type='bool'><value>YES</value></option>
   <option  id='DOT_CLEANUP' default='yes' type='bool'><value>YES</value></option>
   <option  id='MSCGEN_TOOL' default='yes' type='string'><value><![CDATA[]]></value></option>

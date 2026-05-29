@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___action_bar_layer" kind="group">
+    <compoundname>ActionBarLayer</compoundname>
+    <title>ActionBarLayer</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___action_bar_layer_1ga3ba901f773dd6b67af92797790d54d3c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ActionBarLayerIconPressAnimation</name>
+        <enumvalue id="group___action_bar_layer_1gga3ba901f773dd6b67af92797790d54d3ca6fcda2d8ead1a606c2793173610b3251" prot="public">
+          <name>ActionBarLayerIconPressAnimationNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___action_bar_layer_1gga3ba901f773dd6b67af92797790d54d3cacb823ff34990db109434f54c9fc83baa" prot="public">
+          <name>ActionBarLayerIconPressAnimationMoveLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___action_bar_layer_1gga3ba901f773dd6b67af92797790d54d3cabff454ba53431095f9be665849b58bcd" prot="public">
+          <name>ActionBarLayerIconPressAnimationMoveUp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___action_bar_layer_1gga3ba901f773dd6b67af92797790d54d3cab62449ecb1906bd46bb5520e7704dd52" prot="public">
+          <name>ActionBarLayerIconPressAnimationMoveRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___action_bar_layer_1gga3ba901f773dd6b67af92797790d54d3ca205ca360557e5387434c517238b98ca1" prot="public">
+          <name>ActionBarLayerIconPressAnimationMoveDown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7943" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7943" bodyend="7949"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___action_bar_layer_1ga706c5a1119757ffcd44a2c739dee09e4" prot="public" static="no">
+        <type>struct ActionBarLayer</type>
+        <definition>typedef struct ActionBarLayer ActionBarLayer</definition>
+        <argsstring></argsstring>
+        <name>ActionBarLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7952" column="29" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7952" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___action_bar_layer_1gae8edfaafee4a257fd832d80ade02ab05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_add_to_window</definition>
+        <argsstring>(ActionBarLayer *action_bar, struct Window *window)</argsstring>
+        <name>action_bar_layer_add_to_window</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <param>
+          <type>struct Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Adds the action bar&apos;s layer on top of the window&apos;s root layer. It also adjusts the layout of the action bar to match the geometry of the window it gets added to. Lastly, it calls <ref refid="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" kindref="member">window_set_click_config_provider_with_context()</ref> on the window to set it up to work with the internal callback and raw click handlers of the action bar, to enable the highlighting of the section of the action bar when the user presses a button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>After this call, do not use <ref refid="group___window_1gadfbe85cbdb8a0b96d970672639c5421e" kindref="member">window_set_click_config_provider_with_context()</ref> with the window that the action bar has been added to (this would de-associate the action bar&apos;s click config provider and context). Instead use <ref refid="group___action_bar_layer_1ga0abe5d50cc4845dc219bf69ca24b4466" kindref="member">action_bar_layer_set_click_config_provider()</ref> and <ref refid="group___action_bar_layer_1ga4f5d63fd993859e5a6602e509aa20103" kindref="member">action_bar_layer_set_context()</ref> to register the click configuration provider to configure the buttons actions. </para>
+</simplesect>
+<simplesect kind="note"><para>It is advised to call this is in the window&apos;s <computeroutput>.load</computeroutput> or <computeroutput>.appear</computeroutput> handler. Make sure to call <ref refid="group___action_bar_layer_1gaeaddd4bbb4443a5ae4d20be9b560e56a" kindref="member">action_bar_layer_remove_from_window()</ref> in the window&apos;s <computeroutput>.unload</computeroutput> or <computeroutput>.disappear</computeroutput> handler. </para>
+</simplesect>
+<simplesect kind="note"><para>Adding additional layers to the window&apos;s root layer after this calll can occlude the action bar. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar to associate with the window </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window with which the action bar is to be associated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8039" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8039" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1ga1363c9fd456a626fb55928ee60ef295d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_clear_icon</definition>
+        <argsstring>(ActionBarLayer *action_bar, ButtonId button_id)</argsstring>
+        <name>action_bar_layer_clear_icon</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to clear out an existing icon. All it does is call <computeroutput>action_bar_layer_set_icon(action_bar, button_id, NULL)</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar for which to clear an icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the button for which to clear the icon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga03f3cf8b2817e31ff6c9b670f934dfe6" kindref="member">action_bar_layer_set_icon()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8016" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8016" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1ga8070ea0e56c090655c5cf0697ee22831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ActionBarLayer *</type>
+        <definition>ActionBarLayer * action_bar_layer_create</definition>
+        <argsstring>(void)</argsstring>
+        <name>action_bar_layer_create</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Creates a new ActionBarLayer on the heap and initalizes it with the default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Background color: <ref refid="group___color_definitions_1ga03d3c53a6a31fe2d80def95b8c035e26" kindref="member">GColorBlack</ref></para>
+</listitem><listitem><para>No click configuration provider (<computeroutput>NULL</computeroutput>)</para>
+</listitem><listitem><para>No icons</para>
+</listitem><listitem><para>Not added to / associated with any window, thus not catching any button input yet. <simplesect kind="return"><para>A pointer to the ActionBarLayer. <computeroutput>NULL</computeroutput> if the ActionBarLayer could not be created </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7961" column="16" declfile="build/sdk/emery/include/pebble.h" declline="7961" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1gaf4d591890572fe1aa058d4a48afd0a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_destroy</definition>
+        <argsstring>(ActionBarLayer *action_bar_layer)</argsstring>
+        <name>action_bar_layer_destroy</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar_layer</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a ActionBarLayer previously created by action_bar_layer_create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7964" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7964" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1ga27b7a9cbdcf11110b98b877636f57fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Layer *</type>
+        <definition>Layer * action_bar_layer_get_layer</definition>
+        <argsstring>(ActionBarLayer *action_bar_layer)</argsstring>
+        <name>action_bar_layer_get_layer</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar_layer</declname>
+        </param>
+        <briefdescription>
+<para>Gets the &quot;root&quot; Layer of the action bar layer, which is the parent for the sub- layers used for its implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the ActionBarLayer for which to get the &quot;root&quot; Layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The &quot;root&quot; Layer of the action bar layer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7970" column="7" declfile="build/sdk/emery/include/pebble.h" declline="7970" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1gaeaddd4bbb4443a5ae4d20be9b560e56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_remove_from_window</definition>
+        <argsstring>(ActionBarLayer *action_bar)</argsstring>
+        <name>action_bar_layer_remove_from_window</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <briefdescription>
+<para>Removes the action bar from the window and unconfigures the window&apos;s click configuration provider. <computeroutput>NULL</computeroutput> is set as the window&apos;s new click config provider and also as its callback context. If it has not been added to a window before, this function is a no-op. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar to de-associate from its current window </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8046" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8046" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1gad9487f252db3c49da816f91daa8ad46b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_set_background_color</definition>
+        <argsstring>(ActionBarLayer *action_bar, GColor background_color)</argsstring>
+        <name>action_bar_layer_set_background_color</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <param>
+          <type>GColor</type>
+          <declname>background_color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the background color of the action bar. Defaults to <ref refid="group___color_definitions_1ga03d3c53a6a31fe2d80def95b8c035e26" kindref="member">GColorBlack</ref>. The action bar&apos;s layer is automatically marked dirty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar of which to set the background color </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>background_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new background color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8052" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8052" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1ga0abe5d50cc4845dc219bf69ca24b4466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_set_click_config_provider</definition>
+        <argsstring>(ActionBarLayer *action_bar, ClickConfigProvider click_config_provider)</argsstring>
+        <name>action_bar_layer_set_click_config_provider</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref></type>
+          <declname>click_config_provider</declname>
+        </param>
+        <briefdescription>
+<para>Sets the click configuration provider callback of the action bar. In this callback your application can associate handlers to the different types of click events for each of the buttons, see <ref refid="group___clicks" kindref="compound">Clicks</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If the action bar had already been added to a window and the window is currently on-screen, the click configuration provider will be called before this function returns. Otherwise, it will be called by the system when the window becomes on-screen. </para>
+</simplesect>
+<simplesect kind="note"><para>The <computeroutput>.raw</computeroutput> handlers cannot be used without breaking the automatic highlighting of the segment of the action bar that for which a button is </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga03f3cf8b2817e31ff6c9b670f934dfe6" kindref="member">action_bar_layer_set_icon()</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar for which to assign a new click configuration provider </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>click_config_provider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new click configuration provider </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7995" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7995" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1ga4f5d63fd993859e5a6602e509aa20103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_set_context</definition>
+        <argsstring>(ActionBarLayer *action_bar, void *context)</argsstring>
+        <name>action_bar_layer_set_context</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Sets the context parameter, which will be passed in to <ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref> callbacks and the <ref refid="group___clicks_1gaac872430f49a1bee56078e7b1f4a202a" kindref="member">ClickConfigProvider</ref> callback of the action bar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>By default, a pointer to the action bar itself is passed in, if the context has not been set or if it has been set to <computeroutput>NULL</computeroutput>. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar for which to assign the new context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new context </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga0abe5d50cc4845dc219bf69ca24b4466" kindref="member">action_bar_layer_set_click_config_provider()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___clicks" kindref="compound">Clicks</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7980" column="6" declfile="build/sdk/emery/include/pebble.h" declline="7980" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1ga03f3cf8b2817e31ff6c9b670f934dfe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_set_icon</definition>
+        <argsstring>(ActionBarLayer *action_bar, ButtonId button_id, const GBitmap *icon)</argsstring>
+        <name>action_bar_layer_set_icon</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>icon</declname>
+        </param>
+        <briefdescription>
+<para>Sets an action bar icon onto one of the 3 slots as identified by <computeroutput>button_id</computeroutput>. Only <ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266eafb03cb7921a8bb7893cd8093a1a5e9cb" kindref="member">BUTTON_ID_UP</ref>, <ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea98093cd31c917223780131cfafe91dec" kindref="member">BUTTON_ID_SELECT</ref> and <ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea65a919b8a0f4539acfb865eb2a2dd9d0" kindref="member">BUTTON_ID_DOWN</ref> can be used. The transition will not be animated. Whenever an icon is set, the click configuration provider will be called, to give the application the opportunity to reconfigure the button interaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar for which to set the new icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the button for which to set the icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the GBitmap icon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1gafb562eb59d855d5e3a394b6b28195727" kindref="member">action_bar_layer_set_icon_animated()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga6cdc0a5af721bb556f15e9317c6ec934" kindref="member">action_bar_layer_set_icon_press_animation()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga0abe5d50cc4845dc219bf69ca24b4466" kindref="member">action_bar_layer_set_click_config_provider()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8009" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8009" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1gafb562eb59d855d5e3a394b6b28195727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_set_icon_animated</definition>
+        <argsstring>(ActionBarLayer *action_bar, ButtonId button_id, const GBitmap *icon, bool animated)</argsstring>
+        <name>action_bar_layer_set_icon_animated</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type>const GBitmap *</type>
+          <declname>icon</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+<para>Sets an action bar icon onto one of the 3 slots as identified by <computeroutput>button_id</computeroutput>. Only <ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266eafb03cb7921a8bb7893cd8093a1a5e9cb" kindref="member">BUTTON_ID_UP</ref>, <ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea98093cd31c917223780131cfafe91dec" kindref="member">BUTTON_ID_SELECT</ref> and <ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea65a919b8a0f4539acfb865eb2a2dd9d0" kindref="member">BUTTON_ID_DOWN</ref> can be used. Optionally, if <computeroutput>animated</computeroutput> is <computeroutput>true</computeroutput>, the transition will be animated. Whenever an icon is set, the click configuration provider will be called, to give the application the opportunity to reconfigure the button interaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar for which to set the new icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier of the button for which to set the icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the GBitmap icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True = animate the transition, False = do not animate the transition </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga03f3cf8b2817e31ff6c9b670f934dfe6" kindref="member">action_bar_layer_set_icon()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga6cdc0a5af721bb556f15e9317c6ec934" kindref="member">action_bar_layer_set_icon_press_animation()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga0abe5d50cc4845dc219bf69ca24b4466" kindref="member">action_bar_layer_set_click_config_provider()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8066" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8066" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___action_bar_layer_1ga6cdc0a5af721bb556f15e9317c6ec934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void action_bar_layer_set_icon_press_animation</definition>
+        <argsstring>(ActionBarLayer *action_bar, ButtonId button_id, ActionBarLayerIconPressAnimation animation)</argsstring>
+        <name>action_bar_layer_set_icon_press_animation</name>
+        <param>
+          <type>ActionBarLayer *</type>
+          <declname>action_bar</declname>
+        </param>
+        <param>
+          <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+          <declname>button_id</declname>
+        </param>
+        <param>
+          <type>ActionBarLayerIconPressAnimation</type>
+          <declname>animation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the animation to use while a button is pressed on an ActionBarLayer. By default we use ActionBarLayerIconPressAnimationMoveLeft. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action_bar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action bar for which to set the press animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The button for which to set the press animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The animation to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1gafb562eb59d855d5e3a394b6b28195727" kindref="member">action_bar_layer_set_icon_animated()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group___action_bar_layer_1ga0abe5d50cc4845dc219bf69ca24b4466" kindref="member">action_bar_layer_set_click_config_provider()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="8076" column="6" declfile="build/sdk/emery/include/pebble.h" declline="8076" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___action_bar_layer_1gaff50ec1b958fedccf064d112c4b6b8ab" prot="public" static="no">
+        <name>_ACTION_BAR_WIDTH</name>
+        <param><defname>plat</defname></param>
+        <initializer>PBL_PLATFORM_SWITCH(plat, \
+/*aplite*/ 30, \
+/*basalt*/ 30, \
+/*chalk*/ 40, \
+/*diorite*/ 30, \
+/*emery*/ 34, \
+/*flint*/ 30, \
+/*gabbro*/ 34)</initializer>
+        <briefdescription>
+<para>The width of the action bar in pixels, for all platforms. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7931" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7931" bodyend="7938"/>
+      </memberdef>
+      <memberdef kind="define" id="group___action_bar_layer_1gab5803f738d5e179c285d748003517435" prot="public" static="no">
+        <name>ACTION_BAR_WIDTH</name>
+        <initializer><ref refid="group___action_bar_layer_1gaff50ec1b958fedccf064d112c4b6b8ab" kindref="member">_ACTION_BAR_WIDTH</ref>(PBL_PLATFORM_TYPE_CURRENT)</initializer>
+        <briefdescription>
+<para>The width of the action bar in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7928" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7928" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___action_bar_layer_1ga782d6fedb33a9ebc53bd47703943bf72" prot="public" static="no">
+        <name>NUM_ACTION_BAR_ITEMS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>The maximum number of action bar items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="7941" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="7941" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Vertical, bar-shaped control widget on the right edge of the window </para>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="action_bar_layer.png" inline="yes"></image>
+ <image type="latex" name="action_bar_layer.png" inline="yes"></image>
+ <image type="rtf" name="action_bar_layer.png" inline="yes"></image>
+ <image type="docbook" name="action_bar_layer.png" inline="yes"></image>
+ <image type="xml" name="action_bar_layer.png" inline="yes"></image>
+</para>
+<para>ActionBarLayer is a Layer that displays a bar on the right edge of the window. The bar can contain up to 3 icons, each corresponding with one of the buttons on the right side of the watch. The purpose of each icon is to provide a hint (feed-forward) to what action a click on the respective button will cause.</para>
+<para>The action bar is useful when there are a few (up to 3) main actions that are desirable to be able to take quickly, literally with one press of a button.</para>
+<para><heading level="3">More actions</heading>
+</para>
+<para>If there are more than 3 actions the user might want to take:<itemizedlist>
+<listitem><para>Try assigning the top and bottom icons of the action bar to the two most immediate actions and use the middle icon to push a Window with a MenuLayer with less immediate actions.</para>
+</listitem><listitem><para>Secondary actions that are not vital, can be &quot;hidden&quot; under a long click. Try to group similar actions to one button. For example, in a Music app, a single click on the top button is tied to the action to jump to the previous track. Holding that same button means seek backwards.</para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="3">Directionality mapping</heading>
+</para>
+<para>When the top and bottom buttons are used to control navigating through a (potentially virtual, non-visible) list of items, follow this guideline:<itemizedlist>
+<listitem><para>Tie the top button to the action that goes to the <emphasis>previous</emphasis> item in the list, for example &quot;jump to previous track&quot; in a Music app.</para>
+</listitem><listitem><para>Tie the bottom button to the action that goes to the <emphasis>next</emphasis> item in the list, for example &quot;jump to next track&quot; in a Music app.</para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="3">Geometry</heading>
+</para>
+<para><itemizedlist>
+<listitem><para>The action bar&apos;s width varies per platform. 30px on most displays, 34px on Emery and Gabbro, and 40px on Chalk. Use the <ref refid="group___action_bar_layer_1gab5803f738d5e179c285d748003517435" kindref="member">ACTION_BAR_WIDTH</ref> define.</para>
+</listitem><listitem><para>Icons should not be wider than 28 pixels, or taller than 18 pixels. It is recommended to use a size of around 15 x 15 pixels for the &quot;visual core&quot; of the icon, and extending or contracting where needed. <heading level="3">Example Code</heading>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>The code example below shows how to do the initial setup of the action bar in a window&apos;s <computeroutput>.load</computeroutput> handler. Configuring the button actions is similar to the process when using <ref refid="group___window_1gaeefbe33bc69ffee444337b056912440c" kindref="member">window_set_click_config_provider()</ref>. See <ref refid="group___clicks" kindref="compound">Clicks</ref> for more information.</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">ActionBarLayer<sp/>*action_bar;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>implementation<sp/>of<sp/>my_next_click_handler<sp/>and<sp/>my_previous_click_handler</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>is<sp/>omitted<sp/>for<sp/>the<sp/>sake<sp/>of<sp/>brevity.<sp/>See<sp/>the<sp/>Clicks<sp/>reference<sp/>docs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>click_config_provider(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*context)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe</ref>(<ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea65a919b8a0f4539acfb865eb2a2dd9d0" kindref="member">BUTTON_ID_DOWN</ref>,<sp/>(<ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref>)<sp/>my_next_click_handler);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___window_1gae09d8d7299a9d5a750a898a70f64bdec" kindref="member">window_single_click_subscribe</ref>(<ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266eafb03cb7921a8bb7893cd8093a1a5e9cb" kindref="member">BUTTON_ID_UP</ref>,<sp/>(<ref refid="group___clicks_1ga9a923c600f6774d9858ae96b57d308a6" kindref="member">ClickHandler</ref>)<sp/>my_previous_click_handler);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>window_load(Window<sp/>*window)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>the<sp/>action<sp/>bar:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>action_bar<sp/>=<sp/><ref refid="group___action_bar_layer_1ga8070ea0e56c090655c5cf0697ee22831" kindref="member">action_bar_layer_create</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Associate<sp/>the<sp/>action<sp/>bar<sp/>with<sp/>the<sp/>window:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___action_bar_layer_1gae8edfaafee4a257fd832d80ade02ab05" kindref="member">action_bar_layer_add_to_window</ref>(action_bar,<sp/>window);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>click<sp/>config<sp/>provider:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___action_bar_layer_1ga0abe5d50cc4845dc219bf69ca24b4466" kindref="member">action_bar_layer_set_click_config_provider</ref>(action_bar,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>click_config_provider);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>icons:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>loading<sp/>of<sp/>the<sp/>icons<sp/>is<sp/>omitted<sp/>for<sp/>brevity...<sp/>See<sp/>gbitmap_create_with_resource()</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___action_bar_layer_1gafb562eb59d855d5e3a394b6b28195727" kindref="member">action_bar_layer_set_icon_animated</ref>(action_bar,<sp/><ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266eafb03cb7921a8bb7893cd8093a1a5e9cb" kindref="member">BUTTON_ID_UP</ref>,<sp/>my_icon_previous,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___action_bar_layer_1gafb562eb59d855d5e3a394b6b28195727" kindref="member">action_bar_layer_set_icon_animated</ref>(action_bar,<sp/><ref refid="group___clicks_1ggaa60e15d86cfe7033f28c7d066c85266ea65a919b8a0f4539acfb865eb2a2dd9d0" kindref="member">BUTTON_ID_DOWN</ref>,<sp/>my_icon_next,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

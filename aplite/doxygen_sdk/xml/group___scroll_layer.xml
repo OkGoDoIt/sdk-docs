@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="group___scroll_layer" kind="group">
     <compoundname>ScrollLayer</compoundname>
     <title>ScrollLayer</title>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6790" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6790" bodyend="6794"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6916" column="1" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6916" bodyend="6920"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6780" column="31" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6780" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6906" column="31" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6906" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___scroll_layer_1ga8d8b42edcb055403e522951bb6953251" prot="public" static="no">
         <type>struct ScrollLayer</type>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6607" column="26" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6607" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6733" column="26" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6733" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___scroll_layer_1ga1d78b150f7c6907988d00b7b75891560" prot="public" static="no">
         <type>void(*</type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6610" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6610" bodyend="-1"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6736" column="9" bodyfile="build/sdk/aplite/include/pebble.h" bodystart="6736" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6823" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6823" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6949" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6949" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga570fdb39b8045d11e1e63b7fb5cd9826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ContentIndicator *</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6810" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="6810" declcolumn="18"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6936" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="6936" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga33627eb5467fbf346d73900eb3718106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6814" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6814" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6940" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6940" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1gab78b12c113518ef42522b61bd46f8b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -235,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6831" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6831" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6957" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6957" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga8beb29f689a257c7b815e809209f6316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6840" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6840" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6966" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6966" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga318c7ebc11aa6d2ecf12c534bf1274cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -331,7 +331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6657" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6657" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6783" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6783" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga0d97f30d3b27b841b69b1d80e9aff7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ScrollLayer *</type>
@@ -360,8 +360,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6638" column="13" declfile="build/sdk/aplite/include/pebble.h" declline="6638" declcolumn="13"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="6764" column="13" declfile="build/sdk/aplite/include/pebble.h" declline="6764" declcolumn="13"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3548">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga2fa5ed30c56396db4f3b0325d3e22365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -379,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6641" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6641" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6767" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6767" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga10bb09ab49d9086eb069ad66b589c218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>ContentIndicator *</type>
@@ -409,7 +409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6785" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="6785" declcolumn="18"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6911" column="18" declfile="build/sdk/aplite/include/pebble.h" declline="6911" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga2fda3786915d157310adc5cca2db535a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_point" kindref="compound">GPoint</ref></type>
@@ -439,8 +439,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6718" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="6718" declcolumn="8"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="6844" column="8" declfile="build/sdk/aplite/include/pebble.h" declline="6844" declcolumn="8"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3507">GPoint</references>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1gaaf9a11857e592b96f6e98f883d3bb479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_g_size" kindref="compound">GSize</ref></type>
@@ -470,8 +470,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6731" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="6731" declcolumn="7"/>
-        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3388">GSize</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="6857" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="6857" declcolumn="7"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3527">GSize</references>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga258aab4c7516e91c3c5fd06d90a3d5fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Layer *</type>
@@ -501,7 +501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6647" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="6647" declcolumn="7"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6773" column="7" declfile="build/sdk/aplite/include/pebble.h" declline="6773" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1gaa4cbbb9540f3ccbf3d67394aa6dae85a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -531,7 +531,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6777" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6777" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6903" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6903" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1gaf77b23563424e49f40b6da8972b8c950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -561,7 +561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6766" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6766" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6892" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6892" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga5e9eb81851e021f62a552e304b5eca49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -603,7 +603,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6753" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6753" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6879" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6879" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga54271d3c507498c6548d142b017c949a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -645,7 +645,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6745" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6745" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6871" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6871" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga2aaf8ab053b356ccfc61afefe2504faf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -687,7 +687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6690" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6690" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6816" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6816" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga2c65fbd5bdc6af121312141368207775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -731,7 +731,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6681" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6681" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6807" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6807" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga09d6b9d6b9016eb438a7e3d51eb4041d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -789,8 +789,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6713" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6713" declcolumn="6"/>
-        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3368">GPoint</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="6839" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6839" declcolumn="6"/>
+        <references refid="group___graphics_types_1gabf9cee451faac8ad07157b775b951699" compoundref="pebble_8h" startline="3507">GPoint</references>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga95d1e0f61d1bf54eabd1c59f3e295489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -832,8 +832,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6726" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6726" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3388">GSize</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="6852" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6852" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga71761014e71575ac39edc38709cc048b" compoundref="pebble_8h" startline="3527">GSize</references>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1gaeb62332973b899f585563270fa7db637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -877,7 +877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6701" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6701" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6827" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6827" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1ga9282d6e6c53061b26b2df60e8b2d9553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -917,8 +917,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6737" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6737" declcolumn="6"/>
-        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3409">GRect</references>
+        <location file="build/sdk/aplite/include/pebble.h" line="6863" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6863" declcolumn="6"/>
+        <references refid="group___graphics_types_1ga98a870072d31f765cbfaebe222d85f6e" compoundref="pebble_8h" startline="3548">GRect</references>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1gaeebdc9b857953f55822da9e6b77bd0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -958,7 +958,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6772" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6772" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6898" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6898" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group___scroll_layer_1gab8d87f6647984e9532e848f04f610ae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -998,7 +998,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/aplite/include/pebble.h" line="6761" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6761" declcolumn="6"/>
+        <location file="build/sdk/aplite/include/pebble.h" line="6887" column="6" declfile="build/sdk/aplite/include/pebble.h" declline="6887" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

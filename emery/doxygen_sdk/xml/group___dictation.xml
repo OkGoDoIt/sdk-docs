@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="group___dictation" kind="group">
+    <compoundname>Dictation</compoundname>
+    <title>Dictation</title>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___dictation_1ga0379abc18ef975d7f954ed644981c20f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DictationSessionStatus</name>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20faedf159a238ba9bda2ec23f11aec79d09" prot="public">
+          <name>DictationSessionStatusSuccess</name>
+          <briefdescription>
+<para>Transcription successful, with a valid result. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20fab20894e058fe66a999c454804d276c9f" prot="public">
+          <name>DictationSessionStatusFailureTranscriptionRejected</name>
+          <briefdescription>
+<para>User rejected transcription and exited UI. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20fa1dcda9781afe1c1e16eb724210d2f602" prot="public">
+          <name>DictationSessionStatusFailureTranscriptionRejectedWithError</name>
+          <briefdescription>
+<para>User exited UI after transcription error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20fa76088afcf227f60f96132675d9607a0e" prot="public">
+          <name>DictationSessionStatusFailureSystemAborted</name>
+          <briefdescription>
+<para>Too many errors occurred during transcription and the UI exited. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20fa0111d4314fc45c7807f4e540091d5ac9" prot="public">
+          <name>DictationSessionStatusFailureNoSpeechDetected</name>
+          <briefdescription>
+<para>No speech was detected and UI exited. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20fa4bb35ddcfbf9119973997d0fb413790f" prot="public">
+          <name>DictationSessionStatusFailureConnectivityError</name>
+          <briefdescription>
+<para>No BT or internet connection. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20faa3bcc60bac489d4b7d78cfd3b91ef580" prot="public">
+          <name>DictationSessionStatusFailureDisabled</name>
+          <briefdescription>
+<para>Voice transcription disabled for this user. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20fa76a928cc09709f43ced56f98be7b6a51" prot="public">
+          <name>DictationSessionStatusFailureInternalError</name>
+          <briefdescription>
+<para>Voice transcription failed due to internal error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___dictation_1gga0379abc18ef975d7f954ed644981c20faa25ba58496758178207c97075be07c9e" prot="public">
+          <name>DictationSessionStatusFailureRecognizerError</name>
+          <briefdescription>
+<para>Cloud recognizer failed to transcribe speech (only possible if error dialogs disabled). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2100" column="1" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2100" bodyend="2127"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___dictation_1gafae75ac886fffbc9fa41e58d7d7da73b" prot="public" static="no">
+        <type>struct DictationSession</type>
+        <definition>typedef struct DictationSession DictationSession</definition>
+        <argsstring></argsstring>
+        <name>DictationSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2098" column="31" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2098" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___dictation_1ga0b17d3b4eaff685892d456449f9ecbf8" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* DictationSessionStatusCallback) (DictationSession *session, DictationSessionStatus status, char *transcription, void *context)</definition>
+        <argsstring>)(DictationSession *session, DictationSessionStatus status, char *transcription, void *context)</argsstring>
+        <name>DictationSessionStatusCallback</name>
+        <briefdescription>
+<para>Dictation status callback. Indicates success or failure of the dictation session and, if successful, passes the transcribed string to the user of the dictation session. The transcribed string will be freed after this call returns, so the string should be copied if it needs to be retained afterwards. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictation session from which the status was received </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictation status </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transcription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transcribed string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback context specified when starting the session </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2137" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2137" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___dictation_1gad56feaf2241dea2d5e1b49f7a25e80ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DictationSession *</type>
+        <definition>DictationSession * dictation_session_create</definition>
+        <argsstring>(uint32_t buffer_size, DictationSessionStatusCallback callback, void *callback_context)</argsstring>
+        <name>dictation_session_create</name>
+        <param>
+          <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type><ref refid="group___dictation_1ga0b17d3b4eaff685892d456449f9ecbf8" kindref="member">DictationSessionStatusCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callback_context</declname>
+        </param>
+        <briefdescription>
+<para>Create a dictation session. The session object can be used more than once to get a transcription. When a transcription is received a buffer will be allocated to store the text in with a maximum size specified by buffer_size. When a transcription is accepted by the user or a failure of some sort occurs, the callback specified will be called with the status and the transcription if one was accepted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of buffer to allocate for the transcription text; text will be truncated if it is longer than the maximum size specified; a size of 0 will allow the session to allocate as much as it needs and text will not be truncated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictation session status handler (must be valid) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context pointer for status handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>handle to the dictation session or NULL if the phone app is not connected or does not support voice dictation, if this is called on a platform that doesn&apos;t support voice dictation, or if an internal error occurs. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2155" column="18" declfile="build/sdk/emery/include/pebble.h" declline="2155" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictation_1ga0af2815ced7aab8113967347c57212b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dictation_session_destroy</definition>
+        <argsstring>(DictationSession *session)</argsstring>
+        <name>dictation_session_destroy</name>
+        <param>
+          <type>DictationSession *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+<para>Destroy the dictation session and free its memory. Will terminate a session in progress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictation session to be destroyed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2161" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2161" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictation_1ga9cdf88f9e484b512b2f07ff94849732b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dictation_session_enable_confirmation</definition>
+        <argsstring>(DictationSession *session, bool is_enabled)</argsstring>
+        <name>dictation_session_enable_confirmation</name>
+        <param>
+          <type>DictationSession *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Enable or disable user confirmation of transcribed text, which allows the user to accept or reject (and restart) the transcription. Must be called before the session is started. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictation session to modify </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set to true to enable user confirmation of transcriptions (default), false to disable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2182" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2182" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictation_1gaa40c7e199fee41225c3b45bcd88adbde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dictation_session_enable_error_dialogs</definition>
+        <argsstring>(DictationSession *session, bool is_enabled)</argsstring>
+        <name>dictation_session_enable_error_dialogs</name>
+        <param>
+          <type>DictationSession *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Enable or disable error dialogs when transcription fails. Must be called before the session is started. Disabling error dialogs will also disable automatic retries if transcription fails. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictation session to modify </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set to true to enable error dialogs (default), false to disable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2188" column="6" declfile="build/sdk/emery/include/pebble.h" declline="2188" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictation_1gafcd7f7452a120b1b54f613bdb536958c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictation_1ga0379abc18ef975d7f954ed644981c20f" kindref="member">DictationSessionStatus</ref></type>
+        <definition>DictationSessionStatus dictation_session_start</definition>
+        <argsstring>(DictationSession *session)</argsstring>
+        <name>dictation_session_start</name>
+        <param>
+          <type>DictationSession *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+<para>Start the dictation session. The dictation UI will be shown. When the user accepts a transcription or exits the UI, or, when the confirmation dialog is disabled and a status is received, the status callback will be called. Can only be called when no session is in progress. The session can be restarted multiple times after the UI is exited or the session is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictation session to start or restart </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if session was started, false if session is already in progress or is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2169" column="24" declfile="build/sdk/emery/include/pebble.h" declline="2169" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="group___dictation_1gaf1c224329967693f830d8d4f2158ce0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group___dictation_1ga0379abc18ef975d7f954ed644981c20f" kindref="member">DictationSessionStatus</ref></type>
+        <definition>DictationSessionStatus dictation_session_stop</definition>
+        <argsstring>(DictationSession *session)</argsstring>
+        <name>dictation_session_stop</name>
+        <param>
+          <type>DictationSession *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+<para>Stop the current dictation session. The UI will be hidden and no status callbacks will be received after the session is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dictation session to stop </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if session was stopped, false if session was not started or is invalid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2175" column="24" declfile="build/sdk/emery/include/pebble.h" declline="2175" declcolumn="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___dictation_1ga1df79b81c8e723f5387662843448c27f" prot="public" static="no">
+        <name>PBL_IF_MICROPHONE_ELSE</name>
+        <param><defname>if_true</defname></param>
+        <param><defname>if_false</defname></param>
+        <initializer>(if_true)</initializer>
+        <briefdescription>
+<para>Convenience macro to switch between two expressions depending on mic support. On platforms with a mic the first expression will be chosen, the second otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/emery/include/pebble.h" line="2192" column="9" bodyfile="build/sdk/emery/include/pebble.h" bodystart="2192" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

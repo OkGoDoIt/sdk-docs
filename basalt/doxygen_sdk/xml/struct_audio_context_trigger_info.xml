@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
+  <compounddef id="struct_audio_context_trigger_info" kind="struct" language="C++" prot="public">
+    <compoundname>AudioContextTriggerInfo</compoundname>
+    <includes local="no">pebble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_audio_context_trigger_info_1a733f8728394b3613d5d87fff7be00713" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t AudioContextTriggerInfo::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <qualifiedname>AudioContextTriggerInfo::args</qualifiedname>
+        <briefdescription>
+<para>Standard Pebble launch arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3393" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_trigger_info_1adbb39d5ab721cd85ae5f36883ef1dc6b" prot="public" static="no" mutable="no">
+        <type><ref refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kindref="member">ButtonId</ref></type>
+        <definition>ButtonId AudioContextTriggerInfo::launch_button</definition>
+        <argsstring></argsstring>
+        <name>launch_button</name>
+        <qualifiedname>AudioContextTriggerInfo::launch_button</qualifiedname>
+        <briefdescription>
+<para>Button associated with the launch, if any. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3385" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_trigger_info_1a0c18f49da8e5c07379451c7e3369139e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___launch_reason_1ga3846fa158615c2ee77c5c708cb4f340a" kindref="member">AppLaunchReason</ref></type>
+        <definition>AppLaunchReason AudioContextTriggerInfo::launch_reason</definition>
+        <argsstring></argsstring>
+        <name>launch_reason</name>
+        <qualifiedname>AudioContextTriggerInfo::launch_reason</qualifiedname>
+        <briefdescription>
+<para>Standard Pebble app launch reason. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3383" column="19" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_trigger_info_1acf42fdbb36bd1852c5eb78b3e7768433" prot="public" static="no" mutable="no">
+        <type><ref refid="group___audio_1ga1059c166058e46717fe913bc9576c0a5" kindref="member">AudioContextTriggerSource</ref></type>
+        <definition>AudioContextTriggerSource AudioContextTriggerInfo::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <qualifiedname>AudioContextTriggerInfo::source</qualifiedname>
+        <briefdescription>
+<para>Source category for the launch or action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3387" column="29" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_trigger_info_1a2bb3bd62eb62485d00abfa493b8ca807" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t AudioContextTriggerInfo::source_action</definition>
+        <argsstring></argsstring>
+        <name>source_action</name>
+        <qualifiedname>AudioContextTriggerInfo::source_action</qualifiedname>
+        <briefdescription>
+<para>Source-specific action identifier. Zero when unavailable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3389" column="12" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_context_trigger_info_1a1ac2f8c757eaf78d9cb8f794444f5c9e" prot="public" static="no" mutable="no">
+        <type><ref refid="group___standard_time_1ga3364eb8c173382cf152d7f163211b29e" kindref="member">time_t</ref></type>
+        <definition>time_t AudioContextTriggerInfo::trigger_time</definition>
+        <argsstring></argsstring>
+        <name>trigger_time</name>
+        <qualifiedname>AudioContextTriggerInfo::trigger_time</qualifiedname>
+        <briefdescription>
+<para>Best-effort trigger time in seconds since the Unix epoch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/sdk/basalt/include/pebble.h" line="3391" column="10" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3391" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Source-neutral metadata about how the app was launched. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="build/sdk/basalt/include/pebble.h" line="3381" column="1" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="3381" bodyend="3394"/>
+    <listofallmembers>
+      <member refid="struct_audio_context_trigger_info_1a733f8728394b3613d5d87fff7be00713" prot="public" virt="non-virtual"><scope>AudioContextTriggerInfo</scope><name>args</name></member>
+      <member refid="struct_audio_context_trigger_info_1adbb39d5ab721cd85ae5f36883ef1dc6b" prot="public" virt="non-virtual"><scope>AudioContextTriggerInfo</scope><name>launch_button</name></member>
+      <member refid="struct_audio_context_trigger_info_1a0c18f49da8e5c07379451c7e3369139e" prot="public" virt="non-virtual"><scope>AudioContextTriggerInfo</scope><name>launch_reason</name></member>
+      <member refid="struct_audio_context_trigger_info_1acf42fdbb36bd1852c5eb78b3e7768433" prot="public" virt="non-virtual"><scope>AudioContextTriggerInfo</scope><name>source</name></member>
+      <member refid="struct_audio_context_trigger_info_1a2bb3bd62eb62485d00abfa493b8ca807" prot="public" virt="non-virtual"><scope>AudioContextTriggerInfo</scope><name>source_action</name></member>
+      <member refid="struct_audio_context_trigger_info_1a1ac2f8c757eaf78d9cb8f794444f5c9e" prot="public" virt="non-virtual"><scope>AudioContextTriggerInfo</scope><name>trigger_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

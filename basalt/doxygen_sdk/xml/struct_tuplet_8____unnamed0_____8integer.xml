@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.17.0" xml:lang="en-US">
   <compounddef id="struct_tuplet_8____unnamed0_____8integer" kind="struct" language="C++" prot="public">
     <compoundname>Tuplet.__unnamed0__.integer</compoundname>
     <sectiondef kind="public-attrib">
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1899" column="16"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1961" column="16"/>
       </memberdef>
       <memberdef kind="variable" id="struct_tuplet_8____unnamed0_____8integer_1aeaae26a6fb20ed3ef54fb23bfa0b1fcc" prot="public" static="no" mutable="no">
         <type>const <ref refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kindref="member">uint16_t</ref></type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="build/sdk/basalt/include/pebble.h" line="1901" column="22"/>
+        <location file="build/sdk/basalt/include/pebble.h" line="1963" column="22"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -39,7 +39,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="build/sdk/basalt/include/pebble.h" line="1896" column="5" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1896" bodyend="1902"/>
+    <location file="build/sdk/basalt/include/pebble.h" line="1958" column="5" bodyfile="build/sdk/basalt/include/pebble.h" bodystart="1958" bodyend="1964"/>
     <listofallmembers>
       <member refid="struct_tuplet_8____unnamed0_____8integer_1addecebdea58b5f264d27f1f7909bab74" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__.integer</scope><name>storage</name></member>
       <member refid="struct_tuplet_8____unnamed0_____8integer_1aeaae26a6fb20ed3ef54fb23bfa0b1fcc" prot="public" virt="non-virtual"><scope>Tuplet.__unnamed0__.integer</scope><name>width</name></member>

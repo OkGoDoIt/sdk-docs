@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.17.0" xml:lang="en-US">
   <compound refid="struct_accel_data" kind="struct"><name>AccelData</name>
     <member refid="struct_accel_data_1a8e60f95e0d893d078f9906b51cbf9cc7" kind="variable"><name>did_vibrate</name></member>
     <member refid="struct_accel_data_1acb871e01f60e4aec0a29eafc108102d9" kind="variable"><name>timestamp</name></member>
@@ -14,7 +14,7 @@
   </compound>
   <compound refid="struct_action_menu_config" kind="struct"><name>ActionMenuConfig</name>
     <member refid="struct_action_menu_config_1a23e7ed3b6c5b91ff6bc3f2cebeb3f890" kind="variable"><name>align</name></member>
-    <member refid="struct_action_menu_config_1a5e0624c071ff54e7595c8401ed5cffe8" kind="variable"><name>colors</name></member>
+    <member refid="struct_action_menu_config_1aec34a4be3d4003c537153f0c8fb27976" kind="variable"><name>colors</name></member>
     <member refid="struct_action_menu_config_1a0d96519c4aaba091722b3bd0f0e4860e" kind="variable"><name>context</name></member>
     <member refid="struct_action_menu_config_1a1cc3e28b2ae2a4aa130eab62b6f9b0f6" kind="variable"><name>did_close</name></member>
     <member refid="struct_action_menu_config_1ab1ddd5b3a602bfc7a383854c672e12ec" kind="variable"><name>root_level</name></member>
@@ -39,14 +39,14 @@
   </compound>
   <compound refid="struct_app_glance_slice" kind="struct"><name>AppGlanceSlice</name>
     <member refid="struct_app_glance_slice_1a4ca1aadad9d6e64c08ba98162a89a368" kind="variable"><name>expiration_time</name></member>
-    <member refid="struct_app_glance_slice_1a497f5deaed461c7a6c2d077eccead40f" kind="variable"><name>layout</name></member>
+    <member refid="struct_app_glance_slice_1a735c75bb97cf8079ddc4e7b1d1afb5da" kind="variable"><name>layout</name></member>
   </compound>
-  <compound refid="struct_app_glance_slice_8layout" kind="struct"><name>AppGlanceSlice.layout</name>
-    <member refid="struct_app_glance_slice_8layout_1abaec6461b0d69dde1b861aefbe375d8a" kind="variable"><name>icon</name></member>
-    <member refid="struct_app_glance_slice_8layout_1ab73780f8cadce0f97cd04c18515fe6cb" kind="variable"><name>subtitle_template_string</name></member>
+  <compound refid="struct_app_glance_slice_layout" kind="struct"><name>AppGlanceSliceLayout</name>
+    <member refid="struct_app_glance_slice_layout_1a717f1cead78c77e273cb8b2eeb1179a1" kind="variable"><name>icon</name></member>
+    <member refid="struct_app_glance_slice_layout_1a17238a7d7cf6a20c52394e9b61eb2fc6" kind="variable"><name>subtitle_template_string</name></member>
   </compound>
   <compound refid="struct_app_sync" kind="struct"><name>AppSync</name>
-    <member refid="struct_app_sync_1a1b67948c3d37ee4e65b4dd243f31c22f" kind="variable"><name></name></member>
+    <member refid="struct_app_sync_1a1b67948c3d37ee4e65b4dd243f31c22f" kind="variable"><name>@022331027133272075045277053243007366137256117336</name></member>
     <member refid="struct_app_sync_1ab184df88bff7548e6fc2b1075879ea4c" kind="variable"><name>buffer_size</name></member>
     <member refid="struct_app_sync_1a305fd71f8dd0a63df31c54aac059649d" kind="variable"><name>callback</name></member>
     <member refid="struct_app_sync_1a852821fc80afd3359f29807bcc3afb94" kind="variable"><name>current_iter</name></member>
@@ -65,6 +65,28 @@
     <member refid="struct_app_worker_message_1af2dc5659d8a2baf88498c3aa22a95995" kind="variable"><name>data1</name></member>
     <member refid="struct_app_worker_message_1ac2e93e4325306b77d7dc639fcf1b92d2" kind="variable"><name>data2</name></member>
   </compound>
+  <compound refid="struct_audio_context_status" kind="struct"><name>AudioContextStatus</name>
+    <member refid="struct_audio_context_status_1a40ec4af2ac65bc9e52fdfb8fc30130e8" kind="variable"><name>availability</name></member>
+    <member refid="struct_audio_context_status_1a2bca61adb51e1e209b515ceb3c1a8ccd" kind="variable"><name>background_audio_enabled</name></member>
+    <member refid="struct_audio_context_status_1a9cd96da23138d68625d019e8cbc390ad" kind="variable"><name>flags</name></member>
+    <member refid="struct_audio_context_status_1aeee6431b8b0419414fecbffa36e4bb56" kind="variable"><name>recording</name></member>
+    <member refid="struct_audio_context_status_1a4eb0f199a6b1248651f6fc667032d292" kind="variable"><name>transcribing</name></member>
+  </compound>
+  <compound refid="struct_audio_context_transcript" kind="struct"><name>AudioContextTranscript</name>
+    <member refid="struct_audio_context_transcript_1adbf936a275addbf939283b0063bac1bf" kind="variable"><name>end_time</name></member>
+    <member refid="struct_audio_context_transcript_1a675d7693537c8bb21b3ea41bcd273813" kind="variable"><name>flags</name></member>
+    <member refid="struct_audio_context_transcript_1a2ae6e3556fed90dd430266fb910e021a" kind="variable"><name>gap_count</name></member>
+    <member refid="struct_audio_context_transcript_1ad6861eef008b7a732730724207b1b033" kind="variable"><name>start_time</name></member>
+    <member refid="struct_audio_context_transcript_1ab7d60d4ca7df917e6c35615f317bb85e" kind="variable"><name>text</name></member>
+  </compound>
+  <compound refid="struct_audio_context_trigger_info" kind="struct"><name>AudioContextTriggerInfo</name>
+    <member refid="struct_audio_context_trigger_info_1a733f8728394b3613d5d87fff7be00713" kind="variable"><name>args</name></member>
+    <member refid="struct_audio_context_trigger_info_1adbb39d5ab721cd85ae5f36883ef1dc6b" kind="variable"><name>launch_button</name></member>
+    <member refid="struct_audio_context_trigger_info_1a0c18f49da8e5c07379451c7e3369139e" kind="variable"><name>launch_reason</name></member>
+    <member refid="struct_audio_context_trigger_info_1acf42fdbb36bd1852c5eb78b3e7768433" kind="variable"><name>source</name></member>
+    <member refid="struct_audio_context_trigger_info_1a2bb3bd62eb62485d00abfa493b8ca807" kind="variable"><name>source_action</name></member>
+    <member refid="struct_audio_context_trigger_info_1a1ac2f8c757eaf78d9cb8f794444f5c9e" kind="variable"><name>trigger_time</name></member>
+  </compound>
   <compound refid="struct_battery_charge_state" kind="struct"><name>BatteryChargeState</name>
     <member refid="struct_battery_charge_state_1ad4364805c751979a0572c94d5dabc459" kind="variable"><name>charge_percent</name></member>
     <member refid="struct_battery_charge_state_1a1a2d28c28d3d230b5f8fe2fd089ff9dd" kind="variable"><name>is_charging</name></member>
@@ -82,7 +104,7 @@
   </compound>
   <compound refid="struct_content_indicator_config" kind="struct"><name>ContentIndicatorConfig</name>
     <member refid="struct_content_indicator_config_1aedebeb60025633d4e1c36cb617707f05" kind="variable"><name>alignment</name></member>
-    <member refid="struct_content_indicator_config_1a6e36a95c665d79dbc722fa9389d6c3ec" kind="variable"><name>colors</name></member>
+    <member refid="struct_content_indicator_config_1a47b000ea93cccc5cdab18331c89d6e91" kind="variable"><name>colors</name></member>
     <member refid="struct_content_indicator_config_1a88ec60f998fcf148443b075189665aea" kind="variable"><name>layer</name></member>
     <member refid="struct_content_indicator_config_1a4772a880f0d9148c0649c27a72440d0a" kind="variable"><name>times_out</name></member>
   </compound>
@@ -101,7 +123,7 @@
     <member refid="struct_g_bitmap_data_row_info_1aea3e456327c26defb9603b9e3630ee49" kind="variable"><name>min_x</name></member>
   </compound>
   <compound refid="union_g_color8" kind="union"><name>GColor8</name>
-    <member refid="union_g_color8_1a6d499f25667a265c9beea1adc32ba06e" kind="variable"><name></name></member>
+    <member refid="union_g_color8_1abcea9e9603a808863e4d14435b695baf" kind="variable"><name>@060325226352266374262012351234342247057145373230</name></member>
     <member refid="union_g_color8_1a587b00d5ec8e9cb79ca55da375448447" kind="variable"><name>argb</name></member>
   </compound>
   <compound refid="struct_g_color8_8____unnamed0____" kind="struct"><name>GColor8.__unnamed0__</name>
@@ -173,14 +195,22 @@
     <member refid="struct_menu_layer_callbacks_1a0f35fb6edefe0879f351f16d471cb1a1" kind="variable"><name>selection_changed</name></member>
     <member refid="struct_menu_layer_callbacks_1ae75c7da79ce259416ef21946ffc54d0d" kind="variable"><name>selection_will_change</name></member>
   </compound>
+  <compound refid="struct_moddable_creation_record" kind="struct"><name>ModdableCreationRecord</name>
+    <member refid="struct_moddable_creation_record_1a1caa937e8b7a3874c2d448c3178df62a" kind="variable"><name>chunk</name></member>
+    <member refid="struct_moddable_creation_record_1ae0a1093f4bbee23a0a641178502ba2ff" kind="variable"><name>flags</name></member>
+    <member refid="struct_moddable_creation_record_1a563aeaa464900e12489792b98a68b07b" kind="variable"><name>fxBuildFFI</name></member>
+    <member refid="struct_moddable_creation_record_1acdcbcce2a33eeccef88dc4b8c17c6df2" kind="variable"><name>recordSize</name></member>
+    <member refid="struct_moddable_creation_record_1aab9cbb91dfd8511b60f752dc8d0271ff" kind="variable"><name>slot</name></member>
+    <member refid="struct_moddable_creation_record_1a8f3df4625c883041832533e8975afeb2" kind="variable"><name>stack</name></member>
+  </compound>
   <compound refid="struct_number_window_callbacks" kind="struct"><name>NumberWindowCallbacks</name>
     <member refid="struct_number_window_callbacks_1abdd61f04b83744b16efb197e578abc4d" kind="variable"><name>decremented</name></member>
     <member refid="struct_number_window_callbacks_1a859555b6e90e9f30ebf83ade1843edb4" kind="variable"><name>incremented</name></member>
     <member refid="struct_number_window_callbacks_1a4e684ff178c36b96c583fd5e292ee542" kind="variable"><name>selected</name></member>
   </compound>
   <compound refid="struct_property_animation_accessors" kind="struct"><name>PropertyAnimationAccessors</name>
-    <member refid="struct_property_animation_accessors_1a2c733dcaf8dec3369f0ea3f66f8e5818" kind="variable"><name>getter</name></member>
-    <member refid="struct_property_animation_accessors_1aa36769b988ba12440ac02291008afebe" kind="variable"><name>setter</name></member>
+    <member refid="struct_property_animation_accessors_1ad89f098c2e6ba9ae5eb77f07764dd7a2" kind="variable"><name>getter</name></member>
+    <member refid="struct_property_animation_accessors_1a48952a9b17684cba7240524376929cd4" kind="variable"><name>setter</name></member>
   </compound>
   <compound refid="union_property_animation_accessors_8getter" kind="union"><name>PropertyAnimationAccessors.getter</name>
     <member refid="union_property_animation_accessors_8getter_1acc82322d31f73d57d2ae447832623232" kind="variable"><name>gcolor8</name></member>
@@ -221,6 +251,25 @@
     <member refid="struct_smartstrap_handlers_1a5fe356165a501f797013b22519c63583" kind="variable"><name>did_write</name></member>
     <member refid="struct_smartstrap_handlers_1a17fc299cd231967fbd0344ae469640b3" kind="variable"><name>notified</name></member>
   </compound>
+  <compound refid="struct_speaker_note" kind="struct"><name>SpeakerNote</name>
+    <member refid="struct_speaker_note_1ae8c93d76fb24e5f24ab94d70aab921d5" kind="variable"><name>duration_ms</name></member>
+    <member refid="struct_speaker_note_1ae9214e01ed0b28709b046133f250383f" kind="variable"><name>midi_note</name></member>
+    <member refid="struct_speaker_note_1a27e777eba8e9cc32807be7682b618cec" kind="variable"><name>reserved</name></member>
+    <member refid="struct_speaker_note_1a15258c6d4c0848457bd59dad44fa352e" kind="variable"><name>velocity</name></member>
+    <member refid="struct_speaker_note_1a0b1bb6e069a47b765e06ef92bb96a3f3" kind="variable"><name>waveform</name></member>
+  </compound>
+  <compound refid="struct_speaker_sample" kind="struct"><name>SpeakerSample</name>
+    <member refid="struct_speaker_sample_1aba69be8639aaa3aec5e7148f9e12d94b" kind="variable"><name>base_midi_note</name></member>
+    <member refid="struct_speaker_sample_1ad429fa0188b29d0a34c0d6f9e475bb51" kind="variable"><name>data</name></member>
+    <member refid="struct_speaker_sample_1ab750d017f49b9085ce90484ede50113c" kind="variable"><name>format</name></member>
+    <member refid="struct_speaker_sample_1a8b56e6305369941752961f85b63f8c86" kind="variable"><name>loop</name></member>
+    <member refid="struct_speaker_sample_1acf3d9750bad948f9809b4d0d86020512" kind="variable"><name>num_bytes</name></member>
+  </compound>
+  <compound refid="struct_speaker_track" kind="struct"><name>SpeakerTrack</name>
+    <member refid="struct_speaker_track_1aec342d83aa1e35ef2b4fee98bbd87c31" kind="variable"><name>notes</name></member>
+    <member refid="struct_speaker_track_1aea8cff81c0621c84b815f0667eaf4501" kind="variable"><name>num_notes</name></member>
+    <member refid="struct_speaker_track_1a387680bf01ce732c5d4744823b7902a6" kind="variable"><name>sample</name></member>
+  </compound>
   <compound refid="structtm" kind="struct"><name>tm</name>
     <member refid="structtm_1a4892d556f104fbadf55043949c8de7fe" kind="variable"><name>tm_gmtoff</name></member>
     <member refid="structtm_1a3e7ca4e37f1abcaf56b8a916c38eb9fe" kind="variable"><name>tm_hour</name></member>
@@ -233,6 +282,11 @@
     <member refid="structtm_1a93a0ba77cc23796df84405dcbcc57eb1" kind="variable"><name>tm_yday</name></member>
     <member refid="structtm_1a33adf78fd6476b2120ce3b9c4a852053" kind="variable"><name>tm_year</name></member>
     <member refid="structtm_1ae5d2abaee5caf5b1a48d7fcf16300f87" kind="variable"><name>tm_zone</name></member>
+  </compound>
+  <compound refid="struct_touch_event" kind="struct"><name>TouchEvent</name>
+    <member refid="struct_touch_event_1a6af459d2c1a03e0faf7f60e4f3a6a135" kind="variable"><name>type</name></member>
+    <member refid="struct_touch_event_1a6ac244661e28ac09e200dcec207b892c" kind="variable"><name>x</name></member>
+    <member refid="struct_touch_event_1ab50974376bc948ca79d74b6ef84b8f5e" kind="variable"><name>y</name></member>
   </compound>
   <compound refid="struct_tuple" kind="struct"><name>Tuple</name>
     <member refid="struct_tuple_1ae0a5c5233ca231aa7c1a368d340a97c0" kind="variable"><name>key</name></member>
@@ -251,7 +305,7 @@
     <member refid="union_tuple_8value_1a5f423e669d0a8f4ab7c4c3e6da27161a" kind="variable"><name>uint8</name></member>
   </compound>
   <compound refid="struct_tuplet" kind="struct"><name>Tuplet</name>
-    <member refid="struct_tuplet_1a704a685c985e5966b896d2e81ffbeed0" kind="variable"><name></name></member>
+    <member refid="struct_tuplet_1a704a685c985e5966b896d2e81ffbeed0" kind="variable"><name>@055031011256062212360157047341325021122344061003</name></member>
     <member refid="struct_tuplet_1a0d335183753df2961b426478c17b553a" kind="variable"><name>key</name></member>
     <member refid="struct_tuplet_1a1451fd4819f780d8877c0ac8d52151d2" kind="variable"><name>type</name></member>
   </compound>
@@ -465,6 +519,17 @@
     <member refid="group___app_message_1ga8a213339bca4388cf17c3f4c4b2e11fd" kind="define"><name>APP_MESSAGE_INBOX_SIZE_MINIMUM</name></member>
     <member refid="group___app_message_1ga6fe648fbe225cda63583342bb2305187" kind="define"><name>APP_MESSAGE_OUTBOX_SIZE_MINIMUM</name></member>
     <member refid="pebble_8h_1a7539f9740177f669ce68a77ae64f38b5" kind="define"><name>ARRAY_LENGTH</name></member>
+    <member refid="group___audio_1ga1134eb738ebd88c41b52d166ee999bf0" kind="define"><name>audio_context_get_cached_status</name></member>
+    <member refid="group___audio_1ga70ab3e69a0b9c56ff281cc13e67f110d" kind="define"><name>audio_context_get_trigger_info</name></member>
+    <member refid="group___audio_1gadbc0763099c5beac649f31a82fc71d6b" kind="define"><name>audio_context_request_enable</name></member>
+    <member refid="group___audio_1gac803d3ac17e66c25e1e9a1b1ae076895" kind="define"><name>audio_context_request_permission</name></member>
+    <member refid="group___audio_1ga5fc551f49043f7f0bc0623f6cda779ff" kind="define"><name>audio_context_request_recent_transcript</name></member>
+    <member refid="group___audio_1gab8c6df4662cea53f7b6d967a8bbe753b" kind="define"><name>audio_context_request_status</name></member>
+    <member refid="group___audio_1ga3d516214b1e14e251fe0e1a4ff96381f" kind="define"><name>audio_context_request_transcript_history</name></member>
+    <member refid="group___audio_1ga7a152f34049a931e8e8990f8f8b40cbf" kind="define"><name>audio_context_subscribe_transcript</name></member>
+    <member refid="group___audio_1gac7b140e26cb87a55a850829f3891b7e1" kind="define"><name>audio_context_unsubscribe</name></member>
+    <member refid="group___backlight_service_1ga4ede1c843e775131504df9dcb77bf4d2" kind="define"><name>backlight_service_subscribe</name></member>
+    <member refid="group___backlight_service_1gaf3a028cb80fab13d64427777a3d78934" kind="define"><name>backlight_service_unsubscribe</name></member>
     <member refid="group___graphics_types_1ga8cb8f728e01e63674935d7601f438841" kind="define"><name>COLOR_FALLBACK</name></member>
     <member refid="group___math_1ga3645eb975058adf6013d4c6cbb518ed8" kind="define"><name>DEG_TO_TRIGANGLE</name></member>
     <member refid="group___graphics_types_1ga0aae5f60210e82dd8a9accda8b3df573" kind="define"><name>GEdgeInsets</name></member>
@@ -482,6 +547,11 @@
     <member refid="group___health_service_1gad318afc2a73685157baa00f20da5f154" kind="define"><name>HealthActivityMaskAll</name></member>
     <member refid="group___standard_time_1gab6e4646c1e386028708330569ee98f64" kind="define"><name>HOURS_PER_DAY</name></member>
     <member refid="pebble_8h_1a9d191c78e1f86e3786034921aaebd6cc" kind="define"><name>IS_SIGNED</name></member>
+    <member refid="group___alloy_1ga8cef7fcb1e7e57a1e9d1d61983e1292a" kind="define"><name>kModdableCreationFlagLogInstrumentation</name></member>
+    <member refid="group___light_1gad227a0d5abf2ad6102bdf12821f6d1f5" kind="define"><name>light_is_on</name></member>
+    <member refid="group___light_1gaa171caf273a128f9f41cb4dcb470cee9" kind="define"><name>light_set_color</name></member>
+    <member refid="group___light_1gab007b0b0c15e212b96c700c084ff2c3e" kind="define"><name>light_set_color_rgb888</name></member>
+    <member refid="group___light_1gab4f9fd2e26be84a3e2a0fc5ecadf54e9" kind="define"><name>light_set_system_color</name></member>
     <member refid="group___menu_layer_1ga8fda2baa3281c4a977fb77e7ae1bf05e" kind="define"><name>MENU_CELL_BASIC_HEADER_HEIGHT</name></member>
     <member refid="group___menu_layer_1ga49063aae2b5ddd7d148146132a1fe4c2" kind="define"><name>MENU_CELL_ROUND_FOCUSED_SHORT_CELL_HEIGHT</name></member>
     <member refid="group___menu_layer_1ga3423fc3a969c93e563ca759d1af201e5" kind="define"><name>MENU_CELL_ROUND_FOCUSED_TALL_CELL_HEIGHT</name></member>
@@ -491,6 +561,7 @@
     <member refid="group___menu_layer_1gaff3bd0a7f805bf8e5eb8d181b5e2ce97" kind="define"><name>MenuIndex</name></member>
     <member refid="group___standard_time_1gae0f73032b15f3188a50b86f793afb7ab" kind="define"><name>MINUTES_PER_DAY</name></member>
     <member refid="group___standard_time_1ga0927f1071797d21fde096dea6842e606" kind="define"><name>MINUTES_PER_HOUR</name></member>
+    <member refid="group___alloy_1ga3ba305ef9fb21605573f5647c0bf867e" kind="define"><name>moddable_createMachine</name></member>
     <member refid="group___action_bar_layer_1ga782d6fedb33a9ebc53bd47703943bf72" kind="define"><name>NUM_ACTION_BAR_ITEMS</name></member>
     <member refid="pebble_8h_1ab90e6e5d1b076450011fe82441538b02" kind="define"><name>PBL_APP_INFO</name></member>
     <member refid="pebble_8h_1a0f11e9fb3392a97969a4237bf9d3ce2f" kind="define"><name>PBL_APP_INFO_SIMPLE</name></member>
@@ -501,10 +572,11 @@
     <member refid="group___graphics_types_1ga93dc1082b2412cc4931cc1f0e870e250" kind="define"><name>PBL_IF_RECT_ELSE</name></member>
     <member refid="group___graphics_types_1ga4f9bce65d188c24cbb92dcce0c616e2c" kind="define"><name>PBL_IF_ROUND_ELSE</name></member>
     <member refid="group___smartstrap_1ga9d67a76d7540d7ad6ef7007a985f1721" kind="define"><name>PBL_IF_SMARTSTRAP_ELSE</name></member>
-    <member refid="group___platform_1ga0f4a054cacd2b1cd3c5d9e4960a2e773" kind="define"><name>PBL_PLATFORM_SWITCH</name></member>
-    <member refid="group___platform_1ga55a7a0f6845476c60bab0b4ac16b37e4" kind="define"><name>PBL_PLATFORM_SWITCH_DEFAULT</name></member>
+    <member refid="group___platform_1gad94a0ee6bc4084aabc0ddacc3a3ef8a8" kind="define"><name>PBL_PLATFORM_SWITCH</name></member>
+    <member refid="group___platform_1gac0b8413a5b0613d77263aa5abf2d1f3c" kind="define"><name>PBL_PLATFORM_SWITCH_DEFAULT</name></member>
     <member refid="group___platform_1gad161dc5d2e3ce42441da0c99fd9ccd2c" kind="define"><name>PBL_PLATFORM_TYPE_CURRENT</name></member>
     <member refid="group___storage_1ga0131571894c87dd4e9d63007e3600f22" kind="define"><name>PERSIST_DATA_MAX_LENGTH</name></member>
+    <member refid="group___storage_1ga9e91ea184bcf116ffa9d35319f7ceb13" kind="define"><name>persist_get_max_size</name></member>
     <member refid="group___storage_1gaa98cfabe4de457c0690d03549747bef6" kind="define"><name>PERSIST_STRING_MAX_LENGTH</name></member>
     <member refid="group___graphics_types_1gace600ef49d59abf22dbaad7b5018d746" kind="define"><name>PLAY_COUNT_INFINITE</name></member>
     <member refid="group___graphics_types_1ga77075c217c0911bc6ea68dbdc73787e6" kind="define"><name>PLAY_DURATION_INFINITE</name></member>
@@ -524,14 +596,29 @@
     <member refid="group___property_animation_1ga1a9451d9b6e010051d76ccee0a71e6c5" kind="define"><name>property_animation_set_to_grect</name></member>
     <member refid="group___property_animation_1ga8158508c6fd67c0dce3a6bbc69f3d605" kind="define"><name>property_animation_set_to_int16</name></member>
     <member refid="group___resources_1ga968d5d68015c044573383bab90c632f4" kind="define"><name>RESOURCE_ID_FONT_FALLBACK</name></member>
+    <member refid="group___rot_bitmap_layer_1gaf6dd151d101195a7b6a3cff87f66c65a" kind="define"><name>rot_bitmap_layer_get_layer</name></member>
     <member refid="group___standard_time_1ga427ffe4394306d962b8972b3bc952e1c" kind="define"><name>SECONDS_PER_DAY</name></member>
     <member refid="group___standard_time_1gaa868c51ff000e5ecd19bcb90bd757490" kind="define"><name>SECONDS_PER_HOUR</name></member>
     <member refid="group___standard_time_1gae5e089b553f791f79d02046ff63f3cdb" kind="define"><name>SECONDS_PER_MINUTE</name></member>
     <member refid="group___smartstrap_1ga65820921e9784db17cfe8d5deef8f058" kind="define"><name>SMARTSTRAP_RAW_DATA_ATTRIBUTE_ID</name></member>
     <member refid="group___smartstrap_1ga4474a7976feaad01871ea8bd3f8ee2f6" kind="define"><name>SMARTSTRAP_RAW_DATA_SERVICE_ID</name></member>
     <member refid="group___smartstrap_1ga6c7eaabf882a7666ff5a541644bb74c5" kind="define"><name>SMARTSTRAP_TIMEOUT_DEFAULT</name></member>
+    <member refid="group___speaker_1gabc16810c21db29106db3c5182407a562" kind="define"><name>speaker_get_status</name></member>
+    <member refid="group___speaker_1gabf2c486ab7fa7baff921a8514a14b5d0" kind="define"><name>speaker_is_muted</name></member>
+    <member refid="group___speaker_1ga0335eaeb2608360f2a8069925f20f53b" kind="define"><name>speaker_play_notes</name></member>
+    <member refid="group___speaker_1ga45dad2f4d4c5bcd9fa28f339432b1673" kind="define"><name>speaker_play_tone</name></member>
+    <member refid="group___speaker_1gad07160958e4924320f45b005a8d82445" kind="define"><name>speaker_play_tracks</name></member>
+    <member refid="group___speaker_1ga4806734ad9f00a28a5934be5e8ab7e47" kind="define"><name>speaker_set_finish_callback</name></member>
+    <member refid="group___speaker_1ga05fa19a52c83b499a607330948b8a2f7" kind="define"><name>speaker_set_volume</name></member>
+    <member refid="group___speaker_1ga190be47d7fbbbfed3f5e763697022171" kind="define"><name>speaker_stop</name></member>
+    <member refid="group___speaker_1ga2f7cdcb5666f64bb63c5d2afc729a09a" kind="define"><name>speaker_stream_close</name></member>
+    <member refid="group___speaker_1ga9356f00dcacb0256219a603a2fd6024e" kind="define"><name>speaker_stream_open</name></member>
+    <member refid="group___speaker_1ga9e6916ccf8c5c43280c8f51821ad5e7c" kind="define"><name>speaker_stream_write</name></member>
     <member refid="group___status_bar_layer_1ga98226d0d569dae3c62512820d3c5eeea" kind="define"><name>STATUS_BAR_LAYER_HEIGHT</name></member>
     <member refid="group___wall_time_1ga4bed5f27a148b3560766fb6e2e573e01" kind="define"><name>TIMEZONE_NAME_LENGTH</name></member>
+    <member refid="group___touch_service_1gacd826c9087eb437e5dca894071c92170" kind="define"><name>touch_service_is_enabled</name></member>
+    <member refid="group___touch_service_1ga7069187e7b5c13d493453f8fab9c7324" kind="define"><name>touch_service_subscribe</name></member>
+    <member refid="group___touch_service_1ga4bc103e8e9aef9998244b0f52a19e582" kind="define"><name>touch_service_unsubscribe</name></member>
     <member refid="group___math_1gade7adcdaf0a7aca734c444328afd6f77" kind="define"><name>TRIG_MAX_ANGLE</name></member>
     <member refid="group___math_1ga88044be2b97f747386820291a9952afe" kind="define"><name>TRIG_MAX_RATIO</name></member>
     <member refid="group___math_1gae93c13590195997523319b436ff5dfe3" kind="define"><name>TRIGANGLE_TO_DEG</name></member>
@@ -557,6 +644,9 @@
     <member refid="group___logging_1gab6022249fcd453283cdf062c39b2009a" kind="enum"><name>AppLogLevel</name></member>
     <member refid="group___app_message_1ga695a78c926b20edbb14d7faf5a78c29e" kind="enum"><name>AppMessageResult</name></member>
     <member refid="group___app_worker_1ga9732697a0e5e5718dfb265e061ec6a5d" kind="enum"><name>AppWorkerResult</name></member>
+    <member refid="group___audio_1ga8089069793b83dbee70b61b885099409" kind="enum"><name>AudioContextAvailability</name></member>
+    <member refid="group___audio_1ga102d954bf3a9aac9c11e99d504a7014b" kind="enum"><name>AudioContextPermission</name></member>
+    <member refid="group___audio_1ga1059c166058e46717fe913bc9576c0a5" kind="enum"><name>AudioContextTriggerSource</name></member>
     <member refid="group___clicks_1gaa60e15d86cfe7033f28c7d066c85266e" kind="enum"><name>ButtonId</name></member>
     <member refid="group___compass_service_1ga1fccbe1b49cd0a60381d6862ae193551" kind="enum"><name>CompassStatus</name></member>
     <member refid="group___scroll_layer_1ga8e9145430b2f9f92d02cf73cedab942c" kind="enum"><name>ContentIndicatorDirection</name></member>
@@ -585,9 +675,14 @@
     <member refid="group___preferences_1ga79bc51d6d253271357abd87a15b7cb13" kind="enum"><name>PreferredContentSize</name></member>
     <member refid="group___smartstrap_1ga84dc8e008822a759ff6823c06829ac8a" kind="enum"><name>SmartstrapResult</name></member>
     <member refid="group___app_comm_1gad85d78fd5b9d36fb69242afa57e79f48" kind="enum"><name>SniffInterval</name></member>
+    <member refid="group___speaker_1ga78ed2e1da9755cc3a55c770d079ab84d" kind="enum"><name>SpeakerFinishReason</name></member>
+    <member refid="group___speaker_1gaf647901e7f8ebfaa0f41f433cec0b1cf" kind="enum"><name>SpeakerPcmFormat</name></member>
+    <member refid="group___speaker_1ga2221221a7c5108e31588b3dfe54475f6" kind="enum"><name>SpeakerStatus</name></member>
+    <member refid="group___speaker_1ga2014113689236c9c6faa6edd3717063b" kind="enum"><name>SpeakerWaveform</name></member>
     <member refid="group___status_bar_layer_1gaf7316a23f8fa3b482551ea4cbbb414fa" kind="enum"><name>StatusBarLayerSeparatorMode</name></member>
     <member refid="group___storage_1gae98a46f4ea1a43ca48acaf15d2eb7113" kind="enum"><name>StatusCode</name></member>
     <member refid="group___tick_timer_service_1ga0423d00e0eb199de523a92031b5a1107" kind="enum"><name>TimeUnits</name></member>
+    <member refid="group___touch_service_1gaf9360ba7e12726eabae0c635d317ee6a" kind="enum"><name>TouchEventType</name></member>
     <member refid="group___dictionary_1gaf164f32d9bda6829f1738ef3fb2c6670" kind="enum"><name>TupleType</name></member>
     <member refid="group___watch_info_1ga03f21126652108612ffa7130e0c2a178" kind="enum"><name>WatchInfoColor</name></member>
     <member refid="group___watch_info_1ga3a59b572466639de09bb54e5169d8e6f" kind="enum"><name>WatchInfoModel</name></member>
@@ -622,6 +717,9 @@
     <member refid="group___timer_1gacb2087b757d9ad7fe0c8ef2a2e9fecc9" kind="typedef"><name>AppTimer</name></member>
     <member refid="group___timer_1ga465ac36f13df1644650dc90bb968c9d8" kind="typedef"><name>AppTimerCallback</name></member>
     <member refid="group___app_worker_1gaf70afc0dd4ceb096ef5170a2ba751bb0" kind="typedef"><name>AppWorkerMessageHandler</name></member>
+    <member refid="group___audio_1ga14d3fefa12726df652e7839df402a2bf" kind="typedef"><name>AudioContextStatusCallback</name></member>
+    <member refid="group___audio_1ga6c5afbc469e64cf4ad6596a1c52528d5" kind="typedef"><name>AudioContextTranscriptCallback</name></member>
+    <member refid="group___backlight_service_1gaff97a146bf53486db045f464b1d17207" kind="typedef"><name>BacklightHandler</name></member>
     <member refid="group___battery_state_service_1ga4aa17d228becf546edee7c193baba50f" kind="typedef"><name>BatteryStateHandler</name></member>
     <member refid="group___bitmap_layer_1ga56fdbb7c13007b1ccf6303d9957f8d3a" kind="typedef"><name>BitmapLayer</name></member>
     <member refid="group___connection_service_1gab05ff58b641cc7f9d589cde8fe0baadb" kind="typedef"><name>BluetoothConnectionHandler</name></member>
@@ -698,10 +796,12 @@
     <member refid="group___smartstrap_1gae77e1b9b9b9ebec76be6ee5ee6d658b3" kind="typedef"><name>SmartstrapServiceAvailabilityHandler</name></member>
     <member refid="group___smartstrap_1ga1ce83768c0652417bf8d273223655b0c" kind="typedef"><name>SmartstrapServiceId</name></member>
     <member refid="group___smartstrap_1gabe74eee0435816d46af2a39d5f10f3c6" kind="typedef"><name>SmartstrapWriteHandler</name></member>
+    <member refid="group___speaker_1ga281d71da9d5fc1d38b91b82ddb3cae01" kind="typedef"><name>SpeakerFinishedCallback</name></member>
     <member refid="group___storage_1gaaabdaf7ee58ca7269bd4bf24efcde092" kind="typedef"><name>status_t</name></member>
     <member refid="group___status_bar_layer_1ga4de78ebc3ddd648920c72e12bf87a110" kind="typedef"><name>StatusBarLayer</name></member>
     <member refid="group___text_layer_1gad11d2245f1c7a3b59b53f812c7053e53" kind="typedef"><name>TextLayer</name></member>
     <member refid="group___tick_timer_service_1ga48f155b9d0508f80aea7370fca1855ba" kind="typedef"><name>TickHandler</name></member>
+    <member refid="group___touch_service_1gadf3d2651950c41d539f7fa67f5cf3063" kind="typedef"><name>TouchServiceHandler</name></member>
     <member refid="group___property_animation_1ga481c32f9df91cbb4e7d3839ff57ba789" kind="typedef"><name>UInt32Getter</name></member>
     <member refid="group___property_animation_1ga9bcdb4cabe3a5cc327b178337ab85669" kind="typedef"><name>UInt32Setter</name></member>
     <member refid="group___unobstructed_area_1ga4cb9b5fc0706ddb72fc1e1eece890fb4" kind="typedef"><name>UnobstructedAreaChangeHandler</name></member>
@@ -1170,7 +1270,7 @@
     <member refid="group___status_bar_layer_1ga1a65700d523ed23ae9231c59af9327c8" kind="function"><name>status_bar_layer_get_layer</name></member>
     <member refid="group___status_bar_layer_1ga818d409a6c42775771c3febf03e10e92" kind="function"><name>status_bar_layer_set_colors</name></member>
     <member refid="group___status_bar_layer_1ga8372ccc195ab25b123a3d3c9244bace4" kind="function"><name>status_bar_layer_set_separator_mode</name></member>
-    <member refid="group___standard_time_1ga03c7f6e1209ced1ebc8accd5fd9eaa3c" kind="function"><name>strftime</name></member>
+    <member refid="group___standard_time_1gac68767378c2e2128373675a6a36d12d0" kind="function"><name>strftime</name></member>
     <member refid="group___text_layer_1gad86babd035e1a9a6f7ee4f8453f8cb25" kind="function"><name>text_layer_create</name></member>
     <member refid="group___text_layer_1ga17a045487e54ec95c989434bd7289242" kind="function"><name>text_layer_destroy</name></member>
     <member refid="group___text_layer_1ga473f54e257f089a9e7a5df0a0e56f625" kind="function"><name>text_layer_enable_screen_text_flow_and_paging</name></member>
@@ -1341,6 +1441,10 @@
     <member refid="group___action_menu_1ga020e13aa8074060a3944651f80f54c83" kind="function"><name>action_menu_set_result_window</name></member>
     <member refid="group___action_menu_1ga65478f21c474bd41ae612ec0e5288eb4" kind="function"><name>action_menu_unfreeze</name></member>
   </compound>
+  <compound refid="group___alloy" kind="group"><name>Alloy</name>
+    <member refid="group___alloy_1ga8cef7fcb1e7e57a1e9d1d61983e1292a" kind="define"><name>kModdableCreationFlagLogInstrumentation</name></member>
+    <member refid="group___alloy_1ga3ba305ef9fb21605573f5647c0bf867e" kind="define"><name>moddable_createMachine</name></member>
+  </compound>
   <compound refid="group___animation" kind="group"><name>Animation</name>
     <member refid="group___animation_1gaf481a363d622c146285096e6395d9ec8" kind="enum"><name>AnimationCurve</name></member>
     <member refid="group___animation_1ggaf481a363d622c146285096e6395d9ec8ae291d83db109f6e7492ada9bae301b52" kind="enumvalue"><name>AnimationCurveLinear</name></member>
@@ -1486,6 +1590,11 @@
     <member refid="group___app_worker_1gae93a0baab484dda8e75e3d5699fd7463" kind="function"><name>app_worker_message_subscribe</name></member>
     <member refid="group___app_worker_1gabdd29f332fcaf8785fa2c73cf55addf3" kind="function"><name>app_worker_message_unsubscribe</name></member>
     <member refid="group___app_worker_1gac1a4c6ddd568429bded6373d00559fe0" kind="function"><name>app_worker_send_message</name></member>
+  </compound>
+  <compound refid="group___backlight_service" kind="group"><name>BacklightService</name>
+    <member refid="group___backlight_service_1gaff97a146bf53486db045f464b1d17207" kind="typedef"><name>BacklightHandler</name></member>
+    <member refid="group___backlight_service_1ga4ede1c843e775131504df9dcb77bf4d2" kind="define"><name>backlight_service_subscribe</name></member>
+    <member refid="group___backlight_service_1gaf3a028cb80fab13d64427777a3d78934" kind="define"><name>backlight_service_unsubscribe</name></member>
   </compound>
   <compound refid="group___battery_state_service" kind="group"><name>BatteryStateService</name>
     <member refid="group___battery_state_service_1ga4aa17d228becf546edee7c193baba50f" kind="typedef"><name>BatteryStateHandler</name></member>
@@ -1673,6 +1782,42 @@
     <member refid="group___connection_service_1gaa490f72b81220c84fc05aefa687949d7" kind="function"><name>connection_service_peek_pebblekit_connection</name></member>
     <member refid="group___connection_service_1ga3efcf59e77df0a3e476224d66201dd37" kind="function"><name>connection_service_subscribe</name></member>
     <member refid="group___connection_service_1ga652adc6f10699d9654bd12f34d91ad89" kind="function"><name>connection_service_unsubscribe</name></member>
+  </compound>
+  <compound refid="group___audio" kind="group"><name>Audio</name>
+    <member refid="group___audio_1ga8089069793b83dbee70b61b885099409" kind="enum"><name>AudioContextAvailability</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409af0f0a4afed3759ff279f0d56ce0fc7d8" kind="enumvalue"><name>AudioContextAvailabilityAvailable</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409a678ac850fa9c83828e993f8034c5fa82" kind="enumvalue"><name>AudioContextAvailabilityUnsupportedWatch</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409a73adc4f50e981e808b0e1519fb761b3f" kind="enumvalue"><name>AudioContextAvailabilityUnsupportedPhone</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409a8a550042e12e22e345dc024fffa5ea19" kind="enumvalue"><name>AudioContextAvailabilityDisabledByUser</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409a2dc599b51d4359607a0aaef0f9c187ae" kind="enumvalue"><name>AudioContextAvailabilityPermissionDenied</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409a2e6e39ec6c4cbbea543b65261a1e1686" kind="enumvalue"><name>AudioContextAvailabilityCapabilityNotDeclared</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409aeb64894681ef0cb083b54f735ef67bf7" kind="enumvalue"><name>AudioContextAvailabilityTranscriptionUnavailable</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409aa1358121f8fc147943856644df2e1b75" kind="enumvalue"><name>AudioContextAvailabilityNoData</name></member>
+    <member refid="group___audio_1gga8089069793b83dbee70b61b885099409ad61802582bde2d7fc9866923a4797cab" kind="enumvalue"><name>AudioContextAvailabilityError</name></member>
+    <member refid="group___audio_1ga102d954bf3a9aac9c11e99d504a7014b" kind="enum"><name>AudioContextPermission</name></member>
+    <member refid="group___audio_1gga102d954bf3a9aac9c11e99d504a7014ba4836517e9d0424b8413b2ab3acc3d5a4" kind="enumvalue"><name>AudioContextPermissionStatus</name></member>
+    <member refid="group___audio_1gga102d954bf3a9aac9c11e99d504a7014baf77f5d0cec3c0298d22cdc455e157dc9" kind="enumvalue"><name>AudioContextPermissionRecentTranscript</name></member>
+    <member refid="group___audio_1gga102d954bf3a9aac9c11e99d504a7014baa8f7d11bcb505d81276e0bb1159f9891" kind="enumvalue"><name>AudioContextPermissionTranscriptHistory</name></member>
+    <member refid="group___audio_1gga102d954bf3a9aac9c11e99d504a7014bac333223ea652900ed980d08b54c7b880" kind="enumvalue"><name>AudioContextPermissionLiveTranscript</name></member>
+    <member refid="group___audio_1gga102d954bf3a9aac9c11e99d504a7014ba13c814372dc32f0cd81726b56838d55a" kind="enumvalue"><name>AudioContextPermissionRawAudio</name></member>
+    <member refid="group___audio_1ga1059c166058e46717fe913bc9576c0a5" kind="enum"><name>AudioContextTriggerSource</name></member>
+    <member refid="group___audio_1gga1059c166058e46717fe913bc9576c0a5ad4ce8841d4cd63a894278afd9d2d2bc9" kind="enumvalue"><name>AudioContextTriggerSourceUnknown</name></member>
+    <member refid="group___audio_1gga1059c166058e46717fe913bc9576c0a5a3081587eb52afcfc63746259c2444ab3" kind="enumvalue"><name>AudioContextTriggerSourceWatch</name></member>
+    <member refid="group___audio_1gga1059c166058e46717fe913bc9576c0a5a8f16a2bbe18085bab013e84d1f6f9e63" kind="enumvalue"><name>AudioContextTriggerSourcePhone</name></member>
+    <member refid="group___audio_1gga1059c166058e46717fe913bc9576c0a5a0975b874dbdf009465872147d4390985" kind="enumvalue"><name>AudioContextTriggerSourceRing</name></member>
+    <member refid="group___audio_1gga1059c166058e46717fe913bc9576c0a5a1997cd4d8e2348b0e4e4305199aea9ba" kind="enumvalue"><name>AudioContextTriggerSourceShortcut</name></member>
+    <member refid="group___audio_1gga1059c166058e46717fe913bc9576c0a5ae57e3efd353c60634458d1d943c21773" kind="enumvalue"><name>AudioContextTriggerSourceSystem</name></member>
+    <member refid="group___audio_1ga14d3fefa12726df652e7839df402a2bf" kind="typedef"><name>AudioContextStatusCallback</name></member>
+    <member refid="group___audio_1ga6c5afbc469e64cf4ad6596a1c52528d5" kind="typedef"><name>AudioContextTranscriptCallback</name></member>
+    <member refid="group___audio_1ga1134eb738ebd88c41b52d166ee999bf0" kind="define"><name>audio_context_get_cached_status</name></member>
+    <member refid="group___audio_1ga70ab3e69a0b9c56ff281cc13e67f110d" kind="define"><name>audio_context_get_trigger_info</name></member>
+    <member refid="group___audio_1gadbc0763099c5beac649f31a82fc71d6b" kind="define"><name>audio_context_request_enable</name></member>
+    <member refid="group___audio_1gac803d3ac17e66c25e1e9a1b1ae076895" kind="define"><name>audio_context_request_permission</name></member>
+    <member refid="group___audio_1ga5fc551f49043f7f0bc0623f6cda779ff" kind="define"><name>audio_context_request_recent_transcript</name></member>
+    <member refid="group___audio_1gab8c6df4662cea53f7b6d967a8bbe753b" kind="define"><name>audio_context_request_status</name></member>
+    <member refid="group___audio_1ga3d516214b1e14e251fe0e1a4ff96381f" kind="define"><name>audio_context_request_transcript_history</name></member>
+    <member refid="group___audio_1ga7a152f34049a931e8e8990f8f8b40cbf" kind="define"><name>audio_context_subscribe_transcript</name></member>
+    <member refid="group___audio_1gac7b140e26cb87a55a850829f3891b7e1" kind="define"><name>audio_context_unsubscribe</name></member>
   </compound>
   <compound refid="group___data_logging" kind="group"><name>DataLogging</name>
     <member refid="group___data_logging_1ga35a7aa37609a9aebb3ad316e77cb716d" kind="enum"><name>DataLoggingItemType</name></member>
@@ -2125,6 +2270,10 @@
   <compound refid="group___light" kind="group"><name>Light</name>
     <member refid="group___light_1ga0131a703964d49744f2da1fac234b9b1" kind="function"><name>light_enable</name></member>
     <member refid="group___light_1ga7074135af850ea753dc5a98378bca122" kind="function"><name>light_enable_interaction</name></member>
+    <member refid="group___light_1gad227a0d5abf2ad6102bdf12821f6d1f5" kind="define"><name>light_is_on</name></member>
+    <member refid="group___light_1gaa171caf273a128f9f41cb4dcb470cee9" kind="define"><name>light_set_color</name></member>
+    <member refid="group___light_1gab007b0b0c15e212b96c700c084ff2c3e" kind="define"><name>light_set_color_rgb888</name></member>
+    <member refid="group___light_1gab4f9fd2e26be84a3e2a0fc5ecadf54e9" kind="define"><name>light_set_system_color</name></member>
   </compound>
   <compound refid="group___standard_locale" kind="group"><name>StandardLocale</name>
     <member refid="group___standard_locale_1ga32b174e036be8744d4fcdde290012d3c" kind="function"><name>setlocale</name></member>
@@ -2244,8 +2393,9 @@
     <member refid="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523a7899685934cc5893d902af47ca92c65e" kind="enumvalue"><name>PlatformTypeDiorite</name></member>
     <member refid="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523a51ab53d390602dda73828e892a9f9e80" kind="enumvalue"><name>PlatformTypeEmery</name></member>
     <member refid="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523a322eddbce6297f690b1a7b6b56211306" kind="enumvalue"><name>PlatformTypeFlint</name></member>
-    <member refid="group___platform_1ga0f4a054cacd2b1cd3c5d9e4960a2e773" kind="define"><name>PBL_PLATFORM_SWITCH</name></member>
-    <member refid="group___platform_1ga55a7a0f6845476c60bab0b4ac16b37e4" kind="define"><name>PBL_PLATFORM_SWITCH_DEFAULT</name></member>
+    <member refid="group___platform_1gga527bfd1a86584280ea4bb3f8a1f8d523abec3788cd011476e3748d8e4d47ac550" kind="enumvalue"><name>PlatformTypeGabbro</name></member>
+    <member refid="group___platform_1gad94a0ee6bc4084aabc0ddacc3a3ef8a8" kind="define"><name>PBL_PLATFORM_SWITCH</name></member>
+    <member refid="group___platform_1gac0b8413a5b0613d77263aa5abf2d1f3c" kind="define"><name>PBL_PLATFORM_SWITCH_DEFAULT</name></member>
     <member refid="group___platform_1gad161dc5d2e3ce42441da0c99fd9ccd2c" kind="define"><name>PBL_PLATFORM_TYPE_CURRENT</name></member>
   </compound>
   <compound refid="group___preferences" kind="group"><name>Preferences</name>
@@ -2323,6 +2473,7 @@
     <member refid="group___rot_bitmap_layer_1ga05bb6f3e05c774b3e20b8ff4d1068d67" kind="function"><name>rot_bitmap_layer_set_corner_clip_color</name></member>
     <member refid="group___rot_bitmap_layer_1ga5ddf5cbe3499a3ee5487e82d5d5659d2" kind="function"><name>rot_bitmap_set_compositing_mode</name></member>
     <member refid="group___rot_bitmap_layer_1ga455a2e9f47703fe44a1054ff02396162" kind="function"><name>rot_bitmap_set_src_ic</name></member>
+    <member refid="group___rot_bitmap_layer_1gaf6dd151d101195a7b6a3cff87f66c65a" kind="define"><name>rot_bitmap_layer_get_layer</name></member>
   </compound>
   <compound refid="group___scroll_layer" kind="group"><name>ScrollLayer</name>
     <member refid="group___scroll_layer_1ga8e9145430b2f9f92d02cf73cedab942c" kind="enum"><name>ContentIndicatorDirection</name></member>
@@ -2399,6 +2550,41 @@
     <member refid="group___smartstrap_1ga4474a7976feaad01871ea8bd3f8ee2f6" kind="define"><name>SMARTSTRAP_RAW_DATA_SERVICE_ID</name></member>
     <member refid="group___smartstrap_1ga6c7eaabf882a7666ff5a541644bb74c5" kind="define"><name>SMARTSTRAP_TIMEOUT_DEFAULT</name></member>
   </compound>
+  <compound refid="group___speaker" kind="group"><name>Speaker</name>
+    <member refid="group___speaker_1ga78ed2e1da9755cc3a55c770d079ab84d" kind="enum"><name>SpeakerFinishReason</name></member>
+    <member refid="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dae9d089591716032eb958ac7190e35c9a" kind="enumvalue"><name>SpeakerFinishReasonDone</name></member>
+    <member refid="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84da7d66638f7870dc333b8d6c5a11a471a9" kind="enumvalue"><name>SpeakerFinishReasonStopped</name></member>
+    <member refid="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dad97fb5517430a15be8638995773e6ad4" kind="enumvalue"><name>SpeakerFinishReasonPreempted</name></member>
+    <member refid="group___speaker_1gga78ed2e1da9755cc3a55c770d079ab84dadc6de5727cb44ad1733ba694303488a5" kind="enumvalue"><name>SpeakerFinishReasonError</name></member>
+    <member refid="group___speaker_1gaf647901e7f8ebfaa0f41f433cec0b1cf" kind="enum"><name>SpeakerPcmFormat</name></member>
+    <member refid="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa722061d71f152a7c015bcecd7c8ef515" kind="enumvalue"><name>SpeakerPcmFormat_8kHz_8bit</name></member>
+    <member refid="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfab9b116ba8c142eb89365f47fd5ea0f2f" kind="enumvalue"><name>SpeakerPcmFormat_16kHz_8bit</name></member>
+    <member refid="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa13e49d4bb80e2470c0c6bb4a09236e4b" kind="enumvalue"><name>SpeakerPcmFormat_8kHz_16bit</name></member>
+    <member refid="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfaf815a281cbff1329b5207f64d8757ff6" kind="enumvalue"><name>SpeakerPcmFormat_16kHz_16bit</name></member>
+    <member refid="group___speaker_1ggaf647901e7f8ebfaa0f41f433cec0b1cfa7b5d8d71d49ec5d2f386e9d9a79dda8c" kind="enumvalue"><name>SpeakerPcmFormatCount</name></member>
+    <member refid="group___speaker_1ga2221221a7c5108e31588b3dfe54475f6" kind="enum"><name>SpeakerStatus</name></member>
+    <member refid="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6a6ad97282e2f90e73fd22cff0e89f3bc8" kind="enumvalue"><name>SpeakerStatusIdle</name></member>
+    <member refid="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6ad2cb9207cbd46ab7fd92fc1688ed65de" kind="enumvalue"><name>SpeakerStatusPlaying</name></member>
+    <member refid="group___speaker_1gga2221221a7c5108e31588b3dfe54475f6a6a342d24566c1b3444ef3797461ad2b6" kind="enumvalue"><name>SpeakerStatusDraining</name></member>
+    <member refid="group___speaker_1ga2014113689236c9c6faa6edd3717063b" kind="enum"><name>SpeakerWaveform</name></member>
+    <member refid="group___speaker_1gga2014113689236c9c6faa6edd3717063baa29192771443600c640c17f1bac71d8a" kind="enumvalue"><name>SpeakerWaveformSine</name></member>
+    <member refid="group___speaker_1gga2014113689236c9c6faa6edd3717063bab85a8d25840269528a963138a8ca95f4" kind="enumvalue"><name>SpeakerWaveformSquare</name></member>
+    <member refid="group___speaker_1gga2014113689236c9c6faa6edd3717063ba27960bafe539dd39f6e0e2a40486bf80" kind="enumvalue"><name>SpeakerWaveformTriangle</name></member>
+    <member refid="group___speaker_1gga2014113689236c9c6faa6edd3717063baff0bafac9cf416c6a686a7cc6d8e1cf7" kind="enumvalue"><name>SpeakerWaveformSawtooth</name></member>
+    <member refid="group___speaker_1gga2014113689236c9c6faa6edd3717063bafd0d5feed18dec91914b0f8a97e27a06" kind="enumvalue"><name>SpeakerWaveformCount</name></member>
+    <member refid="group___speaker_1ga281d71da9d5fc1d38b91b82ddb3cae01" kind="typedef"><name>SpeakerFinishedCallback</name></member>
+    <member refid="group___speaker_1gabc16810c21db29106db3c5182407a562" kind="define"><name>speaker_get_status</name></member>
+    <member refid="group___speaker_1gabf2c486ab7fa7baff921a8514a14b5d0" kind="define"><name>speaker_is_muted</name></member>
+    <member refid="group___speaker_1ga0335eaeb2608360f2a8069925f20f53b" kind="define"><name>speaker_play_notes</name></member>
+    <member refid="group___speaker_1ga45dad2f4d4c5bcd9fa28f339432b1673" kind="define"><name>speaker_play_tone</name></member>
+    <member refid="group___speaker_1gad07160958e4924320f45b005a8d82445" kind="define"><name>speaker_play_tracks</name></member>
+    <member refid="group___speaker_1ga4806734ad9f00a28a5934be5e8ab7e47" kind="define"><name>speaker_set_finish_callback</name></member>
+    <member refid="group___speaker_1ga05fa19a52c83b499a607330948b8a2f7" kind="define"><name>speaker_set_volume</name></member>
+    <member refid="group___speaker_1ga190be47d7fbbbfed3f5e763697022171" kind="define"><name>speaker_stop</name></member>
+    <member refid="group___speaker_1ga2f7cdcb5666f64bb63c5d2afc729a09a" kind="define"><name>speaker_stream_close</name></member>
+    <member refid="group___speaker_1ga9356f00dcacb0256219a603a2fd6024e" kind="define"><name>speaker_stream_open</name></member>
+    <member refid="group___speaker_1ga9e6916ccf8c5c43280c8f51821ad5e7c" kind="define"><name>speaker_stream_write</name></member>
+  </compound>
   <compound refid="group___standard_c" kind="group"><name>StandardC</name>
     <member refid="group___standard_c_1gaa686eebdb9c21527b4ed32a4427c28b7" kind="typedef"><name>uint16_t</name></member>
     <member refid="group___standard_c_1ga9c50f76d143708c221a73ff579a463a4" kind="typedef"><name>uint32_t</name></member>
@@ -2450,6 +2636,7 @@
     <member refid="group___storage_1ga3ef414652a47ece1554c392b97e42adc" kind="function"><name>persist_write_int</name></member>
     <member refid="group___storage_1ga2cb47c0619583b4582f6c3b671c1447b" kind="function"><name>persist_write_string</name></member>
     <member refid="group___storage_1ga0131571894c87dd4e9d63007e3600f22" kind="define"><name>PERSIST_DATA_MAX_LENGTH</name></member>
+    <member refid="group___storage_1ga9e91ea184bcf116ffa9d35319f7ceb13" kind="define"><name>persist_get_max_size</name></member>
     <member refid="group___storage_1gaa98cfabe4de457c0690d03549747bef6" kind="define"><name>PERSIST_STRING_MAX_LENGTH</name></member>
   </compound>
   <compound refid="group___standard_string" kind="group"><name>StandardString</name>
@@ -2495,7 +2682,7 @@
     <member refid="group___standard_time_1ga4bc4ff58d4ac838a36ba939747e5833e" kind="function"><name>gmtime</name></member>
     <member refid="group___standard_time_1ga2d4076dc90ad030f7d4dad295a01357a" kind="function"><name>localtime</name></member>
     <member refid="group___standard_time_1ga308ef252844d2144895207aa52e6a89f" kind="function"><name>mktime</name></member>
-    <member refid="group___standard_time_1ga03c7f6e1209ced1ebc8accd5fd9eaa3c" kind="function"><name>strftime</name></member>
+    <member refid="group___standard_time_1gac68767378c2e2128373675a6a36d12d0" kind="function"><name>strftime</name></member>
     <member refid="group___standard_time_1ga99ef1cb2c789827dd5db3886dccf9067" kind="function"><name>time</name></member>
     <member refid="group___standard_time_1gaa650308d93a4da6ead47ae68372f2be8" kind="function"><name>time_ms</name></member>
     <member refid="group___standard_time_1gaad04b872745a08a1e531f6590194bd9b" kind="function"><name>time_start_of_today</name></member>
@@ -2515,6 +2702,16 @@
     <member refid="group___timer_1gaac4aa5acb23bf4ed47aa33355a6e378b" kind="function"><name>app_timer_register</name></member>
     <member refid="group___timer_1ga34584069c4304e375425549f13cad1e6" kind="function"><name>app_timer_reschedule</name></member>
     <member refid="group___timer_1ga00f41133e14542220d184131f9dcb863" kind="function"><name>psleep</name></member>
+  </compound>
+  <compound refid="group___touch_service" kind="group"><name>TouchService</name>
+    <member refid="group___touch_service_1gaf9360ba7e12726eabae0c635d317ee6a" kind="enum"><name>TouchEventType</name></member>
+    <member refid="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aa3f0e0b086f7296785266b9c7d014d709" kind="enumvalue"><name>TouchEvent_Touchdown</name></member>
+    <member refid="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aabaa086b963af5fef224c379c48b6fc46" kind="enumvalue"><name>TouchEvent_Liftoff</name></member>
+    <member refid="group___touch_service_1ggaf9360ba7e12726eabae0c635d317ee6aa01f025c00fea52cb6020e100d10fafed" kind="enumvalue"><name>TouchEvent_PositionUpdate</name></member>
+    <member refid="group___touch_service_1gadf3d2651950c41d539f7fa67f5cf3063" kind="typedef"><name>TouchServiceHandler</name></member>
+    <member refid="group___touch_service_1gacd826c9087eb437e5dca894071c92170" kind="define"><name>touch_service_is_enabled</name></member>
+    <member refid="group___touch_service_1ga7069187e7b5c13d493453f8fab9c7324" kind="define"><name>touch_service_subscribe</name></member>
+    <member refid="group___touch_service_1ga4bc103e8e9aef9998244b0f52a19e582" kind="define"><name>touch_service_unsubscribe</name></member>
   </compound>
   <compound refid="group___u_u_i_d" kind="group"><name>UUID</name>
     <member refid="group___u_u_i_d_1gaf3672abb648800ef789f52078fe25a37" kind="function"><name>uuid_equal</name></member>
@@ -2602,9 +2799,16 @@
     <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a072b4c6231618b892821692a10e56185" kind="enumvalue"><name>WATCH_INFO_COLOR_PEBBLE_TIME_2_BLACK</name></member>
     <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a3f1f3f5e1f8bd6ddf8c32989c3ff27df" kind="enumvalue"><name>WATCH_INFO_COLOR_PEBBLE_TIME_2_SILVER</name></member>
     <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a34cca99192c1d4d5b28fcca10170c57e" kind="enumvalue"><name>WATCH_INFO_COLOR_PEBBLE_TIME_2_GOLD</name></member>
-    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ac042421a0b183eb293375ee43950b129" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_C2D_BLACK</name></member>
-    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ab82589073c1639443f9b6fd9063e312b" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_C2D_WHITE</name></member>
-    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a9410484072947315171cf06c9c9c9714" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_CT2_BLACK</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178af7e7e6143e094ad6de7e25222370bb2d" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_P2D_BLACK</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a4d5f6fd64c2ebb0e7be147ba5b26de88" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_P2D_WHITE</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a037096900d348539734539993c782114" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_PT2_BLACK_GREY</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a26c184bf705f91c809f390239e4b6cf5" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_PT2_BLACK_RED</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178aecd68964bd7be497807f4015f7ae5c70" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_PT2_SILVER_BLUE</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ad4e0e042537a070caa9017ee08985d8b" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_PT2_SILVER_GREY</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a7127240eda8cbd79e0fa1520e5c283bf" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_PR2_BLACK_20</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a98f234bd142ae95c5cd9264622075588" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_PR2_SILVER_20</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178ae1d159368d8bcc352dbffe17c3532790" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_PR2_GOLD_14</name></member>
+    <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a60ecd83292048e14576e97dd7c17d5fc" kind="enumvalue"><name>WATCH_INFO_COLOR_COREDEVICES_PR2_SILVER_14</name></member>
     <member refid="group___watch_info_1gga03f21126652108612ffa7130e0c2a178a45d4333a566657c2df723e3cb26129b5" kind="enumvalue"><name>WATCH_INFO_COLOR__MAX</name></member>
     <member refid="group___watch_info_1ga3a59b572466639de09bb54e5169d8e6f" kind="enum"><name>WatchInfoModel</name></member>
     <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa366b74dd4e61da7e6613cf963cc8f0c0" kind="enumvalue"><name>WATCH_INFO_MODEL_UNKNOWN</name></member>
@@ -2617,8 +2821,9 @@
     <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fab8c5c1edc6f0aebc10d8bf2763944507" kind="enumvalue"><name>WATCH_INFO_MODEL_PEBBLE_2_HR</name></member>
     <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fad86b2a3f8f2a6c17b7d1bc62fc681fe1" kind="enumvalue"><name>WATCH_INFO_MODEL_PEBBLE_2_SE</name></member>
     <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa3223cf86c20e29e2773250276146b00e" kind="enumvalue"><name>WATCH_INFO_MODEL_PEBBLE_TIME_2</name></member>
-    <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa6961106db4ba8819766e0938b2b3a9fc" kind="enumvalue"><name>WATCH_INFO_MODEL_COREDEVICES_C2D</name></member>
-    <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6faa2a3fed991d7a953ef02c2f2163f9e8c" kind="enumvalue"><name>WATCH_INFO_MODEL_COREDEVICES_CT2</name></member>
+    <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fabe48f5a3e73dbe6757e1f4608f33a6e2" kind="enumvalue"><name>WATCH_INFO_MODEL_COREDEVICES_P2D</name></member>
+    <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa6697915e67fdba051d4944e3d000265c" kind="enumvalue"><name>WATCH_INFO_MODEL_COREDEVICES_PT2</name></member>
+    <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fa9ebd62acdd59e2526e0d20f92b890a72" kind="enumvalue"><name>WATCH_INFO_MODEL_COREDEVICES_PR2</name></member>
     <member refid="group___watch_info_1gga3a59b572466639de09bb54e5169d8e6fac3e2db4815e7e2cbcb77e2e0162ac7b7" kind="enumvalue"><name>WATCH_INFO_MODEL__MAX</name></member>
     <member refid="group___watch_info_1ga4bfe71818e0aa532ffdc42f8f22642b2" kind="function"><name>watch_info_get_color</name></member>
     <member refid="group___watch_info_1gaf99195f1204c3c6b646b6f1ccbd561bb" kind="function"><name>watch_info_get_firmware_version</name></member>
