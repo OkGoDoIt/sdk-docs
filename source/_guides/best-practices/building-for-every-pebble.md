@@ -28,6 +28,11 @@ rich color layouts difficult when considering compatibility with other non-color
 hardware. Another example is using platform specific APIs such as Health or
 Dictation.
 
+Some features also depend on the connected phone app and user settings. Audio
+Context apps should check ``AudioContextAvailability`` at runtime and handle
+unsupported watches, unsupported phones, disabled background audio, denied
+permission, missing data, and transcription errors gracefully.
+
 To make life simple for users, developers should strive to write one app that
 can be used on all platforms. To help make this task simpler for developers, the
 Pebble SDK provides numerous methods to accommodate different hardware

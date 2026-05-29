@@ -91,12 +91,40 @@ listed in the table below:
 | **`.watchface`** | Boolean | `false` | Field of `watchapp`. Set to `false` to behave as a watchapp. |
 | `.hiddenApp` | Boolean | `false` | Field of `watchapp`. Set to `true` to prevent the app from appearing in the system menu. |
 | `.onlyShownOnCommunication` | Boolean | `false` | Field of `watchapp`. Set to `true` to hide the app unless communicated with from a companion app. |
-| `pebble.capabilities` | Array of strings | None | List of capabilities that the app requires. The supported capabilities are `location`, `configurable` (detailed in {% guide_link communication/using-pebblekit-js %}), and `health` (detailed in {% guide_link events-and-services/health %}). |
+| `pebble.capabilities` | Array of strings | None | List of capabilities that the app requires. The supported capabilities are `location`, `configurable` (detailed in {% guide_link communication/using-pebblekit-js %}), `health` (detailed in {% guide_link events-and-services/health %}), and Audio Context capabilities (detailed below). |
 | `pebble.messageKeys` | Object | `["dummy"]` | Keys used for ``AppMessage`` and ``AppSync``. This is either a list of mapping of ``AppMessage`` keys. See {% guide_link communication/using-pebblekit-js %} for more information. |
 | `pebble.resources.media` | Object | `[]` | Contains an array of all of the media resources to be bundled with the app (Maximum 256 per app). See {% guide_link app-resources %} for more information. |
 | `pebble.resources.publishedMedia` | Object |  | Used for {% guide_link user-interfaces/appglance-c "AppGlance Slices" %} and {% guide_link pebble-timeline/pin-structure "Timeline Pins" %}. See [Published Media](#published-media) for more information.
 > Note: `hiddenApp` and `onlyShownOnCommunication` are mutually exclusive.
 > `hiddenApp` will always take preference.
+
+## Audio Context Capabilities
+
+Audio Context capabilities declare which system background audio data your app
+may ask the user to access. Declaring a capability does not grant access by
+itself; the Pebble mobile app grants or revokes audio access per app UUID.
+
+Declare only the narrowest capability your app needs:
+
+```js
+"capabilities": [
+  "audio_status",
+  "audio_transcript"
+]
+```
+
+| Capability | Allows |
+|------------|--------|
+| `audio_status` | Check audio availability and request enable flow. |
+| `audio_transcript` | Read recent and live transcript updates. |
+| `audio_history` | Read bounded transcript history. |
+| `audio_raw` | Receive raw phone-side audio chunks in PebbleKit JS. |
+
+Most apps should request transcript access first. Add the `audio_raw`
+capability only when your phone-side code truly needs audio samples.
+
+See {% guide_link events-and-services/audio-context "Audio Context" %} for the
+full model and runtime-specific guides.
 
 ## Hidden Watchapp
 

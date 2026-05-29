@@ -164,6 +164,16 @@ static void dictation_session_callback(DictationSession *session, DictationSessi
 }
 ```
 
+Audio Context is more efficient than starting a new recorder because it uses the
+system background audio stream, but apps still need to use it carefully. Prefer
+recent transcript queries over long live subscriptions, prefer transcript text
+over raw audio, and always unsubscribe from transcript, status, or raw audio
+subscriptions when the app no longer needs updates.
+
+Raw audio should be reserved for phone-side features that truly need samples.
+If a transcript is enough, using transcript APIs avoids extra processing,
+uploads, and battery cost.
+
 
 ### Bluetooth Usage
 

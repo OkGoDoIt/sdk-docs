@@ -198,6 +198,22 @@ Pebble.addEventListener('appmessage', moddableProxy.appMessageReceived);
 No custom location code is needed in PKJS - the proxy handles GPS lookup
 automatically.
 
+## Audio Context
+
+Alloy apps can query system background audio status and transcript data with
+the `pebble/audio-context` module:
+
+```js
+import AudioContext from "pebble/audio-context";
+```
+
+Audio Context is different from foreground dictation. It gives your app a
+permissioned view of the system background audio stream; it does not let the app
+start or stop recording directly.
+
+See {% guide_link alloy/audio-context "Audio Context" %} for the full Alloy API
+and permission examples.
+
 ## Touch
 
 On platforms with a touchscreen (Emery, Gabbro), read raw touch points using

@@ -38,6 +38,15 @@ Extra features available to an app using PebbleKit JS include:
   app behaves. This is discussed in detail in
   {% guide_link user-interfaces/app-configuration %}.
 
+* Access to {% guide_link events-and-services/audio-context "Audio Context" %}
+  transcript, status, and raw audio APIs when the app declares the appropriate
+  audio capabilities.
+
+PebbleKit JS is the recommended runtime for Audio Context features that need
+larger transcript history windows, raw audio chunks, cloud services, or webhook
+integrations. See [Audio Context with PebbleKit JS][audio-context-js] for
+details.
+
 
 ## Setting Up
 
@@ -474,3 +483,5 @@ available.
 | `firmware.minor` | Number | Minor firmware version. | E.g.: `8` |
 | `firmware.patch` | Number | Patch firmware version. | E.g.: `1` |
 | `firmware.suffix` | String | Any additional firmware versioning. | E.g.: `beta3` |
+
+[audio-context-js]: /guides/communication/audio-context-js/

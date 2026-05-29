@@ -44,6 +44,10 @@ errors in the returned transcription.
 > a microphone should use the `PBL_MICROPHONE` compile-time define (as well as
 > checking API return values) to gracefully handle when it is not available.
 
+> Note: ``Dictation`` is an app-owned foreground microphone session. If your
+> app needs recent transcript or live transcript derived from the system
+> background audio stream, use [Audio Context][audio-context] instead.
+
 
 ## How the Dictation API Works
 
@@ -215,3 +219,5 @@ following reasons.
 | ``DictationSessionStatusFailureDisabled`` | `6` | Voice transcription disabled for this user. This can occur if the user has disabled sending 'Usage logs' in the Pebble mobile app. |
 | ``DictationSessionStatusFailureInternalError`` | `7` | Voice transcription failed due to an internal error. |
 | ``DictationSessionStatusFailureRecognizerError`` | `8` | Cloud recognizer failed to transcribe speech (only possible if error dialogs are disabled). |
+
+[audio-context]: /guides/events-and-services/audio-context/
