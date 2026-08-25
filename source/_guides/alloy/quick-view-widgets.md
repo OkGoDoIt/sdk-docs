@@ -57,7 +57,7 @@ if (result !== "success")
 |--------|-------------|
 | `title` | Required. Truncated at 32 bytes of UTF-8 on a codepoint boundary. |
 | `subtitle` | Optional second line, truncated the same way. |
-| `icon` | A `publishedMedia` id from `package.json`; omit for a generic icon. Tiny (25x25) icons fit best. |
+| `icon` | A `publishedMedia` id from `package.json`; omit to use your app's own icon. Tiny (25x25) icons fit best. |
 | `launchCode` | A number handed back to the app when the widget's button shortcut launches it. |
 | `timeout` | Seconds until the widget withdraws itself; omit or `0` to stay until withdrawn. |
 

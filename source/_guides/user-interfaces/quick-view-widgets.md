@@ -70,7 +70,9 @@ treat that as an answer, not an error.
 
 The `icon` is a `publishedMedia` identifier from your `package.json`, exactly
 as used by ``AppGlanceSlice``. Tiny (25x25) icons fit the widget's icon box
-best. Pass `0` to use a generic icon.
+best. Pass ``PEEK_WIDGET_APP_ICON`` to use your app's own icon, the same
+convention app glances use — a widget without an icon of its own wears the
+icon of the app it launches, so it reads as coming from that app.
 
 ## Widget Lifetime
 
