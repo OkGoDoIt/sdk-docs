@@ -55,7 +55,10 @@ code or start with that finished project.
 Timeline Quick View is a system overlay that obstructs the bottom ~51 pixels of
 the screen (including a 2px border). Your watchface is not required to handle
 this, but with the ``UnobstructedArea`` API you can detect the change and
-rearrange your layers for a better experience.
+rearrange your layers for a better experience. Other
+[Quick View widgets](/guides/user-interfaces/quick-view-widgets/) — such as
+now-playing music — use the same surface and geometry, so handling the timeline
+peek handles them all.
 
 > **Note**: Timeline Quick View is not currently supported for the Round platforms
 > (chalk and gabbro), but writing compatible code ensures your watchface handles it
